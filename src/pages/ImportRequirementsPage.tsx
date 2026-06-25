@@ -1,0 +1,1201 @@
+import { useState } from 'react'
+import {
+  CheckCircle,
+  AlertTriangle,
+  ChevronDown,
+  ChevronUp,
+  FileText,
+  Shield,
+  Plane,
+  Clock,
+  Stethoscope,
+  MessageCircle,
+  Microscope,
+  Ban,
+  PawPrint,
+  Syringe,
+} from 'lucide-react'
+
+/* ─── FAQ accordion helper ─── */
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="faq-item">
+      <button
+        onClick={() => setOpen(!open)}
+        className="faq-question w-full text-left"
+        aria-expanded={open}
+      >
+        <span>{question}</span>
+        {open ? <ChevronUp className="w-5 h-5 shrink-0 ml-3" /> : <ChevronDown className="w-5 h-5 shrink-0 ml-3" />}
+      </button>
+      {open && (
+        <div className="faq-answer">
+          <p>{answer}</p>
+        </div>
+      )}
+    </div>
+  )
+}
+
+/* ─── WhatsApp link builder ─── */
+const waBase = 'https://wa.me/9715XXXXXXXX?text='
+
+function WhatsAppLink({ text, label, className }: { text: string; label: string; className?: string }) {
+  return (
+    <a
+      href={`${waBase}${encodeURIComponent(text)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
+      {label}
+    </a>
+  )
+}
+
+/* ─── Page ─── */
+export default function ImportRequirementsPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Do dogs need to be quarantined in Dubai?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. If all documentation is complete and correct — including the MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate — pets do not require mandatory quarantine in Dubai. However, incomplete documentation can result in conditional quarantine at the owner\'s expense.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the MOCCAE import permit for pets?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It costs approximately AED 200 per animal and is valid for 30–90 days depending on the origin country. You must apply online via the MOCCAE portal or app before your pet travels.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is a rabies titer test required for Dubai?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A rabies titer test is only required for pets coming from high-risk rabies countries. It is not required for pets from low-risk countries including the UK, EU, USA, Canada, Australia, and New Zealand. However, pets from Bahrain and Qatar are a special exception — they do require a titer test despite being classified as low-risk.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What documents are needed to bring a cat to the UAE?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'To bring a cat to the UAE, you need: (1) MOCCAE import permit, (2) ISO 11784/11785 microchip certificate, (3) rabies vaccination certificate (≥21 days old), (4) FVRCP vaccination records, (5) international health certificate (within 10 days of travel), (6) antiparasitic treatment record, and (7) copy of owner\'s passport and UAE visa.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does pet relocation to Dubai take?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a rabies titer test, the minimum timeline is 4 months (including the 90-day waiting period after the titer test). We recommend starting the process at least 8 weeks before your planned move.',
+        },
+      },
+    ],
+  }
+
+  const checklistItems = [
+    'Confirm your pet\'s breed is not banned in the UAE',
+    'Check if your origin country requires a rabies titer test',
+    'Get an ISO 11784/11785 microchip implanted (must happen before rabies vaccination)',
+    'Administer rabies vaccination (pet must be ≥12 weeks old; ≥21 days before travel)',
+    'Administer core vaccines (DHPPIL for dogs, FVRCP for cats)',
+    'If high-risk country: rabies titer test (≥0.5 IU/ml), then wait 90 days',
+    'Apply for MOCCAE import permit (~AED 200, valid 30–90 days)',
+    'Book manifest cargo flight (pets cannot fly in cabin or as checked baggage to Dubai)',
+    'Administer antiparasitic treatment within 14 days of arrival',
+    'Obtain International Health Certificate within 10 days of arrival',
+    'Register with Dubai Municipality within 30 days of arrival',
+  ]
+
+  const steps = [
+    {
+      num: 1,
+      title: 'Check Your Breed and Country',
+      days: 'Day 0',
+      body: 'Before you do anything, confirm two things: (1) Is your dog\'s breed banned in the UAE? (2) Is your origin country high-risk or low-risk for rabies? This determines whether you need a titer test and how long you\'ll wait.',
+      icon: <Ban className="w-5 h-5" />,
+      warn: 'The exact high-risk/low-risk country list changes. Always verify your country\'s status on the MOCCAE portal before starting.',
+    },
+    {
+      num: 2,
+      title: 'Implant the Microchip',
+      days: 'Day 0',
+      body: 'Your pet must have an ISO 11784/11785 compliant 15-digit microchip. This must be implanted before the rabies vaccination. If your pet was vaccinated before being microchipped, the vaccination is invalid for UAE entry. The microchip number must appear on every subsequent document.',
+      icon: <Microscope className="w-5 h-5" />,
+      warn: 'If your pet was already vaccinated before getting microchipped, the vaccination is invalid for UAE entry. You\'ll need to re-vaccinate after microchipping and wait another 21 days.',
+    },
+    {
+      num: 3,
+      title: 'Rabies Vaccination',
+      days: 'Day 0',
+      body: 'Your pet must be at least 12 weeks old at the time of vaccination. The vaccine must be inactivated or recombinant (not attenuated live virus), administered ≥21 days before travel, and within 12 months of arrival.',
+      icon: <Syringe className="w-5 h-5" />,
+      warn: null,
+    },
+    {
+      num: 4,
+      title: 'Core Vaccinations',
+      days: 'Day 0–14',
+      body: 'Dogs: DHPPIL (Distemper, Hepatitis, Parvovirus, Parainfluenza, Leptospirosis). Cats: FVRCP (Feline Viral Rhinotracheitis, Calicivirus, Panleukopenia). These are typically administered alongside the rabies vaccine or shortly after.',
+      icon: <Shield className="w-5 h-5" />,
+      warn: null,
+    },
+    {
+      num: 5,
+      title: 'Rabies Titer Test — If Required',
+      days: 'Day 21–31',
+      body: 'If your pet is from a high-risk country, a blood sample must be drawn ≥21 days after the rabies vaccination. The sample is sent to a WOAH/ISO 17025 accredited laboratory. Minimum result: ≥0.5 IU/ml. You must then wait 90 days from the date of blood sample collection before your pet can enter the UAE.',
+      icon: <Stethoscope className="w-5 h-5" />,
+      warn: 'Pets from Bahrain and Qatar must have a titer test even though they are classified as low-risk. This is frequently missed and causes delays.',
+    },
+    {
+      num: 6,
+      title: 'Apply for MOCCAE Import Permit',
+      days: 'Day 21–90',
+      body: 'Apply online via the MOCCAE portal or the MOCCAE mobile app. Fee: ~AED 200 per animal. Validity: 30–90 days from issue. Processing time: 3–7 working days. Required: Copy of owner\'s passport, UAE visa, pet\'s microchip number, vaccination records, and titer test result (if applicable).',
+      icon: <FileText className="w-5 h-5" />,
+      warn: 'Import permit validity has changed multiple times. Apply as close to your travel date as safely possible while leaving time for flight booking.',
+    },
+    {
+      num: 7,
+      title: 'Book Manifest Cargo Flight',
+      days: '2–4 weeks before travel',
+      body: 'All pets entering Dubai must travel as manifest cargo. They cannot fly in the cabin or as checked baggage on flights to Dubai. Emirates SkyCargo is most common for DXB arrivals (72 hours advance notice). Etihad Cargo is an alternative for Abu Dhabi arrivals. Cargo costs typically range from AED 3,000–12,000 depending on route, airline, and pet size.',
+      icon: <Plane className="w-5 h-5" />,
+      warn: null,
+    },
+    {
+      num: 8,
+      title: 'Health Certificate and Antiparasitics',
+      days: 'Within 10–14 days of travel',
+      body: 'Antiparasitic treatment: internal (deworming/Praziquantel) and external (Fipronil or Permethrin) within 14 days before arrival. International Health Certificate: issued by a government-accredited veterinarian within 10 days of arrival.',
+      icon: <Stethoscope className="w-5 h-5" />,
+      warn: null,
+    },
+    {
+      num: 9,
+      title: 'Arrival and Customs Clearance',
+      days: 'Day of arrival',
+      body: 'Your pet arrives at DXB or DWC cargo terminal. You (or your agent) present the MOCCAE import permit, original health certificate, vaccination records, microchip certificate, titer test result (if applicable), antiparasitic treatment record, and owner\'s passport and UAE visa. If all documents are correct, customs clearance takes 2–4 hours. Your pet does not enter quarantine.',
+      icon: <CheckCircle className="w-5 h-5" />,
+      warn: null,
+    },
+    {
+      num: 10,
+      title: 'Dubai Municipality Registration',
+      days: 'Within 30 days',
+      body: 'Register your pet via the Aleef app or Dubai Smart Services portal. You need your Emirates ID, pet\'s microchip number, current vaccination records, pet photo, and your residence address (Makani number). Fee: ~AED 10. Annual renewal required. A physical municipality ID tag must be worn on your pet\'s collar at all times.',
+      icon: <FileText className="w-5 h-5" />,
+      warn: null,
+    },
+  ]
+
+  return (
+    <div className="bg-[#FAFBF7]">
+      {/* ── FAQ Schema ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      {/* ═══════════ HERO ═══════════ */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/import-hero.jpg"
+            alt="Golden retriever in IATA-compliant travel crate at Dubai Airport cargo terminal"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#1A5F4A]/85" />
+        </div>
+        <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-2 text-[#E8A838] font-semibold text-sm mb-4">
+              <FileText className="w-4 h-4" />
+              <span>Last updated: June 2026 &middot; Authority: MOCCAE</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+              UAE Pet Import Requirements 2026: Complete Guide to Bringing Dogs &amp; Cats to Dubai
+            </h1>
+            <p className="text-lg text-white/90 mb-4">
+              Everything you need to bring your pet to Dubai. No quarantine. No hidden steps. Just a clear checklist.
+            </p>
+            <p className="text-white/80 mb-8">
+              If your paperwork is correct, your dog or cat can enter the UAE without spending a single day in quarantine. The process is straightforward — but every document must be done in the right order, with the right dates, and submitted to the right authority.
+            </p>
+            <a
+              href={`${waBase}Hi%2C%20I%20need%20help%20understanding%20the%20import%20requirements%20for%20my%20pet%20from%20%5Bcountry%5D%20to%20Dubai.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Not sure where to start? WhatsApp us a photo of your documents
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ QUICK CHECKLIST ═══════════ */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-10 lg:p-12">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-[#1A5F4A]/10 flex items-center justify-center">
+                <CheckCircle className="w-5 h-5 text-[#1A5F4A]" />
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A]">Your Quick Checklist</h2>
+            </div>
+            <p className="text-[#5C5C5C] mb-8">
+              Here&apos;s the full document list in one place. Every item below is mandatory. Skip one, and your pet could be quarantined or sent back.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
+              {checklistItems.map((item, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full border-2 border-[#1A5F4A]/30 flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="text-xs font-bold text-[#1A5F4A]">{i + 1}</span>
+                  </div>
+                  <span className="text-[#1A1A1A] text-sm leading-relaxed">{item}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 pt-6 border-t border-gray-100 flex flex-wrap gap-4">
+              <WhatsAppLink
+                text="Hi, I need help understanding the import requirements for my pet from [country] to Dubai."
+                label="Get help with your documents"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ REQUIRED DOCUMENTS TABLE ═══════════ */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">
+            What You Need to Bring Your Pet to Dubai (Quick Checklist)
+          </h2>
+          <p className="text-[#5C5C5C] mb-8">
+            Every item below is mandatory. Skip one, and your pet could be quarantined or sent back.
+          </p>
+
+          <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-100 mb-8">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Document</th>
+                  <th>What It Is</th>
+                  <th>Validity</th>
+                  <th>Cost (AED)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="font-semibold text-[#1A1A1A]">MOCCAE Import Permit</td>
+                  <td>Official approval from UAE Ministry of Climate Change and Environment</td>
+                  <td>30–90 days from issue</td>
+                  <td>~200</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold text-[#1A1A1A]">ISO Microchip Certificate</td>
+                  <td>15-digit ISO 11784/11785 compliant microchip</td>
+                  <td>Permanent</td>
+                  <td>300–600 (at vet)</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold text-[#1A1A1A]">Rabies Vaccination Certificate</td>
+                  <td>Proof of rabies vaccine administered by a licensed vet</td>
+                  <td>1 year (annual booster)</td>
+                  <td>Included in vet fee</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold text-[#1A1A1A]">Core Vaccination Records</td>
+                  <td>DHPPIL (dogs) or FVRCP (cats)</td>
+                  <td>Per vaccine schedule</td>
+                  <td>100–200</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold text-[#1A1A1A]">Rabies Titer Test (RNATT)</td>
+                  <td>Blood test proving rabies immunity</td>
+                  <td>90-day wait from sample</td>
+                  <td>500–1,200</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold text-[#1A1A1A]">International Health Certificate</td>
+                  <td>Government-accredited vet certificate with parasite treatments</td>
+                  <td><strong>10 days</strong> from issuance</td>
+                  <td>400–1,500</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold text-[#1A1A1A]">Antiparasitic Treatment Record</td>
+                  <td>Internal deworming + external flea/tick treatment</td>
+                  <td>Within 14 days of arrival</td>
+                  <td>50–150</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold text-[#1A1A1A]">Owner&apos;s Passport &amp; UAE Visa</td>
+                  <td>Required for permit application and customs</td>
+                  <td>—</td>
+                  <td>—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="warning-box mb-8">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="w-5 h-5 text-[#E8A838] shrink-0 mt-0.5" />
+              <p className="text-sm text-[#1A1A1A]">
+                <strong>Critical:</strong> Every document must show the <strong>same microchip number</strong>. A mismatch between the microchip certificate and the vaccination certificate = automatic rejection at customs.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-[#F5F0E8] rounded-xl p-6 mb-8">
+            <h3 className="font-semibold text-[#1A1A1A] mb-3 flex items-center gap-2">
+              <Clock className="w-5 h-5 text-[#1A5F4A]" />
+              How Long Does It Take?
+            </h3>
+            <ul className="space-y-2 text-[#5C5C5C]">
+              <li><strong className="text-[#1A1A1A]">From low-risk countries</strong> (UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore): <strong className="text-[#1A1A1A]">4–6 weeks</strong></li>
+              <li><strong className="text-[#1A1A1A]">From high-risk countries</strong> (most of Africa, Latin America, Central Asia, parts of Asia): <strong className="text-[#1A1A1A]">Minimum 4 months</strong> (due to 90-day titer test waiting period)</li>
+            </ul>
+          </div>
+
+          <WhatsAppLink
+            text="Hi, I need help with my pet's documents for import to Dubai. Can you check my timeline?"
+            label="Get help with your documents — WhatsApp us"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+          />
+        </div>
+      </section>
+
+      {/* ═══════════ STEP-BY-STEP TIMELINE ═══════════ */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">
+            Step-by-Step: How to Import Your Pet to Dubai
+          </h2>
+          <p className="text-[#5C5C5C] mb-10">
+            Follow these 10 steps in order. Each builds on the previous one.
+          </p>
+
+          <div className="relative">
+            {/* vertical line */}
+            <div className="absolute left-[19px] top-0 bottom-0 w-0.5 bg-[#1A5F4A]/20 hidden sm:block" />
+
+            <div className="space-y-8">
+              {steps.map((step) => (
+                <div key={step.num} className="relative sm:pl-14">
+                  {/* timeline dot */}
+                  <div className="hidden sm:flex absolute left-0 top-0 w-10 h-10 rounded-full bg-[#1A5F4A] text-white items-center justify-center font-bold text-sm shadow-md">
+                    {step.num}
+                  </div>
+                  <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="sm:hidden w-8 h-8 rounded-full bg-[#1A5F4A] text-white flex items-center justify-center font-bold text-xs">
+                        {step.num}
+                      </div>
+                      <div className="w-9 h-9 rounded-lg bg-[#1A5F4A]/10 flex items-center justify-center text-[#1A5F4A]">
+                        {step.icon}
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-[#1A1A1A] text-lg">{step.title}</h3>
+                        <span className="text-xs font-semibold text-[#1A5F4A] uppercase tracking-wide">{step.days}</span>
+                      </div>
+                    </div>
+                    <p className="text-[#5C5C5C] leading-relaxed mb-3">{step.body}</p>
+                    {step.warn && (
+                      <div className="warning-box">
+                        <div className="flex items-start gap-2">
+                          <AlertTriangle className="w-4 h-4 text-[#E8A838] shrink-0 mt-0.5" />
+                          <p className="text-sm text-[#1A1A1A]">{step.warn}</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <WhatsAppLink
+              text="Hi, I have questions about my pet's import timeline to Dubai."
+              label="Questions about your timeline? Ask an expert on WhatsApp"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ REQUIRED DOCUMENTS (DETAILED) ═══════════ */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-8">Required Documents Checklist</h2>
+          <p className="text-[#5C5C5C] mb-10">Every pet entering the UAE needs these documents. No exceptions.</p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* MOCCAE Import Permit */}
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <div className="flex items-center gap-2 mb-3">
+                <FileText className="w-5 h-5 text-[#1A5F4A]" />
+                <h3 className="font-bold text-[#1A1A1A]">MOCCAE Import Permit</h3>
+              </div>
+              <p className="text-[#5C5C5C] text-sm mb-4">
+                The import permit is the gatekeeper. Without it, your pet cannot enter the UAE.
+              </p>
+              <ul className="text-sm text-[#5C5C5C] space-y-1 mb-4">
+                <li><strong>Apply:</strong> Online at moccae.gov.ae or via the MOCCAE app</li>
+                <li><strong>Cost:</strong> ~AED 200 per animal</li>
+                <li><strong>Processing:</strong> 3–7 working days</li>
+                <li><strong>Validity:</strong> 30–90 days (verify current period in the portal)</li>
+              </ul>
+              <div className="warning-box">
+                <p className="text-sm text-[#1A1A1A]">
+                  <strong>Warning:</strong> The permit is valid for a limited window. Apply too early, and it may expire before you travel. Apply too late, and you may miss your flight booking window.
+                </p>
+              </div>
+            </div>
+
+            {/* ISO Microchip Certificate */}
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <div className="flex items-center gap-2 mb-3">
+                <Microscope className="w-5 h-5 text-[#1A5F4A]" />
+                <h3 className="font-bold text-[#1A1A1A]">ISO Microchip Certificate</h3>
+              </div>
+              <ul className="text-sm text-[#5C5C5C] space-y-1 mb-4">
+                <li>Must be <strong>ISO 11784/11785 compliant</strong> (15-digit number)</li>
+                <li>Must be implanted <strong>before</strong> the rabies vaccination</li>
+                <li>The microchip number must appear on every document</li>
+              </ul>
+              <div className="warning-box">
+                <p className="text-sm text-[#1A1A1A]">
+                  <strong>Warning:</strong> If your pet was already vaccinated before getting microchipped, the vaccination is invalid for UAE entry. You&apos;ll need to re-vaccinate after microchipping and wait another 21 days.
+                </p>
+              </div>
+            </div>
+
+            {/* Rabies Vaccination Certificate */}
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <div className="flex items-center gap-2 mb-3">
+                <Syringe className="w-5 h-5 text-[#1A5F4A]" />
+                <h3 className="font-bold text-[#1A1A1A]">Rabies Vaccination Certificate</h3>
+              </div>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li>Pet must be <strong>≥12 weeks old</strong> at vaccination</li>
+                <li>Must be <strong>≥21 days old</strong> at time of travel</li>
+                <li>Must be <strong>within 12 months</strong> of arrival</li>
+                <li>Must be inactivated or recombinant vaccine</li>
+                <li>Certificate must include: microchip number, vaccine batch number, manufacturer, date of administration, vet&apos;s signature and stamp</li>
+              </ul>
+            </div>
+
+            {/* Rabies Titer Test */}
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <div className="flex items-center gap-2 mb-3">
+                <Stethoscope className="w-5 h-5 text-[#1A5F4A]" />
+                <h3 className="font-bold text-[#1A1A1A]">Rabies Titer Test (RNATT)</h3>
+              </div>
+              <ul className="text-sm text-[#5C5C5C] space-y-1 mb-4">
+                <li>Required for pets from <strong>high-risk rabies countries</strong></li>
+                <li><strong>Not required</strong> for: UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore</li>
+                <li><strong>Required for:</strong> Bahrain and Qatar (special exception)</li>
+                <li>Blood sample drawn <strong>≥21 days after</strong> rabies vaccination</li>
+                <li>Minimum result: <strong>≥0.5 IU/ml</strong></li>
+                <li>90-day waiting period from sample collection date</li>
+                <li>Must be processed at a <strong>WOAH/ISO 17025 accredited laboratory</strong></li>
+              </ul>
+            </div>
+
+            {/* International Health Certificate */}
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <div className="flex items-center gap-2 mb-3">
+                <FileText className="w-5 h-5 text-[#1A5F4A]" />
+                <h3 className="font-bold text-[#1A1A1A]">International Health Certificate</h3>
+              </div>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li>Issued by a <strong>government-accredited or official veterinarian</strong></li>
+                <li>Valid for <strong>10 days</strong> from issuance to arrival</li>
+                <li>Must include: pet owner&apos;s details, microchip number, vaccination records, antiparasitic treatment dates and products used, vet&apos;s official stamp and signature</li>
+              </ul>
+            </div>
+
+            {/* Antiparasitic Treatment Record */}
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <div className="flex items-center gap-2 mb-3">
+                <Shield className="w-5 h-5 text-[#1A5F4A]" />
+                <h3 className="font-bold text-[#1A1A1A]">Antiparasitic Treatment Record</h3>
+              </div>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li><strong>Internal deworming</strong> (Praziquantel or equivalent) within 14 days of arrival</li>
+                <li><strong>External parasite treatment</strong> (Fipronil or Permethrin) within 14 days of arrival</li>
+                <li>Record must include product name, date of administration, and vet&apos;s signature</li>
+              </ul>
+            </div>
+
+            {/* Owner's Passport */}
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10 md:col-span-2">
+              <div className="flex items-center gap-2 mb-3">
+                <FileText className="w-5 h-5 text-[#1A5F4A]" />
+                <h3 className="font-bold text-[#1A1A1A]">Owner&apos;s Passport and UAE Visa</h3>
+              </div>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li>Required for permit application and customs clearance</li>
+                <li>The permit applicant must match the person collecting the pet</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <WhatsAppLink
+              text="Hi, I need help with my pet's documents for import to Dubai. Can you check what I have?"
+              label="Get help with your documents — Send us a photo of what you have, and we'll check it"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ BANNED AND RESTRICTED BREEDS ═══════════ */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">
+            Banned and Restricted Dog Breeds
+          </h2>
+          <p className="text-[#5C5C5C] mb-8">
+            The UAE enforces a strict federal breed ban. If your dog is on this list, it <strong>cannot be imported</strong> — unless it is a certified service or emotional support animal.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white rounded-2xl shadow-sm p-6 border-l-4 border-red-500">
+              <h3 className="font-bold text-red-700 mb-4 flex items-center gap-2">
+                <Ban className="w-5 h-5" />
+                Completely Banned (Cannot Enter the UAE)
+              </h3>
+
+              <div className="mb-4">
+                <h4 className="font-semibold text-[#1A1A1A] text-sm mb-2">Pit Bull Types</h4>
+                <ul className="text-sm text-[#5C5C5C] space-y-1">
+                  <li>American Pit Bull Terrier</li>
+                  <li>Staffordshire Bull Terrier</li>
+                  <li>American Staffordshire Terrier</li>
+                  <li>American Bully</li>
+                  <li>Any Bull Terrier or Pit Bull cross</li>
+                </ul>
+              </div>
+
+              <div className="mb-4">
+                <h4 className="font-semibold text-[#1A1A1A] text-sm mb-2">Mastiff Types</h4>
+                <ul className="text-sm text-[#5C5C5C] space-y-1">
+                  <li>Brazilian Mastiff (Fila Brasileiro)</li>
+                  <li>Argentinian Mastiff (Dogo Argentino)</li>
+                  <li>Tibetan Mastiff</li>
+                  <li>Neapolitan Mastiff</li>
+                  <li>French Mastiff (Dogue de Bordeaux)</li>
+                  <li>Boerboel</li>
+                  <li>Bullmastiff</li>
+                  <li>Cane Corso (Italian Mastiff)</li>
+                  <li>Bully Kutta (Alangu / Indian Mastiff)</li>
+                  <li>Perro de Presa Canario (Canary Mastiff)</li>
+                  <li>Any Mastiff cross or hybrid</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-[#1A1A1A] text-sm mb-2">Other Banned Breeds</h4>
+                <ul className="text-sm text-[#5C5C5C] space-y-1">
+                  <li>Japanese Tosa (Tosa Inu)</li>
+                  <li>Wolf-dog hybrids (any dog mixed with a wolf)</li>
+                  <li>Savannah cats and Bengal cats (unless 5th generation removed from pedigree)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-sm p-6 border-l-4 border-[#E8A838]">
+              <h3 className="font-bold text-[#E8A838] mb-4 flex items-center gap-2">
+                <AlertTriangle className="w-5 h-5" />
+                Restricted Breeds (Dubai-Specific Rules)
+              </h3>
+              <p className="text-sm text-[#5C5C5C] mb-4">
+                These breeds are permitted in the UAE but have <strong>additional restrictions in Dubai</strong>:
+              </p>
+              <ul className="text-sm text-[#5C5C5C] space-y-1 mb-4">
+                <li>Cannot live in apartments</li>
+                <li>Must be leashed and muzzled in public</li>
+                <li>Must be registered with the Veterinary Services Division</li>
+              </ul>
+              <h4 className="font-semibold text-[#1A1A1A] text-sm mb-2">Restricted breeds:</h4>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li>Bull Terrier (including Miniature)</li>
+                <li>Husky</li>
+                <li>English Bulldog / Old English Bulldog</li>
+                <li>Perro de Presa Mallorquin</li>
+                <li>Shar Pei</li>
+                <li>Rottweiler (in some community contexts)</li>
+                <li>Doberman Pinscher (in some community contexts)</li>
+                <li>Boxer</li>
+              </ul>
+              <div className="warning-box mt-4">
+                <p className="text-sm text-[#1A1A1A]">
+                  Some sources list Rottweiler, Doberman Pinscher, and Boxer as fully banned. Other authoritative sources classify them as restricted. <strong>Always verify with MOCCAE before importing these breeds.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-sm p-6 mb-8">
+            <h3 className="font-bold text-[#1A1A1A] mb-4 flex items-center gap-2">
+              <PawPrint className="w-5 h-5 text-[#1A5F4A]" />
+              Service and Emotional Support Animal Exceptions
+            </h3>
+            <p className="text-[#5C5C5C] mb-4">
+              Banned breeds may receive an exception <strong>only</strong> if they are:
+            </p>
+            <ul className="text-[#5C5C5C] space-y-2 mb-4">
+              <li>Certified <strong>service animals</strong> (trained by an ADI or IGDF accredited organization)</li>
+              <li>Certified <strong>emotional support animals</strong> (for medical purposes)</li>
+            </ul>
+            <p className="text-[#5C5C5C] mb-4">Required documentation:</p>
+            <ul className="text-[#5C5C5C] space-y-1 mb-4">
+              <li>Training record from an accredited training centre</li>
+              <li>Medical records justifying the need for the animal</li>
+            </ul>
+            <div className="warning-box">
+              <p className="text-sm text-[#1A1A1A]">
+                <strong>Penalty warning:</strong> Non-compliance with breed restrictions can result in fines from <strong>AED 10,000 to AED 700,000</strong>, possible jail sentences, and <strong>confiscation of the animal</strong>.
+              </p>
+            </div>
+          </div>
+
+          <WhatsAppLink
+            text="Hi, I want to check if my pet's breed is eligible for import to Dubai."
+            label="Check my pet's eligibility — WhatsApp us your breed and we'll confirm the rules"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+          />
+        </div>
+      </section>
+
+      {/* ═══════════ VACCINATION REQUIREMENTS ═══════════ */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-8">Vaccination Requirements</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <h3 className="font-bold text-[#1A1A1A] mb-4 flex items-center gap-2">
+                <Syringe className="w-5 h-5 text-[#1A5F4A]" />
+                Rabies Vaccination (Mandatory for All)
+              </h3>
+              <ul className="text-sm text-[#5C5C5C] space-y-2">
+                <li><strong>Minimum age:</strong> 12 weeks at first vaccination</li>
+                <li><strong>Pre-travel window:</strong> Administered between 21 days and 12 months prior to entering the UAE</li>
+                <li><strong>Accepted types:</strong> Inactivated or recombinant vaccines only</li>
+                <li><strong>Not accepted:</strong> Attenuated live virus vaccines</li>
+                <li><strong>Boosters:</strong> Annual booster required, or follow manufacturer&apos;s guidance for 2-3 year vaccines</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <h3 className="font-bold text-[#1A1A1A] mb-4 flex items-center gap-2">
+                <Shield className="w-5 h-5 text-[#1A5F4A]" />
+                Core Vaccinations — Dogs
+              </h3>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li>Canine Distemper Virus (CDV)</li>
+                <li>Canine Parvovirus (CPV)</li>
+                <li>Infectious Canine Hepatitis (Adenovirus)</li>
+                <li>Leptospirosis (Canicola and Icterohaemorrhagiae)</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <h3 className="font-bold text-[#1A1A1A] mb-4 flex items-center gap-2">
+                <Shield className="w-5 h-5 text-[#1A5F4A]" />
+                Core Vaccinations — Cats
+              </h3>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li>Feline Panleukopenia (FPV / Feline Distemper)</li>
+                <li>Feline Rhinotracheitis (FHV-1 / Herpes Virus)</li>
+                <li>Feline Calicivirus (FCV)</li>
+                <li>Feline Leukemia (FeLV) — recommended by some authorities</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <h3 className="font-bold text-[#1A1A1A] mb-4">Vaccination Timing — Why Order Matters</h3>
+              <ol className="text-sm text-[#5C5C5C] space-y-2 list-decimal list-inside">
+                <li><strong>Microchip first.</strong> Always. The microchip must precede the rabies vaccination.</li>
+                <li><strong>Rabies vaccination second.</strong> Wait ≥21 days before travel.</li>
+                <li><strong>Core vaccines third.</strong> Can be given alongside rabies or shortly after.</li>
+                <li><strong>Titer test fourth (if required).</strong> Blood drawn ≥21 days after rabies vaccination.</li>
+                <li><strong>Health certificate last.</strong> Within 10 days of arrival.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div className="warning-box">
+            <p className="text-sm text-[#1A1A1A]">
+              <strong>Warning:</strong> If your vaccination records show the rabies vaccine was given before the microchip, MOCCAE will reject your import permit. You&apos;ll need to re-vaccinate after microchipping and restart the timeline.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ RABIES TITER TEST ═══════════ */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">Rabies Titer Test Rules</h2>
+          <p className="text-[#5C5C5C] mb-8">
+            The rabies titer test (also called RNATT — Rabies Neutralising Antibody Titre Test) proves that your pet&apos;s rabies vaccine worked.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white rounded-2xl shadow-sm p-6">
+              <h3 className="font-bold text-[#1A1A1A] mb-4">Do You Need a Titer Test?</h3>
+              <p className="text-[#5C5C5C] mb-3">
+                <strong>Yes, if your pet is from a high-risk country.</strong> Most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia are classified as high-risk.
+              </p>
+              <p className="text-[#5C5C5C] mb-3">
+                <strong>No, if your pet is from a low-risk country:</strong> UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore, and most other developed nations.
+              </p>
+              <p className="text-[#5C5C5C] mb-4">
+                <strong>Yes, even if low-risk:</strong> Pets from <strong>Bahrain and Qatar</strong> must have a titer test. This is a specific exception.
+              </p>
+              <div className="warning-box">
+                <p className="text-sm text-[#1A1A1A]">
+                  The high-risk/low-risk country list is maintained by MOCCAE and changes. Verify your country&apos;s current status in the MOCCAE portal before skipping the titer test.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-sm p-6">
+              <h3 className="font-bold text-[#1A1A1A] mb-4">Titer Test Requirements</h3>
+              <ul className="text-[#5C5C5C] space-y-2">
+                <li>Blood sample drawn <strong>≥21 days after</strong> primary rabies vaccination</li>
+                <li>Minimum result: <strong>≥0.5 IU/ml</strong></li>
+                <li>Must be processed at a <strong>WOAH/ISO 17025 accredited laboratory</strong></li>
+                <li><strong>90-day waiting period</strong> from the date of blood sample collection before the pet can enter the UAE</li>
+                <li>The test result must be included in your MOCCAE permit application</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-sm p-6 mb-8">
+            <h3 className="font-bold text-[#1A1A1A] mb-4">Titer Test Timeline Example</h3>
+            <div className="overflow-x-auto">
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td className="font-semibold">Day 0</td><td>Microchip + rabies vaccination</td></tr>
+                  <tr><td className="font-semibold">Day 21</td><td>Blood sample for titer test</td></tr>
+                  <tr><td className="font-semibold">Day 31</td><td>Receive result (≥0.5 IU/ml)</td></tr>
+                  <tr><td className="font-semibold">Day 111</td><td>Apply for MOCCAE import permit (90-day wait complete)</td></tr>
+                  <tr><td className="font-semibold">Day 118</td><td>Book cargo flight</td></tr>
+                  <tr><td className="font-semibold">Day 121</td><td>Antiparasitic treatment + health certificate</td></tr>
+                  <tr><td className="font-semibold">Day 121+</td><td>Pet arrives in Dubai</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 font-semibold text-[#1A1A1A]">
+              Total minimum time from scratch for high-risk countries: ~4 months.
+            </p>
+          </div>
+
+          <div className="warning-box mb-8">
+            <p className="text-sm text-[#1A1A1A]">
+              <strong>Warning:</strong> The 90-day waiting period is <strong>not negotiable</strong>. You cannot apply for the import permit or book travel until this period has passed. There are no exceptions.
+            </p>
+          </div>
+
+          <WhatsAppLink
+            text="Hi, I have questions about the rabies titer test timeline for my pet coming to Dubai."
+            label="Ask an expert about your titer test timeline"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+          />
+        </div>
+      </section>
+
+      {/* ═══════════ IMPORT PERMIT APPLICATION ═══════════ */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">Import Permit Application</h2>
+          <p className="text-[#5C5C5C] mb-8">
+            The MOCCAE import permit is the single most important document for bringing your pet to Dubai. Without it, your pet cannot enter the country.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <h3 className="font-bold text-[#1A1A1A] mb-4">How to Apply</h3>
+              <ol className="text-[#5C5C5C] space-y-2 list-decimal list-inside">
+                <li><strong>Online:</strong> Visit <a href="https://www.moccae.gov.ae/en/services/export-import-services/import-permit-pets.aspx" target="_blank" rel="noopener noreferrer" className="text-[#1A5F4A] underline">moccae.gov.ae</a> and navigate to the pet import permit section</li>
+                <li><strong>Mobile app:</strong> Download the MOCCAE app (available on iOS and Android)</li>
+                <li><strong>Through a licensed agent:</strong> PetClear can submit the application on your behalf</li>
+              </ol>
+            </div>
+
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <h3 className="font-bold text-[#1A1A1A] mb-4">What You&apos;ll Need</h3>
+              <ul className="text-[#5C5C5C] space-y-1">
+                <li>Copy of your passport</li>
+                <li>UAE visa or proof of residency</li>
+                <li>Pet&apos;s ISO microchip number</li>
+                <li>Rabies vaccination certificate (with microchip number, batch number, manufacturer, date, vet stamp)</li>
+                <li>Core vaccination records</li>
+                <li>Titer test result (if applicable)</li>
+                <li>Recent photo of your pet</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <h3 className="font-bold text-[#1A1A1A] mb-4">Fees and Timeline</h3>
+              <ul className="text-[#5C5C5C] space-y-1">
+                <li><strong>Fee:</strong> ~AED 200 per animal</li>
+                <li><strong>Processing:</strong> 3–7 working days</li>
+                <li><strong>Validity:</strong> 30–90 days from issue (verify current period when applying)</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+              <h3 className="font-bold text-[#1A1A1A] mb-4">Common Application Mistakes</h3>
+              <ul className="text-[#5C5C5C] space-y-1">
+                <li><strong>Microchip mismatch:</strong> The microchip number on the permit application doesn&apos;t match the vaccination certificate</li>
+                <li><strong>Expired vaccine:</strong> Rabies vaccine is older than 12 months or less than 21 days old</li>
+                <li><strong>Missing titer test:</strong> Applying for a permit from a high-risk country without the titer test result</li>
+                <li><strong>Wrong validity window:</strong> Applying too early and having the permit expire before travel</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="warning-box mb-8">
+            <p className="text-sm text-[#1A1A1A]">
+              <strong>Warning:</strong> If your permit application is rejected, you must correct the issue and reapply. This can add 1–2 weeks to your timeline. We check every application three times before submission.
+            </p>
+          </div>
+
+          <WhatsAppLink
+            text="Hi, I need help with my MOCCAE import permit application for my pet."
+            label="Get help with your permit application"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+          />
+        </div>
+      </section>
+
+      {/* ═══════════ AIRLINE-SPECIFIC REQUIREMENTS ═══════════ */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">Airline-Specific Requirements</h2>
+          <p className="text-[#5C5C5C] mb-8">
+            All pets entering Dubai <strong>must travel as manifest cargo</strong>. They cannot fly in the cabin or as checked baggage on flights to Dubai — with one exception.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white rounded-2xl shadow-sm p-6">
+              <h3 className="font-bold text-[#1A1A1A] mb-3 flex items-center gap-2">
+                <Plane className="w-5 h-5 text-[#1A5F4A]" />
+                Emirates SkyCargo
+              </h3>
+              <p className="text-sm text-[#5C5C5C] mb-3">
+                Emirates is the most common airline for pet transport to Dubai.
+              </p>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li><strong>In-cabin:</strong> No regular pets allowed. Only trained service dogs and falcons on specific routes.</li>
+                <li><strong>Checked baggage:</strong> Not accepted for flights to Dubai.</li>
+                <li><strong>Cargo (SkyCargo):</strong> Mandatory for most pets. Cost: typically $1,500–$5,000 USD.</li>
+                <li><strong>Advance notice:</strong> Minimum 72 hours</li>
+                <li><strong>Crate:</strong> IATA-approved, rigid, leak-proof. For restricted breeds, crate must be at least 10% larger than standard.</li>
+                <li><strong>Banned breeds:</strong> Even stricter than UAE law. Includes snub-nosed breeds with seasonal restrictions (November–April only).</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-sm p-6">
+              <h3 className="font-bold text-[#1A1A1A] mb-3 flex items-center gap-2">
+                <Plane className="w-5 h-5 text-[#1A5F4A]" />
+                Etihad Airways
+              </h3>
+              <p className="text-sm text-[#5C5C5C] mb-3">
+                Etihad is the most pet-friendly UAE airline — but only for Abu Dhabi.
+              </p>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li><strong>In-cabin (to Abu Dhabi only):</strong> Small dogs and cats allowed. Pet + carrier must weigh ≤8 kg. Carrier max: 40 x 40 x 22 cm. Fee: USD 399 per segment.</li>
+                <li><strong>Checked baggage:</strong> Accepted on some routes.</li>
+                <li><strong>Cargo:</strong> Available for larger pets.</li>
+                <li><strong>Advance notice:</strong> Book via Contact Centre; submit form 7 days before, documents 72 hours before.</li>
+                <li><strong>Banned breeds:</strong> Same as UAE federal list, plus Boxer.</li>
+                <li><strong>Abu Dhabi entry:</strong> Requires a Bill of Entry from MICCO Logistics (cost: AED 365) at least 24 hours before departure.</li>
+                <li><strong>Pet age:</strong> Must be ≥16 weeks old for in-cabin.</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-sm p-6">
+              <h3 className="font-bold text-[#1A1A1A] mb-3 flex items-center gap-2">
+                <Plane className="w-5 h-5 text-[#1A5F4A]" />
+                flydubai
+              </h3>
+              <p className="text-sm text-[#5C5C5C] mb-3">
+                flydubai does not have a published pet-in-cabin policy.
+              </p>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li>Pets are generally handled as cargo via flydubai&apos;s cargo services or partners.</li>
+                <li><strong>Recommendation:</strong> Contact flydubai Cargo directly for arrangements.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-sm p-6 mb-8">
+            <h3 className="font-bold text-[#1A1A1A] mb-4">Airline Comparison Summary</h3>
+            <div className="overflow-x-auto">
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>Airline</th>
+                    <th>Cabin to UAE?</th>
+                    <th>Checked Baggage to UAE?</th>
+                    <th>Cargo to UAE?</th>
+                    <th>Best For</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="font-semibold">Emirates</td>
+                    <td>❌ No (except service dogs)</td>
+                    <td>❌ No</td>
+                    <td>✅ Yes (SkyCargo)</td>
+                    <td>Most DXB arrivals; direct routes</td>
+                  </tr>
+                  <tr>
+                    <td className="font-semibold">Etihad</td>
+                    <td>✅ Yes (to Abu Dhabi, ≤8kg)</td>
+                    <td>✅ Some routes</td>
+                    <td>✅ Yes</td>
+                    <td>Small pets to Abu Dhabi; pet-friendly policies</td>
+                  </tr>
+                  <tr>
+                    <td className="font-semibold">flydubai</td>
+                    <td>❌ No</td>
+                    <td>❌ No</td>
+                    <td>✅ Yes (Cargo)</td>
+                    <td>Budget cargo options; regional routes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="warning-box mb-8">
+            <p className="text-sm text-[#1A1A1A]">
+              <strong>Important:</strong> The choice of airline affects your total cost by AED 3,000–12,000. We work with the cargo departments directly — not the passenger reservation desks — to confirm pet-specific rules in writing before booking.
+            </p>
+          </div>
+
+          <WhatsAppLink
+            text="Hi, I'm not sure which airline fits my route for pet relocation to Dubai. Can you help?"
+            label="Not sure which airline fits your route? Ask an expert"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+          />
+        </div>
+      </section>
+
+      {/* ═══════════ HEALTH CERTIFICATE TIMING ═══════════ */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">Health Certificate Timing</h2>
+          <p className="text-[#5C5C5C] mb-8">
+            The International Health Certificate is the last document you obtain before travel. Get the timing wrong, and it expires before your pet arrives.
+          </p>
+
+          <div className="bg-[#FAFBF7] rounded-2xl p-6 mb-8 border border-[#1A5F4A]/10">
+            <ul className="text-[#5C5C5C] space-y-2">
+              <li><strong>Valid for 10 days</strong> from the date of issuance to the date of arrival in the UAE</li>
+              <li>Must be issued by a <strong>government-accredited or official veterinarian</strong></li>
+              <li>Must include antiparasitic treatment records</li>
+              <li>Must show the same microchip number as all other documents</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-sm p-6 mb-8">
+            <h3 className="font-bold text-[#1A1A1A] mb-4">When to Schedule the Health Certificate</h3>
+            <ul className="text-[#5C5C5C] space-y-2">
+              <li><strong>Book the vet appointment 2–3 days before your pet&apos;s flight</strong></li>
+              <li>The certificate must be issued within 10 days of arrival, so work backwards from your arrival date</li>
+              <li>If your flight is delayed and the certificate expires, you must obtain a new one</li>
+            </ul>
+            <div className="warning-box mt-4">
+              <p className="text-sm text-[#1A1A1A]">
+                Some countries require additional government endorsement (e.g., DEFRA in the UK, USDA in the USA, CFIA in Canada). This can add 2–5 days. Confirm your origin country&apos;s endorsement requirements with your vet.
+              </p>
+            </div>
+          </div>
+
+          <WhatsAppLink
+            text="Hi, I need help scheduling my vet appointments for my pet's relocation to Dubai."
+            label="Need help scheduling your vet appointments? We coordinate with our partner clinics"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+          />
+        </div>
+      </section>
+
+      {/* ═══════════ WHAT HAPPENS IF DOCUMENTS ARE WRONG ═══════════ */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">
+            What Happens If Your Documents Are Wrong
+          </h2>
+          <p className="text-[#5C5C5C] mb-8">
+            This is the section most pet owners skip — and the one that causes the most pain.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white rounded-2xl shadow-sm p-6 border-t-4 border-[#27AE60]">
+              <h3 className="font-bold text-[#27AE60] mb-3 flex items-center gap-2">
+                <CheckCircle className="w-5 h-5" />
+                No Quarantine (If Documents Are Correct)
+              </h3>
+              <p className="text-[#5C5C5C]">
+                If all your paperwork is complete, correct, and consistent, your pet <strong>does not need to enter quarantine</strong>. This is one of the UAE&apos;s biggest advantages as a pet relocation destination.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-sm p-6 border-t-4 border-[#E8A838]">
+              <h3 className="font-bold text-[#E8A838] mb-3 flex items-center gap-2">
+                <AlertTriangle className="w-5 h-5" />
+                Conditional Quarantine (If Documents Are Wrong)
+              </h3>
+              <p className="text-[#5C5C5C] mb-3">
+                Quarantine is imposed if your pet arrives from a high-risk country without a titer test, documentation is incomplete, or the pet shows clinical signs of illness.
+              </p>
+              <ul className="text-sm text-[#5C5C5C] space-y-1">
+                <li><strong>Location:</strong> Dubai Cargo Village or Abu Dhabi Cargo Terminal</li>
+                <li><strong>Cost:</strong> Entirely borne by the owner</li>
+                <li><strong>Duration:</strong> Until the issue is resolved (typically 30 days)</li>
+                <li>One reported case cost <strong>AED 8,500</strong> for a 30-day quarantine after a missing titer test</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-sm p-6 border-t-4 border-red-500">
+              <h3 className="font-bold text-red-700 mb-3 flex items-center gap-2">
+                <Ban className="w-5 h-5" />
+                Return or Euthanasia (Worst Cases)
+              </h3>
+              <p className="text-[#5C5C5C] mb-3">
+                In extreme cases, the animal may be <strong>returned to the origin country</strong> on the next available flight at the owner&apos;s expense. In the worst cases, <strong>euthanasia</strong> may be ordered if the animal poses a rabies risk and cannot be returned.
+              </p>
+              <div className="warning-box">
+                <p className="text-sm text-[#1A1A1A]">
+                  These are not theoretical risks. They happen when pet owners assume &quot;it will be fine&quot; or rely on outdated information. We check every document three times because we&apos;ve seen what happens when one date is wrong.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-sm p-6">
+            <h3 className="font-bold text-[#1A1A1A] mb-4">The Most Common Document Errors</h3>
+            <ol className="text-[#5C5C5C] space-y-2 list-decimal list-inside">
+              <li><strong>Microchip before vaccination</strong> — Vaccination given before microchip = invalid</li>
+              <li><strong>Titer test timing</strong> — Blood drawn before 21 days post-vaccination = invalid</li>
+              <li><strong>Permit validity</strong> — Permit expired before travel = entry denied</li>
+              <li><strong>Health certificate expiry</strong> — Certificate older than 10 days on arrival = quarantine risk</li>
+              <li><strong>Mismatched microchip numbers</strong> — Different numbers on different documents = automatic rejection</li>
+            </ol>
+          </div>
+
+          <div className="mt-8">
+            <WhatsAppLink
+              text="Hi, I want to make sure my pet's documents are correct before traveling to Dubai. Can you help?"
+              label="Get help with your documents — Send us what you have. We'll catch the errors before they catch you."
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ FAQ ═══════════ */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-8">Frequently Asked Questions</h2>
+          <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8">
+            <FAQItem
+              question="Do dogs need to be quarantined in Dubai?"
+              answer="No. If all documentation is complete and correct — including the MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate — pets do not require mandatory quarantine in Dubai. However, incomplete documentation can result in conditional quarantine at the owner's expense."
+            />
+            <FAQItem
+              question="What is the MOCCAE import permit for pets?"
+              answer="The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It costs approximately AED 200 per animal and is valid for 30–90 days depending on the origin country. You must apply online via the MOCCAE portal or app before your pet travels."
+            />
+            <FAQItem
+              question="Is a rabies titer test required for Dubai?"
+              answer="A rabies titer test is only required for pets coming from high-risk rabies countries. It is not required for pets from low-risk countries including the UK, EU, USA, Canada, Australia, and New Zealand. However, pets from Bahrain and Qatar are a special exception — they do require a titer test despite being classified as low-risk."
+            />
+            <FAQItem
+              question="What documents are needed to bring a cat to the UAE?"
+              answer="To bring a cat to the UAE, you need: (1) MOCCAE import permit, (2) ISO 11784/11785 microchip certificate, (3) rabies vaccination certificate (≥21 days old), (4) FVRCP vaccination records, (5) international health certificate (within 10 days of travel), (6) antiparasitic treatment record, and (7) copy of owner's passport and UAE visa."
+            />
+            <FAQItem
+              question="How long does pet relocation to Dubai take?"
+              answer="From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a rabies titer test, the minimum timeline is 4 months (including the 90-day waiting period after the titer test). We recommend starting the process at least 8 weeks before your planned move."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ FINAL CTA ═══════════ */}
+      <section className="py-16 lg:py-24 bg-[#1A5F4A]">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+            Ready to bring your pet home to Dubai?
+          </h2>
+          <p className="text-white/80 max-w-2xl mx-auto mb-8">
+            Every day, we help pet owners check their documents, time their vet appointments, and submit their MOCCAE permits. One WhatsApp message is all it takes to get clarity.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={`${waBase}Hi%2C%20I%20need%20help%20understanding%20the%20import%20requirements%20for%20my%20%5Bdog%2Fcat%5D%20from%20%5Bcountry%5D%20to%20Dubai.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+            >
+              <MessageCircle className="w-5 h-5" />
+              📱 Get help with your documents
+            </a>
+            <a
+              href={`${waBase}Hi%2C%20I%20want%20to%20check%20if%20my%20pet%20is%20eligible%20for%20import%20to%20Dubai.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-xl font-semibold hover:bg-white/20 transition-colors"
+            >
+              ✅ Check my pet&apos;s eligibility
+            </a>
+          </div>
+          <p className="text-white/60 text-sm mt-6">
+            Pre-filled WhatsApp message: &quot;Hi, I need help understanding the import requirements for my [dog/cat] from [country] to Dubai.&quot;
+          </p>
+        </div>
+      </section>
+
+      {/* ═══════════ FOOTER NOTE ═══════════ */}
+      <section className="py-8 bg-[#FAFBF7]">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm text-[#8A8A8A]">
+            PetClear makes your pet&apos;s journey clear, calm, and certain. MOCCAE-licensed. IPATA-certified. Human communication on WhatsApp at every step.
+          </p>
+        </div>
+      </section>
+    </div>
+  )
+}

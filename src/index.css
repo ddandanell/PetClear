@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --color-primary: #1A5F4A;
+  --color-primary-light: #2D8B6F;
+  --color-primary-dark: #0F3D2E;
+  --color-accent: #E8A838;
+  --color-accent-light: #F5D79A;
+  --color-bg: #FAFBF7;
+  --color-surface: #FFFFFF;
+  --color-surface-warm: #F5F0E8;
+  --color-text: #1A1A1A;
+  --color-text-secondary: #5C5C5C;
+  --color-text-muted: #8A8A8A;
+  --color-whatsapp: #25D366;
+  --color-error: #C0392B;
+  --color-success: #27AE60;
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1A1A1A;
+  background: #FAFBF7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Table styles */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.data-table th {
+  background: #1A5F4A;
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+.data-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+}
+.data-table tr:nth-child(even) {
+  background: #f9f9f7;
+}
+.data-table tr:hover {
+  background: #f5f0e8;
+}
+
+/* Warning box */
+.warning-box {
+  border-left: 4px solid #E8A838;
+  background: #FEF9E7;
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* FAQ accordion */
+.faq-item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 16px 0;
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+.faq-answer {
+  padding-top: 12px;
+  color: #5C5C5C;
+  line-height: 1.6;
+}
+
+/* Image loading */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Focus styles */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #1A5F4A;
+  outline-offset: 2px;
+}
+
+/* WhatsApp button pulse */
+@keyframes pulse-whatsapp {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+}
+.whatsapp-pulse {
+  animation: pulse-whatsapp 2s infinite;
+}
