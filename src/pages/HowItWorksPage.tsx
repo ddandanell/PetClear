@@ -273,7 +273,7 @@ export default function HowItWorksPage() {
   ]
 
   return (
-    <div className="bg-[#FAFBF7]">
+    <div className="bg-[#FDFBF8]">
       {/* ── Schemas ── */}
       <script
         type="application/ld+json"
@@ -285,14 +285,14 @@ export default function HowItWorksPage() {
       />
 
       {/* ═══════════ HERO ═══════════ */}
-      <section className="relative overflow-hidden bg-[#1A5F4A]">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-[#1B2B4D]">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 text-[#E8A838] font-semibold text-sm mb-4">
+            <div className="flex items-center gap-2 text-[#5A8F6E] font-semibold text-sm mb-4">
               <Sparkles className="w-4 h-4" />
               <span>Our 7-Step Process</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-white leading-[1.12] tracking-tight mb-6">
               How Pet Relocation Works in Dubai: A Clear, Step-by-Step Guide
             </h1>
             <p className="text-lg text-white/90 mb-6">
@@ -305,7 +305,7 @@ export default function HowItWorksPage() {
               href={`${waBase}Hi%2C%20I%20want%20to%20understand%20how%20the%20relocation%20process%20works%20for%20my%20%5Bdog%2Fcat%5D%20from%20%5Bcountry%5D%20to%20Dubai.%20Can%20you%20walk%20me%20through%20it%3F`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
               Get a free consultation on WhatsApp
@@ -315,22 +315,22 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ═══════════ WHAT WE ACTUALLY DO ═══════════ */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">
+      <section className="section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
             What We Actually Do (And Why It&apos;s Not &quot;Middlemanning&quot;)
           </h2>
-          <p className="text-[#5C5C5C] mb-8">
+          <p className="text-[#5A5A5A] mb-8">
             Think of us like a wedding planner. We don&apos;t bake the cake. We don&apos;t play the music. We don&apos;t make the flowers. But we taste the cake, check the sound system, and make sure the bouquet arrives on time. If the florist is late, we fix it — and you blame us, not them. That&apos;s the value.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <h3 className="font-bold text-[#1A5F4A] mb-4 flex items-center gap-2">
+            <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <h3 className="font-bold text-[#5A8F6E] mb-4 flex items-center gap-2">
                 <CheckCircle className="w-5 h-5" />
                 We handle:
               </h3>
-              <ul className="text-[#5C5C5C] space-y-2 text-sm">
+              <ul className="text-[#5A5A5A] space-y-2 text-sm">
                 <li>Your single point of contact (one WhatsApp thread, one human, one timeline)</li>
                 <li>Your MOCCAE permit application and follow-up</li>
                 <li>Your flight booking with the airline&apos;s cargo department (not the passenger desk)</li>
@@ -343,12 +343,12 @@ export default function HowItWorksPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <h3 className="font-bold text-[#E8A838] mb-4 flex items-center gap-2">
+            <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <h3 className="font-bold text-[#5A8F6E] mb-4 flex items-center gap-2">
                 <Handshake className="w-5 h-5" />
                 Our partners handle:
               </h3>
-              <ul className="text-[#5C5C5C] space-y-2 text-sm">
+              <ul className="text-[#5A5A5A] space-y-2 text-sm">
                 <li>The actual veterinary examination and health certificate</li>
                 <li>The physical cargo handling at the airport terminal</li>
                 <li>The airline&apos;s flight operations and cargo hold</li>
@@ -358,62 +358,62 @@ export default function HowItWorksPage() {
             </div>
           </div>
 
-          <p className="text-[#5C5C5C] mb-8">
+          <p className="text-[#5A5A5A] mb-8">
             We don&apos;t own an airline. We don&apos;t run a veterinary clinic. We don&apos;t employ cargo handlers. But we know exactly which ones to trust, and we manage every interaction so you don&apos;t have to. If you went direct to each provider, you&apos;d spend 20+ hours coordinating, you&apos;d have no backup if one fails, and if something went wrong, you&apos;d be chasing five different phone numbers. With us, you send one WhatsApp. We handle the rest.
           </p>
 
           <WhatsAppLink
             text="Hi, I want to understand how the relocation process works for my [dog/cat] from [country] to Dubai. Can you walk me through it?"
             label="Ask us anything on WhatsApp"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
         </div>
       </section>
 
       {/* ═══════════ 7-STEP PROCESS ═══════════ */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">
+      <section className="section-padding bg-white">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
             Your Pet&apos;s Journey: 7 Steps From Consultation to Reunion
           </h2>
-          <p className="text-[#5C5C5C] mb-10">
+          <p className="text-[#5A5A5A] mb-10">
             Below is the exact process we follow for every relocation. If you book with us, you&apos;ll receive a personalized timeline with dates, deadlines, and your dedicated contact at each step.
           </p>
 
           <div className="relative">
             {/* vertical line */}
-            <div className="absolute left-[19px] top-0 bottom-0 w-0.5 bg-[#1A5F4A]/20 hidden sm:block" />
+            <div className="absolute left-[19px] top-0 bottom-0 w-0.5 bg-[#1B2B4D]/20 hidden sm:block" />
 
             <div className="space-y-10">
               {steps.map((step) => (
                 <div key={step.num} id={step.id} className="relative sm:pl-14">
                   {/* timeline dot */}
-                  <div className="hidden sm:flex absolute left-0 top-0 w-10 h-10 rounded-full bg-[#1A5F4A] text-white items-center justify-center font-bold text-sm shadow-md">
+                  <div className="hidden sm:flex absolute left-0 top-0 w-10 h-10 rounded-full bg-[#1B2B4D] text-white items-center justify-center font-bold text-sm shadow-md">
                     {step.num}
                   </div>
-                  <div className="bg-[#FAFBF7] rounded-2xl p-6 sm:p-8 border border-[#1A5F4A]/10">
+                  <div className="bg-[#FDFBF8] rounded-[20px] p-6 sm:p-8 border border-[#1B2B4D]/10">
                     <div className="flex items-center gap-3 mb-3">
-                      <div className="sm:hidden w-8 h-8 rounded-full bg-[#1A5F4A] text-white flex items-center justify-center font-bold text-xs">
+                      <div className="sm:hidden w-8 h-8 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center font-bold text-xs">
                         {step.num}
                       </div>
-                      <div className="w-9 h-9 rounded-lg bg-[#1A5F4A]/10 flex items-center justify-center text-[#1A5F4A]">
+                      <div className="w-9 h-9 rounded-lg bg-[#1B2B4D]/10 flex items-center justify-center text-[#5A8F6E]">
                         {step.icon}
                       </div>
                       <div>
-                        <h3 className="font-bold text-[#1A1A1A] text-lg">{step.title}</h3>
-                        <span className="text-xs font-semibold text-[#1A5F4A] uppercase tracking-wide">{step.duration}</span>
+                        <h3 className="font-bold text-[#2A2A2A] text-lg">{step.title}</h3>
+                        <span className="text-xs font-semibold text-[#5A8F6E] uppercase tracking-wide">{step.duration}</span>
                       </div>
                     </div>
-                    <p className="text-[#5C5C5C] leading-relaxed mb-4">{step.body}</p>
+                    <p className="text-[#5A5A5A] leading-relaxed mb-4">{step.body}</p>
 
-                    <div className="grid sm:grid-cols-2 gap-4 bg-white rounded-xl p-4">
+                    <div className="grid sm:grid-cols-2 gap-4 bg-white rounded-2xl p-4">
                       <div>
-                        <p className="text-xs font-semibold text-[#E8A838] uppercase tracking-wide mb-1">You do</p>
-                        <p className="text-sm text-[#1A1A1A]">{step.youDo}</p>
+                        <p className="text-xs font-semibold text-[#5A8F6E] uppercase tracking-wide mb-1">You do</p>
+                        <p className="text-sm text-[#2A2A2A]">{step.youDo}</p>
                       </div>
                       <div>
-                        <p className="text-xs font-semibold text-[#1A5F4A] uppercase tracking-wide mb-1">We do</p>
-                        <p className="text-sm text-[#1A1A1A]">{step.weDo}</p>
+                        <p className="text-xs font-semibold text-[#5A8F6E] uppercase tracking-wide mb-1">We do</p>
+                        <p className="text-sm text-[#2A2A2A]">{step.weDo}</p>
                       </div>
                     </div>
                     <p className="text-xs text-[#8A8A8A] mt-3 flex items-center gap-1">
@@ -430,23 +430,23 @@ export default function HowItWorksPage() {
             <WhatsAppLink
               text="Hi, I want to understand how the relocation process works for my [dog/cat] from [country] to Dubai. Can you walk me through it?"
               label="Start your pet's journey — WhatsApp us"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             />
           </div>
         </div>
       </section>
 
       {/* ═══════════ WHAT WE DO VS PARTNERS ═══════════ */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">
+      <section className="section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
             Radical Transparency: What PetClear Handles vs. What Our Partners Handle
           </h2>
-          <p className="text-[#5C5C5C] mb-8">
+          <p className="text-[#5A5A5A] mb-8">
             We don&apos;t hide our partner model. We&apos;re proud of it. Here&apos;s the exact breakdown of who does what.
           </p>
 
-          <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-100 mb-8">
+          <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100 mb-8">
             <table className="data-table">
               <thead>
                 <tr>
@@ -458,10 +458,10 @@ export default function HowItWorksPage() {
               <tbody>
                 {comparisonRows.map((row, i) => (
                   <tr key={i}>
-                    <td className="font-medium text-[#1A1A1A]">{row.task}</td>
+                    <td className="font-medium text-[#2A2A2A]">{row.task}</td>
                     <td>
                       {row.us ? (
-                        <span className="inline-flex items-center gap-1 text-[#27AE60] font-semibold">
+                        <span className="inline-flex items-center gap-1 text-[#5A8F6E] font-semibold">
                           <CheckCircle className="w-4 h-4" /> Yes
                         </span>
                       ) : (
@@ -472,8 +472,8 @@ export default function HowItWorksPage() {
                     </td>
                     <td>
                       {row.them ? (
-                        <span className="inline-flex items-center gap-1 text-[#27AE60] font-semibold">
-                          <CheckCircle className="w-4 h-4" /> Yes {row.themLabel && <span className="text-[#5C5C5C] font-normal">({row.themLabel})</span>}
+                        <span className="inline-flex items-center gap-1 text-[#5A8F6E] font-semibold">
+                          <CheckCircle className="w-4 h-4" /> Yes {row.themLabel && <span className="text-[#5A5A5A] font-normal">({row.themLabel})</span>}
                         </span>
                       ) : (
                         <span className="inline-flex items-center gap-1 text-red-500 font-semibold">
@@ -487,12 +487,12 @@ export default function HowItWorksPage() {
             </table>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-sm p-6">
-            <h3 className="font-bold text-[#1A1A1A] mb-3">What this means for you:</h3>
-            <p className="text-[#5C5C5C] mb-4">
+          <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <h3 className="font-bold text-[#2A2A2A] mb-3">What this means for you:</h3>
+            <p className="text-[#5A5A5A] mb-4">
               You have one contact. One timeline. One invoice. But behind that one contact is a team of specialists who each do their part better than a generalist could.
             </p>
-            <p className="text-[#5C5C5C]">
+            <p className="text-[#5A5A5A]">
               If our vet partner is at capacity, we have alternatives. If our cargo partner&apos;s flight is cancelled, we rebook through another. If our transport partner is delayed, we dispatch a backup. You don&apos;t manage any of this. We do.
             </p>
           </div>
@@ -500,57 +500,57 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ═══════════ WHO OUR PARTNERS ARE ═══════════ */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">
+      <section className="section-padding bg-white">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
             Meet the Specialists Behind Your Pet&apos;s Journey
           </h2>
-          <p className="text-[#5C5C5C] mb-8">
+          <p className="text-[#5A5A5A] mb-8">
             We work with the same partners repeatedly because consistency matters. These are not random contractors. They are vetted, monitored, and accountable to us.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
-              <h3 className="font-bold text-[#1A1A1A] mb-3 flex items-center gap-2">
-                <Stethoscope className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+              <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
+                <Stethoscope className="w-5 h-5 text-[#5A8F6E]" />
                 Veterinary Clinics
               </h3>
-              <ul className="text-[#5C5C5C] space-y-2 text-sm">
+              <ul className="text-[#5A5A5A] space-y-2 text-sm">
                 <li><strong>German Veterinary Clinic</strong> (Dubai) — ISO microchipping, rabies vaccines, health certificates, export documentation</li>
                 <li><strong>British Veterinary Hospital</strong> (Dubai) — Specialist in brachycephalic breeds, pre-travel health checks</li>
               </ul>
             </div>
 
-            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
-              <h3 className="font-bold text-[#1A1A1A] mb-3 flex items-center gap-2">
-                <Plane className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+              <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
+                <Plane className="w-5 h-5 text-[#5A8F6E]" />
                 IATA-Certified Cargo Agents
               </h3>
-              <ul className="text-[#5C5C5C] space-y-2 text-sm">
+              <ul className="text-[#5A5A5A] space-y-2 text-sm">
                 <li>Licensed cargo agents based at DXB and DWC terminals</li>
                 <li>Direct relationships with Emirates SkyCargo, Etihad Cargo, and flydubai Cargo</li>
                 <li>Specialists in live animal handling and IATA LAR compliance</li>
               </ul>
             </div>
 
-            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
-              <h3 className="font-bold text-[#1A1A1A] mb-3 flex items-center gap-2">
-                <Plane className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+              <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
+                <Plane className="w-5 h-5 text-[#5A8F6E]" />
                 Airlines
               </h3>
-              <ul className="text-[#5C5C5C] space-y-2 text-sm">
+              <ul className="text-[#5A5A5A] space-y-2 text-sm">
                 <li><strong>Emirates SkyCargo</strong> — Primary partner for most international routes</li>
                 <li><strong>Etihad Cargo</strong> — Secondary partner for specific routes and capacity backup</li>
                 <li><strong>flydubai Cargo</strong> — Regional and domestic routes</li>
               </ul>
             </div>
 
-            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
-              <h3 className="font-bold text-[#1A1A1A] mb-3 flex items-center gap-2">
-                <Truck className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+              <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
+                <Truck className="w-5 h-5 text-[#5A8F6E]" />
                 Customs Brokers & Ground Transport
               </h3>
-              <ul className="text-[#5C5C5C] space-y-2 text-sm">
+              <ul className="text-[#5A5A5A] space-y-2 text-sm">
                 <li>Licensed UAE customs brokers with MOCCAE clearance expertise</li>
                 <li>Air-conditioned, pet-specific ground transport vehicles</li>
                 <li>Drivers trained in pet handling and crate safety</li>
@@ -558,17 +558,17 @@ export default function HowItWorksPage() {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-sm p-6">
-            <h3 className="font-bold text-[#1A1A1A] mb-4">How We Choose Partners</h3>
-            <p className="text-[#5C5C5C] mb-4">Every partner must pass our vetting criteria:</p>
-            <ol className="text-[#5C5C5C] space-y-2 list-decimal list-inside">
+          <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <h3 className="font-bold text-[#2A2A2A] mb-4">How We Choose Partners</h3>
+            <p className="text-[#5A5A5A] mb-4">Every partner must pass our vetting criteria:</p>
+            <ol className="text-[#5A5A5A] space-y-2 list-decimal list-inside">
               <li><strong>License verification</strong> — Valid MOCCAE, DED, or equivalent trade license</li>
               <li><strong>Certification check</strong> — IPATA, IATA LAR, or relevant professional certification</li>
               <li><strong>Reference audit</strong> — Minimum 3 verified references from other pet relocation companies</li>
               <li><strong>Trial period</strong> — We observe their work on 3+ relocations before adding them to our roster</li>
               <li><strong>Ongoing monitoring</strong> — Quarterly review of their performance, response times, and customer feedback</li>
             </ol>
-            <p className="text-[#5C5C5C] mt-4">
+            <p className="text-[#5A5A5A] mt-4">
               If a partner drops below our standards, we remove them. No exceptions.
             </p>
           </div>
@@ -576,81 +576,81 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ═══════════ WHAT YOU GET AS A CLIENT ═══════════ */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-8">What You Get When You Work With PetClear</h2>
+      <section className="section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8">What You Get When You Work With PetClear</h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 rounded-xl bg-[#1A5F4A]/10 flex items-center justify-center mb-4">
-                <MessageCircle className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+                <MessageCircle className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] mb-2">One WhatsApp contact</h3>
-              <p className="text-sm text-[#5C5C5C]">No email ping-pong. No chasing five phone numbers. One human who knows your pet&apos;s name, your route, your timeline, and your concerns.</p>
+              <h3 className="font-bold text-[#2A2A2A] mb-2">One WhatsApp contact</h3>
+              <p className="text-sm text-[#5A5A5A]">No email ping-pong. No chasing five phone numbers. One human who knows your pet&apos;s name, your route, your timeline, and your concerns.</p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 rounded-xl bg-[#1A5F4A]/10 flex items-center justify-center mb-4">
-                <Phone className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+                <Phone className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] mb-2">Real-time updates</h3>
-              <p className="text-sm text-[#5C5C5C]">Photo at check-in. Photo at boarding. Confirmation of departure. Confirmation of landing. If the flight is delayed, we tell you before you ask.</p>
+              <h3 className="font-bold text-[#2A2A2A] mb-2">Real-time updates</h3>
+              <p className="text-sm text-[#5A5A5A]">Photo at check-in. Photo at boarding. Confirmation of departure. Confirmation of landing. If the flight is delayed, we tell you before you ask.</p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 rounded-xl bg-[#1A5F4A]/10 flex items-center justify-center mb-4">
-                <FileText className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+                <FileText className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] mb-2">Document help</h3>
-              <p className="text-sm text-[#5C5C5C]">We review every document three times. We know the current MOCCAE forms. We submit permits ourselves. If there&apos;s an issue, we fix it before it becomes a problem.</p>
+              <h3 className="font-bold text-[#2A2A2A] mb-2">Document help</h3>
+              <p className="text-sm text-[#5A5A5A]">We review every document three times. We know the current MOCCAE forms. We submit permits ourselves. If there&apos;s an issue, we fix it before it becomes a problem.</p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 rounded-xl bg-[#1A5F4A]/10 flex items-center justify-center mb-4">
-                <Shield className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+                <Shield className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] mb-2">Price protection</h3>
-              <p className="text-sm text-[#5C5C5C]">The quote you receive is itemized and fixed. Government fees don&apos;t change. Our service fee doesn&apos;t change. If the airline adds a fuel surcharge, we absorb it. If we miss something in our quote, we absorb it.</p>
+              <h3 className="font-bold text-[#2A2A2A] mb-2">Price protection</h3>
+              <p className="text-sm text-[#5A5A5A]">The quote you receive is itemized and fixed. Government fees don&apos;t change. Our service fee doesn&apos;t change. If the airline adds a fuel surcharge, we absorb it. If we miss something in our quote, we absorb it.</p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 rounded-xl bg-[#1A5F4A]/10 flex items-center justify-center mb-4">
-                <Clock className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+                <Clock className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] mb-2">24/7 availability</h3>
-              <p className="text-sm text-[#5C5C5C]">WhatsApp us anytime. We reply within the hour during business hours. For emergencies, we have an on-call line.</p>
+              <h3 className="font-bold text-[#2A2A2A] mb-2">24/7 availability</h3>
+              <p className="text-sm text-[#5A5A5A]">WhatsApp us anytime. We reply within the hour during business hours. For emergencies, we have an on-call line.</p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 rounded-xl bg-[#1A5F4A]/10 flex items-center justify-center mb-4">
-                <Heart className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+                <Heart className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] mb-2">Problem-solving</h3>
-              <p className="text-sm text-[#5C5C5C]">If your flight is cancelled, we rebook. If your vet is delayed, we reschedule. If customs asks for an extra document, we handle it. You never handle a crisis alone.</p>
+              <h3 className="font-bold text-[#2A2A2A] mb-2">Problem-solving</h3>
+              <p className="text-sm text-[#5A5A5A]">If your flight is cancelled, we rebook. If your vet is delayed, we reschedule. If customs asks for an extra document, we handle it. You never handle a crisis alone.</p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow sm:col-span-2 lg:col-span-3">
-              <div className="w-10 h-10 rounded-xl bg-[#1A5F4A]/10 flex items-center justify-center mb-4">
-                <Home className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 sm:col-span-2 lg:col-span-3">
+              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+                <Home className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] mb-2">Post-arrival support</h3>
-              <p className="text-sm text-[#5C5C5C]">We help with Dubai Municipality registration, local vet recommendations, and settling-in advice. Your relationship with us doesn&apos;t end at the airport.</p>
+              <h3 className="font-bold text-[#2A2A2A] mb-2">Post-arrival support</h3>
+              <p className="text-sm text-[#5A5A5A]">We help with Dubai Municipality registration, local vet recommendations, and settling-in advice. Your relationship with us doesn&apos;t end at the airport.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* ═══════════ PRICING TRANSPARENCY ═══════════ */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">
+      <section className="section-padding bg-white">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
             How We Make Money (And Why It Costs What It Costs)
           </h2>
-          <p className="text-[#5C5C5C] mb-8">
+          <p className="text-[#5A5A5A] mb-8">
             We make money in two ways: a partner commission and a concierge fee. We don&apos;t mark up government fees. We don&apos;t add hidden charges. We show you exactly where every dirham goes.
           </p>
 
-          <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-100 mb-8">
+          <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100 mb-8">
             <table className="data-table">
               <thead>
                 <tr>
@@ -668,16 +668,16 @@ export default function HowItWorksPage() {
                 <tr><td>Air freight (cargo)</td><td>4,500</td><td>You</td><td>Airline fee, no markup</td></tr>
                 <tr><td>Customs clearance</td><td>400</td><td>You</td><td>Broker fee</td></tr>
                 <tr><td>Ground transport (pickup + delivery)</td><td>300</td><td>You</td><td>Transport partner fee</td></tr>
-                <tr className="bg-[#1A5F4A]/5"><td className="font-bold text-[#1A1A1A]">PetClear service fee</td><td className="font-bold text-[#1A1A1A]">2,500</td><td className="font-bold text-[#1A1A1A]">You</td><td className="font-bold text-[#1A1A1A]">Our coordination + support fee</td></tr>
-                <tr className="bg-[#1A5F4A]/10"><td className="font-bold text-[#1A1A1A]">Total estimated cost</td><td className="font-bold text-[#1A1A1A]">9,450</td><td></td><td className="font-bold text-[#1A1A1A]">Varies by route and pet size</td></tr>
+                <tr className="bg-[#1B2B4D]/5"><td className="font-bold text-[#2A2A2A]">PetClear service fee</td><td className="font-bold text-[#2A2A2A]">2,500</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">Our coordination + support fee</td></tr>
+                <tr className="bg-[#1B2B4D]/10"><td className="font-bold text-[#2A2A2A]">Total estimated cost</td><td className="font-bold text-[#2A2A2A]">9,450</td><td></td><td className="font-bold text-[#2A2A2A]">Varies by route and pet size</td></tr>
               </tbody>
             </table>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
-              <h3 className="font-bold text-[#1A5F4A] mb-4">What our service fee covers:</h3>
-              <ul className="text-sm text-[#5C5C5C] space-y-1">
+            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+              <h3 className="font-bold text-[#5A8F6E] mb-4">What our service fee covers:</h3>
+              <ul className="text-sm text-[#5A5A5A] space-y-1">
                 <li>Your dedicated relocation coordinator</li>
                 <li>Document review and compliance checking</li>
                 <li>MOCCAE permit application and follow-up</li>
@@ -691,24 +691,24 @@ export default function HowItWorksPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FAFBF7] rounded-2xl p-6 border border-[#1A5F4A]/10">
+            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
               <h3 className="font-bold text-red-700 mb-4">What our service fee does NOT cover:</h3>
-              <ul className="text-sm text-[#5C5C5C] space-y-1">
+              <ul className="text-sm text-[#5A5A5A] space-y-1">
                 <li>Government fees (MOCCAE, customs, municipality)</li>
                 <li>Airline freight charges</li>
                 <li>Veterinary fees</li>
                 <li>Crate costs</li>
                 <li>Ground transport fees</li>
               </ul>
-              <p className="text-sm text-[#5C5C5C] mt-3">
+              <p className="text-sm text-[#5A5A5A] mt-3">
                 These are passed through at cost. We add nothing.
               </p>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-sm p-6 mb-8">
-            <h3 className="font-bold text-[#1A1A1A] mb-2">Why we don&apos;t mark up government fees:</h3>
-            <p className="text-[#5C5C5C]">
+          <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 mb-8">
+            <h3 className="font-bold text-[#2A2A2A] mb-2">Why we don&apos;t mark up government fees:</h3>
+            <p className="text-[#5A5A5A]">
               Because that would be dishonest. Government fees are fixed. You can verify them on the MOCCAE website. Adding a margin to a fixed fee is a hidden charge, and we don&apos;t do hidden charges.
             </p>
           </div>
@@ -716,18 +716,18 @@ export default function HowItWorksPage() {
           <WhatsAppLink
             text="Hi, I want to get a free consultation for pet relocation to Dubai."
             label="Get a free consultation"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
         </div>
       </section>
 
       {/* ═══════════ FAQ ═══════════ */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-8">
+      <section className="section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8">
             Frequently Asked Questions About Pet Relocation in Dubai
           </h2>
-          <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8">
+          <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 sm:p-8">
             <FAQItem
               question="Are you a middleman?"
               answer="No. A middleman takes a cut and adds no value. We are a concierge and quality controller. Think of it this way: if you planned your own wedding, you'd still pay the caterer, the band, and the venue. But you'd spend 100 hours coordinating them, and if the flowers were late, you'd be the one making phone calls while wearing a tuxedo. A wedding planner charges a fee, but they save you time, prevent problems, and handle crises. That's what we do for your pet's move. Specifically: we handle your permit, book your flight, provide your crate, coordinate your vet, arrange your transport, and update you every step of the way. If anything goes wrong, we fix it. You pay one fee for one point of contact and a network of experts. That's not a markup — that's a service."
@@ -753,8 +753,8 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ═══════════ FINAL CTA ═══════════ */}
-      <section className="py-16 lg:py-24 bg-[#1A5F4A]">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative overflow-hidden bg-[#1B2B4D] section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Ready to See How Simple Pet Relocation Can Be?
           </h2>
@@ -768,7 +768,7 @@ export default function HowItWorksPage() {
             href={`${waBase}Hi%2C%20I%20want%20to%20understand%20how%20the%20relocation%20process%20works%20for%20my%20%5Bdog%2Fcat%5D%20from%20%5Bcountry%5D%20to%20Dubai.%20Can%20you%20walk%20me%20through%20it%3F`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ebe57] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           >
             <MessageCircle className="w-5 h-5" />
             Start your pet&apos;s journey

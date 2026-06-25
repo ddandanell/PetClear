@@ -47,7 +47,7 @@ const WhatsAppCta = ({
     href={whatsappUrl(message)}
     target="_blank"
     rel="noopener noreferrer"
-    className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-xl font-semibold text-sm hover:bg-[#1ebe57] transition-colors ${fullWidth ? 'w-full' : ''} ${className}`}
+    className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1ebe57] transition-colors ${fullWidth ? 'w-full' : ''} ${className}`}
   >
     <MessageCircle className="w-4 h-4" />
     {text}
@@ -55,13 +55,13 @@ const WhatsAppCta = ({
 )
 
 const Section = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
-  <section className={`py-16 lg:py-24 ${className}`}>
-    <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
+  <section className={`section-padding ${className}`}>
+    <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">{children}</div>
   </section>
 )
 
 const Card = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
-  <div className={`bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 lg:p-8 ${className}`}>
+  <div className={`bg-white rounded-[20px] shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 p-6 lg:p-8 ${className}`}>
     {children}
   </div>
 )
@@ -73,7 +73,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span>{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#1A5F4A] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5C5C5C] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -195,14 +195,13 @@ export default function CostGuidePage() {
   return (
     <div>
       {/* ===== HERO ===== */}
-      <section className="relative bg-[#1A5F4A] text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <img src="/images/cost-hero.jpg" alt="" className="w-full h-full object-cover" />
-        </div>
-        <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <section className="relative overflow-hidden text-white">
+        <img src="/images/cost-hero.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+        <div className="relative max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+              <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold leading-[1.12] tracking-tight mb-6">
                 How Much Does It Cost to Bring a Dog or Cat to Dubai? 2026 Price Breakdown
               </h1>
               <p className="text-lg text-white/90 mb-4 leading-relaxed">
@@ -237,44 +236,44 @@ export default function CostGuidePage() {
 
       {/* ===== WHY COSTS VARY ===== */}
       <Section className="bg-white">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">Why Pet Relocation Costs Vary So Much</h2>
-        <h3 className="text-lg font-bold text-[#1A1A1A] mb-6">Four Factors That Determine Your Final Price</h3>
-        <p className="text-[#5C5C5C] mb-10">No two pet moves cost the same. Here's why.</p>
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">Why Pet Relocation Costs Vary So Much</h2>
+        <h3 className="text-lg font-bold text-[#2A2A2A] mb-6">Four Factors That Determine Your Final Price</h3>
+        <p className="text-[#5A5A5A] mb-10">No two pet moves cost the same. Here's why.</p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card>
-            <div className="w-10 h-10 rounded-xl bg-[#1A5F4A]/10 flex items-center justify-center mb-4">
-              <Scale className="w-5 h-5 text-[#1A5F4A]" />
+            <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+              <Scale className="w-5 h-5 text-[#5A8F6E]" />
             </div>
-            <h4 className="font-bold text-[#1A1A1A] mb-2">1. Your pet's size</h4>
-            <p className="text-sm text-[#5C5C5C] leading-relaxed">
+            <h4 className="font-bold text-[#2A2A2A] mb-2">1. Your pet's size</h4>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
               Cargo fees are based on the crate's <strong>volumetric weight</strong> — not how much your pet actually weighs. A 40kg Labrador in a large crate costs significantly more than a 5kg cat in a small one. The crate itself costs more too.
             </p>
           </Card>
           <Card>
-            <div className="w-10 h-10 rounded-xl bg-[#E8A838]/10 flex items-center justify-center mb-4">
-              <MapPin className="w-5 h-5 text-[#E8A838]" />
+            <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+              <MapPin className="w-5 h-5 text-[#5A8F6E]" />
             </div>
-            <h4 className="font-bold text-[#1A1A1A] mb-2">2. Your origin country</h4>
-            <p className="text-sm text-[#5C5C5C] leading-relaxed">
+            <h4 className="font-bold text-[#2A2A2A] mb-2">2. Your origin country</h4>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
               From the UK or EU? No rabies titer test needed. From India, Pakistan, or the Philippines? You'll need a titer test, a 90-day wait, and often more veterinary prep. That adds AED 1,500–2,500.
             </p>
           </Card>
           <Card>
-            <div className="w-10 h-10 rounded-xl bg-[#C0392B]/10 flex items-center justify-center mb-4">
+            <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
               <Sun className="w-5 h-5 text-[#C0392B]" />
             </div>
-            <h4 className="font-bold text-[#1A1A1A] mb-2">3. Your travel season</h4>
-            <p className="text-sm text-[#5C5C5C] leading-relaxed">
+            <h4 className="font-bold text-[#2A2A2A] mb-2">3. Your travel season</h4>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
               Summer is complicated. From June to September, many airlines restrict or ban pet cargo due to heat. Brachycephalic breeds face additional airline bans. Off-season rerouting, ground transport, or extended boarding can add AED 2,000–5,000.
             </p>
           </Card>
           <Card>
-            <div className="w-10 h-10 rounded-xl bg-[#27AE60]/10 flex items-center justify-center mb-4">
-              <FileCheck className="w-5 h-5 text-[#27AE60]" />
+            <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+              <FileCheck className="w-5 h-5 text-[#5A8F6E]" />
             </div>
-            <h4 className="font-bold text-[#1A1A1A] mb-2">4. Your pet's documentation status</h4>
-            <p className="text-sm text-[#5C5C5C] leading-relaxed">
+            <h4 className="font-bold text-[#2A2A2A] mb-2">4. Your pet's documentation status</h4>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
               Already microchipped and vaccinated? You'll save AED 300–600. Starting from scratch? Budget for the full veterinary timeline. Missing one document can trigger a quarantine that costs AED 8,500+.
             </p>
           </Card>
@@ -282,16 +281,16 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== COMPLETE COST BREAKDOWN ===== */}
-      <Section className="bg-[#FAFBF7]">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">The Complete Cost Breakdown — Every Dirham Explained</h2>
-        <p className="text-[#5C5C5C] max-w-3xl mb-10 leading-relaxed">
+      <Section className="bg-[#FDFBF8]">
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">The Complete Cost Breakdown — Every Dirham Explained</h2>
+        <p className="text-[#5A5A5A] max-w-3xl mb-10 leading-relaxed">
           Here's what you'll actually pay. These are real numbers based on our 2026 partner rates and government fee schedules. No estimates hidden behind "contact us for pricing."
         </p>
 
         {/* Government & Mandatory Fees */}
         <div className="mb-12">
-          <h3 className="text-lg font-bold text-[#1A1A1A] mb-4 flex items-center gap-2">
-            <Shield className="w-5 h-5 text-[#1A5F4A]" /> Government & Mandatory Fees
+          <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
+            <Shield className="w-5 h-5 text-[#5A8F6E]" /> Government & Mandatory Fees
           </h3>
           <div className="overflow-x-auto">
             <table className="data-table">
@@ -311,16 +310,16 @@ export default function CostGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-[#5C5C5C] mt-3 font-medium">Government total: AED 760–1,260</p>
-          <p className="text-sm text-[#5C5C5C] mt-2">
+          <p className="text-sm text-[#5A5A5A] mt-3 font-medium">Government total: AED 760–1,260</p>
+          <p className="text-sm text-[#5A5A5A] mt-2">
             These are fixed costs. Every relocation company pays the same government fees. If a quote seems suspiciously low, they're either cutting corners on permits or hiding these in a surcharge later.
           </p>
         </div>
 
         {/* Veterinary Costs */}
         <div className="mb-12">
-          <h3 className="text-lg font-bold text-[#1A1A1A] mb-4 flex items-center gap-2">
-            <PawPrint className="w-5 h-5 text-[#1A5F4A]" /> Veterinary Costs
+          <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
+            <PawPrint className="w-5 h-5 text-[#5A8F6E]" /> Veterinary Costs
           </h3>
           <div className="overflow-x-auto">
             <table className="data-table">
@@ -336,15 +335,15 @@ export default function CostGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-[#5C5C5C] mt-3 font-medium">
+          <p className="text-sm text-[#5A5A5A] mt-3 font-medium">
             Veterinary total: AED 1,350–3,650 (low-risk, fully documented pet) to AED 2,850–4,650 (high-risk, starting from scratch)
           </p>
         </div>
 
         {/* Travel Crate */}
         <div className="mb-12">
-          <h3 className="text-lg font-bold text-[#1A1A1A] mb-4 flex items-center gap-2">
-            <Package className="w-5 h-5 text-[#1A5F4A]" /> Travel Crate
+          <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
+            <Package className="w-5 h-5 text-[#5A8F6E]" /> Travel Crate
           </h3>
           <div className="overflow-x-auto">
             <table className="data-table">
@@ -359,11 +358,11 @@ export default function CostGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-[#5C5C5C] mt-3">
+          <p className="text-sm text-[#5A5A5A] mt-3">
             Crates must be <strong>IATA LAR-compliant</strong> — rigid, well-ventilated, with secure locking doors. We provide correctly sized, pre-labeled crates. Buying the wrong crate on Amazon is one of the most common (and expensive) mistakes we see.
           </p>
           <p className="mt-2 text-sm">
-            <Link to="/guides/iata-pet-crate-requirements" className="text-[#1A5F4A] font-medium hover:underline inline-flex items-center gap-1">
+            <Link to="/guides/iata-pet-crate-requirements" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
               IATA crate requirements and costs <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </p>
@@ -371,8 +370,8 @@ export default function CostGuidePage() {
 
         {/* Air Cargo / Flight Fees */}
         <div className="mb-12">
-          <h3 className="text-lg font-bold text-[#1A1A1A] mb-4 flex items-center gap-2">
-            <Plane className="w-5 h-5 text-[#1A5F4A]" /> Air Cargo / Flight Fees
+          <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-[#5A8F6E]" /> Air Cargo / Flight Fees
           </h3>
           <div className="overflow-x-auto">
             <table className="data-table">
@@ -387,17 +386,17 @@ export default function CostGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-[#5C5C5C] mt-3">
+          <p className="text-sm text-[#5A5A5A] mt-3">
             Cargo fees are charged by <strong>volumetric weight</strong> — a formula using crate length × width × height. A large dog in a big crate can easily hit 8,000+ AED in freight alone. This is why crate size matters so much.
           </p>
         </div>
 
         {/* PetClear Service Coordination Fee */}
         <div className="mb-12">
-          <h3 className="text-lg font-bold text-[#1A1A1A] mb-4 flex items-center gap-2">
-            <Users className="w-5 h-5 text-[#1A5F4A]" /> PetClear Service Coordination Fee
+          <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
+            <Users className="w-5 h-5 text-[#5A8F6E]" /> PetClear Service Coordination Fee
           </h3>
-          <p className="text-sm text-[#5C5C5C] mb-4">
+          <p className="text-sm text-[#5A5A5A] mb-4">
             This is what we charge to handle everything — permits, paperwork, flight booking, partner coordination, and WhatsApp updates at every step.
           </p>
           <div className="overflow-x-auto">
@@ -424,11 +423,11 @@ export default function CostGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-[#5C5C5C] mt-3">
+          <p className="text-sm text-[#5A5A5A] mt-3">
             <strong>What's different about us:</strong> We tell you exactly who our partners are — the vet clinics, the cargo handlers, the ground transport teams. We don't pretend we own an airline. We just know which ones to trust, and we manage every interaction so you don't have to chase five different phone numbers.
           </p>
           <p className="mt-2 text-sm">
-            <Link to="/services" className="text-[#1A5F4A] font-medium hover:underline inline-flex items-center gap-1">
+            <Link to="/services" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
               See our pet relocation packages <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </p>
@@ -436,7 +435,7 @@ export default function CostGuidePage() {
 
         {/* Total Estimated Cost Range */}
         <div className="mb-4">
-          <h3 className="text-lg font-bold text-[#1A1A1A] mb-4">Total Estimated Cost Range (All-In)</h3>
+          <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Total Estimated Cost Range (All-In)</h3>
           <div className="overflow-x-auto">
             <table className="data-table">
               <thead>
@@ -462,81 +461,81 @@ export default function CostGuidePage() {
 
       {/* ===== COST BY ROUTE ===== */}
       <Section className="bg-white">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-10">Cost by Route — What You'll Pay from Your Country</h2>
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-10">Cost by Route — What You'll Pay from Your Country</h2>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card>
-            <h3 className="text-lg font-bold text-[#1A1A1A] mb-3">UK to Dubai</h3>
-            <p className="text-sm text-[#5C5C5C] mb-4 leading-relaxed">The easiest route. No quarantine. No titer test. No 90-day wait.</p>
-            <ul className="text-sm text-[#5C5C5C] space-y-1 mb-4">
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">UK to Dubai</h3>
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">The easiest route. No quarantine. No titer test. No 90-day wait.</p>
+            <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
               <li><strong>Small cat:</strong> AED 8,000–11,000</li>
               <li><strong>Medium dog:</strong> AED 12,000–16,000</li>
               <li><strong>Large dog:</strong> AED 15,000–20,000</li>
               <li><strong>Timeline:</strong> 4–6 weeks from first microchip to reunion</li>
             </ul>
-            <p className="text-sm text-[#5C5C5C] leading-relaxed">
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
               The UK is a low-risk country, so your pet only needs the microchip, rabies vaccine (≥21 days old), health certificate, and MOCCAE permit. We handle the DEFRA export endorsement and Emirates SkyCargo booking from London Heathrow or Manchester.
             </p>
             <p className="mt-3 text-sm">
-              <Link to="/routes/uk-to-dubai" className="text-[#1A5F4A] font-medium hover:underline inline-flex items-center gap-1">
+              <Link to="/routes/uk-to-dubai" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
                 Read our full UK to Dubai guide <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </p>
           </Card>
 
           <Card>
-            <h3 className="text-lg font-bold text-[#1A1A1A] mb-3">USA to Dubai</h3>
-            <p className="text-sm text-[#5C5C5C] mb-4 leading-relaxed">Also low-risk. No titer test needed if the rabies vaccine is current.</p>
-            <ul className="text-sm text-[#5C5C5C] space-y-1 mb-4">
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">USA to Dubai</h3>
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">Also low-risk. No titer test needed if the rabies vaccine is current.</p>
+            <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
               <li><strong>Small cat:</strong> AED 10,000–14,000</li>
               <li><strong>Medium dog:</strong> AED 14,000–18,000</li>
               <li><strong>Large dog:</strong> AED 16,000–22,000</li>
               <li><strong>Timeline:</strong> 6–8 weeks</li>
             </ul>
-            <p className="text-sm text-[#5C5C5C] leading-relaxed">
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
               From the US, the main cost driver is distance. Cargo from New York, Los Angeles, or Chicago runs higher than from London. We also coordinate the USDA APHIS health certificate endorsement, which adds a step most owners don't know about.
             </p>
           </Card>
 
           <Card>
-            <h3 className="text-lg font-bold text-[#1A1A1A] mb-3">India to Dubai</h3>
-            <p className="text-sm text-[#5C5C5C] mb-4 leading-relaxed">High-risk country. Titer test required. 90-day wait mandatory.</p>
-            <ul className="text-sm text-[#5C5C5C] space-y-1 mb-4">
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">India to Dubai</h3>
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk country. Titer test required. 90-day wait mandatory.</p>
+            <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
               <li><strong>Small cat:</strong> AED 12,000–16,000</li>
               <li><strong>Medium dog:</strong> AED 16,000–20,000</li>
               <li><strong>Large dog:</strong> AED 18,000–25,000</li>
               <li><strong>Timeline:</strong> Minimum 4 months from scratch</li>
             </ul>
-            <p className="text-sm text-[#5C5C5C] leading-relaxed">
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
               The titer test (AED 500–1,200) and 90-day waiting period are non-negotiable. The blood sample must be processed at a WOAH/ISO 17025 accredited lab. We work with vets in Mumbai, Delhi, and Bangalore who understand the UAE export requirements. One wrong document and your pet gets quarantined at your expense.
             </p>
           </Card>
 
           <Card>
-            <h3 className="text-lg font-bold text-[#1A1A1A] mb-3">Australia to Dubai</h3>
-            <p className="text-sm text-[#5C5C5C] mb-4 leading-relaxed">Low-risk but long distance. High cargo costs.</p>
-            <ul className="text-sm text-[#5C5C5C] space-y-1 mb-4">
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">Australia to Dubai</h3>
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">Low-risk but long distance. High cargo costs.</p>
+            <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
               <li><strong>Small cat:</strong> AED 12,000–16,000</li>
               <li><strong>Medium dog:</strong> AED 16,000–22,000</li>
               <li><strong>Large dog:</strong> AED 20,000–25,000+</li>
               <li><strong>Timeline:</strong> 6–8 weeks</li>
             </ul>
-            <p className="text-sm text-[#5C5C5C] leading-relaxed">
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
               Australia's strict export health certificate adds complexity. The flight distance drives cargo costs up significantly. Most pets route through Singapore or directly on Emirates from Sydney/Melbourne/Perth.
             </p>
           </Card>
         </div>
 
         <Card className="mb-8">
-          <h3 className="text-lg font-bold text-[#1A1A1A] mb-3">Philippines to Dubai</h3>
-          <p className="text-sm text-[#5C5C5C] mb-4 leading-relaxed">High-risk. Titer test + 90-day wait required.</p>
-          <ul className="text-sm text-[#5C5C5C] space-y-1 mb-4">
+          <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">Philippines to Dubai</h3>
+          <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk. Titer test + 90-day wait required.</p>
+          <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
             <li><strong>Small cat:</strong> AED 12,000–16,000</li>
             <li><strong>Medium dog:</strong> AED 15,000–20,000</li>
             <li><strong>Large dog:</strong> AED 18,000–24,000</li>
             <li><strong>Timeline:</strong> Minimum 4 months from scratch</li>
           </ul>
-          <p className="text-sm text-[#5C5C5C] leading-relaxed">
+          <p className="text-sm text-[#5A5A5A] leading-relaxed">
             The Philippines is a popular origin for Dubai's large Filipino expat community. We coordinate the Bureau of Animal Industry export permit, titer test, and Philippine health certificate — then handle the UAE-side import permit and customs clearance.
           </p>
         </Card>
@@ -547,8 +546,8 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== COST BY PET SIZE ===== */}
-      <Section className="bg-[#FAFBF7]">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">Cost by Pet Size — How Your Pet's Dimensions Affect Price</h2>
+      <Section className="bg-[#FDFBF8]">
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">Cost by Pet Size — How Your Pet's Dimensions Affect Price</h2>
         <div className="overflow-x-auto mb-6">
           <table className="data-table">
             <thead>
@@ -593,7 +592,7 @@ export default function CostGuidePage() {
           </table>
         </div>
         <div className="warning-box">
-          <p className="text-sm text-[#1A1A1A]">
+          <p className="text-sm text-[#2A2A2A]">
             <strong>Important:</strong> Airlines use <strong>volumetric weight</strong>, not actual weight. A large crate takes up more cargo space than a small one, even if your pet is lean. We measure your pet's length (nose to base of tail) and height (floor to top of head, ears included) to size the crate precisely. An oversized crate costs you more in freight. An undersized one gets rejected at check-in.
           </p>
         </div>
@@ -601,13 +600,13 @@ export default function CostGuidePage() {
 
       {/* ===== HIDDEN COSTS ===== */}
       <Section className="bg-white">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">Hidden Costs — What Competitors Don't Tell You</h2>
-        <p className="text-[#5C5C5C] max-w-3xl mb-4 leading-relaxed">
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">Hidden Costs — What Competitors Don't Tell You</h2>
+        <p className="text-[#5A5A5A] max-w-3xl mb-4 leading-relaxed">
           This is where most pet owners get burned. The quote looks reasonable. Then the extras arrive.
         </p>
-        <p className="text-[#5C5C5C] mb-10">Here's what to watch for — and what we include upfront.</p>
+        <p className="text-[#5A5A5A] mb-10">Here's what to watch for — and what we include upfront.</p>
 
-        <h3 className="text-lg font-bold text-[#1A1A1A] mb-4">Common Hidden Fees in the Industry</h3>
+        <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Common Hidden Fees in the Industry</h3>
         <div className="overflow-x-auto mb-10">
           <table className="data-table">
             <thead>
@@ -672,22 +671,22 @@ export default function CostGuidePage() {
         </div>
 
         <div className="warning-box mb-6">
-          <h4 className="font-bold text-[#1A1A1A] mb-2 flex items-center gap-2">
-            <AlertTriangle className="w-5 h-5 text-[#E8A838]" /> The Honest Truth About Quote Inflation
+          <h4 className="font-bold text-[#2A2A2A] mb-2 flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-[#5A8F6E]" /> The Honest Truth About Quote Inflation
           </h4>
-          <p className="text-sm text-[#5C5C5C] leading-relaxed">
+          <p className="text-sm text-[#5A5A5A] leading-relaxed">
             We've read the reviews. "From changing quotes, to adding extra charges... we are now over £3,000 over the original quote." — Real ISS Relocations customer.
           </p>
-          <p className="text-sm text-[#5C5C5C] leading-relaxed mt-2">
+          <p className="text-sm text-[#5A5A5A] leading-relaxed mt-2">
             That happens when companies give you a lowball estimate to win your business, then add "unforeseen" costs later. The airline fee was higher than expected. The crate was bigger than estimated. The permit took longer.
           </p>
-          <p className="text-sm text-[#1A1A1A] leading-relaxed mt-2">
+          <p className="text-sm text-[#2A2A2A] leading-relaxed mt-2">
             At PetClear, we give you a <strong>range</strong> based on your specific pet, route, and season. If the final cost falls within that range, you pay what we quoted. If our mistake causes an overrun, we absorb it. That's our promise.
           </p>
         </div>
 
         <p className="text-sm">
-          <Link to="/about" className="text-[#1A5F4A] font-medium hover:underline inline-flex items-center gap-1">
+          <Link to="/about" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
             Why we're transparent about pricing <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </p>
@@ -698,15 +697,15 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== DIY vs USING A SERVICE ===== */}
-      <Section className="bg-[#F5F0E8]">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">DIY vs. Using a Service — The Honest Comparison</h2>
-        <p className="text-[#5C5C5C] max-w-3xl mb-10 leading-relaxed">
+      <Section className="bg-[#F5EFE6]">
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">DIY vs. Using a Service — The Honest Comparison</h2>
+        <p className="text-[#5A5A5A] max-w-3xl mb-10 leading-relaxed">
           Can you relocate your pet to Dubai without a company? Yes. Should you? Let's look at the numbers and the reality.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-10">
           <Card>
-            <h3 className="text-lg font-bold text-[#1A1A1A] mb-4">DIY Breakdown</h3>
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">DIY Breakdown</h3>
             <div className="overflow-x-auto">
               <table className="data-table">
                 <thead>
@@ -724,14 +723,14 @@ export default function CostGuidePage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-[#1A1A1A] font-medium mt-4">DIY total: AED 5,400–8,500 (low-risk, experienced) to AED 8,500–14,500 (high-risk, learning as you go)</p>
-            <p className="text-sm text-[#5C5C5C] mt-1">DIY time investment: 20–40 hours of research, phone calls, form filling, and coordination.</p>
+            <p className="text-sm text-[#2A2A2A] font-medium mt-4">DIY total: AED 5,400–8,500 (low-risk, experienced) to AED 8,500–14,500 (high-risk, learning as you go)</p>
+            <p className="text-sm text-[#5A5A5A] mt-1">DIY time investment: 20–40 hours of research, phone calls, form filling, and coordination.</p>
           </Card>
 
           <Card>
-            <h3 className="text-lg font-bold text-[#1A1A1A] mb-4">Using PetClear</h3>
-            <p className="text-sm font-semibold text-[#1A1A1A] mb-3">What we handle:</p>
-            <ul className="space-y-2 text-sm text-[#5C5C5C] mb-6">
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Using PetClear</h3>
+            <p className="text-sm font-semibold text-[#2A2A2A] mb-3">What we handle:</p>
+            <ul className="space-y-2 text-sm text-[#5A5A5A] mb-6">
               {[
                 'MOCCAE permit application and tracking',
                 'Vet partner coordination (we know which vets understand UAE export rules)',
@@ -744,17 +743,17 @@ export default function CostGuidePage() {
                 'Post-arrival municipality registration guidance',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#1A5F4A] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-[#1A1A1A] font-medium">PetClear total: AED 8,000–25,000 depending on route, size, and tier</p>
-            <p className="text-sm text-[#5C5C5C] mt-1">Your time investment: 2–3 hours (initial consultation, a few document uploads, pickup/delivery coordination)</p>
+            <p className="text-sm text-[#2A2A2A] font-medium">PetClear total: AED 8,000–25,000 depending on route, size, and tier</p>
+            <p className="text-sm text-[#5A5A5A] mt-1">Your time investment: 2–3 hours (initial consultation, a few document uploads, pickup/delivery coordination)</p>
           </Card>
         </div>
 
-        <Card className="bg-[#1A5F4A] text-white border-none">
+        <Card className="bg-[#1B2B4D] text-white border-none">
           <h3 className="text-lg font-bold mb-3">The Honest Verdict</h3>
           <p className="text-sm text-white/90 leading-relaxed mb-3">
             DIY is possible. If you're detail-oriented, have 20+ free hours, and are comfortable navigating government portals and airline cargo departments, you can save AED 2,000–5,000.
@@ -770,50 +769,50 @@ export default function CostGuidePage() {
 
       {/* ===== SEASONAL PRICING FACTORS ===== */}
       <Section className="bg-white">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-10">Seasonal Pricing Factors — When You Move Matters</h2>
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-10">Seasonal Pricing Factors — When You Move Matters</h2>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <Card>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#C0392B]/10 flex items-center justify-center">
+              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
                 <Sun className="w-5 h-5 text-[#C0392B]" />
               </div>
-              <h3 className="text-lg font-bold text-[#1A1A1A]">Summer Heat Embargo (June–September)</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A]">Summer Heat Embargo (June–September)</h3>
             </div>
-            <p className="text-sm text-[#5C5C5C] mb-4 leading-relaxed">
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">
               From June to September, ground temperatures in Dubai exceed 45°C. Most airlines suspend or heavily restrict live animal cargo.
             </p>
-            <p className="text-sm font-semibold text-[#1A1A1A] mb-2">What this means for your cost:</p>
-            <ul className="space-y-2 text-sm text-[#5C5C5C]">
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#E8A838] shrink-0 mt-0.5" /><span>If your pet is already booked and the embargo hits, rerouting costs AED 2,000–5,000</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#E8A838] shrink-0 mt-0.5" /><span>Alternative: Ground transport from nearby countries (GCC) adds AED 1,500–3,000</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#E8A838] shrink-0 mt-0.5" /><span>Alternative: In-cabin pet nanny (very small pets only) adds AED 5,000–10,000</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#E8A838] shrink-0 mt-0.5" /><span>Alternative: Private charter (for high-value or urgent moves) adds AED 15,000–50,000+</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#E8A838] shrink-0 mt-0.5" /><span>Waiting it out: Extended boarding at our partner facility costs AED 200–400/day</span></li>
+            <p className="text-sm font-semibold text-[#2A2A2A] mb-2">What this means for your cost:</p>
+            <ul className="space-y-2 text-sm text-[#5A5A5A]">
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>If your pet is already booked and the embargo hits, rerouting costs AED 2,000–5,000</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Alternative: Ground transport from nearby countries (GCC) adds AED 1,500–3,000</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Alternative: In-cabin pet nanny (very small pets only) adds AED 5,000–10,000</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Alternative: Private charter (for high-value or urgent moves) adds AED 15,000–50,000+</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Waiting it out: Extended boarding at our partner facility costs AED 200–400/day</span></li>
             </ul>
-            <p className="text-sm text-[#5C5C5C] mt-4 leading-relaxed">
+            <p className="text-sm text-[#5A5A5A] mt-4 leading-relaxed">
               <strong>Brachycephalic breeds (Bulldogs, Pugs, Persian cats):</strong> Many airlines ban these breeds entirely from May through September, regardless of temperature. Some restrict them to October–April only. If you have a snub-nosed pet, plan your move for winter or budget for significant alternatives.
             </p>
           </Card>
 
           <Card>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#27AE60]/10 flex items-center justify-center">
-                <Snowflake className="w-5 h-5 text-[#27AE60]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
+                <Snowflake className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="text-lg font-bold text-[#1A1A1A]">Peak Season (October–May)</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A]">Peak Season (October–May)</h3>
             </div>
-            <p className="text-sm text-[#5C5C5C] mb-4 leading-relaxed">
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">
               October through May is peak relocation season. More flights available. More routing options. Lower risk of cancellation.
             </p>
-            <p className="text-sm font-semibold text-[#1A1A1A] mb-2">Cost implications:</p>
-            <ul className="space-y-2 text-sm text-[#5C5C5C]">
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#27AE60] shrink-0 mt-0.5" /><span>Cargo rates are generally 10–15% lower than summer emergency rates</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#27AE60] shrink-0 mt-0.5" /><span>More airline options = competitive pricing</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#27AE60] shrink-0 mt-0.5" /><span>Earlier booking = better rates. Last-minute bookings in peak season cost more due to limited cargo space.</span></li>
+            <p className="text-sm font-semibold text-[#2A2A2A] mb-2">Cost implications:</p>
+            <ul className="space-y-2 text-sm text-[#5A5A5A]">
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Cargo rates are generally 10–15% lower than summer emergency rates</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>More airline options = competitive pricing</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Earlier booking = better rates. Last-minute bookings in peak season cost more due to limited cargo space.</span></li>
             </ul>
-            <p className="text-sm text-[#1A1A1A] font-medium mt-4">Our recommendation:</p>
-            <p className="text-sm text-[#5C5C5C] leading-relaxed">
+            <p className="text-sm text-[#2A2A2A] font-medium mt-4">Our recommendation:</p>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
               If you're planning a move, book your pet's relocation 8–12 weeks in advance. The best rates and the best routing options go first.
             </p>
           </Card>
@@ -821,32 +820,32 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== HOW TO GET ACCURATE QUOTE ===== */}
-      <Section className="bg-[#FAFBF7]">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-4">How to Get an Accurate, Personalized Quote</h2>
-        <p className="text-[#5C5C5C] max-w-3xl mb-8 leading-relaxed">
+      <Section className="bg-[#FDFBF8]">
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">How to Get an Accurate, Personalized Quote</h2>
+        <p className="text-[#5A5A5A] max-w-3xl mb-8 leading-relaxed">
           Every pet is different. Every route is different. Every season is different. A guide can give you a range. A 5-minute WhatsApp conversation gives you a firm quote.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-10">
           <Card>
-            <h3 className="text-lg font-bold text-[#1A1A1A] mb-4">Here's what we need to price your move accurately:</h3>
-            <ol className="space-y-3 text-sm text-[#5C5C5C]">
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1A5F4A] text-white text-xs font-bold flex items-center justify-center shrink-0">1</span><span><strong>Pet type and breed</strong> (dog or cat? Labrador or Persian?)</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1A5F4A] text-white text-xs font-bold flex items-center justify-center shrink-0">2</span><span><strong>Weight and approximate dimensions</strong> (for crate sizing)</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1A5F4A] text-white text-xs font-bold flex items-center justify-center shrink-0">3</span><span><strong>Moving from</strong> (city and country)</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1A5F4A] text-white text-xs font-bold flex items-center justify-center shrink-0">4</span><span><strong>Moving to</strong> (Dubai, or elsewhere in UAE?)</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1A5F4A] text-white text-xs font-bold flex items-center justify-center shrink-0">5</span><span><strong>Planned move date</strong> (or "as soon as possible")</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1A5F4A] text-white text-xs font-bold flex items-center justify-center shrink-0">6</span><span><strong>Current documentation status</strong> (microchipped? Vaccinated? Titer test done?)</span></li>
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Here's what we need to price your move accurately:</h3>
+            <ol className="space-y-3 text-sm text-[#5A5A5A]">
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">1</span><span><strong>Pet type and breed</strong> (dog or cat? Labrador or Persian?)</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">2</span><span><strong>Weight and approximate dimensions</strong> (for crate sizing)</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">3</span><span><strong>Moving from</strong> (city and country)</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">4</span><span><strong>Moving to</strong> (Dubai, or elsewhere in UAE?)</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">5</span><span><strong>Planned move date</strong> (or "as soon as possible")</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">6</span><span><strong>Current documentation status</strong> (microchipped? Vaccinated? Titer test done?)</span></li>
             </ol>
           </Card>
           <Card>
-            <h3 className="text-lg font-bold text-[#1A1A1A] mb-4">What you'll get back in 15 minutes:</h3>
-            <ul className="space-y-3 text-sm text-[#5C5C5C]">
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#1A5F4A] shrink-0 mt-0.5" /><span>A realistic cost range</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#1A5F4A] shrink-0 mt-0.5" /><span>A clear timeline</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#1A5F4A] shrink-0 mt-0.5" /><span>The right service tier recommendation</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#1A5F4A] shrink-0 mt-0.5" /><span>An honest assessment of any seasonal or breed restrictions</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#1A5F4A] shrink-0 mt-0.5" /><span>No pressure. No follow-up spam. Just the information you need.</span></li>
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">What you'll get back in 15 minutes:</h3>
+            <ul className="space-y-3 text-sm text-[#5A5A5A]">
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>A realistic cost range</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>A clear timeline</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>The right service tier recommendation</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>An honest assessment of any seasonal or breed restrictions</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>No pressure. No follow-up spam. Just the information you need.</span></li>
             </ul>
           </Card>
         </div>
@@ -854,26 +853,26 @@ export default function CostGuidePage() {
         <div id="whatsapp-cta" className="text-center">
           <WhatsAppCta text="Get Your Exact Quote — WhatsApp Us Now" fullWidth className="sm:w-auto sm:inline-flex" />
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
-            <WhatsAppCta text="Chat With Our Pet Relocation Team — No Obligation" fullWidth className="sm:w-auto sm:inline-flex bg-[#1A5F4A] hover:bg-[#0F3D2E]" />
-            <WhatsAppCta text="Questions About Your Pet's Move? We're on WhatsApp" fullWidth className="sm:w-auto sm:inline-flex bg-[#E8A838] hover:bg-[#d4952f]" />
+            <WhatsAppCta text="Chat With Our Pet Relocation Team — No Obligation" fullWidth className="sm:w-auto sm:inline-flex bg-[#1B2B4D] hover:bg-[#0F1A30]" />
+            <WhatsAppCta text="Questions About Your Pet's Move? We're on WhatsApp" fullWidth className="sm:w-auto sm:inline-flex bg-[#5A8F6E] hover:bg-[#4a7a5e]" />
           </div>
         </div>
       </Section>
 
       {/* ===== FAQ ===== */}
       <Section className="bg-white">
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A] mb-10">Frequently Asked Questions</h2>
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-10">Frequently Asked Questions</h2>
         <div className="max-w-3xl">
           <FAQItem
             question="Do dogs need to be quarantined in Dubai?"
             answer={
               <>
                 <p>No. If all documentation is complete and correct — MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate — pets do not require mandatory quarantine in Dubai. This is one of the UAE's main advantages.</p>
-                <p className="mt-3 text-[#5C5C5C]">
+                <p className="mt-3 text-[#5A5A5A]">
                   However, incomplete documentation can result in <strong>conditional quarantine at the owner's expense</strong>. We've seen cases where a missing titer test cost AED 8,500 for 30 days in quarantine. This is why we triple-check every document before your pet travels.
                 </p>
                 <p className="mt-3">
-                  <Link to="/guides/uae-pet-import-requirements" className="text-[#1A5F4A] font-medium hover:underline inline-flex items-center gap-1">
+                  <Link to="/guides/uae-pet-import-requirements" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
                     Read our full UAE import requirements guide <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
@@ -885,7 +884,7 @@ export default function CostGuidePage() {
             answer={
               <>
                 <p>Pets travel as <strong>manifest cargo</strong>, not as baggage. This means they ride in a climate-controlled, pressurized section of the cargo hold — not in the passenger cabin. The fee covers:</p>
-                <ul className="mt-2 space-y-1 text-sm text-[#5C5C5C]">
+                <ul className="mt-2 space-y-1 text-sm text-[#5A5A5A]">
                   <li>Dedicated cargo space (your pet's crate displaces freight that could have been sold)</li>
                   <li>Climate control and pressurization throughout the flight</li>
                   <li>Ground handling at both airports (check-in, loading, unloading, customs)</li>
@@ -901,7 +900,7 @@ export default function CostGuidePage() {
             answer={
               <>
                 <p>Sometimes — but rarely, and often with hidden costs. General movers (like ISS or Sparkle) treat pet relocation as a side business. Their quotes often exclude:</p>
-                <ul className="mt-2 space-y-1 text-sm text-[#5C5C5C]">
+                <ul className="mt-2 space-y-1 text-sm text-[#5A5A5A]">
                   <li>MOCCAE permit fees ("that's a government fee, not our problem")</li>
                   <li>IATA crate costs ("you can buy that yourself")</li>
                   <li>Customs clearance at destination ("you'll need to collect your pet from the airport")</li>
@@ -909,7 +908,7 @@ export default function CostGuidePage() {
                 </ul>
                 <p className="mt-3">By the time you add the missing pieces, the total usually exceeds our all-inclusive quote. Plus, a mover's priority is your furniture. Our priority is your pet. Every time.</p>
                 <p className="mt-3">
-                  <Link to="/services" className="text-[#1A5F4A] font-medium hover:underline inline-flex items-center gap-1">
+                  <Link to="/services" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
                     See our full service comparison <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
@@ -922,7 +921,7 @@ export default function CostGuidePage() {
               <>
                 <p>The absolute cheapest way is DIY from a low-risk country like the UK or EU, with a small pet, during off-peak season, with all documentation already complete. That could cost as little as AED 5,400.</p>
                 <p className="mt-3">But "cheapest" rarely means "best value." The savings of doing it yourself are often wiped out by:</p>
-                <ul className="mt-2 space-y-1 text-sm text-[#5C5C5C]">
+                <ul className="mt-2 space-y-1 text-sm text-[#5A5A5A]">
                   <li>One missed document (quarantine = AED 8,500+)</li>
                   <li>One wrong crate (rebooking = AED 2,000+)</li>
                   <li>20+ hours of your time (what's your hourly rate?)</li>
@@ -942,8 +941,8 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== FINAL CTA ===== */}
-      <section className="bg-[#1A5F4A] text-white py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative overflow-hidden bg-[#1B2B4D] text-white section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Know Your Exact Cost?</h2>
           <p className="text-white/90 max-w-2xl mx-auto mb-4 leading-relaxed">
             You've read the breakdown. You know the ranges. You know what drives the price. Now let's get specific.
@@ -960,7 +959,7 @@ export default function CostGuidePage() {
       </section>
 
       {/* ===== DISCLAIMER ===== */}
-      <Section className="bg-[#FAFBF7]">
+      <Section className="bg-[#FDFBF8]">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs text-[#8A8A8A] leading-relaxed mb-3">
             Last updated: June 2026. Prices are based on current partner rates and government fee schedules. Cargo and airline fees fluctuate with fuel prices and seasonal demand. Your personalized quote will reflect real-time pricing for your specific route and dates.

@@ -8,7 +8,7 @@ interface WhatsAppButtonProps {
 }
 
 export default function WhatsAppButton({
-  message = "Hi PetClear team, I'm planning to relocate my pet and would love to get a quick quote.",
+  message = "Hi PetClear team, I'm planning to relocate my pet and need some guidance. Could you help me understand the process?",
   variant = 'floating',
   className = '',
 }: WhatsAppButtonProps) {
@@ -17,7 +17,7 @@ export default function WhatsAppButton({
   useEffect(() => {
     if (variant !== 'sticky') return
     const handleScroll = () => {
-      setShowSticky(window.scrollY > 400)
+      setShowSticky(window.scrollY > 500)
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
@@ -32,10 +32,10 @@ export default function WhatsAppButton({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold text-sm hover:bg-[#1ebe57] transition-colors ${className}`}
+        className={`inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-colors shadow-sm ${className}`}
       >
         <MessageCircle className="w-4 h-4" />
-        Chat on WhatsApp
+        Get Help on WhatsApp
       </a>
     )
   }
@@ -47,12 +47,12 @@ export default function WhatsAppButton({
           showSticky ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <div className="bg-white border-t border-gray-100 shadow-lg p-3 sm:hidden">
+        <div className="bg-white border-t border-[#EDE7DD] shadow-lg p-3 sm:hidden">
           <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-4 py-3 bg-[#25D366] text-white rounded-xl font-semibold text-sm w-full"
+            className="flex items-center justify-center gap-2 px-4 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold text-sm w-full"
           >
             <MessageCircle className="w-5 h-5" />
             Get Your Free Quote on WhatsApp
