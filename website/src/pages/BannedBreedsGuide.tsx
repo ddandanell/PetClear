@@ -39,18 +39,18 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 /* ─── Page ─── */
 export default function BannedBreedsGuide() {
   const title = 'Banned and Restricted Dog Breeds in Dubai — Complete 2026 Guide'
-  const description = 'Complete list of banned and restricted dog breeds in Dubai and the UAE. Learn about Dubai Municipality rules, fines, import restrictions, muzzle requirements, and how PetClear can help with breed assessments.'
+  const description = 'Complete list of banned and restricted dog breeds in Dubai and the UAE. Learn about Dubai Municipality rules, fines, import restrictions, muzzle requirements, and how Dubai Pet Relocation can help with breed assessments.'
   const canonical = `${BASE_URL}/guides/banned-dog-breeds-dubai/`
   const ogImage = `${BASE_URL}/assets/og-banned-breeds.jpg`
 
   const faqData = [
     {
       question: 'Can I bring a Staffordshire Bull Terrier mix to Dubai?',
-      answer: 'Staffordshire Bull Terrier mixes are assessed on a case-by-case basis. Dubai Municipality and UAE customs reserve the right to ban any dog that visually resembles a banned breed. If your Staffy mix has physical characteristics similar to a Pit Bull type, there is a significant risk of refusal at entry. PetClear strongly recommends a pre-travel breed assessment with photos and documentation to reduce this risk.',
+      answer: 'Staffordshire Bull Terrier mixes are assessed on a case-by-case basis. Dubai Municipality and UAE customs reserve the right to ban any dog that visually resembles a banned breed. If your Staffy mix has physical characteristics similar to a Pit Bull type, there is a significant risk of refusal at entry. Dubai Pet Relocation strongly recommends a pre-travel breed assessment with photos and documentation to reduce this risk.',
     },
     {
       question: 'What happens if my dog looks like a banned breed but is not?',
-      answer: 'Breed identification at UAE customs is primarily based on visual inspection. Even if your dog is not genetically a banned breed, customs officers may refuse entry if the dog resembles a banned type. This decision is final and non-negotiable at the port of entry. PetClear advises submitting clear photos, pedigree papers, and a veterinary breed confirmation letter before travel to support your case.',
+      answer: 'Breed identification at UAE customs is primarily based on visual inspection. Even if your dog is not genetically a banned breed, customs officers may refuse entry if the dog resembles a banned type. This decision is final and non-negotiable at the port of entry. Dubai Pet Relocation advises submitting clear photos, pedigree papers, and a veterinary breed confirmation letter before travel to support your case.',
     },
     {
       question: 'Are Rottweilers and Dobermans allowed in Dubai?',
@@ -70,11 +70,11 @@ export default function BannedBreedsGuide() {
     },
     {
       question: 'What should I do if I have a mixed breed and am unsure about the rules?',
-      answer: 'Contact PetClear for a free breed assessment before starting your relocation process. We review photos, veterinary records, and any pedigree documentation to evaluate your dog\'s risk profile. If there is uncertainty, we may arrange a veterinary breed confirmation letter or suggest alternative documentation strategies to present to UAE authorities.',
+      answer: 'Contact Dubai Pet Relocation for a free breed assessment before starting your relocation process. We review photos, veterinary records, and any pedigree documentation to evaluate your dog\'s risk profile. If there is uncertainty, we may arrange a veterinary breed confirmation letter or suggest alternative documentation strategies to present to UAE authorities.',
     },
     {
       question: 'Do restricted breeds need special insurance in Dubai?',
-      answer: 'Yes, many Dubai residential communities and landlords require liability insurance for restricted breeds. Some buildings mandate proof of insurance covering third-party injury or property damage caused by the dog. PetClear can advise on pet insurance providers in the UAE that cover restricted breeds and help you prepare the documentation needed for your building\'s approval.',
+      answer: 'Yes, many Dubai residential communities and landlords require liability insurance for restricted breeds. Some buildings mandate proof of insurance covering third-party injury or property damage caused by the dog. Dubai Pet Relocation can advise on pet insurance providers in the UAE that cover restricted breeds and help you prepare the documentation needed for your building\'s approval.',
     },
   ]
 
@@ -107,8 +107,8 @@ export default function BannedBreedsGuide() {
     headline: title,
     description,
     image: ogImage,
-    author: { '@type': 'Organization', name: 'PetClear', url: BASE_URL },
-    publisher: { '@type': 'Organization', name: 'PetClear', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/logo.png` } },
+    author: { '@type': 'Organization', name: 'Dubai Pet Relocation', url: BASE_URL },
+    publisher: { '@type': 'Organization', name: 'Dubai Pet Relocation', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/logo.png` } },
     datePublished: '2025-01-15',
     dateModified: '2026-01-10',
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
@@ -147,7 +147,7 @@ export default function BannedBreedsGuide() {
             <div className="flex flex-wrap gap-4">
               <WhatsAppBtn
                 label="Get Free Breed Assessment"
-                message="Hi PetClear, I'm planning to relocate my dog to Dubai and I need a breed assessment to check if my dog is allowed. Can you help?"
+                message="Hi Dubai Pet Relocation, I'm planning to relocate my dog to Dubai and I need a breed assessment to check if my dog is allowed. Can you help?"
               />
               <a
                 href="#banned-list"
@@ -548,7 +548,7 @@ export default function BannedBreedsGuide() {
         </div>
       </section>
 
-      {/* Mixed Breeds & PetClear Assessment */}
+      {/* Mixed Breeds & Dubai Pet Relocation Assessment */}
       <section className="section-padding bg-[#FDFBF8]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
@@ -556,7 +556,7 @@ export default function BannedBreedsGuide() {
               What If You Have a Mixed Breed?
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              Mixed breeds are one of the biggest sources of confusion for pet owners. A dog that is 50% Labrador and 50% Pit Bull may still be refused entry based on visual appearance. Here's how PetClear handles mixed breed assessments.
+              Mixed breeds are one of the biggest sources of confusion for pet owners. A dog that is 50% Labrador and 50% Pit Bull may still be refused entry based on visual appearance. Here's how Dubai Pet Relocation handles mixed breed assessments.
             </p>
           </div>
 
@@ -590,7 +590,7 @@ export default function BannedBreedsGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">No Guarantee for Mixed Breeds</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  Even with thorough documentation, the final decision rests with UAE customs inspectors. PetClear cannot guarantee entry for dogs that resemble banned breeds. We recommend starting the assessment process at least 8–12 weeks before your planned travel date to explore all options.
+                  Even with thorough documentation, the final decision rests with UAE customs inspectors. Dubai Pet Relocation cannot guarantee entry for dogs that resemble banned breeds. We recommend starting the assessment process at least 8–12 weeks before your planned travel date to explore all options.
                 </p>
               </div>
             </div>
@@ -643,7 +643,7 @@ export default function BannedBreedsGuide() {
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">
                 <Clock className="w-5 h-5 text-[#C89F5A]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">How PetClear Works</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">How Dubai Pet Relocation Works</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent concierge process, from breed check to arrival in Dubai.</p>
             </Link>
           </div>
@@ -657,12 +657,12 @@ export default function BannedBreedsGuide() {
             Unsure About Your Dog's Breed Status?
           </h2>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            PetClear offers free breed assessments for dogs heading to Dubai. Send us photos and we'll tell you exactly where your dog stands under UAE regulations.
+            Dubai Pet Relocation offers free breed assessments for dogs heading to Dubai. Send us photos and we'll tell you exactly where your dog stands under UAE regulations.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <WhatsAppBtn
               label="Get Free Breed Assessment"
-              message="Hi PetClear, I need a breed assessment for my dog before relocating to Dubai. Can you help me understand if my dog is allowed?"
+              message="Hi Dubai Pet Relocation, I need a breed assessment for my dog before relocating to Dubai. Can you help me understand if my dog is allowed?"
               className="whatsapp-pulse"
             />
             <Link

@@ -61,7 +61,7 @@ export default function AboutPage() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'PetClear',
+    name: 'Dubai Pet Relocation',
     url: BASE_URL,
     logo: `${BASE_URL}/assets/logo.png`,
     description: 'Transparent pet relocation concierge for Dubai and the UAE.',
@@ -77,9 +77,9 @@ export default function AboutPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'About PetClear | Pet Relocation Concierge Dubai',
-          description: 'Learn about PetClear — a Dubai-based pet relocation concierge built by pet owners who understand the stress of moving with animals. Transparent, partner-matched, and animal-first.',
-          keywords: 'about PetClear, pet relocation company Dubai, pet concierge Dubai, who is PetClear, pet relocation experts UAE',
+          title: 'About Dubai Pet Relocation | Pet Relocation Concierge Dubai',
+          description: 'Learn about Dubai Pet Relocation — a Dubai-based pet relocation concierge built by pet owners who understand the stress of moving with animals. Transparent, partner-matched, and animal-first.',
+          keywords: 'about Dubai Pet Relocation, pet relocation company Dubai, pet concierge Dubai, who is Dubai Pet Relocation, pet relocation experts UAE',
           canonical: `${BASE_URL}/about`,
           ogType: 'website',
         }}
@@ -93,14 +93,14 @@ export default function AboutPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
-              About PetClear — Transparent Pet Relocation for Dubai
+              About Dubai Pet Relocation — Transparent Pet Relocation for Dubai
             </h1>
             <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
-              We are a small team of pet owners and logistics experts based in Dubai. We built PetClear because we experienced firsthand how confusing, opaque, and stressful pet relocation can be — and we believe it does not have to be that way.
+              We are a small team of pet owners and logistics experts based in Dubai. We built Dubai Pet Relocation because we experienced firsthand how confusing, opaque, and stressful pet relocation can be — and we believe it does not have to be that way.
             </p>
             <WhatsAppCta
               text="Get a Free Consultation"
-              message="Hi PetClear team! I would love to learn more about your services and how you can help with my pet relocation."
+              message="Hi Dubai Pet Relocation team! I would love to learn more about your services and how you can help with my pet relocation."
             />
           </div>
         </div>
@@ -117,13 +117,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#5A5A5A] text-base leading-relaxed">
                 <p>
-                  PetClear started with a simple frustration: trying to relocate a beloved dog from the UK to Dubai and feeling completely lost. The information was scattered across government websites, airline cargo pages, and vet clinics. Every company we contacted gave a different answer.
+                  Dubai Pet Relocation started with a simple frustration: trying to relocate a beloved dog from the UK to Dubai and feeling completely lost. The information was scattered across government websites, airline cargo pages, and vet clinics. Every company we contacted gave a different answer.
                 </p>
                 <p>
                   We realized the problem was not a lack of services — it was a lack of transparency. Pet owners were expected to trust opaque processes without understanding what was happening, why it cost what it did, or whether their pet was in safe hands.
                 </p>
                 <p>
-                  So we built PetClear as a concierge model: we help you understand the process, we check every document, we connect you with vetted partners, and we stay on WhatsApp with you every step of the way.
+                  So we built Dubai Pet Relocation as a concierge model: we help you understand the process, we check every document, we connect you with vetted partners, and we stay on WhatsApp with you every step of the way.
                 </p>
               </div>
             </div>
@@ -206,7 +206,7 @@ export default function AboutPage() {
       <section className="bg-[#FDFBF8] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">The People Behind PetClear</span>
+            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">The People Behind Dubai Pet Relocation</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
               A Small Team of Pet Lovers and Logistics Experts
             </h2>
@@ -256,7 +256,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#5A5A5A] text-base leading-relaxed">
                 <p>
-                  PetClear does not own cargo planes, run quarantine facilities, or employ veterinarians. Instead, we are a coordination layer that sits between you and the specialists who do.
+                  Dubai Pet Relocation does not own cargo planes, run quarantine facilities, or employ veterinarians. Instead, we are a coordination layer that sits between you and the specialists who do.
                 </p>
                 <p>
                   Think of us like a wedding planner: we know the best vendors, we handle the timeline, we check every detail, and we stay with you on the day. But the photographer, caterer, and venue are still independent experts in their fields.
@@ -280,11 +280,11 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="bg-[#F5EFE6] rounded-[20px] p-8">
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-6">What PetClear Does vs. What Partners Do</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-6">What Dubai Pet Relocation Does vs. What Partners Do</h3>
               <div className="space-y-4">
                 <div className="bg-white rounded-[16px] p-5">
                   <p className="font-semibold text-[#2A2A2A] mb-2 flex items-center gap-2">
-                    <Heart className="w-4 h-4 text-[#5A8F6E]" /> PetClear
+                    <Heart className="w-4 h-4 text-[#5A8F6E]" /> Dubai Pet Relocation
                   </p>
                   <ul className="space-y-1.5 text-sm text-[#5A5A5A]">
                     <li>Understand your route, timeline, and pet profile</li>
@@ -323,7 +323,7 @@ export default function AboutPage() {
           </p>
           <WhatsAppCta
             text="Get a Free Consultation"
-            message="Hi PetClear team! I would love to get a free consultation about relocating my pet. Can we chat?"
+            message="Hi Dubai Pet Relocation team! I would love to get a free consultation about relocating my pet. Can we chat?"
           />
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
             <span className="flex items-center gap-1.5 text-sm text-white/60">

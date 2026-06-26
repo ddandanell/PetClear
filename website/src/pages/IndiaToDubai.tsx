@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function IndiaToDubai() {
   const pageUrl = `${BASE_URL}/routes/india-to-dubai/`
-  const pageTitle = 'India to Dubai Pet Relocation — Complete Guide 2025 | PetClear'
-  const pageDescription = 'Relocate your pet from India to Dubai with PetClear. High-risk rabies route: titer test (RNATT) required, 90-day wait, 3–4 months minimum. IndiGo, Emirates, Air India. Full cost and document guide.'
+  const pageTitle = 'India to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
+  const pageDescription = 'Relocate your pet from India to Dubai with Dubai Pet Relocation. High-risk rabies route: titer test (RNATT) required, 90-day wait, 3–4 months minimum. IndiGo, Emirates, Air India. Full cost and document guide.'
   const keywords = 'India to Dubai pet relocation, pet transport India to Dubai, Indian pet relocation Dubai, titer test India to Dubai, RNATT India Dubai, IndiGo pet cargo Dubai, Emirates pet transport India, Air India pet cargo, dog relocation India to Dubai, cat relocation India to Dubai'
 
   const faqs = [
@@ -22,15 +22,15 @@ export default function IndiaToDubai() {
     },
     {
       question: 'Which airlines fly pets from India to Dubai?',
-      answer: 'Emirates (EK), Air India (AI), and IndiGo (6E) operate pet cargo services from major Indian cities. Emirates flies from Delhi (DEL), Mumbai (BOM), Bengaluru (BLR), Chennai (MAA), and Hyderabad (HYD). Air India also offers cargo from most metro cities. IndiGo carries pets in cargo on select domestic and international routes. Most flights are 3–4 hours direct. PetClear books the most suitable airline based on your city, pet size, and travel date.'
+      answer: 'Emirates (EK), Air India (AI), and IndiGo (6E) operate pet cargo services from major Indian cities. Emirates flies from Delhi (DEL), Mumbai (BOM), Bengaluru (BLR), Chennai (MAA), and Hyderabad (HYD). Air India also offers cargo from most metro cities. IndiGo carries pets in cargo on select domestic and international routes. Most flights are 3–4 hours direct. Dubai Pet Relocation books the most suitable airline based on your city, pet size, and travel date.'
     },
     {
       question: 'How long does the India to Dubai pet relocation process take?',
-      answer: 'The minimum timeline is 3 to 4 months due to the titer test requirement: Month 1 — microchip and rabies vaccination (30-day wait before titer test); Month 1–2 — titer test blood draw, lab processing, and 90-day waiting period from blood draw date; Month 3 — apply for UAE import permit, obtain Indian export health certificate (NOC from AQCS); Month 4 — book flight, final health check, and travel. PetClear manages all steps in parallel to minimise the overall timeline, but the 90-day titer wait cannot be shortened.'
+      answer: 'The minimum timeline is 3 to 4 months due to the titer test requirement: Month 1 — microchip and rabies vaccination (30-day wait before titer test); Month 1–2 — titer test blood draw, lab processing, and 90-day waiting period from blood draw date; Month 3 — apply for UAE import permit, obtain Indian export health certificate (NOC from AQCS); Month 4 — book flight, final health check, and travel. Dubai Pet Relocation manages all steps in parallel to minimise the overall timeline, but the 90-day titer wait cannot be shortened.'
     },
     {
       question: 'How much does it cost to relocate a pet from India to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 6,000 to AED 14,000 (INR 1,35,000–3,15,000). This includes: veterinary prep (microchip + vaccines + titer test ~AED 1,500–2,500), Indian export NOC and health certificate (~AED 800–1,500), UAE import permit (AED 500), air cargo freight (AED 2,500–6,000 depending on city and crate size), customs clearance in Dubai (AED 800–1,500), and optional PetClear door-to-door service (AED 1,500–2,500). The titer test adds approximately AED 1,000–1,800 to the total compared to low-risk routes.'
+      answer: 'For a single pet, total costs typically range from AED 6,000 to AED 14,000 (INR 1,35,000–3,15,000). This includes: veterinary prep (microchip + vaccines + titer test ~AED 1,500–2,500), Indian export NOC and health certificate (~AED 800–1,500), UAE import permit (AED 500), air cargo freight (AED 2,500–6,000 depending on city and crate size), customs clearance in Dubai (AED 800–1,500), and optional Dubai Pet Relocation door-to-door service (AED 1,500–2,500). The titer test adds approximately AED 1,000–1,800 to the total compared to low-risk routes.'
     },
     {
       question: 'What documents are required for an Indian pet to enter Dubai?',
@@ -38,11 +38,11 @@ export default function IndiaToDubai() {
     },
     {
       question: 'Can I get the titer test done in India, or do I need to send blood abroad?',
-      answer: 'The titer test can be done in India at the Central Veterinary Laboratory (CVL) in Pune, or through private veterinary laboratories that are approved by the UAE. However, many Indian pet owners choose to send blood samples to international laboratories such as IDEXX (Germany), Kansas State University (USA), or the Animal Health Laboratory (UK) for faster turnaround and wider international recognition. PetClear can arrange the blood draw, courier, and lab selection for you. Results from any WOAH-approved lab are accepted by the UAE.'
+      answer: 'The titer test can be done in India at the Central Veterinary Laboratory (CVL) in Pune, or through private veterinary laboratories that are approved by the UAE. However, many Indian pet owners choose to send blood samples to international laboratories such as IDEXX (Germany), Kansas State University (USA), or the Animal Health Laboratory (UK) for faster turnaround and wider international recognition. Dubai Pet Relocation can arrange the blood draw, courier, and lab selection for you. Results from any WOAH-approved lab are accepted by the UAE.'
     },
     {
       question: 'What happens when my pet arrives in Dubai from India?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination, checks the titer test certificate, and inspects the pet for signs of illness. If all documents are correct and the pet is healthy, clearance takes 2–4 hours. PetClear provides meet-and-greet service, handles all customs formalities, and can deliver your pet directly to your home or a Dubai boarding facility. Because India is high-risk, the inspection may be slightly more thorough than for low-risk countries.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination, checks the titer test certificate, and inspects the pet for signs of illness. If all documents are correct and the pet is healthy, clearance takes 2–4 hours. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and can deliver your pet directly to your home or a Dubai boarding facility. Because India is high-risk, the inspection may be slightly more thorough than for low-risk countries.'
     }
   ]
 
@@ -73,8 +73,8 @@ export default function IndiaToDubai() {
       "@type": "Article",
       "headline": pageTitle,
       "description": pageDescription,
-      "author": { "@type": "Organization", "name": "PetClear" },
-      "publisher": { "@type": "Organization", "name": "PetClear", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
       "datePublished": "2025-01-15",
       "dateModified": "2025-01-15"
     }
@@ -102,7 +102,7 @@ export default function IndiaToDubai() {
                 India to Dubai Pet Relocation — Complete Guide
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Relocating your pet from India to Dubai requires extra planning because India is a high-risk country for rabies. A titer test (RNATT) and 90-day waiting period are mandatory. PetClear has helped hundreds of Indian pet owners successfully move their dogs and cats to Dubai — here is the complete guide.
+                Relocating your pet from India to Dubai requires extra planning because India is a high-risk country for rabies. A titer test (RNATT) and 90-day waiting period are mandatory. Dubai Pet Relocation has helped hundreds of Indian pet owners successfully move their dogs and cats to Dubai — here is the complete guide.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get an India to Dubai quote" message="Hi, I want to relocate my pet from India to Dubai. Can you help me understand the titer test process and cost?" />
@@ -225,7 +225,7 @@ export default function IndiaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">4. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must include the titer test certificate. Cost: AED 500 per pet. PetClear handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must include the titer test certificate. Cost: AED 500 per pet. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 
@@ -267,7 +267,7 @@ export default function IndiaToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Some Indian veterinarians are not familiar with the UAE import requirements. PetClear can recommend approved vets in Delhi, Mumbai, Bengaluru, and Chennai who have experience with international pet travel.</span>
+                  <span>Some Indian veterinarians are not familiar with the UAE import requirements. Dubai Pet Relocation can recommend approved vets in Delhi, Mumbai, Bengaluru, and Chennai who have experience with international pet travel.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
@@ -275,7 +275,7 @@ export default function IndiaToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>The titer test must be done at a lab approved by the UAE. Not all Indian labs are accepted. PetClear verifies lab accreditation before sending samples.</span>
+                  <span>The titer test must be done at a lab approved by the UAE. Not all Indian labs are accepted. Dubai Pet Relocation verifies lab accreditation before sending samples.</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-[#5A8F6E]/10 rounded-xl">
@@ -354,7 +354,7 @@ export default function IndiaToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,000–1,800</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: PetClear Door-to-Door</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,200–2,000</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,500–2,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,800–3,000</td>
@@ -370,7 +370,7 @@ export default function IndiaToDubai() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AED. Indian Rupee amounts will vary with exchange rates. The titer test is the single biggest additional cost compared to low-risk routes. Air cargo rates from Tier-2 cities (e.g., Pune, Ahmedabad, Kochi) may be higher due to limited cargo capacity. Multiple pets may qualify for a 10–15% discount on combined services. Contact PetClear for an exact quote.
+                * Prices are estimates in AED. Indian Rupee amounts will vary with exchange rates. The titer test is the single biggest additional cost compared to low-risk routes. Air cargo rates from Tier-2 cities (e.g., Pune, Ahmedabad, Kochi) may be higher due to limited cargo capacity. Multiple pets may qualify for a 10–15% discount on combined services. Contact Dubai Pet Relocation for an exact quote.
               </p>
             </div>
           </div>
@@ -395,31 +395,31 @@ export default function IndiaToDubai() {
                 {
                   week: 'Month 1',
                   title: 'Microchip, Rabies Vaccine & Titer Test Blood Draw',
-                  desc: 'Your Indian vet implants an ISO microchip and administers a rabies vaccine. After 30 days, a blood sample is drawn for the titer test (RNATT). The sample is sent to an approved lab. PetClear coordinates with the vet and lab to ensure correct documentation.',
+                  desc: 'Your Indian vet implants an ISO microchip and administers a rabies vaccine. After 30 days, a blood sample is drawn for the titer test (RNATT). The sample is sent to an approved lab. Dubai Pet Relocation coordinates with the vet and lab to ensure correct documentation.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Month 1–2',
                   title: 'Titer Test Results & 90-Day Waiting Period',
-                  desc: 'Lab results arrive in 2–4 weeks. If the antibody level is ≥ 0.5 IU/ml, the 90-day mandatory waiting period begins from the date of the blood draw. This wait is non-negotiable. PetClear begins preparing the UAE import permit application during this time.',
+                  desc: 'Lab results arrive in 2–4 weeks. If the antibody level is ≥ 0.5 IU/ml, the 90-day mandatory waiting period begins from the date of the blood draw. This wait is non-negotiable. Dubai Pet Relocation begins preparing the UAE import permit application during this time.',
                   icon: Shield
                 },
                 {
                   week: 'Month 3',
                   title: 'Import Permit & AQCS NOC Application',
-                  desc: 'PetClear applies for the UAE import permit via MOCCAE. We also schedule your AQCS appointment in India for the export NOC. The AQCS vet inspects the pet, verifies the microchip, and issues the export clearance certificate.',
+                  desc: 'Dubai Pet Relocation applies for the UAE import permit via MOCCAE. We also schedule your AQCS appointment in India for the export NOC. The AQCS vet inspects the pet, verifies the microchip, and issues the export clearance certificate.',
                   icon: FileText
                 },
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'With the 90-day wait complete, PetClear books cargo space with Emirates, Air India, or IndiGo. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed one final time.',
+                  desc: 'With the 90-day wait complete, Dubai Pet Relocation books cargo space with Emirates, Air India, or IndiGo. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed one final time.',
                   icon: Plane
                 },
                 {
                   week: 'Travel Day',
                   title: 'India Departure & Dubai Arrival',
-                  desc: 'Your pet checks in at the cargo terminal in Delhi, Mumbai, or Bengaluru. After a 3–4 hour flight, PetClear meets your pet at DXB, handles the veterinary inspection and customs clearance, and delivers to your home.',
+                  desc: 'Your pet checks in at the cargo terminal in Delhi, Mumbai, or Bengaluru. After a 3–4 hour flight, Dubai Pet Relocation meets your pet at DXB, handles the veterinary inspection and customs clearance, and delivers to your home.',
                   icon: Home
                 }
               ].map((step, idx) => (
@@ -508,7 +508,7 @@ export default function IndiaToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Best for cats and small dogs</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Limited crate size acceptance</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">IndiGo is the most economical option for small pets, but cargo space is limited and must be booked well in advance. PetClear confirms availability before recommending IndiGo.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">IndiGo is the most economical option for small pets, but cargo space is limited and must be booked well in advance. Dubai Pet Relocation confirms availability before recommending IndiGo.</p>
             </div>
           </div>
 
@@ -518,7 +518,7 @@ export default function IndiaToDubai() {
               Seasonal Considerations for Indian Pet Travel
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              Indian summers (April–July) see extreme temperatures that affect both ground handling at Indian airports and cargo hold conditions. PetClear recommends booking early morning flights (6–9 AM) to avoid peak heat. During monsoon season (July–September), flight delays are common — plan buffer days around your travel date.
+              Indian summers (April–July) see extreme temperatures that affect both ground handling at Indian airports and cargo hold conditions. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During monsoon season (July–September), flight delays are common — plan buffer days around your travel date.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
               Peak relocation season for Indian pets is December–January, when many families move during school holidays. Cargo space fills 3–4 weeks in advance during this period. Start your titer test process at least 4 months before your intended travel date to avoid disappointment.
@@ -558,7 +558,7 @@ export default function IndiaToDubai() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from India to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear has helped hundreds of Indian families move their pets to Dubai. From Delhi, Mumbai, Bengaluru, Chennai, Hyderabad, or any city in India — we manage the titer test, AQCS NOC, flight booking, and Dubai customs.
+              Dubai Pet Relocation has helped hundreds of Indian families move their pets to Dubai. From Delhi, Mumbai, Bengaluru, Chennai, Hyderabad, or any city in India — we manage the titer test, AQCS NOC, flight booking, and Dubai customs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get an India to Dubai quote" message="Hi, I want to relocate my pet from India to Dubai. Can you help me understand the titer test process and cost?" />

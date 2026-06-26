@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 
 export default function AbuDhabiCity() {
   const pageUrl = `${BASE_URL}/cities/abu-dhabi/`
-  const pageTitle = 'Pet Relocation Abu Dhabi | Pet Transport UAE Capital | PetClear'
-  const pageDescription = 'PetClear helps you relocate your dog or cat to Abu Dhabi. Etihad in-cabin pet flights, Abu Dhabi Municipality registration, MICCO Logistics clearance. Get a transparent quote for Abu Dhabi pet transport.'
+  const pageTitle = 'Pet Relocation Abu Dhabi | Pet Transport UAE Capital | Dubai Pet Relocation'
+  const pageDescription = 'Dubai Pet Relocation helps you relocate your dog or cat to Abu Dhabi. Etihad in-cabin pet flights, Abu Dhabi Municipality registration, MICCO Logistics clearance. Get a transparent quote for Abu Dhabi pet transport.'
   const keywords = 'pet relocation Abu Dhabi, dog transport Abu Dhabi, cat transport Abu Dhabi, pet relocation UAE capital, Etihad pet in cabin, Abu Dhabi pet import, Etihad pet cargo, MICCO Logistics, Abu Dhabi pet registration, bring pet to Abu Dhabi, pet relocation Yas Island, pet relocation Saadiyat, pet relocation Al Reem Island, Abu Dhabi vs Dubai pet relocation'
 
   const faqs = [
     {
       question: 'Can my pet fly in the cabin to Abu Dhabi?',
-      answer: 'Yes — Etihad Airways allows small cats and dogs to travel in the cabin on flights to Abu Dhabi, provided the pet plus carrier weighs under 8kg. This is a major advantage over Dubai, where most airlines require pets to travel as cargo. The carrier must fit under the seat in front of you (dimensions vary by aircraft). PetClear can book in-cabin pet tickets on Etihad and advise on carrier requirements, weight limits, and booking deadlines. Note: only one in-cabin pet is permitted per passenger, and the route and aircraft type must support live animal cabin transport.'
+      answer: 'Yes — Etihad Airways allows small cats and dogs to travel in the cabin on flights to Abu Dhabi, provided the pet plus carrier weighs under 8kg. This is a major advantage over Dubai, where most airlines require pets to travel as cargo. The carrier must fit under the seat in front of you (dimensions vary by aircraft). Dubai Pet Relocation can book in-cabin pet tickets on Etihad and advise on carrier requirements, weight limits, and booking deadlines. Note: only one in-cabin pet is permitted per passenger, and the route and aircraft type must support live animal cabin transport.'
     },
     {
       question: 'How is Abu Dhabi different from Dubai for pet relocation?',
@@ -22,11 +22,11 @@ export default function AbuDhabiCity() {
     },
     {
       question: 'How much does pet relocation to Abu Dhabi cost?',
-      answer: 'Pet relocation to Abu Dhabi costs roughly AED 6,000–22,000 depending on origin, pet size, and whether you use in-cabin or cargo transport. The total includes veterinary prep, documentation, air freight, customs clearance (via MICCO Logistics at AUH), Abu Dhabi Municipality registration (AED 100–250), and ground transport. In-cabin travel on Etihad is significantly cheaper than cargo for small pets (under 8kg). For large dogs, cargo rates are similar to Dubai. PetClear provides a detailed, itemised Abu Dhabi quote before you commit.'
+      answer: 'Pet relocation to Abu Dhabi costs roughly AED 6,000–22,000 depending on origin, pet size, and whether you use in-cabin or cargo transport. The total includes veterinary prep, documentation, air freight, customs clearance (via MICCO Logistics at AUH), Abu Dhabi Municipality registration (AED 100–250), and ground transport. In-cabin travel on Etihad is significantly cheaper than cargo for small pets (under 8kg). For large dogs, cargo rates are similar to Dubai. Dubai Pet Relocation provides a detailed, itemised Abu Dhabi quote before you commit.'
     },
     {
       question: 'How do I register my pet with Abu Dhabi Municipality?',
-      answer: 'Pet registration in Abu Dhabi is managed by the Abu Dhabi City Municipality (ADCM). You must register your pet within 30 days of arrival via the TAMM portal or at an ADCM service centre. Required documents include your Emirates ID or passport, a tenancy contract (proof of residence in Abu Dhabi), your pet\'s vaccination records (rabies certificate), and a microchip certificate. The registration fee is approximately AED 100–250 per pet. Annual renewal is required. Some areas of Abu Dhabi may have additional rules for dogs in public spaces. PetClear assists with the entire ADCM registration process as part of our arrival service.'
+      answer: 'Pet registration in Abu Dhabi is managed by the Abu Dhabi City Municipality (ADCM). You must register your pet within 30 days of arrival via the TAMM portal or at an ADCM service centre. Required documents include your Emirates ID or passport, a tenancy contract (proof of residence in Abu Dhabi), your pet\'s vaccination records (rabies certificate), and a microchip certificate. The registration fee is approximately AED 100–250 per pet. Annual renewal is required. Some areas of Abu Dhabi may have additional rules for dogs in public spaces. Dubai Pet Relocation assists with the entire ADCM registration process as part of our arrival service.'
     },
     {
       question: 'Which pet-friendly areas in Abu Dhabi are best for dogs and cats?',
@@ -34,7 +34,7 @@ export default function AbuDhabiCity() {
     },
     {
       question: 'What is the MICCO Logistics Bill of Entry for Abu Dhabi?',
-      answer: 'MICCO Logistics (formerly known as Abu Dhabi Airports Cargo) handles customs clearance and the Bill of Entry for all pets arriving at Zayed International Airport (AUH). The Bill of Entry is a customs declaration that must be filed before your pet can be released. It requires the import permit, health certificate, airway bill, and owner identification. PetClear works directly with MICCO to pre-file the Bill of Entry, ensuring your pet is cleared within 2–4 hours of landing. This process is different from Dubai, where dnata handles ground services at DXB.'
+      answer: 'MICCO Logistics (formerly known as Abu Dhabi Airports Cargo) handles customs clearance and the Bill of Entry for all pets arriving at Zayed International Airport (AUH). The Bill of Entry is a customs declaration that must be filed before your pet can be released. It requires the import permit, health certificate, airway bill, and owner identification. Dubai Pet Relocation works directly with MICCO to pre-file the Bill of Entry, ensuring your pet is cleared within 2–4 hours of landing. This process is different from Dubai, where dnata handles ground services at DXB.'
     },
     {
       question: 'Which airlines fly pets to Abu Dhabi?',
@@ -42,7 +42,7 @@ export default function AbuDhabiCity() {
     },
     {
       question: 'Is there quarantine for pets arriving in Abu Dhabi?',
-      answer: 'No — if all documentation is correct, there is no quarantine for pets arriving in Abu Dhabi (or anywhere in the UAE). The same rules apply as Dubai: low-risk countries require a valid rabies vaccination and health certificate; high-risk countries require an additional rabies titer test (RNATT). As long as the microchip, vaccines, import permit, and health certificate are in order, your pet is cleared within 2–4 hours of arrival at AUH. PetClear provides meet-and-greet service at Abu Dhabi airport and handles customs formalities with MICCO Logistics.'
+      answer: 'No — if all documentation is correct, there is no quarantine for pets arriving in Abu Dhabi (or anywhere in the UAE). The same rules apply as Dubai: low-risk countries require a valid rabies vaccination and health certificate; high-risk countries require an additional rabies titer test (RNATT). As long as the microchip, vaccines, import permit, and health certificate are in order, your pet is cleared within 2–4 hours of arrival at AUH. Dubai Pet Relocation provides meet-and-greet service at Abu Dhabi airport and handles customs formalities with MICCO Logistics.'
     }
   ]
 
@@ -50,11 +50,11 @@ export default function AbuDhabiCity() {
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "PetClear Abu Dhabi Pet Relocation",
+      "name": "Dubai Pet Relocation Abu Dhabi Pet Relocation",
       "description": "Professional pet relocation services to and from Abu Dhabi. Dog and cat transport, Etihad in-cabin booking, documentation, customs clearance, and ADCM registration.",
       "url": pageUrl,
       "telephone": "+971-5XX-XXX-XXX",
-      "email": "hello@petclear.ae",
+      "email": "hallo@dubai-pet-relocation.ae",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Abu Dhabi",
@@ -119,7 +119,7 @@ export default function AbuDhabiCity() {
                 Pet Relocation Abu Dhabi — Bringing Your Pet to the UAE Capital
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Abu Dhabi is the UAE's capital and a premier destination for pet owners. With Etihad Airways offering in-cabin pet travel, world-class veterinary facilities like the Abu Dhabi Falcon Hospital, and pet-friendly communities on Yas Island and Saadiyat, Abu Dhabi is an excellent choice for relocating with your dog or cat. PetClear handles every step of your Abu Dhabi pet relocation.
+                Abu Dhabi is the UAE's capital and a premier destination for pet owners. With Etihad Airways offering in-cabin pet travel, world-class veterinary facilities like the Abu Dhabi Falcon Hospital, and pet-friendly communities on Yas Island and Saadiyat, Abu Dhabi is an excellent choice for relocating with your dog or cat. Dubai Pet Relocation handles every step of your Abu Dhabi pet relocation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get an Abu Dhabi pet relocation quote" message="Hi, I want to relocate my pet to Abu Dhabi. Can you help me understand the process, timeline, and cost for Abu Dhabi?" />
@@ -196,7 +196,7 @@ export default function AbuDhabiCity() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> IATA-compliant hard crate required</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Climate-controlled cargo hold (16–18°C)</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Available for all breeds (subject to restrictions)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> PetClear books cargo space and handles AUH clearance</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Dubai Pet Relocation books cargo space and handles AUH clearance</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Priority offloading for live animals</li>
               </ul>
               <div className="mt-4 p-4 bg-[#5A8F6E]/10 rounded-xl">
@@ -227,7 +227,7 @@ export default function AbuDhabiCity() {
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Abu Dhabi City Municipality (ADCM)</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                Unlike Dubai, which uses Dubai Municipality, Abu Dhabi has its own municipal authority — the Abu Dhabi City Municipality (ADCM). Pet registration is done through the TAMM government services portal or in person at ADCM centres. Fees and processes differ slightly from Dubai, and some areas may have additional pet ownership rules. PetClear handles ADCM registration on your behalf.
+                Unlike Dubai, which uses Dubai Municipality, Abu Dhabi has its own municipal authority — the Abu Dhabi City Municipality (ADCM). Pet registration is done through the TAMM government services portal or in person at ADCM centres. Fees and processes differ slightly from Dubai, and some areas may have additional pet ownership rules. Dubai Pet Relocation handles ADCM registration on your behalf.
               </p>
             </div>
 
@@ -237,7 +237,7 @@ export default function AbuDhabiCity() {
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MICCO Logistics Bill of Entry</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                All pets arriving at Zayed International Airport (AUH) are cleared by MICCO Logistics, Abu Dhabi's ground handling and cargo partner. The Bill of Entry is a customs declaration that must be filed before release. PetClear works directly with MICCO to pre-file documentation, ensuring your pet is cleared within 2–4 hours. This is different from Dubai's dnata/Dubai Cargo Village process.
+                All pets arriving at Zayed International Airport (AUH) are cleared by MICCO Logistics, Abu Dhabi's ground handling and cargo partner. The Bill of Entry is a customs declaration that must be filed before release. Dubai Pet Relocation works directly with MICCO to pre-file documentation, ensuring your pet is cleared within 2–4 hours. This is different from Dubai's dnata/Dubai Cargo Village process.
               </p>
             </div>
 
@@ -331,7 +331,7 @@ export default function AbuDhabiCity() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Airline policies change seasonally. PetClear verifies the latest rules before booking. Brachycephalic breed restrictions vary by route and time of year. Contact us for the most current information on your specific route and pet.
+                * Airline policies change seasonally. Dubai Pet Relocation verifies the latest rules before booking. Brachycephalic breed restrictions vary by route and time of year. Contact us for the most current information on your specific route and pet.
               </p>
             </div>
           </div>
@@ -489,7 +489,7 @@ export default function AbuDhabiCity() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * All prices are estimates in UAE Dirhams (AED). Actual costs depend on pet size, origin country, airline, and season. In-cabin travel is only available for pets under 8kg (including carrier) on Etihad Airways. Contact PetClear for a detailed, itemised quote for your specific situation.
+                * All prices are estimates in UAE Dirhams (AED). Actual costs depend on pet size, origin country, airline, and season. In-cabin travel is only available for pets under 8kg (including carrier) on Etihad Airways. Contact Dubai Pet Relocation for a detailed, itemised quote for your specific situation.
               </p>
             </div>
           </div>
@@ -551,7 +551,7 @@ export default function AbuDhabiCity() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet to Abu Dhabi?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear has helped families relocate their dogs and cats to Abu Dhabi from the UK, USA, Europe, Australia, India, and beyond. Whether you want in-cabin travel with Etihad or cargo transport, we handle every detail — from permits to ADCM registration.
+              Dubai Pet Relocation has helped families relocate their dogs and cats to Abu Dhabi from the UK, USA, Europe, Australia, India, and beyond. Whether you want in-cabin travel with Etihad or cargo transport, we handle every detail — from permits to ADCM registration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get an Abu Dhabi pet relocation quote" message="Hi, I want to relocate my pet to Abu Dhabi. Can you help me understand the process, timeline, and cost?" />

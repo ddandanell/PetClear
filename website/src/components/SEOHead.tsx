@@ -68,7 +68,7 @@ export default function SEOHead(props: SEOHeadProps) {
     setMeta('meta[property="og:type"]', ogType)
     setMeta('meta[property="og:url"]', canonical)
     setMeta('meta[property="og:image"]', ogImage)
-    setMeta('meta[property="og:site_name"]', 'PetClear')
+    setMeta('meta[property="og:site_name"]', 'Dubai Pet Relocation')
     setMeta('meta[property="og:locale"]', 'en_US')
 
     // Twitter Cards

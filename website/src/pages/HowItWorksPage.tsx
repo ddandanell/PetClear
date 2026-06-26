@@ -233,43 +233,43 @@ export default function HowItWorksPage() {
         {
           '@type': 'HowToStep',
           name: 'Free consultation and quote',
-          text: 'Contact PetClear via WhatsApp with your pet\'s type, breed, weight, origin, destination, and planned move date. Receive an itemized quote within 24 hours.',
+          text: 'Contact Dubai Pet Relocation via WhatsApp with your pet\'s type, breed, weight, origin, destination, and planned move date. Receive an itemized quote within 24 hours.',
           url: `${BASE_URL}/how-it-works/#step1`,
         },
         {
           '@type': 'HowToStep',
           name: 'Document check and eligibility review',
-          text: 'PetClear audits your pet\'s existing documents including microchip certificate, vaccination records, and health certificates. They flag errors and provide a checklist of missing items.',
+          text: 'Dubai Pet Relocation audits your pet\'s existing documents including microchip certificate, vaccination records, and health certificates. They flag errors and provide a checklist of missing items.',
           url: `${BASE_URL}/how-it-works/#step2`,
         },
         {
           '@type': 'HowToStep',
           name: 'Partner matching',
-          text: 'PetClear matches you with the best vetted partners for your specific route, pet size, breed, and budget. You approve the match and service tier.',
+          text: 'Dubai Pet Relocation matches you with the best vetted partners for your specific route, pet size, breed, and budget. You approve the match and service tier.',
           url: `${BASE_URL}/how-it-works/#step3`,
         },
         {
           '@type': 'HowToStep',
           name: 'Booking and coordination',
-          text: 'PetClear books your pet\'s cargo flight, IATA-certified crate, vet appointment, and ground transport. You receive a single document with all confirmed dates and details.',
+          text: 'Dubai Pet Relocation books your pet\'s cargo flight, IATA-certified crate, vet appointment, and ground transport. You receive a single document with all confirmed dates and details.',
           url: `${BASE_URL}/how-it-works/#step4`,
         },
         {
           '@type': 'HowToStep',
           name: 'Pre-travel preparation',
-          text: 'Your pet visits the vet partner for a health certificate and any required treatments. PetClear delivers the IATA crate to your home 2-3 days before travel for familiarization.',
+          text: 'Your pet visits the vet partner for a health certificate and any required treatments. Dubai Pet Relocation delivers the IATA crate to your home 2-3 days before travel for familiarization.',
           url: `${BASE_URL}/how-it-works/#step5`,
         },
         {
           '@type': 'HowToStep',
           name: 'Travel day support',
-          text: 'Ground transport collects your pet from your home. The cargo partner handles airport check-in. PetClear tracks the flight and sends real-time updates and photos at every milestone.',
+          text: 'Ground transport collects your pet from your home. The cargo partner handles airport check-in. Dubai Pet Relocation tracks the flight and sends real-time updates and photos at every milestone.',
           url: `${BASE_URL}/how-it-works/#step6`,
         },
         {
           '@type': 'HowToStep',
           name: 'Arrival and handover',
-          text: 'PetClear handles customs clearance and delivers your pet to your door. They follow up 24 hours later and assist with Dubai Municipality registration via the Aleef app.',
+          text: 'Dubai Pet Relocation handles customs clearance and delivers your pet to your door. They follow up 24 hours later and assist with Dubai Municipality registration via the Aleef app.',
           url: `${BASE_URL}/how-it-works/#step7`,
         },
       ],
@@ -297,7 +297,7 @@ export default function HowItWorksPage() {
   return (
     <div className="bg-[#FDFBF8]">
       <SEOHead
-        title="How Pet Relocation Works in Dubai | 7-Step Process | PetClear"
+        title="How Pet Relocation Works in Dubai | 7-Step Process | Dubai Pet Relocation"
         description="Our transparent 7-step pet relocation process for Dubai. Free consultation, document check, partner matching, booking, pre-travel prep, travel day support, and arrival handover."
         keywords="how pet relocation works, pet relocation process Dubai, dog relocation steps, cat relocation process, pet transport Dubai steps"
         ogType="article"
@@ -320,7 +320,7 @@ export default function HowItWorksPage() {
               We are your pet relocation concierge — like a wedding planner for your pet&apos;s move. We coordinate a team of vetted specialists so you don&apos;t have to manage five different companies from your phone at 2 AM.
             </p>
             <p className="text-white/80 mb-8">
-              Most pet owners tell us the same thing: they expected the hard part to be the flight. They didn&apos;t expect the hard part to be the coordination. Between the vet, the cargo agent, the airline, the permit office, and the customs broker, you&apos;re managing five different phone numbers, five different timelines, and five different chances for something to go wrong. We built PetClear because that model is broken.
+              Most pet owners tell us the same thing: they expected the hard part to be the flight. They didn&apos;t expect the hard part to be the coordination. Between the vet, the cargo agent, the airline, the permit office, and the customs broker, you&apos;re managing five different phone numbers, five different timelines, and five different chances for something to go wrong. We built Dubai Pet Relocation because that model is broken.
             </p>
             <a
               href={getWhatsAppUrl(heroWaText)}
@@ -461,7 +461,7 @@ export default function HowItWorksPage() {
       <section className="section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-            Radical Transparency: What PetClear Handles vs. What Our Partners Handle
+            Radical Transparency: What Dubai Pet Relocation Handles vs. What Our Partners Handle
           </h2>
           <p className="text-[#5A5A5A] mb-8">
             We don&apos;t hide our partner model. We&apos;re proud of it. Here&apos;s the exact breakdown of who does what.
@@ -472,7 +472,7 @@ export default function HowItWorksPage() {
               <thead>
                 <tr>
                   <th>Task</th>
-                  <th>PetClear (Us)</th>
+                  <th>Dubai Pet Relocation (Us)</th>
                   <th>Our Partners</th>
                 </tr>
               </thead>
@@ -599,7 +599,7 @@ export default function HowItWorksPage() {
       {/* ═══════════ WHAT YOU GET AS A CLIENT ═══════════ */}
       <section className="section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8">What You Get When You Work With PetClear</h2>
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8">What You Get When You Work With Dubai Pet Relocation</h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
@@ -689,7 +689,7 @@ export default function HowItWorksPage() {
                 <tr><td>Air freight (cargo)</td><td>4,500</td><td>You</td><td>Airline fee, no markup</td></tr>
                 <tr><td>Customs clearance</td><td>400</td><td>You</td><td>Broker fee</td></tr>
                 <tr><td>Ground transport (pickup + delivery)</td><td>300</td><td>You</td><td>Transport partner fee</td></tr>
-                <tr className="bg-[#1B2B4D]/5"><td className="font-bold text-[#2A2A2A]">PetClear service fee</td><td className="font-bold text-[#2A2A2A]">2,500</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">Our coordination + support fee</td></tr>
+                <tr className="bg-[#1B2B4D]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation service fee</td><td className="font-bold text-[#2A2A2A]">2,500</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">Our coordination + support fee</td></tr>
                 <tr className="bg-[#1B2B4D]/10"><td className="font-bold text-[#2A2A2A]">Total estimated cost</td><td className="font-bold text-[#2A2A2A]">9,450</td><td></td><td className="font-bold text-[#2A2A2A]">Varies by route and pet size</td></tr>
               </tbody>
             </table>

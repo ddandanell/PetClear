@@ -70,9 +70,9 @@ export default function ContactPage() {
   const contactSchema = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Contact PetClear',
+    name: 'Contact Dubai Pet Relocation',
     url: `${BASE_URL}/contact`,
-    description: 'Contact PetClear for pet relocation help in Dubai. Reach us via WhatsApp, email, or our contact form.',
+    description: 'Contact Dubai Pet Relocation for pet relocation help in Dubai. Reach us via WhatsApp, email, or our contact form.',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
@@ -85,9 +85,9 @@ export default function ContactPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Contact PetClear | Pet Relocation Dubai',
-          description: 'Contact PetClear for pet relocation help in Dubai. Reach us via WhatsApp, email, or our contact form. We reply within 15 minutes during business hours.',
-          keywords: 'contact PetClear, pet relocation help Dubai, pet transport contact, WhatsApp pet relocation Dubai',
+          title: 'Contact Dubai Pet Relocation | Pet Relocation Dubai',
+          description: 'Contact Dubai Pet Relocation for pet relocation help in Dubai. Reach us via WhatsApp, email, or our contact form. We reply within 15 minutes during business hours.',
+          keywords: 'contact Dubai Pet Relocation, pet relocation help Dubai, pet transport contact, WhatsApp pet relocation Dubai',
           canonical: `${BASE_URL}/contact`,
           ogType: 'website',
         }}
@@ -101,7 +101,7 @@ export default function ContactPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
-              Contact PetClear — We're Here to Help
+              Contact Dubai Pet Relocation — We're Here to Help
             </h1>
             <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
               Whether you have a quick question about a breed ban, need a full relocation quote, or just want to understand the process better, we are here. Fastest response is on WhatsApp — but we read every form and email too.
@@ -109,10 +109,10 @@ export default function ContactPage() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <WhatsAppCta
                 text="Message Us on WhatsApp"
-                message="Hi PetClear! I have a question about pet relocation and would love your help."
+                message="Hi Dubai Pet Relocation! I have a question about pet relocation and would love your help."
               />
               <a
-                href="mailto:hello@petclear.ae"
+                href="mailto:hallo@dubai-pet-relocation.ae"
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#1B2B4D] text-[#1B2B4D] rounded-2xl font-semibold text-sm hover:bg-[#1B2B4D]/5 transition-colors"
               >
                 <Mail className="w-4 h-4" />
@@ -134,12 +134,12 @@ export default function ContactPage() {
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">WhatsApp / Phone</h3>
               <p className="text-sm text-[#5A5A5A] mb-3">Fastest response during business hours</p>
               <a
-                href={getWhatsAppUrl('Hi PetClear, I have a question about pet relocation.')}
+                href={getWhatsAppUrl('Hi Dubai Pet Relocation, I have a question about pet relocation.')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#1B2B4D] font-semibold text-sm hover:underline"
               >
-                +971 5XX XXX XXX
+                +971 0551744849
               </a>
             </Card>
             <Card className="text-center">
@@ -149,10 +149,10 @@ export default function ContactPage() {
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Email</h3>
               <p className="text-sm text-[#5A5A5A] mb-3">For detailed inquiries and document sharing</p>
               <a
-                href="mailto:hello@petclear.ae"
+                href="mailto:hallo@dubai-pet-relocation.ae"
                 className="text-[#1B2B4D] font-semibold text-sm hover:underline"
               >
-                hello@petclear.ae
+                hallo@dubai-pet-relocation.ae
               </a>
             </Card>
             <Card className="text-center">
@@ -160,7 +160,7 @@ export default function ContactPage() {
                 <MapPin className="w-5 h-5 text-[#5A8F6E]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Location</h3>
-              <p className="text-sm text-[#5A5A5A] mb-3">Based in Dubai, serving UAE and global routes</p>
+              <p className="text-sm text-[#5A5A5A] mb-3">Al Quoz Industrial Area 4, Al Quoz, Dubai</p>
               <span className="text-[#1B2B4D] font-semibold text-sm">Dubai, United Arab Emirates</span>
             </Card>
           </div>
@@ -284,7 +284,7 @@ export default function ContactPage() {
                 </p>
                 <WhatsAppCta
                   text="Chat on WhatsApp Now"
-                  message="Hi PetClear! I have a question about relocating my pet and would love to chat."
+                  message="Hi Dubai Pet Relocation! I have a question about relocating my pet and would love to chat."
                   fullWidth
                 />
               </Card>
@@ -330,7 +330,7 @@ export default function ContactPage() {
           </p>
           <WhatsAppCta
             text="Get Help on WhatsApp"
-            message="Hi PetClear! I need help with pet relocation and would love to chat."
+            message="Hi Dubai Pet Relocation! I need help with pet relocation and would love to chat."
           />
         </div>
       </section>

@@ -97,7 +97,7 @@ export default function DogRelocationPage() {
   return (
     <div className="bg-[#FDFBF8]">
       <SEOHead
-        title="Dog Relocation to Dubai | Complete Guide 2026 | PetClear"
+        title="Dog Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation"
         description="Expert guide to relocating your dog to Dubai. Breed checks, crate sizing, MOCCAE import permit, flight booking, banned breeds, and everything you need for a safe journey."
         keywords="dog relocation to Dubai, bring dog to Dubai, dog import Dubai, Dubai dog relocation, pet dog transport Dubai, banned dog breeds Dubai"
         ogType="article"
@@ -135,7 +135,7 @@ export default function DogRelocationPage() {
                 name: "What if my dog is a banned breed but I have paperwork saying otherwise?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Breed identification at UAE customs is done by visual inspection, and the inspector's decision is final. 'Pit Bull mix' or 'unknown breed' labels from shelters are not reliable for UAE import purposes. At PetClear, we assess your dog's appearance, paperwork, and pedigree (if available) before submitting any MOCCAE permit application. If there is any doubt about your dog's breed classification, we will give you an honest answer. Importing a banned breed illegally can result in fines from AED 10,000 to AED 700,000, possible jail time, and confiscation of the animal."
+                  text: "Breed identification at UAE customs is done by visual inspection, and the inspector's decision is final. 'Pit Bull mix' or 'unknown breed' labels from shelters are not reliable for UAE import purposes. At Dubai Pet Relocation, we assess your dog's appearance, paperwork, and pedigree (if available) before submitting any MOCCAE permit application. If there is any doubt about your dog's breed classification, we will give you an honest answer. Importing a banned breed illegally can result in fines from AED 10,000 to AED 700,000, possible jail time, and confiscation of the animal."
                 }
               },
               {
@@ -152,18 +152,18 @@ export default function DogRelocationPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.petclear.ae/" },
-              { "@type": "ListItem", position: 2, name: "Dog Relocation to Dubai", item: "https://www.petclear.ae/dog-relocation-to-dubai/" }
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.dubai-pet-relocation.ae/" },
+              { "@type": "ListItem", position: 2, name: "Dog Relocation to Dubai", item: "https://www.dubai-pet-relocation.ae/dog-relocation-to-dubai/" }
             ]
           },
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Dog Relocation to Dubai | Complete Guide 2026 | PetClear",
+            headline: "Dog Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation",
             description: "Expert guide to relocating your dog to Dubai. Breed checks, crate sizing, MOCCAE import permit, flight booking, banned breeds, and everything you need for a safe journey.",
-            url: "https://www.petclear.ae/dog-relocation-to-dubai/",
-            author: { "@type": "Organization", name: "PetClear" },
-            publisher: { "@type": "Organization", name: "PetClear" }
+            url: "https://www.dubai-pet-relocation.ae/dog-relocation-to-dubai/",
+            author: { "@type": "Organization", name: "Dubai Pet Relocation" },
+            publisher: { "@type": "Organization", name: "Dubai Pet Relocation" }
           }
         ]}
       />
@@ -188,7 +188,7 @@ export default function DogRelocationPage() {
                 Relocating a dog to Dubai means paperwork, permits, crate sizing, breed checks, and airline rules. One missed detail can mean a cancelled flight, a quarantine bill, or — worst of all — your dog stuck at customs without you.
               </p>
               <p className="text-base text-[#5A5A5A] leading-relaxed mb-8">
-                At PetClear, we coordinate every step of your dog's journey. We check your breed against UAE regulations. We size the crate to your dog's exact measurements. We handle the MOCCAE import permit, book the cargo flight, and send you WhatsApp updates at every checkpoint — from vet visit to reunion.
+                At Dubai Pet Relocation, we coordinate every step of your dog's journey. We check your breed against UAE regulations. We size the crate to your dog's exact measurements. We handle the MOCCAE import permit, book the cargo flight, and send you WhatsApp updates at every checkpoint — from vet visit to reunion.
               </p>
               <p className="text-base text-[#5A5A5A] leading-relaxed mb-8">
                 You get one point of contact. One clear timeline. One itemised quote with no hidden fees.
@@ -758,7 +758,7 @@ export default function DogRelocationPage() {
               </ul>
               <div className="warning-box !border-l-[#C0392B] !bg-[#FEF2F2]">
                 <p className="text-sm font-semibold text-[#C0392B]">
-                  ⚠️ PetClear Warning: We will not book a brachycephalic dog during summer months. The risk is too high, and no airline will accept them. If your move is urgent, we will discuss ground transport or alternative routing. Your dog's safety comes before our revenue.
+                  ⚠️ Dubai Pet Relocation Warning: We will not book a brachycephalic dog during summer months. The risk is too high, and no airline will accept them. If your move is urgent, we will discuss ground transport or alternative routing. Your dog's safety comes before our revenue.
                 </p>
               </div>
               <div className="mt-4">
@@ -788,7 +788,7 @@ export default function DogRelocationPage() {
                 ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
                 ['IATA crate (Series 200)', '500–700'],
                 ['Cargo shipping (origin → Dubai)', '3,000–5,000'],
-                ['PetClear coordination fee', '1,500–3,500'],
+                ['Dubai Pet Relocation coordination fee', '1,500–3,500'],
               ]}
               total="6,000–11,000"
             />
@@ -799,7 +799,7 @@ export default function DogRelocationPage() {
                 ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
                 ['IATA crate (Series 300)', '700–1,000'],
                 ['Cargo shipping (origin → Dubai)', '4,000–7,000'],
-                ['PetClear coordination fee', '1,500–3,500'],
+                ['Dubai Pet Relocation coordination fee', '1,500–3,500'],
               ]}
               total="7,200–13,200"
             />
@@ -810,7 +810,7 @@ export default function DogRelocationPage() {
                 ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
                 ['IATA crate (Series 400)', '1,000–1,500'],
                 ['Cargo shipping (origin → Dubai)', '5,000–9,000'],
-                ['PetClear coordination fee', '2,000–4,000'],
+                ['Dubai Pet Relocation coordination fee', '2,000–4,000'],
               ]}
               total="9,000–16,200"
             />
@@ -821,7 +821,7 @@ export default function DogRelocationPage() {
                 ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
                 ['IATA crate (Series 500/700)', '1,500–2,000'],
                 ['Cargo shipping (origin → Dubai)', '7,000–12,000'],
-                ['PetClear coordination fee', '2,500–5,000'],
+                ['Dubai Pet Relocation coordination fee', '2,500–5,000'],
               ]}
               total="12,000–21,700"
             />
@@ -829,7 +829,7 @@ export default function DogRelocationPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-[#F5EFE6] rounded-[20px] p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">What is included in the PetClear coordination fee</h3>
+              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">What is included in the Dubai Pet Relocation coordination fee</h3>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Breed and route check</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> MOCCAE import permit application</li>
@@ -870,7 +870,7 @@ export default function DogRelocationPage() {
       {/* ─── TESTIMONIALS ─── */}
       <section className="py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4 text-center">What Dog Owners Say About PetClear</SectionHeading>
+          <SectionHeading className="mb-4 text-center">What Dog Owners Say About Dubai Pet Relocation</SectionHeading>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex gap-1 mb-4">
@@ -879,7 +879,7 @@ export default function DogRelocationPage() {
                 ))}
               </div>
               <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
-                &ldquo;I was terrified about putting Max on a plane. He's not just a dog — he's been with me through two job changes and a divorce. PetClear sent me photos of him at every step: at the vet, in the crate, at check-in, on the tarmac, and the moment he came through customs. The quote was itemised. I knew exactly what I was paying for. When he arrived, he was calm, hydrated, and happy. I cannot recommend them enough.&rdquo;
+                &ldquo;I was terrified about putting Max on a plane. He's not just a dog — he's been with me through two job changes and a divorce. Dubai Pet Relocation sent me photos of him at every step: at the vet, in the crate, at check-in, on the tarmac, and the moment he came through customs. The quote was itemised. I knew exactly what I was paying for. When he arrived, he was calm, hydrated, and happy. I cannot recommend them enough.&rdquo;
               </blockquote>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#EDF6F0] flex items-center justify-center text-[#5A8F6E] font-bold text-sm">SJ</div>
@@ -896,7 +896,7 @@ export default function DogRelocationPage() {
                 ))}
               </div>
               <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
-                &ldquo;Luna is a French Bulldog, so I knew summer travel was impossible. PetClear told me this in the first WhatsApp message — no sugar-coating. We planned for a November flight. They arranged a crate 10% larger than standard for her breed, booked a direct flight with no transit, and sent me a video of her boarding. When she arrived at DXB, they had already cleared customs. She was in my arms 45 minutes after landing.&rdquo;
+                &ldquo;Luna is a French Bulldog, so I knew summer travel was impossible. Dubai Pet Relocation told me this in the first WhatsApp message — no sugar-coating. We planned for a November flight. They arranged a crate 10% larger than standard for her breed, booked a direct flight with no transit, and sent me a video of her boarding. When she arrived at DXB, they had already cleared customs. She was in my arms 45 minutes after landing.&rdquo;
               </blockquote>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#EDF6F0] flex items-center justify-center text-[#5A8F6E] font-bold text-sm">DR</div>
@@ -975,13 +975,13 @@ export default function DogRelocationPage() {
               Your dog has been there for you. Now it's your turn to be there for them — even across continents.
             </p>
             <p className="text-white/80 text-base max-w-2xl mx-auto mb-8">
-              At PetClear, we make dog relocation clear, calm, and certain. We do not overpromise. We do not hide fees. We do not leave you guessing.
+              At Dubai Pet Relocation, we make dog relocation clear, calm, and certain. We do not overpromise. We do not hide fees. We do not leave you guessing.
             </p>
             <p className="text-white/80 text-base max-w-2xl mx-auto mb-8">
               Send us a WhatsApp message with your dog's breed, weight, and origin country. We will check your breed against UAE regulations, confirm your route, and send you an itemised quote — usually within 15 minutes.
             </p>
             <a
-              href="https://wa.me/9715XXXXXXXX?text=Hi%2C%20I%20want%20to%20relocate%20my%20dog%20to%20Dubai.%20Can%20you%20help%20me%20understand%20the%20process%20and%20cost%3F"
+              href="https://wa.me/9710551744849?text=Hi%2C%20I%20want%20to%20relocate%20my%20dog%20to%20Dubai.%20Can%20you%20help%20me%20understand%20the%20process%20and%20cost%3F"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-base hover:bg-[#1ebe57] transition-colors shadow-lg"
@@ -1000,7 +1000,7 @@ export default function DogRelocationPage() {
       <section className="bg-white border-t border-gray-100 py-8">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-[#8A8A8A]">
-            PetClear — Your dog's journey, made clear. IPATA-certified · MOCCAE-licensed · IATA-compliant · WhatsApp support
+            Dubai Pet Relocation — Your dog's journey, made clear. IPATA-certified · MOCCAE-licensed · IATA-compliant · WhatsApp support
           </p>
         </div>
       </section>

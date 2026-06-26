@@ -59,8 +59,8 @@ interface FAQEntry {
 const faqs: FAQEntry[] = [
   {
     category: 'general',
-    question: 'What does PetClear actually do?',
-    answer: <p>PetClear is a pet relocation concierge service. We help you understand the requirements for your route, check your documents, connect you with vetted veterinary and transport partners, and coordinate the entire process on WhatsApp. We do not physically transport pets ourselves — we are the coordination layer that makes sure nothing is missed.</p>,
+    question: 'What does Dubai Pet Relocation actually do?',
+    answer: <p>Dubai Pet Relocation is a pet relocation concierge service. We help you understand the requirements for your route, check your documents, connect you with vetted veterinary and transport partners, and coordinate the entire process on WhatsApp. We do not physically transport pets ourselves — we are the coordination layer that makes sure nothing is missed.</p>,
   },
   {
     category: 'general',
@@ -69,8 +69,8 @@ const faqs: FAQEntry[] = [
   },
   {
     category: 'general',
-    question: 'Is PetClear a carrier or airline?',
-    answer: <p>No. PetClear is a coordination and concierge service. We work with vetted airlines, veterinarians, and transport partners to handle the physical relocation. We are the layer that connects you to the right specialists and ensures the timeline and paperwork are correct.</p>,
+    question: 'Is Dubai Pet Relocation a carrier or airline?',
+    answer: <p>No. Dubai Pet Relocation is a coordination and concierge service. We work with vetted airlines, veterinarians, and transport partners to handle the physical relocation. We are the layer that connects you to the right specialists and ensures the timeline and paperwork are correct.</p>,
   },
   {
     category: 'general',
@@ -212,7 +212,7 @@ export default function FAQPage() {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: typeof faq.answer === 'string' ? faq.answer : 'See the full answer on the PetClear FAQ page.',
+        text: typeof faq.answer === 'string' ? faq.answer : 'See the full answer on the Dubai Pet Relocation FAQ page.',
       },
     })),
   }
@@ -230,7 +230,7 @@ export default function FAQPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation FAQ — Everything You Need to Know | PetClear Dubai',
+          title: 'Pet Relocation FAQ — Everything You Need to Know | Dubai Pet Relocation Dubai',
           description: 'Comprehensive pet relocation FAQ for Dubai. Find answers about documents, costs, banned breeds, cats, dogs, airlines, timelines, and more. Ask us on WhatsApp if you need help.',
           keywords: 'pet relocation FAQ Dubai, dog import FAQ, cat import FAQ, MOCCAE permit questions, pet transport cost Dubai, banned dog breeds UAE, pet relocation timeline',
           canonical: `${BASE_URL}/faq`,
@@ -297,7 +297,7 @@ export default function FAQPage() {
                 <p className="text-[#8A8A8A] text-base mb-4">No questions found matching your search.</p>
                 <WhatsAppCta
                   text="Ask Us on WhatsApp"
-                  message={`Hi PetClear! I have a question about pet relocation: ${searchQuery}`}
+                  message={`Hi Dubai Pet Relocation! I have a question about pet relocation: ${searchQuery}`}
                 />
               </div>
             )}
@@ -352,7 +352,7 @@ export default function FAQPage() {
           </p>
           <WhatsAppCta
             text="Ask a Question on WhatsApp"
-            message="Hi PetClear! I have a specific question about pet relocation that I couldn't find in the FAQ. Can you help?"
+            message="Hi Dubai Pet Relocation! I have a specific question about pet relocation that I couldn't find in the FAQ. Can you help?"
           />
         </div>
       </section>

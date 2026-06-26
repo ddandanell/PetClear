@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 
 export default function DubaiCity() {
   const pageUrl = `${BASE_URL}/cities/dubai/`
-  const pageTitle = 'Pet Relocation Dubai | Safe Dog & Cat Transport | PetClear'
-  const pageDescription = 'PetClear helps you relocate your dog or cat to Dubai safely. Full-service pet relocation to Dubai — documents, flights, customs, and delivery. Get a transparent quote for Dubai pet transport.'
+  const pageTitle = 'Pet Relocation Dubai | Safe Dog & Cat Transport | Dubai Pet Relocation'
+  const pageDescription = 'Dubai Pet Relocation helps you relocate your dog or cat to Dubai safely. Full-service pet relocation to Dubai — documents, flights, customs, and delivery. Get a transparent quote for Dubai pet transport.'
   const keywords = 'pet relocation Dubai, dog transport Dubai, cat transport Dubai, pet relocation UAE, Dubai pet import, pet shipping Dubai, move pet to Dubai, Dubai pet relocation cost, pet relocation services Dubai, bring dog to Dubai, bring cat to Dubai, Emirates pet cargo Dubai, Dubai pet quarantine, pet relocation JLT, pet relocation Dubai Hills'
 
   const faqs = [
     {
       question: 'How much does pet relocation to Dubai cost?',
-      answer: 'Pet relocation to Dubai typically costs between AED 6,000 and AED 20,000 depending on the origin country, pet size, and airline. Small cats from low-risk countries may cost AED 6,000–10,000, while large dogs from high-risk countries requiring titer tests can reach AED 15,000–25,000. Dubai Municipality registration is an additional AED 100–200 per pet. PetClear provides a transparent, itemised quote before you commit.'
+      answer: 'Pet relocation to Dubai typically costs between AED 6,000 and AED 20,000 depending on the origin country, pet size, and airline. Small cats from low-risk countries may cost AED 6,000–10,000, while large dogs from high-risk countries requiring titer tests can reach AED 15,000–25,000. Dubai Municipality registration is an additional AED 100–200 per pet. Dubai Pet Relocation provides a transparent, itemised quote before you commit.'
     },
     {
       question: 'Is there quarantine for pets arriving in Dubai?',
@@ -26,11 +26,11 @@ export default function DubaiCity() {
     },
     {
       question: 'How do I register my pet with Dubai Municipality?',
-      answer: 'Pet registration in Dubai is mandatory within 30 days of arrival and is done through the Dubai Municipality Aleef mobile app. You need: your Emirates ID or passport, a copy of your tenancy contract (Ejari), your pet\'s vaccination records (especially rabies), and a microchip certificate. The registration fee is AED 100–200 depending on the pet type. Annual renewal is required. PetClear walks you through the Aleef app registration as part of our arrival service.'
+      answer: 'Pet registration in Dubai is mandatory within 30 days of arrival and is done through the Dubai Municipality Aleef mobile app. You need: your Emirates ID or passport, a copy of your tenancy contract (Ejari), your pet\'s vaccination records (especially rabies), and a microchip certificate. The registration fee is AED 100–200 depending on the pet type. Annual renewal is required. Dubai Pet Relocation walks you through the Aleef app registration as part of our arrival service.'
     },
     {
       question: 'What airlines fly pets to Dubai?',
-      answer: 'Emirates, Etihad, British Airways, Qatar Airways, Lufthansa, KLM, and Virgin Atlantic all operate pet cargo services to Dubai International Airport (DXB). Emirates SkyCargo is the largest and most experienced, handling thousands of animals per year. For departures from Dubai, Emirates, British Airways, and Virgin Atlantic are the most common choices. PetClear books cargo space on all major carriers and recommends the best option based on your route, pet size, and season.'
+      answer: 'Emirates, Etihad, British Airways, Qatar Airways, Lufthansa, KLM, and Virgin Atlantic all operate pet cargo services to Dubai International Airport (DXB). Emirates SkyCargo is the largest and most experienced, handling thousands of animals per year. For departures from Dubai, Emirates, British Airways, and Virgin Atlantic are the most common choices. Dubai Pet Relocation books cargo space on all major carriers and recommends the best option based on your route, pet size, and season.'
     },
     {
       question: 'How long does pet relocation to Dubai take?',
@@ -38,11 +38,11 @@ export default function DubaiCity() {
     },
     {
       question: 'Are there banned dog breeds in Dubai?',
-      answer: 'Yes. The UAE prohibits the import of certain breeds classified as dangerous, including Pit Bull Terriers, Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, Doberman Pinschers, Brazilian Fila, Argentinian Dogo, Japanese Tosa, and Wolfdogs. Brachycephalic (flat-faced) breeds such as Pugs, Bulldogs, Boxers, Shih Tzus, and Persian cats face airline travel restrictions during summer months (May–September) due to heat sensitivity. PetClear verifies breed eligibility before booking any transport.'
+      answer: 'Yes. The UAE prohibits the import of certain breeds classified as dangerous, including Pit Bull Terriers, Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, Doberman Pinschers, Brazilian Fila, Argentinian Dogo, Japanese Tosa, and Wolfdogs. Brachycephalic (flat-faced) breeds such as Pugs, Bulldogs, Boxers, Shih Tzus, and Persian cats face airline travel restrictions during summer months (May–September) due to heat sensitivity. Dubai Pet Relocation verifies breed eligibility before booking any transport.'
     },
     {
       question: 'What happens when my pet arrives at Dubai Airport (DXB)?',
-      answer: 'Upon arrival at DXB, your pet is offloaded from the aircraft and transferred to the Dubai Municipality Animal Care Centre (or a licensed veterinary facility). A MOCCAE veterinarian examines the pet, verifies the microchip number against the import permit and health certificate, and checks vaccination records. If all documents are correct, the pet is released within 2–4 hours. PetClear provides a meet-and-greet service, handles customs formalities, and delivers your pet directly to your home or a boarding facility in Dubai.'
+      answer: 'Upon arrival at DXB, your pet is offloaded from the aircraft and transferred to the Dubai Municipality Animal Care Centre (or a licensed veterinary facility). A MOCCAE veterinarian examines the pet, verifies the microchip number against the import permit and health certificate, and checks vaccination records. If all documents are correct, the pet is released within 2–4 hours. Dubai Pet Relocation provides a meet-and-greet service, handles customs formalities, and delivers your pet directly to your home or a boarding facility in Dubai.'
     }
   ]
 
@@ -50,11 +50,11 @@ export default function DubaiCity() {
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "PetClear Dubai Pet Relocation",
+      "name": "Dubai Pet Relocation Dubai Pet Relocation",
       "description": "Professional pet relocation services to and from Dubai. Dog and cat transport, documentation, flight booking, and customs clearance.",
       "url": pageUrl,
       "telephone": "+971-5XX-XXX-XXX",
-      "email": "hello@petclear.ae",
+      "email": "hallo@dubai-pet-relocation.ae",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dubai",
@@ -119,7 +119,7 @@ export default function DubaiCity() {
                 Pet Relocation Dubai — Your Dog or Cat's Safe Journey
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Dubai is one of the most pet-friendly cities in the Middle East, with world-class veterinary care, pet-friendly residential communities, and direct flights from every major continent. Whether you are moving to Dubai with a dog, a cat, or multiple pets, PetClear makes the process transparent, safe, and stress-free.
+                Dubai is one of the most pet-friendly cities in the Middle East, with world-class veterinary care, pet-friendly residential communities, and direct flights from every major continent. Whether you are moving to Dubai with a dog, a cat, or multiple pets, Dubai Pet Relocation makes the process transparent, safe, and stress-free.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get a Dubai pet relocation quote" message="Hi, I want to relocate my pet to Dubai. Can you help me understand the process, timeline, and cost?" />
@@ -180,7 +180,7 @@ export default function DubaiCity() {
                 Dubai is home to some of the best veterinary clinics in the Middle East. The German Veterinary Clinic in JLT offers advanced diagnostics and surgery. The British Veterinary Hospital in Umm Suqeim provides 24-hour emergency care and boarding. The Dubai Veterinary Hospital in Deira has decades of experience with international pet imports.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                Other trusted clinics include Blue Oasis Veterinary Clinic (Dubai Marina), Canadian Veterinary Hospital (Jumeirah), and Amity Veterinary Clinic (Dubai Hills). PetClear partners with all major clinics for health checks, vaccinations, and documentation.
+                Other trusted clinics include Blue Oasis Veterinary Clinic (Dubai Marina), Canadian Veterinary Hospital (Jumeirah), and Amity Veterinary Clinic (Dubai Hills). Dubai Pet Relocation partners with all major clinics for health checks, vaccinations, and documentation.
               </p>
             </div>
 
@@ -193,7 +193,7 @@ export default function DubaiCity() {
                 Dubai Municipality oversees pet registration through the Aleef mobile app. All pets must be registered within 30 days of arrival. The registration fee is AED 100–200 and requires your Emirates ID, tenancy contract (Ejari), and vaccination records. Annual renewal is mandatory.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                The UAE prohibits certain dangerous dog breeds, and brachycephalic breeds face summer travel restrictions. Dubai's rules are well-documented and consistently enforced, making compliance straightforward when you work with PetClear.
+                The UAE prohibits certain dangerous dog breeds, and brachycephalic breeds face summer travel restrictions. Dubai's rules are well-documented and consistently enforced, making compliance straightforward when you work with Dubai Pet Relocation.
               </p>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function DubaiCity() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Services</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Pet Relocation Services Available in Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              PetClear offers end-to-end pet relocation services in Dubai. Whether you are importing, exporting, or moving within the UAE, we handle every detail.
+              Dubai Pet Relocation offers end-to-end pet relocation services in Dubai. Whether you are importing, exporting, or moving within the UAE, we handle every detail.
             </p>
           </div>
 
@@ -288,7 +288,7 @@ export default function DubaiCity() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Network</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Local Partners in Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              PetClear works with a trusted network of veterinary clinics, cargo agents, and pet service providers across Dubai to ensure seamless relocation.
+              Dubai Pet Relocation works with a trusted network of veterinary clinics, cargo agents, and pet service providers across Dubai to ensure seamless relocation.
             </p>
           </div>
 
@@ -394,7 +394,7 @@ export default function DubaiCity() {
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Customs Clearance at DXB</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–1,500</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Included in PetClear's service package.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Included in Dubai Pet Relocation's service package.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Veterinary Inspection on Arrival</td>
@@ -411,7 +411,7 @@ export default function DubaiCity() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * All prices are estimates in UAE Dirhams (AED). Actual fees may vary depending on the specific municipality, pet type, and processing time. PetClear includes all known local fees in your upfront quote so there are no surprises.
+                * All prices are estimates in UAE Dirhams (AED). Actual fees may vary depending on the specific municipality, pet type, and processing time. Dubai Pet Relocation includes all known local fees in your upfront quote so there are no surprises.
               </p>
             </div>
           </div>
@@ -425,7 +425,7 @@ export default function DubaiCity() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Routes</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Popular Routes to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              PetClear handles pet relocations to Dubai from every major country. Here are the most common routes we manage, with links to detailed guides for each.
+              Dubai Pet Relocation handles pet relocations to Dubai from every major country. Here are the most common routes we manage, with links to detailed guides for each.
             </p>
           </div>
 
@@ -548,7 +548,7 @@ export default function DubaiCity() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear has helped hundreds of families move their dogs and cats to Dubai from the UK, USA, India, Australia, the Philippines, and beyond. Get a transparent, itemised quote and a week-by-week timeline today.
+              Dubai Pet Relocation has helped hundreds of families move their dogs and cats to Dubai from the UK, USA, India, Australia, the Philippines, and beyond. Get a transparent, itemised quote and a week-by-week timeline today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a Dubai pet relocation quote" message="Hi, I want to relocate my pet to Dubai. Can you help me understand the process, timeline, and cost?" />

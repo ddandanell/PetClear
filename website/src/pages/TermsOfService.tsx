@@ -8,8 +8,8 @@ export default function TermsOfService() {
     <div>
       <SEOHead
         meta={{
-          title: 'Terms of Service | PetClear',
-          description: 'Terms of Service for PetClear pet relocation concierge services. Please read these terms carefully before using our services.',
+          title: 'Terms of Service | Dubai Pet Relocation',
+          description: 'Terms of Service for Dubai Pet Relocation pet relocation concierge services. Please read these terms carefully before using our services.',
           canonical: `${BASE_URL}/terms`,
           noindex: true,
         }}
@@ -29,7 +29,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">1. Acceptance of Terms</h2>
             <p>
-              By accessing or using the services of PetClear FZ-LLC ("PetClear," "we," "us," or "our"), you agree to be bound by these Terms of Service. If you do not agree to all of these terms, you may not use our services. These terms apply to all users, including clients, partners, and visitors of our website.
+              By accessing or using the services of Dubai Pet Relocation ("Dubai Pet Relocation," "we," "us," or "our"), you agree to be bound by these Terms of Service. If you do not agree to all of these terms, you may not use our services. These terms apply to all users, including clients, partners, and visitors of our website.
             </p>
             <p className="mt-3">
               We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting to our website. Your continued use of our services following the posting of revised terms constitutes your acceptance of those changes.
@@ -39,10 +39,10 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">2. Description of Services</h2>
             <p>
-              PetClear is a pet relocation concierge and coordination service. We help pet owners understand the requirements for relocating pets to and from Dubai, check and prepare documents, and connect clients with trusted third-party partners including veterinarians, airlines, cargo agents, and ground transport providers.
+              Dubai Pet Relocation is a pet relocation concierge and coordination service. We help pet owners understand the requirements for relocating pets to and from Dubai, check and prepare documents, and connect clients with trusted third-party partners including veterinarians, airlines, cargo agents, and ground transport providers.
             </p>
             <p className="mt-3 font-semibold text-[#2A2A2A]">
-              Important: PetClear is not a licensed carrier, airline, veterinary clinic, or government agency. We do not physically transport pets, provide veterinary care, or issue government permits. We are a coordination and advisory service that connects you with specialists who perform these functions.
+              Important: Dubai Pet Relocation is not a licensed carrier, airline, veterinary clinic, or government agency. We do not physically transport pets, provide veterinary care, or issue government permits. We are a coordination and advisory service that connects you with specialists who perform these functions.
             </p>
             <p className="mt-3">
               We make reasonable efforts to ensure the accuracy of information provided on our website and through our communications, but we do not guarantee that all information is complete, accurate, or current. Government regulations, airline policies, and veterinary requirements change frequently, and you are ultimately responsible for verifying requirements with the relevant authorities.
@@ -52,7 +52,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">3. Service Agreement and Scope</h2>
             <p>
-              When you engage PetClear for services, we will provide a Service Agreement or engagement confirmation that specifies the scope of work, service tier, estimated costs, timeline, and any specific conditions for your relocation. This agreement supplements these Terms of Service and, in case of conflict, the Service Agreement prevails.
+              When you engage Dubai Pet Relocation for services, we will provide a Service Agreement or engagement confirmation that specifies the scope of work, service tier, estimated costs, timeline, and any specific conditions for your relocation. This agreement supplements these Terms of Service and, in case of conflict, the Service Agreement prevails.
             </p>
             <p className="mt-3">
               Our services are provided on a best-effort basis. While we strive for excellence in every relocation, we cannot guarantee outcomes that depend on third-party actions (e.g., airline schedules, government processing times, veterinary findings) or circumstances beyond our control.
@@ -98,10 +98,10 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">7. Liability and Limitations</h2>
             <p>
-              To the maximum extent permitted by law, PetClear's liability is limited to the amount of fees paid by you for our services in connection with the specific relocation giving rise to the claim. We are not liable for any indirect, incidental, consequential, or punitive damages, including loss of profits, emotional distress, or harm to your pet, arising from the use of our services or third-party services.
+              To the maximum extent permitted by law, Dubai Pet Relocation's liability is limited to the amount of fees paid by you for our services in connection with the specific relocation giving rise to the claim. We are not liable for any indirect, incidental, consequential, or punitive damages, including loss of profits, emotional distress, or harm to your pet, arising from the use of our services or third-party services.
             </p>
             <p className="mt-3">
-              PetClear is not liable for:
+              Dubai Pet Relocation is not liable for:
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-3">
               <li>Actions, omissions, or negligence of third-party partners (airlines, veterinarians, transport providers, government agencies).</li>
@@ -118,7 +118,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">8. Force Majeure</h2>
             <p>
-              Neither PetClear nor our partners shall be liable for failure to perform obligations under these Terms if such failure is due to circumstances beyond our reasonable control, including but not limited to: natural disasters, wars, terrorist acts, pandemics, government actions or changes in regulations, flight cancellations, extreme weather, strikes, labor disputes, or mechanical failures.
+              Neither Dubai Pet Relocation nor our partners shall be liable for failure to perform obligations under these Terms if such failure is due to circumstances beyond our reasonable control, including but not limited to: natural disasters, wars, terrorist acts, pandemics, government actions or changes in regulations, flight cancellations, extreme weather, strikes, labor disputes, or mechanical failures.
             </p>
             <p className="mt-3">
               In the event of force majeure, we will use reasonable efforts to mitigate the impact, find alternative solutions, and communicate updates to you as promptly as possible. Additional costs arising from force majeure events (e.g., extended boarding, rebooking fees) are generally your responsibility unless otherwise agreed.
@@ -128,14 +128,14 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">9. Indemnification</h2>
             <p>
-              You agree to indemnify, defend, and hold harmless PetClear, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising from your use of our services, your breach of these Terms, or your violation of any applicable law or regulation.
+              You agree to indemnify, defend, and hold harmless Dubai Pet Relocation, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising from your use of our services, your breach of these Terms, or your violation of any applicable law or regulation.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">10. Intellectual Property</h2>
             <p>
-              All content on the PetClear website, including text, graphics, logos, images, and software, is the property of PetClear or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from our content without our prior written consent.
+              All content on the Dubai Pet Relocation website, including text, graphics, logos, images, and software, is the property of Dubai Pet Relocation or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from our content without our prior written consent.
             </p>
           </section>
 
@@ -159,7 +159,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">13. Entire Agreement</h2>
             <p>
-              These Terms of Service, together with any Service Agreement, privacy policy, and other written agreements between you and PetClear, constitute the entire agreement between you and us regarding the subject matter hereof and supersede all prior or contemporaneous agreements, understandings, negotiations, and discussions, whether oral or written.
+              These Terms of Service, together with any Service Agreement, privacy policy, and other written agreements between you and Dubai Pet Relocation, constitute the entire agreement between you and us regarding the subject matter hereof and supersede all prior or contemporaneous agreements, understandings, negotiations, and discussions, whether oral or written.
             </p>
           </section>
 
@@ -169,9 +169,9 @@ export default function TermsOfService() {
               If you have questions about these Terms of Service, please contact us:
             </p>
             <div className="space-y-2">
-              <p><strong>Email:</strong> <a href="mailto:hello@petclear.ae" className="text-[#1B2B4D] hover:underline">hello@petclear.ae</a></p>
-              <p><strong>Address:</strong> Dubai, United Arab Emirates</p>
-              <p><strong>WhatsApp:</strong> <a href="https://wa.me/9715XXXXXXXX" target="_blank" rel="noopener noreferrer" className="text-[#1B2B4D] hover:underline">+971 5XX XXX XXX</a></p>
+              <p><strong>Email:</strong> <a href="mailto:hallo@dubai-pet-relocation.ae" className="text-[#1B2B4D] hover:underline">hallo@dubai-pet-relocation.ae</a></p>
+              <p><strong>Address:</strong> Al Quoz Industrial Area 4, Al Quoz Industrial Area, Al Quoz, Dubai</p>
+              <p><strong>WhatsApp:</strong> <a href="https://wa.me/9710551744849" target="_blank" rel="noopener noreferrer" className="text-[#1B2B4D] hover:underline">+971 0551744849</a></p>
             </div>
           </section>
         </div>

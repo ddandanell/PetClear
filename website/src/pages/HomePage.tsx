@@ -7,7 +7,7 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, siteConfig, BASE_URL } from '../lib/seo.ts'
 
-const defaultMsg = `Hi PetClear team,
+const defaultMsg = `Hi Dubai Pet Relocation team,
 
 I need help relocating my pet and would love to understand the process and get a quick quote.
 
@@ -64,8 +64,8 @@ export default function HomePage() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'PetClear',
-    alternateName: 'PetClear Dubai Pet Relocation',
+    name: 'Dubai Pet Relocation',
+    alternateName: 'Dubai Pet Relocation Dubai Pet Relocation',
     url: BASE_URL,
     logo: `${BASE_URL}/assets/logo.png`,
     description: siteConfig.description,
@@ -90,7 +90,7 @@ export default function HomePage() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'PetClear',
+    name: 'Dubai Pet Relocation',
     description: 'Pet relocation concierge service in Dubai',
     url: BASE_URL,
     telephone: siteConfig.phone,
@@ -170,7 +170,7 @@ export default function HomePage() {
     <div>
       <SEOHead
         meta={{
-          title: 'PetClear | Pet Relocation Dubai — Transparent, Expert, Safe',
+          title: 'Dubai Pet Relocation | Pet Relocation Dubai — Transparent, Expert, Safe',
           description: 'Transparent pet relocation concierge for Dubai and the UAE. We help pet owners understand the process, check requirements, and connect with trusted relocation partners for safer dog and cat travel.',
           keywords: 'pet relocation Dubai, dog relocation Dubai, cat relocation Dubai, pet transport UAE, MOCCAE import permit, pet relocation cost Dubai',
           ogType: 'website',
@@ -256,7 +256,7 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">Three Simple Steps</span>
-            <h2 className="text-section mt-3 mb-4">How PetClear Works</h2>
+            <h2 className="text-section mt-3 mb-4">How Dubai Pet Relocation Works</h2>
             <p className="text-body-large max-w-2xl mx-auto">
               We make pet relocation straightforward. No hidden complexity. No surprises.
             </p>

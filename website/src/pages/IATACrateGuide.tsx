@@ -42,7 +42,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 /* ─── Page ─── */
 export default function IATACrateGuide() {
   const title = 'IATA Pet Travel Crate Requirements for Dubai Flights — 2026 Guide'
-  const description = 'Complete guide to IATA-compliant pet travel crates for Dubai flights. Learn sizing formulas, construction rules, airline-specific requirements (Emirates, Etihad, flydubai), and how PetClear sizes crates for safe travel.'
+  const description = 'Complete guide to IATA-compliant pet travel crates for Dubai flights. Learn sizing formulas, construction rules, airline-specific requirements (Emirates, Etihad, flydubai), and how Dubai Pet Relocation sizes crates for safe travel.'
   const canonical = `${BASE_URL}/guides/iata-pet-crate-requirements/`
   const ogImage = `${BASE_URL}/assets/og-crate-guide.jpg`
 
@@ -53,11 +53,11 @@ export default function IATACrateGuide() {
     },
     {
       question: 'How do I measure my dog for an IATA crate?',
-      answer: 'Measure your dog standing in a natural position. (A) Length: from nose tip to base of tail. (B) Height: from floor to top of head or ears (whichever is higher). (C) Width: across the widest point of the shoulders. The crate must be: Length = A + 10–15 cm, Height = B + 10 cm, Width = C x 2 (allowing the dog to turn around comfortably). PetClear provides a measurement guide and video call assistance.',
+      answer: 'Measure your dog standing in a natural position. (A) Length: from nose tip to base of tail. (B) Height: from floor to top of head or ears (whichever is higher). (C) Width: across the widest point of the shoulders. The crate must be: Length = A + 10–15 cm, Height = B + 10 cm, Width = C x 2 (allowing the dog to turn around comfortably). Dubai Pet Relocation provides a measurement guide and video call assistance.',
     },
     {
       question: 'What if my crate is 1 cm too small?',
-      answer: 'Airlines and cargo handlers strictly enforce IATA crate sizing. A crate that is even 1 cm too small will be refused at check-in. The airline or ground handler will not accept the risk. You must use a larger crate or your pet will be offloaded. PetClear always recommends adding a 2–3 cm safety margin to all measurements.',
+      answer: 'Airlines and cargo handlers strictly enforce IATA crate sizing. A crate that is even 1 cm too small will be refused at check-in. The airline or ground handler will not accept the risk. You must use a larger crate or your pet will be offloaded. Dubai Pet Relocation always recommends adding a 2–3 cm safety margin to all measurements.',
     },
     {
       question: 'Are wire crates or wooden crates allowed?',
@@ -73,7 +73,7 @@ export default function IATACrateGuide() {
     },
     {
       question: 'Is it better to buy or rent a travel crate?',
-      answer: 'Buying is recommended if you plan multiple trips or have a young pet that may grow. Renting can be cost-effective for one-time relocations and avoids storage issues. PetClear offers both options: we sell airline-approved crates and rent IATA-compliant crates with free return shipping after arrival.',
+      answer: 'Buying is recommended if you plan multiple trips or have a young pet that may grow. Renting can be cost-effective for one-time relocations and avoids storage issues. Dubai Pet Relocation offers both options: we sell airline-approved crates and rent IATA-compliant crates with free return shipping after arrival.',
     },
     {
       question: 'Can I put my pet\'s favorite toy in the crate?',
@@ -110,8 +110,8 @@ export default function IATACrateGuide() {
     headline: title,
     description,
     image: ogImage,
-    author: { '@type': 'Organization', name: 'PetClear', url: BASE_URL },
-    publisher: { '@type': 'Organization', name: 'PetClear', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/logo.png` } },
+    author: { '@type': 'Organization', name: 'Dubai Pet Relocation', url: BASE_URL },
+    publisher: { '@type': 'Organization', name: 'Dubai Pet Relocation', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/logo.png` } },
     datePublished: '2025-01-15',
     dateModified: '2026-01-10',
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
@@ -145,12 +145,12 @@ export default function IATACrateGuide() {
               IATA Pet Travel Crate Requirements for Dubai Flights — 2026 Guide
             </h1>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              The wrong crate can get your pet refused at the airport. This guide covers IATA LAR sizing rules, construction requirements, airline-specific policies, and how PetClear ensures your pet's crate is 100% compliant for safe travel to Dubai.
+              The wrong crate can get your pet refused at the airport. This guide covers IATA LAR sizing rules, construction requirements, airline-specific policies, and how Dubai Pet Relocation ensures your pet's crate is 100% compliant for safe travel to Dubai.
             </p>
             <div className="flex flex-wrap gap-4">
               <WhatsAppBtn
                 label="Get Crate Sizing Help"
-                message="Hi PetClear, I need help choosing the right IATA-compliant crate for my pet's flight to Dubai. Can you assist with sizing?"
+                message="Hi Dubai Pet Relocation, I need help choosing the right IATA-compliant crate for my pet's flight to Dubai. Can you assist with sizing?"
               />
               <a
                 href="#sizing-formula"
@@ -418,7 +418,7 @@ export default function IATACrateGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">Always Confirm Before Booking</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  Airline policies change frequently. Always confirm crate requirements with the cargo department at least 48 hours before departure. PetClear handles this confirmation for every client as part of our pre-departure checklist.
+                  Airline policies change frequently. Always confirm crate requirements with the cargo department at least 48 hours before departure. Dubai Pet Relocation handles this confirmation for every client as part of our pre-departure checklist.
                 </p>
               </div>
             </div>
@@ -525,19 +525,19 @@ export default function IATACrateGuide() {
                 </table>
               </div>
               <p className="text-sm text-[#5A5A5A] mt-4 leading-relaxed">
-                PetClear offers both options. We sell airline-approved crates with a 100% compliance guarantee, and we rent IATA-compliant crates with free return shipping from Dubai after arrival.
+                Dubai Pet Relocation offers both options. We sell airline-approved crates with a 100% compliance guarantee, and we rent IATA-compliant crates with free return shipping from Dubai after arrival.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How PetClear Sizes Crates */}
+      {/* How Dubai Pet Relocation Sizes Crates */}
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              How PetClear Sizes Crates — Our 3-Step Process
+              How Dubai Pet Relocation Sizes Crates — Our 3-Step Process
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
               We don't guess. Every crate is sized using a rigorous process to ensure your pet passes check-in without issues.
@@ -614,7 +614,7 @@ export default function IATACrateGuide() {
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">
                 <Clock className="w-5 h-5 text-[#C89F5A]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">How PetClear Works</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">How Dubai Pet Relocation Works</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent concierge process, from crate sizing to arrival in Dubai.</p>
             </Link>
           </div>
@@ -628,12 +628,12 @@ export default function IATACrateGuide() {
             Need Help Choosing the Right Crate?
           </h2>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            PetClear's crate sizing service includes a free video call to measure your pet correctly. We source, deliver, and verify IATA-compliant crates for every airline flying to Dubai.
+            Dubai Pet Relocation's crate sizing service includes a free video call to measure your pet correctly. We source, deliver, and verify IATA-compliant crates for every airline flying to Dubai.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <WhatsAppBtn
               label="Get Free Crate Sizing Help"
-              message="Hi PetClear, I need help measuring my pet and choosing the right IATA-compliant crate for a flight to Dubai. Can we schedule a video call?"
+              message="Hi Dubai Pet Relocation, I need help measuring my pet and choosing the right IATA-compliant crate for a flight to Dubai. Can we schedule a video call?"
               className="whatsapp-pulse"
             />
             <Link

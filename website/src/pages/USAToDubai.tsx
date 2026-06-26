@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 
 export default function USAToDubai() {
   const pageUrl = `${BASE_URL}/routes/usa-to-dubai/`
-  const pageTitle = 'USA to Dubai Pet Relocation — Complete Guide 2025 | PetClear'
-  const pageDescription = 'Relocate your pet from the USA to Dubai with PetClear. Low-risk route with varying rules by state. Emirates, Etihad, American Airlines. Costs, documents, and timeline for US pet owners.'
+  const pageTitle = 'USA to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
+  const pageDescription = 'Relocate your pet from the USA to Dubai with Dubai Pet Relocation. Low-risk route with varying rules by state. Emirates, Etihad, American Airlines. Costs, documents, and timeline for US pet owners.'
   const keywords = 'USA to Dubai pet relocation, US pet transport Dubai, American pet relocation Dubai, Emirates pet cargo USA, Etihad pet transport, American Airlines pet cargo, dog relocation USA to Dubai, cat relocation USA to Dubai, pet shipping USA to UAE'
 
   const faqs = [
     {
       question: 'Is the USA considered low-risk or high-risk for pet import to Dubai?',
-      answer: 'The USA is classified as a low-risk country for rabies by the UAE. Most US states do not require a rabies titer test (RNATT). However, if your pet has ever been in a high-risk rabies country before entering the USA, or if the pet originated from a high-risk country, a titer test may be required. PetClear verifies your pet\'s travel history before planning the route.'
+      answer: 'The USA is classified as a low-risk country for rabies by the UAE. Most US states do not require a rabies titer test (RNATT). However, if your pet has ever been in a high-risk rabies country before entering the USA, or if the pet originated from a high-risk country, a titer test may be required. Dubai Pet Relocation verifies your pet\'s travel history before planning the route.'
     },
     {
       question: 'Which airlines fly pets from the USA to Dubai?',
@@ -26,7 +26,7 @@ export default function USAToDubai() {
     },
     {
       question: 'How much does it cost to relocate a pet from the USA to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 10,000 to AED 22,000 (USD 2,700–6,000). This includes: veterinary prep (microchip + vaccines ~AED 500–1,000), US health certificate and USDA endorsement (~AED 1,000–2,000), UAE import permit (AED 500), air cargo freight (AED 6,000–14,000 depending on route and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional PetClear door-to-door service (AED 2,000–4,000). East Coast departures (JFK) are generally cheaper than West Coast (LAX).'
+      answer: 'For a single pet, total costs typically range from AED 10,000 to AED 22,000 (USD 2,700–6,000). This includes: veterinary prep (microchip + vaccines ~AED 500–1,000), US health certificate and USDA endorsement (~AED 1,000–2,000), UAE import permit (AED 500), air cargo freight (AED 6,000–14,000 depending on route and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 2,000–4,000). East Coast departures (JFK) are generally cheaper than West Coast (LAX).'
     },
     {
       question: 'What documents are required for a US pet to enter Dubai?',
@@ -34,15 +34,15 @@ export default function USAToDubai() {
     },
     {
       question: 'Does the USDA need to endorse my pet\'s health certificate?',
-      answer: 'Yes. The UAE requires that the US health certificate be endorsed (stamped and signed) by a USDA APHIS Veterinary Services office. This is separate from your regular vet visit. You must send the completed health certificate to the nearest USDA office for endorsement, which typically takes 1–2 business days by mail or can be done in-person for same-day service. PetClear guides you through this step or can arrange it on your behalf.'
+      answer: 'Yes. The UAE requires that the US health certificate be endorsed (stamped and signed) by a USDA APHIS Veterinary Services office. This is separate from your regular vet visit. You must send the completed health certificate to the nearest USDA office for endorsement, which typically takes 1–2 business days by mail or can be done in-person for same-day service. Dubai Pet Relocation guides you through this step or can arrange it on your behalf.'
     },
     {
       question: 'Are there breed restrictions for dogs travelling from the USA to Dubai?',
-      answer: 'The UAE prohibits import of certain dog breeds including Pit Bull Terriers, Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, Doberman Pinschers, and several other fighting breeds. Brachycephalic breeds (Pugs, Bulldogs, Boxers, Persian cats) face summer travel restrictions on most airlines. Additionally, some airlines have their own breed restrictions — check with your carrier before booking. PetClear confirms breed eligibility before proceeding.'
+      answer: 'The UAE prohibits import of certain dog breeds including Pit Bull Terriers, Staffordshire Bull Terriers, American Staffordshire Terriers, Rottweilers, Doberman Pinschers, and several other fighting breeds. Brachycephalic breeds (Pugs, Bulldogs, Boxers, Persian cats) face summer travel restrictions on most airlines. Additionally, some airlines have their own breed restrictions — check with your carrier before booking. Dubai Pet Relocation confirms breed eligibility before proceeding.'
     },
     {
       question: 'What happens when my pet arrives in Dubai from the USA?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. A MOCCAE vet verifies the microchip, checks the health certificate and import permit, and conducts a brief physical exam. Assuming all documents are correct, your pet is cleared within 2–4 hours. PetClear provides meet-and-greet service, handles customs, and delivers your pet to your Dubai residence or a boarding facility.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. A MOCCAE vet verifies the microchip, checks the health certificate and import permit, and conducts a brief physical exam. Assuming all documents are correct, your pet is cleared within 2–4 hours. Dubai Pet Relocation provides meet-and-greet service, handles customs, and delivers your pet to your Dubai residence or a boarding facility.'
     }
   ]
 
@@ -73,8 +73,8 @@ export default function USAToDubai() {
       "@type": "Article",
       "headline": pageTitle,
       "description": pageDescription,
-      "author": { "@type": "Organization", "name": "PetClear" },
-      "publisher": { "@type": "Organization", "name": "PetClear", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
       "datePublished": "2025-01-15",
       "dateModified": "2025-01-15"
     }
@@ -102,7 +102,7 @@ export default function USAToDubai() {
                 USA to Dubai Pet Relocation — Complete Guide
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Relocating your pet from the USA to Dubai? The United States is classified as a low-risk country for rabies, meaning most pets do not need a titer test. Whether you are flying from New York, Los Angeles, Chicago, or anywhere in America, PetClear handles the full process — from USDA endorsement to Dubai customs clearance.
+                Relocating your pet from the USA to Dubai? The United States is classified as a low-risk country for rabies, meaning most pets do not need a titer test. Whether you are flying from New York, Los Angeles, Chicago, or anywhere in America, Dubai Pet Relocation handles the full process — from USDA endorsement to Dubai customs clearance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get a USA to Dubai quote" message="Hi, I want to relocate my pet from the USA to Dubai. Can you help me understand the process and cost?" />
@@ -185,7 +185,7 @@ export default function USAToDubai() {
               <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Documentation</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents Required for USA to Dubai</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                US pet relocation to Dubai requires a USDA-endorsed health certificate — a critical step that many owners miss. PetClear ensures your paperwork is flawless before departure.
+                US pet relocation to Dubai requires a USDA-endorsed health certificate — a critical step that many owners miss. Dubai Pet Relocation ensures your paperwork is flawless before departure.
               </p>
 
               <div className="space-y-4">
@@ -215,7 +215,7 @@ export default function USAToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">3. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must be obtained before booking. Cost: AED 500 per pet. PetClear handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must be obtained before booking. Cost: AED 500 per pet. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 
@@ -285,7 +285,7 @@ export default function USAToDubai() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">USA to Dubai Cost Breakdown</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Costs vary significantly by departure city and pet size. East Coast flights are cheaper than West Coast. Contact PetClear for a precise quote based on your location and pet.
+              Costs vary significantly by departure city and pet size. East Coast flights are cheaper than West Coast. Contact Dubai Pet Relocation for a precise quote based on your location and pet.
             </p>
           </div>
 
@@ -344,7 +344,7 @@ export default function USAToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,200–2,000</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: PetClear Door-to-Door</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,000</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,500–3,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–5,000</td>
@@ -366,7 +366,7 @@ export default function USAToDubai() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AED. Air cargo rates vary by season, fuel surcharges, and airline. West Coast flights (LAX, SFO) are significantly more expensive due to longer distance and limited cargo capacity. East Coast (JFK, IAD, ORD) is recommended when possible. Contact PetClear for a precise quote based on your exact departure city and pet details.
+                * Prices are estimates in AED. Air cargo rates vary by season, fuel surcharges, and airline. West Coast flights (LAX, SFO) are significantly more expensive due to longer distance and limited cargo capacity. East Coast (JFK, IAD, ORD) is recommended when possible. Contact Dubai Pet Relocation for a precise quote based on your exact departure city and pet details.
               </p>
             </div>
           </div>
@@ -380,7 +380,7 @@ export default function USAToDubai() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">USA to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              The US to Dubai route is efficient but requires the USDA endorsement step. PetClear manages all timelines to avoid last-minute delays.
+              The US to Dubai route is efficient but requires the USDA endorsement step. Dubai Pet Relocation manages all timelines to avoid last-minute delays.
             </p>
           </div>
 
@@ -391,31 +391,31 @@ export default function USAToDubai() {
                 {
                   week: 'Week 1',
                   title: 'Microchip & Rabies Vaccination',
-                  desc: 'Your US veterinarian implants an ISO microchip and administers a rabies vaccine. The 21-day waiting period begins. PetClear confirms your vet is accredited and can issue international health certificates.',
+                  desc: 'Your US veterinarian implants an ISO microchip and administers a rabies vaccine. The 21-day waiting period begins. Dubai Pet Relocation confirms your vet is accredited and can issue international health certificates.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Week 2–3',
                   title: 'Import Permit & Flight Research',
-                  desc: 'PetClear applies for your UAE import permit via MOCCAE. We also research flight options from your nearest major hub (JFK, LAX, ORD, IAH, SFO) and reserve cargo space with Emirates, Etihad, or American Airlines.',
+                  desc: 'Dubai Pet Relocation applies for your UAE import permit via MOCCAE. We also research flight options from your nearest major hub (JFK, LAX, ORD, IAH, SFO) and reserve cargo space with Emirates, Etihad, or American Airlines.',
                   icon: FileText
                 },
                 {
                   week: 'Week 4',
                   title: 'Health Certificate & USDA Endorsement',
-                  desc: 'Your vet completes the health certificate (APHIS Form 7001). You send it to the nearest USDA APHIS office for endorsement. PetClear reviews the endorsed certificate for accuracy before it is finalised.',
+                  desc: 'Your vet completes the health certificate (APHIS Form 7001). You send it to the nearest USDA APHIS office for endorsement. Dubai Pet Relocation reviews the endorsed certificate for accuracy before it is finalised.',
                   icon: Shield
                 },
                 {
                   week: 'Week 5',
                   title: 'Final Flight Booking & Crate Prep',
-                  desc: 'With the import permit and USDA certificate in hand, PetClear finalises the cargo booking. Your IATA-compliant crate is delivered for acclimatisation. We provide a pre-flight checklist.',
+                  desc: 'With the import permit and USDA certificate in hand, Dubai Pet Relocation finalises the cargo booking. Your IATA-compliant crate is delivered for acclimatisation. We provide a pre-flight checklist.',
                   icon: Plane
                 },
                 {
                   week: 'Travel Day',
                   title: 'US Departure & Dubai Arrival',
-                  desc: 'Your pet checks in at the airline cargo terminal. After a 14–16 hour flight, PetClear meets your pet at DXB, handles customs clearance and veterinary inspection, and delivers to your home.',
+                  desc: 'Your pet checks in at the airline cargo terminal. After a 14–16 hour flight, Dubai Pet Relocation meets your pet at DXB, handles customs clearance and veterinary inspection, and delivers to your home.',
                   icon: Home
                 }
               ].map((step, idx) => (
@@ -485,7 +485,7 @@ export default function USAToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Competitive rates on select routes</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Limited brachycephalic capacity</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">American Airlines is a good alternative for budget-conscious shippers from Dallas or Miami, though routing may involve connections. PetClear evaluates all options for your specific route.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">American Airlines is a good alternative for budget-conscious shippers from Dallas or Miami, though routing may involve connections. Dubai Pet Relocation evaluates all options for your specific route.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -504,7 +504,7 @@ export default function USAToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Good rates on certain routes</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Ground transport to Dubai included</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Etihad flies to Abu Dhabi rather than Dubai, but PetClear arranges the 90-minute ground transfer. Sometimes Etihad offers lower freight rates than Emirates on the same US routes.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Etihad flies to Abu Dhabi rather than Dubai, but Dubai Pet Relocation arranges the 90-minute ground transfer. Sometimes Etihad offers lower freight rates than Emirates on the same US routes.</p>
             </div>
           </div>
 
@@ -514,7 +514,7 @@ export default function USAToDubai() {
               Summer Embargo & Seasonal Considerations
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              All major US carriers impose summer embargoes on brachycephalic breeds from May through September. Some airlines (including American) also restrict all pet cargo during extreme heat events at specific hubs. PetClear monitors weather conditions and books early morning (6–9 AM) or late evening (9 PM+) departures to avoid peak temperatures.
+              All major US carriers impose summer embargoes on brachycephalic breeds from May through September. Some airlines (including American) also restrict all pet cargo during extreme heat events at specific hubs. Dubai Pet Relocation monitors weather conditions and books early morning (6–9 AM) or late evening (9 PM+) departures to avoid peak temperatures.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
               Peak travel seasons (June–August and December) see cargo space fill 3–4 weeks in advance. For travel during these periods, begin the process at least 8 weeks ahead. Thanksgiving week is the busiest time for US pet cargo — book 6+ weeks ahead.
@@ -554,7 +554,7 @@ export default function USAToDubai() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from the USA to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear has relocated pets from all 50 US states to Dubai. From New York to Los Angeles, Chicago to Houston — we handle the USDA paperwork, flight booking, and Dubai customs so you don't have to worry.
+              Dubai Pet Relocation has relocated pets from all 50 US states to Dubai. From New York to Los Angeles, Chicago to Houston — we handle the USDA paperwork, flight booking, and Dubai customs so you don't have to worry.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a USA to Dubai quote" message="Hi, I want to relocate my pet from the USA to Dubai. Can you help me understand the process and cost?" />

@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function DubaiToUK() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-uk/`
-  const pageTitle = 'Dubai to UK Pet Relocation | Export Guide 2026 | PetClear'
-  const pageDescription = 'Export your dog or cat from Dubai to the UK with PetClear. Full guide to DEFRA/APHA requirements, post-Brexit health certificates, tapeworm treatment, airline options, costs, and timeline. No quarantine if documents are correct.'
+  const pageTitle = 'Dubai to UK Pet Relocation | Export Guide 2026 | Dubai Pet Relocation'
+  const pageDescription = 'Export your dog or cat from Dubai to the UK with Dubai Pet Relocation. Full guide to DEFRA/APHA requirements, post-Brexit health certificates, tapeworm treatment, airline options, costs, and timeline. No quarantine if documents are correct.'
   const keywords = 'Dubai to UK pet relocation, export pet Dubai to UK, pet transport Dubai to London, DEFRA pet import UK, APHA health certificate, UK pet passport post-Brexit, tapeworm treatment UK dogs, Emirates pet cargo UK, British Airways pet transport Dubai, pet relocation to Britain, Dubai to UK dog transport, Dubai to UK cat transport, UK rabies high risk, UK pet quarantine rules'
 
   const faqs = [
@@ -22,27 +22,27 @@ export default function DubaiToUK() {
     },
     {
       question: 'What is the tapeworm treatment requirement for dogs entering the UK?',
-      answer: 'Dogs travelling to the UK from Dubai must receive a tapeworm treatment (praziquantel or an equivalent product approved for tapeworm) between 1 and 5 days before entering the UK. The treatment must be administered by a veterinarian, and the details — including date, time, product name, and manufacturer — must be recorded on the official health certificate. This rule does not apply to cats. Failure to have a valid tapeworm treatment recorded on the health certificate can result in your dog being refused entry or placed into quarantine at the owner\'s expense. PetClear schedules the tapeworm treatment with a UAE vet as part of our pre-departure checklist.'
+      answer: 'Dogs travelling to the UK from Dubai must receive a tapeworm treatment (praziquantel or an equivalent product approved for tapeworm) between 1 and 5 days before entering the UK. The treatment must be administered by a veterinarian, and the details — including date, time, product name, and manufacturer — must be recorded on the official health certificate. This rule does not apply to cats. Failure to have a valid tapeworm treatment recorded on the health certificate can result in your dog being refused entry or placed into quarantine at the owner\'s expense. Dubai Pet Relocation schedules the tapeworm treatment with a UAE vet as part of our pre-departure checklist.'
     },
     {
       question: 'Which airlines fly pets from Dubai to the UK?',
-      answer: 'The three main carriers for pet cargo from Dubai to the UK are Emirates (EK), British Airways (BA), and Virgin Atlantic. All three operate direct flights from Dubai International (DXB) to London Heathrow (LHR). Emirates SkyCargo is the most commonly used, with daily A380 and B777 services. British Airways offers direct cargo flights via BA World Cargo. Virgin Atlantic flies pets to London Heathrow as part of their cargo programme. No major airline allows pets in the cabin on the Dubai–UK route — all pets must travel as cargo in the hold. PetClear books cargo space, arranges IATA-compliant crates, and coordinates with airline animal handling teams.'
+      answer: 'The three main carriers for pet cargo from Dubai to the UK are Emirates (EK), British Airways (BA), and Virgin Atlantic. All three operate direct flights from Dubai International (DXB) to London Heathrow (LHR). Emirates SkyCargo is the most commonly used, with daily A380 and B777 services. British Airways offers direct cargo flights via BA World Cargo. Virgin Atlantic flies pets to London Heathrow as part of their cargo programme. No major airline allows pets in the cabin on the Dubai–UK route — all pets must travel as cargo in the hold. Dubai Pet Relocation books cargo space, arranges IATA-compliant crates, and coordinates with airline animal handling teams.'
     },
     {
       question: 'How long does it take to relocate a pet from Dubai to the UK?',
-      answer: 'The minimum timeline is 2–4 weeks for documentation plus 1–2 days for travel. Week 1: microchip verification and rabies vaccination check (if already done, this step is instant). Week 2–3: apply for UK health certificate via an authorised UAE vet, schedule pre-travel health examination, and book cargo space with the airline. Week 4: tapeworm treatment for dogs (1–5 days before travel), final health certificate endorsement by MOCCAE, and travel day. If your pet\'s rabies vaccination is not current or the microchip is not ISO-compliant, add 21 days for the rabies vaccination to become valid. PetClear handles all steps in parallel to minimise delays.'
+      answer: 'The minimum timeline is 2–4 weeks for documentation plus 1–2 days for travel. Week 1: microchip verification and rabies vaccination check (if already done, this step is instant). Week 2–3: apply for UK health certificate via an authorised UAE vet, schedule pre-travel health examination, and book cargo space with the airline. Week 4: tapeworm treatment for dogs (1–5 days before travel), final health certificate endorsement by MOCCAE, and travel day. If your pet\'s rabies vaccination is not current or the microchip is not ISO-compliant, add 21 days for the rabies vaccination to become valid. Dubai Pet Relocation handles all steps in parallel to minimise delays.'
     },
     {
       question: 'How much does it cost to relocate a pet from Dubai to the UK?',
-      answer: 'For a single pet, total costs typically range from AED 8,000 to AED 18,000 (GBP 1,700–3,800). This includes: veterinary verification (microchip check + health exam ~AED 300–800), UK health certificate (AED 500–1,200), tapeworm treatment for dogs (AED 100–300), MOCCAE endorsement (AED 200–500), IATA-approved travel crate (AED 300–1,500), air cargo freight DXB → LHR (AED 4,000–10,000 depending on crate size and weight), UK customs clearance (AED 1,000–2,000), and optional PetClear door-to-door service (AED 1,500–3,000). Multiple pets may qualify for discounted rates on combined services. Brachycephalic breeds may incur additional airline fees or restrictions.'
+      answer: 'For a single pet, total costs typically range from AED 8,000 to AED 18,000 (GBP 1,700–3,800). This includes: veterinary verification (microchip check + health exam ~AED 300–800), UK health certificate (AED 500–1,200), tapeworm treatment for dogs (AED 100–300), MOCCAE endorsement (AED 200–500), IATA-approved travel crate (AED 300–1,500), air cargo freight DXB → LHR (AED 4,000–10,000 depending on crate size and weight), UK customs clearance (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 1,500–3,000). Multiple pets may qualify for discounted rates on combined services. Brachycephalic breeds may incur additional airline fees or restrictions.'
     },
     {
       question: 'Is there quarantine for pets arriving in the UK from Dubai?',
-      answer: 'No — there is no quarantine for pets entering the UK from Dubai if all documentation is correct. The UK abolished the old six-month quarantine system in 2012 and now operates a document-based entry system. As long as your pet has the correct microchip, rabies vaccination, health certificate (endorsed by MOCCAE), and (for dogs) tapeworm treatment, your pet will be cleared at the UK border within 1–2 hours. If any document is missing, incorrect, or expired, your pet may be refused entry, held at the airport for re-examination, or placed in quarantine at the owner\'s expense. PetClear triple-checks every document before travel to prevent this.'
+      answer: 'No — there is no quarantine for pets entering the UK from Dubai if all documentation is correct. The UK abolished the old six-month quarantine system in 2012 and now operates a document-based entry system. As long as your pet has the correct microchip, rabies vaccination, health certificate (endorsed by MOCCAE), and (for dogs) tapeworm treatment, your pet will be cleared at the UK border within 1–2 hours. If any document is missing, incorrect, or expired, your pet may be refused entry, held at the airport for re-examination, or placed in quarantine at the owner\'s expense. Dubai Pet Relocation triple-checks every document before travel to prevent this.'
     },
     {
       question: 'How does Brexit affect pet travel from Dubai to the UK?',
-      answer: 'Brexit has made the process stricter but not fundamentally different. Key changes: (1) UK-issued pet passports are no longer valid for travel from outside the UK. (2) The UK now operates a category-based system for rabies risk. The UAE is on the UK\'s rabies-controlled list, meaning a titer test is not required, but a health certificate is mandatory. (3) The EU pet passport is no longer accepted for UK entry from Dubai. (4) Health certificates must be issued by an authorised veterinarian and endorsed by the government veterinary authority (MOCCAE in the UAE). (5) The UK now has "Category 2" status for some EU purposes, but this does not affect pets arriving from Dubai. PetClear stays current on all post-Brexit rules and ensures your paperwork meets the latest DEFRA/APHA requirements.'
+      answer: 'Brexit has made the process stricter but not fundamentally different. Key changes: (1) UK-issued pet passports are no longer valid for travel from outside the UK. (2) The UK now operates a category-based system for rabies risk. The UAE is on the UK\'s rabies-controlled list, meaning a titer test is not required, but a health certificate is mandatory. (3) The EU pet passport is no longer accepted for UK entry from Dubai. (4) Health certificates must be issued by an authorised veterinarian and endorsed by the government veterinary authority (MOCCAE in the UAE). (5) The UK now has "Category 2" status for some EU purposes, but this does not affect pets arriving from Dubai. Dubai Pet Relocation stays current on all post-Brexit rules and ensures your paperwork meets the latest DEFRA/APHA requirements.'
     }
   ]
 
@@ -73,8 +73,8 @@ export default function DubaiToUK() {
       "@type": "Article",
       "headline": pageTitle,
       "description": pageDescription,
-      "author": { "@type": "Organization", "name": "PetClear" },
-      "publisher": { "@type": "Organization", "name": "PetClear", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
       "datePublished": "2025-01-15",
       "dateModified": "2026-01-15"
     }
@@ -104,7 +104,7 @@ export default function DubaiToUK() {
                 Dubai to UK Pet Relocation — Exporting Your Pet to Britain
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                The UK has strict but clear rules for pet imports. Since Brexit, the EU pet passport no longer applies, and a DEFRA-approved health certificate is mandatory. The good news: the UAE is on the UK's rabies-controlled list, so no titer test is required. PetClear handles every step — from MOCCAE-endorsed health certificates to UK customs clearance — so your pet arrives in London, Manchester, or Edinburgh without quarantine.
+                The UK has strict but clear rules for pet imports. Since Brexit, the EU pet passport no longer applies, and a DEFRA-approved health certificate is mandatory. The good news: the UAE is on the UK's rabies-controlled list, so no titer test is required. Dubai Pet Relocation handles every step — from MOCCAE-endorsed health certificates to UK customs clearance — so your pet arrives in London, Manchester, or Edinburgh without quarantine.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get a Dubai to UK quote" message="Hi, I want to relocate my pet from Dubai to the UK. Can you help me understand the DEFRA requirements, timeline, and cost?" />
@@ -267,11 +267,11 @@ export default function DubaiToUK() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Pets must travel as cargo on all UK-bound flights from Dubai. No in-cabin travel is permitted for this route. PetClear books IATA-compliant crates and cargo space.</span>
+                  <span>Pets must travel as cargo on all UK-bound flights from Dubai. No in-cabin travel is permitted for this route. Dubai Pet Relocation books IATA-compliant crates and cargo space.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Northern Ireland has separate rules post-Brexit. If your destination is Belfast or Derry, additional documentation may be required. PetClear can advise.</span>
+                  <span>Northern Ireland has separate rules post-Brexit. If your destination is Belfast or Derry, additional documentation may be required. Dubai Pet Relocation can advise.</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-[#5A8F6E]/10 rounded-xl">
@@ -291,7 +291,7 @@ export default function DubaiToUK() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from Dubai to the UK</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              All pets must travel as cargo on the Dubai–UK route. Here are the three major carriers PetClear books with, plus key details about their live animal programmes.
+              All pets must travel as cargo on the Dubai–UK route. Here are the three major carriers Dubai Pet Relocation books with, plus key details about their live animal programmes.
             </p>
           </div>
 
@@ -366,7 +366,7 @@ export default function DubaiToUK() {
               The UK does not permit pets to travel in the cabin on flights arriving from outside the UK. All pets must travel as cargo or, in some limited cases, as checked baggage (though most airlines from Dubai require cargo for live animals). This rule applies regardless of the airline, pet size, or owner's preference. The UK government requires all animals to enter through an approved Border Inspection Post (BIP) where documents are checked and the pet is scanned for its microchip. Heathrow, Gatwick, and Manchester are the main BIPs for pet arrivals.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              PetClear books all pets as cargo on approved routes, ensures the IATA crate meets airline and UK standards, and coordinates with the UK border inspection team to ensure fast clearance on arrival.
+              Dubai Pet Relocation books all pets as cargo on approved routes, ensures the IATA crate meets airline and UK standards, and coordinates with the UK border inspection team to ensure fast clearance on arrival.
             </p>
           </div>
         </div>
@@ -379,7 +379,7 @@ export default function DubaiToUK() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai to UK Cost Breakdown</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Transparent pricing for relocating a single pet from Dubai to the UK. Costs vary by pet size, crate dimensions, and airline choice. Contact PetClear for a precise quote.
+              Transparent pricing for relocating a single pet from Dubai to the UK. Costs vary by pet size, crate dimensions, and airline choice. Contact Dubai Pet Relocation for a precise quote.
             </p>
           </div>
 
@@ -438,7 +438,7 @@ export default function DubaiToUK() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,500–2,500</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: PetClear Door-to-Door</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,500–2,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,800–2,800</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,500</td>
@@ -454,7 +454,7 @@ export default function DubaiToUK() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AED and may vary by airline, season, and pet dimensions. Air cargo rates fluctuate and are typically higher in peak travel months (July–August, December). GBP conversion is approximate at 1 GBP = 4.6 AED. Contact PetClear for a fixed quote based on your pet's exact weight, breed, and crate size. Multiple pets may qualify for a 10–15% discount on combined services.
+                * Prices are estimates in AED and may vary by airline, season, and pet dimensions. Air cargo rates fluctuate and are typically higher in peak travel months (July–August, December). GBP conversion is approximate at 1 GBP = 4.6 AED. Contact Dubai Pet Relocation for a fixed quote based on your pet's exact weight, breed, and crate size. Multiple pets may qualify for a 10–15% discount on combined services.
               </p>
             </div>
           </div>
@@ -468,7 +468,7 @@ export default function DubaiToUK() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai to UK Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              A typical export from Dubai to the UK takes 2–4 weeks for documentation plus 1–2 days for travel. Here is the exact week-by-week process PetClear manages for you.
+              A typical export from Dubai to the UK takes 2–4 weeks for documentation plus 1–2 days for travel. Here is the exact week-by-week process Dubai Pet Relocation manages for you.
             </p>
           </div>
 
@@ -479,25 +479,25 @@ export default function DubaiToUK() {
                 {
                   week: 'Week 1',
                   title: 'Document Review & Microchip Check',
-                  desc: 'PetClear reviews your pet\'s existing microchip, vaccination records, and passport. If the rabies vaccine is not current or the microchip is not ISO-compliant, we arrange a veterinary visit immediately. If everything is in order, we proceed to the health certificate application.',
+                  desc: 'Dubai Pet Relocation reviews your pet\'s existing microchip, vaccination records, and passport. If the rabies vaccine is not current or the microchip is not ISO-compliant, we arrange a veterinary visit immediately. If everything is in order, we proceed to the health certificate application.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Week 2',
                   title: 'Health Certificate & MOCCAE Endorsement',
-                  desc: 'An authorised UAE veterinarian conducts a pre-travel health examination and issues the official UK health certificate (APHA/DEFRA format). PetClear submits the certificate to MOCCAE for endorsement. This process typically takes 1–2 business days. We also book cargo space with the airline.',
+                  desc: 'An authorised UAE veterinarian conducts a pre-travel health examination and issues the official UK health certificate (APHA/DEFRA format). Dubai Pet Relocation submits the certificate to MOCCAE for endorsement. This process typically takes 1–2 business days. We also book cargo space with the airline.',
                   icon: FileText
                 },
                 {
                   week: 'Week 3',
                   title: 'Tapeworm Treatment (Dogs) & Final Prep',
-                  desc: 'For dogs, a veterinarian administers the mandatory tapeworm treatment between 1 and 5 days before travel. The treatment details are recorded on the health certificate. PetClear delivers the IATA-compliant travel crate so your pet can acclimatise. We confirm all documents with the airline and UK border team.',
+                  desc: 'For dogs, a veterinarian administers the mandatory tapeworm treatment between 1 and 5 days before travel. The treatment details are recorded on the health certificate. Dubai Pet Relocation delivers the IATA-compliant travel crate so your pet can acclimatise. We confirm all documents with the airline and UK border team.',
                   icon: Shield
                 },
                 {
                   week: 'Travel Day',
                   title: 'Departure from Dubai & Arrival in the UK',
-                  desc: 'Your pet is checked in at the Emirates, BA, or Virgin Atlantic cargo terminal at DXB. After a 7–8 hour flight, PetClear\'s UK partner meets your pet at Heathrow, Gatwick, or Manchester. They handle border inspection, microchip verification, document checks, and deliver your pet to your door.',
+                  desc: 'Your pet is checked in at the Emirates, BA, or Virgin Atlantic cargo terminal at DXB. After a 7–8 hour flight, Dubai Pet Relocation\'s UK partner meets your pet at Heathrow, Gatwick, or Manchester. They handle border inspection, microchip verification, document checks, and deliver your pet to your door.',
                   icon: Home
                 }
               ].map((step, idx) => (
@@ -543,7 +543,7 @@ export default function DubaiToUK() {
                 UK-issued EU pet passports are no longer valid for travel from Dubai to the UK. If your pet previously travelled on an EU passport issued in the UK, you must now obtain an official UK health certificate from an authorised UAE vet, endorsed by MOCCAE. This is the single biggest change for British expats returning home with pets.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                The health certificate replaces the old passport system and is valid for 10 days from issue. It must include the microchip number, rabies vaccination details, and (for dogs) tapeworm treatment information. PetClear ensures the certificate is completed correctly and endorsed on time.
+                The health certificate replaces the old passport system and is valid for 10 days from issue. It must include the microchip number, rabies vaccination details, and (for dogs) tapeworm treatment information. Dubai Pet Relocation ensures the certificate is completed correctly and endorsed on time.
               </p>
             </div>
 
@@ -558,7 +558,7 @@ export default function DubaiToUK() {
                 The UK now has "Category 2" status for some EU pet travel purposes. For pets arriving from Dubai, the key point is that the UAE is on the UK's rabies-controlled list. This means no titer test is required, but a health certificate and valid rabies vaccination are mandatory. The UK does not accept the EU pet passport for entry from non-EU countries.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                Northern Ireland continues to follow EU rules post-Brexit under the Windsor Framework. If your destination is Northern Ireland, additional rules may apply. PetClear can advise on the specific requirements for Belfast, Derry, or other Northern Ireland destinations.
+                Northern Ireland continues to follow EU rules post-Brexit under the Windsor Framework. If your destination is Northern Ireland, additional rules may apply. Dubai Pet Relocation can advise on the specific requirements for Belfast, Derry, or other Northern Ireland destinations.
               </p>
             </div>
 
@@ -582,10 +582,10 @@ export default function DubaiToUK() {
                 <div className="w-12 h-12 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
                   <Calendar className="w-6 h-6 text-[#5A8F6E]" />
                 </div>
-                <h3 className="text-lg font-bold text-[#2A2A2A]">What PetClear Does Differently Post-Brexit</h3>
+                <h3 className="text-lg font-bold text-[#2A2A2A]">What Dubai Pet Relocation Does Differently Post-Brexit</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-                PetClear stays current on all post-Brexit rule changes. We verify the latest APHA/DEFRA health certificate templates before every booking, ensure MOCCAE endorsement is obtained within the correct timeframe, and confirm that the UK Border Inspection Post at your arrival airport is notified in advance.
+                Dubai Pet Relocation stays current on all post-Brexit rule changes. We verify the latest APHA/DEFRA health certificate templates before every booking, ensure MOCCAE endorsement is obtained within the correct timeframe, and confirm that the UK Border Inspection Post at your arrival airport is notified in advance.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
                 We also monitor any changes to the UK's rabies risk category list. If the UAE's status changes, we notify all affected clients immediately and adjust the documentation process accordingly. Our post-Brexit track record is 100% successful entry with zero quarantine cases.
@@ -600,9 +600,9 @@ export default function DubaiToUK() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Our Process</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">How PetClear Handles Dubai to UK Relocations</h2>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">How Dubai Pet Relocation Handles Dubai to UK Relocations</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              PetClear manages every step of your pet's journey from Dubai to the UK. Here is exactly what we do, from the first WhatsApp message to delivery at your UK door.
+              Dubai Pet Relocation manages every step of your pet's journey from Dubai to the UK. Here is exactly what we do, from the first WhatsApp message to delivery at your UK door.
             </p>
           </div>
 
@@ -684,7 +684,7 @@ export default function DubaiToUK() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Export Your Pet from Dubai to the UK?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear has relocated hundreds of pets from Dubai to London, Manchester, Edinburgh, and beyond. We handle the DEFRA paperwork, MOCCAE endorsement, airline booking, and UK customs so you can focus on your move.
+              Dubai Pet Relocation has relocated hundreds of pets from Dubai to London, Manchester, Edinburgh, and beyond. We handle the DEFRA paperwork, MOCCAE endorsement, airline booking, and UK customs so you can focus on your move.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a Dubai to UK quote" message="Hi, I want to relocate my pet from Dubai to the UK. Can you help me understand the DEFRA requirements, timeline, and cost?" />

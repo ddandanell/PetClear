@@ -47,26 +47,26 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 /* ─── Page ─── */
 export default function MOCCAEPermitGuide() {
   const title = 'MOCCAE Import Permit for Pets — Dubai & UAE Complete Guide (2026)'
-  const description = 'Step-by-step guide to obtaining a MOCCAE import permit for pets entering Dubai and the UAE. Learn required documents, processing times, costs, common rejection reasons, and how PetClear handles applications.'
+  const description = 'Step-by-step guide to obtaining a MOCCAE import permit for pets entering Dubai and the UAE. Learn required documents, processing times, costs, common rejection reasons, and how Dubai Pet Relocation handles applications.'
   const canonical = `${BASE_URL}/guides/moccae-import-permit/`
   const ogImage = `${BASE_URL}/assets/og-moccae-permit.jpg`
 
   const faqData = [
     {
       question: 'How long does the MOCCAE import permit take?',
-      answer: 'The MOCCAE import permit typically takes 2–5 business days to process once all documents are correctly submitted. However, if your application is incomplete, contains errors, or requires additional verification, processing can take 1–2 weeks or longer. PetClear recommends applying at least 3–4 weeks before your planned travel date to account for any resubmission needs.',
+      answer: 'The MOCCAE import permit typically takes 2–5 business days to process once all documents are correctly submitted. However, if your application is incomplete, contains errors, or requires additional verification, processing can take 1–2 weeks or longer. Dubai Pet Relocation recommends applying at least 3–4 weeks before your planned travel date to account for any resubmission needs.',
     },
     {
       question: 'Can I apply for the MOCCAE import permit myself?',
-      answer: 'Yes, you can apply directly through the MOCCAE online portal or the MOCCAE UAE app. However, the process requires careful document preparation, correct photo formatting, and accurate breed/vaccination entry. Many owners make mistakes that lead to rejection or delays. PetClear offers an application service where we handle the entire process, error-check all documents, and follow up with MOCCAE on your behalf.',
+      answer: 'Yes, you can apply directly through the MOCCAE online portal or the MOCCAE UAE app. However, the process requires careful document preparation, correct photo formatting, and accurate breed/vaccination entry. Many owners make mistakes that lead to rejection or delays. Dubai Pet Relocation offers an application service where we handle the entire process, error-check all documents, and follow up with MOCCAE on your behalf.',
     },
     {
       question: 'What if my MOCCAE permit is rejected?',
-      answer: 'If your permit is rejected, MOCCAE will specify the reason (wrong photo, expired vaccine, incorrect microchip number, wrong breed declaration, etc.). You must correct the issue and resubmit. There is no additional fee for resubmission, but the processing timeline resets. PetClear reviews rejection reasons, fixes the problem, and resubmits within 24 hours to minimize delays.',
+      answer: 'If your permit is rejected, MOCCAE will specify the reason (wrong photo, expired vaccine, incorrect microchip number, wrong breed declaration, etc.). You must correct the issue and resubmit. There is no additional fee for resubmission, but the processing timeline resets. Dubai Pet Relocation reviews rejection reasons, fixes the problem, and resubmits within 24 hours to minimize delays.',
     },
     {
       question: 'What happens if my permit expires before I travel?',
-      answer: 'MOCCAE import permits are valid for 30–90 days depending on the origin country. If your permit expires before travel, you must submit a new application and pay the AED 200 fee again. PetClear tracks permit expiry dates and coordinates your travel timeline to ensure your permit is valid on arrival day. We also set calendar reminders for reapplication if needed.',
+      answer: 'MOCCAE import permits are valid for 30–90 days depending on the origin country. If your permit expires before travel, you must submit a new application and pay the AED 200 fee again. Dubai Pet Relocation tracks permit expiry dates and coordinates your travel timeline to ensure your permit is valid on arrival day. We also set calendar reminders for reapplication if needed.',
     },
     {
       question: 'Do cats and dogs need separate permits?',
@@ -78,7 +78,7 @@ export default function MOCCAEPermitGuide() {
     },
     {
       question: 'Is a MOCCAE export permit needed to leave Dubai?',
-      answer: 'Yes, if you are leaving Dubai with your pet, you need a MOCCAE export permit. The process is similar to the import permit: apply online, submit passport copy, pet photo, vaccination records, and microchip certificate. The fee is also AED 200 per pet. Some destination countries require additional health certificates endorsed by the UAE government vet. PetClear handles both import and export permits.',
+      answer: 'Yes, if you are leaving Dubai with your pet, you need a MOCCAE export permit. The process is similar to the import permit: apply online, submit passport copy, pet photo, vaccination records, and microchip certificate. The fee is also AED 200 per pet. Some destination countries require additional health certificates endorsed by the UAE government vet. Dubai Pet Relocation handles both import and export permits.',
     },
     {
       question: 'What is the most common reason for MOCCAE permit rejection?',
@@ -178,12 +178,12 @@ export default function MOCCAEPermitGuide() {
               MOCCAE Import Permit for Pets — Dubai & UAE Complete Guide (2026)
             </h1>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              The MOCCAE import permit is a mandatory government approval required for every pet entering the UAE. Without it, your pet will be refused at Dubai customs. This guide walks you through the application process, required documents, costs, common mistakes, and how PetClear handles permits for our clients.
+              The MOCCAE import permit is a mandatory government approval required for every pet entering the UAE. Without it, your pet will be refused at Dubai customs. This guide walks you through the application process, required documents, costs, common mistakes, and how Dubai Pet Relocation handles permits for our clients.
             </p>
             <div className="flex flex-wrap gap-4">
               <WhatsAppBtn
                 label="Get Permit Help"
-                message="Hi PetClear, I need help applying for a MOCCAE import permit for my pet. Can you guide me through the process?"
+                message="Hi Dubai Pet Relocation, I need help applying for a MOCCAE import permit for my pet. Can you guide me through the process?"
               />
               <a
                 href="#step-by-step"
@@ -353,7 +353,7 @@ export default function MOCCAEPermitGuide() {
                   MOCCAE processes applications in 2–5 business days. Monitor your email and the portal for status updates. You will receive an approval notification with a downloadable permit PDF.
                 </p>
                 <div className="p-3 bg-[#EDF6F0] rounded-xl text-sm text-[#5A5A5A]">
-                  <strong className="text-[#5A8F6E]">Pro tip:</strong> If you don't hear back within 5 business days, contact MOCCAE customer service with your application reference number. PetClear handles all follow-ups for our clients.
+                  <strong className="text-[#5A8F6E]">Pro tip:</strong> If you don't hear back within 5 business days, contact MOCCAE customer service with your application reference number. Dubai Pet Relocation handles all follow-ups for our clients.
                 </div>
               </div>
             </div>
@@ -390,7 +390,7 @@ export default function MOCCAEPermitGuide() {
                 <tr>
                   <td className="font-medium">Wrong pet photo</td>
                   <td>Retake with neutral background, front face, no accessories</td>
-                  <td>Use PetClear's photo guide before submission</td>
+                  <td>Use Dubai Pet Relocation's photo guide before submission</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Expired rabies vaccine</td>
@@ -427,7 +427,7 @@ export default function MOCCAEPermitGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">Resubmission Resets the Timeline</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  When you resubmit after a rejection, the 2–5 business day processing clock restarts. If your permit is rejected twice, you could lose 2+ weeks. PetClear error-checks every application before submission to avoid this scenario.
+                  When you resubmit after a rejection, the 2–5 business day processing clock restarts. If your permit is rejected twice, you could lose 2+ weeks. Dubai Pet Relocation error-checks every application before submission to avoid this scenario.
                 </p>
               </div>
             </div>
@@ -435,7 +435,7 @@ export default function MOCCAEPermitGuide() {
         </div>
       </section>
 
-      {/* Export Permit & PetClear */}
+      {/* Export Permit & Dubai Pet Relocation */}
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10">
@@ -474,10 +474,10 @@ export default function MOCCAEPermitGuide() {
                 <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center">
                   <Shield className="w-5 h-5 text-[#5A8F6E]" />
                 </div>
-                <h3 className="text-xl font-bold text-[#2A2A2A]">How PetClear Handles Permits</h3>
+                <h3 className="text-xl font-bold text-[#2A2A2A]">How Dubai Pet Relocation Handles Permits</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-5">
-                PetClear's permit service handles the entire application process from document collection to final approval. Our team has processed hundreds of MOCCAE permits and knows exactly what triggers rejections.
+                Dubai Pet Relocation's permit service handles the entire application process from document collection to final approval. Our team has processed hundreds of MOCCAE permits and knows exactly what triggers rejections.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
@@ -551,7 +551,7 @@ export default function MOCCAEPermitGuide() {
               <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4 group-hover:bg-[#5A8F6E]/20 transition-colors">
                 <Clock className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">How PetClear Works</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">How Dubai Pet Relocation Works</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent concierge process from start to finish.</p>
             </Link>
             <Link to="/dog-relocation-to-dubai/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
@@ -576,15 +576,15 @@ export default function MOCCAEPermitGuide() {
       <section className="py-16 lg:py-20 bg-[#1B2B4D]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
-            Let PetClear Handle Your MOCCAE Permit
+            Let Dubai Pet Relocation Handle Your MOCCAE Permit
           </h2>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Avoid rejection delays and paperwork stress. PetClear's permit service includes document review, error-checking, application submission, and free resubmission if needed.
+            Avoid rejection delays and paperwork stress. Dubai Pet Relocation's permit service includes document review, error-checking, application submission, and free resubmission if needed.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <WhatsAppBtn
               label="Apply for Permit Help"
-              message="Hi PetClear, I need help with my MOCCAE import permit application for my pet. Can you handle the entire process for me?"
+              message="Hi Dubai Pet Relocation, I need help with my MOCCAE import permit application for my pet. Can you handle the entire process for me?"
               className="whatsapp-pulse"
             />
             <Link

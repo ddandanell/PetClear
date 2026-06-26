@@ -46,18 +46,18 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 /* ─── Page ─── */
 export default function TiterTestGuide() {
   const title = 'Rabies Titer Test (RNATT) for Dubai — Complete Guide for Pet Owners'
-  const description = 'Complete guide to the rabies titer test (RNATT) for pet travel to Dubai. Learn which countries require it, required antibody levels, accredited labs, timeline, costs, and how PetClear coordinates testing.'
+  const description = 'Complete guide to the rabies titer test (RNATT) for pet travel to Dubai. Learn which countries require it, required antibody levels, accredited labs, timeline, costs, and how Dubai Pet Relocation coordinates testing.'
   const canonical = `${BASE_URL}/guides/rabies-titer-test-dubai/`
   const ogImage = `${BASE_URL}/assets/og-titer-test.jpg`
 
   const faqData = [
     {
       question: 'Is my country high-risk for rabies titer test requirements?',
-      answer: 'High-risk countries include India, Pakistan, Philippines, South Africa, Nigeria, Kenya, Bangladesh, Sri Lanka, Thailand, Vietnam, Indonesia, Egypt, Morocco, most of sub-Saharan Africa, and most of South and Southeast Asia. Some Eastern European countries may also require titer tests depending on current UAE regulations. If you are traveling from the UK, EU, USA, Canada, Australia, New Zealand, or Japan, a titer test is generally not required. PetClear confirms the exact requirement for your origin country before starting the process.',
+      answer: 'High-risk countries include India, Pakistan, Philippines, South Africa, Nigeria, Kenya, Bangladesh, Sri Lanka, Thailand, Vietnam, Indonesia, Egypt, Morocco, most of sub-Saharan Africa, and most of South and Southeast Asia. Some Eastern European countries may also require titer tests depending on current UAE regulations. If you are traveling from the UK, EU, USA, Canada, Australia, New Zealand, or Japan, a titer test is generally not required. Dubai Pet Relocation confirms the exact requirement for your origin country before starting the process.',
     },
     {
       question: 'How long does the rabies titer test take?',
-      answer: 'The timeline has multiple stages: (1) Blood draw: must be 21+ days after rabies vaccination. (2) Sample shipping: 1–7 days depending on lab location. (3) Lab processing: 1–2 weeks for results. (4) Waiting period: 90 days from blood draw date before travel is allowed. Total minimum time from vaccination to travel: 4 months. If you are short on time, contact PetClear immediately — we may be able to expedite lab shipping or suggest routing alternatives.',
+      answer: 'The timeline has multiple stages: (1) Blood draw: must be 21+ days after rabies vaccination. (2) Sample shipping: 1–7 days depending on lab location. (3) Lab processing: 1–2 weeks for results. (4) Waiting period: 90 days from blood draw date before travel is allowed. Total minimum time from vaccination to travel: 4 months. If you are short on time, contact Dubai Pet Relocation immediately — we may be able to expedite lab shipping or suggest routing alternatives.',
     },
     {
       question: 'What if my titer test result is below 0.5 IU/ml?',
@@ -65,15 +65,15 @@ export default function TiterTestGuide() {
     },
     {
       question: 'Can I skip the 90-day waiting period?',
-      answer: 'No. The 90-day waiting period from the date of blood draw is mandatory under UAE regulations and cannot be waived, expedited, or bypassed. There are no exceptions for urgent travel, personal circumstances, or professional connections. PetClear builds this 90-day wait into every relocation timeline and tracks the exact date your pet becomes eligible to travel.',
+      answer: 'No. The 90-day waiting period from the date of blood draw is mandatory under UAE regulations and cannot be waived, expedited, or bypassed. There are no exceptions for urgent travel, personal circumstances, or professional connections. Dubai Pet Relocation builds this 90-day wait into every relocation timeline and tracks the exact date your pet becomes eligible to travel.',
     },
     {
       question: 'Which labs are accredited for titer tests for Dubai?',
-      answer: 'The UAE accepts results from EU-accredited laboratories (found in Germany, UK, France, Netherlands, Spain, and Italy) and some US laboratories approved by the USDA. Very few labs in Asia and Africa are accredited, which means samples from these regions often need to be shipped to Europe. PetClear maintains a verified list of accredited labs and coordinates international sample shipping for clients in regions without local accredited facilities.',
+      answer: 'The UAE accepts results from EU-accredited laboratories (found in Germany, UK, France, Netherlands, Spain, and Italy) and some US laboratories approved by the USDA. Very few labs in Asia and Africa are accredited, which means samples from these regions often need to be shipped to Europe. Dubai Pet Relocation maintains a verified list of accredited labs and coordinates international sample shipping for clients in regions without local accredited facilities.',
     },
     {
       question: 'How much does a rabies titer test cost?',
-      answer: 'Costs vary significantly based on location and lab: (1) Blood draw and vet processing: AED 200–500. (2) Lab testing fee: AED 400–1,500 depending on the lab. (3) International shipping: AED 200–500 if sending to an overseas lab. Total cost typically ranges from AED 800 to 2,500. PetClear negotiates group rates with partner labs and handles shipping logistics to minimize costs.',
+      answer: 'Costs vary significantly based on location and lab: (1) Blood draw and vet processing: AED 200–500. (2) Lab testing fee: AED 400–1,500 depending on the lab. (3) International shipping: AED 200–500 if sending to an overseas lab. Total cost typically ranges from AED 800 to 2,500. Dubai Pet Relocation negotiates group rates with partner labs and handles shipping logistics to minimize costs.',
     },
     {
       question: 'How can I avoid a failed titer test?',
@@ -81,7 +81,7 @@ export default function TiterTestGuide() {
     },
     {
       question: 'Does the titer test ever expire?',
-      answer: 'The titer test result itself does not expire for UAE purposes, but the underlying rabies vaccination must remain valid. If your pet\'s rabies vaccine expires and is not renewed on time, the titer test may no longer be considered valid for entry. PetClear tracks both your titer test date and vaccination expiry to ensure everything is current on travel day.',
+      answer: 'The titer test result itself does not expire for UAE purposes, but the underlying rabies vaccination must remain valid. If your pet\'s rabies vaccine expires and is not renewed on time, the titer test may no longer be considered valid for entry. Dubai Pet Relocation tracks both your titer test date and vaccination expiry to ensure everything is current on travel day.',
     },
   ]
 
@@ -189,12 +189,12 @@ export default function TiterTestGuide() {
               Rabies Titer Test (RNATT) for Dubai — Complete Guide for Pet Owners
             </h1>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              If you're bringing your pet to Dubai from a high-risk country, the rabies titer test (RNATT) is one of the most critical — and time-consuming — steps. This guide explains what the test is, which countries require it, how to pass it the first time, and how PetClear coordinates the entire process.
+              If you're bringing your pet to Dubai from a high-risk country, the rabies titer test (RNATT) is one of the most critical — and time-consuming — steps. This guide explains what the test is, which countries require it, how to pass it the first time, and how Dubai Pet Relocation coordinates the entire process.
             </p>
             <div className="flex flex-wrap gap-4">
               <WhatsAppBtn
                 label="Check If I Need a Titer Test"
-                message="Hi PetClear, I'm moving my pet to Dubai and I need to know if a rabies titer test is required from my country. Can you help?"
+                message="Hi Dubai Pet Relocation, I'm moving my pet to Dubai and I need to know if a rabies titer test is required from my country. Can you help?"
               />
               <a
                 href="#timeline"
@@ -310,7 +310,7 @@ export default function TiterTestGuide() {
                     <AlertTriangle className="w-5 h-5 text-[#C89F5A] shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold text-[#2A2A2A] text-sm mb-1">Use an Experienced Vet</p>
-                      <p className="text-[#5A5A5A] text-sm">Not all vets are familiar with titer test sample requirements. PetClear connects you with partner vets who have experience with international titer testing and proper sample handling.</p>
+                      <p className="text-[#5A5A5A] text-sm">Not all vets are familiar with titer test sample requirements. Dubai Pet Relocation connects you with partner vets who have experience with international titer testing and proper sample handling.</p>
                     </div>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ export default function TiterTestGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Lab Processing & Results</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  The laboratory processes the sample and measures the rabies antibody level. Results are typically available in 1–2 weeks. The result must show <strong>≥0.5 IU/ml</strong> to be accepted by the UAE. Results are usually sent as a PDF certificate. PetClear tracks results and confirms the reading meets UAE standards.
+                  The laboratory processes the sample and measures the rabies antibody level. Results are typically available in 1–2 weeks. The result must show <strong>≥0.5 IU/ml</strong> to be accepted by the UAE. Results are usually sent as a PDF certificate. Dubai Pet Relocation tracks results and confirms the reading meets UAE standards.
                 </p>
               </div>
             </div>
@@ -348,7 +348,7 @@ export default function TiterTestGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">90-Day Waiting Period</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  From the date the blood was drawn, you must wait exactly 90 days before your pet is eligible to travel to Dubai. This waiting period is mandatory and cannot be shortened. PetClear calculates this date precisely and sends reminders when your pet becomes travel-eligible.
+                  From the date the blood was drawn, you must wait exactly 90 days before your pet is eligible to travel to Dubai. This waiting period is mandatory and cannot be shortened. Dubai Pet Relocation calculates this date precisely and sends reminders when your pet becomes travel-eligible.
                 </p>
               </div>
             </div>
@@ -443,7 +443,7 @@ export default function TiterTestGuide() {
                 </table>
               </div>
               <p className="text-sm text-[#5A5A5A] mt-4 leading-relaxed">
-                Costs vary significantly by country and lab location. Testing in the UK or Germany is typically cheaper than shipping from Asia to those labs. PetClear negotiates group rates with partner labs and handles all shipping logistics.
+                Costs vary significantly by country and lab location. Testing in the UK or Germany is typically cheaper than shipping from Asia to those labs. Dubai Pet Relocation negotiates group rates with partner labs and handles all shipping logistics.
               </p>
             </div>
 
@@ -480,7 +480,7 @@ export default function TiterTestGuide() {
         </div>
       </section>
 
-      {/* How to Avoid Failure & PetClear Coordination */}
+      {/* How to Avoid Failure & Dubai Pet Relocation Coordination */}
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
@@ -533,7 +533,7 @@ export default function TiterTestGuide() {
                 <CheckCircle className="w-5 h-5 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Track Everything</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Keep copies of vaccination certificates, lab results, and shipping receipts. PetClear maintains a digital file for every client.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Keep copies of vaccination certificates, lab results, and shipping receipts. Dubai Pet Relocation maintains a digital file for every client.</p>
             </div>
           </div>
 
@@ -542,10 +542,10 @@ export default function TiterTestGuide() {
               <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center">
                 <PawPrint className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="text-xl font-bold text-[#2A2A2A]">How PetClear Coordinates Titer Tests</h3>
+              <h3 className="text-xl font-bold text-[#2A2A2A]">How Dubai Pet Relocation Coordinates Titer Tests</h3>
             </div>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-5">
-              PetClear's titer test coordination service manages the entire process from vaccination to result tracking. We have partnered with accredited labs and experienced veterinarians in multiple countries.
+              Dubai Pet Relocation's titer test coordination service manages the entire process from vaccination to result tracking. We have partnered with accredited labs and experienced veterinarians in multiple countries.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="bg-white rounded-xl p-4 text-center">
@@ -610,7 +610,7 @@ export default function TiterTestGuide() {
               <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4 group-hover:bg-[#5A8F6E]/20 transition-colors">
                 <Clock className="w-5 h-5 text-[#5A8F6E]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">How PetClear Works</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">How Dubai Pet Relocation Works</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent concierge process from assessment to arrival.</p>
             </Link>
             <Link to="/routes/india-to-dubai/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
@@ -645,12 +645,12 @@ export default function TiterTestGuide() {
             Need Help With Your Titer Test?
           </h2>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            PetClear coordinates titer tests from start to finish: vet appointments, sample collection, accredited lab shipping, and result tracking. Don't risk a 4-month delay — get it right the first time.
+            Dubai Pet Relocation coordinates titer tests from start to finish: vet appointments, sample collection, accredited lab shipping, and result tracking. Don't risk a 4-month delay — get it right the first time.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <WhatsAppBtn
               label="Start Titer Test Coordination"
-              message="Hi PetClear, I need help coordinating a rabies titer test for my pet's relocation to Dubai. Can you walk me through the process?"
+              message="Hi Dubai Pet Relocation, I need help coordinating a rabies titer test for my pet's relocation to Dubai. Can you walk me through the process?"
               className="whatsapp-pulse"
             />
             <Link

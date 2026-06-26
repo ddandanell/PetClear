@@ -47,20 +47,20 @@ export default function Footer() {
               <div className="w-9 h-9 rounded-lg bg-[#1A5F4A] flex items-center justify-center">
                 <PawPrint className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold">PetClear</span>
+              <span className="text-xl font-bold">Dubai Pet Relocation</span>
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-4 max-w-xs">
               Transparent pet relocation concierge for Dubai and the UAE. Your pet's journey, made clear.
             </p>
             <div className="space-y-2 text-sm text-white/70">
-              <a href="tel:+971-5XX-XXX-XXX" className="flex items-center gap-2 hover:text-white transition-colors">
-                <Phone className="w-4 h-4" /> +971-5XX-XXX-XXX
+              <a href="tel:+9710551744849" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Phone className="w-4 h-4" /> +971 0551744849
               </a>
-              <a href="mailto:hello@petclear.ae" className="flex items-center gap-2 hover:text-white transition-colors">
-                <Mail className="w-4 h-4" /> hello@petclear.ae
+              <a href="mailto:hallo@dubai-pet-relocation.ae" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Mail className="w-4 h-4" /> hallo@dubai-pet-relocation.ae
               </a>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" /> Dubai, UAE
+              <div className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-0.5 shrink-0" /> Al Quoz Industrial Area 4, Al Quoz, Dubai
               </div>
             </div>
             <div className="flex items-center gap-3 mt-4">
@@ -133,14 +133,14 @@ export default function Footer() {
         {/* Trust Disclaimer */}
         <div className="border-t border-white/10 pt-6 mb-6">
           <p className="text-xs text-white/50 leading-relaxed max-w-3xl">
-            <strong>Disclaimer:</strong> PetClear is a pet relocation concierge and coordination service, not a veterinary clinic, airline, or government agency. We do not issue health certificates, import permits, or government documents. All veterinary, cargo, and transport services are provided by our independent licensed partners. Government fees (MOCCAE, customs, municipality) are passed through at cost with no markup. Quarantine and return-to-origin costs are the owner's responsibility if documentation is incorrect. PetClear charges a coordination and support fee for our concierge services. We recommend verifying all documentation directly with MOCCAE and your airline before travel.
+            <strong>Disclaimer:</strong> Dubai Pet Relocation is a pet relocation concierge and coordination service, not a veterinary clinic, airline, or government agency. We do not issue health certificates, import permits, or government documents. All veterinary, cargo, and transport services are provided by our independent licensed partners. Government fees (MOCCAE, customs, municipality) are passed through at cost with no markup. Quarantine and return-to-origin costs are the owner's responsibility if documentation is incorrect. Dubai Pet Relocation charges a coordination and support fee for our concierge services. We recommend verifying all documentation directly with MOCCAE and your airline before travel.
           </p>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-white/50">
-            © {new Date().getFullYear()} PetClear. All rights reserved. Dubai, UAE.
+            © {new Date().getFullYear()} Dubai Pet Relocation. All rights reserved. Dubai, UAE.
           </p>
           <div className="flex items-center gap-4 text-sm text-white/50">
             {footerLinks.legal.map((link) => (

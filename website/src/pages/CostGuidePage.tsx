@@ -135,12 +135,12 @@ export default function CostGuidePage() {
     image: `${BASE_URL}/assets/cost-guide-hero.jpg`,
     author: {
       '@type': 'Organization',
-      name: 'PetClear',
+      name: 'Dubai Pet Relocation',
       url: BASE_URL,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'PetClear',
+      name: 'Dubai Pet Relocation',
       logo: {
         '@type': 'ImageObject',
         url: `${BASE_URL}/assets/logo.png`,
@@ -182,7 +182,7 @@ export default function CostGuidePage() {
   return (
     <div>
       <SEOHead
-        title="Pet Relocation Cost Dubai | 2026 Transparent Price Guide | PetClear"
+        title="Pet Relocation Cost Dubai | 2026 Transparent Price Guide | Dubai Pet Relocation"
         description="Complete 2026 cost guide for pet relocation to Dubai. Transparent pricing breakdown: government fees, vet costs, cargo shipping, and our service fee. Get a personalized quote in 60 seconds."
         keywords="pet relocation cost Dubai, dog relocation cost, cat relocation cost, pet transport price Dubai, how much to relocate pet to Dubai"
         ogType="article"
@@ -205,7 +205,7 @@ export default function CostGuidePage() {
                 That's the honest answer. Most companies won't give it to you. They want your phone number first. They want to "schedule a consultation." They want to sell you before you can compare.
               </p>
               <p className="text-white/80 mb-6 leading-relaxed">
-                At PetClear, we do the opposite. We publish every cost. We explain why each one exists. And we show you exactly where your money goes — before you ever message us.
+                At Dubai Pet Relocation, we do the opposite. We publish every cost. We explain why each one exists. And we show you exactly where your money goes — before you ever message us.
               </p>
               <ul className="text-white/80 text-sm space-y-1 mb-8">
                 <li>Every dirham you'll spend, line by line</li>
@@ -385,10 +385,10 @@ export default function CostGuidePage() {
           </p>
         </div>
 
-        {/* PetClear Service Coordination Fee */}
+        {/* Dubai Pet Relocation Service Coordination Fee */}
         <div className="mb-12">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-            <Users className="w-5 h-5 text-[#5A8F6E]" /> PetClear Service Coordination Fee
+            <Users className="w-5 h-5 text-[#5A8F6E]" /> Dubai Pet Relocation Service Coordination Fee
           </h3>
           <p className="text-sm text-[#5A5A5A] mb-4">
             This is what we charge to handle everything — permits, paperwork, flight booking, partner coordination, and WhatsApp updates at every step.
@@ -608,7 +608,7 @@ export default function CostGuidePage() {
                 <th>Hidden Cost</th>
                 <th>Typical Amount (AED)</th>
                 <th>Why It Happens</th>
-                <th>How PetClear Handles It</th>
+                <th>How Dubai Pet Relocation Handles It</th>
               </tr>
             </thead>
             <tbody>
@@ -675,7 +675,7 @@ export default function CostGuidePage() {
             That happens when companies give you a lowball estimate to win your business, then add "unforeseen" costs later. The airline fee was higher than expected. The crate was bigger than estimated. The permit took longer.
           </p>
           <p className="text-sm text-[#2A2A2A] leading-relaxed mt-2">
-            At PetClear, we give you a <strong>range</strong> based on your specific pet, route, and season. If the final cost falls within that range, you pay what we quoted. If our mistake causes an overrun, we absorb it. That's our promise.
+            At Dubai Pet Relocation, we give you a <strong>range</strong> based on your specific pet, route, and season. If the final cost falls within that range, you pay what we quoted. If our mistake causes an overrun, we absorb it. That's our promise.
           </p>
         </div>
 
@@ -722,7 +722,7 @@ export default function CostGuidePage() {
           </Card>
 
           <Card>
-            <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Using PetClear</h3>
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Using Dubai Pet Relocation</h3>
             <p className="text-sm font-semibold text-[#2A2A2A] mb-3">What we handle:</p>
             <ul className="space-y-2 text-sm text-[#5A5A5A] mb-6">
               {[
@@ -742,7 +742,7 @@ export default function CostGuidePage() {
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-[#2A2A2A] font-medium">PetClear total: AED 8,000–25,000 depending on route, size, and tier</p>
+            <p className="text-sm text-[#2A2A2A] font-medium">Dubai Pet Relocation total: AED 8,000–25,000 depending on route, size, and tier</p>
             <p className="text-sm text-[#5A5A5A] mt-1">Your time investment: 2–3 hours (initial consultation, a few document uploads, pickup/delivery coordination)</p>
           </Card>
         </div>
@@ -959,7 +959,7 @@ export default function CostGuidePage() {
             Last updated: June 2026. Prices are based on current partner rates and government fee schedules. Cargo and airline fees fluctuate with fuel prices and seasonal demand. Your personalized quote will reflect real-time pricing for your specific route and dates.
           </p>
           <p className="text-xs text-[#8A8A8A] leading-relaxed">
-            PetClear is a pet relocation concierge. We coordinate with vetted partners — veterinarians, cargo handlers, ground transport teams — to manage every step of your pet's journey. We are MOCCAE-licensed and work with IPATA-certified partners.
+            Dubai Pet Relocation is a pet relocation concierge. We coordinate with vetted partners — veterinarians, cargo handlers, ground transport teams — to manage every step of your pet's journey. We are MOCCAE-licensed and work with IPATA-certified partners.
           </p>
         </div>
       </Section>

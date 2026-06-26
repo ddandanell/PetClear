@@ -158,7 +158,7 @@ export default function ImportRequirementsPage() {
   return (
     <div className="bg-[#FDFBF8]">
       <SEOHead
-        title="UAE Pet Import Requirements | Documents, Permits & Rules (2026) | PetClear"
+        title="UAE Pet Import Requirements | Documents, Permits & Rules (2026) | Dubai Pet Relocation"
         description="Complete guide to UAE pet import requirements for Dubai. MOCCAE permit, vaccination rules, banned breeds, health certificates, microchip, rabies titer test, and more."
         keywords="UAE pet import requirements, MOCCAE import permit, Dubai pet import rules, pet vaccination requirements UAE, dog import Dubai, cat import Dubai, banned dog breeds Dubai"
         ogType="article"
@@ -216,11 +216,11 @@ export default function ImportRequirementsPage() {
             description: 'Complete guide to UAE pet import requirements for Dubai. MOCCAE permit, vaccination rules, banned breeds, health certificates, microchip, rabies titer test, and more.',
             author: {
               '@type': 'Organization',
-              name: 'PetClear',
+              name: 'Dubai Pet Relocation',
             },
             publisher: {
               '@type': 'Organization',
-              name: 'PetClear',
+              name: 'Dubai Pet Relocation',
             },
             datePublished: '2026-06-01',
             dateModified: '2026-06-01',
@@ -917,7 +917,7 @@ export default function ImportRequirementsPage() {
               <ol className="text-[#5A5A5A] space-y-2 list-decimal list-inside">
                 <li><strong>Online:</strong> Visit <a href="https://www.moccae.gov.ae/en/services/export-import-services/import-permit-pets.aspx" target="_blank" rel="noopener noreferrer" className="text-[#5A8F6E] underline">moccae.gov.ae</a> and navigate to the pet import permit section</li>
                 <li><strong>Mobile app:</strong> Download the MOCCAE app (available on iOS and Android)</li>
-                <li><strong>Through a licensed agent:</strong> PetClear can submit the application on your behalf</li>
+                <li><strong>Through a licensed agent:</strong> Dubai Pet Relocation can submit the application on your behalf</li>
               </ol>
             </div>
 
@@ -1269,7 +1269,7 @@ export default function ImportRequirementsPage() {
       <section className="py-8 bg-[#FDFBF8]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-[#8A8A8A]">
-            PetClear makes your pet&apos;s journey clear, calm, and certain. MOCCAE-licensed. IPATA-certified. Human communication on WhatsApp at every step.
+            Dubai Pet Relocation makes your pet&apos;s journey clear, calm, and certain. MOCCAE-licensed. IPATA-certified. Human communication on WhatsApp at every step.
           </p>
         </div>
       </section>

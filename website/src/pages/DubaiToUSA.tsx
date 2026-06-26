@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function DubaiToUSA() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-usa/`
-  const pageTitle = 'Dubai to USA Pet Relocation | Export Guide 2026 | PetClear'
-  const pageDescription = 'Export your dog or cat from Dubai to the USA with PetClear. Full guide to CDC dog import requirements, USDA APHIS health certificates, state-specific rules, airline options, costs, and timeline. No quarantine for most states.'
+  const pageTitle = 'Dubai to USA Pet Relocation | Export Guide 2026 | Dubai Pet Relocation'
+  const pageDescription = 'Export your dog or cat from Dubai to the USA with Dubai Pet Relocation. Full guide to CDC dog import requirements, USDA APHIS health certificates, state-specific rules, airline options, costs, and timeline. No quarantine for most states.'
   const keywords = 'Dubai to USA pet relocation, export pet Dubai to USA, pet transport Dubai to America, CDC dog import form, USDA APHIS health certificate, Emirates pet cargo USA, pet relocation to USA, Dubai to JFK pet cargo, Dubai to LAX pet transport, dog import USA CDC, cat import USA requirements, Hawaii pet quarantine, state pet import rules USA'
 
   const faqs = [
@@ -18,31 +18,31 @@ export default function DubaiToUSA() {
     },
     {
       question: 'Do cats need a rabies vaccination to enter the USA from Dubai?',
-      answer: 'The CDC does not require rabies vaccination for cats entering the USA from any country. However, the USDA APHIS (Animal and Plant Health Inspection Service) and individual state regulations may require a rabies certificate for cats. Some states, such as California and New York, strongly recommend or require rabies vaccination for all cats. PetClear recommends vaccinating your cat against rabies before travel and carrying the vaccination certificate, even if not strictly required by federal law. This protects your cat and avoids any issues at state-level veterinary inspections.'
+      answer: 'The CDC does not require rabies vaccination for cats entering the USA from any country. However, the USDA APHIS (Animal and Plant Health Inspection Service) and individual state regulations may require a rabies certificate for cats. Some states, such as California and New York, strongly recommend or require rabies vaccination for all cats. Dubai Pet Relocation recommends vaccinating your cat against rabies before travel and carrying the vaccination certificate, even if not strictly required by federal law. This protects your cat and avoids any issues at state-level veterinary inspections.'
     },
     {
       question: 'What is the USDA APHIS health certificate for pets entering the USA?',
-      answer: 'A USDA APHIS health certificate is a document issued by an accredited veterinarian in the origin country (the UAE) certifying that the pet is healthy and free from contagious diseases. For pets travelling from Dubai to the USA, a UAE-licensed veterinarian can issue the health certificate if they are accredited by the USDA. The certificate must be issued within 10 days of travel for dogs and cats. It includes the pet\'s identification details, vaccination records, health examination results, and the veterinarian\'s accreditation number. PetClear works with USDA-accredited veterinarians in Dubai to ensure the health certificate meets US entry requirements. The certificate is presented at the US port of entry (CBP inspection) and may be required by state authorities upon arrival.'
+      answer: 'A USDA APHIS health certificate is a document issued by an accredited veterinarian in the origin country (the UAE) certifying that the pet is healthy and free from contagious diseases. For pets travelling from Dubai to the USA, a UAE-licensed veterinarian can issue the health certificate if they are accredited by the USDA. The certificate must be issued within 10 days of travel for dogs and cats. It includes the pet\'s identification details, vaccination records, health examination results, and the veterinarian\'s accreditation number. Dubai Pet Relocation works with USDA-accredited veterinarians in Dubai to ensure the health certificate meets US entry requirements. The certificate is presented at the US port of entry (CBP inspection) and may be required by state authorities upon arrival.'
     },
     {
       question: 'Which airlines fly pets from Dubai to the USA?',
-      answer: 'Emirates (EK) is the primary carrier for pet cargo from Dubai to the USA, with direct flights to New York JFK, Los Angeles LAX, Chicago ORD, Washington Dulles IAD, San Francisco SFO, Boston BOS, and Houston IAH. United Airlines, Delta Air Lines, and American Airlines also operate cargo services from Dubai to major US hubs via their European or Asian hubs. For in-cabin travel, small pets (under 8kg including carrier) may be permitted on some carriers depending on the route and aircraft type. However, most long-haul Dubai–USA flights require pets to travel as cargo due to the duration (12–16 hours). PetClear books cargo space on all major carriers and recommends the best airline based on your destination, pet size, and season.'
+      answer: 'Emirates (EK) is the primary carrier for pet cargo from Dubai to the USA, with direct flights to New York JFK, Los Angeles LAX, Chicago ORD, Washington Dulles IAD, San Francisco SFO, Boston BOS, and Houston IAH. United Airlines, Delta Air Lines, and American Airlines also operate cargo services from Dubai to major US hubs via their European or Asian hubs. For in-cabin travel, small pets (under 8kg including carrier) may be permitted on some carriers depending on the route and aircraft type. However, most long-haul Dubai–USA flights require pets to travel as cargo due to the duration (12–16 hours). Dubai Pet Relocation books cargo space on all major carriers and recommends the best airline based on your destination, pet size, and season.'
     },
     {
       question: 'How long does it take to relocate a pet from Dubai to the USA?',
-      answer: 'The minimum timeline is 2–4 weeks for documentation plus 1–2 days for travel. Week 1: microchip verification and rabies vaccination check (if already valid, this step is instant). Week 2: schedule the USDA APHIS health certificate examination with an accredited UAE veterinarian, complete the CDC Dog Import Form online, and book cargo space. Week 3: final health certificate issued within 10 days of travel, airline documentation review, and crate fitting. Week 4: travel day. For puppies needing their first rabies vaccination, add 28 days (minimum age 12 weeks + 28-day wait). For high-risk breeds or complex cases, allow extra time. PetClear handles all steps in parallel to minimise delays.'
+      answer: 'The minimum timeline is 2–4 weeks for documentation plus 1–2 days for travel. Week 1: microchip verification and rabies vaccination check (if already valid, this step is instant). Week 2: schedule the USDA APHIS health certificate examination with an accredited UAE veterinarian, complete the CDC Dog Import Form online, and book cargo space. Week 3: final health certificate issued within 10 days of travel, airline documentation review, and crate fitting. Week 4: travel day. For puppies needing their first rabies vaccination, add 28 days (minimum age 12 weeks + 28-day wait). For high-risk breeds or complex cases, allow extra time. Dubai Pet Relocation handles all steps in parallel to minimise delays.'
     },
     {
       question: 'How much does it cost to relocate a pet from Dubai to the USA?',
-      answer: 'For a single pet, total costs typically range from AED 7,000 to AED 20,000 (USD 1,900–5,400). This includes: veterinary verification (microchip check + health exam ~AED 300–800), USDA APHIS health certificate (AED 500–1,200), CDC Dog Import Form (free, but PetClear assists with completion), IATA-approved travel crate (AED 300–1,800), air cargo freight DXB → USA (AED 5,000–12,000 depending on destination, pet size, and crate weight), US customs and CBP inspection (AED 500–1,500), and optional PetClear door-to-door service including ground transport at destination (AED 2,000–4,000). Direct flights to JFK and LAX are typically cheaper than multi-leg routes to smaller airports. Multiple pets may qualify for discounted rates on combined services. Brachycephalic breeds may incur additional airline fees or require ventilated crates.'
+      answer: 'For a single pet, total costs typically range from AED 7,000 to AED 20,000 (USD 1,900–5,400). This includes: veterinary verification (microchip check + health exam ~AED 300–800), USDA APHIS health certificate (AED 500–1,200), CDC Dog Import Form (free, but Dubai Pet Relocation assists with completion), IATA-approved travel crate (AED 300–1,800), air cargo freight DXB → USA (AED 5,000–12,000 depending on destination, pet size, and crate weight), US customs and CBP inspection (AED 500–1,500), and optional Dubai Pet Relocation door-to-door service including ground transport at destination (AED 2,000–4,000). Direct flights to JFK and LAX are typically cheaper than multi-leg routes to smaller airports. Multiple pets may qualify for discounted rates on combined services. Brachycephalic breeds may incur additional airline fees or require ventilated crates.'
     },
     {
       question: 'Are there state-specific rules for pets entering the USA?',
-      answer: 'Yes. While CDC and USDA APHIS set federal rules, individual states have their own requirements. Most states require a valid rabies certificate and health certificate but do not impose quarantine. However, Hawaii and Guam have strict quarantine rules: Hawaii requires a rabies vaccination, microchip, and a negative rabies titer test (FAVN) with a 120-day waiting period, or a 5-day-or-less quarantine programme if all requirements are met in advance. Guam has a similar quarantine programme. Some states (e.g., California, Florida, New York) have additional veterinary inspection requirements for certain diseases. PetClear advises on state-specific rules for your destination and coordinates with local veterinarians or quarantine facilities if needed. For most mainland states (Texas, Illinois, Georgia, Washington, etc.), there is no quarantine if federal documents are correct.'
+      answer: 'Yes. While CDC and USDA APHIS set federal rules, individual states have their own requirements. Most states require a valid rabies certificate and health certificate but do not impose quarantine. However, Hawaii and Guam have strict quarantine rules: Hawaii requires a rabies vaccination, microchip, and a negative rabies titer test (FAVN) with a 120-day waiting period, or a 5-day-or-less quarantine programme if all requirements are met in advance. Guam has a similar quarantine programme. Some states (e.g., California, Florida, New York) have additional veterinary inspection requirements for certain diseases. Dubai Pet Relocation advises on state-specific rules for your destination and coordinates with local veterinarians or quarantine facilities if needed. For most mainland states (Texas, Illinois, Georgia, Washington, etc.), there is no quarantine if federal documents are correct.'
     },
     {
-      question: 'What does PetClear handle for a Dubai to USA pet relocation?',
-      answer: 'PetClear manages the entire Dubai to USA pet relocation process. We handle: (1) CDC Dog Import Form completion and submission (free online form, but we ensure accuracy); (2) health certificate scheduling with a USDA-accredited UAE veterinarian; (3) document review and airline compliance check; (4) IATA-compliant crate sourcing and fitting; (5) flight booking with Emirates, United, Delta, or American Airlines; (6) pre-flight veterinary health check; (7) DXB cargo check-in and customs clearance; (8) US CBP (Customs and Border Protection) inspection coordination at JFK, LAX, ORD, IAD, SFO, or your arrival airport; (9) ground transport from the US airport to your home or boarding facility; (10) state-specific requirement verification and post-arrival veterinary guidance. We provide WhatsApp updates at every step and a 24/7 emergency contact during travel days.'
+      question: 'What does Dubai Pet Relocation handle for a Dubai to USA pet relocation?',
+      answer: 'Dubai Pet Relocation manages the entire Dubai to USA pet relocation process. We handle: (1) CDC Dog Import Form completion and submission (free online form, but we ensure accuracy); (2) health certificate scheduling with a USDA-accredited UAE veterinarian; (3) document review and airline compliance check; (4) IATA-compliant crate sourcing and fitting; (5) flight booking with Emirates, United, Delta, or American Airlines; (6) pre-flight veterinary health check; (7) DXB cargo check-in and customs clearance; (8) US CBP (Customs and Border Protection) inspection coordination at JFK, LAX, ORD, IAD, SFO, or your arrival airport; (9) ground transport from the US airport to your home or boarding facility; (10) state-specific requirement verification and post-arrival veterinary guidance. We provide WhatsApp updates at every step and a 24/7 emergency contact during travel days.'
     }
   ]
 
@@ -73,8 +73,8 @@ export default function DubaiToUSA() {
       "@type": "Article",
       "headline": pageTitle,
       "description": pageDescription,
-      "author": { "@type": "Organization", "name": "PetClear" },
-      "publisher": { "@type": "Organization", "name": "PetClear", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
       "datePublished": "2025-01-15",
       "dateModified": "2026-01-15"
     }
@@ -104,7 +104,7 @@ export default function DubaiToUSA() {
                 Dubai to USA Pet Relocation — Exporting Your Pet to America
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                The USA is one of the most popular destinations for pet owners relocating from Dubai. With direct Emirates flights to New York, Los Angeles, Chicago, and Washington DC, and clear CDC import rules, the process is straightforward when handled correctly. PetClear manages every step — from CDC forms and USDA health certificates to flight booking and US customs clearance.
+                The USA is one of the most popular destinations for pet owners relocating from Dubai. With direct Emirates flights to New York, Los Angeles, Chicago, and Washington DC, and clear CDC import rules, the process is straightforward when handled correctly. Dubai Pet Relocation manages every step — from CDC forms and USDA health certificates to flight booking and US customs clearance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get a Dubai to USA quote" message="Hi, I want to relocate my pet from Dubai to the USA. Can you help me understand the CDC requirements, timeline, and cost?" />
@@ -181,7 +181,7 @@ export default function DubaiToUSA() {
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Cat Import Requirements</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                The CDC does not require rabies vaccination for cats entering the USA. However, PetClear recommends:
+                The CDC does not require rabies vaccination for cats entering the USA. However, Dubai Pet Relocation recommends:
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Rabies vaccination (recommended, not federally required)</li>
@@ -202,7 +202,7 @@ export default function DubaiToUSA() {
               <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">CDC Requirements</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">CDC Dog Import Form & Rabies Certificate</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Since 2023, the CDC requires all dogs entering the USA from high-risk rabies countries to complete a Dog Import Form online. This is a free, mandatory form that must be submitted before travel. PetClear completes this form on your behalf as part of our service.
+                Since 2023, the CDC requires all dogs entering the USA from high-risk rabies countries to complete a Dog Import Form online. This is a free, mandatory form that must be submitted before travel. Dubai Pet Relocation completes this form on your behalf as part of our service.
               </p>
 
               <div className="space-y-4">
@@ -212,7 +212,7 @@ export default function DubaiToUSA() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">1. CDC Dog Import Form</p>
-                    <p className="text-[#5A5A5A] text-sm">A free online form submitted via the CDC website. It requires the dog's microchip number, rabies certificate details, owner information, and travel dates. The form generates a receipt that must be printed and carried during travel. PetClear completes and submits this form for you.</p>
+                    <p className="text-[#5A5A5A] text-sm">A free online form submitted via the CDC website. It requires the dog's microchip number, rabies certificate details, owner information, and travel dates. The form generates a receipt that must be printed and carried during travel. Dubai Pet Relocation completes and submits this form for you.</p>
                   </div>
                 </div>
 
@@ -242,7 +242,7 @@ export default function DubaiToUSA() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">4. Health on Arrival</p>
-                    <p className="text-[#5A5A5A] text-sm">Dogs must appear healthy on arrival. If a dog shows signs of illness at the US port of entry, CBP may require additional veterinary examination or quarantine at the owner's expense. PetClear schedules a pre-travel health check 2–3 days before departure to ensure your dog is in optimal condition for the flight.</p>
+                    <p className="text-[#5A5A5A] text-sm">Dogs must appear healthy on arrival. If a dog shows signs of illness at the US port of entry, CBP may require additional veterinary examination or quarantine at the owner's expense. Dubai Pet Relocation schedules a pre-travel health check 2–3 days before departure to ensure your dog is in optimal condition for the flight.</p>
                   </div>
                 </div>
               </div>
@@ -256,15 +256,15 @@ export default function DubaiToUSA() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>The CDC Dog Import Form is free but mandatory. Airlines will not board a dog from a high-risk country without the CDC receipt. PetClear submits this form and prints the receipt for your travel folder.</span>
+                  <span>The CDC Dog Import Form is free but mandatory. Airlines will not board a dog from a high-risk country without the CDC receipt. Dubai Pet Relocation submits this form and prints the receipt for your travel folder.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Not all UAE veterinarians are USDA-accredited. Only an accredited vet can issue the APHIS health certificate. PetClear works exclusively with accredited veterinarians in Dubai to ensure your certificate is valid.</span>
+                  <span>Not all UAE veterinarians are USDA-accredited. Only an accredited vet can issue the APHIS health certificate. Dubai Pet Relocation works exclusively with accredited veterinarians in Dubai to ensure your certificate is valid.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Puppies under 6 months are generally not permitted under CDC rules unless they meet specific exemption criteria. Contact PetClear before planning travel with a young puppy.</span>
+                  <span>Puppies under 6 months are generally not permitted under CDC rules unless they meet specific exemption criteria. Contact Dubai Pet Relocation before planning travel with a young puppy.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
@@ -272,16 +272,16 @@ export default function DubaiToUSA() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Some US states have additional requirements. Hawaii and Guam require quarantine or advanced rabies testing. California, Florida, and New York have veterinary inspection rules. PetClear checks your specific destination state before booking.</span>
+                  <span>Some US states have additional requirements. Hawaii and Guam require quarantine or advanced rabies testing. California, Florida, and New York have veterinary inspection rules. Dubai Pet Relocation checks your specific destination state before booking.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Direct flights from Dubai to the US are 12–16 hours. PetClear ensures your pet has a water container attached to the crate, absorbent bedding, and a pre-flight acclimatisation period to reduce travel stress.</span>
+                  <span>Direct flights from Dubai to the US are 12–16 hours. Dubai Pet Relocation ensures your pet has a water container attached to the crate, absorbent bedding, and a pre-flight acclimatisation period to reduce travel stress.</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-[#5A8F6E]/10 rounded-xl">
                 <p className="text-sm text-[#2A2A2A] font-medium">
-                  <span className="text-[#5A8F6E]">Pro tip:</span> Complete the CDC Dog Import Form at least 2 days before travel. While the form is instant, having it ready early allows PetClear to verify all details match your rabies certificate and health certificate before departure.
+                  <span className="text-[#5A8F6E]">Pro tip:</span> Complete the CDC Dog Import Form at least 2 days before travel. While the form is instant, having it ready early allows Dubai Pet Relocation to verify all details match your rabies certificate and health certificate before departure.
                 </p>
               </div>
             </div>
@@ -296,7 +296,7 @@ export default function DubaiToUSA() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from Dubai to the USA</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Emirates dominates the Dubai–USA route with direct flights to multiple hubs. United, Delta, and American also offer cargo services via their global networks. PetClear books cargo space on all major carriers.
+              Emirates dominates the Dubai–USA route with direct flights to multiple hubs. United, Delta, and American also offer cargo services via their global networks. Dubai Pet Relocation books cargo space on all major carriers.
             </p>
           </div>
 
@@ -344,7 +344,7 @@ export default function DubaiToUSA() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> May be more cost-effective for certain routes</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Longer total travel time due to connections</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Multi-leg routes add complexity but may be necessary for smaller US airports. PetClear books all legs, ensures the pet is transferred correctly at each hub, and tracks the shipment throughout the journey.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Multi-leg routes add complexity but may be necessary for smaller US airports. Dubai Pet Relocation books all legs, ensures the pet is transferred correctly at each hub, and tracks the shipment throughout the journey.</p>
             </div>
           </div>
 
@@ -354,10 +354,10 @@ export default function DubaiToUSA() {
               Summer Travel Restrictions (May – September)
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              All airlines impose restrictions on brachycephalic (snub-nosed) breeds during the summer months. This includes Pugs, Bulldogs, Boxers, Shih Tzus, Persian cats, and similar breeds. The restriction is due to the risk of heat stress during ground handling in Dubai's extreme temperatures (40–50°C). PetClear books early morning flights (departing before 9 AM) and provides ventilated crates with water dispensers to mitigate risk. For non-brachycephalic breeds, cargo holds remain climate-controlled year-round and are safe for travel. During peak season (July–August and December), cargo space fills up 3–4 weeks in advance for popular routes like DXB–JFK and DXB–LAX.
+              All airlines impose restrictions on brachycephalic (snub-nosed) breeds during the summer months. This includes Pugs, Bulldogs, Boxers, Shih Tzus, Persian cats, and similar breeds. The restriction is due to the risk of heat stress during ground handling in Dubai's extreme temperatures (40–50°C). Dubai Pet Relocation books early morning flights (departing before 9 AM) and provides ventilated crates with water dispensers to mitigate risk. For non-brachycephalic breeds, cargo holds remain climate-controlled year-round and are safe for travel. During peak season (July–August and December), cargo space fills up 3–4 weeks in advance for popular routes like DXB–JFK and DXB–LAX.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              PetClear recommends booking your pet's flight as soon as the health certificate is issued. For summer travel, we also offer pre-flight boarding in a climate-controlled facility to ensure your pet is well-rested before departure.
+              Dubai Pet Relocation recommends booking your pet's flight as soon as the health certificate is issued. For summer travel, we also offer pre-flight boarding in a climate-controlled facility to ensure your pet is well-rested before departure.
             </p>
           </div>
         </div>
@@ -370,7 +370,7 @@ export default function DubaiToUSA() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">State Rules</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">State-Specific US Pet Import Rules</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              While most US states have no quarantine, a few have specific rules that pet owners must know. PetClear verifies your destination state's requirements before booking.
+              While most US states have no quarantine, a few have specific rules that pet owners must know. Dubai Pet Relocation verifies your destination state's requirements before booking.
             </p>
           </div>
 
@@ -389,7 +389,7 @@ export default function DubaiToUSA() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> <strong>5-Day-or-Less Quarantine:</strong> Requires rabies vaccination, microchip, and a negative FAVN rabies titer test with a 120-day waiting period before arrival. If done correctly, the pet is released after a short inspection.</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> <strong>Full 120-Day Quarantine:</strong> If the titer test is not completed in time, the pet must be quarantined for 120 days at a state facility in Hawaii (cost: approximately USD 1,000–1,500).</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">PetClear coordinates Hawaii's complex requirements, including FAVN titer testing at a USDA-approved lab and the 120-day advance planning timeline. Start the Hawaii process at least 5 months before travel.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Dubai Pet Relocation coordinates Hawaii's complex requirements, including FAVN titer testing at a USDA-approved lab and the 120-day advance planning timeline. Start the Hawaii process at least 5 months before travel.</p>
             </div>
 
             <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
@@ -403,7 +403,7 @@ export default function DubaiToUSA() {
                 Guam has similar rules to Hawaii. Dogs and cats must have a rabies vaccination, microchip, and a negative FAVN titer test with a 120-day waiting period before arrival. If the requirements are not met, the pet enters a quarantine facility.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                PetClear coordinates with Guam's Department of Agriculture and the USDA to ensure all documentation is submitted in advance. The 120-day waiting period is non-negotiable, so early planning is essential.
+                Dubai Pet Relocation coordinates with Guam's Department of Agriculture and the USDA to ensure all documentation is submitted in advance. The 120-day waiting period is non-negotiable, so early planning is essential.
               </p>
             </div>
 
@@ -422,7 +422,7 @@ export default function DubaiToUSA() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Health certificate endorsed by a state veterinarian (in some cases)</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Registration with a local veterinarian within 30 days of arrival</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">PetClear verifies your specific destination state's requirements before travel and provides a checklist of post-arrival actions for your state.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Dubai Pet Relocation verifies your specific destination state's requirements before travel and provides a checklist of post-arrival actions for your state.</p>
             </div>
 
             <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8 md:col-span-2 lg:col-span-3">
@@ -433,7 +433,7 @@ export default function DubaiToUSA() {
                 <h3 className="text-lg font-bold text-[#2A2A2A]">All Other States (No Quarantine)</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                For the vast majority of US states — including Texas, Illinois, Washington, Georgia, Massachusetts, Pennsylvania, Colorado, Arizona, Oregon, North Carolina, and all others — there is no quarantine for pets arriving from Dubai if the federal CDC and USDA requirements are met. The pet is cleared at the port of entry (airport) by US Customs and Border Protection (CBP) and can go directly to your home. PetClear provides a list of all states with no additional requirements and helps you plan ground transport from the airport to your final destination. We also recommend a post-arrival veterinary check-up within 48 hours to ensure your pet has recovered well from the flight.
+                For the vast majority of US states — including Texas, Illinois, Washington, Georgia, Massachusetts, Pennsylvania, Colorado, Arizona, Oregon, North Carolina, and all others — there is no quarantine for pets arriving from Dubai if the federal CDC and USDA requirements are met. The pet is cleared at the port of entry (airport) by US Customs and Border Protection (CBP) and can go directly to your home. Dubai Pet Relocation provides a list of all states with no additional requirements and helps you plan ground transport from the airport to your final destination. We also recommend a post-arrival veterinary check-up within 48 hours to ensure your pet has recovered well from the flight.
               </p>
             </div>
           </div>
@@ -447,7 +447,7 @@ export default function DubaiToUSA() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai to USA Cost Breakdown</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Transparent pricing for relocating a single pet from Dubai to the USA. Costs vary by pet size, destination airport, and airline choice. Contact PetClear for a precise quote.
+              Transparent pricing for relocating a single pet from Dubai to the USA. Costs vary by pet size, destination airport, and airline choice. Contact Dubai Pet Relocation for a precise quote.
             </p>
           </div>
 
@@ -500,7 +500,7 @@ export default function DubaiToUSA() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,000–2,000</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: PetClear Door-to-Door (US ground transport)</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door (US ground transport)</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,500–4,000</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–5,000</td>
@@ -522,7 +522,7 @@ export default function DubaiToUSA() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AED and may vary by airline, destination, season, and pet dimensions. Air cargo rates fluctuate and are typically higher in peak travel months (July–August, December). USD conversion is approximate at 1 USD = 3.67 AED. Hawaii and Guam costs include the FAVN titer test, 120-day waiting period coordination, and quarantine fees. Contact PetClear for a fixed quote based on your pet's exact weight, breed, and destination airport. Multiple pets may qualify for a 10–15% discount on combined services.
+                * Prices are estimates in AED and may vary by airline, destination, season, and pet dimensions. Air cargo rates fluctuate and are typically higher in peak travel months (July–August, December). USD conversion is approximate at 1 USD = 3.67 AED. Hawaii and Guam costs include the FAVN titer test, 120-day waiting period coordination, and quarantine fees. Contact Dubai Pet Relocation for a fixed quote based on your pet's exact weight, breed, and destination airport. Multiple pets may qualify for a 10–15% discount on combined services.
               </p>
             </div>
           </div>
@@ -536,7 +536,7 @@ export default function DubaiToUSA() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai to USA Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              A typical export from Dubai to the USA takes 2–4 weeks for documentation plus 1–2 days for travel. Here is the exact week-by-week process PetClear manages for you.
+              A typical export from Dubai to the USA takes 2–4 weeks for documentation plus 1–2 days for travel. Here is the exact week-by-week process Dubai Pet Relocation manages for you.
             </p>
           </div>
 
@@ -547,7 +547,7 @@ export default function DubaiToUSA() {
                 {
                   week: 'Week 1',
                   title: 'Document Review & Microchip Check',
-                  desc: 'PetClear reviews your pet\'s existing microchip, vaccination records, and passport. If the rabies vaccine is not current or the microchip is not ISO-compliant, we arrange a veterinary visit immediately. We also verify your destination state\'s specific rules. For Hawaii or Guam, we begin the FAVN titer test process immediately.',
+                  desc: 'Dubai Pet Relocation reviews your pet\'s existing microchip, vaccination records, and passport. If the rabies vaccine is not current or the microchip is not ISO-compliant, we arrange a veterinary visit immediately. We also verify your destination state\'s specific rules. For Hawaii or Guam, we begin the FAVN titer test process immediately.',
                   icon: Stethoscope
                 },
                 {
@@ -559,13 +559,13 @@ export default function DubaiToUSA() {
                 {
                   week: 'Week 3',
                   title: 'Final Prep & Pre-Flight Check',
-                  desc: 'The health certificate is issued within 10 days of travel. PetClear reviews all documents for accuracy, confirms the microchip is readable, and ensures the crate meets airline and IATA standards. We deliver the crate for your pet to acclimatise. A pre-flight health check is scheduled 2–3 days before departure.',
+                  desc: 'The health certificate is issued within 10 days of travel. Dubai Pet Relocation reviews all documents for accuracy, confirms the microchip is readable, and ensures the crate meets airline and IATA standards. We deliver the crate for your pet to acclimatise. A pre-flight health check is scheduled 2–3 days before departure.',
                   icon: Shield
                 },
                 {
                   week: 'Travel Day',
                   title: 'Departure from Dubai & Arrival in the USA',
-                  desc: 'Your pet is checked in at the Emirates, United, Delta, or American Airlines cargo terminal at DXB. After a 12–16 hour direct flight, PetClear\'s US partner meets your pet at JFK, LAX, ORD, IAD, SFO, or your arrival airport. They handle CBP inspection, document verification, and deliver your pet to your home or a local boarding facility.',
+                  desc: 'Your pet is checked in at the Emirates, United, Delta, or American Airlines cargo terminal at DXB. After a 12–16 hour direct flight, Dubai Pet Relocation\'s US partner meets your pet at JFK, LAX, ORD, IAD, SFO, or your arrival airport. They handle CBP inspection, document verification, and deliver your pet to your home or a local boarding facility.',
                   icon: Home
                 }
               ].map((step, idx) => (
@@ -593,9 +593,9 @@ export default function DubaiToUSA() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Our Service</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">What PetClear Handles for Dubai to USA</h2>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">What Dubai Pet Relocation Handles for Dubai to USA</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              PetClear is a full-service pet relocation concierge. We manage every detail of your pet's journey from Dubai to the USA, so you can focus on your own move.
+              Dubai Pet Relocation is a full-service pet relocation concierge. We manage every detail of your pet's journey from Dubai to the USA, so you can focus on your own move.
             </p>
           </div>
 
@@ -677,7 +677,7 @@ export default function DubaiToUSA() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Export Your Pet from Dubai to the USA?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear has relocated hundreds of pets from Dubai to New York, Los Angeles, Chicago, Washington DC, and cities across America. We handle the CDC forms, USDA health certificates, flight booking, and US customs so you can focus on your move.
+              Dubai Pet Relocation has relocated hundreds of pets from Dubai to New York, Los Angeles, Chicago, Washington DC, and cities across America. We handle the CDC forms, USDA health certificates, flight booking, and US customs so you can focus on your move.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a Dubai to USA quote" message="Hi, I want to relocate my pet from Dubai to the USA. Can you help me understand the CDC requirements, timeline, and cost?" />

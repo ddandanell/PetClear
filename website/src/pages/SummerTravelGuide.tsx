@@ -44,18 +44,18 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 /* ─── Page ─── */
 export default function SummerTravelGuide() {
   const title = 'Pet Travel During Dubai Summer Heat — Embargo, Risks & Alternatives'
-  const description = 'Complete guide to pet travel during Dubai summer heat embargo. Learn which airlines have embargos, temperature restrictions, brachycephalic breed bans, alternatives, and how PetClear handles summer moves safely.'
+  const description = 'Complete guide to pet travel during Dubai summer heat embargo. Learn which airlines have embargos, temperature restrictions, brachycephalic breed bans, alternatives, and how Dubai Pet Relocation handles summer moves safely.'
   const canonical = `${BASE_URL}/guides/pet-travel-summer-dubai/`
   const ogImage = `${BASE_URL}/assets/og-summer-travel.jpg`
 
   const faqData = [
     {
       question: 'Can my dog fly to Dubai in July?',
-      answer: 'Most airlines impose a summer heat embargo from May 1 to September 30, which means they will not transport pets in cargo during July. However, some airlines may offer limited early morning slots, and private pet nanny services or cargo charters can sometimes operate outside embargo dates. The safest option is to plan your move before May 1 or after September 30. PetClear can advise on alternative routing and timing strategies.',
+      answer: 'Most airlines impose a summer heat embargo from May 1 to September 30, which means they will not transport pets in cargo during July. However, some airlines may offer limited early morning slots, and private pet nanny services or cargo charters can sometimes operate outside embargo dates. The safest option is to plan your move before May 1 or after September 30. Dubai Pet Relocation can advise on alternative routing and timing strategies.',
     },
     {
       question: 'What if my move date is fixed and falls during the embargo?',
-      answer: 'If your move date is fixed during the embargo, you have several options: (1) Use a pet nanny service that transports pets in climate-controlled vehicles or cabin-accompanied flights. (2) Route via a cooler airport hub with a connecting airline that does not embargo. (3) Consider a private pet charter for emergency moves. (4) In some cases, boarding your pet in the origin country until the embargo ends is more cost-effective and safer than forcing a summer move. PetClear helps evaluate all options based on your timeline and budget.',
+      answer: 'If your move date is fixed during the embargo, you have several options: (1) Use a pet nanny service that transports pets in climate-controlled vehicles or cabin-accompanied flights. (2) Route via a cooler airport hub with a connecting airline that does not embargo. (3) Consider a private pet charter for emergency moves. (4) In some cases, boarding your pet in the origin country until the embargo ends is more cost-effective and safer than forcing a summer move. Dubai Pet Relocation helps evaluate all options based on your timeline and budget.',
     },
     {
       question: 'Are there any airlines without a summer embargo?',
@@ -78,8 +78,8 @@ export default function SummerTravelGuide() {
       answer: 'Modern cargo holds on wide-body aircraft (Boeing 777, Airbus A350, etc.) are pressurized and climate-controlled to 18–24°C. However, the cargo hold does not receive the same ventilation as the passenger cabin. Airlines use temperature-controlled containers for some cargo, but standard pet crates rely on ambient hold temperature. The biggest risk is ground handling: tarmac time, loading delays, and waiting in non-climate-controlled areas.',
     },
     {
-      question: 'How does PetClear handle summer pet relocations?',
-      answer: 'PetClear has a dedicated summer protocol: (1) We schedule partner vet health checks within 48 hours of departure to confirm fitness for travel. (2) We book early morning flights (before 8 AM) when ground temperatures are lowest. (3) We prioritize direct routing to minimize total travel time and tarmac exposure. (4) We coordinate with airlines that have the best summer track records. (5) We advise on cooling crate liners, absorbent bedding, and hydration strategies. (6) If embargo blocks all options, we arrange boarding and reschedule at no extra planning fee.',
+      question: 'How does Dubai Pet Relocation handle summer pet relocations?',
+      answer: 'Dubai Pet Relocation has a dedicated summer protocol: (1) We schedule partner vet health checks within 48 hours of departure to confirm fitness for travel. (2) We book early morning flights (before 8 AM) when ground temperatures are lowest. (3) We prioritize direct routing to minimize total travel time and tarmac exposure. (4) We coordinate with airlines that have the best summer track records. (5) We advise on cooling crate liners, absorbent bedding, and hydration strategies. (6) If embargo blocks all options, we arrange boarding and reschedule at no extra planning fee.',
     },
   ]
 
@@ -112,8 +112,8 @@ export default function SummerTravelGuide() {
     headline: title,
     description,
     image: ogImage,
-    author: { '@type': 'Organization', name: 'PetClear', url: BASE_URL },
-    publisher: { '@type': 'Organization', name: 'PetClear', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/logo.png` } },
+    author: { '@type': 'Organization', name: 'Dubai Pet Relocation', url: BASE_URL },
+    publisher: { '@type': 'Organization', name: 'Dubai Pet Relocation', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/logo.png` } },
     datePublished: '2025-01-15',
     dateModified: '2026-01-10',
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
@@ -152,7 +152,7 @@ export default function SummerTravelGuide() {
             <div className="flex flex-wrap gap-4">
               <WhatsAppBtn
                 label="Plan a Summer Move"
-                message="Hi PetClear, I need to relocate my pet to Dubai during the summer months. Can you help me understand the embargo dates and alternatives?"
+                message="Hi Dubai Pet Relocation, I need to relocate my pet to Dubai during the summer months. Can you help me understand the embargo dates and alternatives?"
               />
               <a
                 href="#embargo-dates"
@@ -295,7 +295,7 @@ export default function SummerTravelGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">Policies Change — Always Confirm</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  Airline embargo policies change annually based on weather patterns, incident history, and operational adjustments. Always confirm the exact embargo dates with the cargo department 48–72 hours before departure. PetClear verifies this for every summer booking.
+                  Airline embargo policies change annually based on weather patterns, incident history, and operational adjustments. Always confirm the exact embargo dates with the cargo department 48–72 hours before departure. Dubai Pet Relocation verifies this for every summer booking.
                 </p>
               </div>
             </div>
@@ -460,15 +460,15 @@ export default function SummerTravelGuide() {
         </div>
       </section>
 
-      {/* How PetClear Handles Summer */}
+      {/* How Dubai Pet Relocation Handles Summer */}
       <section className="section-padding bg-[#FDFBF8]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              How PetClear Handles Summer Moves
+              How Dubai Pet Relocation Handles Summer Moves
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              Summer relocations require extra planning, early booking, and contingency protocols. Here's how PetClear keeps your pet safe during hot-weather travel.
+              Summer relocations require extra planning, early booking, and contingency protocols. Here's how Dubai Pet Relocation keeps your pet safe during hot-weather travel.
             </p>
           </div>
 
@@ -577,12 +577,12 @@ export default function SummerTravelGuide() {
             Moving During Summer? Let's Plan Safely.
           </h2>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            PetClear's summer protocol includes early morning booking, partner vet checks, and free rescheduling if embargo blocks your flight. Don't risk your pet's safety — get expert guidance.
+            Dubai Pet Relocation's summer protocol includes early morning booking, partner vet checks, and free rescheduling if embargo blocks your flight. Don't risk your pet's safety — get expert guidance.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <WhatsAppBtn
               label="Plan Your Summer Move"
-              message="Hi PetClear, I need to move my pet to Dubai during the summer and I want to understand the safest options. Can you help me plan?"
+              message="Hi Dubai Pet Relocation, I need to move my pet to Dubai during the summer and I want to understand the safest options. Can you help me plan?"
               className="whatsapp-pulse"
             />
             <Link

@@ -60,7 +60,7 @@ export default function Header() {
             <div className="w-9 h-9 rounded-lg bg-[#1A5F4A] flex items-center justify-center">
               <PawPrint className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-[#1A5F4A]">PetClear</span>
+            <span className="text-xl font-bold text-[#1A5F4A]">Dubai Pet Relocation</span>
           </Link>
 
           {/* Desktop Nav */}

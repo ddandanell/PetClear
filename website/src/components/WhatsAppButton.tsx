@@ -8,7 +8,7 @@ interface WhatsAppButtonProps {
 }
 
 export default function WhatsAppButton({
-  message = "Hi PetClear team, I'm planning to relocate my pet and need some guidance. Could you help me understand the process?",
+  message = "Hi Dubai Pet Relocation team, I'm planning to relocate my pet and need some guidance. Could you help me understand the process?",
   variant = 'floating',
   className = '',
 }: WhatsAppButtonProps) {
@@ -24,7 +24,7 @@ export default function WhatsAppButton({
   }, [variant])
 
   const encodedMessage = encodeURIComponent(message)
-  const href = `https://wa.me/9715XXXXXXXX?text=${encodedMessage}`
+  const href = `https://wa.me/9710551744849?text=${encodedMessage}`
 
   if (variant === 'inline') {
     return (

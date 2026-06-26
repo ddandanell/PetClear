@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function PhilippinesToDubai() {
   const pageUrl = `${BASE_URL}/routes/philippines-to-dubai/`
-  const pageTitle = 'Philippines to Dubai Pet Relocation — Complete Guide 2025 | PetClear'
-  const pageDescription = 'Relocate your pet from the Philippines to Dubai with PetClear. High-risk rabies route: titer test (RNATT) required, 90-day wait, 3–4 months minimum. PAL, Emirates, Cebu Pacific. Costs and documents.'
+  const pageTitle = 'Philippines to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
+  const pageDescription = 'Relocate your pet from the Philippines to Dubai with Dubai Pet Relocation. High-risk rabies route: titer test (RNATT) required, 90-day wait, 3–4 months minimum. PAL, Emirates, Cebu Pacific. Costs and documents.'
   const keywords = 'Philippines to Dubai pet relocation, pet transport Philippines to Dubai, Filipino pet relocation Dubai, titer test Philippines Dubai, PAL pet cargo Dubai, Philippine Airlines pet transport, Cebu Pacific pet cargo, dog relocation Philippines to Dubai, cat relocation Philippines to Dubai'
 
   const faqs = [
@@ -22,7 +22,7 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'Which airlines fly pets from the Philippines to Dubai?',
-      answer: 'Philippine Airlines (PR/PAL), Emirates (EK), and Cebu Pacific (5J) operate pet cargo services from Manila (MNL) to Dubai (DXB). Philippine Airlines is the most common choice, with direct flights 9–10 hours. Emirates also offers connections from Manila via their hub. Cebu Pacific has limited pet cargo capacity and is generally suitable only for small pets. PetClear books the optimal airline based on your pet\'s size, breed, and travel date.'
+      answer: 'Philippine Airlines (PR/PAL), Emirates (EK), and Cebu Pacific (5J) operate pet cargo services from Manila (MNL) to Dubai (DXB). Philippine Airlines is the most common choice, with direct flights 9–10 hours. Emirates also offers connections from Manila via their hub. Cebu Pacific has limited pet cargo capacity and is generally suitable only for small pets. Dubai Pet Relocation books the optimal airline based on your pet\'s size, breed, and travel date.'
     },
     {
       question: 'How long does the Philippines to Dubai pet relocation process take?',
@@ -30,7 +30,7 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'How much does it cost to relocate a pet from the Philippines to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 6,500 to AED 15,000 (PHP 100,000–230,000). This includes: veterinary prep (microchip + vaccines + titer test ~AED 1,500–2,500), Philippine BAI export permit and health certificate (~AED 800–1,500), UAE import permit (AED 500), air cargo freight (AED 3,000–7,000 depending on crate size), customs clearance in Dubai (AED 800–1,500), and optional PetClear door-to-door service (AED 1,500–2,500). The titer test adds approximately AED 1,200–2,000 to the total compared to low-risk routes.'
+      answer: 'For a single pet, total costs typically range from AED 6,500 to AED 15,000 (PHP 100,000–230,000). This includes: veterinary prep (microchip + vaccines + titer test ~AED 1,500–2,500), Philippine BAI export permit and health certificate (~AED 800–1,500), UAE import permit (AED 500), air cargo freight (AED 3,000–7,000 depending on crate size), customs clearance in Dubai (AED 800–1,500), and optional Dubai Pet Relocation door-to-door service (AED 1,500–2,500). The titer test adds approximately AED 1,200–2,000 to the total compared to low-risk routes.'
     },
     {
       question: 'What documents are required for a Philippine pet to enter Dubai?',
@@ -38,11 +38,11 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'Where can I get the titer test done in the Philippines?',
-      answer: 'The Philippines has a limited number of laboratories approved for the RNATT. The primary options are: (1) Sending blood samples to the Animal Health Laboratory in Singapore or Hong Kong; (2) Using international courier services to send samples to IDEXX (Germany/USA), Kansas State University (USA), or other WOAH-approved labs; (3) Some private veterinary clinics in Metro Manila have partnerships with accredited labs. PetClear can coordinate the entire titer test process — from blood draw to courier to lab result — ensuring your sample reaches an approved facility on time.'
+      answer: 'The Philippines has a limited number of laboratories approved for the RNATT. The primary options are: (1) Sending blood samples to the Animal Health Laboratory in Singapore or Hong Kong; (2) Using international courier services to send samples to IDEXX (Germany/USA), Kansas State University (USA), or other WOAH-approved labs; (3) Some private veterinary clinics in Metro Manila have partnerships with accredited labs. Dubai Pet Relocation can coordinate the entire titer test process — from blood draw to courier to lab result — ensuring your sample reaches an approved facility on time.'
     },
     {
       question: 'What happens when my pet arrives in Dubai from the Philippines?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and titer test certificate, and conducts a physical examination. Because the Philippines is a high-risk country, the inspection is thorough and may take 3–5 hours. If all documents are correct and the pet is healthy, clearance is granted. PetClear provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and titer test certificate, and conducts a physical examination. Because the Philippines is a high-risk country, the inspection is thorough and may take 3–5 hours. If all documents are correct and the pet is healthy, clearance is granted. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility.'
     }
   ]
 
@@ -73,8 +73,8 @@ export default function PhilippinesToDubai() {
       "@type": "Article",
       "headline": pageTitle,
       "description": pageDescription,
-      "author": { "@type": "Organization", "name": "PetClear" },
-      "publisher": { "@type": "Organization", "name": "PetClear", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
       "datePublished": "2025-01-15",
       "dateModified": "2025-01-15"
     }
@@ -102,7 +102,7 @@ export default function PhilippinesToDubai() {
                 Philippines to Dubai Pet Relocation — Complete Guide
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Relocating your pet from the Philippines to Dubai? The Philippines is a high-risk country for rabies, which means a titer test (RNATT) and 90-day waiting period are mandatory. PetClear has helped many Filipino families successfully move their pets to Dubai — here is the complete guide with costs, timelines, and documents.
+                Relocating your pet from the Philippines to Dubai? The Philippines is a high-risk country for rabies, which means a titer test (RNATT) and 90-day waiting period are mandatory. Dubai Pet Relocation has helped many Filipino families successfully move their pets to Dubai — here is the complete guide with costs, timelines, and documents.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get a Philippines to Dubai quote" message="Hi, I want to relocate my pet from the Philippines to Dubai. Can you help me understand the titer test process and cost?" />
@@ -225,7 +225,7 @@ export default function PhilippinesToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">4. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must include the titer test certificate. Cost: AED 500 per pet. PetClear handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must include the titer test certificate. Cost: AED 500 per pet. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 
@@ -267,7 +267,7 @@ export default function PhilippinesToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Many Philippine veterinarians are not familiar with the UAE import requirements. PetClear can recommend experienced vets in Metro Manila, Cebu, and Davao who have handled international pet exports.</span>
+                  <span>Many Philippine veterinarians are not familiar with the UAE import requirements. Dubai Pet Relocation can recommend experienced vets in Metro Manila, Cebu, and Davao who have handled international pet exports.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
@@ -275,7 +275,7 @@ export default function PhilippinesToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>The titer test lab must be approved by the UAE. Sending samples to unapproved labs will result in rejection at Dubai customs. PetClear verifies lab accreditation before sending samples.</span>
+                  <span>The titer test lab must be approved by the UAE. Sending samples to unapproved labs will result in rejection at Dubai customs. Dubai Pet Relocation verifies lab accreditation before sending samples.</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-[#5A8F6E]/10 rounded-xl">
@@ -354,7 +354,7 @@ export default function PhilippinesToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,000–1,800</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: PetClear Door-to-Door</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,200–2,000</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,500–2,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,800–3,000</td>
@@ -370,7 +370,7 @@ export default function PhilippinesToDubai() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AED. Philippine Peso amounts will vary with exchange rates. The titer test is the single biggest additional cost compared to low-risk routes. Titer test costs are higher for Philippine pets because samples must be sent abroad (Singapore, Hong Kong, or international labs). Air cargo rates may be higher during peak seasons (December–January). Contact PetClear for an exact quote based on your pet's details.
+                * Prices are estimates in AED. Philippine Peso amounts will vary with exchange rates. The titer test is the single biggest additional cost compared to low-risk routes. Titer test costs are higher for Philippine pets because samples must be sent abroad (Singapore, Hong Kong, or international labs). Air cargo rates may be higher during peak seasons (December–January). Contact Dubai Pet Relocation for an exact quote based on your pet's details.
               </p>
             </div>
           </div>
@@ -395,31 +395,31 @@ export default function PhilippinesToDubai() {
                 {
                   week: 'Month 1',
                   title: 'Microchip, Rabies Vaccine & Titer Test Blood Draw',
-                  desc: 'Your Philippine vet implants an ISO microchip and administers a rabies vaccine. After 30 days, a blood sample is drawn for the titer test. The sample is sent to an approved lab (Singapore, Hong Kong, or international). PetClear coordinates the blood draw and courier.',
+                  desc: 'Your Philippine vet implants an ISO microchip and administers a rabies vaccine. After 30 days, a blood sample is drawn for the titer test. The sample is sent to an approved lab (Singapore, Hong Kong, or international). Dubai Pet Relocation coordinates the blood draw and courier.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Month 1–2',
                   title: 'Titer Test Results & 90-Day Waiting Period',
-                  desc: 'Lab results arrive in 2–4 weeks. If the antibody level is ≥ 0.5 IU/ml, the 90-day mandatory waiting period begins from the date of the blood draw. This wait is non-negotiable. PetClear begins preparing the UAE import permit application during this time.',
+                  desc: 'Lab results arrive in 2–4 weeks. If the antibody level is ≥ 0.5 IU/ml, the 90-day mandatory waiting period begins from the date of the blood draw. This wait is non-negotiable. Dubai Pet Relocation begins preparing the UAE import permit application during this time.',
                   icon: Shield
                 },
                 {
                   week: 'Month 3',
                   title: 'Import Permit & BAI Export Permit Application',
-                  desc: 'PetClear applies for the UAE import permit via MOCCAE. We also schedule your BAI appointment in Manila (or the nearest BAI office) for the export permit and health certificate. The BAI vet inspects the pet and issues clearance.',
+                  desc: 'Dubai Pet Relocation applies for the UAE import permit via MOCCAE. We also schedule your BAI appointment in Manila (or the nearest BAI office) for the export permit and health certificate. The BAI vet inspects the pet and issues clearance.',
                   icon: FileText
                 },
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'With the 90-day wait complete, PetClear books cargo space with Philippine Airlines, Emirates, or Cebu Pacific. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed.',
+                  desc: 'With the 90-day wait complete, Dubai Pet Relocation books cargo space with Philippine Airlines, Emirates, or Cebu Pacific. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed.',
                   icon: Plane
                 },
                 {
                   week: 'Travel Day',
                   title: 'Philippines Departure & Dubai Arrival',
-                  desc: 'Your pet checks in at the cargo terminal at Manila (NAIA). After a 9–10 hour flight, PetClear meets your pet at DXB, handles the veterinary inspection and customs clearance, and delivers to your home.',
+                  desc: 'Your pet checks in at the cargo terminal at Manila (NAIA). After a 9–10 hour flight, Dubai Pet Relocation meets your pet at DXB, handles the veterinary inspection and customs clearance, and delivers to your home.',
                   icon: Home
                 }
               ].map((step, idx) => (
@@ -508,7 +508,7 @@ export default function PhilippinesToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Restricted crate size limits</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Not available on all routes</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Cebu Pacific is the cheapest option for small cats and dogs, but cargo capacity is very limited. PetClear confirms availability before recommending this carrier.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Cebu Pacific is the cheapest option for small cats and dogs, but cargo capacity is very limited. Dubai Pet Relocation confirms availability before recommending this carrier.</p>
             </div>
           </div>
 
@@ -518,7 +518,7 @@ export default function PhilippinesToDubai() {
               Seasonal Considerations for Philippine Pet Travel
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              Philippine summers (March–May) are extremely hot and humid, which can affect ground handling at NAIA and cargo hold conditions. PetClear recommends booking early morning flights (6–9 AM) to avoid peak heat. During typhoon season (June–October), flight delays and cancellations are common — plan buffer days around your travel date.
+              Philippine summers (March–May) are extremely hot and humid, which can affect ground handling at NAIA and cargo hold conditions. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During typhoon season (June–October), flight delays and cancellations are common — plan buffer days around your travel date.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
               Peak relocation season for Filipino pets is December–January, when many families travel during the Christmas and New Year holidays. PAL cargo space fills 3–4 weeks in advance during this period. Start your titer test process at least 4 months before your intended travel date to avoid disappointment.
@@ -558,7 +558,7 @@ export default function PhilippinesToDubai() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from the Philippines to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear has helped many Filipino families move their pets to Dubai. From Manila, Cebu, Davao, or anywhere in the Philippines — we manage the titer test, BAI permit, flight booking, and Dubai customs.
+              Dubai Pet Relocation has helped many Filipino families move their pets to Dubai. From Manila, Cebu, Davao, or anywhere in the Philippines — we manage the titer test, BAI permit, flight booking, and Dubai customs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a Philippines to Dubai quote" message="Hi, I want to relocate my pet from the Philippines to Dubai. Can you help me understand the titer test process and cost?" />

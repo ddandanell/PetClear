@@ -124,10 +124,10 @@ export default function ServicesPage() {
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'PetClear Pet Relocation Services',
+    name: 'Dubai Pet Relocation Pet Relocation Services',
     provider: {
       '@type': 'Organization',
-      name: 'PetClear',
+      name: 'Dubai Pet Relocation',
       url: BASE_URL,
     },
     areaServed: {
@@ -166,7 +166,7 @@ export default function ServicesPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'PetClear Services — From Essential to Concierge | Pet Relocation Dubai',
+          title: 'Dubai Pet Relocation Services — From Essential to Concierge | Pet Relocation Dubai',
           description: 'Choose from three pet relocation service tiers: PawPilot (Essential), PawPartner (Premium), and PawVIP (Concierge). Transparent pricing, add-on services, and clear inclusions.',
           keywords: 'pet relocation services Dubai, pet concierge Dubai, pet relocation cost tiers, dog transport service UAE, cat transport service UAE, pet relocation packages',
           canonical: `${BASE_URL}/services`,
@@ -182,14 +182,14 @@ export default function ServicesPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
-              PetClear Services — From Essential to Concierge
+              Dubai Pet Relocation Services — From Essential to Concierge
             </h1>
             <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
               Choose the level of support that fits your experience, your timeline, and your pet's needs. Every tier includes our core promise: transparency, partner-matched quality, and WhatsApp updates.
             </p>
             <WhatsAppCta
               text="Get a Personalized Quote"
-              message="Hi PetClear! I would like to understand your service tiers and get a personalized quote for my pet relocation."
+              message="Hi Dubai Pet Relocation! I would like to understand your service tiers and get a personalized quote for my pet relocation."
             />
           </div>
         </div>
@@ -230,7 +230,7 @@ export default function ServicesPage() {
                 </button>
                 <WhatsAppCta
                   text={`Get ${tier.name} Quote`}
-                  message={`Hi PetClear! I am interested in the ${tier.name} tier (${tier.subtitle}) for my pet relocation. Can you give me a personalized quote?`}
+                  message={`Hi Dubai Pet Relocation! I am interested in the ${tier.name} tier (${tier.subtitle}) for my pet relocation. Can you give me a personalized quote?`}
                   fullWidth
                   className="!py-3"
                 />
@@ -357,7 +357,7 @@ export default function ServicesPage() {
           </p>
           <WhatsAppCta
             text="Get a Personalized Quote"
-            message="Hi PetClear! I am not sure which service tier is right for me. Can you help me choose based on my pet and route?"
+            message="Hi Dubai Pet Relocation! I am not sure which service tier is right for me. Can you help me choose based on my pet and route?"
           />
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
             <span className="flex items-center gap-1.5 text-sm text-white/60">

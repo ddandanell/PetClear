@@ -77,7 +77,7 @@ export default function CatRelocationPage() {
   return (
     <div className="bg-[#FDFBF8]">
       <SEOHead
-        title="Cat Relocation to Dubai | Complete Guide 2026 | PetClear"
+        title="Cat Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation"
         description="Expert guide to relocating your cat to Dubai. Sedation guidance, crate comfort, airline policies, MOCCAE requirements, and everything you need for a safe, stress-free journey."
         keywords="cat relocation to Dubai, bring cat to Dubai, cat import Dubai, Dubai cat relocation, pet cat transport Dubai, moving cat to UAE"
         ogType="article"
@@ -140,12 +140,12 @@ export default function CatRelocationPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Cat Relocation to Dubai: A Complete Guide for Cat Owners",
-            description: "Comprehensive guide to relocating your cat to Dubai. Covers documents, crate requirements, airline options, costs, sedation guidance, and seasonal considerations. Written by PetClear, Dubai's transparent pet relocation concierge.",
+            description: "Comprehensive guide to relocating your cat to Dubai. Covers documents, crate requirements, airline options, costs, sedation guidance, and seasonal considerations. Written by Dubai Pet Relocation, Dubai's transparent pet relocation concierge.",
             image: `${BASE_URL}/assets/cat-relocation-hero.jpg`,
-            author: { "@type": "Organization", name: "PetClear", url: BASE_URL },
+            author: { "@type": "Organization", name: "Dubai Pet Relocation", url: BASE_URL },
             publisher: {
               "@type": "Organization",
-              name: "PetClear",
+              name: "Dubai Pet Relocation",
               logo: { "@type": "ImageObject", url: `${BASE_URL}/assets/logo.png` }
             },
             datePublished: "2026-06-25",
@@ -180,7 +180,7 @@ export default function CatRelocationPage() {
                 Your cat isn't just a pet. They're the one who greets you at the door, claims the warmest spot on the sofa, and somehow knows when you need them close. The thought of putting them on a plane? It feels overwhelming. We understand — because we've been there.
               </p>
               <p className="text-base text-[#5A5A5A] leading-relaxed mb-4">
-                At PetClear, we help cat owners relocate their cats to Dubai every week. We know the specific worries cat parents have: Will my cat be terrified? Will they eat or drink? What if they escape? What if something goes wrong? We name those fears — then we solve them, step by step.
+                At Dubai Pet Relocation, we help cat owners relocate their cats to Dubai every week. We know the specific worries cat parents have: Will my cat be terrified? Will they eat or drink? What if they escape? What if something goes wrong? We name those fears — then we solve them, step by step.
               </p>
               <p className="text-base text-[#5A5A5A] leading-relaxed mb-8">
                 We are a cat relocation concierge, not an airline. We coordinate vetted partners for flights, veterinary checks, IATA crates, customs clearance, and door-to-door delivery. You get one WhatsApp thread, one point of contact, and complete visibility from the moment your cat leaves your home to the moment they arrive in yours.
@@ -292,7 +292,7 @@ export default function CatRelocationPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <SectionHeading className="mb-4">How Cat Relocation to Dubai Works (Step-by-Step)</SectionHeading>
           <SectionIntro>
-            Every cat's journey is different, but the process follows a clear timeline. Here's what happens when you work with PetClear.
+            Every cat's journey is different, but the process follows a clear timeline. Here's what happens when you work with Dubai Pet Relocation.
           </SectionIntro>
           <div className="mt-12 max-w-3xl">
             <Step number={1} title="Free WhatsApp Consultation (Day 0)">
@@ -761,7 +761,7 @@ export default function CatRelocationPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">What's Included in Every PetClear Quote</h3>
+              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">What's Included in Every Dubai Pet Relocation Quote</h3>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> MOCCAE import permit application and fees</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Coordination with vetted veterinary partners for health checks and certificates</li>
@@ -802,7 +802,7 @@ export default function CatRelocationPage() {
       {/* ─── TESTIMONIALS ─── */}
       <section className="bg-white py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4 text-center">What Cat Owners Say About PetClear</SectionHeading>
+          <SectionHeading className="mb-4 text-center">What Cat Owners Say About Dubai Pet Relocation</SectionHeading>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex gap-1 mb-4">
@@ -811,7 +811,7 @@ export default function CatRelocationPage() {
                 ))}
               </div>
               <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
-                &ldquo;I was absolutely terrified about moving Oliver. He's not a brave cat — he hides when the doorbell rings. PetClear sent me a step-by-step guide two weeks before travel, and we practised with the crate every day. On the day, they sent me a photo of Oliver at check-in, then another when he was loaded. When he arrived in Dubai, he was calm. A bit grumpy, but calm. He was eating within two hours. The team answered my WhatsApp messages at 11 PM. I never felt alone.&rdquo;
+                &ldquo;I was absolutely terrified about moving Oliver. He's not a brave cat — he hides when the doorbell rings. Dubai Pet Relocation sent me a step-by-step guide two weeks before travel, and we practised with the crate every day. On the day, they sent me a photo of Oliver at check-in, then another when he was loaded. When he arrived in Dubai, he was calm. A bit grumpy, but calm. He was eating within two hours. The team answered my WhatsApp messages at 11 PM. I never felt alone.&rdquo;
               </blockquote>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#EDF6F0] flex items-center justify-center text-[#5A8F6E] font-bold text-sm">SM</div>
@@ -828,7 +828,7 @@ export default function CatRelocationPage() {
                 ))}
               </div>
               <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
-                &ldquo;Mochi is a rescue cat with a history of anxiety. I was sure she'd need sedation, but the PetClear team talked me through why that wasn't the safest option. Instead, we used a pheromone spray and her favourite blanket. They walked me through crate training over WhatsApp — literally sent me a video of how to do it. When Mochi landed, they sent me a video of her being taken out of the crate. She was alert, curious, and completely fine. The cost was exactly what they quoted. No surprises.&rdquo;
+                &ldquo;Mochi is a rescue cat with a history of anxiety. I was sure she'd need sedation, but the Dubai Pet Relocation team talked me through why that wasn't the safest option. Instead, we used a pheromone spray and her favourite blanket. They walked me through crate training over WhatsApp — literally sent me a video of how to do it. When Mochi landed, they sent me a video of her being taken out of the crate. She was alert, curious, and completely fine. The cost was exactly what they quoted. No surprises.&rdquo;
               </blockquote>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#EDF6F0] flex items-center justify-center text-[#5A8F6E] font-bold text-sm">PK</div>
@@ -921,7 +921,7 @@ export default function CatRelocationPage() {
       <section className="bg-white border-t border-gray-100 py-8">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-[#8A8A8A]">
-            PetClear — Dubai's transparent pet relocation concierge. MOCCAE licensed. IPATA member. IATA compliant. Clear prices. Real humans. Safe pets.
+            Dubai Pet Relocation — Dubai's transparent pet relocation concierge. MOCCAE licensed. IPATA member. IATA compliant. Clear prices. Real humans. Safe pets.
           </p>
         </div>
       </section>

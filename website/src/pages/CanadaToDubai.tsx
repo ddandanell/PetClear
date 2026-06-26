@@ -7,22 +7,22 @@ import { Link } from 'react-router-dom'
 
 export default function CanadaToDubai() {
   const pageUrl = `${BASE_URL}/routes/canada-to-dubai/`
-  const pageTitle = 'Canada to Dubai Pet Relocation — Complete Guide 2025 | PetClear'
-  const pageDescription = 'Relocate your pet from Canada to Dubai with PetClear. Low-risk route, similar to US but with Canadian-specific CFIA requirements. Air Canada, Emirates. Costs, documents, and timeline.'
+  const pageTitle = 'Canada to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
+  const pageDescription = 'Relocate your pet from Canada to Dubai with Dubai Pet Relocation. Low-risk route, similar to US but with Canadian-specific CFIA requirements. Air Canada, Emirates. Costs, documents, and timeline.'
   const keywords = 'Canada to Dubai pet relocation, pet transport Canada to Dubai, Canadian pet relocation Dubai, Air Canada pet cargo Dubai, Emirates pet transport Canada, CFIA pet export, dog relocation Canada to Dubai, cat relocation Canada to Dubai, pet shipping Canada to UAE'
 
   const faqs = [
     {
       question: 'Is Canada a low-risk or high-risk country for pet import to Dubai?',
-      answer: 'Canada is classified as a low-risk country for rabies by the UAE. Most Canadian provinces do not require a rabies titer test (RNATT). However, if your pet has ever been in a high-risk rabies country before entering Canada, a titer test may be required. The Canadian Food Inspection Agency (CFIA) has its own export requirements that must be met in addition to UAE import rules. PetClear verifies your pet\'s travel history and ensures both Canadian and UAE compliance.'
+      answer: 'Canada is classified as a low-risk country for rabies by the UAE. Most Canadian provinces do not require a rabies titer test (RNATT). However, if your pet has ever been in a high-risk rabies country before entering Canada, a titer test may be required. The Canadian Food Inspection Agency (CFIA) has its own export requirements that must be met in addition to UAE import rules. Dubai Pet Relocation verifies your pet\'s travel history and ensures both Canadian and UAE compliance.'
     },
     {
       question: 'What is the CFIA and what role does it play in Canadian pet export?',
-      answer: 'The Canadian Food Inspection Agency (CFIA) is the Canadian government body responsible for animal health and export certification. To export a pet from Canada to Dubai, you need: (1) A health certificate issued by a Canadian veterinarian; (2) CFIA endorsement (inspection and stamp) of that certificate; (3) The CFIA endorsement must be done at a CFIA district office, usually within 5 days of the vet\'s examination. This is similar to the USDA endorsement in the US but follows Canadian-specific procedures. PetClear guides you through this process or handles it on your behalf.'
+      answer: 'The Canadian Food Inspection Agency (CFIA) is the Canadian government body responsible for animal health and export certification. To export a pet from Canada to Dubai, you need: (1) A health certificate issued by a Canadian veterinarian; (2) CFIA endorsement (inspection and stamp) of that certificate; (3) The CFIA endorsement must be done at a CFIA district office, usually within 5 days of the vet\'s examination. This is similar to the USDA endorsement in the US but follows Canadian-specific procedures. Dubai Pet Relocation guides you through this process or handles it on your behalf.'
     },
     {
       question: 'Which airlines fly pets from Canada to Dubai?',
-      answer: 'Air Canada (AC) and Emirates (EK) operate pet cargo services from major Canadian cities. Air Canada flies from Toronto (YYZ), Vancouver (YVR), Montreal (YUL), and Calgary (YYC). Emirates operates from Toronto with direct connections to Dubai. Most routes are 13–15 hours direct or 16–18 hours with a connection. West Coast departures (Vancouver) are longer but offer direct routing on some airlines. PetClear books the optimal airline based on your city and pet size.'
+      answer: 'Air Canada (AC) and Emirates (EK) operate pet cargo services from major Canadian cities. Air Canada flies from Toronto (YYZ), Vancouver (YVR), Montreal (YUL), and Calgary (YYC). Emirates operates from Toronto with direct connections to Dubai. Most routes are 13–15 hours direct or 16–18 hours with a connection. West Coast departures (Vancouver) are longer but offer direct routing on some airlines. Dubai Pet Relocation books the optimal airline based on your city and pet size.'
     },
     {
       question: 'How long does the Canada to Dubai pet relocation process take?',
@@ -30,7 +30,7 @@ export default function CanadaToDubai() {
     },
     {
       question: 'How much does it cost to relocate a pet from Canada to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 10,000 to AED 22,000 (CAD 3,700–8,200). This includes: veterinary prep (microchip + vaccines ~AED 500–1,000), Canadian health certificate and CFIA endorsement (~AED 1,000–2,000), UAE import permit (AED 500), air cargo freight (AED 6,000–14,000 depending on city and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional PetClear door-to-door service (AED 2,000–4,000). Toronto departures are generally cheaper than Vancouver due to shorter distance.'
+      answer: 'For a single pet, total costs typically range from AED 10,000 to AED 22,000 (CAD 3,700–8,200). This includes: veterinary prep (microchip + vaccines ~AED 500–1,000), Canadian health certificate and CFIA endorsement (~AED 1,000–2,000), UAE import permit (AED 500), air cargo freight (AED 6,000–14,000 depending on city and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 2,000–4,000). Toronto departures are generally cheaper than Vancouver due to shorter distance.'
     },
     {
       question: 'What documents are required for a Canadian pet to enter Dubai?',
@@ -38,11 +38,11 @@ export default function CanadaToDubai() {
     },
     {
       question: 'Does CFIA need to endorse my pet\'s health certificate?',
-      answer: 'Yes. The UAE requires that the Canadian health certificate be endorsed (stamped and signed) by the Canadian Food Inspection Agency (CFIA). This is a separate step from your regular vet visit. You must bring the completed health certificate to a CFIA district office for inspection and endorsement. This typically takes 1–2 business days if done in person, or 3–5 days by mail. PetClear guides you through finding the nearest CFIA office, booking an appointment, and ensuring the paperwork is correct before submission. This is the most commonly mishandled step by Canadian pet owners.'
+      answer: 'Yes. The UAE requires that the Canadian health certificate be endorsed (stamped and signed) by the Canadian Food Inspection Agency (CFIA). This is a separate step from your regular vet visit. You must bring the completed health certificate to a CFIA district office for inspection and endorsement. This typically takes 1–2 business days if done in person, or 3–5 days by mail. Dubai Pet Relocation guides you through finding the nearest CFIA office, booking an appointment, and ensuring the paperwork is correct before submission. This is the most commonly mishandled step by Canadian pet owners.'
     },
     {
       question: 'What happens when my pet arrives in Dubai from Canada?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and CFIA-endorsed health certificate, and conducts a brief physical examination. Assuming all documents are correct, your pet is cleared within 2–3 hours. PetClear provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility. Canadian pets generally clear quickly due to Canada\'s low-risk status.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and CFIA-endorsed health certificate, and conducts a brief physical examination. Assuming all documents are correct, your pet is cleared within 2–3 hours. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility. Canadian pets generally clear quickly due to Canada\'s low-risk status.'
     }
   ]
 
@@ -73,8 +73,8 @@ export default function CanadaToDubai() {
       "@type": "Article",
       "headline": pageTitle,
       "description": pageDescription,
-      "author": { "@type": "Organization", "name": "PetClear" },
-      "publisher": { "@type": "Organization", "name": "PetClear", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
       "datePublished": "2025-01-15",
       "dateModified": "2025-01-15"
     }
@@ -102,7 +102,7 @@ export default function CanadaToDubai() {
                 Canada to Dubai Pet Relocation — Complete Guide
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Relocating your pet from Canada to Dubai? Canada is a low-risk country for rabies, meaning most pets do not need a titer test. However, the Canadian Food Inspection Agency (CFIA) has specific export requirements that must be followed. Whether you are flying from Toronto, Vancouver, Montreal, or Calgary, PetClear handles the CFIA paperwork, flight booking, and Dubai customs clearance.
+                Relocating your pet from Canada to Dubai? Canada is a low-risk country for rabies, meaning most pets do not need a titer test. However, the Canadian Food Inspection Agency (CFIA) has specific export requirements that must be followed. Whether you are flying from Toronto, Vancouver, Montreal, or Calgary, Dubai Pet Relocation handles the CFIA paperwork, flight booking, and Dubai customs clearance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get a Canada to Dubai quote" message="Hi, I want to relocate my pet from Canada to Dubai. Can you help me understand the CFIA process and cost?" />
@@ -215,7 +215,7 @@ export default function CanadaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">3. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must be obtained before booking. Cost: AED 500 per pet. PetClear handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must be obtained before booking. Cost: AED 500 per pet. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 
@@ -253,11 +253,11 @@ export default function CanadaToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Not all CFIA offices handle pet export endorsements. Toronto, Vancouver, and Montreal have dedicated staff, but smaller cities may require mailing documents to a regional office. PetClear can identify the correct CFIA office for your location.</span>
+                  <span>Not all CFIA offices handle pet export endorsements. Toronto, Vancouver, and Montreal have dedicated staff, but smaller cities may require mailing documents to a regional office. Dubai Pet Relocation can identify the correct CFIA office for your location.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Canadian winters (November–March) can cause flight delays due to snow and ice. PetClear monitors weather conditions and books flights with weather buffers during winter months.</span>
+                  <span>Canadian winters (November–March) can cause flight delays due to snow and ice. Dubai Pet Relocation monitors weather conditions and books flights with weather buffers during winter months.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
@@ -285,7 +285,7 @@ export default function CanadaToDubai() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Canada to Dubai Cost Breakdown</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Costs vary significantly by departure city and pet size. Toronto flights are cheaper than Vancouver. Contact PetClear for a precise quote based on your Canadian location and pet details.
+              Costs vary significantly by departure city and pet size. Toronto flights are cheaper than Vancouver. Contact Dubai Pet Relocation for a precise quote based on your Canadian location and pet details.
             </p>
           </div>
 
@@ -344,7 +344,7 @@ export default function CanadaToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,200–2,000</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: PetClear Door-to-Door</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,000</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,500–3,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–5,000</td>
@@ -366,7 +366,7 @@ export default function CanadaToDubai() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in CAD and converted to AED. Toronto (YYZ) flights are cheaper due to shorter distance and more cargo capacity. Vancouver (YVR) and Montreal (YUL) are more expensive. Air cargo rates fluctuate with fuel surcharges and seasonal demand. Winter weather (November–March) may cause delays. Contact PetClear for a precise quote based on your exact departure city and pet details.
+                * Prices are estimates in CAD and converted to AED. Toronto (YYZ) flights are cheaper due to shorter distance and more cargo capacity. Vancouver (YVR) and Montreal (YUL) are more expensive. Air cargo rates fluctuate with fuel surcharges and seasonal demand. Winter weather (November–March) may cause delays. Contact Dubai Pet Relocation for a precise quote based on your exact departure city and pet details.
               </p>
             </div>
           </div>
@@ -380,7 +380,7 @@ export default function CanadaToDubai() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Canada to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              The Canadian route is efficient but requires the CFIA endorsement step. PetClear manages all timelines to avoid last-minute delays, especially around Canadian holidays.
+              The Canadian route is efficient but requires the CFIA endorsement step. Dubai Pet Relocation manages all timelines to avoid last-minute delays, especially around Canadian holidays.
             </p>
           </div>
 
@@ -391,31 +391,31 @@ export default function CanadaToDubai() {
                 {
                   week: 'Week 1',
                   title: 'Microchip & Rabies Vaccination',
-                  desc: 'Your Canadian vet implants/verifies the ISO microchip and administers a rabies vaccine. The 21-day waiting period begins. PetClear confirms your vet is familiar with international health certificates and CFIA requirements.',
+                  desc: 'Your Canadian vet implants/verifies the ISO microchip and administers a rabies vaccine. The 21-day waiting period begins. Dubai Pet Relocation confirms your vet is familiar with international health certificates and CFIA requirements.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Week 2–3',
                   title: 'Import Permit & CFIA Office Research',
-                  desc: 'PetClear applies for your UAE import permit via MOCCAE. We identify the nearest CFIA office that handles pet export endorsements and book an appointment. We also research flight options from your nearest Canadian hub.',
+                  desc: 'Dubai Pet Relocation applies for your UAE import permit via MOCCAE. We identify the nearest CFIA office that handles pet export endorsements and book an appointment. We also research flight options from your nearest Canadian hub.',
                   icon: FileText
                 },
                 {
                   week: 'Week 4',
                   title: 'Health Certificate & CFIA Endorsement',
-                  desc: 'Your vet completes the health certificate. You bring it to the CFIA office for endorsement (or mail it if in-person is not possible). PetClear reviews the endorsed certificate for accuracy before it is finalised.',
+                  desc: 'Your vet completes the health certificate. You bring it to the CFIA office for endorsement (or mail it if in-person is not possible). Dubai Pet Relocation reviews the endorsed certificate for accuracy before it is finalised.',
                   icon: Shield
                 },
                 {
                   week: 'Week 5',
                   title: 'Final Flight Booking & Crate Prep',
-                  desc: 'With the import permit and CFIA certificate in hand, PetClear books cargo space with Air Canada or Emirates. Your IATA-compliant crate is delivered for acclimatisation. We provide a pre-flight checklist.',
+                  desc: 'With the import permit and CFIA certificate in hand, Dubai Pet Relocation books cargo space with Air Canada or Emirates. Your IATA-compliant crate is delivered for acclimatisation. We provide a pre-flight checklist.',
                   icon: Plane
                 },
                 {
                   week: 'Travel Day',
                   title: 'Canada Departure & Dubai Arrival',
-                  desc: 'Your pet checks in at the airline cargo terminal (YYZ, YVR, YUL, or YYC). After a 13–15 hour flight, PetClear meets your pet at DXB, handles customs clearance and veterinary inspection, and delivers to your home.',
+                  desc: 'Your pet checks in at the airline cargo terminal (YYZ, YVR, YUL, or YYC). After a 13–15 hour flight, Dubai Pet Relocation meets your pet at DXB, handles customs clearance and veterinary inspection, and delivers to your home.',
                   icon: Home
                 }
               ].map((step, idx) => (
@@ -495,10 +495,10 @@ export default function CanadaToDubai() {
               Winter Weather & Seasonal Considerations
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              Canadian winters (November–March) can cause significant flight delays due to snow, ice, and de-icing operations. PetClear monitors weather forecasts and books flights with buffer days during winter months. Extreme cold (-20°C or lower) can also affect ground handling at Canadian airports, so early morning departures (when it is coldest) are avoided.
+              Canadian winters (November–March) can cause significant flight delays due to snow, ice, and de-icing operations. Dubai Pet Relocation monitors weather forecasts and books flights with buffer days during winter months. Extreme cold (-20°C or lower) can also affect ground handling at Canadian airports, so early morning departures (when it is coldest) are avoided.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              Summer embargoes (May–September) apply to brachycephalic breeds on most carriers. Air Canada and Emirates both restrict Pugs, Bulldogs, Boxers, and similar breeds during hot weather. PetClear books late evening flights or waits for cooler months when necessary. Peak travel seasons (July–August and December) see cargo space fill 3–4 weeks in advance.
+              Summer embargoes (May–September) apply to brachycephalic breeds on most carriers. Air Canada and Emirates both restrict Pugs, Bulldogs, Boxers, and similar breeds during hot weather. Dubai Pet Relocation books late evening flights or waits for cooler months when necessary. Peak travel seasons (July–August and December) see cargo space fill 3–4 weeks in advance.
             </p>
           </div>
         </div>
@@ -535,7 +535,7 @@ export default function CanadaToDubai() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from Canada to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear has relocated pets from all Canadian provinces to Dubai. From Toronto, Vancouver, Montreal, Calgary, or anywhere in Canada — we handle the CFIA paperwork, flight booking, and Dubai customs.
+              Dubai Pet Relocation has relocated pets from all Canadian provinces to Dubai. From Toronto, Vancouver, Montreal, Calgary, or anywhere in Canada — we handle the CFIA paperwork, flight booking, and Dubai customs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a Canada to Dubai quote" message="Hi, I want to relocate my pet from Canada to Dubai. Can you help me understand the CFIA process and cost?" />

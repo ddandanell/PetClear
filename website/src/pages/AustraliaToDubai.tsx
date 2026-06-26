@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function AustraliaToDubai() {
   const pageUrl = `${BASE_URL}/routes/australia-to-dubai/`
-  const pageTitle = 'Australia to Dubai Pet Relocation — Complete Guide 2025 | PetClear'
-  const pageDescription = 'Relocate your pet from Australia to Dubai with PetClear. Low-risk but strict AQIS export rules. Emirates and Qantas. Health cert within 10 days. Costs, timeline, and AQIS requirements.'
+  const pageTitle = 'Australia to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
+  const pageDescription = 'Relocate your pet from Australia to Dubai with Dubai Pet Relocation. Low-risk but strict AQIS export rules. Emirates and Qantas. Health cert within 10 days. Costs, timeline, and AQIS requirements.'
   const keywords = 'Australia to Dubai pet relocation, pet transport Australia to Dubai, Australian pet relocation Dubai, AQIS pet export Dubai, Emirates pet cargo Australia, Qantas pet transport, dog relocation Australia to Dubai, cat relocation Australia to Dubai, pet shipping Australia to UAE'
 
   const faqs = [
@@ -22,7 +22,7 @@ export default function AustraliaToDubai() {
     },
     {
       question: 'Which airlines fly pets from Australia to Dubai?',
-      answer: 'Emirates (EK) and Qantas (QF) are the primary carriers for pet cargo from Australia to Dubai. Emirates operates from Sydney (SYD), Melbourne (MEL), Brisbane (BNE), and Perth (PER) with one-stop connections via their hub. Qantas offers cargo services from major Australian cities, often connecting through Singapore or directly on codeshare routes. The total travel time is 14–18 hours including the connection. PetClear books the optimal route based on your city and pet size.'
+      answer: 'Emirates (EK) and Qantas (QF) are the primary carriers for pet cargo from Australia to Dubai. Emirates operates from Sydney (SYD), Melbourne (MEL), Brisbane (BNE), and Perth (PER) with one-stop connections via their hub. Qantas offers cargo services from major Australian cities, often connecting through Singapore or directly on codeshare routes. The total travel time is 14–18 hours including the connection. Dubai Pet Relocation books the optimal route based on your city and pet size.'
     },
     {
       question: 'How long does the Australia to Dubai pet relocation process take?',
@@ -30,7 +30,7 @@ export default function AustraliaToDubai() {
     },
     {
       question: 'How much does it cost to relocate a pet from Australia to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 12,000 to AED 24,000 (AUD 5,000–10,000). This includes: veterinary prep (microchip + vaccines for UAE compliance ~AED 500–1,000), AQIS export permit and inspection (~AED 1,500–2,500), UAE import permit (AED 500), air cargo freight (AED 7,000–15,000 depending on city and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional PetClear door-to-door service (AED 2,000–4,000). Perth departures are cheaper than Sydney or Melbourne due to shorter distance.'
+      answer: 'For a single pet, total costs typically range from AED 12,000 to AED 24,000 (AUD 5,000–10,000). This includes: veterinary prep (microchip + vaccines for UAE compliance ~AED 500–1,000), AQIS export permit and inspection (~AED 1,500–2,500), UAE import permit (AED 500), air cargo freight (AED 7,000–15,000 depending on city and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 2,000–4,000). Perth departures are cheaper than Sydney or Melbourne due to shorter distance.'
     },
     {
       question: 'What documents are required for an Australian pet to enter Dubai?',
@@ -42,7 +42,7 @@ export default function AustraliaToDubai() {
     },
     {
       question: 'What happens when my pet arrives in Dubai from Australia?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and AQIS health certificate, and conducts a brief physical examination. Because Australia is a low-risk country, clearance is typically smooth and takes 2–3 hours. PetClear provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility. The Australian origin often means the inspection is quicker than for high-risk countries.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and AQIS health certificate, and conducts a brief physical examination. Because Australia is a low-risk country, clearance is typically smooth and takes 2–3 hours. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility. The Australian origin often means the inspection is quicker than for high-risk countries.'
     }
   ]
 
@@ -73,8 +73,8 @@ export default function AustraliaToDubai() {
       "@type": "Article",
       "headline": pageTitle,
       "description": pageDescription,
-      "author": { "@type": "Organization", "name": "PetClear" },
-      "publisher": { "@type": "Organization", "name": "PetClear", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
       "datePublished": "2025-01-15",
       "dateModified": "2025-01-15"
     }
@@ -102,7 +102,7 @@ export default function AustraliaToDubai() {
                 Australia to Dubai Pet Relocation — Complete Guide
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Relocating your pet from Australia to Dubai? Australia is a rabies-free, low-risk country, but its export regulations are among the strictest in the world. The AQIS process requires careful planning. PetClear has extensive experience navigating Australian export rules and UAE import requirements.
+                Relocating your pet from Australia to Dubai? Australia is a rabies-free, low-risk country, but its export regulations are among the strictest in the world. The AQIS process requires careful planning. Dubai Pet Relocation has extensive experience navigating Australian export rules and UAE import requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get an Australia to Dubai quote" message="Hi, I want to relocate my pet from Australia to Dubai. Can you help me understand the AQIS process and cost?" />
@@ -185,7 +185,7 @@ export default function AustraliaToDubai() {
               <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Documentation</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents Required for Australia to Dubai</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Australian export documentation is strict and requires coordination between your vet, AQIS, and PetClear. The two layers of compliance (Australian export + UAE import) must be handled carefully.
+                Australian export documentation is strict and requires coordination between your vet, AQIS, and Dubai Pet Relocation. The two layers of compliance (Australian export + UAE import) must be handled carefully.
               </p>
 
               <div className="space-y-4">
@@ -235,7 +235,7 @@ export default function AustraliaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">5. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must be obtained before booking the flight. Cost: AED 500 per pet. PetClear handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must be obtained before booking the flight. Cost: AED 500 per pet. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 
@@ -263,7 +263,7 @@ export default function AustraliaToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>AQIS-accredited veterinarians are limited in number. Not all vets can issue export health certificates. PetClear can recommend accredited vets in Sydney, Melbourne, Brisbane, and Perth.</span>
+                  <span>AQIS-accredited veterinarians are limited in number. Not all vets can issue export health certificates. Dubai Pet Relocation can recommend accredited vets in Sydney, Melbourne, Brisbane, and Perth.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
@@ -360,7 +360,7 @@ export default function AustraliaToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,200–2,000</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: PetClear Door-to-Door</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,000</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,500–3,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–5,000</td>
@@ -382,7 +382,7 @@ export default function AustraliaToDubai() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AUD and converted to AED. East Coast flights (Sydney, Melbourne, Brisbane) are more expensive due to longer distance and connection requirements. Perth is the closest Australian city to Dubai and offers the most direct routing. Air cargo rates fluctuate with fuel surcharges and seasonal demand. Contact PetClear for a precise quote based on your departure city and pet details.
+                * Prices are estimates in AUD and converted to AED. East Coast flights (Sydney, Melbourne, Brisbane) are more expensive due to longer distance and connection requirements. Perth is the closest Australian city to Dubai and offers the most direct routing. Air cargo rates fluctuate with fuel surcharges and seasonal demand. Contact Dubai Pet Relocation for a precise quote based on your departure city and pet details.
               </p>
             </div>
           </div>
@@ -407,31 +407,31 @@ export default function AustraliaToDubai() {
                 {
                   week: 'Week 1',
                   title: 'Microchip, Rabies Vaccine & AQIS Permit Application',
-                  desc: 'Your AQIS-accredited vet implants/verifies the ISO microchip and administers the rabies export vaccine. PetClear applies for the DAFF export permit and begins the UAE import permit application.',
+                  desc: 'Your AQIS-accredited vet implants/verifies the ISO microchip and administers the rabies export vaccine. Dubai Pet Relocation applies for the DAFF export permit and begins the UAE import permit application.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Week 2–3',
                   title: '21-Day Wait & Permit Processing',
-                  desc: 'The 21-day rabies vaccination wait period continues. DAFF processes the export permit (5–10 days). PetClear monitors both the Australian and UAE permit applications and prepares the flight booking options.',
+                  desc: 'The 21-day rabies vaccination wait period continues. DAFF processes the export permit (5–10 days). Dubai Pet Relocation monitors both the Australian and UAE permit applications and prepares the flight booking options.',
                   icon: Shield
                 },
                 {
                   week: 'Week 4',
                   title: 'AQIS Health Certificate & Pre-Export Inspection',
-                  desc: 'Your AQIS vet conducts the pre-export examination and issues the export health certificate. Your pet presents at the AQIS quarantine facility for final inspection. All documents are reviewed by PetClear for accuracy.',
+                  desc: 'Your AQIS vet conducts the pre-export examination and issues the export health certificate. Your pet presents at the AQIS quarantine facility for final inspection. All documents are reviewed by Dubai Pet Relocation for accuracy.',
                   icon: FileText
                 },
                 {
                   week: 'Week 5',
                   title: 'Flight Booking & Crate Preparation',
-                  desc: 'With both permits and the health certificate in hand, PetClear books cargo space with Emirates or Qantas. The IATA-compliant crate is delivered for acclimatisation. A final pre-flight checklist is provided.',
+                  desc: 'With both permits and the health certificate in hand, Dubai Pet Relocation books cargo space with Emirates or Qantas. The IATA-compliant crate is delivered for acclimatisation. A final pre-flight checklist is provided.',
                   icon: Plane
                 },
                 {
                   week: 'Travel Day',
                   title: 'Australia Departure & Dubai Arrival',
-                  desc: 'Your pet checks in at the airline cargo terminal (SYD, MEL, BNE, or PER). After a 14–18 hour journey, PetClear meets your pet at DXB, handles customs clearance and veterinary inspection, and delivers to your home.',
+                  desc: 'Your pet checks in at the airline cargo terminal (SYD, MEL, BNE, or PER). After a 14–18 hour journey, Dubai Pet Relocation meets your pet at DXB, handles customs clearance and veterinary inspection, and delivers to your home.',
                   icon: Home
                 }
               ].map((step, idx) => (
@@ -501,7 +501,7 @@ export default function AustraliaToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Competitive rates on select routes</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Australian-based customer service</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Qantas is a good alternative for Australian pet owners who prefer dealing with an Australian carrier. Some routes may involve connections through Singapore or other partner hubs. PetClear evaluates the best routing for your pet.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Qantas is a good alternative for Australian pet owners who prefer dealing with an Australian carrier. Some routes may involve connections through Singapore or other partner hubs. Dubai Pet Relocation evaluates the best routing for your pet.</p>
             </div>
           </div>
 
@@ -511,10 +511,10 @@ export default function AustraliaToDubai() {
               Long-Haul Travel Considerations
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              The 14–18 hour journey from Australia to Dubai is one of the longest pet relocation routes. PetClear ensures your pet travels in an IATA-compliant crate with adequate ventilation, absorbent bedding, and a familiar item (e.g., a small blanket with your scent). Both Emirates and Qantas use climate-controlled cargo holds maintained at 16–18°C throughout the flight.
+              The 14–18 hour journey from Australia to Dubai is one of the longest pet relocation routes. Dubai Pet Relocation ensures your pet travels in an IATA-compliant crate with adequate ventilation, absorbent bedding, and a familiar item (e.g., a small blanket with your scent). Both Emirates and Qantas use climate-controlled cargo holds maintained at 16–18°C throughout the flight.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              Australian biosecurity laws prohibit the inclusion of hay, straw, or rawhide chews in the crate. Only synthetic bedding and stainless-steel bowls are permitted. PetClear provides a pre-travel packing guide that complies with both Australian export and UAE import regulations.
+              Australian biosecurity laws prohibit the inclusion of hay, straw, or rawhide chews in the crate. Only synthetic bedding and stainless-steel bowls are permitted. Dubai Pet Relocation provides a pre-travel packing guide that complies with both Australian export and UAE import regulations.
             </p>
           </div>
         </div>
@@ -551,7 +551,7 @@ export default function AustraliaToDubai() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from Australia to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear understands the unique challenges of Australian pet export. From Sydney, Melbourne, Brisbane, Perth, or anywhere in Australia — we coordinate with AQIS, DAFF, and UAE authorities to ensure a smooth relocation.
+              Dubai Pet Relocation understands the unique challenges of Australian pet export. From Sydney, Melbourne, Brisbane, Perth, or anywhere in Australia — we coordinate with AQIS, DAFF, and UAE authorities to ensure a smooth relocation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get an Australia to Dubai quote" message="Hi, I want to relocate my pet from Australia to Dubai. Can you help me understand the AQIS process and cost?" />

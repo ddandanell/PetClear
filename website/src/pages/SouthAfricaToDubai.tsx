@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function SouthAfricaToDubai() {
   const pageUrl = `${BASE_URL}/routes/south-africa-to-dubai/`
-  const pageTitle = 'South Africa to Dubai Pet Relocation — Complete Guide 2025 | PetClear'
-  const pageDescription = 'Relocate your pet from South Africa to Dubai with PetClear. High-risk rabies route: titer test (RNATT) required, 90-day wait, complex wildlife regulations. SAA, Emirates. Full cost guide.'
+  const pageTitle = 'South Africa to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
+  const pageDescription = 'Relocate your pet from South Africa to Dubai with Dubai Pet Relocation. High-risk rabies route: titer test (RNATT) required, 90-day wait, complex wildlife regulations. SAA, Emirates. Full cost guide.'
   const keywords = 'South Africa to Dubai pet relocation, pet transport South Africa to Dubai, SA pet relocation Dubai, titer test South Africa Dubai, SAA pet cargo Dubai, Emirates pet transport South Africa, dog relocation South Africa to Dubai, cat relocation South Africa to Dubai, wildlife regulations SA Dubai'
 
   const faqs = [
@@ -22,15 +22,15 @@ export default function SouthAfricaToDubai() {
     },
     {
       question: 'Which airlines fly pets from South Africa to Dubai?',
-      answer: 'South African Airways (SA), Emirates (EK), and Qatar Airways (QR) operate pet cargo services from South Africa to Dubai. South African Airways flies from Johannesburg (JNB) and Cape Town (CPT) with direct or one-stop connections. Emirates operates from Johannesburg and Cape Town with connections through their Dubai hub. Qatar Airways flies via Doha (DOH). Most routes are 8–10 hours direct or 10–14 hours with connections. PetClear books the optimal airline based on your city, pet size, and breed.'
+      answer: 'South African Airways (SA), Emirates (EK), and Qatar Airways (QR) operate pet cargo services from South Africa to Dubai. South African Airways flies from Johannesburg (JNB) and Cape Town (CPT) with direct or one-stop connections. Emirates operates from Johannesburg and Cape Town with connections through their Dubai hub. Qatar Airways flies via Doha (DOH). Most routes are 8–10 hours direct or 10–14 hours with connections. Dubai Pet Relocation books the optimal airline based on your city, pet size, and breed.'
     },
     {
       question: 'How long does the South Africa to Dubai pet relocation process take?',
-      answer: 'The minimum timeline is 3 to 4 months: Month 1 — microchip and rabies vaccination (30-day wait before titer test); Month 1–2 — titer test blood draw, lab processing (1–3 weeks), and 90-day waiting period from blood draw date; Month 3 — apply for UAE import permit, obtain South African veterinary health certificate and Department of Agriculture export clearance; Month 4 — book flight, final health check, and travel. The 90-day titer wait is mandatory and cannot be shortened. PetClear manages all steps in parallel to minimise the overall timeline.'
+      answer: 'The minimum timeline is 3 to 4 months: Month 1 — microchip and rabies vaccination (30-day wait before titer test); Month 1–2 — titer test blood draw, lab processing (1–3 weeks), and 90-day waiting period from blood draw date; Month 3 — apply for UAE import permit, obtain South African veterinary health certificate and Department of Agriculture export clearance; Month 4 — book flight, final health check, and travel. The 90-day titer wait is mandatory and cannot be shortened. Dubai Pet Relocation manages all steps in parallel to minimise the overall timeline.'
     },
     {
       question: 'How much does it cost to relocate a pet from South Africa to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 8,000 to AED 18,000 (ZAR 40,000–90,000). This includes: veterinary prep (microchip + vaccines + titer test ~AED 1,500–2,500), South African Department of Agriculture export permit and health certificate (~AED 1,000–1,800), UAE import permit (AED 500), air cargo freight (AED 3,500–8,000 depending on city and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional PetClear door-to-door service (AED 1,500–3,000). The titer test adds approximately AED 1,000–1,800 to the total compared to low-risk routes. Johannesburg departures are generally cheaper than Cape Town.'
+      answer: 'For a single pet, total costs typically range from AED 8,000 to AED 18,000 (ZAR 40,000–90,000). This includes: veterinary prep (microchip + vaccines + titer test ~AED 1,500–2,500), South African Department of Agriculture export permit and health certificate (~AED 1,000–1,800), UAE import permit (AED 500), air cargo freight (AED 3,500–8,000 depending on city and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 1,500–3,000). The titer test adds approximately AED 1,000–1,800 to the total compared to low-risk routes. Johannesburg departures are generally cheaper than Cape Town.'
     },
     {
       question: 'What documents are required for a South African pet to enter Dubai?',
@@ -38,11 +38,11 @@ export default function SouthAfricaToDubai() {
     },
     {
       question: 'Are there wildlife or exotic animal restrictions for South African pets going to Dubai?',
-      answer: 'Yes. South Africa is home to many exotic and wildlife species, and the UAE has strict regulations regarding the import of non-domestic animals. If you are relocating an exotic pet (e.g., parrots, reptiles, small mammals) from South Africa, additional CITES permits and UAE wildlife import permits may be required. Dogs and cats are generally straightforward, but some breeds (e.g., Boerboels, Rhodesian Ridgebacks) may face additional scrutiny. PetClear verifies all breed and species restrictions before proceeding with any South African pet relocation.'
+      answer: 'Yes. South Africa is home to many exotic and wildlife species, and the UAE has strict regulations regarding the import of non-domestic animals. If you are relocating an exotic pet (e.g., parrots, reptiles, small mammals) from South Africa, additional CITES permits and UAE wildlife import permits may be required. Dogs and cats are generally straightforward, but some breeds (e.g., Boerboels, Rhodesian Ridgebacks) may face additional scrutiny. Dubai Pet Relocation verifies all breed and species restrictions before proceeding with any South African pet relocation.'
     },
     {
       question: 'What happens when my pet arrives in Dubai from South Africa?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. Because South Africa is a high-risk country, the MOCCAE vet conducts a thorough examination: scanning the microchip, verifying the rabies vaccination, checking the titer test certificate, and inspecting the pet for signs of illness or parasites. The inspection may take 3–5 hours. If all documents are correct and the pet is healthy, clearance is granted. PetClear provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. Because South Africa is a high-risk country, the MOCCAE vet conducts a thorough examination: scanning the microchip, verifying the rabies vaccination, checking the titer test certificate, and inspecting the pet for signs of illness or parasites. The inspection may take 3–5 hours. If all documents are correct and the pet is healthy, clearance is granted. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility.'
     }
   ]
 
@@ -73,8 +73,8 @@ export default function SouthAfricaToDubai() {
       "@type": "Article",
       "headline": pageTitle,
       "description": pageDescription,
-      "author": { "@type": "Organization", "name": "PetClear" },
-      "publisher": { "@type": "Organization", "name": "PetClear", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
       "datePublished": "2025-01-15",
       "dateModified": "2025-01-15"
     }
@@ -102,7 +102,7 @@ export default function SouthAfricaToDubai() {
                 South Africa to Dubai Pet Relocation — Complete Guide
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Relocating your pet from South Africa to Dubai? South Africa is a high-risk country for rabies, which means a titer test (RNATT) and 90-day waiting period are mandatory. Additional wildlife regulations and complex export requirements make this one of the more challenging routes. PetClear has extensive experience with South African pet relocations and ensures full compliance with both DALRRD and UAE requirements.
+                Relocating your pet from South Africa to Dubai? South Africa is a high-risk country for rabies, which means a titer test (RNATT) and 90-day waiting period are mandatory. Additional wildlife regulations and complex export requirements make this one of the more challenging routes. Dubai Pet Relocation has extensive experience with South African pet relocations and ensures full compliance with both DALRRD and UAE requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get a South Africa to Dubai quote" message="Hi, I want to relocate my pet from South Africa to Dubai. Can you help me understand the titer test process and cost?" />
@@ -136,7 +136,7 @@ export default function SouthAfricaToDubai() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Route Overview</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Flying Your Pet from South Africa to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              South Africa to Dubai is a mid-distance route with multiple airline options. The high-risk status and wildlife regulations require careful planning, but PetClear has successfully relocated many South African pets to Dubai.
+              South Africa to Dubai is a mid-distance route with multiple airline options. The high-risk status and wildlife regulations require careful planning, but Dubai Pet Relocation has successfully relocated many South African pets to Dubai.
             </p>
           </div>
 
@@ -225,7 +225,7 @@ export default function SouthAfricaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">4. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must include the titer test certificate. Cost: AED 500 per pet. PetClear handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must include the titer test certificate. Cost: AED 500 per pet. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 
@@ -245,7 +245,7 @@ export default function SouthAfricaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">6. Wildlife/Exotic Animal Compliance (if applicable)</p>
-                    <p className="text-[#5A5A5A] text-sm">For exotic pets (parrots, reptiles, small mammals), additional CITES permits and UAE wildlife import permits may be required. Dogs and cats are generally exempt, but certain breeds (e.g., Boerboels) may need additional documentation. PetClear verifies all species and breed restrictions before proceeding.</p>
+                    <p className="text-[#5A5A5A] text-sm">For exotic pets (parrots, reptiles, small mammals), additional CITES permits and UAE wildlife import permits may be required. Dogs and cats are generally exempt, but certain breeds (e.g., Boerboels) may need additional documentation. Dubai Pet Relocation verifies all species and breed restrictions before proceeding.</p>
                   </div>
                 </div>
 
@@ -281,11 +281,11 @@ export default function SouthAfricaToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>Boerboels and other large South African breeds may face additional airline restrictions or require larger crates. Some airlines have weight limits for single-pet cargo bookings. PetClear confirms capacity before booking.</span>
+                  <span>Boerboels and other large South African breeds may face additional airline restrictions or require larger crates. Some airlines have weight limits for single-pet cargo bookings. Dubai Pet Relocation confirms capacity before booking.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>The titer test lab must be approved by the UAE. Onderstepoort Veterinary Institute and IDEXX South Africa are both accepted. PetClear verifies lab accreditation before sending samples.</span>
+                  <span>The titer test lab must be approved by the UAE. Onderstepoort Veterinary Institute and IDEXX South Africa are both accepted. Dubai Pet Relocation verifies lab accreditation before sending samples.</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-[#5A8F6E]/10 rounded-xl">
@@ -370,7 +370,7 @@ export default function SouthAfricaToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,200–2,000</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: PetClear Door-to-Door</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,500–2,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,800–2,800</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,500</td>
@@ -392,7 +392,7 @@ export default function SouthAfricaToDubai() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AED. South African Rand amounts will vary with exchange rates. The titer test is the single biggest additional cost compared to low-risk routes. Johannesburg (JNB) departures are generally cheaper than Cape Town (CPT) due to more flight options and cargo capacity. Air cargo rates may be higher during peak seasons (November–January). Contact PetClear for an exact quote based on your pet's details and departure city.
+                * Prices are estimates in AED. South African Rand amounts will vary with exchange rates. The titer test is the single biggest additional cost compared to low-risk routes. Johannesburg (JNB) departures are generally cheaper than Cape Town (CPT) due to more flight options and cargo capacity. Air cargo rates may be higher during peak seasons (November–January). Contact Dubai Pet Relocation for an exact quote based on your pet's details and departure city.
               </p>
             </div>
           </div>
@@ -417,31 +417,31 @@ export default function SouthAfricaToDubai() {
                 {
                   week: 'Month 1',
                   title: 'Microchip, Rabies Vaccine & Titer Test Blood Draw',
-                  desc: 'Your South African vet implants an ISO microchip and administers a rabies vaccine. After 30 days, a blood sample is drawn for the titer test. The sample is sent to an approved lab (Onderstepoort, IDEXX SA, or other). PetClear coordinates the blood draw and lab submission.',
+                  desc: 'Your South African vet implants an ISO microchip and administers a rabies vaccine. After 30 days, a blood sample is drawn for the titer test. The sample is sent to an approved lab (Onderstepoort, IDEXX SA, or other). Dubai Pet Relocation coordinates the blood draw and lab submission.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Month 1–2',
                   title: 'Titer Test Results & 90-Day Waiting Period',
-                  desc: 'Lab results arrive in 1–3 weeks. If the antibody level is ≥ 0.5 IU/ml, the 90-day mandatory waiting period begins from the date of the blood draw. This wait is non-negotiable. PetClear begins preparing the UAE import permit application during this time.',
+                  desc: 'Lab results arrive in 1–3 weeks. If the antibody level is ≥ 0.5 IU/ml, the 90-day mandatory waiting period begins from the date of the blood draw. This wait is non-negotiable. Dubai Pet Relocation begins preparing the UAE import permit application during this time.',
                   icon: Shield
                 },
                 {
                   week: 'Month 3',
                   title: 'Import Permit & DALRRD Export Application',
-                  desc: 'PetClear applies for the UAE import permit via MOCCAE. We also schedule your DALRRD appointment in Johannesburg or Cape Town for the export permit and health certificate. The DALRRD vet inspects the pet and issues clearance.',
+                  desc: 'Dubai Pet Relocation applies for the UAE import permit via MOCCAE. We also schedule your DALRRD appointment in Johannesburg or Cape Town for the export permit and health certificate. The DALRRD vet inspects the pet and issues clearance.',
                   icon: FileText
                 },
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'With the 90-day wait complete, PetClear books cargo space with SAA, Emirates, or Qatar Airways. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed one final time.',
+                  desc: 'With the 90-day wait complete, Dubai Pet Relocation books cargo space with SAA, Emirates, or Qatar Airways. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed one final time.',
                   icon: Plane
                 },
                 {
                   week: 'Travel Day',
                   title: 'South Africa Departure & Dubai Arrival',
-                  desc: 'Your pet checks in at the cargo terminal at Johannesburg (JNB) or Cape Town (CPT). After an 8–10 hour flight, PetClear meets your pet at DXB, handles the veterinary inspection and customs clearance, and delivers to your home.',
+                  desc: 'Your pet checks in at the cargo terminal at Johannesburg (JNB) or Cape Town (CPT). After an 8–10 hour flight, Dubai Pet Relocation meets your pet at DXB, handles the veterinary inspection and customs clearance, and delivers to your home.',
                   icon: Home
                 }
               ].map((step, idx) => (
@@ -492,7 +492,7 @@ export default function SouthAfricaToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Historically popular with SA pet owners</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Route availability may vary</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">South African Airways has been the traditional choice for SA pet relocations, but financial difficulties have led to route reductions. Always confirm availability before booking. PetClear verifies SAA cargo schedules before recommending this carrier.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">South African Airways has been the traditional choice for SA pet relocations, but financial difficulties have led to route reductions. Always confirm availability before booking. Dubai Pet Relocation verifies SAA cargo schedules before recommending this carrier.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -530,7 +530,7 @@ export default function SouthAfricaToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Good alternative when Emirates is full</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Competitive rates on select routes</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Qatar Airways is a good alternative when Emirates cargo capacity is limited. The connection via Doha adds 2–4 hours to total travel time, but their animal handling is excellent. PetClear evaluates all options for your specific travel date.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Qatar Airways is a good alternative when Emirates cargo capacity is limited. The connection via Doha adds 2–4 hours to total travel time, but their animal handling is excellent. Dubai Pet Relocation evaluates all options for your specific travel date.</p>
             </div>
           </div>
 
@@ -540,10 +540,10 @@ export default function SouthAfricaToDubai() {
               Seasonal & Wildlife Considerations
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              South African summers (November–February) are extremely hot, which affects ground handling at JNB and CPT airports. PetClear recommends booking early morning flights (6–9 AM) to avoid peak heat. During the rainy season (October–April), flight delays are possible — plan buffer days around your travel date.
+              South African summers (November–February) are extremely hot, which affects ground handling at JNB and CPT airports. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During the rainy season (October–April), flight delays are possible — plan buffer days around your travel date.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              For exotic pets (parrots, reptiles, small mammals) from South Africa, additional CITES permits and UAE wildlife import permits are required. The UAE has strict restrictions on certain species. Dogs and cats are generally straightforward, but Boerboels may face additional scrutiny due to their size and breed classification. PetClear verifies all species and breed restrictions before proceeding.
+              For exotic pets (parrots, reptiles, small mammals) from South Africa, additional CITES permits and UAE wildlife import permits are required. The UAE has strict restrictions on certain species. Dogs and cats are generally straightforward, but Boerboels may face additional scrutiny due to their size and breed classification. Dubai Pet Relocation verifies all species and breed restrictions before proceeding.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
               Peak relocation season for South African pets is November–January and June–July. Cargo space fills 3–4 weeks in advance during these periods. Start your titer test process at least 4 months before your intended travel date.
@@ -583,7 +583,7 @@ export default function SouthAfricaToDubai() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from South Africa to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear has helped many South African families move their pets to Dubai. From Johannesburg, Cape Town, Durban, or anywhere in South Africa — we manage the titer test, DALRRD export, flight booking, and Dubai customs.
+              Dubai Pet Relocation has helped many South African families move their pets to Dubai. From Johannesburg, Cape Town, Durban, or anywhere in South Africa — we manage the titer test, DALRRD export, flight booking, and Dubai customs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a South Africa to Dubai quote" message="Hi, I want to relocate my pet from South Africa to Dubai. Can you help me understand the titer test process and cost?" />

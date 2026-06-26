@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function NewZealandToDubai() {
   const pageUrl = `${BASE_URL}/routes/new-zealand-to-dubai/`
-  const pageTitle = 'New Zealand to Dubai Pet Relocation — Complete Guide 2025 | PetClear'
-  const pageDescription = 'Relocate your pet from New Zealand to Dubai with PetClear. Low-risk but strict MPI export rules. Air New Zealand, Emirates. NZ biosecurity, health cert within 10 days. Costs and timeline.'
+  const pageTitle = 'New Zealand to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
+  const pageDescription = 'Relocate your pet from New Zealand to Dubai with Dubai Pet Relocation. Low-risk but strict MPI export rules. Air New Zealand, Emirates. NZ biosecurity, health cert within 10 days. Costs and timeline.'
   const keywords = 'New Zealand to Dubai pet relocation, pet transport NZ to Dubai, New Zealand pet relocation Dubai, MPI pet export Dubai, Air New Zealand pet cargo, Emirates pet transport NZ, dog relocation NZ to Dubai, cat relocation NZ to Dubai, pet shipping New Zealand to UAE'
 
   const faqs = [
@@ -22,7 +22,7 @@ export default function NewZealandToDubai() {
     },
     {
       question: 'Which airlines fly pets from New Zealand to Dubai?',
-      answer: 'Air New Zealand (NZ) and Emirates (EK) are the primary carriers for pet cargo from New Zealand to Dubai. Air New Zealand operates from Auckland (AKL), Wellington (WLG), and Christchurch (CHC), often connecting through Australia or Singapore. Emirates flies from Auckland with connections through their Dubai hub. Most routes are 17–20 hours including connections. Due to New Zealand\'s geographic isolation, there are no direct flights to Dubai, so all pets will have at least one connection. PetClear books the routing with the shortest connection time to minimise stress on your pet.'
+      answer: 'Air New Zealand (NZ) and Emirates (EK) are the primary carriers for pet cargo from New Zealand to Dubai. Air New Zealand operates from Auckland (AKL), Wellington (WLG), and Christchurch (CHC), often connecting through Australia or Singapore. Emirates flies from Auckland with connections through their Dubai hub. Most routes are 17–20 hours including connections. Due to New Zealand\'s geographic isolation, there are no direct flights to Dubai, so all pets will have at least one connection. Dubai Pet Relocation books the routing with the shortest connection time to minimise stress on your pet.'
     },
     {
       question: 'How long does the New Zealand to Dubai pet relocation process take?',
@@ -30,7 +30,7 @@ export default function NewZealandToDubai() {
     },
     {
       question: 'How much does it cost to relocate a pet from New Zealand to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 13,000 to AED 26,000 (NZD 5,800–11,600). This includes: veterinary prep (microchip + rabies export vaccine ~AED 500–1,000), MPI export certificate and inspection (~AED 1,500–2,500), UAE import permit (AED 500), air cargo freight (AED 8,000–16,000 depending on crate size and connection routing), customs clearance in Dubai (AED 1,000–2,000), and optional PetClear door-to-door service (AED 2,500–4,500). The long flight distance and connection routing make this one of the more expensive routes, but the absence of a titer test saves 3–4 months and AED 1,500+ in lab fees.'
+      answer: 'For a single pet, total costs typically range from AED 13,000 to AED 26,000 (NZD 5,800–11,600). This includes: veterinary prep (microchip + rabies export vaccine ~AED 500–1,000), MPI export certificate and inspection (~AED 1,500–2,500), UAE import permit (AED 500), air cargo freight (AED 8,000–16,000 depending on crate size and connection routing), customs clearance in Dubai (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 2,500–4,500). The long flight distance and connection routing make this one of the more expensive routes, but the absence of a titer test saves 3–4 months and AED 1,500+ in lab fees.'
     },
     {
       question: 'What documents are required for a New Zealand pet to enter Dubai?',
@@ -42,7 +42,7 @@ export default function NewZealandToDubai() {
     },
     {
       question: 'What happens when my pet arrives in Dubai from New Zealand?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and MPI health certificate, and conducts a brief physical examination. Because New Zealand is a low-risk, rabies-free country, clearance is typically smooth and takes 2–3 hours. PetClear provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility. The New Zealand origin often means the inspection is quicker than for high-risk countries.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and MPI health certificate, and conducts a brief physical examination. Because New Zealand is a low-risk, rabies-free country, clearance is typically smooth and takes 2–3 hours. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility. The New Zealand origin often means the inspection is quicker than for high-risk countries.'
     }
   ]
 
@@ -73,8 +73,8 @@ export default function NewZealandToDubai() {
       "@type": "Article",
       "headline": pageTitle,
       "description": pageDescription,
-      "author": { "@type": "Organization", "name": "PetClear" },
-      "publisher": { "@type": "Organization", "name": "PetClear", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
       "datePublished": "2025-01-15",
       "dateModified": "2025-01-15"
     }
@@ -102,7 +102,7 @@ export default function NewZealandToDubai() {
                 New Zealand to Dubai Pet Relocation — Complete Guide
               </h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Relocating your pet from New Zealand to Dubai? New Zealand is completely rabies-free, making it a low-risk country. However, the Ministry for Primary Industries (MPI) has extremely strict biosecurity and export rules. PetClear has extensive experience with NZ pet exports and ensures compliance with both MPI and UAE requirements.
+                Relocating your pet from New Zealand to Dubai? New Zealand is completely rabies-free, making it a low-risk country. However, the Ministry for Primary Industries (MPI) has extremely strict biosecurity and export rules. Dubai Pet Relocation has extensive experience with NZ pet exports and ensures compliance with both MPI and UAE requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppBtn label="Get a NZ to Dubai quote" message="Hi, I want to relocate my pet from New Zealand to Dubai. Can you help me understand the MPI process and cost?" />
@@ -225,7 +225,7 @@ export default function NewZealandToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">4. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must be obtained before booking. Cost: AED 500 per pet. PetClear handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days. Must be obtained before booking. Cost: AED 500 per pet. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 
@@ -253,15 +253,15 @@ export default function NewZealandToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>MPI-approved veterinarians are limited. Not all NZ vets can issue export certificates. PetClear can recommend approved vets in Auckland, Wellington, and Christchurch.</span>
+                  <span>MPI-approved veterinarians are limited. Not all NZ vets can issue export certificates. Dubai Pet Relocation can recommend approved vets in Auckland, Wellington, and Christchurch.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>All flights from New Zealand to Dubai require at least one connection (usually through Australia, Singapore, or the Emirates hub). PetClear books the shortest connection time to minimise your pet's total travel time.</span>
+                  <span>All flights from New Zealand to Dubai require at least one connection (usually through Australia, Singapore, or the Emirates hub). Dubai Pet Relocation books the shortest connection time to minimise your pet's total travel time.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
-                  <span>New Zealand biosecurity laws prohibit the inclusion of hay, straw, wood shavings, or rawhide in the travel crate. Only synthetic bedding and stainless-steel bowls are permitted. PetClear provides a compliant packing list.</span>
+                  <span>New Zealand biosecurity laws prohibit the inclusion of hay, straw, wood shavings, or rawhide in the travel crate. Only synthetic bedding and stainless-steel bowls are permitted. Dubai Pet Relocation provides a compliant packing list.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
@@ -338,7 +338,7 @@ export default function NewZealandToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,200–2,000</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: PetClear Door-to-Door</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,000</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,500–3,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–5,000</td>
@@ -354,7 +354,7 @@ export default function NewZealandToDubai() {
             </div>
             <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in NZD and converted to AED. The long flight distance and mandatory connection routing make this one of the more expensive routes. Air cargo rates include connection fees and fuel surcharges. Auckland departures offer the most options and best rates. Regional departures (e.g., Dunedin, Hamilton) may be significantly more expensive due to limited cargo capacity. Contact PetClear for a precise quote based on your exact departure city and pet details.
+                * Prices are estimates in NZD and converted to AED. The long flight distance and mandatory connection routing make this one of the more expensive routes. Air cargo rates include connection fees and fuel surcharges. Auckland departures offer the most options and best rates. Regional departures (e.g., Dunedin, Hamilton) may be significantly more expensive due to limited cargo capacity. Contact Dubai Pet Relocation for a precise quote based on your exact departure city and pet details.
               </p>
             </div>
           </div>
@@ -379,31 +379,31 @@ export default function NewZealandToDubai() {
                 {
                   week: 'Week 1',
                   title: 'Microchip, Rabies Vaccine & MPI Certificate Application',
-                  desc: 'Your MPI-approved vet implants/verifies the ISO microchip and administers the rabies export vaccine. PetClear applies for the MPI export certificate and begins the UAE import permit application. The rabies vaccine is ordered if not already in stock.',
+                  desc: 'Your MPI-approved vet implants/verifies the ISO microchip and administers the rabies export vaccine. Dubai Pet Relocation applies for the MPI export certificate and begins the UAE import permit application. The rabies vaccine is ordered if not already in stock.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Week 2–3',
                   title: '21-Day Wait & Permit Processing',
-                  desc: 'The 21-day rabies vaccination wait period continues. MPI processes the export certificate (5–10 days). PetClear monitors the UAE import permit application and researches flight options from Auckland or your nearest airport.',
+                  desc: 'The 21-day rabies vaccination wait period continues. MPI processes the export certificate (5–10 days). Dubai Pet Relocation monitors the UAE import permit application and researches flight options from Auckland or your nearest airport.',
                   icon: Shield
                 },
                 {
                   week: 'Week 4',
                   title: 'MPI Health Certificate & Pre-Export Inspection',
-                  desc: 'Your MPI-approved vet conducts the pre-export examination and issues the MPI health certificate within 10 days of travel. All documents are reviewed by PetClear for accuracy and compliance with both NZ and UAE requirements.',
+                  desc: 'Your MPI-approved vet conducts the pre-export examination and issues the MPI health certificate within 10 days of travel. All documents are reviewed by Dubai Pet Relocation for accuracy and compliance with both NZ and UAE requirements.',
                   icon: FileText
                 },
                 {
                   week: 'Week 5',
                   title: 'Flight Booking & Crate Preparation',
-                  desc: 'With both permits and the MPI certificate in hand, PetClear books cargo space with Air New Zealand or Emirates. The IATA-compliant crate is delivered for acclimatisation. We provide a pre-flight checklist and connection routing details.',
+                  desc: 'With both permits and the MPI certificate in hand, Dubai Pet Relocation books cargo space with Air New Zealand or Emirates. The IATA-compliant crate is delivered for acclimatisation. We provide a pre-flight checklist and connection routing details.',
                   icon: Plane
                 },
                 {
                   week: 'Travel Day',
                   title: 'New Zealand Departure & Dubai Arrival',
-                  desc: 'Your pet checks in at the cargo terminal in Auckland, Wellington, or Christchurch. After a 17–20 hour journey with connections, PetClear meets your pet at DXB, handles customs clearance and veterinary inspection, and delivers to your home.',
+                  desc: 'Your pet checks in at the cargo terminal in Auckland, Wellington, or Christchurch. After a 17–20 hour journey with connections, Dubai Pet Relocation meets your pet at DXB, handles customs clearance and veterinary inspection, and delivers to your home.',
                   icon: Home
                 }
               ].map((step, idx) => (
@@ -433,7 +433,7 @@ export default function NewZealandToDubai() {
             <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from New Zealand to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              All flights from New Zealand to Dubai require at least one connection. PetClear books the routing with the shortest connection time to minimise stress on your pet.
+              All flights from New Zealand to Dubai require at least one connection. Dubai Pet Relocation books the routing with the shortest connection time to minimise stress on your pet.
             </p>
           </div>
 
@@ -454,7 +454,7 @@ export default function NewZealandToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Connections via Australia or Singapore</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> NZ-based customer service</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Air New Zealand is a popular choice for NZ pet owners due to their familiarity with MPI requirements and domestic network. However, connections add complexity. PetClear monitors connection times to ensure your pet is not left on the tarmac for extended periods.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Air New Zealand is a popular choice for NZ pet owners due to their familiarity with MPI requirements and domestic network. However, connections add complexity. Dubai Pet Relocation monitors connection times to ensure your pet is not left on the tarmac for extended periods.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -483,10 +483,10 @@ export default function NewZealandToDubai() {
               Connection Handling & Long-Haul Considerations
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              All New Zealand to Dubai flights require at least one connection, which adds complexity and stress for your pet. PetClear books connections with a minimum 2-hour layover to allow for pet transfer between aircraft, but avoids excessively long layovers (6+ hours) that would require your pet to be held in a transit facility. The total travel time is 17–20 hours, making this one of the longest pet relocation routes.
+              All New Zealand to Dubai flights require at least one connection, which adds complexity and stress for your pet. Dubai Pet Relocation books connections with a minimum 2-hour layover to allow for pet transfer between aircraft, but avoids excessively long layovers (6+ hours) that would require your pet to be held in a transit facility. The total travel time is 17–20 hours, making this one of the longest pet relocation routes.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              Both Air New Zealand and Emirates use climate-controlled cargo holds maintained at 16–18°C throughout the flight. New Zealand biosecurity laws prohibit the inclusion of hay, straw, wood shavings, or rawhide in the travel crate. PetClear provides a compliant packing list and ensures your pet's crate meets both NZ export and UAE import standards. We also recommend against feeding your pet for 4–6 hours before departure to reduce the risk of motion sickness during the long journey.
+              Both Air New Zealand and Emirates use climate-controlled cargo holds maintained at 16–18°C throughout the flight. New Zealand biosecurity laws prohibit the inclusion of hay, straw, wood shavings, or rawhide in the travel crate. Dubai Pet Relocation provides a compliant packing list and ensures your pet's crate meets both NZ export and UAE import standards. We also recommend against feeding your pet for 4–6 hours before departure to reduce the risk of motion sickness during the long journey.
             </p>
           </div>
         </div>
@@ -523,7 +523,7 @@ export default function NewZealandToDubai() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from New Zealand to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              PetClear understands the unique challenges of New Zealand pet exports. From Auckland, Wellington, Christchurch, or anywhere in NZ — we coordinate with MPI, book the best flight routing, and handle Dubai customs.
+              Dubai Pet Relocation understands the unique challenges of New Zealand pet exports. From Auckland, Wellington, Christchurch, or anywhere in NZ — we coordinate with MPI, book the best flight routing, and handle Dubai customs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a NZ to Dubai quote" message="Hi, I want to relocate my pet from New Zealand to Dubai. Can you help me understand the MPI process and cost?" />
