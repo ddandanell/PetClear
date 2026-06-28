@@ -9,7 +9,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FDFBF8]">
+    <div className="min-h-screen flex flex-col bg-[#F5F6FD]">
       <Header />
       <main className="flex-1">
         {children || <Outlet />}

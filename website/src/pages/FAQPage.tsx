@@ -13,7 +13,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
         <span className="pr-4">{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -80,7 +80,7 @@ const faqs: FAQEntry[] = [
   {
     category: 'documents',
     question: 'What documents do I need to import a pet to Dubai?',
-    answer: <><p>The standard requirements are: a valid MOCCAE import permit, an ISO-compliant microchip (15 digits), a valid rabies vaccination certificate, a veterinary health certificate from the origin country, and in some cases a rabies titer test (FAVN) for high-risk countries. Some countries also require additional parasite treatments or notarized documents.</p><p className="mt-3"><Link to="/import-requirements" className="text-[#1B2B4D] font-semibold hover:underline inline-flex items-center gap-1">Read the full import guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    answer: <><p>The standard requirements are: a valid MOCCAE import permit, an ISO-compliant microchip (15 digits), a valid rabies vaccination certificate, a veterinary health certificate from the origin country, and in some cases a rabies titer test (FAVN) for high-risk countries. Some countries also require additional parasite treatments or notarized documents.</p><p className="mt-3"><Link to="/import-requirements" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">Read the full import guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
   },
   {
     category: 'documents',
@@ -105,7 +105,7 @@ const faqs: FAQEntry[] = [
   {
     category: 'costs',
     question: 'How much does pet relocation to Dubai cost?',
-    answer: <><p>Pet relocation to Dubai typically costs between <strong>AED 8,000 and AED 25,000</strong> depending on the origin country, pet size, and service level. The breakdown includes government fees (AED 200–700), veterinary costs (AED 1,200–2,500), cargo shipping (AED 3,000–12,000), and coordination fees (AED 1,500–6,000).</p><p className="mt-3"><Link to="/cost-guide" className="text-[#1B2B4D] font-semibold hover:underline inline-flex items-center gap-1">See our full cost breakdown <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    answer: <><p>Pet relocation to Dubai typically costs between <strong>AED 8,000 and AED 25,000</strong> depending on the origin country, pet size, and service level. The breakdown includes government fees (AED 200–700), veterinary costs (AED 1,200–2,500), cargo shipping (AED 3,000–12,000), and coordination fees (AED 1,500–6,000).</p><p className="mt-3"><Link to="/cost-guide" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">See our full cost breakdown <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
   },
   {
     category: 'costs',
@@ -125,7 +125,7 @@ const faqs: FAQEntry[] = [
   {
     category: 'dogs',
     question: 'Which dog breeds are banned in Dubai?',
-    answer: <><p>The UAE bans Pit Bull types (including American Bully and Staffordshire Bull Terrier), Mastiff types (including Cane Corso, Boerboel, and Bullmastiff), Japanese Tosa, and wolf-dog hybrids. Some breeds like Rottweiler and Doberman are restricted rather than fully banned. Brachycephalic breeds (Bulldogs, Pugs) face airline restrictions during summer months.</p><p className="mt-3"><Link to="/dog-relocation" className="text-[#1B2B4D] font-semibold hover:underline inline-flex items-center gap-1">Read our dog relocation guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    answer: <><p>The UAE bans Pit Bull types (including American Bully and Staffordshire Bull Terrier), Mastiff types (including Cane Corso, Boerboel, and Bullmastiff), Japanese Tosa, and wolf-dog hybrids. Some breeds like Rottweiler and Doberman are restricted rather than fully banned. Brachycephalic breeds (Bulldogs, Pugs) face airline restrictions during summer months.</p><p className="mt-3"><Link to="/dog-relocation" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">Read our dog relocation guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
   },
   {
     category: 'dogs',
@@ -258,7 +258,7 @@ export default function FAQPage() {
                 placeholder="Search questions..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 rounded-[12px] border border-[#EDE7DD] bg-[#FAF7F1] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#5A8F6E]/30 focus:border-[#5A8F6E]"
+                className="w-full pl-12 pr-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-[#F0F2FB] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5]"
               />
             </div>
           </div>
@@ -280,12 +280,12 @@ export default function FAQPage() {
       </section>
 
       {/* ═══════════ CATEGORY FILTERS ═══════════ */}
-      <section className="bg-[#FDFBF8] section-padding">
+      <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-2 justify-center mb-10">
             <button
               onClick={() => setActiveCategory('all')}
-              className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold transition-all ${activeCategory === 'all' ? 'bg-[#1B2B4D] text-white' : 'bg-white text-[#5A5A5A] hover:bg-[#1B2B4D]/5'}`}
+              className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold transition-all ${activeCategory === 'all' ? 'bg-[#4F5BD5] text-white' : 'bg-white text-[#5A5A5A] hover:bg-[#4F5BD5]/5'}`}
             >
               All Questions
             </button>
@@ -293,7 +293,7 @@ export default function FAQPage() {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold transition-all ${activeCategory === cat.id ? 'bg-[#1B2B4D] text-white' : 'bg-white text-[#5A5A5A] hover:bg-[#1B2B4D]/5'}`}
+                className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold transition-all ${activeCategory === cat.id ? 'bg-[#4F5BD5] text-white' : 'bg-white text-[#5A5A5A] hover:bg-[#4F5BD5]/5'}`}
               >
                 <cat.icon className="w-4 h-4" />
                 {cat.label}
@@ -340,13 +340,13 @@ export default function FAQPage() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="group flex items-start gap-4 p-5 bg-[#FDFBF8] rounded-[20px] hover:bg-white hover:shadow-sm transition-all"
+                className="group flex items-start gap-4 p-5 bg-[#F5F6FD] rounded-[20px] hover:bg-white hover:shadow-sm transition-all"
               >
-                <div className="w-10 h-10 rounded-[12px] bg-[#EDF6F0] flex items-center justify-center shrink-0">
-                  <link.icon className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 rounded-[12px] bg-[#E9ECFB] flex items-center justify-center shrink-0">
+                  <link.icon className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <div>
-                  <p className="font-semibold text-[#2A2A2A] group-hover:text-[#1B2B4D] transition-colors text-sm">{link.label}</p>
+                  <p className="font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5] transition-colors text-sm">{link.label}</p>
                   <p className="text-xs text-[#8A8A8A] mt-1">{link.desc}</p>
                 </div>
               </Link>
@@ -356,7 +356,7 @@ export default function FAQPage() {
       </section>
 
       {/* ═══════════ CTA ═══════════ */}
-      <section className="bg-[#1B2B4D] section-padding">
+      <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Didn't Find Your Answer?

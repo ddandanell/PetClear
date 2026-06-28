@@ -47,7 +47,7 @@ export default function WhatsAppButton({
           showSticky ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <div className="bg-white border-t border-[#EDE7DD] shadow-lg p-3 sm:hidden">
+        <div className="bg-white border-t border-[#E2E5F6] shadow-lg p-3 sm:hidden">
           <a
             href={href}
             target="_blank"

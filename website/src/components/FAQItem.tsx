@@ -17,7 +17,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
       >
         <span className="pr-4">{question}</span>
         {open ? (
-          <ChevronUp className="w-5 h-5 shrink-0 text-[#5A8F6E]" />
+          <ChevronUp className="w-5 h-5 shrink-0 text-[#4F5BD5]" />
         ) : (
           <ChevronDown className="w-5 h-5 shrink-0 text-[#8A8A8A]" />
         )}

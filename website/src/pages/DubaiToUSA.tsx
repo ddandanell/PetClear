@@ -81,7 +81,7 @@ export default function DubaiToUSA() {
   ]
 
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         meta={{
           title: pageTitle,
@@ -99,7 +99,7 @@ export default function DubaiToUSA() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Export Route Guide</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Export Route Guide</span>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 Dubai to USA Pet Relocation — Exporting Your Pet to America
               </h1>
@@ -117,7 +117,7 @@ export default function DubaiToUSA() {
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
                 <img src="/images/hero-dubai-to-usa.jpg" alt="Pet relocation from Dubai to USA" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">
                     <PawPrint className="w-16 h-16 mx-auto mb-4 opacity-90" />
@@ -135,7 +135,7 @@ export default function DubaiToUSA() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">US Requirements</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">US Requirements</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">US Import Rules for Pets from Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               The USA has federal requirements (CDC and USDA APHIS) and state-level rules. Most states do not require quarantine if federal documents are correct. Here is what you need to know for dogs and cats travelling from Dubai.
@@ -144,50 +144,50 @@ export default function DubaiToUSA() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Shield className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Shield className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">CDC Dog Import Rules</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
                 The CDC classifies the UAE as a high-risk country for dog rabies. All dogs entering the USA from Dubai must have:
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Valid rabies vaccination certificate (administered at or after 12 weeks of age, at least 28 days before arrival)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> ISO-compliant microchip implanted before the rabies vaccination</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> CDC Dog Import Form completed online (free, required before travel)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Dog must appear healthy on arrival</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Valid rabies vaccination certificate (administered at or after 12 weeks of age, at least 28 days before arrival)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> ISO-compliant microchip implanted before the rabies vaccination</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> CDC Dog Import Form completed online (free, required before travel)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Dog must appear healthy on arrival</li>
               </ul>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <FileText className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <FileText className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">USDA APHIS Health Certificate</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
                 A health certificate issued by a USDA-accredited UAE veterinarian is required for both dogs and cats. The certificate must:
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Be issued within 10 days of travel</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Include microchip number, vaccination details, and health examination results</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Be completed by a USDA-accredited veterinarian (not all UAE vets hold this accreditation)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Be presented at US CBP inspection on arrival</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Be issued within 10 days of travel</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Include microchip number, vaccination details, and health examination results</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Be completed by a USDA-accredited veterinarian (not all UAE vets hold this accreditation)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Be presented at US CBP inspection on arrival</li>
               </ul>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Cat className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Cat className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Cat Import Requirements</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
                 The CDC does not require rabies vaccination for cats entering the USA. However, Dubai Pet Relocation recommends:
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Rabies vaccination (recommended, not federally required)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> USDA APHIS health certificate within 10 days of travel</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> ISO-compliant microchip</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Check state-specific rules (some states require rabies cert for cats)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Rabies vaccination (recommended, not federally required)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> USDA APHIS health certificate within 10 days of travel</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> ISO-compliant microchip</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Check state-specific rules (some states require rabies cert for cats)</li>
               </ul>
             </div>
           </div>
@@ -199,15 +199,15 @@ export default function DubaiToUSA() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">CDC Requirements</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">CDC Requirements</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">CDC Dog Import Form & Rabies Certificate</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 Since 2023, the CDC requires all dogs entering the USA from high-risk rabies countries to complete a Dog Import Form online. This is a free, mandatory form that must be submitted before travel. Dubai Pet Relocation completes this form on your behalf as part of our service.
               </p>
 
               <div className="space-y-4">
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -216,8 +216,8 @@ export default function DubaiToUSA() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -226,8 +226,8 @@ export default function DubaiToUSA() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -236,8 +236,8 @@ export default function DubaiToUSA() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -248,40 +248,40 @@ export default function DubaiToUSA() {
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-6">
                 <AlertTriangle className="w-6 h-6 text-[#D4A017]" />
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Important Notes for US-Bound Pets</h3>
               </div>
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>The CDC Dog Import Form is free but mandatory. Airlines will not board a dog from a high-risk country without the CDC receipt. Dubai Pet Relocation submits this form and prints the receipt for your travel folder.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Not all UAE veterinarians are USDA-accredited. Only an accredited vet can issue the APHIS health certificate. Dubai Pet Relocation works exclusively with accredited veterinarians in Dubai to ensure your certificate is valid.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Puppies under 6 months are generally not permitted under CDC rules unless they meet specific exemption criteria. Contact Dubai Pet Relocation before planning travel with a young puppy.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Brachycephalic breeds (Pugs, Bulldogs, Boxers, Shih Tzus, Persian cats) face summer travel restrictions on most airlines (May–September). Book early morning flights or consider travel outside peak summer months.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Some US states have additional requirements. Hawaii and Guam require quarantine or advanced rabies testing. California, Florida, and New York have veterinary inspection rules. Dubai Pet Relocation checks your specific destination state before booking.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Direct flights from Dubai to the US are 12–16 hours. Dubai Pet Relocation ensures your pet has a water container attached to the crate, absorbent bedding, and a pre-flight acclimatisation period to reduce travel stress.</span>
                 </li>
               </ul>
-              <div className="mt-6 p-4 bg-[#5A8F6E]/10 rounded-xl">
+              <div className="mt-6 p-4 bg-[#4F5BD5]/10 rounded-xl">
                 <p className="text-sm text-[#2A2A2A] font-medium">
-                  <span className="text-[#5A8F6E]">Pro tip:</span> Complete the CDC Dog Import Form at least 2 days before travel. While the form is instant, having it ready early allows Dubai Pet Relocation to verify all details match your rabies certificate and health certificate before departure.
+                  <span className="text-[#4F5BD5]">Pro tip:</span> Complete the CDC Dog Import Form at least 2 days before travel. While the form is instant, having it ready early allows Dubai Pet Relocation to verify all details match your rabies certificate and health certificate before departure.
                 </p>
               </div>
             </div>
@@ -293,7 +293,7 @@ export default function DubaiToUSA() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Airlines</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from Dubai to the USA</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Emirates dominates the Dubai–USA route with direct flights to multiple hubs. United, Delta, and American also offer cargo services via their global networks. Dubai Pet Relocation books cargo space on all major carriers.
@@ -315,11 +315,11 @@ export default function DubaiToUSA() {
                 Emirates is the primary carrier for Dubai–USA pet cargo, offering direct flights to all major US hubs. Their SkyCargo Live programme provides dedicated animal handling, climate-controlled holds, and priority offloading.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Direct flights: JFK (New York), LAX (Los Angeles), ORD (Chicago), IAD (Washington DC), SFO (San Francisco), BOS (Boston), IAH (Houston), MIA (Miami)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Climate-controlled cargo hold (16–18°C)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> A380 and B777 large-capacity cargo holds</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Priority offloading and dedicated animal staff at DXB</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Best for large dogs and direct routes</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Direct flights: JFK (New York), LAX (Los Angeles), ORD (Chicago), IAD (Washington DC), SFO (San Francisco), BOS (Boston), IAH (Houston), MIA (Miami)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Climate-controlled cargo hold (16–18°C)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> A380 and B777 large-capacity cargo holds</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Priority offloading and dedicated animal staff at DXB</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Best for large dogs and direct routes</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Emirates is the preferred carrier for most Dubai–USA relocations due to direct routes, large cargo capacity, and extensive experience with live animal transport. Flight times are 12–16 hours depending on the destination.</p>
             </div>
@@ -338,17 +338,17 @@ export default function DubaiToUSA() {
                 United Airlines, Delta Air Lines, and American Airlines operate pet cargo services from Dubai to the USA, typically via European hubs (Amsterdam, Frankfurt, London) or Asian hubs (Tokyo, Seoul). These are useful for destinations not served by Emirates direct flights.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Coverage of secondary US cities (Seattle, Denver, Atlanta, Dallas)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Established pet cargo programmes with IATA-compliant protocols</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Climate-controlled transfers at hub airports</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> May be more cost-effective for certain routes</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Longer total travel time due to connections</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Coverage of secondary US cities (Seattle, Denver, Atlanta, Dallas)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Established pet cargo programmes with IATA-compliant protocols</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Climate-controlled transfers at hub airports</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> May be more cost-effective for certain routes</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Longer total travel time due to connections</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Multi-leg routes add complexity but may be necessary for smaller US airports. Dubai Pet Relocation books all legs, ensures the pet is transferred correctly at each hub, and tracks the shipment throughout the journey.</p>
             </div>
           </div>
 
-          <div className="mt-8 bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+          <div className="mt-8 bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
               <AlertTriangle className="w-5 h-5 text-[#D4A017]" />
               Summer Travel Restrictions (May – September)
@@ -367,7 +367,7 @@ export default function DubaiToUSA() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">State Rules</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">State Rules</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">State-Specific US Pet Import Rules</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               While most US states have no quarantine, a few have specific rules that pet owners must know. Dubai Pet Relocation verifies your destination state's requirements before booking.
@@ -375,7 +375,7 @@ export default function DubaiToUSA() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-[#D4A017]/10 rounded-xl flex items-center justify-center">
                   <AlertTriangle className="w-6 h-6 text-[#D4A017]" />
@@ -386,13 +386,13 @@ export default function DubaiToUSA() {
                 Hawaii is rabies-free and has the strictest pet import rules in the USA. Dogs and cats must complete one of two programmes:
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> <strong>5-Day-or-Less Quarantine:</strong> Requires rabies vaccination, microchip, and a negative FAVN rabies titer test with a 120-day waiting period before arrival. If done correctly, the pet is released after a short inspection.</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> <strong>Full 120-Day Quarantine:</strong> If the titer test is not completed in time, the pet must be quarantined for 120 days at a state facility in Hawaii (cost: approximately USD 1,000–1,500).</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <strong>5-Day-or-Less Quarantine:</strong> Requires rabies vaccination, microchip, and a negative FAVN rabies titer test with a 120-day waiting period before arrival. If done correctly, the pet is released after a short inspection.</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <strong>Full 120-Day Quarantine:</strong> If the titer test is not completed in time, the pet must be quarantined for 120 days at a state facility in Hawaii (cost: approximately USD 1,000–1,500).</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Dubai Pet Relocation coordinates Hawaii's complex requirements, including FAVN titer testing at a USDA-approved lab and the 120-day advance planning timeline. Start the Hawaii process at least 5 months before travel.</p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-[#D4A017]/10 rounded-xl flex items-center justify-center">
                   <AlertTriangle className="w-6 h-6 text-[#D4A017]" />
@@ -407,10 +407,10 @@ export default function DubaiToUSA() {
               </p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-[#5A8F6E]" />
+                <div className="w-12 h-12 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2A2A2A]">California, New York, Florida</h3>
               </div>
@@ -418,17 +418,17 @@ export default function DubaiToUSA() {
                 These states have additional veterinary inspection requirements or mandatory rabies vaccination rules for cats and dogs. While there is no quarantine, the state may require:
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> A valid rabies certificate for all dogs and cats</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Health certificate endorsed by a state veterinarian (in some cases)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Registration with a local veterinarian within 30 days of arrival</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> A valid rabies certificate for all dogs and cats</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Health certificate endorsed by a state veterinarian (in some cases)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Registration with a local veterinarian within 30 days of arrival</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Dubai Pet Relocation verifies your specific destination state's requirements before travel and provides a checklist of post-arrival actions for your state.</p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8 md:col-span-2 lg:col-span-3">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 md:col-span-2 lg:col-span-3">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-[#5A8F6E]" />
+                <div className="w-12 h-12 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2A2A2A]">All Other States (No Quarantine)</h3>
               </div>
@@ -444,7 +444,7 @@ export default function DubaiToUSA() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai to USA Cost Breakdown</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Transparent pricing for relocating a single pet from Dubai to the USA. Costs vary by pet size, destination airport, and airline choice. Contact Dubai Pet Relocation for a precise quote.
@@ -511,16 +511,16 @@ export default function DubaiToUSA() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,500–7,000</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 4,000–8,000</td>
                   </tr>
-                  <tr className="bg-[#5A8F6E]/5">
+                  <tr className="bg-[#4F5BD5]/5">
                     <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total Estimated Cost (Mainland USA)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 7,000–12,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 10,000–16,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 14,000–22,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 7,000–12,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 10,000–16,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 14,000–22,000</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
+            <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
                 * Prices are estimates in AED and may vary by airline, destination, season, and pet dimensions. Air cargo rates fluctuate and are typically higher in peak travel months (July–August, December). USD conversion is approximate at 1 USD = 3.67 AED. Hawaii and Guam costs include the FAVN titer test, 120-day waiting period coordination, and quarantine fees. Contact Dubai Pet Relocation for a fixed quote based on your pet's exact weight, breed, and destination airport. Multiple pets may qualify for a 10–15% discount on combined services.
               </p>
@@ -533,7 +533,7 @@ export default function DubaiToUSA() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Step-by-Step</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai to USA Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               A typical export from Dubai to the USA takes 2–4 weeks for documentation plus 1–2 days for travel. Here is the exact week-by-week process Dubai Pet Relocation manages for you.
@@ -571,12 +571,12 @@ export default function DubaiToUSA() {
               ].map((step, idx) => (
                 <div key={idx} className={`relative flex items-start gap-6 lg:gap-0 ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                   <div className="hidden lg:block lg:w-1/2" />
-                  <div className="absolute left-6 lg:left-1/2 lg:-ml-5 w-10 h-10 bg-[#5A8F6E] rounded-full flex items-center justify-center z-10">
+                  <div className="absolute left-6 lg:left-1/2 lg:-ml-5 w-10 h-10 bg-[#4F5BD5] rounded-full flex items-center justify-center z-10">
                     <step.icon className="w-5 h-5 text-white" />
                   </div>
                   <div className={`ml-16 lg:ml-0 lg:w-1/2 ${idx % 2 === 0 ? 'lg:pr-12 lg:text-right' : 'lg:pl-12'}`}>
-                    <div className="bg-[#FDFBF8] rounded-[20px] p-6">
-                      <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">{step.week}</span>
+                    <div className="bg-[#F5F6FD] rounded-[20px] p-6">
+                      <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">{step.week}</span>
                       <h3 className="text-lg font-bold text-[#2A2A2A] mt-1 mb-2">{step.title}</h3>
                       <p className="text-[#5A5A5A] text-sm leading-relaxed">{step.desc}</p>
                     </div>
@@ -592,7 +592,7 @@ export default function DubaiToUSA() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Our Service</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Our Service</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">What Dubai Pet Relocation Handles for Dubai to USA</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Dubai Pet Relocation is a full-service pet relocation concierge. We manage every detail of your pet's journey from Dubai to the USA, so you can focus on your own move.
@@ -601,43 +601,43 @@ export default function DubaiToUSA() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <FileText className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <FileText className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">CDC Dog Import Form</p>
               <p className="text-[#5A5A5A] text-sm">We complete and submit the free CDC Dog Import Form online, verify all details against your rabies certificate, and print the receipt for your travel folder.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Stethoscope className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Stethoscope className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Health Certificate</p>
               <p className="text-[#5A5A5A] text-sm">We schedule the USDA APHIS health certificate with an accredited UAE veterinarian, review the certificate for accuracy, and ensure it meets US entry requirements.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Plane className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Plane className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Flight Booking</p>
               <p className="text-[#5A5A5A] text-sm">We book cargo space with Emirates, United, Delta, or American Airlines, source the correct IATA-compliant crate, and coordinate with the airline's animal handling team.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">US Customs & CBP</p>
               <p className="text-[#5A5A5A] text-sm">Our US partner meets your pet at the arrival airport, handles CBP inspection, document verification, microchip scanning, and ensures smooth clearance.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Home className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Home className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Ground Transport</p>
               <p className="text-[#5A5A5A] text-sm">We arrange ground transport from the US airport to your home, hotel, or boarding facility. Climate-controlled vehicles and experienced pet handlers available.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Heart className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">24/7 Support</p>
               <p className="text-[#5A5A5A] text-sm">We provide WhatsApp updates at every step, a 24/7 emergency contact during travel days, and post-arrival guidance on US veterinary registration and care.</p>
@@ -650,15 +650,15 @@ export default function DubaiToUSA() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">FAQ</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">FAQ</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai to USA Pet Relocation FAQs</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-[#FDFBF8] rounded-[20px] p-6">
+              <div key={idx} className="bg-[#F5F6FD] rounded-[20px] p-6">
                 <div className="flex items-start gap-3">
-                  <MessageCircle className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-1" />
+                  <MessageCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-[#2A2A2A] text-base mb-2">{faq.question}</h3>
                     <p className="text-[#5A5A5A] text-sm leading-relaxed">{faq.answer}</p>
@@ -673,8 +673,8 @@ export default function DubaiToUSA() {
       {/* CTA */}
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#0F1A30] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
+          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
+            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Export Your Pet from Dubai to the USA?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
               Dubai Pet Relocation has relocated hundreds of pets from Dubai to New York, Los Angeles, Chicago, Washington DC, and cities across America. We handle the CDC forms, USDA health certificates, flight booking, and US customs so you can focus on your move.
@@ -709,17 +709,17 @@ export default function DubaiToUSA() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-[#5A5A5A]">
             <span>Related:</span>
-            <Link to="/dog-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Dog Relocation</Link>
+            <Link to="/dog-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Dog Relocation</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/cat-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Cat Relocation</Link>
+            <Link to="/cat-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Cat Relocation</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/how-it-works/" className="text-[#5A8F6E] hover:underline">How It Works</Link>
+            <Link to="/how-it-works/" className="text-[#4F5BD5] hover:underline">How It Works</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/routes/usa-to-dubai/" className="text-[#5A8F6E] hover:underline">USA to Dubai</Link>
+            <Link to="/routes/usa-to-dubai/" className="text-[#4F5BD5] hover:underline">USA to Dubai</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/guides/uae-pet-import-requirements/" className="text-[#5A8F6E] hover:underline">Import Requirements</Link>
+            <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#5A8F6E] hover:underline">Cost Guide</Link>
+            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
           </div>
         </div>
       </section>

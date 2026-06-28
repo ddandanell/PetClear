@@ -29,7 +29,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span>{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -131,7 +131,7 @@ export default function BannedBreedsGuide() {
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Banned & Restricted Dog Breeds' }]} />
 
       {/* Hero */}
-      <section className="relative bg-[#1B2B4D] text-white py-16 lg:py-24">
+      <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
@@ -162,7 +162,7 @@ export default function BannedBreedsGuide() {
       </section>
 
       {/* Complete Banned Breeds List */}
-      <section id="banned-list" className="section-padding bg-[#FDFBF8]">
+      <section id="banned-list" className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
@@ -366,51 +366,51 @@ export default function BannedBreedsGuide() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <FileCheck className="w-5 h-5 text-[#5A8F6E]" />
+                <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
                 What "Restricted" Means in Practice
               </h3>
               <ul className="space-y-3 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#5A8F6E] mt-0.5">✓</span>
+                  <span className="text-[#4F5BD5] mt-0.5">✓</span>
                   <span><strong>Muzzle in public:</strong> Your dog must wear a properly fitted muzzle at all times in public spaces, including parks, elevators, lobbies, and sidewalks.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#5A8F6E] mt-0.5">✓</span>
+                  <span className="text-[#4F5BD5] mt-0.5">✓</span>
                   <span><strong>Short leash rule:</strong> A strong, non-extendable leash no longer than 1.5 meters is required.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#5A8F6E] mt-0.5">✓</span>
+                  <span className="text-[#4F5BD5] mt-0.5">✓</span>
                   <span><strong>Community approval:</strong> Many residential buildings and villa communities have their own breed blacklists. Always check with your landlord or building management before moving.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#5A8F6E] mt-0.5">✓</span>
+                  <span className="text-[#4F5BD5] mt-0.5">✓</span>
                   <span><strong>Liability insurance:</strong> Some communities require proof of third-party liability insurance covering dog-related incidents.</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <Scale className="w-5 h-5 text-[#1B2B4D]" />
+                <Scale className="w-5 h-5 text-[#4F5BD5]" />
                 Dubai Municipality Rules for Restricted Breeds
               </h3>
               <ul className="space-y-3 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#1B2B4D] mt-0.5">•</span>
+                  <span className="text-[#4F5BD5] mt-0.5">•</span>
                   <span>All dogs must be registered with Dubai Municipality and microchipped with an ISO 11784/11785 compliant chip.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#1B2B4D] mt-0.5">•</span>
+                  <span className="text-[#4F5BD5] mt-0.5">•</span>
                   <span>Vaccination records must be kept up to date, including rabies and annual boosters.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#1B2B4D] mt-0.5">•</span>
+                  <span className="text-[#4F5BD5] mt-0.5">•</span>
                   <span>Dogs are not allowed in public beaches, parks (unless designated), or food service areas.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#1B2B4D] mt-0.5">•</span>
+                  <span className="text-[#4F5BD5] mt-0.5">•</span>
                   <span>Fines for non-compliance range from AED 500 to AED 10,000 per violation depending on severity.</span>
                 </li>
               </ul>
@@ -420,7 +420,7 @@ export default function BannedBreedsGuide() {
       </section>
 
       {/* Breed Identification & Fines */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div>
@@ -433,21 +433,21 @@ export default function BannedBreedsGuide() {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold shrink-0">1</div>
+                  <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">1</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A]">Visual Inspection</p>
                     <p className="text-sm text-[#5A5A5A] leading-relaxed">A veterinary inspector examines your dog at the cargo terminal or airport animal reception center. They compare physical characteristics against banned breed profiles.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold shrink-0">2</div>
+                  <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">2</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A]">Documentation Review</p>
                     <p className="text-sm text-[#5A5A5A] leading-relaxed">The inspector reviews your pet's passport, vaccination records, microchip certificate, and any breed pedigree papers you provide.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold shrink-0">3</div>
+                  <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">3</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A]">Final Decision</p>
                     <p className="text-sm text-[#5A5A5A] leading-relaxed">The inspector makes a final determination. If the dog is deemed a banned breed or close resemblance, entry is refused. This decision is final and binding.</p>
@@ -488,10 +488,10 @@ export default function BannedBreedsGuide() {
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10">
-            <div className="bg-[#EDF6F0] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#E9ECFB] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center">
-                  <Heart className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center">
+                  <Heart className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#2A2A2A]">Service Animals Exception</h3>
               </div>
@@ -500,19 +500,19 @@ export default function BannedBreedsGuide() {
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Must be accredited by <strong>ADI</strong> (Assistance Dogs International) or <strong>IGDF</strong> (International Guide Dog Federation)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Handler must carry accreditation certificate and service dog ID at all times</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Dog must be trained for a specific disability-related task (not just emotional support)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>All standard import documents (microchip, rabies vaccine, health certificate) still apply</span>
                 </li>
               </ul>
@@ -552,7 +552,7 @@ export default function BannedBreedsGuide() {
       </section>
 
       {/* Mixed Breeds & Dubai Pet Relocation Assessment */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
@@ -565,15 +565,15 @@ export default function BannedBreedsGuide() {
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#1B2B4D]/10 flex items-center justify-center mx-auto mb-4">
-                <PawPrint className="w-6 h-6 text-[#1B2B4D]" />
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
+                <PawPrint className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Photo Review</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Send us clear side-profile, front-face, and standing photos of your dog. Our team assesses physical characteristics against UAE banned breed profiles.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#5A8F6E]/10 flex items-center justify-center mx-auto mb-4">
-                <FileCheck className="w-6 h-6 text-[#5A8F6E]" />
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
+                <FileCheck className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Documentation Check</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">We review any pedigree papers, adoption records, veterinary breed notes, or DNA test results you have to build a stronger case.</p>
@@ -622,24 +622,24 @@ export default function BannedBreedsGuide() {
       </section>
 
       {/* Internal Links */}
-      <section className="py-16 bg-[#FDFBF8]">
+      <section className="py-16 bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Link to="/dog-relocation-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4 group-hover:bg-[#1B2B4D]/20 transition-colors">
-                <Dog className="w-5 h-5 text-[#1B2B4D]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <Dog className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#1B2B4D] transition-colors">Dog Relocation to Dubai</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Dog Relocation to Dubai</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete guide to relocating dogs to Dubai, including documentation, crate requirements, and airline options.</p>
             </Link>
             <Link to="/guides/uae-pet-import-requirements/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4 group-hover:bg-[#5A8F6E]/20 transition-colors">
-                <FileCheck className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">UAE Pet Import Requirements</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">UAE Pet Import Requirements</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Step-by-step guide to all documentation required for importing pets into the UAE.</p>
             </Link>
             <Link to="/how-it-works/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow group">
@@ -654,7 +654,7 @@ export default function BannedBreedsGuide() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 lg:py-20 bg-[#1B2B4D]">
+      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Unsure About Your Dog's Breed Status?

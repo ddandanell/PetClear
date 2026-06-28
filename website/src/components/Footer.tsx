@@ -38,13 +38,13 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1B2B4D] text-white">
+    <footer className="bg-[#4F5BD5] text-white">
       <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
             <Link to="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-[#1A5F4A] flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-[#3A45B0] flex items-center justify-center">
                 <PawPrint className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold">Dubai Pet Relocation</span>

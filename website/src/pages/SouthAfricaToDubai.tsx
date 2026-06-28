@@ -81,7 +81,7 @@ export default function SouthAfricaToDubai() {
   ]
 
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         title={pageTitle}
         description={pageDescription}
@@ -97,7 +97,7 @@ export default function SouthAfricaToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Route Guide</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Route Guide</span>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 South Africa to Dubai Pet Relocation — Complete Guide
               </h1>
@@ -115,7 +115,7 @@ export default function SouthAfricaToDubai() {
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
                 <img src="/images/hero-south-africa.jpg" alt="Pet relocation from South Africa to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">
                     <PawPrint className="w-16 h-16 mx-auto mb-4 opacity-90" />
@@ -133,7 +133,7 @@ export default function SouthAfricaToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Route Overview</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Route Overview</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Flying Your Pet from South Africa to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               South Africa to Dubai is a mid-distance route with multiple airline options. The high-risk status and wildlife regulations require careful planning, but Dubai Pet Relocation has successfully relocated many South African pets to Dubai.
@@ -142,32 +142,32 @@ export default function SouthAfricaToDubai() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Plane className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Plane className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Flight Time</p>
               <p className="text-[#5A5A5A] text-sm">8–10 hours direct</p>
               <p className="text-[#5A5A5A] text-xs mt-2">JNB/CPT → DXB</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Timeline</p>
               <p className="text-[#5A5A5A] text-sm">3–4 months</p>
               <p className="text-[#5A5A5A] text-xs mt-2">Minimum (titer test + 90-day wait)</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Risk Level</p>
               <p className="text-[#5A5A5A] text-sm">High-Risk</p>
               <p className="text-[#D4A017] text-xs mt-2 font-medium">Rabies endemic + wildlife rules</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <FileText className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <FileText className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Titer Test</p>
               <p className="text-[#5A5A5A] text-sm">Required</p>
@@ -182,15 +182,15 @@ export default function SouthAfricaToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Documentation</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Documentation</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents Required for South Africa to Dubai</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 South Africa's high-risk status and wildlife regulations mean the documentation is extensive. The titer test, DALRRD export clearance, and wildlife compliance checks are the most critical steps.
               </p>
 
               <div className="space-y-4">
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -199,8 +199,8 @@ export default function SouthAfricaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -209,7 +209,7 @@ export default function SouthAfricaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
                   <div className="w-10 h-10 bg-[#D4A017] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
@@ -219,8 +219,8 @@ export default function SouthAfricaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -229,7 +229,7 @@ export default function SouthAfricaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
                   <div className="w-10 h-10 bg-[#D4A017] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
@@ -239,7 +239,7 @@ export default function SouthAfricaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
                   <div className="w-10 h-10 bg-[#D4A017] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
@@ -249,8 +249,8 @@ export default function SouthAfricaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -261,36 +261,36 @@ export default function SouthAfricaToDubai() {
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-6">
                 <AlertTriangle className="w-6 h-6 text-[#D4A017]" />
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Important Notes for South African Pets</h3>
               </div>
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>The 90-day titer test waiting period is absolute — there are no exceptions. Start the process as soon as you know you are moving. Many South African families are surprised by how long this takes.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>DALRRD offices can be slow during peak seasons (November–January and June–July). Book your DALRRD appointment at least 2 weeks before travel to avoid delays.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>South African airlines (SAA) have experienced financial difficulties and route changes. Always confirm flight availability before booking. Emirates and Qatar Airways are more reliable alternatives.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Boerboels and other large South African breeds may face additional airline restrictions or require larger crates. Some airlines have weight limits for single-pet cargo bookings. Dubai Pet Relocation confirms capacity before booking.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>The titer test lab must be approved by the UAE. Onderstepoort Veterinary Institute and IDEXX South Africa are both accepted. Dubai Pet Relocation verifies lab accreditation before sending samples.</span>
                 </li>
               </ul>
-              <div className="mt-6 p-4 bg-[#5A8F6E]/10 rounded-xl">
+              <div className="mt-6 p-4 bg-[#4F5BD5]/10 rounded-xl">
                 <p className="text-sm text-[#2A2A2A] font-medium">
-                  <span className="text-[#5A8F6E]">Pro tip:</span> If your pet's titer test result is below 0.5 IU/ml, a booster rabies vaccination is required, followed by another 30-day wait and a second titer test. This can add 2+ months to your timeline. Ensure your pet is healthy and not on immunosuppressive medication before the first blood draw. Some vets recommend a pre-titer blood test to check antibody levels before sending the official sample.
+                  <span className="text-[#4F5BD5]">Pro tip:</span> If your pet's titer test result is below 0.5 IU/ml, a booster rabies vaccination is required, followed by another 30-day wait and a second titer test. This can add 2+ months to your timeline. Ensure your pet is healthy and not on immunosuppressive medication before the first blood draw. Some vets recommend a pre-titer blood test to check antibody levels before sending the official sample.
                 </p>
               </div>
             </div>
@@ -302,7 +302,7 @@ export default function SouthAfricaToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">South Africa to Dubai Cost Breakdown</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               The South Africa to Dubai route is mid-range in cost. The titer test adds expense, but local lab availability keeps costs lower than countries that must send samples abroad.
@@ -375,22 +375,22 @@ export default function SouthAfricaToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,800–2,800</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,500</td>
                   </tr>
-                  <tr className="bg-[#5A8F6E]/5">
+                  <tr className="bg-[#4F5BD5]/5">
                     <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total (Johannesburg)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 8,000–13,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 11,000–17,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 14,000–22,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 8,000–13,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 11,000–17,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 14,000–22,000</td>
                   </tr>
-                  <tr className="bg-[#5A8F6E]/5">
+                  <tr className="bg-[#4F5BD5]/5">
                     <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total (Cape Town)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 8,500–14,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 12,000–18,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 15,000–24,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 8,500–14,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 12,000–18,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 15,000–24,000</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
+            <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
                 * Prices are estimates in AED. South African Rand amounts will vary with exchange rates. The titer test is the single biggest additional cost compared to low-risk routes. Johannesburg (JNB) departures are generally cheaper than Cape Town (CPT) due to more flight options and cargo capacity. Air cargo rates may be higher during peak seasons (November–January). Contact Dubai Pet Relocation for an exact quote based on your pet's details and departure city.
               </p>
@@ -403,7 +403,7 @@ export default function SouthAfricaToDubai() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Step-by-Step</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">South Africa to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               The high-risk route requires a minimum of 3–4 months. The titer test and 90-day wait are the longest steps. Here is the exact month-by-month process.
@@ -447,12 +447,12 @@ export default function SouthAfricaToDubai() {
               ].map((step, idx) => (
                 <div key={idx} className={`relative flex items-start gap-6 lg:gap-0 ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                   <div className="hidden lg:block lg:w-1/2" />
-                  <div className="absolute left-6 lg:left-1/2 lg:-ml-5 w-10 h-10 bg-[#5A8F6E] rounded-full flex items-center justify-center z-10">
+                  <div className="absolute left-6 lg:left-1/2 lg:-ml-5 w-10 h-10 bg-[#4F5BD5] rounded-full flex items-center justify-center z-10">
                     <step.icon className="w-5 h-5 text-white" />
                   </div>
                   <div className={`ml-16 lg:ml-0 lg:w-1/2 ${idx % 2 === 0 ? 'lg:pr-12 lg:text-right' : 'lg:pl-12'}`}>
-                    <div className="bg-[#FDFBF8] rounded-[20px] p-6">
-                      <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">{step.week}</span>
+                    <div className="bg-[#F5F6FD] rounded-[20px] p-6">
+                      <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">{step.week}</span>
                       <h3 className="text-lg font-bold text-[#2A2A2A] mt-1 mb-2">{step.title}</h3>
                       <p className="text-[#5A5A5A] text-sm leading-relaxed">{step.desc}</p>
                     </div>
@@ -468,7 +468,7 @@ export default function SouthAfricaToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Airlines</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from South Africa to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               South African Airways, Emirates, and Qatar Airways serve this route. SAA has faced challenges, so Emirates and Qatar are often more reliable.
@@ -487,10 +487,10 @@ export default function SouthAfricaToDubai() {
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Cargo from JNB and CPT</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> 8–10 hours direct or with connections</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Historically popular with SA pet owners</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Route availability may vary</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Cargo from JNB and CPT</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> 8–10 hours direct or with connections</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Historically popular with SA pet owners</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Route availability may vary</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">South African Airways has been the traditional choice for SA pet relocations, but financial difficulties have led to route reductions. Always confirm availability before booking. Dubai Pet Relocation verifies SAA cargo schedules before recommending this carrier.</p>
             </div>
@@ -506,10 +506,10 @@ export default function SouthAfricaToDubai() {
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Cargo from JNB and CPT</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> 8–10 hours direct</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Most reliable for SA pet exports</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Priority animal handling at DXB</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Cargo from JNB and CPT</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> 8–10 hours direct</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Most reliable for SA pet exports</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Priority animal handling at DXB</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Emirates is the most reliable option for South African pet relocations, offering consistent service and direct routing. Their SkyCargo Live team handles all documentation at both ends and is experienced with high-risk country imports.</p>
             </div>
@@ -525,16 +525,16 @@ export default function SouthAfricaToDubai() {
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Cargo from JNB and CPT</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> 10–14 hours with connection via Doha</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Good alternative when Emirates is full</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Competitive rates on select routes</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Cargo from JNB and CPT</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> 10–14 hours with connection via Doha</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Good alternative when Emirates is full</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Competitive rates on select routes</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Qatar Airways is a good alternative when Emirates cargo capacity is limited. The connection via Doha adds 2–4 hours to total travel time, but their animal handling is excellent. Dubai Pet Relocation evaluates all options for your specific travel date.</p>
             </div>
           </div>
 
-          <div className="mt-8 bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+          <div className="mt-8 bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
               <AlertTriangle className="w-5 h-5 text-[#D4A017]" />
               Seasonal & Wildlife Considerations
@@ -556,15 +556,15 @@ export default function SouthAfricaToDubai() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">FAQ</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">FAQ</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">South Africa to Dubai Pet Relocation FAQs</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-[#FDFBF8] rounded-[20px] p-6">
+              <div key={idx} className="bg-[#F5F6FD] rounded-[20px] p-6">
                 <div className="flex items-start gap-3">
-                  <MessageCircle className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-1" />
+                  <MessageCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-[#2A2A2A] text-base mb-2">{faq.question}</h3>
                     <p className="text-[#5A5A5A] text-sm leading-relaxed">{faq.answer}</p>
@@ -579,8 +579,8 @@ export default function SouthAfricaToDubai() {
       {/* CTA */}
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#0F1A30] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
+          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
+            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from South Africa to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
               Dubai Pet Relocation has helped many South African families move their pets to Dubai. From Johannesburg, Cape Town, Durban, or anywhere in South Africa — we manage the titer test, DALRRD export, flight booking, and Dubai customs.
@@ -615,15 +615,15 @@ export default function SouthAfricaToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-[#5A5A5A]">
             <span>Related:</span>
-            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#5A8F6E] hover:underline">Cost Guide</Link>
+            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/guides/uae-pet-import-requirements/" className="text-[#5A8F6E] hover:underline">Import Requirements</Link>
+            <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/how-it-works/" className="text-[#5A8F6E] hover:underline">How It Works</Link>
+            <Link to="/how-it-works/" className="text-[#4F5BD5] hover:underline">How It Works</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/dog-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Dog Relocation</Link>
+            <Link to="/dog-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Dog Relocation</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/cat-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Cat Relocation</Link>
+            <Link to="/cat-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Cat Relocation</Link>
           </div>
         </div>
       </section>

@@ -156,7 +156,7 @@ export default function ImportRequirementsPage() {
   ]
 
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         title="UAE Pet Import Requirements | Documents, Permits & Rules (2026) | Dubai Pet Relocation"
         description="Complete guide to UAE pet import requirements for Dubai. MOCCAE permit, vaccination rules, banned breeds, health certificates, microchip, rabies titer test, and more."
@@ -265,7 +265,7 @@ export default function ImportRequirementsPage() {
             alt="Golden retriever in IATA-compliant travel crate at Dubai Airport cargo terminal"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
         </div>
         <div className="relative max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="max-w-3xl">
@@ -300,8 +300,8 @@ export default function ImportRequirementsPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-10 lg:p-12 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                <CheckCircle className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                <CheckCircle className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A]">Your Quick Checklist</h2>
             </div>
@@ -311,8 +311,8 @@ export default function ImportRequirementsPage() {
             <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
               {checklistItems.map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full border-2 border-[#5A8F6E]/30 flex items-center justify-center shrink-0 mt-0.5">
-                    <span className="text-xs font-bold text-[#5A8F6E]">{i + 1}</span>
+                  <div className="w-6 h-6 rounded-full border-2 border-[#4F5BD5]/30 flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="text-xs font-bold text-[#4F5BD5]">{i + 1}</span>
                   </div>
                   <span className="text-[#2A2A2A] text-sm leading-relaxed">{item}</span>
                 </div>
@@ -415,16 +415,16 @@ export default function ImportRequirementsPage() {
 
           <div className="warning-box mb-8">
             <div className="flex items-start gap-3">
-              <AlertTriangle className="w-5 h-5 text-[#1B2B4D] shrink-0 mt-0.5" />
+              <AlertTriangle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
               <p className="text-sm text-[#2A2A2A]">
                 <strong>Critical:</strong> Every document must show the <strong>same microchip number</strong>. A mismatch between the microchip certificate and the vaccination certificate = automatic rejection at customs.
               </p>
             </div>
           </div>
 
-          <div className="bg-[#F5EFE6] rounded-2xl p-6 mb-8">
+          <div className="bg-[#EEF0FC] rounded-2xl p-6 mb-8">
             <h3 className="font-semibold text-[#2A2A2A] mb-3 flex items-center gap-2">
-              <Clock className="w-5 h-5 text-[#5A8F6E]" />
+              <Clock className="w-5 h-5 text-[#4F5BD5]" />
               How Long Does It Take?
             </h3>
             <ul className="space-y-2 text-[#5A5A5A]">
@@ -453,33 +453,33 @@ export default function ImportRequirementsPage() {
 
           <div className="relative">
             {/* vertical line */}
-            <div className="absolute left-[19px] top-0 bottom-0 w-0.5 bg-[#5A8F6E]/20 hidden sm:block" />
+            <div className="absolute left-[19px] top-0 bottom-0 w-0.5 bg-[#4F5BD5]/20 hidden sm:block" />
 
             <div className="space-y-8">
               {steps.map((step) => (
                 <div key={step.num} className="relative sm:pl-14">
                   {/* timeline dot */}
-                  <div className="hidden sm:flex absolute left-0 top-0 w-10 h-10 rounded-full bg-[#5A8F6E] text-white items-center justify-center font-bold text-sm shadow-md">
+                  <div className="hidden sm:flex absolute left-0 top-0 w-10 h-10 rounded-full bg-[#4F5BD5] text-white items-center justify-center font-bold text-sm shadow-md">
                     {step.num}
                   </div>
                   <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
                     <div className="flex items-center gap-3 mb-3">
-                      <div className="sm:hidden w-8 h-8 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center font-bold text-xs">
+                      <div className="sm:hidden w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center font-bold text-xs">
                         {step.num}
                       </div>
-                      <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center text-[#5A8F6E]">
+                      <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center text-[#4F5BD5]">
                         {step.icon}
                       </div>
                       <div>
                         <h3 className="font-bold text-[#2A2A2A] text-lg">{step.title}</h3>
-                        <span className="text-xs font-semibold text-[#5A8F6E] uppercase tracking-wide">{step.days}</span>
+                        <span className="text-xs font-semibold text-[#4F5BD5] uppercase tracking-wide">{step.days}</span>
                       </div>
                     </div>
                     <p className="text-[#5A5A5A] leading-relaxed mb-3">{step.body}</p>
                     {step.warn && (
                       <div className="warning-box">
                         <div className="flex items-start gap-2">
-                          <AlertTriangle className="w-4 h-4 text-[#1B2B4D] shrink-0 mt-0.5" />
+                          <AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                           <p className="text-sm text-[#2A2A2A]">{step.warn}</p>
                         </div>
                       </div>
@@ -508,10 +508,10 @@ export default function ImportRequirementsPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* MOCCAE Import Permit */}
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <FileText className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <FileText className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">MOCCAE Import Permit</h3>
               </div>
@@ -532,10 +532,10 @@ export default function ImportRequirementsPage() {
             </div>
 
             {/* ISO Microchip Certificate */}
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Microscope className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Microscope className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">ISO Microchip Certificate</h3>
               </div>
@@ -552,10 +552,10 @@ export default function ImportRequirementsPage() {
             </div>
 
             {/* Rabies Vaccination Certificate */}
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Syringe className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Syringe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">Rabies Vaccination Certificate</h3>
               </div>
@@ -569,10 +569,10 @@ export default function ImportRequirementsPage() {
             </div>
 
             {/* Rabies Titer Test */}
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Stethoscope className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Stethoscope className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">Rabies Titer Test (RNATT)</h3>
               </div>
@@ -588,10 +588,10 @@ export default function ImportRequirementsPage() {
             </div>
 
             {/* International Health Certificate */}
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <FileText className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <FileText className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">International Health Certificate</h3>
               </div>
@@ -603,10 +603,10 @@ export default function ImportRequirementsPage() {
             </div>
 
             {/* Antiparasitic Treatment Record */}
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Shield className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">Antiparasitic Treatment Record</h3>
               </div>
@@ -618,10 +618,10 @@ export default function ImportRequirementsPage() {
             </div>
 
             {/* Owner's Passport */}
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 md:col-span-2 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 md:col-span-2 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <FileText className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <FileText className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">Owner&apos;s Passport and UAE Visa</h3>
               </div>
@@ -697,8 +697,8 @@ export default function ImportRequirementsPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-[20px] shadow-sm p-6 border-l-4 border-[#1B2B4D] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="font-bold text-[#1B2B4D] mb-4 flex items-center gap-2">
+            <div className="bg-white rounded-[20px] shadow-sm p-6 border-l-4 border-[#4F5BD5] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <h3 className="font-bold text-[#4F5BD5] mb-4 flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5" />
                 Restricted Breeds (Dubai-Specific Rules)
               </h3>
@@ -731,8 +731,8 @@ export default function ImportRequirementsPage() {
 
           <div className="bg-white rounded-[20px] shadow-sm p-6 mb-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
             <h3 className="font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                <PawPrint className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               Service and Emotional Support Animal Exceptions
             </h3>
@@ -769,10 +769,10 @@ export default function ImportRequirementsPage() {
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8">Vaccination Requirements</h2>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Syringe className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Syringe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 Rabies Vaccination (Mandatory for All)
               </h3>
@@ -785,10 +785,10 @@ export default function ImportRequirementsPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Shield className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 Core Vaccinations — Dogs
               </h3>
@@ -800,10 +800,10 @@ export default function ImportRequirementsPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Shield className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 Core Vaccinations — Cats
               </h3>
@@ -815,7 +815,7 @@ export default function ImportRequirementsPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4">Vaccination Timing — Why Order Matters</h3>
               <ol className="text-sm text-[#5A5A5A] space-y-2 list-decimal list-inside">
                 <li><strong>Microchip first.</strong> Always. The microchip must precede the rabies vaccination.</li>
@@ -923,16 +923,16 @@ export default function ImportRequirementsPage() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4">How to Apply</h3>
               <ol className="text-[#5A5A5A] space-y-2 list-decimal list-inside">
-                <li><strong>Online:</strong> Visit <a href="https://www.moccae.gov.ae/en/services/export-import-services/import-permit-pets.aspx" target="_blank" rel="noopener noreferrer" className="text-[#5A8F6E] underline">moccae.gov.ae</a> and navigate to the pet import permit section</li>
+                <li><strong>Online:</strong> Visit <a href="https://www.moccae.gov.ae/en/services/export-import-services/import-permit-pets.aspx" target="_blank" rel="noopener noreferrer" className="text-[#4F5BD5] underline">moccae.gov.ae</a> and navigate to the pet import permit section</li>
                 <li><strong>Mobile app:</strong> Download the MOCCAE app (available on iOS and Android)</li>
                 <li><strong>Through a licensed agent:</strong> Dubai Pet Relocation can submit the application on your behalf</li>
               </ol>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4">What You&apos;ll Need</h3>
               <ul className="text-[#5A5A5A] space-y-1">
                 <li>Copy of your passport</li>
@@ -945,7 +945,7 @@ export default function ImportRequirementsPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4">Fees and Timeline</h3>
               <ul className="text-[#5A5A5A] space-y-1">
                 <li><strong>Fee:</strong> AED 200 per animal (plus release fee on arrival: AED 500/dog or AED 250/cat)</li>
@@ -954,7 +954,7 @@ export default function ImportRequirementsPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#5A8F6E]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4">Common Application Mistakes</h3>
               <ul className="text-[#5A5A5A] space-y-1">
                 <li><strong>Microchip mismatch:</strong> The microchip number on the permit application doesn&apos;t match the vaccination certificate</li>
@@ -990,8 +990,8 @@ export default function ImportRequirementsPage() {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Plane className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Plane className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 Emirates SkyCargo
               </h3>
@@ -1010,8 +1010,8 @@ export default function ImportRequirementsPage() {
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Plane className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Plane className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 Etihad Airways
               </h3>
@@ -1031,8 +1031,8 @@ export default function ImportRequirementsPage() {
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                  <Plane className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                  <Plane className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 flydubai
               </h3>
@@ -1108,7 +1108,7 @@ export default function ImportRequirementsPage() {
             The International Health Certificate is the last document you obtain before travel. Get the timing wrong, and it expires before your pet arrives.
           </p>
 
-          <div className="bg-[#FDFBF8] rounded-[20px] p-6 mb-8 border border-[#5A8F6E]/10">
+          <div className="bg-[#F5F6FD] rounded-[20px] p-6 mb-8 border border-[#4F5BD5]/10">
             <ul className="text-[#5A5A5A] space-y-2">
               <li><strong>Valid for 10 days</strong> from the date of issuance to the date of arrival in the UAE</li>
               <li>Must be issued by a <strong>government-accredited or official veterinarian</strong></li>
@@ -1150,8 +1150,8 @@ export default function ImportRequirementsPage() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-white rounded-[20px] shadow-sm p-6 border-t-4 border-[#5A8F6E] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="font-bold text-[#5A8F6E] mb-3 flex items-center gap-2">
+            <div className="bg-white rounded-[20px] shadow-sm p-6 border-t-4 border-[#4F5BD5] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <h3 className="font-bold text-[#4F5BD5] mb-3 flex items-center gap-2">
                 <CheckCircle className="w-5 h-5" />
                 No Quarantine (If Documents Are Correct)
               </h3>
@@ -1160,8 +1160,8 @@ export default function ImportRequirementsPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-[20px] shadow-sm p-6 border-t-4 border-[#1B2B4D] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="font-bold text-[#1B2B4D] mb-3 flex items-center gap-2">
+            <div className="bg-white rounded-[20px] shadow-sm p-6 border-t-4 border-[#4F5BD5] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+              <h3 className="font-bold text-[#4F5BD5] mb-3 flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5" />
                 Conditional Quarantine (If Documents Are Wrong)
               </h3>
@@ -1243,7 +1243,7 @@ export default function ImportRequirementsPage() {
       </section>
 
       {/* ═══════════ FINAL CTA ═══════════ */}
-      <section className="py-20 lg:py-28 bg-[#1B2B4D]">
+      <section className="py-20 lg:py-28 bg-[#4F5BD5]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Ready to bring your pet home to Dubai?
@@ -1277,7 +1277,7 @@ export default function ImportRequirementsPage() {
       </section>
 
       {/* ═══════════ FOOTER NOTE ═══════════ */}
-      <section className="py-8 bg-[#FDFBF8]">
+      <section className="py-8 bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-[#8A8A8A]">
             Dubai Pet Relocation makes your pet&apos;s journey clear, calm, and certain. We guide you through MOCCAE import requirements. Vetted relocation partners. Human communication on WhatsApp at every step.

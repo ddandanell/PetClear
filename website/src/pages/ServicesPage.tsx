@@ -42,8 +42,8 @@ const tiers = [
     price: 'AED 1,500 – 2,500',
     description: 'Perfect for experienced pet owners who need expert guidance and document checks but prefer to handle bookings themselves.',
     icon: Plane,
-    color: 'bg-[#F5EFE6]',
-    iconBg: 'bg-[#1B2B4D]',
+    color: 'bg-[#EEF0FC]',
+    iconBg: 'bg-[#4F5BD5]',
     features: [
       { label: 'Route & eligibility check', included: true },
       { label: 'Document checklist & review', included: true },
@@ -62,8 +62,8 @@ const tiers = [
     price: 'AED 3,000 – 5,000',
     description: 'Our most popular option. We handle the coordination, bookings, and communication so you can focus on your move.',
     icon: Star,
-    color: 'bg-[#EDF6F0]',
-    iconBg: 'bg-[#5A8F6E]',
+    color: 'bg-[#E9ECFB]',
+    iconBg: 'bg-[#4F5BD5]',
     popular: true,
     features: [
       { label: 'Everything in PawPilot', included: true },
@@ -83,7 +83,7 @@ const tiers = [
     price: 'AED 5,000 – 8,000',
     description: 'White-glove service for complex relocations, nervous first-timers, or anyone who wants every detail handled.',
     icon: Heart,
-    color: 'bg-[#F5EFE6]',
+    color: 'bg-[#EEF0FC]',
     iconBg: 'bg-[#C89F5A]',
     features: [
       { label: 'Everything in PawPartner', included: true },
@@ -196,13 +196,13 @@ export default function ServicesPage() {
       </section>
 
       {/* ═══════════ TIER CARDS ═══════════ */}
-      <section className="bg-[#FDFBF8] section-padding">
+      <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6">
             {tiers.map((tier) => (
-              <Card key={tier.name} className={`relative flex flex-col ${tier.popular ? 'ring-2 ring-[#5A8F6E]' : ''}`}>
+              <Card key={tier.name} className={`relative flex flex-col ${tier.popular ? 'ring-2 ring-[#4F5BD5]' : ''}`}>
                 {tier.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#5A8F6E] text-white text-xs font-bold rounded-full uppercase tracking-wider">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#4F5BD5] text-white text-xs font-bold rounded-full uppercase tracking-wider">
                     Most Popular
                   </span>
                 )}
@@ -210,20 +210,20 @@ export default function ServicesPage() {
                   <tier.icon className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-1">{tier.name}</h3>
-                <p className="text-sm font-semibold text-[#5A8F6E] mb-2">{tier.subtitle}</p>
+                <p className="text-sm font-semibold text-[#4F5BD5] mb-2">{tier.subtitle}</p>
                 <p className="text-lg font-bold text-[#2A2A2A] mb-4">{tier.price}</p>
                 <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6 flex-1">{tier.description}</p>
                 <ul className="space-y-2.5 mb-6">
                   {tier.features.slice(0, 5).map((feature) => (
                     <li key={feature.label} className="flex items-start gap-2.5 text-sm text-[#5A5A5A]">
-                      <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                       <span>{feature.label}</span>
                     </li>
                   ))}
                 </ul>
                 <button
                   onClick={() => setCompareTier(compareTier === tier.name ? null : tier.name)}
-                  className="text-sm font-semibold text-[#1B2B4D] hover:underline inline-flex items-center gap-1 mb-4"
+                  className="text-sm font-semibold text-[#4F5BD5] hover:underline inline-flex items-center gap-1 mb-4"
                 >
                   {compareTier === tier.name ? 'Hide details' : 'See all features'}
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -254,7 +254,7 @@ export default function ServicesPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#EDE7DD]">
+                <tr className="border-b border-[#E2E5F6]">
                   <th className="text-left py-4 px-4 font-semibold text-[#2A2A2A]">Feature</th>
                   {tiers.map((tier) => (
                     <th key={tier.name} className="text-center py-4 px-4 font-semibold text-[#2A2A2A]">
@@ -266,14 +266,14 @@ export default function ServicesPage() {
               </thead>
               <tbody>
                 {tiers[0].features.map((feature, idx) => (
-                  <tr key={feature.label} className={idx % 2 === 0 ? 'bg-[#FAF7F1]' : ''}>
+                  <tr key={feature.label} className={idx % 2 === 0 ? 'bg-[#F0F2FB]' : ''}>
                     <td className="py-3 px-4 text-[#5A5A5A]">{feature.label}</td>
                     {tiers.map((tier) => {
                       const f = tier.features[idx]
                       return (
                         <td key={tier.name} className="text-center py-3 px-4">
                           {f?.included ? (
-                            <CheckCircle className="w-5 h-5 text-[#5A8F6E] mx-auto" />
+                            <CheckCircle className="w-5 h-5 text-[#4F5BD5] mx-auto" />
                           ) : (
                             <X className="w-5 h-5 text-[#C8C8C8] mx-auto" />
                           )}
@@ -289,10 +289,10 @@ export default function ServicesPage() {
       </section>
 
       {/* ═══════════ ADD-ONS ═══════════ */}
-      <section className="bg-[#FDFBF8] section-padding">
+      <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">Extras</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Extras</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-3">
               Add-On Services
             </h2>
@@ -303,8 +303,8 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {addOns.map((addon) => (
               <Card key={addon.name}>
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                  <addon.icon className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                  <addon.icon className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">{addon.name}</h3>
                 <p className="text-sm text-[#5A5A5A] leading-relaxed">{addon.desc}</p>
@@ -318,7 +318,7 @@ export default function ServicesPage() {
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">How It Works</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">How It Works</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
               The Same 7-Step Process, Every Tier
             </h2>
@@ -328,10 +328,10 @@ export default function ServicesPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {processSteps.map((s) => (
-              <div key={s.step} className="bg-[#FDFBF8] rounded-[20px] p-6 relative">
-                <span className="absolute top-4 right-4 text-[48px] font-bold text-[#1B2B4D]/[0.04] leading-none">{s.step}</span>
-                <div className="w-10 h-10 rounded-[12px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                  <s.icon className="w-5 h-5 text-[#5A8F6E]" />
+              <div key={s.step} className="bg-[#F5F6FD] rounded-[20px] p-6 relative">
+                <span className="absolute top-4 right-4 text-[48px] font-bold text-[#4F5BD5]/[0.04] leading-none">{s.step}</span>
+                <div className="w-10 h-10 rounded-[12px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                  <s.icon className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-sm font-bold text-[#2A2A2A] mb-2">{s.title}</h3>
                 <p className="text-xs text-[#5A5A5A] leading-relaxed">{s.body}</p>
@@ -339,7 +339,7 @@ export default function ServicesPage() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link to="/how-it-works" className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-[#1B2B4D] text-[#1B2B4D] rounded-2xl font-semibold text-sm hover:bg-[#1B2B4D]/5 transition-colors">
+            <Link to="/how-it-works" className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">
               See the Full Process <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -347,7 +347,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ═══════════ CTA ═══════════ */}
-      <section className="bg-[#1B2B4D] section-padding">
+      <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Not Sure Which Tier Is Right for You?

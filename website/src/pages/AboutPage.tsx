@@ -13,7 +13,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span className="pr-4">{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -121,11 +121,11 @@ export default function AboutPage() {
       </section>
 
       {/* ═══════════ OUR STORY ═══════════ */}
-      <section className="bg-[#FDFBF8] section-padding">
+      <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">Our Story</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Our Story</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
                 Built by Pet Owners, for Pet Owners
               </h2>
@@ -143,29 +143,29 @@ export default function AboutPage() {
             </div>
             <div className="grid sm:grid-cols-2 gap-4">
               <Card className="text-center">
-                <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <p className="text-lg font-bold text-[#2A2A2A] mb-1">Trusted relocation guidance</p>
                 <p className="text-sm text-[#8A8A8A]">Pets relocated safely</p>
               </Card>
               <Card className="text-center">
-                <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mx-auto mb-4">
-                  <Globe className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
+                  <Globe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <p className="text-2xl font-bold text-[#2A2A2A] mb-1">50+</p>
                 <p className="text-sm text-[#8A8A8A]">Countries served</p>
               </Card>
               <Card className="text-center">
-                <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <p className="text-2xl font-bold text-[#2A2A2A] mb-1">15 min</p>
                 <p className="text-sm text-[#8A8A8A]">Average response time</p>
               </Card>
               <Card className="text-center">
-                <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <p className="text-2xl font-bold text-[#2A2A2A] mb-1">100%</p>
                 <p className="text-sm text-[#8A8A8A]">Document check rate</p>
@@ -179,15 +179,15 @@ export default function AboutPage() {
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">Why We Know What We Are Talking About</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Why We Know What We Are Talking About</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
               Experience, Expertise, Authority, and Trust
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
-              <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-5">
-                <FileCheck className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-5">
+                <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Deep MOCCAE Knowledge</h3>
               <p className="text-[#5A5A5A] text-base leading-relaxed">
@@ -195,8 +195,8 @@ export default function AboutPage() {
               </p>
             </Card>
             <Card>
-              <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-5">
-                <Shield className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-5">
+                <Shield className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Airline Relationships</h3>
               <p className="text-[#5A5A5A] text-base leading-relaxed">
@@ -204,8 +204,8 @@ export default function AboutPage() {
               </p>
             </Card>
             <Card>
-              <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-5">
-                <Users className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-5">
+                <Users className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Vet Network</h3>
               <p className="text-[#5A5A5A] text-base leading-relaxed">
@@ -217,10 +217,10 @@ export default function AboutPage() {
       </section>
 
       {/* ═══════════ TEAM ═══════════ */}
-      <section className="bg-[#FDFBF8] section-padding">
+      <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">The People Behind Dubai Pet Relocation</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">The People Behind Dubai Pet Relocation</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
               A Small Team of Pet Lovers and Logistics Experts
             </h2>
@@ -247,11 +247,11 @@ export default function AboutPage() {
               },
             ].map((member) => (
               <Card key={member.name}>
-                <div className="w-14 h-14 rounded-full bg-[#1B2B4D] flex items-center justify-center mb-5">
+                <div className="w-14 h-14 rounded-full bg-[#4F5BD5] flex items-center justify-center mb-5">
                   <Users className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-1">{member.name}</h3>
-                <p className="text-sm font-semibold text-[#5A8F6E] mb-3">{member.role}</p>
+                <p className="text-sm font-semibold text-[#4F5BD5] mb-3">{member.role}</p>
                 <p className="text-[#5A5A5A] text-base leading-relaxed">{member.desc}</p>
               </Card>
             ))}
@@ -264,7 +264,7 @@ export default function AboutPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">How We Work</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">How We Work</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
                 We Are Not a Middleman. We Are a Concierge.
               </h2>
@@ -286,19 +286,19 @@ export default function AboutPage() {
                     'You get specialist quality at every step, not a generalist doing everything.',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2.5">
-                      <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-1" />
+                      <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-1" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <div className="bg-[#F5EFE6] rounded-[20px] p-8">
+            <div className="bg-[#EEF0FC] rounded-[20px] p-8">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-6">What Dubai Pet Relocation Does vs. What Partners Do</h3>
               <div className="space-y-4">
                 <div className="bg-white rounded-[16px] p-5">
                   <p className="font-semibold text-[#2A2A2A] mb-2 flex items-center gap-2">
-                    <Heart className="w-4 h-4 text-[#5A8F6E]" /> Dubai Pet Relocation
+                    <Heart className="w-4 h-4 text-[#4F5BD5]" /> Dubai Pet Relocation
                   </p>
                   <ul className="space-y-1.5 text-sm text-[#5A5A5A]">
                     <li>Understand your route, timeline, and pet profile</li>
@@ -310,7 +310,7 @@ export default function AboutPage() {
                 </div>
                 <div className="bg-white rounded-[16px] p-5">
                   <p className="font-semibold text-[#2A2A2A] mb-2 flex items-center gap-2">
-                    <Shield className="w-4 h-4 text-[#1B2B4D]" /> Partners (Vets, Airlines, Transport)
+                    <Shield className="w-4 h-4 text-[#4F5BD5]" /> Partners (Vets, Airlines, Transport)
                   </p>
                   <ul className="space-y-1.5 text-sm text-[#5A5A5A]">
                     <li>Perform veterinary exams and issue health certificates</li>
@@ -327,7 +327,7 @@ export default function AboutPage() {
       </section>
 
       {/* ═══════════ CTA ═══════════ */}
-      <section className="bg-[#1B2B4D] section-padding">
+      <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Ready to Meet the Team Behind Your Pet's Journey?

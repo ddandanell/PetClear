@@ -47,7 +47,7 @@ function FaqItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span className="pr-4">{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 shrink-0 text-[#5A8F6E]" /> : <ChevronDown className="w-5 h-5 shrink-0 text-[#8A8A8A]" />}
+        {open ? <ChevronUp className="w-5 h-5 shrink-0 text-[#4F5BD5]" /> : <ChevronDown className="w-5 h-5 shrink-0 text-[#8A8A8A]" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -58,10 +58,10 @@ function FaqItem({ question, answer }: { question: string; answer: React.ReactNo
 function Step({ number, title, children }: { number: number; title: string; children: React.ReactNode }) {
   return (
     <div className="relative pl-10 pb-10 last:pb-0">
-      <div className="absolute left-0 top-0 w-7 h-7 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold">
+      <div className="absolute left-0 top-0 w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold">
         {number}
       </div>
-      <div className="absolute left-3.5 top-7 bottom-0 w-px bg-[#1B2B4D]/20" />
+      <div className="absolute left-3.5 top-7 bottom-0 w-px bg-[#4F5BD5]/20" />
       <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">{title}</h3>
       <div className="text-[#5A5A5A] leading-relaxed space-y-2">{children}</div>
     </div>
@@ -82,9 +82,9 @@ function CostTable({ size, items, total }: { size: string; items: [string, strin
                 <td className="text-right text-[#5A5A5A]">{value}</td>
               </tr>
             ))}
-            <tr className="border-t-2 border-[#1B2B4D]">
+            <tr className="border-t-2 border-[#4F5BD5]">
               <td className="font-bold text-[#2A2A2A]">Total estimated range</td>
-              <td className="text-right font-bold text-[#1B2B4D]">{total}</td>
+              <td className="text-right font-bold text-[#4F5BD5]">{total}</td>
             </tr>
           </tbody>
         </table>
@@ -95,7 +95,7 @@ function CostTable({ size, items, total }: { size: string; items: [string, strin
 
 export default function DogRelocationPage() {
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         title="Dog Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation"
         description="Expert guide to relocating your dog to Dubai. Breed checks, crate sizing, MOCCAE import permit, flight booking, banned breeds, and everything you need for a safe journey."
@@ -175,8 +175,8 @@ export default function DogRelocationPage() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <div className="flex items-center gap-2 mb-4">
-                <PawPrint className="w-5 h-5 text-[#5A8F6E]" />
-                <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Dog Relocation</span>
+                <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
+                <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Dog Relocation</span>
               </div>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 Dog Relocation to Dubai — Bring Your Dog Home Safely
@@ -200,17 +200,17 @@ export default function DogRelocationPage() {
                 />
                 <Link
                   to="/how-it-works"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#1B2B4D] text-[#1B2B4D] rounded-2xl font-semibold text-sm hover:bg-[#1B2B4D]/5 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
                 >
                   How it works
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
               <div className="flex flex-wrap items-center gap-4 text-xs text-[#8A8A8A]">
-                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-[#1B2B4D]" /> Vetted relocation partners</span>
-                <span className="flex items-center gap-1"><Shield className="w-3.5 h-3.5 text-[#1B2B4D]" /> MOCCAE import guidance</span>
-                <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5 text-[#1B2B4D]" /> IATA-compliant</span>
-                <span className="flex items-center gap-1"><Heart className="w-3.5 h-3.5 text-[#1B2B4D]" /> 150+ dogs relocated</span>
+                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-[#4F5BD5]" /> Vetted relocation partners</span>
+                <span className="flex items-center gap-1"><Shield className="w-3.5 h-3.5 text-[#4F5BD5]" /> MOCCAE import guidance</span>
+                <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5 text-[#4F5BD5]" /> IATA-compliant</span>
+                <span className="flex items-center gap-1"><Heart className="w-3.5 h-3.5 text-[#4F5BD5]" /> 150+ dogs relocated</span>
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -221,7 +221,7 @@ export default function DogRelocationPage() {
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover"
                   loading="eager"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-white text-sm font-medium">Vetted relocation partners · MOCCAE import guidance · IATA-compliant</p>
                 </div>
@@ -241,8 +241,8 @@ export default function DogRelocationPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {/* Card 1 */}
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <PawPrint className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;Will my dog be scared in the crate?&rdquo;</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -254,8 +254,8 @@ export default function DogRelocationPage() {
             </div>
             {/* Card 2 */}
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <AlertTriangle className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;Is my breed allowed in Dubai?&rdquo;</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -271,8 +271,8 @@ export default function DogRelocationPage() {
             </div>
             {/* Card 3 */}
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 sm:col-span-2 lg:col-span-1">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <Plane className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <Plane className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;What if something goes wrong during the flight?&rdquo;</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -339,42 +339,42 @@ export default function DogRelocationPage() {
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-5">The five documents every dog needs</h3>
               <ol className="space-y-4">
                 <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold shrink-0">1</span>
+                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">1</span>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">MOCCAE Import Permit</p>
                     <p className="text-sm text-[#5A5A5A]">Applied online via the MOCCAE portal. Valid 90 days from issuance. Cost: AED 200 per pet (plus AED 500/dog release fee on arrival).</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold shrink-0">2</span>
+                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">2</span>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">ISO Microchip Certificate</p>
                     <p className="text-sm text-[#5A5A5A]">15-digit ISO 11784/11785 compliant. Must be implanted before rabies vaccination.</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold shrink-0">3</span>
+                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">3</span>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Rabies Vaccination Certificate</p>
                     <p className="text-sm text-[#5A5A5A]">Administered at or after 12 weeks of age. Must be at least 21 days old at time of travel, and within 12 months.</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold shrink-0">4</span>
+                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">4</span>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">International Health Certificate</p>
                     <p className="text-sm text-[#5A5A5A]">Issued by an accredited government veterinarian within 10 days of arrival. Must include antiparasitic treatment records.</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold shrink-0">5</span>
+                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">5</span>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Antiparasitic Treatment Record</p>
                     <p className="text-sm text-[#5A5A5A]">Internal deworming and external flea/tick treatment within 14 days of arrival.</p>
                   </div>
                 </li>
               </ol>
-              <div className="mt-4 p-3 bg-[#F5EFE6] rounded-lg text-sm text-[#5A5A5A]">
+              <div className="mt-4 p-3 bg-[#EEF0FC] rounded-lg text-sm text-[#5A5A5A]">
                 <strong className="text-[#2A2A2A]">High-risk countries only:</strong> Rabies titer test (RNATT) with result ≥0.5 IU/ml, plus 90-day wait from blood sampling date.
               </div>
             </div>
@@ -382,28 +382,28 @@ export default function DogRelocationPage() {
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-5">Vaccination timeline for dogs</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#5A8F6E] shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
                   <span><strong className="text-[#2A2A2A]">Canine Distemper (CDV)</strong> — Required</span>
                 </li>
                 <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#5A8F6E] shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
                   <span><strong className="text-[#2A2A2A]">Canine Parvovirus (CPV)</strong> — Required</span>
                 </li>
                 <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#5A8F6E] shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
                   <span><strong className="text-[#2A2A2A]">Infectious Canine Hepatitis (Adenovirus)</strong> — Required</span>
                 </li>
                 <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#5A8F6E] shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
                   <span><strong className="text-[#2A2A2A]">Leptospirosis</strong> — Required</span>
                 </li>
                 <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#5A8F6E] shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
                   <span><strong className="text-[#2A2A2A]">Rabies</strong> — Required (inactivated or recombinant only; live attenuated vaccines are not accepted by MOCCAE)</span>
                 </li>
               </ul>
               <div className="mt-6 pt-6 border-t border-gray-100">
-                <Link to="/import-requirements" className="inline-flex items-center gap-2 text-sm font-semibold text-[#1B2B4D] hover:underline">
+                <Link to="/import-requirements" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
                   <FileText className="w-4 h-4" />
                   Read our full guide to UAE pet import requirements
                 </Link>
@@ -425,7 +425,7 @@ export default function DogRelocationPage() {
             {/* Banned */}
             <div className="bg-[#FEF2F2] border border-[#FECACA] rounded-[20px] p-6 sm:p-8">
               <div className="flex items-center gap-3 mb-5">
-                <AlertTriangle className="w-6 h-6 text-[#5A8F6E]" />
+                <AlertTriangle className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#C0392B]">Completely banned breeds</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] mb-4">
@@ -468,16 +468,16 @@ export default function DogRelocationPage() {
                 </div>
               </div>
               <div className="mt-4 p-3 bg-white rounded-lg text-sm text-[#5A5A5A]">
-                <Info className="w-4 h-4 inline mr-1 text-[#5A8F6E]" />
+                <Info className="w-4 h-4 inline mr-1 text-[#4F5BD5]" />
                 Some sources list Rottweiler, Doberman Pinscher, and Boxer as banned. Current Dubai Municipality guidance classifies these as <em>restricted</em>, not fully banned. We verify with MOCCAE before every import.
               </div>
             </div>
 
             {/* Restricted */}
             <div className="space-y-8">
-              <div className="bg-white border border-[#1B2B4D]/30 rounded-[20px] p-6 sm:p-8">
+              <div className="bg-white border border-[#4F5BD5]/30 rounded-[20px] p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-5">
-                  <Shield className="w-6 h-6 text-[#5A8F6E]" />
+                  <Shield className="w-6 h-6 text-[#4F5BD5]" />
                   <h3 className="text-lg font-semibold text-[#2A2A2A]">Restricted breeds — what &ldquo;restricted&rdquo; actually means</h3>
                 </div>
                 <p className="text-sm text-[#5A5A5A] mb-4">In Dubai, the following breeds face additional rules even if they are permitted to enter:</p>
@@ -528,19 +528,19 @@ export default function DogRelocationPage() {
               <p className="text-sm text-[#5A5A5A] mb-4">Use these three measurements:</p>
               <ol className="space-y-3 mb-6">
                 <li className="flex gap-3 text-sm text-[#5A5A5A]">
-                  <span className="font-bold text-[#1B2B4D]">1.</span>
+                  <span className="font-bold text-[#4F5BD5]">1.</span>
                   <span><strong className="text-[#2A2A2A]">Length (A):</strong> From tip of nose to base of tail, while standing</span>
                 </li>
                 <li className="flex gap-3 text-sm text-[#5A5A5A]">
-                  <span className="font-bold text-[#1B2B4D]">2.</span>
+                  <span className="font-bold text-[#4F5BD5]">2.</span>
                   <span><strong className="text-[#2A2A2A]">Height (B):</strong> From ground to top of head or ears (whichever is higher), while standing</span>
                 </li>
                 <li className="flex gap-3 text-sm text-[#5A5A5A]">
-                  <span className="font-bold text-[#1B2B4D]">3.</span>
+                  <span className="font-bold text-[#4F5BD5]">3.</span>
                   <span><strong className="text-[#2A2A2A]">Width (C):</strong> At the widest point of the body</span>
                 </li>
               </ol>
-              <div className="p-4 bg-[#F5EFE6] rounded-2xl">
+              <div className="p-4 bg-[#EEF0FC] rounded-2xl">
                 <p className="text-sm font-semibold text-[#2A2A2A] mb-2">Crate minimum internal dimensions:</p>
                 <ul className="text-sm text-[#5A5A5A] space-y-1">
                   <li>• Length = A + ½B (your dog must be able to lie down with legs extended)</li>
@@ -626,32 +626,32 @@ export default function DogRelocationPage() {
           <div className="grid lg:grid-cols-2 gap-8 mt-12">
             <div className="bg-white rounded-[20px] shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <Plane className="w-6 h-6 text-[#5A8F6E]" />
+                <Plane className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#2A2A2A]">Emirates SkyCargo — the standard for DXB arrivals</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] mb-4">Emirates SkyCargo is the most common choice for dogs arriving at Dubai International Airport (DXB).</p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold">✕</span> <strong className="text-[#2A2A2A]">In-cabin:</strong> No regular dogs allowed. Only trained service dogs.</li>
                 <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold">✕</span> <strong className="text-[#2A2A2A]">Checked baggage:</strong> Not accepted for flights to Dubai.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Mandatory. We book directly with the Emirates SkyCargo team, not the passenger reservation desk.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Booking notice:</strong> Minimum 72 hours advance.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Requirements:</strong> Photos of your dog in the crate, health certificates, and an Owner Acknowledgement Form.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Transit care:</strong> Dogs in transit for more than 6 hours at DXB are cared for at the Emirates Pet Lounge.</li>
-                <li className="flex items-start gap-2"><span className="text-[#1B2B4D] font-bold">!</span> <strong className="text-[#2A2A2A]">Breed restrictions:</strong> Emirates is stricter than UAE law. Snub-nose breeds are restricted to November–April only.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Mandatory. We book directly with the Emirates SkyCargo team, not the passenger reservation desk.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Booking notice:</strong> Minimum 72 hours advance.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Requirements:</strong> Photos of your dog in the crate, health certificates, and an Owner Acknowledgement Form.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Transit care:</strong> Dogs in transit for more than 6 hours at DXB are cared for at the Emirates Pet Lounge.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">!</span> <strong className="text-[#2A2A2A]">Breed restrictions:</strong> Emirates is stricter than UAE law. Snub-nose breeds are restricted to November–April only.</li>
               </ul>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <Plane className="w-6 h-6 text-[#5A8F6E]" />
+                <Plane className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#2A2A2A]">Etihad Airways — in-cabin option to Abu Dhabi</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] mb-4">Etihad is the only UAE airline that allows small dogs in the cabin — but only on flights to or from Abu Dhabi (AUH), not Dubai.</p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">In-cabin (PETC):</strong> Dog + carrier must weigh ≤8 kg. Carrier max: 40 × 40 × 22 cm (Economy). Fee: USD 399 per flight segment.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Booking:</strong> Must be done via Etihad Contact Centre. Submit form 7 days before, documents 72 hours before.</li>
-                <li className="flex items-start gap-2"><span className="text-[#1B2B4D] font-bold">!</span> <strong className="text-[#2A2A2A]">Abu Dhabi entry:</strong> Requires a Bill of Entry from MICCO Logistics (AED 365) at least 24 hours before departure.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Available for larger dogs or routes where cabin is not permitted.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">In-cabin (PETC):</strong> Dog + carrier must weigh ≤8 kg. Carrier max: 40 × 40 × 22 cm (Economy). Fee: USD 399 per flight segment.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Booking:</strong> Must be done via Etihad Contact Centre. Submit form 7 days before, documents 72 hours before.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">!</span> <strong className="text-[#2A2A2A]">Abu Dhabi entry:</strong> Requires a Bill of Entry from MICCO Logistics (AED 365) at least 24 hours before departure.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Available for larger dogs or routes where cabin is not permitted.</li>
               </ul>
             </div>
           </div>
@@ -711,7 +711,7 @@ export default function DogRelocationPage() {
           <div className="grid lg:grid-cols-2 gap-8 mt-12">
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <Thermometer className="w-6 h-6 text-[#5A8F6E]" />
+                <Thermometer className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#2A2A2A]">When dogs cannot fly (June–September)</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] mb-4">
@@ -734,7 +734,7 @@ export default function DogRelocationPage() {
 
             <div className="bg-[#FEF2F2] border border-[#FECACA] rounded-[20px] p-6 sm:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <Heart className="w-6 h-6 text-[#5A8F6E]" />
+                <Heart className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#C0392B]">Special warning for snub-nose breeds</h3>
               </div>
               <p className="text-sm font-semibold text-[#2A2A2A] mb-3">
@@ -828,19 +828,19 @@ export default function DogRelocationPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="bg-[#F5EFE6] rounded-[20px] p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="bg-[#EEF0FC] rounded-[20px] p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">What is included in the Dubai Pet Relocation coordination fee</h3>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Breed and route check</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> MOCCAE import permit application</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Veterinary partner coordination</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> IATA crate supply and sizing</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Cargo flight booking with the airline</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Pre-travel document audit (we check every document three times)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Customs clearance at Dubai arrival</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Door-to-door transport or terminal pickup</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> WhatsApp updates at every stage</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Rebooking at no extra coordination fee if the airline cancels or delays</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Breed and route check</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> MOCCAE import permit application</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Veterinary partner coordination</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> IATA crate supply and sizing</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Cargo flight booking with the airline</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Pre-travel document audit (we check every document three times)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Customs clearance at Dubai arrival</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Door-to-door transport or terminal pickup</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> WhatsApp updates at every stage</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Rebooking at no extra coordination fee if the airline cancels or delays</li>
               </ul>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
@@ -859,7 +859,7 @@ export default function DogRelocationPage() {
               label="Get a dog relocation quote"
               message="Hi, I read your dog relocation cost guide. I'd like an itemised quote for my dog."
             />
-            <Link to="/cost-guide" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#1B2B4D] text-[#1B2B4D] rounded-2xl font-semibold text-sm hover:bg-[#1B2B4D]/5 transition-colors">
+            <Link to="/cost-guide" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">
               <FileText className="w-4 h-4" />
               Read our full guide to pet relocation costs in Dubai
             </Link>
@@ -875,14 +875,14 @@ export default function DogRelocationPage() {
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-[#1B2B4D] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg key={i} className="w-4 h-4 text-[#4F5BD5] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
                 ))}
               </div>
               <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
                 &ldquo;I was terrified about putting Max on a plane. He's not just a dog — he's been with me through two job changes and a divorce. Dubai Pet Relocation sent me photos of him at every step: at the vet, in the crate, at check-in, on the tarmac, and the moment he came through customs. The quote was itemised. I knew exactly what I was paying for. When he arrived, he was calm, hydrated, and happy. I cannot recommend them enough.&rdquo;
               </blockquote>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#EDF6F0] flex items-center justify-center text-[#5A8F6E] font-bold text-sm">SJ</div>
+                <div className="w-10 h-10 rounded-full bg-[#E9ECFB] flex items-center justify-center text-[#4F5BD5] font-bold text-sm">SJ</div>
                 <div>
                   <p className="text-sm font-semibold text-[#2A2A2A]">Sarah J.</p>
                   <p className="text-xs text-[#8A8A8A]">Relocated from London to Dubai, March 2026</p>
@@ -892,14 +892,14 @@ export default function DogRelocationPage() {
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-[#1B2B4D] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg key={i} className="w-4 h-4 text-[#4F5BD5] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
                 ))}
               </div>
               <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
                 &ldquo;Luna is a French Bulldog, so I knew summer travel was impossible. Dubai Pet Relocation told me this in the first WhatsApp message — no sugar-coating. We planned for a November flight. They arranged a crate 10% larger than standard for her breed, booked a direct flight with no transit, and sent me a video of her boarding. When she arrived at DXB, they had already cleared customs. She was in my arms 45 minutes after landing.&rdquo;
               </blockquote>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#EDF6F0] flex items-center justify-center text-[#5A8F6E] font-bold text-sm">DR</div>
+                <div className="w-10 h-10 rounded-full bg-[#E9ECFB] flex items-center justify-center text-[#4F5BD5] font-bold text-sm">DR</div>
                 <div>
                   <p className="text-sm font-semibold text-[#2A2A2A]">David R.</p>
                   <p className="text-xs text-[#8A8A8A]">Relocated from Paris to Dubai, November 2025</p>
@@ -969,7 +969,7 @@ export default function DogRelocationPage() {
       {/* ─── FINAL CTA ─── */}
       <section className="py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#1B2B4D] rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
+          <div className="bg-[#4F5BD5] rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">Ready to Bring Your Dog to Dubai?</h2>
             <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-6">
               Your dog has been there for you. Now it's your turn to be there for them — even across continents.

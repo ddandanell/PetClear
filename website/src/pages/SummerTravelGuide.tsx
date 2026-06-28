@@ -34,7 +34,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span>{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -136,7 +136,7 @@ export default function SummerTravelGuide() {
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Summer Pet Travel Guide' }]} />
 
       {/* Hero */}
-      <section className="relative bg-[#1B2B4D] text-white py-16 lg:py-24">
+      <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
@@ -167,7 +167,7 @@ export default function SummerTravelGuide() {
       </section>
 
       {/* What is Summer Embargo */}
-      <section id="embargo-dates" className="section-padding bg-[#FDFBF8]">
+      <section id="embargo-dates" className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
@@ -204,12 +204,12 @@ export default function SummerTravelGuide() {
                   <p className="font-bold text-[#C89F5A] text-lg mb-1">29°C Ground Rule</p>
                   <p className="text-sm text-[#5A5A5A]">If ground temperature exceeds 29°C at any point during handling, airlines will embargo or refuse pet cargo. This applies even outside May–September.</p>
                 </div>
-                <div className="p-4 bg-[#1B2B4D]/5 rounded-xl border-l-4 border-[#1B2B4D]">
-                  <p className="font-bold text-[#1B2B4D] text-lg mb-1">Early Morning Exception</p>
+                <div className="p-4 bg-[#4F5BD5]/5 rounded-xl border-l-4 border-[#4F5BD5]">
+                  <p className="font-bold text-[#4F5BD5] text-lg mb-1">Early Morning Exception</p>
                   <p className="text-sm text-[#5A5A5A]">Some airlines offer limited early morning slots (before 8 AM) when ground temperatures are lower. These fill up months in advance.</p>
                 </div>
-                <div className="p-4 bg-[#5A8F6E]/5 rounded-xl border-l-4 border-[#5A8F6E]">
-                  <p className="font-bold text-[#5A8F6E] text-lg mb-1">Brachycephalic Add-On</p>
+                <div className="p-4 bg-[#4F5BD5]/5 rounded-xl border-l-4 border-[#4F5BD5]">
+                  <p className="font-bold text-[#4F5BD5] text-lg mb-1">Brachycephalic Add-On</p>
                   <p className="text-sm text-[#5A5A5A]">Many airlines extend brachycephalic breed embargos to include spring and autumn months, or ban them year-round.</p>
                 </div>
               </div>
@@ -304,7 +304,7 @@ export default function SummerTravelGuide() {
       </section>
 
       {/* Temperature & Brachycephalic */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -318,8 +318,8 @@ export default function SummerTravelGuide() {
                 Understanding temperature limits is critical for safe summer pet travel. Here are the key thresholds that airlines and IATA use to make embargo decisions.
               </p>
               <div className="space-y-3">
-                <div className="p-3 bg-[#5A8F6E]/5 rounded-xl">
-                  <p className="font-semibold text-[#5A8F6E] text-sm">Cargo Hold: 18–24°C</p>
+                <div className="p-3 bg-[#4F5BD5]/5 rounded-xl">
+                  <p className="font-semibold text-[#4F5BD5] text-sm">Cargo Hold: 18–24°C</p>
                   <p className="text-xs text-[#5A5A5A]">Climate-controlled cargo hold temperature during flight. Safe for all breeds.</p>
                 </div>
                 <div className="p-3 bg-[#C89F5A]/5 rounded-xl">
@@ -330,8 +330,8 @@ export default function SummerTravelGuide() {
                   <p className="font-semibold text-[#C9453A] text-sm">Danger Zone: 35°C+</p>
                   <p className="text-xs text-[#5A5A5A]">Extended exposure risks heat stroke, organ failure, and death within minutes for brachycephalic breeds.</p>
                 </div>
-                <div className="p-3 bg-[#1B2B4D]/5 rounded-xl">
-                  <p className="font-semibold text-[#1B2B4D] text-sm">Asphalt Temperature: 60–70°C</p>
+                <div className="p-3 bg-[#4F5BD5]/5 rounded-xl">
+                  <p className="font-semibold text-[#4F5BD5] text-sm">Asphalt Temperature: 60–70°C</p>
                   <p className="text-xs text-[#5A5A5A]">Dubai summer tarmac temperatures. Even brief delays can be fatal in unventilated cargo areas.</p>
                 </div>
               </div>
@@ -354,8 +354,8 @@ export default function SummerTravelGuide() {
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>Most airlines ban these breeds entirely from May 1 – September 30</span></li>
                 <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>Emirates requires one crate size larger than standard for brachycephalic dogs</span></li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Veterinary fitness certificate within 48 hours may allow some exceptions</span></li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Pet nanny services or cabin transport are safer alternatives</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Veterinary fitness certificate within 48 hours may allow some exceptions</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Pet nanny services or cabin transport are safer alternatives</span></li>
               </ul>
             </div>
           </div>
@@ -370,28 +370,28 @@ export default function SummerTravelGuide() {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#5A8F6E]/10 flex items-center justify-center mx-auto mb-4">
-                <Sun className="w-6 h-6 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
+                <Sun className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Early Morning Flights</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Some airlines offer limited cargo slots before 8 AM when ground temperatures are lowest. Book 2–3 months in advance.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#1B2B4D]/10 flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-6 h-6 text-[#1B2B4D]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Cooler Hub Routing</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Route via European hubs (Amsterdam, Frankfurt, London) where summer temperatures are lower and embargos may be shorter.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
               <div className="w-12 h-12 rounded-full bg-[#C89F5A]/10 flex items-center justify-center mx-auto mb-4">
                 <PawPrint className="w-6 h-6 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet Nanny Services</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">A professional escort travels with your pet in-cabin or as excess baggage, bypassing cargo embargo restrictions.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
               <div className="w-12 h-12 rounded-full bg-[#C9453A]/10 flex items-center justify-center mx-auto mb-4">
                 <Plane className="w-6 h-6 text-[#C9453A]" />
               </div>
@@ -461,7 +461,7 @@ export default function SummerTravelGuide() {
       </section>
 
       {/* How Dubai Pet Relocation Handles Summer */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
@@ -474,15 +474,15 @@ export default function SummerTravelGuide() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4">
-                <Shield className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4">
+                <Shield className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Partner Vet Health Check</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Every summer traveler gets a pre-flight veterinary fitness examination within 48 hours of departure. The vet confirms your pet can handle the journey.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4">
-                <Sun className="w-5 h-5 text-[#1B2B4D]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4">
+                <Sun className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Morning Flight Booking</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">We prioritize flights departing before 8:00 AM, when ground temperatures are lowest and tarmac exposure is minimized.</p>
@@ -495,15 +495,15 @@ export default function SummerTravelGuide() {
               <p className="text-sm text-[#5A5A5A] leading-relaxed">We book direct flights or single-connection routes through cooler hubs to minimize total travel time and tarmac exposure.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4">
-                <Wind className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4">
+                <Wind className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Cooling Measures</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">We advise on cooling crate liners, absorbent bedding (never straw), frozen water bowls, and proper ventilation labels to ensure maximum airflow.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4">
-                <Calendar className="w-5 h-5 text-[#1B2B4D]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4">
+                <Calendar className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Timeline Adjustments</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">If your move falls during embargo, we adjust documentation timelines and permit validity dates so your paperwork doesn't expire while waiting.</p>
@@ -539,24 +539,24 @@ export default function SummerTravelGuide() {
       </section>
 
       {/* Related Links */}
-      <section className="py-16 bg-[#FDFBF8]">
+      <section className="py-16 bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Link to="/dog-relocation-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4 group-hover:bg-[#1B2B4D]/20 transition-colors">
-                <Dog className="w-5 h-5 text-[#1B2B4D]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <Dog className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#1B2B4D] transition-colors">Dog Relocation to Dubai</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Dog Relocation to Dubai</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete guide to relocating dogs to Dubai, including breed rules, crate requirements, and documentation.</p>
             </Link>
             <Link to="/cat-relocation-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4 group-hover:bg-[#5A8F6E]/20 transition-colors">
-                <Cat className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <Cat className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">Cat Relocation to Dubai</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Cat Relocation to Dubai</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Everything you need to know about bringing cats to Dubai, including summer considerations for flat-faced breeds.</p>
             </Link>
             <Link to="/guides/pet-relocation-cost-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow group">
@@ -571,7 +571,7 @@ export default function SummerTravelGuide() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 lg:py-20 bg-[#1B2B4D]">
+      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Moving During Summer? Let's Plan Safely.

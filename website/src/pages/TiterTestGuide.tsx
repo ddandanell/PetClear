@@ -36,7 +36,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span>{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -178,7 +178,7 @@ export default function TiterTestGuide() {
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Rabies Titer Test Guide' }]} />
 
       {/* Hero */}
-      <section className="relative bg-[#1B2B4D] text-white py-16 lg:py-24">
+      <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
@@ -209,7 +209,7 @@ export default function TiterTestGuide() {
       </section>
 
       {/* What is Titer Test */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
@@ -224,15 +224,15 @@ export default function TiterTestGuide() {
               </p>
               <div className="bg-white rounded-[20px] shadow-sm p-6">
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                  <FlaskConical className="w-5 h-5 text-[#5A8F6E]" />
+                  <FlaskConical className="w-5 h-5 text-[#4F5BD5]" />
                   Key Facts About the Titer Test
                 </h3>
                 <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Measures rabies antibodies in blood serum</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Required result: ≥0.5 IU/ml (EU standards accepted by UAE)</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Must be drawn 21+ days after rabies vaccination</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>90-day waiting period from blood draw before travel</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Minimum 4 months from vaccination to travel</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Measures rabies antibodies in blood serum</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Required result: ≥0.5 IU/ml (EU standards accepted by UAE)</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Must be drawn 21+ days after rabies vaccination</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>90-day waiting period from blood draw before travel</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Minimum 4 months from vaccination to travel</span></li>
                 </ul>
               </div>
             </div>
@@ -256,8 +256,8 @@ export default function TiterTestGuide() {
                   <p className="text-xs text-[#5A5A5A]">Some countries depending on current UAE regulations</p>
                 </div>
               </div>
-              <div className="p-4 bg-[#5A8F6E]/5 rounded-xl">
-                <p className="font-semibold text-[#5A8F6E] text-sm mb-1">No Titer Required</p>
+              <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
+                <p className="font-semibold text-[#4F5BD5] text-sm mb-1">No Titer Required</p>
                 <p className="text-xs text-[#5A5A5A]">UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore, and most of Western Europe generally do not require a titer test for Dubai. Always confirm current rules as they can change.</p>
               </div>
             </div>
@@ -278,8 +278,8 @@ export default function TiterTestGuide() {
           </div>
 
           <div className="space-y-6 mb-10">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-lg font-bold shrink-0">1</div>
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">1</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Rabies Vaccination</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -288,8 +288,8 @@ export default function TiterTestGuide() {
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-lg font-bold shrink-0">2</div>
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">2</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Wait 21 Days Minimum</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -298,8 +298,8 @@ export default function TiterTestGuide() {
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-lg font-bold shrink-0">3</div>
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">3</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Blood Draw & Sample Preparation</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
@@ -317,8 +317,8 @@ export default function TiterTestGuide() {
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-lg font-bold shrink-0">4</div>
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">4</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Ship to Accredited Lab</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
@@ -333,8 +333,8 @@ export default function TiterTestGuide() {
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-lg font-bold shrink-0">5</div>
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">5</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Lab Processing & Results</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -343,7 +343,7 @@ export default function TiterTestGuide() {
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8 flex gap-5">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
               <div className="w-12 h-12 rounded-full bg-[#C89F5A] text-white flex items-center justify-center text-lg font-bold shrink-0">6</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">90-Day Waiting Period</h3>
@@ -404,7 +404,7 @@ export default function TiterTestGuide() {
       </section>
 
       {/* Cost & Failure */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -493,42 +493,42 @@ export default function TiterTestGuide() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4">
-                <Syringe className="w-5 h-5 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4">
+                <Syringe className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Use Inactivated Vaccine</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Only inactivated (killed virus) rabies vaccines are acceptable. Live or modified live vaccines will not produce the correct antibody response for the test.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4">
-                <Clock className="w-5 h-5 text-[#1B2B4D]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4">
+                <Clock className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Wait the Full 21 Days</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Do not draw blood before 21 days have passed. For best results, wait 3–4 weeks so antibody levels peak.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6">
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4">
                 <Stethoscope className="w-5 h-5 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Choose an Experienced Vet</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">A vet familiar with titer tests knows how to handle, label, and ship the sample correctly. Poor sample handling is a leading cause of invalid results.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4">
-                <Shield className="w-5 h-5 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4">
+                <Shield className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Avoid Stress & Illness</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Do not vaccinate or test when your pet is sick, stressed, or on immunosuppressive medication. These factors can suppress antibody production.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4">
-                <FlaskConical className="w-5 h-5 text-[#1B2B4D]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4">
+                <FlaskConical className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Ship to the Right Lab</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Only EU-accredited or USDA-approved labs are accepted. Using a non-accredited lab will result in rejection by the UAE.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6">
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-[#C89F5A]" />
               </div>
@@ -537,10 +537,10 @@ export default function TiterTestGuide() {
             </div>
           </div>
 
-          <div className="bg-[#EDF6F0] rounded-[20px] p-6 lg:p-8">
+          <div className="bg-[#E9ECFB] rounded-[20px] p-6 lg:p-8">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center">
-                <PawPrint className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center">
+                <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-xl font-bold text-[#2A2A2A]">How Dubai Pet Relocation Coordinates Titer Tests</h3>
             </div>
@@ -549,22 +549,22 @@ export default function TiterTestGuide() {
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="bg-white rounded-xl p-4 text-center">
-                <div className="w-8 h-8 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-sm font-bold mx-auto mb-2">1</div>
+                <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mx-auto mb-2">1</div>
                 <p className="font-semibold text-[#2A2A2A] text-sm">Vet Appointment</p>
                 <p className="text-xs text-[#5A5A5A] mt-1">We book a partner vet for vaccination and blood draw.</p>
               </div>
               <div className="bg-white rounded-xl p-4 text-center">
-                <div className="w-8 h-8 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-sm font-bold mx-auto mb-2">2</div>
+                <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mx-auto mb-2">2</div>
                 <p className="font-semibold text-[#2A2A2A] text-sm">Sample Collection</p>
                 <p className="text-xs text-[#5A5A5A] mt-1">Proper handling, labeling, and cold-chain packaging.</p>
               </div>
               <div className="bg-white rounded-xl p-4 text-center">
-                <div className="w-8 h-8 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-sm font-bold mx-auto mb-2">3</div>
+                <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mx-auto mb-2">3</div>
                 <p className="font-semibold text-[#2A2A2A] text-sm">Lab Shipping</p>
                 <p className="text-xs text-[#5A5A5A] mt-1">Courier service to the nearest accredited lab.</p>
               </div>
               <div className="bg-white rounded-xl p-4 text-center">
-                <div className="w-8 h-8 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-sm font-bold mx-auto mb-2">4</div>
+                <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mx-auto mb-2">4</div>
                 <p className="font-semibold text-[#2A2A2A] text-sm">Result Tracking</p>
                 <p className="text-xs text-[#5A5A5A] mt-1">We monitor results, verify ≥0.5 IU/ml, and plan next steps.</p>
               </div>
@@ -574,7 +574,7 @@ export default function TiterTestGuide() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4 text-center">
@@ -599,39 +599,39 @@ export default function TiterTestGuide() {
             Related Guides & Routes
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link to="/guides/uae-pet-import-requirements/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4 group-hover:bg-[#1B2B4D]/20 transition-colors">
-                <FileCheck className="w-5 h-5 text-[#1B2B4D]" />
+            <Link to="/guides/uae-pet-import-requirements/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#1B2B4D] transition-colors">UAE Pet Import Requirements</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">UAE Pet Import Requirements</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete guide to all documentation needed for importing pets into the UAE.</p>
             </Link>
-            <Link to="/how-it-works/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4 group-hover:bg-[#5A8F6E]/20 transition-colors">
-                <Clock className="w-5 h-5 text-[#5A8F6E]" />
+            <Link to="/how-it-works/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <Clock className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">How Dubai Pet Relocation Works</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">How Dubai Pet Relocation Works</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent concierge process from assessment to arrival.</p>
             </Link>
-            <Link to="/routes/india-to-dubai/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+            <Link to="/routes/india-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">
                 <MapPin className="w-5 h-5 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">India to Dubai Route</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Specific guide for relocating pets from India to Dubai, including titer test requirements.</p>
             </Link>
-            <Link to="/routes/philippines-to-dubai/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4 group-hover:bg-[#5A8F6E]/20 transition-colors">
-                <MapPin className="w-5 h-5 text-[#5A8F6E]" />
+            <Link to="/routes/philippines-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <MapPin className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">Philippines to Dubai Route</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Philippines to Dubai Route</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Step-by-step guide for Filipino pet owners relocating to Dubai with their pets.</p>
             </Link>
-            <Link to="/routes/south-africa-to-dubai/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4 group-hover:bg-[#1B2B4D]/20 transition-colors">
-                <MapPin className="w-5 h-5 text-[#1B2B4D]" />
+            <Link to="/routes/south-africa-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <MapPin className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#1B2B4D] transition-colors">South Africa to Dubai Route</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">South Africa to Dubai Route</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete relocation guide for South African pet owners moving to Dubai.</p>
             </Link>
           </div>
@@ -639,7 +639,7 @@ export default function TiterTestGuide() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 lg:py-20 bg-[#1B2B4D]">
+      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Need Help With Your Titer Test?

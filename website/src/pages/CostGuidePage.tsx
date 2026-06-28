@@ -72,7 +72,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span>{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -191,7 +191,7 @@ export default function CostGuidePage() {
       {/* ===== HERO ===== */}
       <section className="relative overflow-hidden text-white">
         <img src="/images/cost-hero.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
         <div className="relative max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -236,8 +236,8 @@ export default function CostGuidePage() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card>
-            <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-              <Scale className="w-5 h-5 text-[#5A8F6E]" />
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+              <Scale className="w-5 h-5 text-[#4F5BD5]" />
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">1. Your pet's size</h4>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -245,8 +245,8 @@ export default function CostGuidePage() {
             </p>
           </Card>
           <Card>
-            <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-              <MapPin className="w-5 h-5 text-[#5A8F6E]" />
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+              <MapPin className="w-5 h-5 text-[#4F5BD5]" />
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">2. Your origin country</h4>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -254,7 +254,7 @@ export default function CostGuidePage() {
             </p>
           </Card>
           <Card>
-            <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
               <Sun className="w-5 h-5 text-[#C0392B]" />
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">3. Your travel season</h4>
@@ -263,8 +263,8 @@ export default function CostGuidePage() {
             </p>
           </Card>
           <Card>
-            <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-              <FileCheck className="w-5 h-5 text-[#5A8F6E]" />
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+              <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">4. Your pet's documentation status</h4>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -275,7 +275,7 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== COMPLETE COST BREAKDOWN ===== */}
-      <Section className="bg-[#FDFBF8]">
+      <Section className="bg-[#F5F6FD]">
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">The Complete Cost Breakdown — Every Dirham Explained</h2>
         <p className="text-[#5A5A5A] max-w-3xl mb-10 leading-relaxed">
           Here's what you'll actually pay. These are real numbers based on our 2026 partner rates and government fee schedules. No estimates hidden behind "contact us for pricing."
@@ -284,7 +284,7 @@ export default function CostGuidePage() {
         {/* Government & Mandatory Fees */}
         <div className="mb-12">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-            <Shield className="w-5 h-5 text-[#5A8F6E]" /> Government & Mandatory Fees
+            <Shield className="w-5 h-5 text-[#4F5BD5]" /> Government & Mandatory Fees
           </h3>
           <div className="overflow-x-auto">
             <table className="data-table">
@@ -317,7 +317,7 @@ export default function CostGuidePage() {
         {/* Veterinary Costs */}
         <div className="mb-12">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-            <PawPrint className="w-5 h-5 text-[#5A8F6E]" /> Veterinary Costs
+            <PawPrint className="w-5 h-5 text-[#4F5BD5]" /> Veterinary Costs
           </h3>
           <div className="overflow-x-auto">
             <table className="data-table">
@@ -341,7 +341,7 @@ export default function CostGuidePage() {
         {/* Travel Crate */}
         <div className="mb-12">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-            <Package className="w-5 h-5 text-[#5A8F6E]" /> Travel Crate
+            <Package className="w-5 h-5 text-[#4F5BD5]" /> Travel Crate
           </h3>
           <div className="overflow-x-auto">
             <table className="data-table">
@@ -360,7 +360,7 @@ export default function CostGuidePage() {
             Crates must be <strong>IATA LAR-compliant</strong> — rigid, well-ventilated, with secure locking doors. We provide correctly sized, pre-labeled crates. Buying the wrong crate on Amazon is one of the most common (and expensive) mistakes we see.
           </p>
           <p className="mt-2 text-sm">
-            <Link to="/guides/iata-pet-crate-requirements" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
+            <Link to="/guides/iata-pet-crate-requirements" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
               IATA crate requirements and costs <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </p>
@@ -369,7 +369,7 @@ export default function CostGuidePage() {
         {/* Air Cargo / Flight Fees */}
         <div className="mb-12">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-            <Plane className="w-5 h-5 text-[#5A8F6E]" /> Air Cargo / Flight Fees
+            <Plane className="w-5 h-5 text-[#4F5BD5]" /> Air Cargo / Flight Fees
           </h3>
           <div className="overflow-x-auto">
             <table className="data-table">
@@ -392,7 +392,7 @@ export default function CostGuidePage() {
         {/* Dubai Pet Relocation Service Coordination Fee */}
         <div className="mb-12">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-            <Users className="w-5 h-5 text-[#5A8F6E]" /> Dubai Pet Relocation Service Coordination Fee
+            <Users className="w-5 h-5 text-[#4F5BD5]" /> Dubai Pet Relocation Service Coordination Fee
           </h3>
           <p className="text-sm text-[#5A5A5A] mb-4">
             This is what we charge to handle everything — permits, paperwork, flight booking, partner coordination, and WhatsApp updates at every step.
@@ -425,7 +425,7 @@ export default function CostGuidePage() {
             <strong>What's different about us:</strong> We tell you exactly who our partners are — the vet clinics, the cargo handlers, the ground transport teams. We don't pretend we own an airline. We just know which ones to trust, and we manage every interaction so you don't have to chase five different phone numbers.
           </p>
           <p className="mt-2 text-sm">
-            <Link to="/services" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
+            <Link to="/services" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
               See our pet relocation packages <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </p>
@@ -475,7 +475,7 @@ export default function CostGuidePage() {
               The UK is a low-risk country, so your pet only needs the microchip, rabies vaccine (≥21 days old), health certificate, and MOCCAE permit. We handle the DEFRA export endorsement and Emirates SkyCargo booking from London Heathrow or Manchester.
             </p>
             <p className="mt-3 text-sm">
-              <Link to="/routes/uk-to-dubai" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
+              <Link to="/routes/uk-to-dubai" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
                 Read our full UK to Dubai guide <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </p>
@@ -544,7 +544,7 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== COST BY PET SIZE ===== */}
-      <Section className="bg-[#FDFBF8]">
+      <Section className="bg-[#F5F6FD]">
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">Cost by Pet Size — How Your Pet's Dimensions Affect Price</h2>
         <div className="overflow-x-auto mb-6">
           <table className="data-table">
@@ -670,7 +670,7 @@ export default function CostGuidePage() {
 
         <div className="warning-box mb-6">
           <h4 className="font-bold text-[#2A2A2A] mb-2 flex items-center gap-2">
-            <AlertTriangle className="w-5 h-5 text-[#5A8F6E]" /> The Honest Truth About Quote Inflation
+            <AlertTriangle className="w-5 h-5 text-[#4F5BD5]" /> The Honest Truth About Quote Inflation
           </h4>
           <p className="text-sm text-[#5A5A5A] leading-relaxed">
             We've read the reviews. "From changing quotes, to adding extra charges... we are now over £3,000 over the original quote." — a real pet-relocation customer.
@@ -684,7 +684,7 @@ export default function CostGuidePage() {
         </div>
 
         <p className="text-sm">
-          <Link to="/about" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
+          <Link to="/about" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
             Why we're transparent about pricing <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </p>
@@ -695,7 +695,7 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== DIY vs USING A SERVICE ===== */}
-      <Section className="bg-[#F5EFE6]">
+      <Section className="bg-[#EEF0FC]">
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">DIY vs. Using a Service — The Honest Comparison</h2>
         <p className="text-[#5A5A5A] max-w-3xl mb-10 leading-relaxed">
           Can you relocate your pet to Dubai without a company? Yes. Should you? Let's look at the numbers and the reality.
@@ -741,7 +741,7 @@ export default function CostGuidePage() {
                 'Post-arrival municipality registration guidance',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -751,7 +751,7 @@ export default function CostGuidePage() {
           </Card>
         </div>
 
-        <Card className="bg-[#1B2B4D] text-white border-none">
+        <Card className="bg-[#4F5BD5] text-white border-none">
           <h3 className="text-lg font-bold mb-3">The Honest Verdict</h3>
           <p className="text-sm text-white/90 leading-relaxed mb-3">
             DIY is possible. If you're detail-oriented, have 20+ free hours, and are comfortable navigating government portals and airline cargo departments, you can save AED 2,000–5,000.
@@ -772,7 +772,7 @@ export default function CostGuidePage() {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <Card>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
                 <Sun className="w-5 h-5 text-[#C0392B]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A]">Summer Heat Embargo (June–September)</h3>
@@ -782,11 +782,11 @@ export default function CostGuidePage() {
             </p>
             <p className="text-sm font-semibold text-[#2A2A2A] mb-2">What this means for your cost:</p>
             <ul className="space-y-2 text-sm text-[#5A5A5A]">
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>If your pet is already booked and the embargo hits, rerouting costs AED 2,000–5,000</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Alternative: Ground transport from nearby countries (GCC) adds AED 1,500–3,000</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Alternative: In-cabin pet nanny (very small pets only) adds AED 5,000–10,000</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Alternative: Private charter (for high-value or urgent moves) adds AED 15,000–50,000+</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Waiting it out: Extended boarding at our partner facility costs AED 200–400/day</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>If your pet is already booked and the embargo hits, rerouting costs AED 2,000–5,000</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Alternative: Ground transport from nearby countries (GCC) adds AED 1,500–3,000</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Alternative: In-cabin pet nanny (very small pets only) adds AED 5,000–10,000</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Alternative: Private charter (for high-value or urgent moves) adds AED 15,000–50,000+</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Waiting it out: Extended boarding at our partner facility costs AED 200–400/day</span></li>
             </ul>
             <p className="text-sm text-[#5A5A5A] mt-4 leading-relaxed">
               <strong>Brachycephalic breeds (Bulldogs, Pugs, Persian cats):</strong> Many airlines ban these breeds entirely from May through September, regardless of temperature. Some restrict them to October–April only. If you have a snub-nosed pet, plan your move for winter or budget for significant alternatives.
@@ -795,8 +795,8 @@ export default function CostGuidePage() {
 
           <Card>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center">
-                <Snowflake className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
+                <Snowflake className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A]">Peak Season (October–May)</h3>
             </div>
@@ -805,9 +805,9 @@ export default function CostGuidePage() {
             </p>
             <p className="text-sm font-semibold text-[#2A2A2A] mb-2">Cost implications:</p>
             <ul className="space-y-2 text-sm text-[#5A5A5A]">
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Cargo rates are generally 10–15% lower than summer emergency rates</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>More airline options = competitive pricing</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Earlier booking = better rates. Last-minute bookings in peak season cost more due to limited cargo space.</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Cargo rates are generally 10–15% lower than summer emergency rates</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>More airline options = competitive pricing</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Earlier booking = better rates. Last-minute bookings in peak season cost more due to limited cargo space.</span></li>
             </ul>
             <p className="text-sm text-[#2A2A2A] font-medium mt-4">Our recommendation:</p>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -818,7 +818,7 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== HOW TO GET ACCURATE QUOTE ===== */}
-      <Section className="bg-[#FDFBF8]">
+      <Section className="bg-[#F5F6FD]">
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">How to Get an Accurate, Personalized Quote</h2>
         <p className="text-[#5A5A5A] max-w-3xl mb-8 leading-relaxed">
           Every pet is different. Every route is different. Every season is different. A guide can give you a range. A 5-minute WhatsApp conversation gives you a firm quote.
@@ -828,22 +828,22 @@ export default function CostGuidePage() {
           <Card>
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Here's what we need to price your move accurately:</h3>
             <ol className="space-y-3 text-sm text-[#5A5A5A]">
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">1</span><span><strong>Pet type and breed</strong> (dog or cat? Labrador or Persian?)</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">2</span><span><strong>Weight and approximate dimensions</strong> (for crate sizing)</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">3</span><span><strong>Moving from</strong> (city and country)</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">4</span><span><strong>Moving to</strong> (Dubai, or elsewhere in UAE?)</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">5</span><span><strong>Planned move date</strong> (or "as soon as possible")</span></li>
-              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#1B2B4D] text-white text-xs font-bold flex items-center justify-center shrink-0">6</span><span><strong>Current documentation status</strong> (microchipped? Vaccinated? Titer test done?)</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white text-xs font-bold flex items-center justify-center shrink-0">1</span><span><strong>Pet type and breed</strong> (dog or cat? Labrador or Persian?)</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white text-xs font-bold flex items-center justify-center shrink-0">2</span><span><strong>Weight and approximate dimensions</strong> (for crate sizing)</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white text-xs font-bold flex items-center justify-center shrink-0">3</span><span><strong>Moving from</strong> (city and country)</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white text-xs font-bold flex items-center justify-center shrink-0">4</span><span><strong>Moving to</strong> (Dubai, or elsewhere in UAE?)</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white text-xs font-bold flex items-center justify-center shrink-0">5</span><span><strong>Planned move date</strong> (or "as soon as possible")</span></li>
+              <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white text-xs font-bold flex items-center justify-center shrink-0">6</span><span><strong>Current documentation status</strong> (microchipped? Vaccinated? Titer test done?)</span></li>
             </ol>
           </Card>
           <Card>
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">What you'll get back in 15 minutes:</h3>
             <ul className="space-y-3 text-sm text-[#5A5A5A]">
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>A realistic cost range</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>A clear timeline</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>The right service tier recommendation</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>An honest assessment of any seasonal or breed restrictions</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>No pressure. No follow-up spam. Just the information you need.</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>A realistic cost range</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>A clear timeline</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>The right service tier recommendation</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>An honest assessment of any seasonal or breed restrictions</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>No pressure. No follow-up spam. Just the information you need.</span></li>
             </ul>
           </Card>
         </div>
@@ -851,8 +851,8 @@ export default function CostGuidePage() {
         <div id="whatsapp-cta" className="text-center">
           <WhatsAppCta text="Get Your Exact Quote — WhatsApp Us Now" fullWidth className="sm:w-auto sm:inline-flex" />
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
-            <WhatsAppCta text="Chat With Our Pet Relocation Team — No Obligation" fullWidth className="sm:w-auto sm:inline-flex bg-[#1B2B4D] hover:bg-[#0F1A30]" />
-            <WhatsAppCta text="Questions About Your Pet's Move? We're on WhatsApp" fullWidth className="sm:w-auto sm:inline-flex bg-[#5A8F6E] hover:bg-[#4a7a5e]" />
+            <WhatsAppCta text="Chat With Our Pet Relocation Team — No Obligation" fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#3A45B0]" />
+            <WhatsAppCta text="Questions About Your Pet's Move? We're on WhatsApp" fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#4a7a5e]" />
           </div>
         </div>
       </Section>
@@ -870,7 +870,7 @@ export default function CostGuidePage() {
                   However, with incomplete documentation the real risk is that your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands). This is why we triple-check every document before your pet travels.
                 </p>
                 <p className="mt-3">
-                  <Link to="/guides/uae-pet-import-requirements" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
+                  <Link to="/guides/uae-pet-import-requirements" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
                     Read our full UAE import requirements guide <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
@@ -906,7 +906,7 @@ export default function CostGuidePage() {
                 </ul>
                 <p className="mt-3">By the time you add the missing pieces, the total usually exceeds our all-inclusive quote. Plus, a mover's priority is your furniture. Our priority is your pet. Every time.</p>
                 <p className="mt-3">
-                  <Link to="/services" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
+                  <Link to="/services" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
                     See our full service comparison <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
@@ -939,7 +939,7 @@ export default function CostGuidePage() {
       </Section>
 
       {/* ===== FINAL CTA ===== */}
-      <section className="relative overflow-hidden bg-[#1B2B4D] text-white section-padding">
+      <section className="relative overflow-hidden bg-[#4F5BD5] text-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Know Your Exact Cost?</h2>
           <p className="text-white/90 max-w-2xl mx-auto mb-4 leading-relaxed">
@@ -957,7 +957,7 @@ export default function CostGuidePage() {
       </section>
 
       {/* ===== DISCLAIMER ===== */}
-      <Section className="bg-[#FDFBF8]">
+      <Section className="bg-[#F5F6FD]">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs text-[#8A8A8A] leading-relaxed mb-3">
             Last updated: June 2026. Prices are based on current partner rates and government fee schedules. Cargo and airline fees fluctuate with fuel prices and seasonal demand. Your personalized quote will reflect real-time pricing for your specific route and dates.

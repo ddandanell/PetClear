@@ -96,7 +96,7 @@ export default function DubaiCity() {
   ]
 
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         meta={{
           title: pageTitle,
@@ -114,7 +114,7 @@ export default function DubaiCity() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">City Guide</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">City Guide</span>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 Pet Relocation Dubai — Your Dog or Cat's Safe Journey
               </h1>
@@ -132,7 +132,7 @@ export default function DubaiCity() {
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
                 <img src="/images/hero-dubai.jpg" alt="Pet relocation services in Dubai skyline" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">
                     <PawPrint className="w-16 h-16 mx-auto mb-4 opacity-90" />
@@ -150,7 +150,7 @@ export default function DubaiCity() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Why Dubai</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Why Dubai</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Why Dubai Is a Great City for Pet Owners</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Dubai has transformed into one of the most pet-welcoming cities in the Gulf region. From gated communities with gardens to world-class veterinary clinics, Dubai offers everything your pet needs for a comfortable life.
@@ -159,8 +159,8 @@ export default function DubaiCity() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Home className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Home className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet-Friendly Communities</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
@@ -172,8 +172,8 @@ export default function DubaiCity() {
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Stethoscope className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Stethoscope className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">World-Class Veterinary Care</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
@@ -185,8 +185,8 @@ export default function DubaiCity() {
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <FileText className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <FileText className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Clear Pet Regulations</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
@@ -204,7 +204,7 @@ export default function DubaiCity() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Services</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Services</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Pet Relocation Services Available in Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Dubai Pet Relocation offers end-to-end pet relocation services in Dubai. Whether you are importing, exporting, or moving within the UAE, we handle every detail.
@@ -212,67 +212,67 @@ export default function DubaiCity() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Plane className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Plane className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">To Dubai</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
                 Importing a pet to Dubai from the UK, USA, Europe, Australia, India, the Philippines, or anywhere in the world. We handle import permits, health certificates, flight booking, customs clearance, and home delivery.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> MOCCAE import permit application</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Origin-country vet coordination</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> IATA-compliant crate sourcing</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> DXB customs clearance & delivery</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Aleef registration assistance</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> MOCCAE import permit application</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Origin-country vet coordination</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> IATA-compliant crate sourcing</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> DXB customs clearance & delivery</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Aleef registration assistance</li>
               </ul>
               <div className="mt-6">
-                <Link to="/guides/uae-pet-import-requirements/" className="text-[#5A8F6E] font-semibold text-sm hover:underline inline-flex items-center gap-1">
+                <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] font-semibold text-sm hover:underline inline-flex items-center gap-1">
                   Read Import Guide <Globe className="w-4 h-4" />
                 </Link>
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Plane className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Plane className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">From Dubai</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
                 Exporting a pet from Dubai to the UK, USA, Europe, Australia, Canada, or anywhere in the world. We prepare export health certificates, book cargo flights, and coordinate with destination customs.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Export health certificate (UAE government vet)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Destination country rule verification</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> IATA crate inspection & fitting</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Emirates / BA / Etihad cargo booking</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Destination customs & ground transport</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Export health certificate (UAE government vet)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Destination country rule verification</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> IATA crate inspection & fitting</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Emirates / BA / Etihad cargo booking</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Destination customs & ground transport</li>
               </ul>
               <div className="mt-6">
-                <Link to="/how-it-works/" className="text-[#5A8F6E] font-semibold text-sm hover:underline inline-flex items-center gap-1">
+                <Link to="/how-it-works/" className="text-[#4F5BD5] font-semibold text-sm hover:underline inline-flex items-center gap-1">
                   How It Works <Globe className="w-4 h-4" />
                 </Link>
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <MapPin className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <MapPin className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Within the UAE</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
                 Moving your pet between Dubai, Abu Dhabi, Sharjah, or any other emirate. We handle local permits, ground transport in climate-controlled vehicles, and inter-emirate documentation.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Inter-emirate health certificates</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Climate-controlled ground transport</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Municipality registration transfer</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Boarding & acclimatisation support</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Same-day or next-day delivery</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Inter-emirate health certificates</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Climate-controlled ground transport</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Municipality registration transfer</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Boarding & acclimatisation support</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Same-day or next-day delivery</li>
               </ul>
               <div className="mt-6">
-                <Link to="/cities/abu-dhabi/" className="text-[#5A8F6E] font-semibold text-sm hover:underline inline-flex items-center gap-1">
+                <Link to="/cities/abu-dhabi/" className="text-[#4F5BD5] font-semibold text-sm hover:underline inline-flex items-center gap-1">
                   Abu Dhabi Guide <Globe className="w-4 h-4" />
                 </Link>
               </div>
@@ -285,7 +285,7 @@ export default function DubaiCity() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Network</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Network</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Local Partners in Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Dubai Pet Relocation works with a trusted network of veterinary clinics, cargo agents, and pet service providers across Dubai to ensure seamless relocation.
@@ -295,27 +295,27 @@ export default function DubaiCity() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-6">
-                <Stethoscope className="w-6 h-6 text-[#5A8F6E]" />
+                <Stethoscope className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Veterinary Clinics</h3>
               </div>
               <div className="space-y-4">
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm">German Veterinary Clinic</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Jumeirah Lakes Towers (JLT) — Advanced diagnostics, surgery, and international health certificates.</p>
                 </div>
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm">British Veterinary Hospital</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Umm Suqeim — 24-hour emergency care, boarding, and pet grooming. Experienced with international relocations.</p>
                 </div>
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm">Dubai Veterinary Hospital</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Deira — One of Dubai's oldest veterinary facilities. Government-authorised for export health certificates.</p>
                 </div>
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm">Blue Oasis Veterinary Clinic</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Dubai Marina — Small-animal specialist with in-house lab and digital X-ray.</p>
                 </div>
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm">Canadian Veterinary Hospital</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Jumeirah — Full-service clinic with dental, surgical, and wellness programmes.</p>
                 </div>
@@ -324,27 +324,27 @@ export default function DubaiCity() {
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-6">
-                <Briefcase className="w-6 h-6 text-[#5A8F6E]" />
+                <Briefcase className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Cargo Agents & Airlines</h3>
               </div>
               <div className="space-y-4">
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm">Emirates SkyCargo (DXB)</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Dubai International Airport — World's largest pet cargo handler. Climate-controlled facilities and dedicated animal staff.</p>
                 </div>
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm">Dubai Cargo Village (DXB)</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Primary animal handling facility at DXB. Customs inspection and veterinary clearance on arrival.</p>
                 </div>
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm">Dubai South / DWC Cargo</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Al Maktoum International Airport — Growing cargo hub with modern animal handling facilities.</p>
                 </div>
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm"> dnata Cargo Services</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Ground handling partner for multiple airlines at DXB. Experienced with live animal transport protocols.</p>
                 </div>
-                <div className="p-4 bg-[#FDFBF8] rounded-xl">
+                <div className="p-4 bg-[#F5F6FD] rounded-xl">
                   <p className="font-semibold text-[#2A2A2A] text-sm">MICCO Logistics (Abu Dhabi partner)</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">For AUH arrivals and Abu Dhabi-bound pets. Handles Bill of Entry and customs formalities.</p>
                 </div>
@@ -358,7 +358,7 @@ export default function DubaiCity() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai-Specific Costs</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               In addition to international transport costs, relocating a pet to Dubai involves a few local fees. These are typically small compared to the overall relocation cost, but it is important to budget for them.
@@ -409,7 +409,7 @@ export default function DubaiCity() {
                 </tbody>
               </table>
             </div>
-            <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
+            <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
                 * All prices are estimates in UAE Dirhams (AED). Actual fees may vary depending on the specific municipality, pet type, and processing time. Dubai Pet Relocation includes all known local fees in your upfront quote so there are no surprises.
               </p>
@@ -422,7 +422,7 @@ export default function DubaiCity() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Routes</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Routes</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Popular Routes to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Dubai Pet Relocation handles pet relocations to Dubai from every major country. Here are the most common routes we manage, with links to detailed guides for each.
@@ -432,8 +432,8 @@ export default function DubaiCity() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link to="/routes/uk-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <Globe className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <Globe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">UK to Dubai</h3>
               </div>
@@ -442,8 +442,8 @@ export default function DubaiCity() {
 
             <Link to="/routes/usa-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <Globe className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <Globe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">USA to Dubai</h3>
               </div>
@@ -452,8 +452,8 @@ export default function DubaiCity() {
 
             <Link to="/routes/india-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <Globe className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <Globe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">India to Dubai</h3>
               </div>
@@ -462,8 +462,8 @@ export default function DubaiCity() {
 
             <Link to="/routes/australia-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <Globe className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <Globe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">Australia to Dubai</h3>
               </div>
@@ -472,8 +472,8 @@ export default function DubaiCity() {
 
             <Link to="/routes/philippines-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <Globe className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <Globe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">Philippines to Dubai</h3>
               </div>
@@ -482,8 +482,8 @@ export default function DubaiCity() {
 
             <Link to="/routes/canada-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <Globe className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <Globe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="font-bold text-[#2A2A2A]">Canada to Dubai</h3>
               </div>
@@ -521,7 +521,7 @@ export default function DubaiCity() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">FAQ</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">FAQ</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai Pet Relocation FAQs</h2>
           </div>
 
@@ -529,7 +529,7 @@ export default function DubaiCity() {
             {faqs.map((faq, idx) => (
               <div key={idx} className="bg-white rounded-[20px] shadow-sm p-6">
                 <div className="flex items-start gap-3">
-                  <MessageCircle className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-1" />
+                  <MessageCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-[#2A2A2A] text-base mb-2">{faq.question}</h3>
                     <p className="text-[#5A5A5A] text-sm leading-relaxed">{faq.answer}</p>
@@ -544,8 +544,8 @@ export default function DubaiCity() {
       {/* CTA */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#0F1A30] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
+          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
+            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
               Dubai Pet Relocation has helped hundreds of families move their dogs and cats to Dubai from the UK, USA, India, Australia, the Philippines, and beyond. Get a transparent, itemised quote and a week-by-week timeline today.
@@ -580,19 +580,19 @@ export default function DubaiCity() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-[#5A5A5A]">
             <span>Related:</span>
-            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#5A8F6E] hover:underline">Cost Guide</Link>
+            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/guides/uae-pet-import-requirements/" className="text-[#5A8F6E] hover:underline">Import Requirements</Link>
+            <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/how-it-works/" className="text-[#5A8F6E] hover:underline">How It Works</Link>
+            <Link to="/how-it-works/" className="text-[#4F5BD5] hover:underline">How It Works</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/dog-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Dog Relocation</Link>
+            <Link to="/dog-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Dog Relocation</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/cat-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Cat Relocation</Link>
+            <Link to="/cat-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Cat Relocation</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/routes/uk-to-dubai/" className="text-[#5A8F6E] hover:underline">UK to Dubai</Link>
+            <Link to="/routes/uk-to-dubai/" className="text-[#4F5BD5] hover:underline">UK to Dubai</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/routes/usa-to-dubai/" className="text-[#5A8F6E] hover:underline">USA to Dubai</Link>
+            <Link to="/routes/usa-to-dubai/" className="text-[#4F5BD5] hover:underline">USA to Dubai</Link>
           </div>
         </div>
       </section>

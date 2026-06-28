@@ -53,7 +53,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span>{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#1B2B4D] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -181,7 +181,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/hero-dog.jpg" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
         </div>
         <div className="relative max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-16 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -236,8 +236,8 @@ export default function HomePage() {
                 />
                 <div className="absolute -bottom-4 -left-4 bg-white rounded-[20px] p-5 shadow-lg">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-[#EDF6F0] flex items-center justify-center">
-                      <CheckCircle className="w-5 h-5 text-[#5A8F6E]" />
+                    <div className="w-10 h-10 rounded-full bg-[#E9ECFB] flex items-center justify-center">
+                      <CheckCircle className="w-5 h-5 text-[#4F5BD5]" />
                     </div>
                     <div>
                       <p className="text-sm font-bold text-[#2A2A2A]">Trusted relocation guidance</p>
@@ -252,10 +252,10 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════ THREE STEP PROCESS ═══════════ */}
-      <section className="bg-[#FDFBF8] section-padding">
+      <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">Three Simple Steps</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Three Simple Steps</span>
             <h2 className="text-section mt-3 mb-4">How Dubai Pet Relocation Works</h2>
             <p className="text-body-large max-w-2xl mx-auto">
               We make pet relocation straightforward. No hidden complexity. No surprises.
@@ -283,9 +283,9 @@ export default function HomePage() {
               },
             ].map((s) => (
               <Card key={s.step} className="relative">
-                <span className="absolute top-7 right-7 text-[64px] font-bold text-[#1B2B4D]/[0.04] leading-none">{s.step}</span>
-                <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-5">
-                  <s.icon className="w-5 h-5 text-[#5A8F6E]" />
+                <span className="absolute top-7 right-7 text-[64px] font-bold text-[#4F5BD5]/[0.04] leading-none">{s.step}</span>
+                <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-5">
+                  <s.icon className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">{s.title}</h3>
                 <p className="text-body">{s.body}</p>
@@ -295,7 +295,7 @@ export default function HomePage() {
           <div className="mt-10 text-center">
             <Link
               to="/how-it-works"
-              className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-[#1B2B4D] text-[#1B2B4D] rounded-2xl font-semibold text-sm hover:bg-[#1B2B4D]/5 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
             >
               See the Full Process <ArrowRight className="w-4 h-4" />
             </Link>
@@ -307,16 +307,16 @@ export default function HomePage() {
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">Our Services</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Our Services</span>
             <h2 className="text-section mt-3 mb-4">Pet Relocation To and From Dubai</h2>
             <p className="text-body-large max-w-2xl mx-auto">
               Whether you are moving to Dubai or leaving, we understand the requirements and connect you with the right partners for your route.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-[#FAF7F1]">
+            <Card className="bg-[#F0F2FB]">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-11 h-11 rounded-[14px] bg-[#1B2B4D] flex items-center justify-center">
+                <div className="w-11 h-11 rounded-[14px] bg-[#4F5BD5] flex items-center justify-center">
                   <Plane className="w-5 h-5 text-white" />
                 </div>
                 <div>
@@ -330,18 +330,18 @@ export default function HomePage() {
               <ul className="space-y-2.5 mb-6">
                 {['MOCCAE import permit guidance', 'Breed and route eligibility check', 'Vet partner coordination', 'Customs clearance support', 'Dubai Municipality registration'].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-[#5A5A5A]">
-                    <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                    <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <Link to="/import-requirements" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1B2B4D] hover:underline">
+              <Link to="/import-requirements" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#4F5BD5] hover:underline">
                 Read the import guide <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </Card>
-            <Card className="bg-[#FAF7F1]">
+            <Card className="bg-[#F0F2FB]">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-11 h-11 rounded-[14px] bg-[#1B2B4D] flex items-center justify-center">
+                <div className="w-11 h-11 rounded-[14px] bg-[#4F5BD5] flex items-center justify-center">
                   <Plane className="w-5 h-5 text-white rotate-180" />
                 </div>
                 <div>
@@ -355,7 +355,7 @@ export default function HomePage() {
               <ul className="space-y-2.5 mb-6">
                 {['Export documentation check', 'Destination country requirements', 'Health certificate coordination', 'IATA crate guidance', 'Airline cargo booking support'].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-[#5A5A5A]">
-                    <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                    <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -367,11 +367,11 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════ DOG & CAT CARDS ═══════════ */}
-      <section className="bg-[#FDFBF8] section-padding">
+      <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">By Pet Type</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">By Pet Type</span>
               <h2 className="text-section mt-3 mb-4">Dog and Cat Relocation, Both Covered</h2>
               <p className="text-body-large mb-8">
                 Dogs and cats have different requirements, different concerns, and different needs. We understand both. We guide you through breed-specific rules, crate sizing, airline policies, and health requirements for your pet.
@@ -381,27 +381,27 @@ export default function HomePage() {
                   to="/dog-relocation"
                   className="group flex items-center gap-4 p-5 bg-white rounded-[20px] shadow-sm hover:shadow-md transition-all"
                 >
-                  <div className="w-12 h-12 rounded-[14px] bg-[#F5EFE6] flex items-center justify-center shrink-0">
-                    <Dog className="w-6 h-6 text-[#1B2B4D]" />
+                  <div className="w-12 h-12 rounded-[14px] bg-[#EEF0FC] flex items-center justify-center shrink-0">
+                    <Dog className="w-6 h-6 text-[#4F5BD5]" />
                   </div>
                   <div className="flex-1">
-                    <p className="font-semibold text-[#2A2A2A] group-hover:text-[#1B2B4D] transition-colors">Dog Relocation</p>
+                    <p className="font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5] transition-colors">Dog Relocation</p>
                     <p className="text-sm text-[#8A8A8A]">Breed checks, crate sizing, airline rules</p>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-[#8A8A8A] group-hover:text-[#1B2B4D] transition-colors" />
+                  <ArrowRight className="w-5 h-5 text-[#8A8A8A] group-hover:text-[#4F5BD5] transition-colors" />
                 </Link>
                 <Link
                   to="/cat-relocation"
                   className="group flex items-center gap-4 p-5 bg-white rounded-[20px] shadow-sm hover:shadow-md transition-all"
                 >
-                  <div className="w-12 h-12 rounded-[14px] bg-[#F5EFE6] flex items-center justify-center shrink-0">
-                    <Cat className="w-6 h-6 text-[#1B2B4D]" />
+                  <div className="w-12 h-12 rounded-[14px] bg-[#EEF0FC] flex items-center justify-center shrink-0">
+                    <Cat className="w-6 h-6 text-[#4F5BD5]" />
                   </div>
                   <div className="flex-1">
-                    <p className="font-semibold text-[#2A2A2A] group-hover:text-[#1B2B4D] transition-colors">Cat Relocation</p>
+                    <p className="font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5] transition-colors">Cat Relocation</p>
                     <p className="text-sm text-[#8A8A8A]">Sedation guidance, crate comfort, stress reduction</p>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-[#8A8A8A] group-hover:text-[#1B2B4D] transition-colors" />
+                  <ArrowRight className="w-5 h-5 text-[#8A8A8A] group-hover:text-[#4F5BD5] transition-colors" />
                 </Link>
               </div>
             </div>
@@ -432,7 +432,7 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">What We Coordinate</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">What We Coordinate</span>
               <h2 className="text-section mt-3 mb-5">We Handle the Hard Parts. You Stay Informed.</h2>
               <p className="text-body-large mb-8">
                 You don't need to become an expert in MOCCAE regulations, IATA crate standards, or airline cargo policies. That is our role. We guide you through the complexity and connect you with the right partners.
@@ -444,9 +444,9 @@ export default function HomePage() {
                   { icon: Shield, title: 'Breed Eligibility', body: 'Verify your breed against UAE and airline rules.' },
                   { icon: Award, title: 'Partner Vetting', body: 'We only work with partners we trust with our own pets.' },
                 ].map((item) => (
-                  <div key={item.title} className="flex items-start gap-3 p-4 rounded-[16px] bg-[#FAF7F1]">
-                    <div className="w-9 h-9 rounded-[10px] bg-[#EDF6F0] flex items-center justify-center shrink-0">
-                      <item.icon className="w-4 h-4 text-[#5A8F6E]" />
+                  <div key={item.title} className="flex items-start gap-3 p-4 rounded-[16px] bg-[#F0F2FB]">
+                    <div className="w-9 h-9 rounded-[10px] bg-[#E9ECFB] flex items-center justify-center shrink-0">
+                      <item.icon className="w-4 h-4 text-[#4F5BD5]" />
                     </div>
                     <div>
                       <p className="font-semibold text-sm text-[#2A2A2A] mb-1">{item.title}</p>
@@ -468,9 +468,9 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════ TRANSPARENT MODEL ═══════════ */}
-      <section className="bg-[#F5EFE6] section-padding">
+      <section className="bg-[#EEF0FC] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">Our Approach</span>
+          <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Our Approach</span>
           <h2 className="text-section mt-3 mb-4 max-w-2xl mx-auto">A Transparent Partner Model</h2>
           <p className="text-body-large max-w-2xl mx-auto mb-12">
             We do not own an airline. We are not a government agency. We are a concierge service that helps you understand the process and connects you with the right specialists.
@@ -494,8 +494,8 @@ export default function HomePage() {
               },
             ].map((item) => (
               <Card key={item.title}>
-                <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                  <item.icon className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                  <item.icon className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">{item.title}</h3>
                 <p className="text-body">{item.body}</p>
@@ -506,11 +506,11 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════ IMPORT GUIDE CTA ═══════════ */}
-      <section className="bg-[#1B2B4D] section-padding">
+      <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#7AB08E] uppercase tracking-wider">Essential Guide</span>
+              <span className="text-sm font-semibold text-[#6E78E0] uppercase tracking-wider">Essential Guide</span>
               <h2 className="text-[28px] sm:text-[36px] font-bold leading-tight text-white mt-3 mb-4">
                 UAE Pet Import Guide: Everything You Need to Know
               </h2>
@@ -520,14 +520,14 @@ export default function HomePage() {
               <ul className="space-y-2.5 mb-8">
                 {['MOCCAE import permit explained', 'Banned breed list', 'Vaccination timeline', 'Document checklist', 'Airline requirements'].map((item) => (
                   <li key={item} className="flex items-center gap-2.5 text-sm text-white/70">
-                    <CheckCircle className="w-4 h-4 text-[#7AB08E] shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-[#6E78E0] shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
               <Link
                 to="/import-requirements"
-                className="inline-flex items-center gap-2 px-7 py-4 bg-white text-[#1B2B4D] rounded-2xl font-semibold text-sm hover:bg-[#F5EFE6] transition-colors"
+                className="inline-flex items-center gap-2 px-7 py-4 bg-white text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#EEF0FC] transition-colors"
               >
                 Read the Full Guide <ArrowRight className="w-4 h-4" />
               </Link>
@@ -547,7 +547,7 @@ export default function HomePage() {
       <section className="bg-white section-padding">
         <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">Common Questions</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Common Questions</span>
             <h2 className="text-section mt-3 mb-4">Frequently Asked Questions</h2>
             <p className="text-body-large">
               Quick answers to the questions we hear most often. For more detail, WhatsApp us anytime.
@@ -559,7 +559,7 @@ export default function HomePage() {
               <>
                 <p>No. If all documentation is complete and correct, pets do not require mandatory quarantine in Dubai. This includes a valid MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate. However, incomplete documentation can result in conditional quarantine at the owner's expense. We check every document three times to prevent this.</p>
                 <p className="mt-3">
-                  <Link to="/import-requirements" className="text-[#1B2B4D] font-semibold hover:underline inline-flex items-center gap-1">
+                  <Link to="/import-requirements" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">
                     Read our full import guide <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
@@ -572,7 +572,7 @@ export default function HomePage() {
               <>
                 <p>Pet relocation to Dubai typically costs between <strong>AED 8,000 and AED 25,000</strong> depending on the origin country, pet size, and service level. The breakdown includes government fees (AED 200–700), veterinary costs (AED 1,200–2,500), cargo shipping (AED 3,000–12,000), and coordination fees (AED 1,500–6,000).</p>
                 <p className="mt-3">
-                  <Link to="/cost-guide" className="text-[#1B2B4D] font-semibold hover:underline inline-flex items-center gap-1">
+                  <Link to="/cost-guide" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">
                     See our full cost breakdown <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
@@ -601,7 +601,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════ FINAL CONVERSION ═══════════ */}
-      <section className="bg-[#F5EFE6] section-padding">
+      <section className="bg-[#EEF0FC] section-padding">
         <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-section mb-4">Ready to Get Clear Guidance?</h2>
           <p className="text-body-large mb-4">
@@ -612,7 +612,7 @@ export default function HomePage() {
             <WhatsAppCta text="Get Help on WhatsApp" />
             <Link
               to="/cost-guide"
-              className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#1B2B4D] text-[#1B2B4D] rounded-2xl font-semibold text-sm hover:bg-[#1B2B4D]/5 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
             >
               View Cost Guide
             </Link>

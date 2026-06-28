@@ -81,7 +81,7 @@ export default function CanadaToDubai() {
   ]
 
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         title={pageTitle}
         description={pageDescription}
@@ -97,7 +97,7 @@ export default function CanadaToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Route Guide</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Route Guide</span>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 Canada to Dubai Pet Relocation — Complete Guide
               </h1>
@@ -115,7 +115,7 @@ export default function CanadaToDubai() {
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
                 <img src="/images/hero-canada.jpg" alt="Pet relocation from Canada to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">
                     <PawPrint className="w-16 h-16 mx-auto mb-4 opacity-90" />
@@ -133,7 +133,7 @@ export default function CanadaToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Route Overview</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Route Overview</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Flying Your Pet from Canada to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Canada offers multiple direct and connecting routes to Dubai. Toronto is the primary hub, but Vancouver and Montreal also offer good options. The CFIA endorsement is the key Canadian-specific step.
@@ -142,32 +142,32 @@ export default function CanadaToDubai() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Plane className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Plane className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Flight Time</p>
               <p className="text-[#5A5A5A] text-sm">13–15 hours</p>
               <p className="text-[#5A5A5A] text-xs mt-2">YYZ/YVR/YUL → DXB</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Timeline</p>
               <p className="text-[#5A5A5A] text-sm">4–6 weeks</p>
               <p className="text-[#5A5A5A] text-xs mt-2">Includes CFIA endorsement</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Risk Level</p>
               <p className="text-[#5A5A5A] text-sm">Low-Risk</p>
-              <p className="text-[#5A8F6E] text-xs mt-2 font-medium">No titer test for most provinces</p>
+              <p className="text-[#4F5BD5] text-xs mt-2 font-medium">No titer test for most provinces</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <FileText className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <FileText className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">CFIA Endorsement</p>
               <p className="text-[#5A5A5A] text-sm">Required</p>
@@ -182,15 +182,15 @@ export default function CanadaToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Documentation</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Documentation</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents Required for Canada to Dubai</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 Canadian pet relocation to Dubai requires a CFIA-endorsed health certificate — a critical step that many Canadian owners miss. The CFIA endorsement is similar to the USDA endorsement in the US but follows Canadian-specific procedures.
               </p>
 
               <div className="space-y-4">
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -199,8 +199,8 @@ export default function CanadaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -209,8 +209,8 @@ export default function CanadaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -219,7 +219,7 @@ export default function CanadaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
                   <div className="w-10 h-10 bg-[#D4A017] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
@@ -229,8 +229,8 @@ export default function CanadaToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -241,36 +241,36 @@ export default function CanadaToDubai() {
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-6">
                 <AlertTriangle className="w-6 h-6 text-[#D4A017]" />
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Important Notes for Canadian Pets</h3>
               </div>
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>The CFIA endorsement is mandatory and separate from your vet visit. Many first-time Canadian shippers overlook this step. CFIA offices are not open on weekends, and appointments may be required at some locations. Plan 3–5 business days for CFIA processing.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Not all CFIA offices handle pet export endorsements. Toronto, Vancouver, and Montreal have dedicated staff, but smaller cities may require mailing documents to a regional office. Dubai Pet Relocation can identify the correct CFIA office for your location.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Canadian winters (November–March) can cause flight delays due to snow and ice. Dubai Pet Relocation monitors weather conditions and books flights with weather buffers during winter months.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Brachycephalic breeds face summer embargoes on most Canadian carriers (May–September). Plan for early morning departures or wait until cooler months. Air Canada has specific restrictions for snub-nosed breeds.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>Toronto (YYZ) departures are generally cheaper and more convenient than Vancouver (YVR) due to shorter flight distance and more cargo capacity. If you have flexibility, flying from Toronto can save AED 2,000–4,000 in freight costs.</span>
                 </li>
               </ul>
-              <div className="mt-6 p-4 bg-[#5A8F6E]/10 rounded-xl">
+              <div className="mt-6 p-4 bg-[#4F5BD5]/10 rounded-xl">
                 <p className="text-sm text-[#2A2A2A] font-medium">
-                  <span className="text-[#5A8F6E]">Pro tip:</span> Air Canada operates a dedicated cargo facility at Toronto Pearson (YYZ) with 24/7 animal care staff. If departing from Toronto, Air Canada is often the smoothest option for pets, with direct connections to Emirates at DXB.
+                  <span className="text-[#4F5BD5]">Pro tip:</span> Air Canada operates a dedicated cargo facility at Toronto Pearson (YYZ) with 24/7 animal care staff. If departing from Toronto, Air Canada is often the smoothest option for pets, with direct connections to Emirates at DXB.
                 </p>
               </div>
             </div>
@@ -282,7 +282,7 @@ export default function CanadaToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Canada to Dubai Cost Breakdown</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Costs vary significantly by departure city and pet size. Toronto flights are cheaper than Vancouver. Contact Dubai Pet Relocation for a precise quote based on your Canadian location and pet details.
@@ -349,22 +349,22 @@ export default function CanadaToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,500–3,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–5,000</td>
                   </tr>
-                  <tr className="bg-[#5A8F6E]/5">
+                  <tr className="bg-[#4F5BD5]/5">
                     <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total (Toronto)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 10,000–15,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 13,000–20,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 18,000–28,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 10,000–15,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 13,000–20,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 18,000–28,000</td>
                   </tr>
-                  <tr className="bg-[#5A8F6E]/5">
+                  <tr className="bg-[#4F5BD5]/5">
                     <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total (Vancouver)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 12,000–17,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 15,000–22,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 21,000–31,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 12,000–17,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 15,000–22,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 21,000–31,000</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
+            <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
                 * Prices are estimates in CAD and converted to AED. Toronto (YYZ) flights are cheaper due to shorter distance and more cargo capacity. Vancouver (YVR) and Montreal (YUL) are more expensive. Air cargo rates fluctuate with fuel surcharges and seasonal demand. Winter weather (November–March) may cause delays. Contact Dubai Pet Relocation for a precise quote based on your exact departure city and pet details.
               </p>
@@ -377,7 +377,7 @@ export default function CanadaToDubai() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Step-by-Step</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Canada to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               The Canadian route is efficient but requires the CFIA endorsement step. Dubai Pet Relocation manages all timelines to avoid last-minute delays, especially around Canadian holidays.
@@ -421,12 +421,12 @@ export default function CanadaToDubai() {
               ].map((step, idx) => (
                 <div key={idx} className={`relative flex items-start gap-6 lg:gap-0 ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                   <div className="hidden lg:block lg:w-1/2" />
-                  <div className="absolute left-6 lg:left-1/2 lg:-ml-5 w-10 h-10 bg-[#5A8F6E] rounded-full flex items-center justify-center z-10">
+                  <div className="absolute left-6 lg:left-1/2 lg:-ml-5 w-10 h-10 bg-[#4F5BD5] rounded-full flex items-center justify-center z-10">
                     <step.icon className="w-5 h-5 text-white" />
                   </div>
                   <div className={`ml-16 lg:ml-0 lg:w-1/2 ${idx % 2 === 0 ? 'lg:pr-12 lg:text-right' : 'lg:pl-12'}`}>
-                    <div className="bg-[#FDFBF8] rounded-[20px] p-6">
-                      <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">{step.week}</span>
+                    <div className="bg-[#F5F6FD] rounded-[20px] p-6">
+                      <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">{step.week}</span>
                       <h3 className="text-lg font-bold text-[#2A2A2A] mt-1 mb-2">{step.title}</h3>
                       <p className="text-[#5A5A5A] text-sm leading-relaxed">{step.desc}</p>
                     </div>
@@ -442,7 +442,7 @@ export default function CanadaToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Airlines</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from Canada to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Air Canada and Emirates are the primary carriers for Canadian pet relocations to Dubai. Both offer reliable cargo services with climate-controlled holds.
@@ -461,10 +461,10 @@ export default function CanadaToDubai() {
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Cargo from YYZ, YVR, YUL, YYC</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> 13–15 hours direct or connecting</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Climate-controlled cargo holds</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Canadian-based customer service</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Cargo from YYZ, YVR, YUL, YYC</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> 13–15 hours direct or connecting</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Climate-controlled cargo holds</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Canadian-based customer service</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Air Canada is a popular choice for Canadian pet owners due to their extensive domestic network and reliable cargo handling. Their Toronto facility has dedicated animal care staff. However, Air Canada has stricter breed restrictions than Emirates for brachycephalic pets.</p>
             </div>
@@ -480,16 +480,16 @@ export default function CanadaToDubai() {
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Direct from Toronto (YYZ)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> 13–14 hours non-stop</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Priority animal handling at both ends</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Best for large dogs and brachycephalic breeds</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Direct from Toronto (YYZ)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> 13–14 hours non-stop</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Priority animal handling at both ends</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Best for large dogs and brachycephalic breeds</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Emirates offers the most direct routing from Toronto and is often preferred for large dogs or breeds that Air Canada restricts. Their SkyCargo Live service includes 24/7 animal monitoring and priority offloading at DXB.</p>
             </div>
           </div>
 
-          <div className="mt-8 bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+          <div className="mt-8 bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
               <AlertTriangle className="w-5 h-5 text-[#D4A017]" />
               Winter Weather & Seasonal Considerations
@@ -508,15 +508,15 @@ export default function CanadaToDubai() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">FAQ</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">FAQ</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Canada to Dubai Pet Relocation FAQs</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-[#FDFBF8] rounded-[20px] p-6">
+              <div key={idx} className="bg-[#F5F6FD] rounded-[20px] p-6">
                 <div className="flex items-start gap-3">
-                  <MessageCircle className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-1" />
+                  <MessageCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-[#2A2A2A] text-base mb-2">{faq.question}</h3>
                     <p className="text-[#5A5A5A] text-sm leading-relaxed">{faq.answer}</p>
@@ -531,8 +531,8 @@ export default function CanadaToDubai() {
       {/* CTA */}
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#0F1A30] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
+          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
+            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from Canada to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
               Dubai Pet Relocation has relocated pets from all Canadian provinces to Dubai. From Toronto, Vancouver, Montreal, Calgary, or anywhere in Canada — we handle the CFIA paperwork, flight booking, and Dubai customs.
@@ -567,15 +567,15 @@ export default function CanadaToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-[#5A5A5A]">
             <span>Related:</span>
-            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#5A8F6E] hover:underline">Cost Guide</Link>
+            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/guides/uae-pet-import-requirements/" className="text-[#5A8F6E] hover:underline">Import Requirements</Link>
+            <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/how-it-works/" className="text-[#5A8F6E] hover:underline">How It Works</Link>
+            <Link to="/how-it-works/" className="text-[#4F5BD5] hover:underline">How It Works</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/dog-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Dog Relocation</Link>
+            <Link to="/dog-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Dog Relocation</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/cat-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Cat Relocation</Link>
+            <Link to="/cat-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Cat Relocation</Link>
           </div>
         </div>
       </section>

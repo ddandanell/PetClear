@@ -57,10 +57,10 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-lg bg-[#1A5F4A] flex items-center justify-center">
+            <div className="w-9 h-9 rounded-lg bg-[#3A45B0] flex items-center justify-center">
               <PawPrint className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-[#1A5F4A]">Dubai Pet Relocation</span>
+            <span className="text-xl font-bold text-[#3A45B0]">Dubai Pet Relocation</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -76,8 +76,8 @@ export default function Header() {
                   <button
                     className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                       link.children.some((c) => isActive(c.to))
-                        ? 'text-[#1A5F4A] bg-[#E6F4EC]'
-                        : 'text-gray-700 hover:text-[#1A5F4A] hover:bg-gray-50'
+                        ? 'text-[#3A45B0] bg-[#E9ECFB]'
+                        : 'text-gray-700 hover:text-[#3A45B0] hover:bg-gray-50'
                     }`}
                   >
                     {link.label}
@@ -91,8 +91,8 @@ export default function Header() {
                           to={child.to}
                           className={`block px-4 py-2 text-sm transition-colors ${
                             isActive(child.to)
-                              ? 'text-[#1A5F4A] bg-[#E6F4EC] font-medium'
-                              : 'text-gray-700 hover:text-[#1A5F4A] hover:bg-gray-50'
+                              ? 'text-[#3A45B0] bg-[#E9ECFB] font-medium'
+                              : 'text-gray-700 hover:text-[#3A45B0] hover:bg-gray-50'
                           }`}
                           onClick={() => setOpenDropdown(null)}
                         >
@@ -108,8 +108,8 @@ export default function Header() {
                   to={link.to}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive(link.to)
-                      ? 'text-[#1A5F4A] bg-[#E6F4EC]'
-                      : 'text-gray-700 hover:text-[#1A5F4A] hover:bg-gray-50'
+                      ? 'text-[#3A45B0] bg-[#E9ECFB]'
+                      : 'text-gray-700 hover:text-[#3A45B0] hover:bg-gray-50'
                   }`}
                 >
                   {link.label}
@@ -157,8 +157,8 @@ export default function Header() {
                         to={child.to}
                         className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
                           isActive(child.to)
-                            ? 'text-[#1A5F4A] bg-[#E6F4EC] font-medium'
-                            : 'text-gray-600 hover:text-[#1A5F4A] hover:bg-gray-50'
+                            ? 'text-[#3A45B0] bg-[#E9ECFB] font-medium'
+                            : 'text-gray-600 hover:text-[#3A45B0] hover:bg-gray-50'
                         }`}
                         onClick={() => setMenuOpen(false)}
                       >
@@ -173,8 +173,8 @@ export default function Header() {
                   to={link.to}
                   className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive(link.to)
-                      ? 'text-[#1A5F4A] bg-[#E6F4EC]'
-                      : 'text-gray-700 hover:text-[#1A5F4A] hover:bg-gray-50'
+                      ? 'text-[#3A45B0] bg-[#E9ECFB]'
+                      : 'text-gray-700 hover:text-[#3A45B0] hover:bg-gray-50'
                   }`}
                   onClick={() => setMenuOpen(false)}
                 >

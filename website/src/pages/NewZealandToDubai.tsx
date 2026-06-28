@@ -81,7 +81,7 @@ export default function NewZealandToDubai() {
   ]
 
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         title={pageTitle}
         description={pageDescription}
@@ -97,7 +97,7 @@ export default function NewZealandToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Route Guide</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Route Guide</span>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 New Zealand to Dubai Pet Relocation — Complete Guide
               </h1>
@@ -115,7 +115,7 @@ export default function NewZealandToDubai() {
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
                 <img src="/images/hero-new-zealand.jpg" alt="Pet relocation from New Zealand to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">
                     <PawPrint className="w-16 h-16 mx-auto mb-4 opacity-90" />
@@ -133,7 +133,7 @@ export default function NewZealandToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Route Overview</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Route Overview</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Flying Your Pet from New Zealand to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               New Zealand to Dubai is one of the longest pet relocation routes, requiring at least one connection. The absence of a titer test keeps the timeline manageable, but the distance means higher freight costs.
@@ -142,32 +142,32 @@ export default function NewZealandToDubai() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Plane className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Plane className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Flight Time</p>
               <p className="text-[#5A5A5A] text-sm">17–20 hours</p>
               <p className="text-[#5A5A5A] text-xs mt-2">AKL/WLG/CHC → DXB (1+ stops)</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Timeline</p>
               <p className="text-[#5A5A5A] text-sm">4–6 weeks</p>
               <p className="text-[#5A5A5A] text-xs mt-2">Includes MPI processing</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Risk Level</p>
               <p className="text-[#5A5A5A] text-sm">Low-Risk</p>
-              <p className="text-[#5A8F6E] text-xs mt-2 font-medium">Completely rabies-free</p>
+              <p className="text-[#4F5BD5] text-xs mt-2 font-medium">Completely rabies-free</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <FileText className="w-7 h-7 text-[#5A8F6E]" />
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <FileText className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">MPI Export</p>
               <p className="text-[#5A5A5A] text-sm">Required</p>
@@ -182,15 +182,15 @@ export default function NewZealandToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Documentation</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Documentation</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents Required for New Zealand to Dubai</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 New Zealand export documentation is among the strictest globally. MPI ensures no biosecurity risks are exported alongside your pet. The MPI certificate must be completed by an MPI-approved veterinarian.
               </p>
 
               <div className="space-y-4">
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -199,8 +199,8 @@ export default function NewZealandToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -209,7 +209,7 @@ export default function NewZealandToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
                   <div className="w-10 h-10 bg-[#D4A017] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
@@ -219,8 +219,8 @@ export default function NewZealandToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -229,8 +229,8 @@ export default function NewZealandToDubai() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-[#FDFBF8] rounded-2xl p-5">
-                  <div className="w-10 h-10 bg-[#5A8F6E] rounded-xl flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
+                  <div className="w-10 h-10 bg-[#4F5BD5] rounded-xl flex items-center justify-center shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -241,36 +241,36 @@ export default function NewZealandToDubai() {
               </div>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-6">
                 <AlertTriangle className="w-6 h-6 text-[#D4A017]" />
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Important Notes for New Zealand Pets</h3>
               </div>
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>New Zealand is one of the only countries in the world with zero rabies cases. The rabies vaccine for export must be specially imported — most NZ vets do not stock it. Allow 2–3 weeks for delivery and order early.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>MPI-approved veterinarians are limited. Not all NZ vets can issue export certificates. Dubai Pet Relocation can recommend approved vets in Auckland, Wellington, and Christchurch.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>All flights from New Zealand to Dubai require at least one connection (usually through Australia, Singapore, or the Emirates hub). Dubai Pet Relocation books the shortest connection time to minimise your pet's total travel time.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>New Zealand biosecurity laws prohibit the inclusion of hay, straw, wood shavings, or rawhide in the travel crate. Only synthetic bedding and stainless-steel bowls are permitted. Dubai Pet Relocation provides a compliant packing list.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Info className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span>No titer test is required for New Zealand pets. This saves approximately AED 1,500–2,000 and 3–4 months compared to high-risk routes, making the overall timeline much shorter despite the long flight distance.</span>
                 </li>
               </ul>
-              <div className="mt-6 p-4 bg-[#5A8F6E]/10 rounded-xl">
+              <div className="mt-6 p-4 bg-[#4F5BD5]/10 rounded-xl">
                 <p className="text-sm text-[#2A2A2A] font-medium">
-                  <span className="text-[#5A8F6E]">Pro tip:</span> Auckland (AKL) is the primary hub for NZ pet exports, with the most flight options and MPI-approved vets. If you are located elsewhere in NZ, transporting your pet to Auckland for departure can sometimes be cheaper than flying from a regional airport with limited cargo capacity.
+                  <span className="text-[#4F5BD5]">Pro tip:</span> Auckland (AKL) is the primary hub for NZ pet exports, with the most flight options and MPI-approved vets. If you are located elsewhere in NZ, transporting your pet to Auckland for departure can sometimes be cheaper than flying from a regional airport with limited cargo capacity.
                 </p>
               </div>
             </div>
@@ -282,7 +282,7 @@ export default function NewZealandToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">New Zealand to Dubai Cost Breakdown</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               The long flight distance and connection routing make this one of the more expensive routes, but the absence of a titer test keeps the timeline short.
@@ -343,16 +343,16 @@ export default function NewZealandToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,500–3,500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–5,000</td>
                   </tr>
-                  <tr className="bg-[#5A8F6E]/5">
+                  <tr className="bg-[#4F5BD5]/5">
                     <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total Estimated Cost</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 13,000–19,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 16,000–24,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 21,000–32,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 13,000–19,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 16,000–24,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 21,000–32,000</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
+            <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
                 * Prices are estimates in NZD and converted to AED. The long flight distance and mandatory connection routing make this one of the more expensive routes. Air cargo rates include connection fees and fuel surcharges. Auckland departures offer the most options and best rates. Regional departures (e.g., Dunedin, Hamilton) may be significantly more expensive due to limited cargo capacity. Contact Dubai Pet Relocation for a precise quote based on your exact departure city and pet details.
               </p>
@@ -365,7 +365,7 @@ export default function NewZealandToDubai() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Step-by-Step</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">New Zealand to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               The MPI export process adds 1–2 weeks, but the absence of a titer test keeps the overall timeline to 4–6 weeks.
@@ -409,12 +409,12 @@ export default function NewZealandToDubai() {
               ].map((step, idx) => (
                 <div key={idx} className={`relative flex items-start gap-6 lg:gap-0 ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                   <div className="hidden lg:block lg:w-1/2" />
-                  <div className="absolute left-6 lg:left-1/2 lg:-ml-5 w-10 h-10 bg-[#5A8F6E] rounded-full flex items-center justify-center z-10">
+                  <div className="absolute left-6 lg:left-1/2 lg:-ml-5 w-10 h-10 bg-[#4F5BD5] rounded-full flex items-center justify-center z-10">
                     <step.icon className="w-5 h-5 text-white" />
                   </div>
                   <div className={`ml-16 lg:ml-0 lg:w-1/2 ${idx % 2 === 0 ? 'lg:pr-12 lg:text-right' : 'lg:pl-12'}`}>
-                    <div className="bg-[#FDFBF8] rounded-[20px] p-6">
-                      <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">{step.week}</span>
+                    <div className="bg-[#F5F6FD] rounded-[20px] p-6">
+                      <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">{step.week}</span>
                       <h3 className="text-lg font-bold text-[#2A2A2A] mt-1 mb-2">{step.title}</h3>
                       <p className="text-[#5A5A5A] text-sm leading-relaxed">{step.desc}</p>
                     </div>
@@ -430,7 +430,7 @@ export default function NewZealandToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Airlines</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from New Zealand to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               All flights from New Zealand to Dubai require at least one connection. Dubai Pet Relocation books the routing with the shortest connection time to minimise stress on your pet.
@@ -449,10 +449,10 @@ export default function NewZealandToDubai() {
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Cargo from AKL, WLG, CHC</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> 17–20 hours with connections</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Connections via Australia or Singapore</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> NZ-based customer service</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Cargo from AKL, WLG, CHC</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> 17–20 hours with connections</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Connections via Australia or Singapore</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> NZ-based customer service</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Air New Zealand is a popular choice for NZ pet owners due to their familiarity with MPI requirements and domestic network. However, connections add complexity. Dubai Pet Relocation monitors connection times to ensure your pet is not left on the tarmac for extended periods.</p>
             </div>
@@ -468,16 +468,16 @@ export default function NewZealandToDubai() {
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Cargo from Auckland (AKL)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> 17–20 hours with connection</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Priority animal handling at all ports</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Best for large dogs and brachycephalic breeds</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Cargo from Auckland (AKL)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> 17–20 hours with connection</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Priority animal handling at all ports</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Best for large dogs and brachycephalic breeds</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Emirates offers the most seamless connection experience for NZ pets, with their dedicated SkyCargo Live service handling transfers at all hubs. They are often preferred for large dogs or breeds with special requirements. However, Emirates is generally more expensive than Air New Zealand.</p>
             </div>
           </div>
 
-          <div className="mt-8 bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+          <div className="mt-8 bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
               <AlertTriangle className="w-5 h-5 text-[#D4A017]" />
               Connection Handling & Long-Haul Considerations
@@ -496,15 +496,15 @@ export default function NewZealandToDubai() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">FAQ</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">FAQ</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">New Zealand to Dubai Pet Relocation FAQs</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-[#FDFBF8] rounded-[20px] p-6">
+              <div key={idx} className="bg-[#F5F6FD] rounded-[20px] p-6">
                 <div className="flex items-start gap-3">
-                  <MessageCircle className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-1" />
+                  <MessageCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-[#2A2A2A] text-base mb-2">{faq.question}</h3>
                     <p className="text-[#5A5A5A] text-sm leading-relaxed">{faq.answer}</p>
@@ -519,8 +519,8 @@ export default function NewZealandToDubai() {
       {/* CTA */}
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#0F1A30] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
+          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
+            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from New Zealand to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
               Dubai Pet Relocation understands the unique challenges of New Zealand pet exports. From Auckland, Wellington, Christchurch, or anywhere in NZ — we coordinate with MPI, book the best flight routing, and handle Dubai customs.
@@ -555,15 +555,15 @@ export default function NewZealandToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-[#5A5A5A]">
             <span>Related:</span>
-            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#5A8F6E] hover:underline">Cost Guide</Link>
+            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/guides/uae-pet-import-requirements/" className="text-[#5A8F6E] hover:underline">Import Requirements</Link>
+            <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/how-it-works/" className="text-[#5A8F6E] hover:underline">How It Works</Link>
+            <Link to="/how-it-works/" className="text-[#4F5BD5] hover:underline">How It Works</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/dog-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Dog Relocation</Link>
+            <Link to="/dog-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Dog Relocation</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/cat-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Cat Relocation</Link>
+            <Link to="/cat-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Cat Relocation</Link>
           </div>
         </div>
       </section>

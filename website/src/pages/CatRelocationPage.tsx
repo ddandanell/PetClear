@@ -52,7 +52,7 @@ function FaqItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span className="pr-4">{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 shrink-0 text-[#5A8F6E]" /> : <ChevronDown className="w-5 h-5 shrink-0 text-[#8A8A8A]" />}
+        {open ? <ChevronUp className="w-5 h-5 shrink-0 text-[#4F5BD5]" /> : <ChevronDown className="w-5 h-5 shrink-0 text-[#8A8A8A]" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -63,10 +63,10 @@ function FaqItem({ question, answer }: { question: string; answer: React.ReactNo
 function Step({ number, title, children }: { number: number; title: string; children: React.ReactNode }) {
   return (
     <div className="relative pl-10 pb-10 last:pb-0">
-      <div className="absolute left-0 top-0 w-7 h-7 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold">
+      <div className="absolute left-0 top-0 w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold">
         {number}
       </div>
-      <div className="absolute left-3.5 top-7 bottom-0 w-px bg-[#1B2B4D]/20" />
+      <div className="absolute left-3.5 top-7 bottom-0 w-px bg-[#4F5BD5]/20" />
       <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">{title}</h3>
       <div className="text-[#5A5A5A] leading-relaxed space-y-2">{children}</div>
     </div>
@@ -75,7 +75,7 @@ function Step({ number, title, children }: { number: number; title: string; chil
 
 export default function CatRelocationPage() {
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         title="Cat Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation"
         description="Expert guide to relocating your cat to Dubai. Sedation guidance, crate comfort, airline policies, MOCCAE requirements, and everything you need for a safe, stress-free journey."
@@ -167,8 +167,8 @@ export default function CatRelocationPage() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <div className="flex items-center gap-2 mb-4">
-                <PawPrint className="w-5 h-5 text-[#5A8F6E]" />
-                <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Cat Relocation</span>
+                <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
+                <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Cat Relocation</span>
               </div>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 Cat Relocation to Dubai: Bringing Your Cat Home Safely
@@ -192,17 +192,17 @@ export default function CatRelocationPage() {
                 />
                 <Link
                   to="/how-it-works"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#1B2B4D] text-[#1B2B4D] rounded-2xl font-semibold text-sm hover:bg-[#1B2B4D]/5 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
                 >
                   How it works
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
               <div className="flex flex-wrap items-center gap-4 text-xs text-[#8A8A8A]">
-                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-[#1B2B4D]" /> Vetted relocation partners</span>
-                <span className="flex items-center gap-1"><Shield className="w-3.5 h-3.5 text-[#1B2B4D]" /> MOCCAE import guidance</span>
-                <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5 text-[#1B2B4D]" /> IATA-compliant</span>
-                <span className="flex items-center gap-1"><Heart className="w-3.5 h-3.5 text-[#1B2B4D]" /> 150+ cats relocated</span>
+                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-[#4F5BD5]" /> Vetted relocation partners</span>
+                <span className="flex items-center gap-1"><Shield className="w-3.5 h-3.5 text-[#4F5BD5]" /> MOCCAE import guidance</span>
+                <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5 text-[#4F5BD5]" /> IATA-compliant</span>
+                <span className="flex items-center gap-1"><Heart className="w-3.5 h-3.5 text-[#4F5BD5]" /> 150+ cats relocated</span>
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -213,7 +213,7 @@ export default function CatRelocationPage() {
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover"
                   loading="eager"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-white text-sm font-medium">Vetted relocation partners · MOCCAE import guidance · IATA-compliant</p>
                 </div>
@@ -233,8 +233,8 @@ export default function CatRelocationPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {/* Card 1 */}
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <PawPrint className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;My cat will be terrified the whole flight.&rdquo;</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -246,8 +246,8 @@ export default function CatRelocationPage() {
             </div>
             {/* Card 2 */}
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <Droplets className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <Droplets className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;My cat won't eat or drink during the journey.&rdquo;</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -259,8 +259,8 @@ export default function CatRelocationPage() {
             </div>
             {/* Card 3 */}
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <Shield className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <Shield className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;What if my cat tries to escape from the crate?&rdquo;</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -272,8 +272,8 @@ export default function CatRelocationPage() {
             </div>
             {/* Card 4 — spans full width on mobile, 2 cols on larger */}
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 sm:col-span-2 lg:col-span-3">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <Heart className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <Heart className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;What if something goes wrong?&rdquo;</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
@@ -343,44 +343,44 @@ export default function CatRelocationPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-10 h-10 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold mb-4">1</div>
+              <div className="w-10 h-10 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-4">1</div>
               <h3 className="text-base font-semibold text-[#2A2A2A] mb-2">MOCCAE Import Permit</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">A mandatory approval from the UAE Ministry of Climate Change and Environment. Cost: AED 200 per pet (plus AED 250/cat release fee on arrival). Valid: 90 days from issuance. We apply for this on your behalf.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-10 h-10 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold mb-4">2</div>
+              <div className="w-10 h-10 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-4">2</div>
               <h3 className="text-base font-semibold text-[#2A2A2A] mb-2">ISO Microchip (15-Digit)</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Your cat must have an ISO 11784/11785 compliant microchip. This must be implanted <em>before</em> the rabies vaccination, and the microchip number must appear on every certificate. This is the most common paperwork error — and it's easily avoided with a single checklist.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-10 h-10 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold mb-4">3</div>
+              <div className="w-10 h-10 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-4">3</div>
               <h3 className="text-base font-semibold text-[#2A2A2A] mb-2">Rabies Vaccination</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Administered at or after 12 weeks of age. The vaccination must be at least 21 days old before your cat travels, and within 12 months of arrival. Only inactivated or recombinant vaccines are accepted — not live attenuated vaccines.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-10 h-10 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold mb-4">4</div>
+              <div className="w-10 h-10 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-4">4</div>
               <h3 className="text-base font-semibold text-[#2A2A2A] mb-2">FVRCP (Core Feline Vaccines)</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Your cat needs up-to-date core vaccinations: Feline Panleukopenia (FPV), Feline Rhinotracheitis (FHV-1), and Feline Calicivirus (FCV). Feline Leukemia (FeLV) is also recommended by most veterinary authorities.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-10 h-10 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold mb-4">5</div>
+              <div className="w-10 h-10 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-4">5</div>
               <h3 className="text-base font-semibold text-[#2A2A2A] mb-2">International Health Certificate</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Issued by an official or government-accredited veterinarian in your country of origin. This must be issued within 10 days of arrival in Dubai. It must include antiparasitic treatment records and show the same microchip number as all other documents.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-10 h-10 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold mb-4">6</div>
+              <div className="w-10 h-10 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-4">6</div>
               <h3 className="text-base font-semibold text-[#2A2A2A] mb-2">Antiparasitic Treatment</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Internal deworming (Praziquantel) and external treatment (Fipronil or equivalent) must be administered within 14 days of arrival. We coordinate this with our vet partner so the timing is exact.</p>
             </div>
           </div>
 
           <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 mt-6">
-            <div className="w-10 h-10 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold mb-4">7</div>
+            <div className="w-10 h-10 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-4">7</div>
             <h3 className="text-base font-semibold text-[#2A2A2A] mb-2">Copy of Owner's Passport & UAE Visa</h3>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">Required for the MOCCAE permit application and customs clearance. If you're not yet in Dubai, we can arrange for a representative to handle collection.</p>
           </div>
 
-          <div className="mt-8 p-6 bg-[#F5EFE6] rounded-[20px]">
+          <div className="mt-8 p-6 bg-[#EEF0FC] rounded-[20px]">
             <p className="text-sm text-[#5A5A5A] leading-relaxed mb-3">
               <strong className="text-[#2A2A2A]">Good news for UK, EU, USA, Canada, Australia, and New Zealand owners:</strong> Your country is classified as low-risk for rabies. This means <strong className="text-[#2A2A2A]">no rabies titer test (RNATT) is required</strong>, and the minimum timeline is just 4–6 weeks from start to finish. For high-risk countries, a titer test is required with a 90-day waiting period — so the timeline extends to 4 months minimum.
             </p>
@@ -396,10 +396,10 @@ export default function CatRelocationPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <SectionHeading className="mb-4">Are Any Cat Breeds Banned in Dubai?</SectionHeading>
           <div className="grid lg:grid-cols-2 gap-8 mt-12">
-            <div className="bg-[#EDF6F0] border border-[#5A8F6E]/30 rounded-[20px] p-6 sm:p-8">
+            <div className="bg-[#E9ECFB] border border-[#4F5BD5]/30 rounded-[20px] p-6 sm:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <CheckCircle className="w-6 h-6 text-[#5A8F6E]" />
-                <h3 className="text-lg font-semibold text-[#5A8F6E]">No domestic cat breeds are banned</h3>
+                <CheckCircle className="w-6 h-6 text-[#4F5BD5]" />
+                <h3 className="text-lg font-semibold text-[#4F5BD5]">No domestic cat breeds are banned</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
                 Unlike dogs, there are no domestic cat breeds banned from import into the UAE. Your Maine Coon, Siamese, Persian, Bengal, or mixed-breed cat is welcome — provided the paperwork is complete.
@@ -410,7 +410,7 @@ export default function CatRelocationPage() {
             </div>
             <div className="warning-box">
               <div className="flex items-center gap-3 mb-4">
-                <AlertTriangle className="w-6 h-6 text-[#5A8F6E]" />
+                <AlertTriangle className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#2A2A2A]">One important restriction: wild cat hybrids</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
@@ -445,31 +445,31 @@ export default function CatRelocationPage() {
               <p className="text-sm text-[#5A5A5A] mb-4">All cats entering Dubai must travel in an IATA-compliant crate. This means:</p>
               <ul className="space-y-3 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Rigid construction:</strong> Hard plastic or plywood with a solid roof and floor. No soft-sided carriers for cargo.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Secure door:</strong> Metal door with a locking mechanism that cannot be opened from the inside. The door must close firmly without gaps.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Ventilation:</strong> Openings on all four sides, covering at least 16% of the total surface area. For brachycephalic (flat-faced) cats like Persians or Exotic Shorthairs, the crate must be 10% larger than standard with increased ventilation.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">No wheels:</strong> Wheels must be removed or locked.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Leak-proof floor:</strong> A solid, absorbent base that won't let moisture escape.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">No top-opening lids:</strong> Cargo crates must open from the front only.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Proper sizing:</strong> Your cat must be able to stand upright without touching the roof, turn around easily, and lie down in a natural position. We measure your cat precisely.</span>
                 </li>
               </ul>
@@ -490,24 +490,24 @@ export default function CatRelocationPage() {
               <p className="text-sm text-[#5A5A5A] mb-4">A few simple additions make a big difference for cats:</p>
               <ul className="space-y-3 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2">
-                  <Heart className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Heart className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">A small, familiar blanket or item of your clothing:</strong> Your scent is comforting.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Absorbent bedding:</strong> A thin layer that won't bunch up. We provide vet-approved absorbent pads.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Droplets className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Droplets className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Spill-proof water container:</strong> Attached to the door, filled at check-in. We freeze water in the container for long flights so it melts gradually.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Coffee className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Coffee className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Food tray:</strong> Attached to the inside of the door with a small portion of dry food. We include written feeding instructions.</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-[#F5EFE6] rounded-[20px] p-6 sm:p-8">
+            <div className="bg-[#EEF0FC] rounded-[20px] p-6 sm:p-8">
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">What About a Litter Box?</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
                 For long-haul flights (8+ hours), some owners ask if a litter box should be included. The honest answer: most cats will not use a litter box during a flight, even if one is provided. They're more likely to hold it.
@@ -538,35 +538,35 @@ export default function CatRelocationPage() {
           <div className="grid lg:grid-cols-2 gap-8 mt-12">
             <div className="bg-white rounded-[20px] shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <Plane className="w-6 h-6 text-[#5A8F6E]" />
+                <Plane className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#2A2A2A]">Emirates SkyCargo (Most Common Route to Dubai)</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] mb-4">Emirates is the primary carrier for cats arriving at Dubai International (DXB). Here's what you need to know:</p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold">✕</span> <strong className="text-[#2A2A2A]">No cabin or checked baggage:</strong> All cats must travel via Emirates SkyCargo.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Advance booking:</strong> Minimum 72 hours notice required. We handle this.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Documentation:</strong> We submit your cat's health certificate, crate photos, and the Owner Acknowledgement Form on your behalf.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Transit care:</strong> If your cat is in transit in Dubai for more than 6 hours, they're cared for at the Emirates Pet Lounge — a climate-controlled facility with trained staff.</li>
-                <li className="flex items-start gap-2"><span className="text-[#1B2B4D] font-bold">!</span> <strong className="text-[#2A2A2A]">Cost:</strong> Typically ranges from USD 1,500–5,000 depending on your origin country, route, and your cat's weight/crate size.</li>
-                <li className="flex items-start gap-2"><span className="text-[#1B2B4D] font-bold">!</span> <strong className="text-[#2A2A2A]">Breed restrictions:</strong> Emirates follows UAE federal rules. No domestic cat breeds are banned, but brachycephalic cats may have seasonal restrictions (November–April only) due to heat sensitivity.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Advance booking:</strong> Minimum 72 hours notice required. We handle this.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Documentation:</strong> We submit your cat's health certificate, crate photos, and the Owner Acknowledgement Form on your behalf.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Transit care:</strong> If your cat is in transit in Dubai for more than 6 hours, they're cared for at the Emirates Pet Lounge — a climate-controlled facility with trained staff.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">!</span> <strong className="text-[#2A2A2A]">Cost:</strong> Typically ranges from USD 1,500–5,000 depending on your origin country, route, and your cat's weight/crate size.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">!</span> <strong className="text-[#2A2A2A]">Breed restrictions:</strong> Emirates follows UAE federal rules. No domestic cat breeds are banned, but brachycephalic cats may have seasonal restrictions (November–April only) due to heat sensitivity.</li>
               </ul>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <Plane className="w-6 h-6 text-[#5A8F6E]" />
+                <Plane className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#2A2A2A]">Etihad Airways (Abu Dhabi Only — With In-Cabin Option)</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] mb-4">Etihad is the most pet-friendly UAE airline, but with an important limitation: their in-cabin option is only for flights to Abu Dhabi (AUH), not Dubai.</p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">In-cabin (PETC):</strong> Small cats (pet + carrier ≤ 8 kg) can travel in the cabin on flights to Abu Dhabi. Carrier max size: 40 x 40 x 22 cm in Economy. Fee: USD 399 per flight segment.</li>
-                <li className="flex items-start gap-2"><span className="text-[#5A8F6E] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Larger cats or those flying to Abu Dhabi via cargo.</li>
-                <li className="flex items-start gap-2"><span className="text-[#1B2B4D] font-bold">!</span> <strong className="text-[#2A2A2A]">Important:</strong> If you fly into Abu Dhabi, you'll need to arrange ground transport to Dubai (about 90 minutes). We can coordinate this for you.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">In-cabin (PETC):</strong> Small cats (pet + carrier ≤ 8 kg) can travel in the cabin on flights to Abu Dhabi. Carrier max size: 40 x 40 x 22 cm in Economy. Fee: USD 399 per flight segment.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Larger cats or those flying to Abu Dhabi via cargo.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">!</span> <strong className="text-[#2A2A2A]">Important:</strong> If you fly into Abu Dhabi, you'll need to arrange ground transport to Dubai (about 90 minutes). We can coordinate this for you.</li>
               </ul>
             </div>
           </div>
 
-          <div className="mt-8 bg-[#F5EFE6] rounded-[20px] p-6 sm:p-8">
+          <div className="mt-8 bg-[#EEF0FC] rounded-[20px] p-6 sm:p-8">
             <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">flydubai & Other Carriers</h3>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
               flydubai handles pets as cargo through their cargo partners. Policies vary by route. We evaluate all options and book the safest, most direct route for your cat — not just the cheapest.
@@ -605,23 +605,23 @@ export default function CatRelocationPage() {
               <p className="text-sm text-[#5A5A5A] mb-4">A calm cat is a prepared cat. We help you reduce travel stress without medication:</p>
               <ul className="space-y-3 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2">
-                  <Home className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Home className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Crate familiarity:</strong> Start crate training 2–3 weeks before travel. Feed your cat in the crate. Let them nap in it. Make it a safe space, not a signal that something scary is happening.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Droplets className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Droplets className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Feliway or calming pheromones:</strong> We recommend spraying the crate interior with a feline pheromone spray 30 minutes before departure. This is non-medicinal and widely used by vets.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Moon className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Moon className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Timing:</strong> We book morning flights. Cats are naturally more active at dawn and dusk; a morning departure aligns with their rhythm.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Plane className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Plane className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Direct routing:</strong> We avoid unnecessary connections. The fewer transitions, the less stress.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Coffee className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <Coffee className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong className="text-[#2A2A2A]">Hunger, not fasting:</strong> We do not recommend fasting cats before travel. A small meal 4–6 hours before departure is fine. Water should be available until check-in.</span>
                 </li>
               </ul>
@@ -634,7 +634,7 @@ export default function CatRelocationPage() {
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
                 We do not recommend this as a default. We recommend it only when a trusted vet says it's necessary.
               </p>
-              <div className="p-4 bg-[#F5EFE6] rounded-2xl">
+              <div className="p-4 bg-[#EEF0FC] rounded-2xl">
                 <p className="text-sm font-semibold text-[#2A2A2A]">
                   The bottom line: Most cats travel calmly without sedation. Preparation beats medication.
                 </p>
@@ -652,7 +652,7 @@ export default function CatRelocationPage() {
           <div className="grid lg:grid-cols-2 gap-8 mt-12">
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <Thermometer className="w-6 h-6 text-[#5A8F6E]" />
+                <Thermometer className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#2A2A2A]">Summer Heat Embargo (June–September)</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
@@ -678,9 +678,9 @@ export default function CatRelocationPage() {
               </p>
             </div>
 
-            <div className="bg-[#F5EFE6] rounded-[20px] p-6 sm:p-8">
+            <div className="bg-[#EEF0FC] rounded-[20px] p-6 sm:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <Heart className="w-6 h-6 text-[#5A8F6E]" />
+                <Heart className="w-6 h-6 text-[#4F5BD5]" />
                 <h3 className="text-lg font-semibold text-[#2A2A2A]">Long-Haired and Flat-Faced Cats</h3>
               </div>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
@@ -763,14 +763,14 @@ export default function CatRelocationPage() {
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">What's Included in Every Dubai Pet Relocation Quote</h3>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> MOCCAE import permit application and fees</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Coordination with vetted veterinary partners for health checks and certificates</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> IATA-compliant travel crate (or verification of your own)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Flight booking as manifest cargo with a trusted airline</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Customs clearance at DXB or DWC cargo terminal</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Door-to-door delivery or airport handover in Dubai</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> WhatsApp updates at every stage (permit approval, check-in, boarding, arrival, customs clearance)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Post-arrival guidance for Dubai Municipality registration (Aleef app)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> MOCCAE import permit application and fees</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Coordination with vetted veterinary partners for health checks and certificates</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> IATA-compliant travel crate (or verification of your own)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Flight booking as manifest cargo with a trusted airline</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Customs clearance at DXB or DWC cargo terminal</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Door-to-door delivery or airport handover in Dubai</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> WhatsApp updates at every stage (permit approval, check-in, boarding, arrival, customs clearance)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Post-arrival guidance for Dubai Municipality registration (Aleef app)</li>
               </ul>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
@@ -782,7 +782,7 @@ export default function CatRelocationPage() {
                 <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold shrink-0">–</span> Additional pets: Each cat requires a separate permit and crate, though multi-pet discounts apply</li>
                 <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold shrink-0">–</span> Travel insurance (optional but recommended): AED 300–800 depending on coverage level</li>
               </ul>
-              <div className="mt-6 p-4 bg-[#F5EFE6] rounded-2xl">
+              <div className="mt-6 p-4 bg-[#EEF0FC] rounded-2xl">
                 <p className="text-sm text-[#5A5A5A] leading-relaxed">
                   <strong className="text-[#2A2A2A]">Why costs vary:</strong> The biggest variables are your origin country (cargo distance), your cat's weight and crate size, and whether a titer test is required. A small cat from India costs less than a large Maine Coon from Australia. We give you an exact quote — not a guess — after our first WhatsApp conversation.
                 </p>
@@ -807,14 +807,14 @@ export default function CatRelocationPage() {
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-[#1B2B4D] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg key={i} className="w-4 h-4 text-[#4F5BD5] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
                 ))}
               </div>
               <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
                 &ldquo;I was absolutely terrified about moving Oliver. He's not a brave cat — he hides when the doorbell rings. Dubai Pet Relocation sent me a step-by-step guide two weeks before travel, and we practised with the crate every day. On the day, they sent me a photo of Oliver at check-in, then another when he was loaded. When he arrived in Dubai, he was calm. A bit grumpy, but calm. He was eating within two hours. The team answered my WhatsApp messages at 11 PM. I never felt alone.&rdquo;
               </blockquote>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#EDF6F0] flex items-center justify-center text-[#5A8F6E] font-bold text-sm">SM</div>
+                <div className="w-10 h-10 rounded-full bg-[#E9ECFB] flex items-center justify-center text-[#4F5BD5] font-bold text-sm">SM</div>
                 <div>
                   <p className="text-sm font-semibold text-[#2A2A2A]">Sarah M.</p>
                   <p className="text-xs text-[#8A8A8A]">Relocated from London to Dubai</p>
@@ -824,14 +824,14 @@ export default function CatRelocationPage() {
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-[#1B2B4D] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg key={i} className="w-4 h-4 text-[#4F5BD5] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
                 ))}
               </div>
               <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
                 &ldquo;Mochi is a rescue cat with a history of anxiety. I was sure she'd need sedation, but the Dubai Pet Relocation team talked me through why that wasn't the safest option. Instead, we used a pheromone spray and her favourite blanket. They walked me through crate training over WhatsApp — literally sent me a video of how to do it. When Mochi landed, they sent me a video of her being taken out of the crate. She was alert, curious, and completely fine. The cost was exactly what they quoted. No surprises.&rdquo;
               </blockquote>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#EDF6F0] flex items-center justify-center text-[#5A8F6E] font-bold text-sm">PK</div>
+                <div className="w-10 h-10 rounded-full bg-[#E9ECFB] flex items-center justify-center text-[#4F5BD5] font-bold text-sm">PK</div>
                 <div>
                   <p className="text-sm font-semibold text-[#2A2A2A]">Priya K.</p>
                   <p className="text-xs text-[#8A8A8A]">Relocated from San Francisco to Dubai</p>
@@ -894,7 +894,7 @@ export default function CatRelocationPage() {
       {/* ─── FINAL CTA ─── */}
       <section className="py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#1B2B4D] rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
+          <div className="bg-[#4F5BD5] rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">Ready to Bring Your Cat to Dubai?</h2>
             <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-6">
               Your cat has been with you through every chapter. This move is just the next one. We'll make sure they get there safely, calmly, and with someone watching every step.

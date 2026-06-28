@@ -19,7 +19,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span className="pr-4">{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
               />
               <a
                 href="mailto:hallo@dubai-pet-relocation.ae"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#1B2B4D] text-[#1B2B4D] rounded-2xl font-semibold text-sm hover:bg-[#1B2B4D]/5 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
               >
                 <Mail className="w-4 h-4" />
                 Email Us
@@ -138,12 +138,12 @@ export default function ContactPage() {
       </section>
 
       {/* ═══════════ CONTACT INFO CARDS ═══════════ */}
-      <section className="bg-[#FDFBF8] section-padding">
+      <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="text-center">
-              <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
+                <Phone className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">WhatsApp / Phone</h3>
               <p className="text-sm text-[#5A5A5A] mb-3">Fastest response during business hours</p>
@@ -151,31 +151,31 @@ export default function ContactPage() {
                 href={getWhatsAppUrl('Hi Dubai Pet Relocation, I have a question about pet relocation.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#1B2B4D] font-semibold text-sm hover:underline"
+                className="text-[#4F5BD5] font-semibold text-sm hover:underline"
               >
                 +971 55 174 4849
               </a>
             </Card>
             <Card className="text-center">
-              <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mx-auto mb-4">
-                <Mail className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
+                <Mail className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Email</h3>
               <p className="text-sm text-[#5A5A5A] mb-3">For detailed inquiries and document sharing</p>
               <a
                 href="mailto:hallo@dubai-pet-relocation.ae"
-                className="text-[#1B2B4D] font-semibold text-sm hover:underline"
+                className="text-[#4F5BD5] font-semibold text-sm hover:underline"
               >
                 hallo@dubai-pet-relocation.ae
               </a>
             </Card>
             <Card className="text-center">
-              <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Location</h3>
               <p className="text-sm text-[#5A5A5A] mb-3">Al Quoz Industrial Area 4, Al Quoz, Dubai</p>
-              <span className="text-[#1B2B4D] font-semibold text-sm">Dubai, United Arab Emirates</span>
+              <span className="text-[#4F5BD5] font-semibold text-sm">Dubai, United Arab Emirates</span>
             </Card>
           </div>
         </div>
@@ -186,7 +186,7 @@ export default function ContactPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wider">Send a Message</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Send a Message</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
                 Contact Form
               </h2>
@@ -194,9 +194,9 @@ export default function ContactPage() {
                 Fill out the form below and we will get back to you within 24 hours. For urgent questions, WhatsApp is fastest.
               </p>
               {submitted ? (
-                <div className="bg-[#EDF6F0] rounded-[16px] p-6">
+                <div className="bg-[#E9ECFB] rounded-[16px] p-6">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-[#5A8F6E] flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-[#4F5BD5] flex items-center justify-center">
                       <Send className="w-5 h-5 text-white" />
                     </div>
                     <div>
@@ -215,7 +215,7 @@ export default function ContactPage() {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-[12px] border border-[#EDE7DD] bg-[#FAF7F1] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#5A8F6E]/30 focus:border-[#5A8F6E]"
+                      className="w-full px-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-[#F0F2FB] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5]"
                       placeholder="e.g. Sarah Johnson"
                     />
                   </div>
@@ -227,7 +227,7 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-[12px] border border-[#EDE7DD] bg-[#FAF7F1] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#5A8F6E]/30 focus:border-[#5A8F6E]"
+                      className="w-full px-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-[#F0F2FB] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5]"
                       placeholder="sarah@example.com"
                     />
                   </div>
@@ -238,7 +238,7 @@ export default function ContactPage() {
                       required
                       value={formData.petType}
                       onChange={(e) => setFormData({ ...formData, petType: e.target.value })}
-                      className="w-full px-4 py-3 rounded-[12px] border border-[#EDE7DD] bg-[#FAF7F1] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#5A8F6E]/30 focus:border-[#5A8F6E]"
+                      className="w-full px-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-[#F0F2FB] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5]"
                     >
                       <option value="">Select pet type</option>
                       <option value="dog">Dog</option>
@@ -255,13 +255,13 @@ export default function ContactPage() {
                       rows={5}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-[12px] border border-[#EDE7DD] bg-[#FAF7F1] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#5A8F6E]/30 focus:border-[#5A8F6E] resize-none"
+                      className="w-full px-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-[#F0F2FB] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5] resize-none"
                       placeholder="Tell us about your pet, your route, and any questions you have..."
                     />
                   </div>
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#1B2B4D] text-white rounded-2xl font-semibold text-sm hover:bg-[#141e36] transition-all shadow-sm hover:shadow-md w-full sm:w-auto"
+                    className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#4F5BD5] text-white rounded-2xl font-semibold text-sm hover:bg-[#141e36] transition-all shadow-sm hover:shadow-md w-full sm:w-auto"
                   >
                     <Send className="w-4 h-4" />
                     Send Message
@@ -272,8 +272,8 @@ export default function ContactPage() {
             <div className="space-y-6">
               <Card>
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-[12px] bg-[#EDF6F0] flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-[#5A8F6E]" />
+                  <div className="w-10 h-10 rounded-[12px] bg-[#E9ECFB] flex items-center justify-center">
+                    <Clock className="w-5 h-5 text-[#4F5BD5]" />
                   </div>
                   <h3 className="text-lg font-bold text-[#2A2A2A]">Office Hours</h3>
                 </div>
@@ -308,7 +308,7 @@ export default function ContactPage() {
       </section>
 
       {/* ═══════════ QUICK FAQ ═══════════ */}
-      <section className="bg-[#FDFBF8] section-padding">
+      <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-3">
@@ -334,7 +334,7 @@ export default function ContactPage() {
       </section>
 
       {/* ═══════════ CTA ═══════════ */}
-      <section className="bg-[#1B2B4D] section-padding">
+      <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Let's Make Your Pet's Journey Clear

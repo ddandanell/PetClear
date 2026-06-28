@@ -295,7 +295,7 @@ export default function HowItWorksPage() {
   ]
 
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         title="How Pet Relocation Works in Dubai | 7-Step Process | Dubai Pet Relocation"
         description="Our transparent 7-step pet relocation process for Dubai. Free consultation, document check, partner matching, booking, pre-travel prep, travel day support, and arrival handover."
@@ -306,10 +306,10 @@ export default function HowItWorksPage() {
       <Breadcrumb items={[{label: 'Home', path: '/'}, {label: 'How It Works'}]} />
 
       {/* ═══════════ HERO ═══════════ */}
-      <section className="relative overflow-hidden bg-[#1B2B4D]">
+      <section className="relative overflow-hidden bg-[#4F5BD5]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 text-[#5A8F6E] font-semibold text-sm mb-4">
+            <div className="flex items-center gap-2 text-[#4F5BD5] font-semibold text-sm mb-4">
               <Sparkles className="w-4 h-4" />
               <span>Our 7-Step Process</span>
             </div>
@@ -347,7 +347,7 @@ export default function HowItWorksPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="font-bold text-[#5A8F6E] mb-4 flex items-center gap-2">
+              <h3 className="font-bold text-[#4F5BD5] mb-4 flex items-center gap-2">
                 <CheckCircle className="w-5 h-5" />
                 We handle:
               </h3>
@@ -365,7 +365,7 @@ export default function HowItWorksPage() {
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="font-bold text-[#5A8F6E] mb-4 flex items-center gap-2">
+              <h3 className="font-bold text-[#4F5BD5] mb-4 flex items-center gap-2">
                 <Handshake className="w-5 h-5" />
                 Our partners handle:
               </h3>
@@ -403,37 +403,37 @@ export default function HowItWorksPage() {
 
           <div className="relative">
             {/* vertical line */}
-            <div className="absolute left-[19px] top-0 bottom-0 w-0.5 bg-[#1B2B4D]/20 hidden sm:block" />
+            <div className="absolute left-[19px] top-0 bottom-0 w-0.5 bg-[#4F5BD5]/20 hidden sm:block" />
 
             <div className="space-y-10">
               {steps.map((step) => (
                 <div key={step.num} id={step.id} className="relative sm:pl-14">
                   {/* timeline dot */}
-                  <div className="hidden sm:flex absolute left-0 top-0 w-10 h-10 rounded-full bg-[#1B2B4D] text-white items-center justify-center font-bold text-sm shadow-md">
+                  <div className="hidden sm:flex absolute left-0 top-0 w-10 h-10 rounded-full bg-[#4F5BD5] text-white items-center justify-center font-bold text-sm shadow-md">
                     {step.num}
                   </div>
-                  <div className="bg-[#FDFBF8] rounded-[20px] p-6 sm:p-8 border border-[#1B2B4D]/10">
+                  <div className="bg-[#F5F6FD] rounded-[20px] p-6 sm:p-8 border border-[#4F5BD5]/10">
                     <div className="flex items-center gap-3 mb-3">
-                      <div className="sm:hidden w-8 h-8 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center font-bold text-xs">
+                      <div className="sm:hidden w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center font-bold text-xs">
                         {step.num}
                       </div>
-                      <div className="w-9 h-9 rounded-lg bg-[#1B2B4D]/10 flex items-center justify-center text-[#5A8F6E]">
+                      <div className="w-9 h-9 rounded-lg bg-[#4F5BD5]/10 flex items-center justify-center text-[#4F5BD5]">
                         {step.icon}
                       </div>
                       <div>
                         <h3 className="font-bold text-[#2A2A2A] text-lg">{step.title}</h3>
-                        <span className="text-xs font-semibold text-[#5A8F6E] uppercase tracking-wide">{step.duration}</span>
+                        <span className="text-xs font-semibold text-[#4F5BD5] uppercase tracking-wide">{step.duration}</span>
                       </div>
                     </div>
                     <p className="text-[#5A5A5A] leading-relaxed mb-4">{step.body}</p>
 
                     <div className="grid sm:grid-cols-2 gap-4 bg-white rounded-2xl p-4">
                       <div>
-                        <p className="text-xs font-semibold text-[#5A8F6E] uppercase tracking-wide mb-1">You do</p>
+                        <p className="text-xs font-semibold text-[#4F5BD5] uppercase tracking-wide mb-1">You do</p>
                         <p className="text-sm text-[#2A2A2A]">{step.youDo}</p>
                       </div>
                       <div>
-                        <p className="text-xs font-semibold text-[#5A8F6E] uppercase tracking-wide mb-1">We do</p>
+                        <p className="text-xs font-semibold text-[#4F5BD5] uppercase tracking-wide mb-1">We do</p>
                         <p className="text-sm text-[#2A2A2A]">{step.weDo}</p>
                       </div>
                     </div>
@@ -482,7 +482,7 @@ export default function HowItWorksPage() {
                     <td className="font-medium text-[#2A2A2A]">{row.task}</td>
                     <td>
                       {row.us ? (
-                        <span className="inline-flex items-center gap-1 text-[#5A8F6E] font-semibold">
+                        <span className="inline-flex items-center gap-1 text-[#4F5BD5] font-semibold">
                           <CheckCircle className="w-4 h-4" /> Yes
                         </span>
                       ) : (
@@ -493,7 +493,7 @@ export default function HowItWorksPage() {
                     </td>
                     <td>
                       {row.them ? (
-                        <span className="inline-flex items-center gap-1 text-[#5A8F6E] font-semibold">
+                        <span className="inline-flex items-center gap-1 text-[#4F5BD5] font-semibold">
                           <CheckCircle className="w-4 h-4" /> Yes {row.themLabel && <span className="text-[#5A5A5A] font-normal">({row.themLabel})</span>}
                         </span>
                       ) : (
@@ -531,9 +531,9 @@ export default function HowItWorksPage() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10">
               <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <Stethoscope className="w-5 h-5 text-[#5A8F6E]" />
+                <Stethoscope className="w-5 h-5 text-[#4F5BD5]" />
                 Veterinary Clinics
               </h3>
               <ul className="text-[#5A5A5A] space-y-2 text-sm">
@@ -542,9 +542,9 @@ export default function HowItWorksPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10">
               <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <Plane className="w-5 h-5 text-[#5A8F6E]" />
+                <Plane className="w-5 h-5 text-[#4F5BD5]" />
                 IATA-Certified Cargo Agents
               </h3>
               <ul className="text-[#5A5A5A] space-y-2 text-sm">
@@ -554,9 +554,9 @@ export default function HowItWorksPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10">
               <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <Plane className="w-5 h-5 text-[#5A8F6E]" />
+                <Plane className="w-5 h-5 text-[#4F5BD5]" />
                 Airlines
               </h3>
               <ul className="text-[#5A5A5A] space-y-2 text-sm">
@@ -566,9 +566,9 @@ export default function HowItWorksPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10">
               <h3 className="font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <Truck className="w-5 h-5 text-[#5A8F6E]" />
+                <Truck className="w-5 h-5 text-[#4F5BD5]" />
                 Customs Brokers & Ground Transport
               </h3>
               <ul className="text-[#5A5A5A] space-y-2 text-sm">
@@ -603,56 +603,56 @@ export default function HowItWorksPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <MessageCircle className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <MessageCircle className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="font-bold text-[#2A2A2A] mb-2">One WhatsApp contact</h3>
               <p className="text-sm text-[#5A5A5A]">No email ping-pong. No chasing five phone numbers. One human who knows your pet&apos;s name, your route, your timeline, and your concerns.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <Phone className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <Phone className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="font-bold text-[#2A2A2A] mb-2">Real-time updates</h3>
               <p className="text-sm text-[#5A5A5A]">Photo at check-in. Photo at boarding. Confirmation of departure. Confirmation of landing. If the flight is delayed, we tell you before you ask.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <FileText className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <FileText className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="font-bold text-[#2A2A2A] mb-2">Document help</h3>
               <p className="text-sm text-[#5A5A5A]">We review every document three times. We know the current MOCCAE forms. We submit permits ourselves. If there&apos;s an issue, we fix it before it becomes a problem.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <Shield className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <Shield className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="font-bold text-[#2A2A2A] mb-2">Price protection</h3>
               <p className="text-sm text-[#5A5A5A]">The quote you receive is itemized and fixed. Government fees don&apos;t change. Our service fee doesn&apos;t change. Where an error on our side causes a delay, we&apos;ll make it right — the specifics are set out in your service agreement.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <Clock className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <Clock className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="font-bold text-[#2A2A2A] mb-2">24/7 availability</h3>
               <p className="text-sm text-[#5A5A5A]">WhatsApp us anytime. We reply within the hour during business hours. For emergencies, we have an on-call line.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <Heart className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <Heart className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="font-bold text-[#2A2A2A] mb-2">Problem-solving</h3>
               <p className="text-sm text-[#5A5A5A]">If your flight is cancelled, we rebook. If your vet is delayed, we reschedule. If customs asks for an extra document, we handle it. You never handle a crisis alone.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 sm:col-span-2 lg:col-span-3">
-              <div className="w-11 h-11 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mb-4">
-                <Home className="w-5 h-5 text-[#5A8F6E]" />
+              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+                <Home className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="font-bold text-[#2A2A2A] mb-2">Post-arrival support</h3>
               <p className="text-sm text-[#5A5A5A]">We help with Dubai Municipality registration, local vet recommendations, and settling-in advice. Your relationship with us doesn&apos;t end at the airport.</p>
@@ -689,15 +689,15 @@ export default function HowItWorksPage() {
                 <tr><td>Air freight (cargo)</td><td>4,500</td><td>You</td><td>Airline fee, no markup</td></tr>
                 <tr><td>Customs clearance</td><td>400</td><td>You</td><td>Broker fee</td></tr>
                 <tr><td>Ground transport (pickup + delivery)</td><td>300</td><td>You</td><td>Transport partner fee</td></tr>
-                <tr className="bg-[#1B2B4D]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation service fee</td><td className="font-bold text-[#2A2A2A]">2,500</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">Our coordination + support fee</td></tr>
-                <tr className="bg-[#1B2B4D]/10"><td className="font-bold text-[#2A2A2A]">Total estimated cost</td><td className="font-bold text-[#2A2A2A]">9,450</td><td></td><td className="font-bold text-[#2A2A2A]">Varies by route and pet size</td></tr>
+                <tr className="bg-[#4F5BD5]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation service fee</td><td className="font-bold text-[#2A2A2A]">2,500</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">Our coordination + support fee</td></tr>
+                <tr className="bg-[#4F5BD5]/10"><td className="font-bold text-[#2A2A2A]">Total estimated cost</td><td className="font-bold text-[#2A2A2A]">9,450</td><td></td><td className="font-bold text-[#2A2A2A]">Varies by route and pet size</td></tr>
               </tbody>
             </table>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
-              <h3 className="font-bold text-[#5A8F6E] mb-4">What our service fee covers:</h3>
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10">
+              <h3 className="font-bold text-[#4F5BD5] mb-4">What our service fee covers:</h3>
               <ul className="text-sm text-[#5A5A5A] space-y-1">
                 <li>Your dedicated relocation coordinator</li>
                 <li>Document review and compliance checking</li>
@@ -712,7 +712,7 @@ export default function HowItWorksPage() {
               </ul>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 border border-[#1B2B4D]/10">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10">
               <h3 className="font-bold text-red-700 mb-4">What our service fee does NOT cover:</h3>
               <ul className="text-sm text-[#5A5A5A] space-y-1">
                 <li>Government fees (MOCCAE, customs, municipality)</li>
@@ -774,7 +774,7 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ═══════════ FINAL CTA ═══════════ */}
-      <section className="relative overflow-hidden bg-[#1B2B4D] section-padding">
+      <section className="relative overflow-hidden bg-[#4F5BD5] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Ready to See How Simple Pet Relocation Can Be?

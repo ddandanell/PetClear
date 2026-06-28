@@ -96,7 +96,7 @@ export default function AbuDhabiCity() {
   ]
 
   return (
-    <div className="bg-[#FDFBF8]">
+    <div className="bg-[#F5F6FD]">
       <SEOHead
         meta={{
           title: pageTitle,
@@ -114,7 +114,7 @@ export default function AbuDhabiCity() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">City Guide</span>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">City Guide</span>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 Pet Relocation Abu Dhabi — Bringing Your Pet to the UAE Capital
               </h1>
@@ -132,7 +132,7 @@ export default function AbuDhabiCity() {
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
                 <img src="/images/hero-abu-dhabi.jpg" alt="Pet relocation services in Abu Dhabi skyline" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">
                     <PawPrint className="w-16 h-16 mx-auto mb-4 opacity-90" />
@@ -150,7 +150,7 @@ export default function AbuDhabiCity() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Key Advantage</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Key Advantage</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Etihad In-Cabin Pet Travel — Unique to Abu Dhabi</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Etihad Airways, based at Abu Dhabi International Airport (AUH), is one of the few major airlines serving the UAE that allows small pets to travel in the cabin with their owner. This is a major advantage for anxious pet owners and small breeds.
@@ -160,8 +160,8 @@ export default function AbuDhabiCity() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <Heart className="w-6 h-6 text-[#5A8F6E]" />
+                <div className="w-12 h-12 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <Heart className="w-6 h-6 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2A2A2A]">In-Cabin Travel (Pet + You)</h3>
               </div>
@@ -169,23 +169,23 @@ export default function AbuDhabiCity() {
                 Etihad permits one small cat or dog per passenger in the cabin, provided the combined weight of the pet and carrier is under 8kg. The carrier must fit under the seat in front of you and meet IATA standards for ventilation and security.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Maximum 8kg (pet + soft carrier combined)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Soft-sided carrier required; must fit under seat</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Pet must remain in carrier for entire flight</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Only available on Etihad-operated flights (not codeshare)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Advance booking required (limited spots per flight)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Maximum 8kg (pet + soft carrier combined)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Soft-sided carrier required; must fit under seat</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Pet must remain in carrier for entire flight</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Only available on Etihad-operated flights (not codeshare)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Advance booking required (limited spots per flight)</li>
               </ul>
-              <div className="mt-4 p-4 bg-[#5A8F6E]/10 rounded-xl">
+              <div className="mt-4 p-4 bg-[#4F5BD5]/10 rounded-xl">
                 <p className="text-sm text-[#2A2A2A]">
-                  <span className="text-[#5A8F6E] font-semibold">Best for:</span> Small cats, toy dog breeds (Chihuahua, Pomeranian, Yorkshire Terrier), anxious pets, and owners who prefer to keep their pet close during the journey.
+                  <span className="text-[#4F5BD5] font-semibold">Best for:</span> Small cats, toy dog breeds (Chihuahua, Pomeranian, Yorkshire Terrier), anxious pets, and owners who prefer to keep their pet close during the journey.
                 </p>
               </div>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-[#5A8F6E]/10 rounded-xl flex items-center justify-center">
-                  <Plane className="w-6 h-6 text-[#5A8F6E]" />
+                <div className="w-12 h-12 bg-[#4F5BD5]/10 rounded-xl flex items-center justify-center">
+                  <Plane className="w-6 h-6 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Cargo Travel (All Pet Sizes)</h3>
               </div>
@@ -193,15 +193,15 @@ export default function AbuDhabiCity() {
                 For pets over 8kg or multiple pets, Etihad Cargo and other airlines offer climate-controlled cargo transport to Abu Dhabi. This is the standard method for medium and large dogs, as well as cats travelling without their owner in the cabin.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> IATA-compliant hard crate required</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Climate-controlled cargo hold (16–18°C)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Available for all breeds (subject to restrictions)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Dubai Pet Relocation books cargo space and handles AUH clearance</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /> Priority offloading for live animals</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> IATA-compliant hard crate required</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Climate-controlled cargo hold (16–18°C)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Available for all breeds (subject to restrictions)</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Dubai Pet Relocation books cargo space and handles AUH clearance</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Priority offloading for live animals</li>
               </ul>
-              <div className="mt-4 p-4 bg-[#5A8F6E]/10 rounded-xl">
+              <div className="mt-4 p-4 bg-[#4F5BD5]/10 rounded-xl">
                 <p className="text-sm text-[#2A2A2A]">
-                  <span className="text-[#5A8F6E] font-semibold">Best for:</span> Medium and large dogs, multiple pets, brachycephalic breeds (cargo restrictions still apply in summer), and owners relocating multiple animals.
+                  <span className="text-[#4F5BD5] font-semibold">Best for:</span> Medium and large dogs, multiple pets, brachycephalic breeds (cargo restrictions still apply in summer), and owners relocating multiple animals.
                 </p>
               </div>
             </div>
@@ -213,7 +213,7 @@ export default function AbuDhabiCity() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Abu Dhabi Specifics</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Abu Dhabi Specifics</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">What Makes Abu Dhabi Different</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Abu Dhabi has its own municipality, airport, customs process, and registration system. Understanding these differences is essential for a smooth relocation.
@@ -221,9 +221,9 @@ export default function AbuDhabiCity() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Building className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Building className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Abu Dhabi City Municipality (ADCM)</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -231,9 +231,9 @@ export default function AbuDhabiCity() {
               </p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <FileText className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <FileText className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MICCO Logistics Bill of Entry</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -241,9 +241,9 @@ export default function AbuDhabiCity() {
               </p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <MapPin className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <MapPin className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Zayed International Airport (AUH)</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -258,7 +258,7 @@ export default function AbuDhabiCity() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Airline Comparison</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airline Comparison</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Etihad Cargo vs Emirates for Pet Relocation</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Choosing the right airline is critical for your pet's comfort and safety. Here is a direct comparison of the UAE's two national carriers for pet transport.
@@ -283,7 +283,7 @@ export default function AbuDhabiCity() {
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">In-Cabin Pets</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]"><span className="text-[#5A8F6E] font-semibold">Yes</span> — cats & small dogs under 8kg</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]"><span className="text-[#4F5BD5] font-semibold">Yes</span> — cats & small dogs under 8kg</td>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">No — cargo only (Falcon / Falcon + handler exception)</td>
                   </tr>
                   <tr>
@@ -321,7 +321,7 @@ export default function AbuDhabiCity() {
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">MICCO Logistics (AUH)</td>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">dnata / Dubai Cargo Village (DXB)</td>
                   </tr>
-                  <tr className="bg-[#5A8F6E]/5">
+                  <tr className="bg-[#4F5BD5]/5">
                     <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Best For</td>
                     <td className="px-6 py-4 text-sm text-[#2A2A2A]">Small pets, in-cabin preference, Abu Dhabi residents</td>
                     <td className="px-6 py-4 text-sm text-[#2A2A2A]">Large dogs, more route options, Dubai residents</td>
@@ -329,7 +329,7 @@ export default function AbuDhabiCity() {
                 </tbody>
               </table>
             </div>
-            <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
+            <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
                 * Airline policies change seasonally. Dubai Pet Relocation verifies the latest rules before booking. Brachycephalic breed restrictions vary by route and time of year. Contact us for the most current information on your specific route and pet.
               </p>
@@ -342,7 +342,7 @@ export default function AbuDhabiCity() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Living in Abu Dhabi</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Living in Abu Dhabi</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Pet-Friendly Areas in Abu Dhabi</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Abu Dhabi offers a wide variety of residential options for pet owners, from waterfront villas to modern apartments. Here are the most popular pet-friendly communities.
@@ -350,9 +350,9 @@ export default function AbuDhabiCity() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Home className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Home className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Yas Island</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -360,9 +360,9 @@ export default function AbuDhabiCity() {
               </p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Home className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Home className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Saadiyat Island</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -370,9 +370,9 @@ export default function AbuDhabiCity() {
               </p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Home className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Home className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Al Reem Island</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -380,9 +380,9 @@ export default function AbuDhabiCity() {
               </p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Home className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Home className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Al Raha Gardens</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -390,9 +390,9 @@ export default function AbuDhabiCity() {
               </p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Home className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Home className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Khalifa City</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -400,9 +400,9 @@ export default function AbuDhabiCity() {
               </p>
             </div>
 
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
-              <div className="w-14 h-14 bg-[#5A8F6E]/10 rounded-2xl flex items-center justify-center mb-4">
-                <Stethoscope className="w-7 h-7 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
+              <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mb-4">
+                <Stethoscope className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Abu Dhabi Falcon Hospital</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -417,7 +417,7 @@ export default function AbuDhabiCity() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">Pricing</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Abu Dhabi vs Dubai: Cost Differences</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               While the overall pet relocation process is similar, there are some cost differences between Abu Dhabi and Dubai that pet owners should know about.
@@ -478,16 +478,16 @@ export default function AbuDhabiCity() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200–500</td>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">If your final destination is the other emirate. Climate-controlled vehicle.</td>
                   </tr>
-                  <tr className="bg-[#5A8F6E]/5">
+                  <tr className="bg-[#4F5BD5]/5">
                     <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total Estimate (Single Pet)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 6,000–22,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#5A8F6E]">AED 6,000–20,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 6,000–22,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 6,000–20,000</td>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Abu Dhabi may be slightly higher due to ADCM fees, but in-cabin savings offset this for small pets.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div className="px-6 py-4 bg-[#FDFBF8] border-t border-[#EBEBEB]">
+            <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
                 * All prices are estimates in UAE Dirhams (AED). Actual costs depend on pet size, origin country, airline, and season. In-cabin travel is only available for pets under 8kg (including carrier) on Etihad Airways. Contact Dubai Pet Relocation for a detailed, itemised quote for your specific situation.
               </p>
@@ -524,7 +524,7 @@ export default function AbuDhabiCity() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#5A8F6E] uppercase tracking-wide">FAQ</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">FAQ</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Abu Dhabi Pet Relocation FAQs</h2>
           </div>
 
@@ -532,7 +532,7 @@ export default function AbuDhabiCity() {
             {faqs.map((faq, idx) => (
               <div key={idx} className="bg-white rounded-[20px] shadow-sm p-6">
                 <div className="flex items-start gap-3">
-                  <MessageCircle className="w-5 h-5 text-[#5A8F6E] shrink-0 mt-1" />
+                  <MessageCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-[#2A2A2A] text-base mb-2">{faq.question}</h3>
                     <p className="text-[#5A5A5A] text-sm leading-relaxed">{faq.answer}</p>
@@ -547,8 +547,8 @@ export default function AbuDhabiCity() {
       {/* CTA */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#0F1A30] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#5A8F6E]" />
+          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
+            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet to Abu Dhabi?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
               Dubai Pet Relocation has helped families relocate their dogs and cats to Abu Dhabi from the UK, USA, Europe, Australia, India, and beyond. Whether you want in-cabin travel with Etihad or cargo transport, we handle every detail — from permits to ADCM registration.
@@ -583,21 +583,21 @@ export default function AbuDhabiCity() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-[#5A5A5A]">
             <span>Related:</span>
-            <Link to="/cities/dubai/" className="text-[#5A8F6E] hover:underline">Dubai Guide</Link>
+            <Link to="/cities/dubai/" className="text-[#4F5BD5] hover:underline">Dubai Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#5A8F6E] hover:underline">Cost Guide</Link>
+            <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/guides/uae-pet-import-requirements/" className="text-[#5A8F6E] hover:underline">Import Requirements</Link>
+            <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/how-it-works/" className="text-[#5A8F6E] hover:underline">How It Works</Link>
+            <Link to="/how-it-works/" className="text-[#4F5BD5] hover:underline">How It Works</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/dog-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Dog Relocation</Link>
+            <Link to="/dog-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Dog Relocation</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/cat-relocation-to-dubai/" className="text-[#5A8F6E] hover:underline">Cat Relocation</Link>
+            <Link to="/cat-relocation-to-dubai/" className="text-[#4F5BD5] hover:underline">Cat Relocation</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/routes/uk-to-dubai/" className="text-[#5A8F6E] hover:underline">UK to Dubai</Link>
+            <Link to="/routes/uk-to-dubai/" className="text-[#4F5BD5] hover:underline">UK to Dubai</Link>
             <span className="text-[#EBEBEB]">|</span>
-            <Link to="/routes/usa-to-dubai/" className="text-[#5A8F6E] hover:underline">USA to Dubai</Link>
+            <Link to="/routes/usa-to-dubai/" className="text-[#4F5BD5] hover:underline">USA to Dubai</Link>
           </div>
         </div>
       </section>

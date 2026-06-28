@@ -37,7 +37,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span>{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -167,7 +167,7 @@ export default function MOCCAEPermitGuide() {
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'MOCCAE Import Permit Guide' }]} />
 
       {/* Hero */}
-      <section className="relative bg-[#1B2B4D] text-white py-16 lg:py-24">
+      <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
@@ -198,7 +198,7 @@ export default function MOCCAEPermitGuide() {
       </section>
 
       {/* What is MOCCAE */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
@@ -213,27 +213,27 @@ export default function MOCCAEPermitGuide() {
               </p>
               <div className="bg-white rounded-[20px] shadow-sm p-6">
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-[#5A8F6E]" />
+                  <Shield className="w-5 h-5 text-[#4F5BD5]" />
                   Why the Permit Is Mandatory
                 </h3>
                 <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Prevents entry of unvaccinated or diseased animals</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Tracks banned and restricted breeds entering Dubai</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Ensures microchip identification for all imported pets</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Protects public health and local animal populations</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Prevents entry of unvaccinated or diseased animals</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Tracks banned and restricted breeds entering Dubai</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Ensures microchip identification for all imported pets</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Protects public health and local animal populations</span></li>
                 </ul>
               </div>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               <h3 className="text-xl font-bold text-[#2A2A2A] mb-5">Permit at a Glance</h3>
               <div className="space-y-4">
-                <div className="p-4 bg-[#5A8F6E]/5 rounded-xl">
-                  <p className="font-semibold text-[#5A8F6E] text-sm mb-1">Cost</p>
+                <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
+                  <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Cost</p>
                   <p className="text-lg font-bold text-[#2A2A2A]">Import permit AED 200 per pet</p>
                   <p className="text-sm text-[#5A5A5A] mt-1">Plus release fee on arrival: AED 500/dog or AED 250/cat. Government total ~AED 700/dog, ~AED 450/cat.</p>
                 </div>
-                <div className="p-4 bg-[#1B2B4D]/5 rounded-xl">
-                  <p className="font-semibold text-[#1B2B4D] text-sm mb-1">Processing Time</p>
+                <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
+                  <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Processing Time</p>
                   <p className="text-lg font-bold text-[#2A2A2A]">2–5 business days</p>
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
@@ -264,35 +264,35 @@ export default function MOCCAEPermitGuide() {
 
           <div className="space-y-6 mb-10">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-lg font-bold shrink-0">1</div>
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">1</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Prepare Required Documents</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
                   Before starting the application, gather all required documents. Ensure they are clear, in English or Arabic, and up to date.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-2">
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <FileCheck className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <FileCheck className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Passport copy of the pet owner (clear, full page)</span>
                   </div>
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <PawPrint className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <PawPrint className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Recent pet photo (front face, neutral background, no accessories)</span>
                   </div>
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <Stethoscope className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <Stethoscope className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Vaccination records (rabies + annual boosters, dates clear)</span>
                   </div>
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <Microscope className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <Microscope className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Microchip certificate (ISO 11784/11785 compliant, 15-digit number)</span>
                   </div>
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <FileText className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <FileText className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Health certificate (from accredited vet, within required timeframe)</span>
                   </div>
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <Ban className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <Ban className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Breed confirmation (if mixed breed or restricted breed)</span>
                   </div>
                 </div>
@@ -300,7 +300,7 @@ export default function MOCCAEPermitGuide() {
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-lg font-bold shrink-0">2</div>
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">2</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Create a MOCCAE Account</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
@@ -319,27 +319,27 @@ export default function MOCCAEPermitGuide() {
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-lg font-bold shrink-0">3</div>
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">3</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Submit the Application</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
                   Log in to the portal, select "Import Permit for Pets," and fill out the application form. Upload all documents in the specified format (usually PDF or JPEG, under 2MB per file). Pay the AED 200 fee per pet via credit card or online bank transfer.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-2">
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Double-check microchip number for typos</span>
                   </div>
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Use exact breed name from official sources</span>
                   </div>
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Ensure rabies vaccine is valid on travel date</span>
                   </div>
-                  <div className="p-3 bg-[#FDFBF8] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" />
+                  <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                     <span>Photo: front face, clear eyes, no collars/accessories</span>
                   </div>
                 </div>
@@ -347,20 +347,20 @@ export default function MOCCAEPermitGuide() {
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-lg font-bold shrink-0">4</div>
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">4</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Wait for Approval</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
                   MOCCAE processes applications in 2–5 business days. Monitor your email and the portal for status updates. You will receive an approval notification with a downloadable permit PDF.
                 </p>
-                <div className="p-3 bg-[#EDF6F0] rounded-xl text-sm text-[#5A5A5A]">
-                  <strong className="text-[#5A8F6E]">Pro tip:</strong> If you don't hear back within 5 business days, contact MOCCAE customer service with your application reference number. Dubai Pet Relocation handles all follow-ups for our clients.
+                <div className="p-3 bg-[#E9ECFB] rounded-xl text-sm text-[#5A5A5A]">
+                  <strong className="text-[#4F5BD5]">Pro tip:</strong> If you don't hear back within 5 business days, contact MOCCAE customer service with your application reference number. Dubai Pet Relocation handles all follow-ups for our clients.
                 </div>
               </div>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8 flex gap-5">
-              <div className="w-12 h-12 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-lg font-bold shrink-0">5</div>
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">5</div>
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Download and Print the Permit</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
@@ -373,7 +373,7 @@ export default function MOCCAEPermitGuide() {
       </section>
 
       {/* Common Rejection Reasons */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
             Common Rejection Reasons & How to Fix Them
@@ -440,10 +440,10 @@ export default function MOCCAEPermitGuide() {
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center">
-                  <Plane className="w-5 h-5 text-[#1B2B4D]" />
+                <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center">
+                  <Plane className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#2A2A2A]">MOCCAE Export Permit (Leaving Dubai)</h3>
               </div>
@@ -452,28 +452,28 @@ export default function MOCCAEPermitGuide() {
               </p>
               <div className="space-y-3">
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                  <DollarSign className="w-4 h-4 text-[#1B2B4D] shrink-0 mt-0.5" />
+                  <DollarSign className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong>Cost:</strong> AED 200 per pet (same as import)</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                  <Clock className="w-4 h-4 text-[#1B2B4D] shrink-0 mt-0.5" />
+                  <Clock className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong>Processing:</strong> 2–5 business days</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                  <FileCheck className="w-4 h-4 text-[#1B2B4D] shrink-0 mt-0.5" />
+                  <FileCheck className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong>Documents:</strong> Passport copy, pet photo, UAE vaccination records, microchip certificate</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
-                  <Stethoscope className="w-4 h-4 text-[#1B2B4D] shrink-0 mt-0.5" />
+                  <Stethoscope className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
                   <span><strong>Health certificate:</strong> May need additional government vet endorsement for some destinations</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#EDF6F0] rounded-[20px] p-6 lg:p-8">
+            <div className="bg-[#E9ECFB] rounded-[20px] p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center">
-                  <Shield className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#2A2A2A]">How Dubai Pet Relocation Handles Permits</h3>
               </div>
@@ -482,28 +482,28 @@ export default function MOCCAEPermitGuide() {
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">1</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">1</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Document Review</p>
                     <p className="text-xs text-[#5A5A5A]">We check every document for completeness, format, and accuracy before submission.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">2</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">2</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Application Submission</p>
                     <p className="text-xs text-[#5A5A5A]">We complete the MOCCAE portal application, upload documents, and pay fees.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">3</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">3</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Follow-Up & Monitoring</p>
                     <p className="text-xs text-[#5A5A5A]">We track application status daily and contact MOCCAE if processing exceeds 5 days.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">4</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">4</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Error Correction & Resubmission</p>
                     <p className="text-xs text-[#5A5A5A]">If rejected, we fix the issue and resubmit within 24 hours at no extra service charge.</p>
@@ -516,7 +516,7 @@ export default function MOCCAEPermitGuide() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4 text-center">
@@ -541,32 +541,32 @@ export default function MOCCAEPermitGuide() {
             Related Guides
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/guides/uae-pet-import-requirements/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4 group-hover:bg-[#1B2B4D]/20 transition-colors">
-                <FileCheck className="w-5 h-5 text-[#1B2B4D]" />
+            <Link to="/guides/uae-pet-import-requirements/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#1B2B4D] transition-colors">UAE Pet Import Requirements</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">UAE Pet Import Requirements</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete step-by-step guide to all documentation needed for importing pets into the UAE.</p>
             </Link>
-            <Link to="/how-it-works/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4 group-hover:bg-[#5A8F6E]/20 transition-colors">
-                <Clock className="w-5 h-5 text-[#5A8F6E]" />
+            <Link to="/how-it-works/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <Clock className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">How Dubai Pet Relocation Works</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">How Dubai Pet Relocation Works</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent concierge process from start to finish.</p>
             </Link>
-            <Link to="/dog-relocation-to-dubai/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+            <Link to="/dog-relocation-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">
                 <Dog className="w-5 h-5 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">Dog Relocation to Dubai</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete guide for bringing dogs to Dubai, including breed rules and crate requirements.</p>
             </Link>
-            <Link to="/cat-relocation-to-dubai/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4 group-hover:bg-[#5A8F6E]/20 transition-colors">
-                <Cat className="w-5 h-5 text-[#5A8F6E]" />
+            <Link to="/cat-relocation-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <Cat className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">Cat Relocation to Dubai</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Cat Relocation to Dubai</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Everything you need to know about bringing cats to Dubai safely.</p>
             </Link>
           </div>
@@ -574,7 +574,7 @@ export default function MOCCAEPermitGuide() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 lg:py-20 bg-[#1B2B4D]">
+      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Let Dubai Pet Relocation Handle Your MOCCAE Permit

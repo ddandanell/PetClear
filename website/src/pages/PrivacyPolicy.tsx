@@ -166,15 +166,15 @@ export default function PrivacyPolicy() {
               If you have questions about this Privacy Policy, want to exercise your rights, or have concerns about how we handle your data, please contact us:
             </p>
             <div className="space-y-2">
-              <p><strong>Email:</strong> <a href="mailto:hallo@dubai-pet-relocation.ae" className="text-[#1B2B4D] hover:underline">hallo@dubai-pet-relocation.ae</a></p>
+              <p><strong>Email:</strong> <a href="mailto:hallo@dubai-pet-relocation.ae" className="text-[#4F5BD5] hover:underline">hallo@dubai-pet-relocation.ae</a></p>
               <p><strong>Address:</strong> Al Quoz Industrial Area 4, Al Quoz Industrial Area, Al Quoz, Dubai</p>
-              <p><strong>WhatsApp:</strong> <a href="https://wa.me/971551744849" target="_blank" rel="noopener noreferrer" className="text-[#1B2B4D] hover:underline">+971 55 174 4849</a></p>
+              <p><strong>WhatsApp:</strong> <a href="https://wa.me/971551744849" target="_blank" rel="noopener noreferrer" className="text-[#4F5BD5] hover:underline">+971 55 174 4849</a></p>
             </div>
           </section>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-[#EDE7DD]">
-          <Link to="/" className="text-sm font-semibold text-[#1B2B4D] hover:underline">
+        <div className="mt-12 pt-8 border-t border-[#E2E5F6]">
+          <Link to="/" className="text-sm font-semibold text-[#4F5BD5] hover:underline">
             ← Back to Home
           </Link>
         </div>

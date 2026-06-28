@@ -32,7 +32,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
     <div className="faq-item">
       <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
         <span>{question}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#5A8F6E] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
       {open && <div className="faq-answer">{answer}</div>}
     </div>
@@ -134,7 +134,7 @@ export default function IATACrateGuide() {
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'IATA Pet Crate Requirements' }]} />
 
       {/* Hero */}
-      <section className="relative bg-[#1B2B4D] text-white py-16 lg:py-24">
+      <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
@@ -165,7 +165,7 @@ export default function IATACrateGuide() {
       </section>
 
       {/* What is IATA LAR */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
@@ -180,14 +180,14 @@ export default function IATACrateGuide() {
               </p>
               <div className="bg-white rounded-[20px] shadow-sm p-6">
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-[#5A8F6E]" />
+                  <Shield className="w-5 h-5 text-[#4F5BD5]" />
                   Why IATA Compliance Matters
                 </h3>
                 <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Airlines will refuse non-compliant crates at check-in</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Ground handlers will not accept pets in unsafe containers</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>Non-compliant crates risk injury, escape, or death during transit</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#5A8F6E] shrink-0 mt-0.5" /><span>UAE customs and Dubai Municipality may reject pets in improper crates</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Airlines will refuse non-compliant crates at check-in</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Ground handlers will not accept pets in unsafe containers</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Non-compliant crates risk injury, escape, or death during transit</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>UAE customs and Dubai Municipality may reject pets in improper crates</span></li>
                 </ul>
               </div>
             </div>
@@ -195,49 +195,49 @@ export default function IATACrateGuide() {
               <h3 className="text-xl font-bold text-[#2A2A2A] mb-5">IATA Crate Construction Checklist</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Hard plastic shell</p>
                     <p className="text-xs text-[#5A5A5A]">Single-piece rigid construction. No soft or flexible panels.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Metal door with secure latch</p>
                     <p className="text-xs text-[#5A5A5A]">Must be metal mesh or bars with a locking mechanism that cannot be opened by the animal.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Ventilation on all 4 sides</p>
                     <p className="text-xs text-[#5A5A5A]">At least 16% of total wall area must be open for air circulation.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">No wheels (or wheels removed)</p>
                     <p className="text-xs text-[#5A5A5A]">Wheels must be removed or taped securely to prevent movement during handling.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Food and water bowls</p>
                     <p className="text-xs text-[#5A5A5A]">Attachable bowls must be fitted to the door interior, accessible from outside.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Leak-proof floor</p>
                     <p className="text-xs text-[#5A5A5A]">Absorbent bedding or mat must cover the floor. No straw, hay, or wood shavings.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
+                  <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">✓</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Live Animal labels</p>
                     <p className="text-xs text-[#5A5A5A]">"Live Animal" sticker and upright arrow labels on all four sides and top.</p>
@@ -262,27 +262,27 @@ export default function IATACrateGuide() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#1B2B4D]/10 flex items-center justify-center mx-auto mb-4">
-                <Ruler className="w-6 h-6 text-[#1B2B4D]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
+                <Ruler className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Length</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-3">Measure from nose tip to base of tail.</p>
-              <div className="bg-white rounded-xl p-3 text-sm font-semibold text-[#1B2B4D]">
+              <div className="bg-white rounded-xl p-3 text-sm font-semibold text-[#4F5BD5]">
                 Crate Length = A + 10–15 cm
               </div>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#5A8F6E]/10 flex items-center justify-center mx-auto mb-4">
-                <Ruler className="w-6 h-6 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
+                <Ruler className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Height</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-3">Measure from floor to top of head or ears (whichever is higher).</p>
-              <div className="bg-white rounded-xl p-3 text-sm font-semibold text-[#5A8F6E]">
+              <div className="bg-white rounded-xl p-3 text-sm font-semibold text-[#4F5BD5]">
                 Crate Height = B + 10 cm
               </div>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
               <div className="w-12 h-12 rounded-full bg-[#C89F5A]/10 flex items-center justify-center mx-auto mb-4">
                 <Ruler className="w-6 h-6 text-[#C89F5A]" />
               </div>
@@ -309,7 +309,7 @@ export default function IATACrateGuide() {
       </section>
 
       {/* Not Allowed */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
             What Is NOT Allowed for Cargo Travel
@@ -427,13 +427,13 @@ export default function IATACrateGuide() {
       </section>
 
       {/* Crate Familiarization & Cost */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center">
-                  <Clock className="w-5 h-5 text-[#5A8F6E]" />
+                <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center">
+                  <Clock className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#2A2A2A]">Crate Familiarization Guide</h3>
               </div>
@@ -442,35 +442,35 @@ export default function IATACrateGuide() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">1</div>
+                  <div className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">1</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Open-door introduction</p>
                     <p className="text-xs text-[#5A5A5A]">Place the crate in a familiar room with the door open. Add a soft blanket and your pet's favorite toy. Let them explore freely.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">2</div>
+                  <div className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">2</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Feed meals inside</p>
                     <p className="text-xs text-[#5A5A5A]">Place food bowls at the back of the crate. Start near the entrance and gradually move them deeper over several days.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">3</div>
+                  <div className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">3</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Close the door briefly</p>
                     <p className="text-xs text-[#5A5A5A]">Once your pet is comfortable entering, close the door for 1–2 minutes while they eat. Gradually increase to 10–15 minutes.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">4</div>
+                  <div className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">4</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Extended sessions</p>
                     <p className="text-xs text-[#5A5A5A]">Work up to 1–2 hours inside with the door closed. Add a worn T-shirt with your scent for comfort.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-[#5A8F6E] text-white flex items-center justify-center text-xs font-bold shrink-0">5</div>
+                  <div className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">5</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Simulate travel day</p>
                     <p className="text-xs text-[#5A5A5A]">Pick up the crate gently while your pet is inside and place it in a different room. Reward calm behavior.</p>
@@ -545,21 +545,21 @@ export default function IATACrateGuide() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#1B2B4D]/10 flex items-center justify-center mx-auto mb-4">
-                <PawPrint className="w-6 h-6 text-[#1B2B4D]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
+                <PawPrint className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Step 1: Photo & Video Review</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">You send us photos and a short video of your pet standing naturally. We assess body proportions, head shape, and posture to estimate the correct crate size range.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#5A8F6E]/10 flex items-center justify-center mx-auto mb-4">
-                <Ruler className="w-6 h-6 text-[#5A8F6E]" />
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
+              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
+                <Ruler className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Step 2: Guided Measurement</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">We schedule a video call to guide you through the exact measurement process. We record length, height, width, and weight, adding a 2–3 cm safety margin to all dimensions.</p>
             </div>
-            <div className="bg-[#FDFBF8] rounded-[20px] p-6 text-center">
+            <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
               <div className="w-12 h-12 rounded-full bg-[#C89F5A]/10 flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-6 h-6 text-[#C89F5A]" />
               </div>
@@ -571,7 +571,7 @@ export default function IATACrateGuide() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-[#FDFBF8]">
+      <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4 text-center">
@@ -596,21 +596,21 @@ export default function IATACrateGuide() {
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link to="/dog-relocation-to-dubai/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#1B2B4D]/10 flex items-center justify-center mb-4 group-hover:bg-[#1B2B4D]/20 transition-colors">
-                <Dog className="w-5 h-5 text-[#1B2B4D]" />
+            <Link to="/dog-relocation-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <Dog className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#1B2B4D] transition-colors">Dog Relocation to Dubai</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Dog Relocation to Dubai</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete guide to relocating dogs to Dubai, including documentation, breed rules, and airline options.</p>
             </Link>
-            <Link to="/cat-relocation-to-dubai/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#5A8F6E]/10 flex items-center justify-center mb-4 group-hover:bg-[#5A8F6E]/20 transition-colors">
-                <Cat className="w-5 h-5 text-[#5A8F6E]" />
+            <Link to="/cat-relocation-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <Cat className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#5A8F6E] transition-colors">Cat Relocation to Dubai</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Cat Relocation to Dubai</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Everything you need to know about bringing cats to Dubai, including crate sizing for felines.</p>
             </Link>
-            <Link to="/how-it-works/" className="bg-[#FDFBF8] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+            <Link to="/how-it-works/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">
                 <Clock className="w-5 h-5 text-[#C89F5A]" />
               </div>
@@ -622,7 +622,7 @@ export default function IATACrateGuide() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 lg:py-20 bg-[#1B2B4D]">
+      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Need Help Choosing the Right Crate?
