@@ -57,6 +57,10 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     track('form_submit', { page_path: '/contact/' })
+    // This static site has no form backend — deliver the enquiry to our WhatsApp
+    // so the lead is actually captured instead of lost.
+    const lead = `New website enquiry:\nName: ${formData.name}\nEmail: ${formData.email}\nPet type: ${formData.petType}\nMessage: ${formData.message}`
+    window.open(getWhatsAppUrl(lead, 'contact-form'), '_blank', 'noopener,noreferrer')
     setSubmitted(true)
     setFormData({ name: '', email: '', petType: '', message: '' })
   }
@@ -171,8 +175,8 @@ export default function ContactPage() {
                       <Send className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="font-bold text-[#2A2A2A]">Message Sent!</p>
-                      <p className="text-sm text-[#5A5A5A]">We will reply within 24 hours.</p>
+                      <p className="font-bold text-[#2A2A2A]">Almost done — finish in WhatsApp</p>
+                      <p className="text-sm text-[#5A5A5A]">We opened WhatsApp with your enquiry — just tap send and we will reply fast. Or message us at +971 55 174 4849.</p>
                     </div>
                   </div>
                 </div>
@@ -291,7 +295,7 @@ export default function ContactPage() {
           </div>
           <FAQItem
             question="How quickly do you respond on WhatsApp?"
-            answer={<p>During business hours (Sunday–Thursday, 9AM–6PM GST), we typically respond within 15 minutes. Outside those hours, we check messages periodically and aim to reply within a few hours. Urgent travel-day issues are prioritized.</p>}
+            answer={<p>During business hours (every day, 9 AM–8 PM GST), we typically respond within 15 minutes. Outside those hours, we check messages periodically and aim to reply within a few hours. Urgent travel-day issues are prioritized.</p>}
           />
           <FAQItem
             question="Do you offer a free consultation?"
