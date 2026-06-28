@@ -1,0 +1,12 @@
+[
+  {"slug":"team","tier":"premium","aspect":"3:2","out":"website/public/images/team-support.jpg",
+   "prompt":"a warm professional pet-relocation support team of three friendly people in smart-casual clothing standing together in a bright modern Dubai office, a calm golden retriever and a cat carrier beside them, genuine confident smiles, real candid corporate photography, soft daylight"},
+  {"slug":"handler","tier":"premium","aspect":"3:2","out":"website/public/images/support-handler.jpg",
+   "prompt":"a caring professional pet handler in a polo shirt gently reassuring a labrador next to an IATA travel crate at a bright airport cargo area, authentic documentary photography, warm natural light, trustworthy and calm"},
+  {"slug":"consult","tier":"standard","aspect":"3:2","out":"website/public/images/support-consult.jpg",
+   "prompt":"a friendly female pet relocation consultant on a phone headset helping a client at a tidy modern desk with a laptop and travel documents, a small dog resting nearby, warm professional office, candid corporate photography"},
+  {"slug":"reunion","tier":"premium","aspect":"3:2","out":"website/public/images/owner-reunion.jpg",
+   "prompt":"a happy pet owner kneeling to hug their golden retriever on arrival at a bright Dubai apartment, travel crate beside them, emotional joyful reunion, authentic lifestyle photography, soft warm light"},
+  {"slug":"vetcheck","tier":"standard","aspect":"3:2","out":"website/public/images/support-vetcheck.jpg",
+   "prompt":"a gentle veterinarian in a clean clinic examining a calm cat with a stethoscope while a pet owner watches, professional caring atmosphere, bright clinical daylight, authentic documentary photography"}
+]

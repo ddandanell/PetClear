@@ -7,6 +7,7 @@ import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import type { ServicePageData, ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
 import { SERVICE_LINKS } from '../data/nav.ts'
 import OfficialSources from './OfficialSources.tsx'
+import Hero from './Hero.tsx'
 
 function Faq({ q, a }: ServiceFAQ) {
   const [open, setOpen] = useState(false)
@@ -119,38 +120,14 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       <Breadcrumb items={[{ label: 'Services', path: '/services/' }, { label: data.h1 }]} />
 
       {/* HERO */}
-      <section className="bg-white section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#4F5BD5] mb-3">Updated June 2026</p>
-              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-5">{data.h1}</h1>
-              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">{data.heroValueProp}</p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-6">
-                <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm hover:shadow-md">
-                  <MessageCircle className="w-4 h-4" /> Get a Free Quote on WhatsApp
-                </a>
-                <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">
-                  Call {siteConfig.phone}
-                </a>
-              </div>
-              {data.trustBadges && (
-                <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-                  {data.trustBadges.map((b, i) => (
-                    <span key={i} className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#4F5BD5] bg-[#E9ECFB] px-3 py-1.5 rounded-full">
-                      <Shield className="w-3.5 h-3.5" /> {b}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </div>
-            <div>
-              <img src={data.heroImage} alt={data.heroImageAlt} width={1536} height={1024} loading="eager"
-                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image={data.heroImage}
+        imageAlt={data.heroImageAlt}
+        eyebrow="Pet Relocation Service"
+        title={data.h1}
+        subtitle={data.heroValueProp}
+        updated="Updated June 2026"
+      />
 
       {/* SECTIONS */}
       {data.sections.map((sec, i) => (
