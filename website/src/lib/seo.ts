@@ -36,11 +36,13 @@ export const siteConfig = {
   phone: '+971 55 174 4849',
   email: 'hallo@dubai-pet-relocation.ae',
   address: {
-    street: 'Al Quoz Industrial Area 4, Al Quoz Industrial Area',
-    city: 'Al Quoz, Dubai',
+    street: '217 Zahra Townhouses, Town Square',
+    city: 'Dubai',
     region: 'Dubai',
+    postalCode: '00000',
     country: 'AE',
   },
+  hours: 'Open daily · 9:00 AM – 8:00 PM',
   geo: {
     lat: '25.2048',
     lng: '55.2708',

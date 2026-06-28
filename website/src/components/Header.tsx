@@ -47,24 +47,32 @@ const navLinks = [
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [mobileGroup, setMobileGroup] = useState<string | null>(null)
   const { pathname } = useLocation()
 
-  const isActive = (to: string) => pathname === to || pathname.startsWith(to)
+  const isActive = (to: string) => pathname === to || (to !== '/' && pathname.startsWith(to))
+
+  const closeMobile = () => {
+    setMenuOpen(false)
+    setMobileGroup(null)
+  }
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-lg bg-[#3A45B0] flex items-center justify-center">
-              <PawPrint className="w-5 h-5 text-white" />
+    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white shadow-sm">
+      <div className="mx-auto max-w-[1200px] px-5 sm:px-6 lg:px-8">
+        <div className="flex h-14 items-center justify-between">
+          {/* Logo — compact */}
+          <Link to="/" className="flex shrink-0 items-center gap-2" onClick={closeMobile}>
+            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#3A45B0]">
+              <PawPrint className="h-4 w-4 text-white" />
             </div>
-            <span className="text-xl font-bold text-[#3A45B0]">Dubai Pet Relocation</span>
+            <span className="whitespace-nowrap text-base font-bold text-[#3A45B0] sm:text-lg">
+              Dubai Pet Relocation
+            </span>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden items-center gap-0.5 lg:flex">
             {navLinks.map((link) =>
               link.children ? (
                 <div
@@ -72,11 +80,8 @@ export default function Header() {
                   className="relative"
                   onMouseEnter={() => setOpenDropdown(link.label)}
                   onMouseLeave={() => setOpenDropdown(null)}
-                  onFocus={() => setOpenDropdown(link.label)}
                   onBlur={(e) => {
-                    if (!e.currentTarget.contains(e.relatedTarget as Node)) {
-                      setOpenDropdown(null)
-                    }
+                    if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpenDropdown(null)
                   }}
                   onKeyDown={(e) => {
                     if (e.key === 'Escape') setOpenDropdown(null)
@@ -86,27 +91,109 @@ export default function Header() {
                     onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
                     aria-expanded={openDropdown === link.label}
                     aria-haspopup="true"
-                    className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    className={`flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                       link.children.some((c) => isActive(c.to))
-                        ? 'text-[#3A45B0] bg-[#E9ECFB]'
-                        : 'text-gray-700 hover:text-[#3A45B0] hover:bg-gray-50'
+                        ? 'bg-[#E9ECFB] text-[#3A45B0]'
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-[#3A45B0]'
                     }`}
                   >
                     {link.label}
-                    <ChevronDown className="w-3.5 h-3.5" />
+                    <ChevronDown
+                      className={`h-3.5 w-3.5 transition-transform ${openDropdown === link.label ? 'rotate-180' : ''}`}
+                    />
                   </button>
+                  {/* Wrapper touches the button (top-full) with pt-2 visual gap → no hover dead-zone */}
                   {openDropdown === link.label && (
-                    <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+                    <div className="absolute left-0 top-full z-50 pt-2">
+                      <div className="w-56 animate-[ddIn_120ms_ease-out] rounded-xl border border-gray-100 bg-white py-2 shadow-lg">
+                        {link.children.map((child) => (
+                          <Link
+                            key={child.to}
+                            to={child.to}
+                            className={`block px-4 py-2 text-sm transition-colors ${
+                              isActive(child.to)
+                                ? 'bg-[#E9ECFB] font-medium text-[#3A45B0]'
+                                : 'text-gray-700 hover:bg-gray-50 hover:text-[#3A45B0]'
+                            }`}
+                            onClick={() => setOpenDropdown(null)}
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                    isActive(link.to)
+                      ? 'bg-[#E9ECFB] text-[#3A45B0]'
+                      : 'text-gray-700 hover:bg-gray-50 hover:text-[#3A45B0]'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ),
+            )}
+          </nav>
+
+          {/* Desktop CTA */}
+          <div className="hidden items-center gap-3 lg:flex">
+            <a
+              href={getWhatsAppUrl('Hi, I need help with pet relocation to Dubai.')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#1DA851]"
+            >
+              <MessageCircle className="h-4 w-4" />
+              WhatsApp
+            </a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="rounded-lg p-2 transition-colors hover:bg-gray-100 lg:hidden"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? <X className="h-6 w-6 text-gray-700" /> : <Menu className="h-6 w-6 text-gray-700" />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu — sub-menus collapsed, tap to expand */}
+      {menuOpen && (
+        <div className="max-h-[80vh] overflow-y-auto border-t border-gray-100 bg-white lg:hidden">
+          <div className="space-y-1 px-4 py-3">
+            {navLinks.map((link) =>
+              link.children ? (
+                <div key={link.label}>
+                  <button
+                    onClick={() => setMobileGroup(mobileGroup === link.label ? null : link.label)}
+                    aria-expanded={mobileGroup === link.label}
+                    className="flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-50"
+                  >
+                    <span>{link.label}</span>
+                    <ChevronDown
+                      className={`h-4 w-4 text-gray-500 transition-transform ${mobileGroup === link.label ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  {mobileGroup === link.label && (
+                    <div className="space-y-0.5 pb-2 pl-3">
                       {link.children.map((child) => (
                         <Link
                           key={child.to}
                           to={child.to}
-                          className={`block px-4 py-2 text-sm transition-colors ${
+                          className={`block rounded-lg px-3 py-2 text-sm transition-colors ${
                             isActive(child.to)
-                              ? 'text-[#3A45B0] bg-[#E9ECFB] font-medium'
-                              : 'text-gray-700 hover:text-[#3A45B0] hover:bg-gray-50'
+                              ? 'bg-[#E9ECFB] font-medium text-[#3A45B0]'
+                              : 'text-gray-600 hover:bg-gray-50 hover:text-[#3A45B0]'
                           }`}
-                          onClick={() => setOpenDropdown(null)}
+                          onClick={closeMobile}
                         >
                           {child.label}
                         </Link>
@@ -118,103 +205,39 @@ export default function Header() {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  className={`block rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                     isActive(link.to)
-                      ? 'text-[#3A45B0] bg-[#E9ECFB]'
-                      : 'text-gray-700 hover:text-[#3A45B0] hover:bg-gray-50'
+                      ? 'bg-[#E9ECFB] text-[#3A45B0]'
+                      : 'text-gray-800 hover:bg-gray-50 hover:text-[#3A45B0]'
                   }`}
+                  onClick={closeMobile}
                 >
                   {link.label}
                 </Link>
-              )
+              ),
             )}
-          </nav>
-
-          {/* Desktop CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
-            <a
-              href={getWhatsAppUrl('Hi, I need help with pet relocation to Dubai.')}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white rounded-xl text-sm font-semibold hover:bg-[#1DA851] transition-colors"
-            >
-              <MessageCircle className="w-4 h-4" />
-              WhatsApp
-            </a>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X className="w-6 h-6 text-gray-700" /> : <Menu className="w-6 h-6 text-gray-700" />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto">
-          <div className="px-5 py-4 space-y-1">
-            {navLinks.map((link) =>
-              link.children ? (
-                <div key={link.label} className="space-y-1">
-                  <p className="px-3 py-2 text-sm font-semibold text-gray-900">{link.label}</p>
-                  <div className="pl-4 space-y-1">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.to}
-                        to={child.to}
-                        className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
-                          isActive(child.to)
-                            ? 'text-[#3A45B0] bg-[#E9ECFB] font-medium'
-                            : 'text-gray-600 hover:text-[#3A45B0] hover:bg-gray-50'
-                        }`}
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    isActive(link.to)
-                      ? 'text-[#3A45B0] bg-[#E9ECFB]'
-                      : 'text-gray-700 hover:text-[#3A45B0] hover:bg-gray-50'
-                  }`}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
-            <div className="pt-4 border-t border-gray-100 space-y-2">
+            <div className="space-y-2 border-t border-gray-100 pt-3">
               <a
                 href={getWhatsAppUrl('Hi, I need help with pet relocation to Dubai.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-4 py-3 bg-[#25D366] text-white rounded-xl text-sm font-semibold"
+                className="flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white"
               >
-                <MessageCircle className="w-4 h-4" />
+                <MessageCircle className="h-4 w-4" />
                 Message on WhatsApp
               </a>
               <a
                 href="tel:+971551744849"
-                className="flex items-center justify-center gap-2 px-4 py-3 border border-gray-200 text-gray-700 rounded-xl text-sm font-medium"
+                className="flex items-center justify-center gap-2 rounded-xl border border-gray-200 px-4 py-3 text-sm font-medium text-gray-700"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="h-4 w-4" />
                 +971 55 174 4849
               </a>
             </div>
           </div>
         </div>
       )}
+      <style>{`@keyframes ddIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }`}</style>
     </header>
   )
 }

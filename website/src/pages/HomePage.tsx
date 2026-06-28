@@ -7,6 +7,7 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, siteConfig, BASE_URL } from '../lib/seo.ts'
 import { SERVICE_LINKS, TOP_AREA_LINKS } from '../data/nav.ts'
+import Testimonials from '../components/Testimonials.tsx'
 
 const defaultMsg = `Hi Dubai Pet Relocation team,
 
@@ -98,8 +99,10 @@ export default function HomePage() {
     email: siteConfig.email,
     address: {
       '@type': 'PostalAddress',
+      streetAddress: '217 Zahra Townhouses, Town Square',
       addressLocality: 'Dubai',
       addressRegion: 'Dubai',
+      postalCode: '00000',
       addressCountry: 'AE',
     },
     geo: {
@@ -109,9 +112,9 @@ export default function HomePage() {
     },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
       opens: '09:00',
-      closes: '18:00',
+      closes: '20:00',
     },
     priceRange: '$$$',
     areaServed: {
@@ -602,6 +605,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       {/* ═══════════ FAQ PREVIEW ═══════════ */}
       <section className="bg-white section-padding">

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { PawPrint, MessageCircle, Phone, Mail, MapPin } from 'lucide-react'
+import { PawPrint, MessageCircle, Phone, Mail, MapPin, Clock } from 'lucide-react'
 import { getWhatsAppUrl } from '../lib/seo.ts'
 import { SERVICE_LINKS, TOP_AREA_LINKS, GUIDE_LINKS, ROUTE_LINKS, COMPANY_LINKS } from '../data/nav.ts'
 import type { NavLink } from '../data/nav.ts'
@@ -39,11 +39,28 @@ export default function Footer() {
             <p className="text-white/80 text-sm leading-relaxed mb-5 max-w-xs">
               A transparent pet relocation concierge for Dubai and the UAE. We guide you through MOCCAE requirements, vetted partners and door-to-door delivery.
             </p>
-            <div className="space-y-2 text-sm text-white/80">
-              <a href="tel:+971551744849" className="flex items-center gap-2 hover:text-white transition-colors"><Phone className="w-4 h-4" /> +971 55 174 4849</a>
-              <a href="mailto:hallo@dubai-pet-relocation.ae" className="flex items-center gap-2 hover:text-white transition-colors"><Mail className="w-4 h-4" /> hallo@dubai-pet-relocation.ae</a>
-              <div className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 shrink-0" /> Al Quoz, Dubai, UAE</div>
-            </div>
+            <ul className="space-y-3 text-sm text-white/80">
+              <li>
+                <a href="tel:+971551744849" className="group flex items-center gap-3 hover:text-white transition-colors">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10 group-hover:bg-white/20 transition-colors"><Phone className="h-4 w-4" /></span>
+                  +971 55 174 4849
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hallo@dubai-pet-relocation.ae" className="group flex items-center gap-3 hover:text-white transition-colors">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10 group-hover:bg-white/20 transition-colors"><Mail className="h-4 w-4" /></span>
+                  hallo@dubai-pet-relocation.ae
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10"><MapPin className="h-4 w-4" /></span>
+                <span>217 Zahra Townhouses, Town Square,<br />Dubai 00000, UAE</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10"><Clock className="h-4 w-4" /></span>
+                Open daily · 9:00 AM – 8:00 PM
+              </li>
+            </ul>
           </div>
 
           {/* Link columns */}
