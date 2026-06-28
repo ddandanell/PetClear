@@ -47,7 +47,7 @@ export default function TeamSupport() {
           <div>
             <img
               src="/images/team-support.jpg"
-              alt="The Dubai Pet Relocation support team with a calm dog in a bright modern office"
+              alt="Pet relocation coordinators reviewing a client's travel paperwork together, with a calm dog resting nearby"
               width={1280}
               height={854}
               loading="lazy"

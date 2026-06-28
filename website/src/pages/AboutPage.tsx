@@ -207,7 +207,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="max-w-4xl mx-auto mb-12">
-            <img src="/images/team-support.jpg" alt="The Dubai Pet Relocation support team in a bright Dubai office" width={1280} height={854} loading="lazy" className="w-full rounded-[24px] object-cover shadow-sm" />
+            <img src="/images/team-support.jpg" alt="Pet relocation coordinators working together at a laptop with a calm dog resting nearby" width={1280} height={854} loading="lazy" className="w-full rounded-[24px] object-cover shadow-sm" />
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
