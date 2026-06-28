@@ -90,7 +90,7 @@ export default function USAToDubai() {
         ogType="article"
         schemas={schemas}
       />
-      <Breadcrumb items={[{ label: 'Home', path: '/' }, { label: 'Routes', path: '/routes/' }, { label: 'USA to Dubai' }]} />
+      <Breadcrumb items={[{ label: 'Routes', path: '/routes/' }, { label: 'USA to Dubai' }]} />
 
       {/* HERO */}
       <section className="relative bg-white overflow-hidden">

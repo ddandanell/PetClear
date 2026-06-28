@@ -168,7 +168,7 @@ export default function DogRelocationPage() {
           }
         ]}
       />
-      <Breadcrumb items={[{label: 'Home', path: '/'}, {label: 'Dog Relocation to Dubai'}]} />
+      <Breadcrumb items={[{label: 'Dog Relocation to Dubai'}]} />
 
       {/* ─── HERO ─── */}
       <section className="relative bg-white overflow-hidden">

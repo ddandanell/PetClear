@@ -304,7 +304,7 @@ export default function HowItWorksPage() {
         ogType="article"
         schemas={schemas}
       />
-      <Breadcrumb items={[{label: 'Home', path: '/'}, {label: 'How It Works'}]} />
+      <Breadcrumb items={[{label: 'How It Works'}]} />
 
       {/* ═══════════ HERO ═══════════ */}
       <section className="relative overflow-hidden bg-[#4F5BD5]">

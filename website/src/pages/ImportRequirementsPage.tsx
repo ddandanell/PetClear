@@ -248,7 +248,7 @@ export default function ImportRequirementsPage() {
       />
       <Breadcrumb
         items={[
-          { label: 'Home', path: '/' },
+          
           { label: 'Guides' },
           { label: 'UAE Pet Import Requirements' },
         ]}

@@ -157,7 +157,7 @@ export default function CatRelocationPage() {
       />
       <Breadcrumb
         items={[
-          { label: 'Home', path: '/' },
+          
           { label: 'Cat Relocation to Dubai' }
         ]}
       />
