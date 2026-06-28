@@ -91,32 +91,30 @@ export default function AboutPage() {
       {/* ═══════════ HERO ═══════════ */}
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
-              About Dubai Pet Relocation — Transparent Pet Relocation for Dubai
-            </h1>
-            <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
-              We are a small team of pet owners and logistics experts based in Dubai. We built Dubai Pet Relocation because we experienced firsthand how confusing, opaque, and stressful pet relocation can be — and we believe it does not have to be that way.
-            </p>
-            <WhatsAppCta
-              text="Get a Free Consultation"
-              message="Hi Dubai Pet Relocation team! I would love to learn more about your services and how you can help with my pet relocation."
-            />
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            <div className="text-center lg:text-left">
+              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
+                About Dubai Pet Relocation — Transparent Pet Relocation for Dubai
+              </h1>
+              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
+                We are a small team of pet owners and logistics experts based in Dubai. We built Dubai Pet Relocation because we experienced firsthand how confusing, opaque, and stressful pet relocation can be — and we believe it does not have to be that way.
+              </p>
+              <WhatsAppCta
+                text="Get a Free Consultation"
+                message="Hi Dubai Pet Relocation team! I would love to learn more about your services and how you can help with my pet relocation."
+              />
+            </div>
+            <div>
+              <img
+                src="/images/about-hero.jpg"
+                alt="A happy dog and cat relaxing at home in Dubai, well cared for during their relocation"
+                width={1536}
+                height={1024}
+                loading="eager"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* ═══════════ FEATURE IMAGE ═══════════ */}
-      <section className="bg-white pb-10 sm:pb-14">
-        <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
-          <img
-            src="/images/about-hero.jpg"
-            alt="A happy dog and cat relaxing at home in Dubai, well cared for during their relocation"
-            width={1536}
-            height={1024}
-            loading="eager"
-            className="w-full h-[280px] sm:h-[360px] lg:h-[420px] object-cover rounded-[24px] shadow-sm"
-          />
         </div>
       </section>
 

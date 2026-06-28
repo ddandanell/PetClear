@@ -99,41 +99,39 @@ export default function ContactPage() {
       {/* ═══════════ HERO ═══════════ */}
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
-              Contact Dubai Pet Relocation — We're Here to Help
-            </h1>
-            <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
-              Whether you have a quick question about a breed ban, need a full relocation quote, or just want to understand the process better, we are here. Fastest response is on WhatsApp — but we read every form and email too.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <WhatsAppCta
-                text="Message Us on WhatsApp"
-                message="Hi Dubai Pet Relocation! I have a question about pet relocation and would love your help."
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            <div className="text-center lg:text-left">
+              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
+                Contact Dubai Pet Relocation — We're Here to Help
+              </h1>
+              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
+                Whether you have a quick question about a breed ban, need a full relocation quote, or just want to understand the process better, we are here. Fastest response is on WhatsApp — but we read every form and email too.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                <WhatsAppCta
+                  text="Message Us on WhatsApp"
+                  message="Hi Dubai Pet Relocation! I have a question about pet relocation and would love your help."
+                />
+                <a
+                  href="mailto:hallo@dubai-pet-relocation.ae"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
+                >
+                  <Mail className="w-4 h-4" />
+                  Email Us
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/images/contact-hero.jpg"
+                alt="A friendly dog beside a welcoming Dubai office desk, ready to help with your pet relocation"
+                width={1536}
+                height={1024}
+                loading="eager"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
               />
-              <a
-                href="mailto:hallo@dubai-pet-relocation.ae"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                Email Us
-              </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ═══════════ FEATURE IMAGE ═══════════ */}
-      <section className="bg-white pb-10 sm:pb-14">
-        <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
-          <img
-            src="/images/contact-hero.jpg"
-            alt="A friendly dog beside a welcoming Dubai office desk, ready to help with your pet relocation"
-            width={1536}
-            height={1024}
-            loading="eager"
-            className="w-full h-[280px] sm:h-[360px] lg:h-[420px] object-cover rounded-[24px] shadow-sm"
-          />
         </div>
       </section>
 
