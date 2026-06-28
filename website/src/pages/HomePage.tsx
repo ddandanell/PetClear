@@ -6,6 +6,7 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, siteConfig, BASE_URL } from '../lib/seo.ts'
+import { SERVICE_LINKS, TOP_AREA_LINKS } from '../data/nav.ts'
 
 const defaultMsg = `Hi Dubai Pet Relocation team,
 
@@ -500,6 +501,56 @@ export default function HomePage() {
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">{item.title}</h3>
                 <p className="text-body">{item.body}</p>
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ SERVICES INTERLINK ═══════════ */}
+      <section className="bg-white section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">What We Help With</span>
+            <h2 className="text-section mt-3 mb-4">Our Pet Relocation Services</h2>
+            <p className="text-body-large max-w-2xl mx-auto">
+              From import permits to door-to-door transport — explore the service that matches your move.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {SERVICE_LINKS.map((s) => (
+              <Link
+                key={s.to}
+                to={s.to}
+                className="group flex items-center justify-between gap-3 rounded-[16px] border border-[#E6E8F5] bg-white px-5 py-4 transition hover:border-[#4F5BD5] hover:shadow-md"
+              >
+                <span className="font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5]">{s.label}</span>
+                <ArrowRight className="w-4 h-4 shrink-0 text-[#9AA0C7] group-hover:text-[#4F5BD5]" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ DUBAI AREAS INTERLINK ═══════════ */}
+      <section className="bg-[#F5F6FD] section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Across Dubai</span>
+            <h2 className="text-section mt-3 mb-4">Dubai Areas We Cover</h2>
+            <p className="text-body-large max-w-2xl mx-auto">
+              Door-to-door pet relocation from every Dubai community — villas and high-rise towers alike.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {TOP_AREA_LINKS.map((a) => (
+              <Link
+                key={a.to}
+                to={a.to}
+                className="inline-flex items-center gap-1.5 rounded-full border border-[#E6E8F5] bg-white px-4 py-2 text-sm font-semibold text-[#2A2A2A] transition hover:border-[#4F5BD5] hover:text-[#4F5BD5]"
+              >
+                <MapPin className="w-3.5 h-3.5 text-[#4F5BD5]" />
+                {a.label}
+              </Link>
             ))}
           </div>
         </div>
