@@ -9,6 +9,7 @@ import { getWhatsAppUrl, siteConfig, BASE_URL } from '../lib/seo.ts'
 import { SERVICE_LINKS, TOP_AREA_LINKS } from '../data/nav.ts'
 import Testimonials from '../components/Testimonials.tsx'
 import Hero from '../components/Hero.tsx'
+import TeamSupport from '../components/TeamSupport.tsx'
 
 const defaultMsg = `Hi Dubai Pet Relocation team,
 
@@ -542,6 +543,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <TeamSupport />
 
       <Testimonials />
 
