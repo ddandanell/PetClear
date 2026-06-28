@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import type { SEOMeta } from '../lib/seo'
-import { BASE_URL, buildCanonical, defaultOGImage } from '../lib/seo'
+import { buildCanonical, defaultOGImage } from '../lib/seo'
 
 interface SEOHeadProps {
   meta?: SEOMeta
@@ -15,6 +15,9 @@ interface SEOHeadProps {
   jsonLd?: Record<string, unknown>[]
 }
 
+// React 19 native document metadata: rendering <title>/<meta>/<link> here hoists
+// them into <head> on the client AND emits them in server/prerender output, so
+// crawlers and AI engines get real per-page meta + JSON-LD in the raw HTML.
 export default function SEOHead(props: SEOHeadProps) {
   const meta: SEOMeta = props.meta || {
     title: props.title || '',
@@ -27,73 +30,43 @@ export default function SEOHead(props: SEOHeadProps) {
   }
 
   const schemas = props.schemas || props.jsonLd || []
-
-  const canonical = meta.canonical || buildCanonical(window.location.pathname)
+  const location = useLocation()
+  const canonical = meta.canonical || buildCanonical(location.pathname)
   const ogImage = meta.ogImage || defaultOGImage
   const ogType = meta.ogType || 'website'
+  const robots = meta.noindex
+    ? 'noindex, nofollow'
+    : 'index, follow, max-image-preview:large, max-snippet:-1'
 
-  useEffect(() => {
-    document.title = meta.title
+  return (
+    <>
+      <title>{meta.title}</title>
+      <meta name="description" content={meta.description} />
+      {meta.keywords ? <meta name="keywords" content={meta.keywords} /> : null}
+      <meta name="robots" content={robots} />
+      <link rel="canonical" href={canonical} />
 
-    const setMeta = (selector: string, content: string) => {
-      let el = document.querySelector(selector) as HTMLMetaElement | null
-      if (!el) {
-        el = document.createElement('meta')
-        const attr = selector.includes('property=') ? 'property' : 'name'
-        const val = selector.match(/"([^"]+)"/)?.[1] || ''
-        el.setAttribute(attr, val)
-        document.head.appendChild(el)
-      }
-      el.setAttribute('content', content)
-    }
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:description" content={meta.description} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:url" content={canonical} />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:site_name" content="Dubai Pet Relocation" />
+      <meta property="og:locale" content="en_AE" />
 
-    setMeta('meta[name="description"]', meta.description)
-    if (meta.keywords) setMeta('meta[name="keywords"]', meta.keywords)
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:description" content={meta.description} />
+      <meta name="twitter:image" content={ogImage} />
 
-    const robots = meta.noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1'
-    setMeta('meta[name="robots"]', robots)
-
-    // Canonical
-    let canEl = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null
-    if (!canEl) {
-      canEl = document.createElement('link')
-      canEl.rel = 'canonical'
-      document.head.appendChild(canEl)
-    }
-    canEl.href = canonical
-
-    // Open Graph
-    setMeta('meta[property="og:title"]', meta.title)
-    setMeta('meta[property="og:description"]', meta.description)
-    setMeta('meta[property="og:type"]', ogType)
-    setMeta('meta[property="og:url"]', canonical)
-    setMeta('meta[property="og:image"]', ogImage)
-    setMeta('meta[property="og:site_name"]', 'Dubai Pet Relocation')
-    setMeta('meta[property="og:locale"]', 'en_AE')
-
-    // Twitter Cards
-    setMeta('meta[name="twitter:card"]', 'summary_large_image')
-    setMeta('meta[name="twitter:title"]', meta.title)
-    setMeta('meta[name="twitter:description"]', meta.description)
-    setMeta('meta[name="twitter:image"]', ogImage)
-
-    // JSON-LD schemas
-    if (schemas && schemas.length > 0) {
-      // Remove existing schema scripts
-      document.querySelectorAll('script[type="application/ld+json"]').forEach(el => el.remove())
-      schemas.forEach(schema => {
-        const script = document.createElement('script')
-        script.type = 'application/ld+json'
-        script.textContent = JSON.stringify(schema)
-        document.head.appendChild(script)
-      })
-    }
-
-    return () => {
-      // Cleanup schemas on unmount
-      document.querySelectorAll('script[type="application/ld+json"]').forEach(el => el.remove())
-    }
-  }, [meta, schemas, canonical, ogImage, ogType])
-
-  return null
+      {schemas.map((schema, i) => (
+        <script
+          // eslint-disable-next-line react/no-array-index-key
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+    </>
+  )
 }

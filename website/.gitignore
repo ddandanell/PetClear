@@ -10,6 +10,9 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+dist-server
+dist-srv-*
+src/_ssrprobe.tsx
 *.local
 
 # Editor directories and files

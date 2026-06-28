@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout.tsx'
 
 // Core pages (V1)
@@ -52,9 +52,8 @@ import { dubaiAreas } from './data/areas/dubai/index.ts'
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
+    <Layout>
+      <Routes>
           {/* Core V1 pages */}
           <Route path="/" element={<HomePage />} />
           <Route path="/guides/pet-relocation-cost-dubai/" element={<CostGuidePage />} />
@@ -113,6 +112,5 @@ export default function App() {
           ))}
         </Routes>
       </Layout>
-    </BrowserRouter>
   )
 }

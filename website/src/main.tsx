@@ -1,13 +1,25 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { hydrateRoot, createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import { initAnalytics } from './lib/analytics.ts'
 
-createRoot(document.getElementById('root')!).render(
+const el = document.getElementById('root')!
+
+const tree = (
   <StrictMode>
-    <App />
-  </StrictMode>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
 )
+
+// Prerendered pages ship real HTML in #root → hydrate it; otherwise mount fresh.
+if (el.hasChildNodes()) {
+  hydrateRoot(el, tree)
+} else {
+  createRoot(el).render(tree)
+}
 
 initAnalytics()

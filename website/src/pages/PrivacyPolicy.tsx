@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
           Privacy Policy
         </h1>
         <div className="text-sm text-[#8A8A8A] mb-12">
-          Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+          Last updated: June 2026
         </div>
 
         <div className="space-y-10 text-[#5A5A5A] text-base leading-relaxed">
