@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { MessageCircle, ChevronDown, ChevronUp, ArrowRight, CheckCircle, Shield } from 'lucide-react'
 import SEOHead from './SEOHead.tsx'
 import Breadcrumb from './Breadcrumb.tsx'
-import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle } from '../lib/seo.ts'
 import type { ServicePageData, ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
 import { SERVICE_LINKS } from '../data/nav.ts'
 import OfficialSources from './OfficialSources.tsx'
@@ -125,7 +125,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         imageAlt={data.heroImageAlt}
         eyebrow="Pet Relocation Service"
         title={data.h1}
-        subtitle={data.heroValueProp}
+        subtitle={shortSubtitle(data.heroValueProp)}
         updated="Updated June 2026"
       />
 

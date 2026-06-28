@@ -164,7 +164,7 @@ export default function MOCCAEPermitGuide() {
   return (
     <>
       <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides' }, { label: 'MOCCAE Import Permit Guide' }]} />
+      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'MOCCAE Import Permit Guide' }]} />
 
       {/* Hero */}
       <Hero

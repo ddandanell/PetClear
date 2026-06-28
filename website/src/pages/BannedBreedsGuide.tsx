@@ -127,7 +127,7 @@ export default function BannedBreedsGuide() {
   return (
     <>
       <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides' }, { label: 'Banned & Restricted Dog Breeds' }]} />
+      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Banned & Restricted Dog Breeds' }]} />
 
       {/* Hero */}
       <Hero

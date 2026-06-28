@@ -133,7 +133,7 @@ export default function SummerTravelGuide() {
   return (
     <>
       <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides' }, { label: 'Summer Pet Travel Guide' }]} />
+      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Summer Pet Travel Guide' }]} />
 
       {/* Hero */}
       <Hero

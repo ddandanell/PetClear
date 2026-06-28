@@ -173,7 +173,7 @@ export default function TiterTestGuide() {
   return (
     <>
       <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides' }, { label: 'Rabies Titer Test Guide' }]} />
+      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Rabies Titer Test Guide' }]} />
 
       {/* Hero */}
       <Hero

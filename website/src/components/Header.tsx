@@ -17,6 +17,7 @@ const navLinks = [
   {
     label: 'Guides',
     children: [
+      { label: 'All Guides', to: '/guides/' },
       { label: 'Cost Guide', to: '/guides/pet-relocation-cost-dubai/' },
       { label: 'Import Requirements', to: '/guides/uae-pet-import-requirements/' },
       { label: 'Banned Breeds', to: '/guides/banned-dog-breeds-dubai/' },

@@ -32,6 +32,7 @@ const DubaiToUSA = lazy(() => import('./pages/DubaiToUSA.tsx'))
 
 // Guide pages (V2 - Month 1)
 const BannedBreedsGuide = lazy(() => import('./pages/BannedBreedsGuide.tsx'))
+const GuidesHub = lazy(() => import('./pages/GuidesHub.tsx'))
 const IATACrateGuide = lazy(() => import('./pages/IATACrateGuide.tsx'))
 const SummerTravelGuide = lazy(() => import('./pages/SummerTravelGuide.tsx'))
 const MOCCAEPermitGuide = lazy(() => import('./pages/MOCCAEPermitGuide.tsx'))
@@ -90,6 +91,7 @@ export default function App() {
           <Route path="/routes/dubai-to-usa/" element={<DubaiToUSA />} />
 
           {/* Guide pages */}
+          <Route path="/guides/" element={<GuidesHub />} />
           <Route path="/guides/banned-dog-breeds-dubai/" element={<BannedBreedsGuide />} />
           <Route path="/guides/iata-pet-crate-requirements/" element={<IATACrateGuide />} />
           <Route path="/guides/pet-travel-summer-dubai/" element={<SummerTravelGuide />} />

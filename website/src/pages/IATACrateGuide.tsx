@@ -130,7 +130,7 @@ export default function IATACrateGuide() {
   return (
     <>
       <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides' }, { label: 'IATA Pet Crate Requirements' }]} />
+      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'IATA Pet Crate Requirements' }]} />
 
       {/* Hero */}
       <Hero

@@ -16,6 +16,15 @@ export function buildCanonical(path: string): string {
   return `${BASE_URL}${path}`
 }
 
+// Trim hero copy to its first sentence (or ~155 chars) for short, scannable heroes.
+export function shortSubtitle(text: string, max = 155): string {
+  if (!text) return text
+  const firstSentence = text.split(/(?<=[.!?])\s/)[0]
+  const base = firstSentence && firstSentence.length <= max ? firstSentence : text
+  if (base.length <= max) return base
+  return base.slice(0, max).replace(/\s+\S*$/, '') + '…'
+}
+
 export function getWhatsAppUrl(message: string, campaign = 'pet-relocation'): string {
   const phone = '971551744849'
   const params = new URLSearchParams({

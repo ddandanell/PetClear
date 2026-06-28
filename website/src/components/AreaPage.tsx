@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { MessageCircle, ChevronDown, ChevronUp, ArrowRight, MapPin, CheckCircle } from 'lucide-react'
 import SEOHead from './SEOHead.tsx'
 import Breadcrumb from './Breadcrumb.tsx'
-import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle } from '../lib/seo.ts'
 import type { ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
 import type { AreaPageData } from '../types/areaPage.ts'
 import { SERVICE_LINKS } from '../data/nav.ts'
@@ -93,7 +93,7 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
         imageAlt={data.heroImageAlt}
         eyebrow={`${data.areaName}, Dubai`}
         title={data.h1}
-        subtitle={data.heroValueProp}
+        subtitle={shortSubtitle(data.heroValueProp)}
         updated="Updated June 2026"
       />
 
