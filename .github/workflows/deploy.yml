@@ -1,8 +1,11 @@
 name: Deploy to GitHub Pages
 
+# NOTE: Production host is Vercel (https://pet-clear.vercel.app).
+# Auto-deploy on push is disabled so Pages builds don't conflict with Vercel.
+# This workflow now runs only on manual trigger. Re-enable the push trigger
+# only if you switch the production host back to GitHub Pages (which also
+# requires restoring base: '/PetClear/' in vite.config.ts and the BrowserRouter basename).
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

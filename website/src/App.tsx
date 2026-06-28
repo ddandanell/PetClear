@@ -43,7 +43,7 @@ const AbuDhabiCity = lazy(() => import('./pages/AbuDhabiCity.tsx'))
 
 export default function App() {
   return (
-    <BrowserRouter basename="/PetClear">
+    <BrowserRouter>
       <Layout>
         <Routes>
           {/* Core V1 pages */}
