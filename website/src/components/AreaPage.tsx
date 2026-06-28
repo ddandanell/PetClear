@@ -7,6 +7,7 @@ import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import type { ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
 import type { AreaPageData } from '../types/areaPage.ts'
 import { SERVICE_LINKS } from '../data/nav.ts'
+import OfficialSources from './OfficialSources.tsx'
 
 function Faq({ q, a }: ServiceFAQ) {
   const [open, setOpen] = useState(false)
@@ -180,6 +181,8 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
           </div>
         </div>
       </section>
+
+      <OfficialSources />
 
       {/* FINAL CTA */}
       <section className="bg-[#4F5BD5] section-padding">

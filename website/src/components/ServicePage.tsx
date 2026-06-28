@@ -6,6 +6,7 @@ import Breadcrumb from './Breadcrumb.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import type { ServicePageData, ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
 import { SERVICE_LINKS } from '../data/nav.ts'
+import OfficialSources from './OfficialSources.tsx'
 
 function Faq({ q, a }: ServiceFAQ) {
   const [open, setOpen] = useState(false)
@@ -199,6 +200,8 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
           </div>
         </div>
       </section>
+
+      <OfficialSources />
 
       {/* FINAL CTA */}
       <section className="bg-[#4F5BD5] section-padding">
