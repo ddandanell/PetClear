@@ -199,8 +199,8 @@ export default function CatRelocationPage() {
                 </Link>
               </div>
               <div className="flex flex-wrap items-center gap-4 text-xs text-[#8A8A8A]">
-                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-[#1B2B4D]" /> IPATA-certified</span>
-                <span className="flex items-center gap-1"><Shield className="w-3.5 h-3.5 text-[#1B2B4D]" /> MOCCAE-licensed</span>
+                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-[#1B2B4D]" /> Vetted relocation partners</span>
+                <span className="flex items-center gap-1"><Shield className="w-3.5 h-3.5 text-[#1B2B4D]" /> MOCCAE import guidance</span>
                 <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5 text-[#1B2B4D]" /> IATA-compliant</span>
                 <span className="flex items-center gap-1"><Heart className="w-3.5 h-3.5 text-[#1B2B4D]" /> 150+ cats relocated</span>
               </div>
@@ -215,7 +215,7 @@ export default function CatRelocationPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="text-white text-sm font-medium">IPATA-certified · MOCCAE-licensed · IATA-compliant</p>
+                  <p className="text-white text-sm font-medium">Vetted relocation partners · MOCCAE import guidance · IATA-compliant</p>
                 </div>
               </div>
             </div>
@@ -309,7 +309,7 @@ export default function CatRelocationPage() {
               <p>If your cat is already microchipped and vaccinated, great — we'll verify the dates. If not, we connect you with a vetted vet partner in your country who knows export requirements. Every certificate must show the same microchip number. We check this three times.</p>
             </Step>
             <Step number={3} title="MOCCAE Import Permit (Days 14–21)">
-              <p>We apply for your cat's MOCCAE import permit online. This is a mandatory approval from the UAE Ministry of Climate Change and Environment. The permit costs approximately AED 200 and is valid for 30–90 days depending on your origin country. We handle the submission, track the status, and confirm approval — so you don't have to navigate the portal yourself.</p>
+              <p>We apply for your cat's MOCCAE import permit online. This is a mandatory approval from the UAE Ministry of Climate Change and Environment. The permit costs AED 200 per pet and is valid for 90 days from issuance (a release fee of AED 250/cat is also payable on arrival). We handle the submission, track the status, and confirm approval — so you don't have to navigate the portal yourself.</p>
             </Step>
             <Step number={4} title="Flight Booking & Crate Fitting (Days 21–28)">
               <p>We book your cat's flight as manifest cargo — the only way cats can enter Dubai. We choose morning departures to avoid heat, and we confirm the airline's cat-specific policies in writing. We provide an IATA-approved travel crate sized to your cat, or we verify that yours meets standards. We label it correctly, attach feeding instructions, and include a familiar item from home if you provide one.</p>
@@ -345,7 +345,7 @@ export default function CatRelocationPage() {
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="w-10 h-10 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold mb-4">1</div>
               <h3 className="text-base font-semibold text-[#2A2A2A] mb-2">MOCCAE Import Permit</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">A mandatory approval from the UAE Ministry of Climate Change and Environment. Cost: approximately AED 200. Valid: 30–90 days. We apply for this on your behalf.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">A mandatory approval from the UAE Ministry of Climate Change and Environment. Cost: AED 200 per pet (plus AED 250/cat release fee on arrival). Valid: 90 days from issuance. We apply for this on your behalf.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="w-10 h-10 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold mb-4">2</div>
@@ -921,7 +921,7 @@ export default function CatRelocationPage() {
       <section className="bg-white border-t border-gray-100 py-8">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-[#8A8A8A]">
-            Dubai Pet Relocation — Dubai's transparent pet relocation concierge. MOCCAE licensed. IPATA member. IATA compliant. Clear prices. Real humans. Safe pets.
+            Dubai Pet Relocation — Dubai's transparent pet relocation concierge. We guide you through MOCCAE import requirements. Vetted relocation partners. IATA compliant. Clear prices. Real humans. Safe pets.
           </p>
         </div>
       </section>

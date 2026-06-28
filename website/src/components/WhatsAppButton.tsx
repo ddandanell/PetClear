@@ -24,7 +24,7 @@ export default function WhatsAppButton({
   }, [variant])
 
   const encodedMessage = encodeURIComponent(message)
-  const href = `https://wa.me/9710551744849?text=${encodedMessage}`
+  const href = `https://wa.me/971551744849?text=${encodedMessage}`
 
   if (variant === 'inline') {
     return (

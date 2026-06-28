@@ -268,7 +268,7 @@ export default function CostGuidePage() {
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">4. Your pet's documentation status</h4>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              Already microchipped and vaccinated? You'll save AED 300–600. Starting from scratch? Budget for the full veterinary timeline. Missing one document can trigger a quarantine that costs AED 8,500+.
+              Already microchipped and vaccinated? You'll save AED 300–600. Starting from scratch? Budget for the full veterinary timeline. Missing one document can mean your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands).
             </p>
           </Card>
         </div>
@@ -297,16 +297,20 @@ export default function CostGuidePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td>MOCCAE Import Permit</td><td>~200</td><td>Official approval to bring your pet into the UAE. Mandatory. No exceptions.</td><td>Before travel</td></tr>
-                <tr><td>Dubai Customs Clearance / Bill of Entry</td><td>500–1,000</td><td>Agent handling at DXB or DWC cargo terminal. Includes processing and release fees.</td><td>On arrival</td></tr>
+                <tr><td>MOCCAE Import Permit</td><td>200</td><td>Official approval to bring your pet into the UAE. Mandatory. No exceptions. Valid 90 days from issuance.</td><td>Before travel</td></tr>
+                <tr><td>MOCCAE Release Fee (on arrival)</td><td>500/dog · 250/cat</td><td>Government release fee paid when your pet clears at the cargo terminal. Government total ~AED 700/dog, ~AED 450/cat.</td><td>On arrival</td></tr>
+                <tr><td>Dubai Customs Clearance / Bill of Entry</td><td>500–1,000</td><td>Agent handling at DXB or DWC cargo terminal.</td><td>On arrival</td></tr>
                 <tr><td>Dubai Municipality Registration</td><td>~10</td><td>Annual pet registration via the Aleef app.</td><td>Within 30 days of arrival</td></tr>
                 <tr><td>Municipality Microchipping (if not done)</td><td>~50</td><td>15-digit ISO chip implantation at government centers.</td><td>Pre-travel</td></tr>
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-[#5A5A5A] mt-3 font-medium">Government total: AED 760–1,260</p>
+          <p className="text-sm text-[#5A5A5A] mt-3 font-medium">Core MOCCAE government total: ~AED 700/dog, ~AED 450/cat (import permit + release fee), plus customs clearing, registration and any microchipping.</p>
           <p className="text-sm text-[#5A5A5A] mt-2">
             These are fixed costs. Every relocation company pays the same government fees. If a quote seems suspiciously low, they're either cutting corners on permits or hiding these in a surcharge later.
+          </p>
+          <p className="text-xs text-[#8A8A8A] mt-3 leading-relaxed">
+            Prices are indicative ranges based on published partner and government rates (last verified June 2026) and real-time cargo pricing. Government fees are set by MOCCAE and Dubai Municipality and may change — your personalized quote reflects live figures for your route and dates.
           </p>
         </div>
 
@@ -345,10 +349,10 @@ export default function CostGuidePage() {
                 <tr><th>Crate Size</th><th>Typical Pet</th><th>Cost (AED)</th></tr>
               </thead>
               <tbody>
-                <tr><td>Small (up to 40cm)</td><td>Cat, small dog (Chihuahua, Pomeranian)</td><td>500–800</td></tr>
-                <tr><td>Medium (40–60cm)</td><td>Medium dog (Beagle, Corgi, Shiba Inu)</td><td>800–1,200</td></tr>
-                <tr><td>Large (60–80cm)</td><td>Large dog (Labrador, Golden Retriever)</td><td>1,200–1,800</td></tr>
-                <tr><td>XL (80cm+)</td><td>Extra-large dog (German Shepherd, Great Dane)</td><td>1,500–2,000+</td></tr>
+                <tr><td>Small (up to 40cm)</td><td>Cat, small dog (Chihuahua, Pomeranian)</td><td>~110–300</td></tr>
+                <tr><td>Medium (40–60cm)</td><td>Medium dog (Beagle, Corgi, Shiba Inu)</td><td>~225–900</td></tr>
+                <tr><td>Large (60–80cm)</td><td>Large dog (Labrador, Golden Retriever)</td><td>~500–1,500</td></tr>
+                <tr><td>XL (80cm+)</td><td>Extra-large dog (German Shepherd, Great Dane)</td><td>~900–2,000+</td></tr>
               </tbody>
             </table>
           </div>
@@ -619,10 +623,10 @@ export default function CostGuidePage() {
                 <td>We check seasonal restrictions <em>before</em> booking. If a change is needed, we rebook at no extra coordination fee.</td>
               </tr>
               <tr>
-                <td><strong>Quarantine due to missing documents</strong></td>
-                <td>8,500+</td>
-                <td>One wrong microchip number or expired certificate.</td>
-                <td>We check every document three times. We know the current MOCCAE forms. If our error causes a delay, we cover the boarding costs.</td>
+                <td><strong>Refusal / re-export due to missing documents</strong></td>
+                <td>thousands</td>
+                <td>One wrong microchip number or expired certificate. Missing one document can mean your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands).</td>
+                <td>We check every document three times. We know the current MOCCAE forms. Where an error on our side causes a delay, we&apos;ll make it right — the specifics are set out in your service agreement.</td>
               </tr>
               <tr>
                 <td><strong>Crate rejected at check-in</strong></td>
@@ -669,13 +673,13 @@ export default function CostGuidePage() {
             <AlertTriangle className="w-5 h-5 text-[#5A8F6E]" /> The Honest Truth About Quote Inflation
           </h4>
           <p className="text-sm text-[#5A5A5A] leading-relaxed">
-            We've read the reviews. "From changing quotes, to adding extra charges... we are now over £3,000 over the original quote." — Real ISS Relocations customer.
+            We've read the reviews. "From changing quotes, to adding extra charges... we are now over £3,000 over the original quote." — a real pet-relocation customer.
           </p>
           <p className="text-sm text-[#5A5A5A] leading-relaxed mt-2">
             That happens when companies give you a lowball estimate to win your business, then add "unforeseen" costs later. The airline fee was higher than expected. The crate was bigger than estimated. The permit took longer.
           </p>
           <p className="text-sm text-[#2A2A2A] leading-relaxed mt-2">
-            At Dubai Pet Relocation, we give you a <strong>range</strong> based on your specific pet, route, and season. If the final cost falls within that range, you pay what we quoted. If our mistake causes an overrun, we absorb it. That's our promise.
+            At Dubai Pet Relocation, we give you a <strong>range</strong> based on your specific pet, route, and season. If the final cost falls within that range, you pay what we quoted. Where an error on our side causes a delay, we'll make it right — the specifics are set out in your service agreement.
           </p>
         </div>
 
@@ -863,7 +867,7 @@ export default function CostGuidePage() {
               <>
                 <p>No. If all documentation is complete and correct — MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate — pets do not require mandatory quarantine in Dubai. This is one of the UAE's main advantages.</p>
                 <p className="mt-3 text-[#5A5A5A]">
-                  However, incomplete documentation can result in <strong>conditional quarantine at the owner's expense</strong>. We've seen cases where a missing titer test cost AED 8,500 for 30 days in quarantine. This is why we triple-check every document before your pet travels.
+                  However, with incomplete documentation the real risk is that your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands). This is why we triple-check every document before your pet travels.
                 </p>
                 <p className="mt-3">
                   <Link to="/guides/uae-pet-import-requirements" className="text-[#1B2B4D] font-medium hover:underline inline-flex items-center gap-1">
@@ -916,7 +920,7 @@ export default function CostGuidePage() {
                 <p>The absolute cheapest way is DIY from a low-risk country like the UK or EU, with a small pet, during off-peak season, with all documentation already complete. That could cost as little as AED 5,400.</p>
                 <p className="mt-3">But "cheapest" rarely means "best value." The savings of doing it yourself are often wiped out by:</p>
                 <ul className="mt-2 space-y-1 text-sm text-[#5A5A5A]">
-                  <li>One missed document (quarantine = AED 8,500+)</li>
+                  <li>One missed document (refusal, confiscation, or re-export at your expense = thousands)</li>
                   <li>One wrong crate (rebooking = AED 2,000+)</li>
                   <li>20+ hours of your time (what's your hourly rate?)</li>
                   <li>The stress of managing five different providers</li>
@@ -944,7 +948,7 @@ export default function CostGuidePage() {
           <p className="text-white font-semibold mb-2">One WhatsApp message. One 15-minute conversation. One firm, itemized quote.</p>
           <p className="text-white/80 mb-2">No forms. No phone calls. No "we'll get back to you in 24–48 hours."</p>
           <p className="text-white/80 mb-8">Just a real human on WhatsApp, looking at your pet's details, and telling you exactly what you'll pay — and why.</p>
-          <p className="text-white font-medium mb-8">Join 500+ pet parents who got their quote first, then decided.</p>
+          <p className="text-white font-medium mb-8">Trusted relocation guidance — get your quote first, then decide.</p>
 
           <div id="whatsapp-cta-final">
             <WhatsAppCta text="Get Your Exact Quote — WhatsApp Us Now" fullWidth className="sm:w-auto sm:inline-flex" />
@@ -959,7 +963,7 @@ export default function CostGuidePage() {
             Last updated: June 2026. Prices are based on current partner rates and government fee schedules. Cargo and airline fees fluctuate with fuel prices and seasonal demand. Your personalized quote will reflect real-time pricing for your specific route and dates.
           </p>
           <p className="text-xs text-[#8A8A8A] leading-relaxed">
-            Dubai Pet Relocation is a pet relocation concierge. We coordinate with vetted partners — veterinarians, cargo handlers, ground transport teams — to manage every step of your pet's journey. We are MOCCAE-licensed and work with IPATA-certified partners.
+            Dubai Pet Relocation is a pet relocation concierge. We coordinate with vetted partners — veterinarians, cargo handlers, ground transport teams — to manage every step of your pet's journey. We guide you through MOCCAE import requirements and work with vetted relocation partners.
           </p>
         </div>
       </Section>

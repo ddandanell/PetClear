@@ -171,7 +171,7 @@ export default function TermsOfService() {
             <div className="space-y-2">
               <p><strong>Email:</strong> <a href="mailto:hallo@dubai-pet-relocation.ae" className="text-[#1B2B4D] hover:underline">hallo@dubai-pet-relocation.ae</a></p>
               <p><strong>Address:</strong> Al Quoz Industrial Area 4, Al Quoz Industrial Area, Al Quoz, Dubai</p>
-              <p><strong>WhatsApp:</strong> <a href="https://wa.me/9710551744849" target="_blank" rel="noopener noreferrer" className="text-[#1B2B4D] hover:underline">+971 0551744849</a></p>
+              <p><strong>WhatsApp:</strong> <a href="https://wa.me/971551744849" target="_blank" rel="noopener noreferrer" className="text-[#1B2B4D] hover:underline">+971 55 174 4849</a></p>
             </div>
           </section>
         </div>

@@ -193,11 +193,11 @@ export default function Header() {
                 Message on WhatsApp
               </a>
               <a
-                href="tel:+971-5XX-XXX-XXX"
+                href="tel:+971551744849"
                 className="flex items-center justify-center gap-2 px-4 py-3 border border-gray-200 text-gray-700 rounded-xl text-sm font-medium"
               >
                 <Phone className="w-4 h-4" />
-                +971-5XX-XXX-XXX
+                +971 55 174 4849
               </a>
             </div>
           </div>

@@ -171,6 +171,12 @@ export default function BannedBreedsGuide() {
             <p className="text-[#5A5A5A] text-base leading-relaxed">
               The following breeds are prohibited from import, sale, breeding, and ownership in Dubai and across the UAE under Dubai Municipality and federal regulations. Any dog that visually resembles these breeds may also be refused entry.
             </p>
+            <p className="text-[#5A5A5A] text-sm leading-relaxed mt-4">
+              <strong>Note:</strong> Rottweilers and Dobermans are NOT banned from import — they are subject to local muzzle/leash (restricted) rules. See the restricted-breeds section below.
+            </p>
+            <p className="text-[#8A8A8A] text-xs leading-relaxed mt-3">
+              Source: MOCCAE; Federal Law No. 22 of 2016 — verified June 2026.
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-6 mb-10">
@@ -183,11 +189,10 @@ export default function BannedBreedsGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">Pit Bull Types</h3>
               </div>
               <ul className="space-y-2 text-[#5A5A5A]">
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Staffordshire Bull Terrier</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> American Pit Bull Terrier</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> American Staffordshire Terrier</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Staffordshire Bull Terrier</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Bull Terrier (all varieties)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Miniature Bull Terrier</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> American Bully</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Any Pit Bull mix or crossbreed</li>
               </ul>
             </div>
@@ -201,12 +206,18 @@ export default function BannedBreedsGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">Mastiff Types</h3>
               </div>
               <ul className="space-y-2 text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Japanese Tosa (Tosa Inu)</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Brazilian Mastiff (Fila Brasileiro)</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Argentinian Mastiff (Dogo Argentino)</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Tibetan Mastiff</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Neapolitan Mastiff</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Presa Canario (Canary Mastiff)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Any Mastiff-type mix with banned characteristics</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> French Mastiff (Dogue de Bordeaux)</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Boerboel</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Bullmastiff</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Cane Corso (Italian Mastiff)</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Bully Kutta (Alangu / Indian Mastiff)</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Perro de Presa Canario (Canary Mastiff)</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Japanese Tosa</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Presa Canario</li>
               </ul>
             </div>
 
@@ -235,10 +246,9 @@ export default function BannedBreedsGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">Other Prohibited Breeds</h3>
               </div>
               <ul className="space-y-2 text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> American Bulldog</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Cane Corso (some emirates — allowed in Dubai with restrictions)</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Bandog (Bandogge)</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Any dog bred or trained for fighting</li>
+                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Any crossbreed of a banned breed above</li>
               </ul>
             </div>
           </div>
@@ -336,13 +346,6 @@ export default function BannedBreedsGuide() {
                   <td>Short, strong leash</td>
                   <td>Generally allowed</td>
                   <td>Rarely required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">Cane Corso</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Some buildings ban</td>
-                  <td>Often required</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Akita</td>

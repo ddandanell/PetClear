@@ -195,7 +195,7 @@ export default function HowItWorksPage() {
           name: 'What if my pet\'s flight is cancelled or delayed?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'We monitor every flight. If a cancellation or delay affects your pet, we rebook on the next available pet-friendly flight at no additional coordination fee, arrange extended boarding with our vet partner if needed, send photos and updates every 2 hours, and cover any boarding costs caused by airline or weather delays. If a delay is caused by our error, we cover all associated costs.',
+            text: 'We monitor every flight. If a cancellation or delay affects your pet, we rebook on the next available pet-friendly flight at no additional coordination fee, arrange extended boarding with our vet partner if needed, and send photos and updates every 2 hours. Where an error on our side causes a delay, we\'ll make it right — the specifics are set out in your service agreement.',
           },
         },
         {
@@ -631,7 +631,7 @@ export default function HowItWorksPage() {
                 <Shield className="w-5 h-5 text-[#5A8F6E]" />
               </div>
               <h3 className="font-bold text-[#2A2A2A] mb-2">Price protection</h3>
-              <p className="text-sm text-[#5A5A5A]">The quote you receive is itemized and fixed. Government fees don&apos;t change. Our service fee doesn&apos;t change. If the airline adds a fuel surcharge, we absorb it. If we miss something in our quote, we absorb it.</p>
+              <p className="text-sm text-[#5A5A5A]">The quote you receive is itemized and fixed. Government fees don&apos;t change. Our service fee doesn&apos;t change. Where an error on our side causes a delay, we&apos;ll make it right — the specifics are set out in your service agreement.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
@@ -763,7 +763,7 @@ export default function HowItWorksPage() {
             />
             <FAQItem
               question="What if my pet's flight is cancelled or delayed?"
-              answer="We monitor every flight. If a cancellation or delay affects your pet, we: (1) Rebook on the next available pet-friendly flight at no additional coordination fee, (2) Arrange extended boarding with our vet partner if needed, (3) Send you photos and updates every 2 hours until your pet is airborne, (4) Cover any boarding costs caused by airline or weather delays. If a delay is caused by our error (e.g., wrong documentation), we cover all associated costs."
+              answer="We monitor every flight. If a cancellation or delay affects your pet, we: (1) Rebook on the next available pet-friendly flight at no additional coordination fee, (2) Arrange extended boarding with our vet partner if needed, (3) Send you photos and updates every 2 hours until your pet is airborne. Where an error on our side causes a delay, we'll make it right — the specifics are set out in your service agreement."
             />
             <FAQItem
               question="Do you offer insurance?"

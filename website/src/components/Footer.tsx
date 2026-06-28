@@ -53,8 +53,8 @@ export default function Footer() {
               Transparent pet relocation concierge for Dubai and the UAE. Your pet's journey, made clear.
             </p>
             <div className="space-y-2 text-sm text-white/70">
-              <a href="tel:+9710551744849" className="flex items-center gap-2 hover:text-white transition-colors">
-                <Phone className="w-4 h-4" /> +971 0551744849
+              <a href="tel:+971551744849" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Phone className="w-4 h-4" /> +971 55 174 4849
               </a>
               <a href="mailto:hallo@dubai-pet-relocation.ae" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" /> hallo@dubai-pet-relocation.ae

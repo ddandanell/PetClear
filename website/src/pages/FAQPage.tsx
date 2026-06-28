@@ -85,7 +85,7 @@ const faqs: FAQEntry[] = [
   {
     category: 'documents',
     question: 'How do I get a MOCCAE import permit?',
-    answer: <p>MOCCAE import permits are applied for online through the UAE government portal. You need your pet's microchip number, vaccination details, and your UAE residency or accommodation proof. The permit is typically issued within 3–5 business days and is valid for 30 days from the date of issue. We guide you through the application or handle it on your behalf depending on your service tier.</p>,
+    answer: <p>MOCCAE import permits are applied for online through the UAE government portal. You need your pet's microchip number, vaccination details, and your UAE residency or accommodation proof. The permit is typically issued within 3–5 business days and is valid for 90 days from issuance. The import permit costs AED 200 per pet, plus a release fee on arrival of AED 500/dog or AED 250/cat (government total ~AED 700/dog, ~AED 450/cat). We guide you through the application or handle it on your behalf depending on your service tier.</p>,
   },
   {
     category: 'documents',

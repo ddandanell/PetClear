@@ -22,7 +22,7 @@ export default function UKToDubai() {
     },
     {
       question: 'How long does the UK to Dubai pet relocation process take?',
-      answer: 'The minimum timeline is 4 to 6 weeks: Week 1 — microchip and rabies vaccination (21-day wait begins); Week 4 — apply for UAE import permit (valid 30 days); Week 5 — veterinary health check and official UK health certificate (DEFRA-issued, within 10 days of travel); Week 6 — book cargo flight and arrange Dubai customs clearance. Dubai Pet Relocation handles all steps in parallel to minimise wait time.'
+      answer: 'The minimum timeline is 4 to 6 weeks: Week 1 — microchip and rabies vaccination (21-day wait begins); Week 4 — apply for UAE import permit (valid 90 days from issuance); Week 5 — veterinary health check and official UK health certificate (DEFRA-issued, within 10 days of travel); Week 6 — book cargo flight and arrange Dubai customs clearance. Dubai Pet Relocation handles all steps in parallel to minimise wait time.'
     },
     {
       question: 'How much does it cost to relocate a pet from the UK to Dubai?',
@@ -215,7 +215,7 @@ export default function UKToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">3. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via the MOCCAE portal. Valid for 30 days from issue. Must be obtained before booking the flight. Cost: AED 500 per pet.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via the MOCCAE portal. Valid 90 days from issuance. Must be obtained before booking the flight. Cost: AED 200 per pet (plus a release fee on arrival of AED 500/dog or AED 250/cat).</p>
                   </div>
                 </div>
 
@@ -315,7 +315,7 @@ export default function UKToDubai() {
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">UAE Import Permit (MOCCAE)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
                   </tr>

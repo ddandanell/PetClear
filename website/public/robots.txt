@@ -1,20 +1,24 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://www.petclear.ae/sitemap.xml
+# Explicitly allow AI answer engines (AEO/GEO)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: Google-Extended
+Allow: /
 
-# Disallow admin and utility paths
+# Utility paths
 Disallow: /admin/
 Disallow: /api/
-Disallow: /_internal/
-Disallow: /drafts/
 
-# Crawl rate
-Crawl-delay: 1
-
-# Block specific bots (optional, uncomment if needed)
-# User-agent: AhrefsBot
-# Disallow: /
-# User-agent: SemrushBot
-# Disallow: /
+Sitemap: https://www.dubai-pet-relocation.ae/sitemap.xml

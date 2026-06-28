@@ -18,7 +18,7 @@ export function buildCanonical(path: string): string {
 
 export function getWhatsAppUrl(message: string): string {
   // Placeholder — replace with real number when available
-  const phone = '9710551744849'
+  const phone = '971551744849'
   return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
 }
 
@@ -28,7 +28,7 @@ export const siteConfig = {
   name: 'Dubai Pet Relocation',
   tagline: 'Your pet\'s journey, made clear.',
   description: 'Transparent pet relocation concierge for Dubai and the UAE. We help pet owners understand the process, check requirements, and connect with trusted relocation partners.',
-  phone: '+971 0551744849',
+  phone: '+971 55 174 4849',
   email: 'hallo@dubai-pet-relocation.ae',
   address: {
     street: 'Al Quoz Industrial Area 4, Al Quoz Industrial Area',

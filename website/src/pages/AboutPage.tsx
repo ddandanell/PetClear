@@ -132,7 +132,7 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-[14px] bg-[#EDF6F0] flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-5 h-5 text-[#5A8F6E]" />
                 </div>
-                <p className="text-2xl font-bold text-[#2A2A2A] mb-1">400+</p>
+                <p className="text-lg font-bold text-[#2A2A2A] mb-1">Trusted relocation guidance</p>
                 <p className="text-sm text-[#8A8A8A]">Pets relocated safely</p>
               </Card>
               <Card className="text-center">

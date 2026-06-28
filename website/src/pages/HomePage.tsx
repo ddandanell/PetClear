@@ -240,7 +240,7 @@ export default function HomePage() {
                       <CheckCircle className="w-5 h-5 text-[#5A8F6E]" />
                     </div>
                     <div>
-                      <p className="text-sm font-bold text-[#2A2A2A]">400+ Pets Relocated</p>
+                      <p className="text-sm font-bold text-[#2A2A2A]">Trusted relocation guidance</p>
                       <p className="text-xs text-[#8A8A8A]">To and from Dubai</p>
                     </div>
                   </div>
@@ -419,7 +419,7 @@ export default function HomePage() {
                   <Star className="w-4 h-4 text-[#C89F5A] fill-[#C89F5A]" />
                   <Star className="w-4 h-4 text-[#C89F5A] fill-[#C89F5A]" />
                 </div>
-                <p className="text-sm font-semibold text-[#2A2A2A]">Trusted by 400+ pet owners</p>
+                <p className="text-sm font-semibold text-[#2A2A2A]">Trusted relocation guidance</p>
                 <p className="text-xs text-[#8A8A8A]">Across Dubai and beyond</p>
               </div>
             </div>

@@ -207,8 +207,8 @@ export default function DogRelocationPage() {
                 </Link>
               </div>
               <div className="flex flex-wrap items-center gap-4 text-xs text-[#8A8A8A]">
-                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-[#1B2B4D]" /> IPATA-certified</span>
-                <span className="flex items-center gap-1"><Shield className="w-3.5 h-3.5 text-[#1B2B4D]" /> MOCCAE-licensed</span>
+                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-[#1B2B4D]" /> Vetted relocation partners</span>
+                <span className="flex items-center gap-1"><Shield className="w-3.5 h-3.5 text-[#1B2B4D]" /> MOCCAE import guidance</span>
                 <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5 text-[#1B2B4D]" /> IATA-compliant</span>
                 <span className="flex items-center gap-1"><Heart className="w-3.5 h-3.5 text-[#1B2B4D]" /> 150+ dogs relocated</span>
               </div>
@@ -223,7 +223,7 @@ export default function DogRelocationPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#0F1A30]/95 via-[#1B2B4D]/88 to-[#2E4575]/80" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="text-white text-sm font-medium">IPATA-certified · MOCCAE-licensed · IATA-compliant</p>
+                  <p className="text-white text-sm font-medium">Vetted relocation partners · MOCCAE import guidance · IATA-compliant</p>
                 </div>
               </div>
             </div>
@@ -310,7 +310,7 @@ export default function DogRelocationPage() {
               <p>We track every deadline. We remind you when the next step is due. We check every document three times before submission.</p>
             </Step>
             <Step number={3} title="MOCCAE import permit and flight booking">
-              <p>We apply for your dog's MOCCAE import permit online. The permit costs approximately AED 200 and is valid for 30–90 days depending on your origin country. We know which forms are current, which office to submit to, and the common reasons for rejection.</p>
+              <p>We apply for your dog's MOCCAE import permit online. The permit costs AED 200 per pet and is valid for 90 days from issuance (a release fee of AED 500/dog is also payable on arrival). We know which forms are current, which office to submit to, and the common reasons for rejection.</p>
               <p>Once the permit is approved, we book your dog's manifest cargo flight with the airline's cargo department — not the passenger reservation desk. We confirm pet-specific rules in writing: crate dimensions, breed restrictions, temperature limits, and transit care.</p>
             </Step>
             <Step number={4} title="Travel day and arrival in Dubai">
@@ -332,7 +332,7 @@ export default function DogRelocationPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <SectionHeading className="mb-4">What Your Dog Needs to Enter Dubai</SectionHeading>
           <SectionIntro>
-            These are not optional. Missing one document can result in quarantine, return to origin, or — in extreme cases — euthanasia. We do not say this to frighten you. We say it because we have seen what happens when owners use outdated checklists from the internet.
+            These are not optional. Missing one document can mean your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands). We do not say this to frighten you. We say it because we have seen what happens when owners use outdated checklists from the internet.
           </SectionIntro>
           <div className="grid lg:grid-cols-2 gap-8 mt-12">
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
@@ -342,7 +342,7 @@ export default function DogRelocationPage() {
                   <span className="w-7 h-7 rounded-full bg-[#1B2B4D] text-white flex items-center justify-center text-sm font-bold shrink-0">1</span>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">MOCCAE Import Permit</p>
-                    <p className="text-sm text-[#5A5A5A]">Applied online via the MOCCAE portal. Valid 30–90 days. Cost: ~AED 200.</p>
+                    <p className="text-sm text-[#5A5A5A]">Applied online via the MOCCAE portal. Valid 90 days from issuance. Cost: AED 200 per pet (plus AED 500/dog release fee on arrival).</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
@@ -928,7 +928,7 @@ export default function DogRelocationPage() {
               question="Will my dog be quarantined in Dubai?"
               answer={
                 <>
-                  <p><strong>No — if all documentation is complete and correct.</strong> The UAE does not have mandatory quarantine for compliant dogs. However, if your documents are incomplete, incorrect, or your dog is missing the titer test from a high-risk country, quarantine will be imposed at your expense. One case we know of cost AED 8,500 for 30 days. This is why we check every document three times.</p>
+                  <p><strong>No — if all documentation is complete and correct.</strong> The UAE does not have routine pet quarantine for compliant dogs. However, if your documents are incomplete, incorrect, or your dog is missing the titer test from a high-risk country, the real risk is that your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands). This is why we check every document three times.</p>
                 </>
               }
             />
@@ -981,7 +981,7 @@ export default function DogRelocationPage() {
               Send us a WhatsApp message with your dog's breed, weight, and origin country. We will check your breed against UAE regulations, confirm your route, and send you an itemised quote — usually within 15 minutes.
             </p>
             <a
-              href="https://wa.me/9710551744849?text=Hi%2C%20I%20want%20to%20relocate%20my%20dog%20to%20Dubai.%20Can%20you%20help%20me%20understand%20the%20process%20and%20cost%3F"
+              href="https://wa.me/971551744849?text=Hi%2C%20I%20want%20to%20relocate%20my%20dog%20to%20Dubai.%20Can%20you%20help%20me%20understand%20the%20process%20and%20cost%3F"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-base hover:bg-[#1ebe57] transition-colors shadow-lg"
@@ -1000,7 +1000,7 @@ export default function DogRelocationPage() {
       <section className="bg-white border-t border-gray-100 py-8">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-[#8A8A8A]">
-            Dubai Pet Relocation — Your dog's journey, made clear. IPATA-certified · MOCCAE-licensed · IATA-compliant · WhatsApp support
+            Dubai Pet Relocation — Your dog's journey, made clear. Vetted relocation partners · MOCCAE import guidance · IATA-compliant · WhatsApp support
           </p>
         </div>
       </section>

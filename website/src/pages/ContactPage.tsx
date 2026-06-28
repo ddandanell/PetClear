@@ -139,7 +139,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="text-[#1B2B4D] font-semibold text-sm hover:underline"
               >
-                +971 0551744849
+                +971 55 174 4849
               </a>
             </Card>
             <Card className="text-center">

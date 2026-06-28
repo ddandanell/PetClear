@@ -53,7 +53,7 @@ export default function DubaiCity() {
       "name": "Dubai Pet Relocation Dubai Pet Relocation",
       "description": "Professional pet relocation services to and from Dubai. Dog and cat transport, documentation, flight booking, and customs clearance.",
       "url": pageUrl,
-      "telephone": "+971-5XX-XXX-XXX",
+      "telephone": "+971 55 174 4849",
       "email": "hallo@dubai-pet-relocation.ae",
       "address": {
         "@type": "PostalAddress",

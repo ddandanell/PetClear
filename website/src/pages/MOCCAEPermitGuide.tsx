@@ -66,7 +66,7 @@ export default function MOCCAEPermitGuide() {
     },
     {
       question: 'What happens if my permit expires before I travel?',
-      answer: 'MOCCAE import permits are valid for 30–90 days depending on the origin country. If your permit expires before travel, you must submit a new application and pay the AED 200 fee again. Dubai Pet Relocation tracks permit expiry dates and coordinates your travel timeline to ensure your permit is valid on arrival day. We also set calendar reminders for reapplication if needed.',
+      answer: 'MOCCAE import permits are valid for 90 days from issuance. If your permit expires before travel, you must submit a new application and pay the AED 200 fee again. Dubai Pet Relocation tracks permit expiry dates and coordinates your travel timeline to ensure your permit is valid on arrival day. We also set calendar reminders for reapplication if needed.',
     },
     {
       question: 'Do cats and dogs need separate permits?',
@@ -229,7 +229,8 @@ export default function MOCCAEPermitGuide() {
               <div className="space-y-4">
                 <div className="p-4 bg-[#5A8F6E]/5 rounded-xl">
                   <p className="font-semibold text-[#5A8F6E] text-sm mb-1">Cost</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">AED 200 per pet</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Import permit AED 200 per pet</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">Plus release fee on arrival: AED 500/dog or AED 250/cat. Government total ~AED 700/dog, ~AED 450/cat.</p>
                 </div>
                 <div className="p-4 bg-[#1B2B4D]/5 rounded-xl">
                   <p className="font-semibold text-[#1B2B4D] text-sm mb-1">Processing Time</p>
@@ -237,11 +238,11 @@ export default function MOCCAEPermitGuide() {
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
                   <p className="font-semibold text-[#C89F5A] text-sm mb-1">Validity</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">30–90 days (origin-dependent)</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">90 days from issuance</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">Penalty Without Permit</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Refused entry, fines, quarantine</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Refused entry, fines, re-export</p>
                 </div>
               </div>
             </div>
