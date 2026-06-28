@@ -308,29 +308,41 @@ export default function HowItWorksPage() {
       {/* ═══════════ HERO ═══════════ */}
       <section className="relative overflow-hidden bg-[#4F5BD5]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-2 text-[#4F5BD5] font-semibold text-sm mb-4">
-              <Sparkles className="w-4 h-4" />
-              <span>Our 7-Step Process</span>
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div>
+              <div className="flex items-center gap-2 text-[#4F5BD5] font-semibold text-sm mb-4">
+                <Sparkles className="w-4 h-4" />
+                <span>Our 7-Step Process</span>
+              </div>
+              <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-white leading-[1.12] tracking-tight mb-6">
+                How Pet Relocation Works in Dubai: A Clear, Step-by-Step Guide
+              </h1>
+              <p className="text-lg text-white/90 mb-6">
+                We are your pet relocation concierge — like a wedding planner for your pet&apos;s move. We coordinate a team of vetted specialists so you don&apos;t have to manage five different companies from your phone at 2 AM.
+              </p>
+              <p className="text-white/80 mb-8">
+                Most pet owners tell us the same thing: they expected the hard part to be the flight. They didn&apos;t expect the hard part to be the coordination. Between the vet, the cargo agent, the airline, the permit office, and the customs broker, you&apos;re managing five different phone numbers, five different timelines, and five different chances for something to go wrong. We built Dubai Pet Relocation because that model is broken.
+              </p>
+              <a
+                href={getWhatsAppUrl(heroWaText)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Get a free consultation on WhatsApp
+              </a>
             </div>
-            <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-white leading-[1.12] tracking-tight mb-6">
-              How Pet Relocation Works in Dubai: A Clear, Step-by-Step Guide
-            </h1>
-            <p className="text-lg text-white/90 mb-6">
-              We are your pet relocation concierge — like a wedding planner for your pet&apos;s move. We coordinate a team of vetted specialists so you don&apos;t have to manage five different companies from your phone at 2 AM.
-            </p>
-            <p className="text-white/80 mb-8">
-              Most pet owners tell us the same thing: they expected the hard part to be the flight. They didn&apos;t expect the hard part to be the coordination. Between the vet, the cargo agent, the airline, the permit office, and the customs broker, you&apos;re managing five different phone numbers, five different timelines, and five different chances for something to go wrong. We built Dubai Pet Relocation because that model is broken.
-            </p>
-            <a
-              href={getWhatsAppUrl(heroWaText)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Get a free consultation on WhatsApp
-            </a>
+            <div>
+              <img
+                src="/images/how-it-works-hero.jpg"
+                alt="A dog beside a travel crate and a checklist, representing the step-by-step relocation process"
+                width={1536}
+                height={1024}
+                loading="eager"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
+              />
+            </div>
           </div>
         </div>
       </section>

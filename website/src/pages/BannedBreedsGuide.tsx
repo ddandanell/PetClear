@@ -133,29 +133,41 @@ export default function BannedBreedsGuide() {
       {/* Hero */}
       <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
-              <Shield className="w-4 h-4" />
-              UAE Pet Import Regulations
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
+                <Shield className="w-4 h-4" />
+                UAE Pet Import Regulations
+              </div>
+              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight mb-5">
+                Banned and Restricted Dog Breeds in Dubai — Complete 2026 Guide
+              </h1>
+              <p className="text-lg text-white/80 leading-relaxed mb-8">
+                Bringing your dog to Dubai? Understanding breed bans and restrictions is critical. Some breeds are completely prohibited, while others face strict rules on muzzling, insurance, and housing. This guide covers everything you need to know based on Dubai Municipality and UAE federal regulations.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <WhatsAppBtn
+                  label="Get Free Breed Assessment"
+                  message="Hi Dubai Pet Relocation, I'm planning to relocate my dog to Dubai and I need a breed assessment to check if my dog is allowed. Can you help?"
+                />
+                <a
+                  href="#banned-list"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
+                >
+                  <Ban className="w-4 h-4" />
+                  View Banned List
+                </a>
+              </div>
             </div>
-            <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight mb-5">
-              Banned and Restricted Dog Breeds in Dubai — Complete 2026 Guide
-            </h1>
-            <p className="text-lg text-white/80 leading-relaxed mb-8">
-              Bringing your dog to Dubai? Understanding breed bans and restrictions is critical. Some breeds are completely prohibited, while others face strict rules on muzzling, insurance, and housing. This guide covers everything you need to know based on Dubai Municipality and UAE federal regulations.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <WhatsAppBtn
-                label="Get Free Breed Assessment"
-                message="Hi Dubai Pet Relocation, I'm planning to relocate my dog to Dubai and I need a breed assessment to check if my dog is allowed. Can you help?"
+            <div>
+              <img
+                src="/images/guide-banned-breeds.jpg"
+                alt="A calm leashed dog with its owner in a Dubai park, representing responsible ownership of restricted breeds"
+                width={1536}
+                height={1024}
+                loading="eager"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
               />
-              <a
-                href="#banned-list"
-                className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
-              >
-                <Ban className="w-4 h-4" />
-                View Banned List
-              </a>
             </div>
           </div>
         </div>

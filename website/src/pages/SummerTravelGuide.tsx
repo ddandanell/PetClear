@@ -138,29 +138,41 @@ export default function SummerTravelGuide() {
       {/* Hero */}
       <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
-              <Sun className="w-4 h-4" />
-              Summer Heat Embargo Guide 2026
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
+                <Sun className="w-4 h-4" />
+                Summer Heat Embargo Guide 2026
+              </div>
+              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight mb-5">
+                Pet Travel During Dubai Summer Heat — Embargo, Risks & Alternatives
+              </h1>
+              <p className="text-lg text-white/80 leading-relaxed mb-8">
+                Dubai summer temperatures regularly exceed 45°C (113°F), making pet cargo travel dangerous. Airlines impose strict embargos, brachycephalic breeds face bans, and ground handling risks rise. This guide explains everything you need to know to keep your pet safe during summer relocation.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <WhatsAppBtn
+                  label="Plan a Summer Move"
+                  message="Hi Dubai Pet Relocation, I need to relocate my pet to Dubai during the summer months. Can you help me understand the embargo dates and alternatives?"
+                />
+                <a
+                  href="#embargo-dates"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
+                >
+                  <Calendar className="w-4 h-4" />
+                  View Embargo Dates
+                </a>
+              </div>
             </div>
-            <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight mb-5">
-              Pet Travel During Dubai Summer Heat — Embargo, Risks & Alternatives
-            </h1>
-            <p className="text-lg text-white/80 leading-relaxed mb-8">
-              Dubai summer temperatures regularly exceed 45°C (113°F), making pet cargo travel dangerous. Airlines impose strict embargos, brachycephalic breeds face bans, and ground handling risks rise. This guide explains everything you need to know to keep your pet safe during summer relocation.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <WhatsAppBtn
-                label="Plan a Summer Move"
-                message="Hi Dubai Pet Relocation, I need to relocate my pet to Dubai during the summer months. Can you help me understand the embargo dates and alternatives?"
+            <div>
+              <img
+                src="/images/guide-summer.jpg"
+                alt="A dog staying cool with water in the shade on a hot Dubai summer day"
+                width={1536}
+                height={1024}
+                loading="eager"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
               />
-              <a
-                href="#embargo-dates"
-                className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
-              >
-                <Calendar className="w-4 h-4" />
-                View Embargo Dates
-              </a>
             </div>
           </div>
         </div>

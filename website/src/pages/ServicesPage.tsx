@@ -180,17 +180,29 @@ export default function ServicesPage() {
       {/* ═══════════ HERO ═══════════ */}
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
-              Dubai Pet Relocation Services — From Essential to Concierge
-            </h1>
-            <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
-              Choose the level of support that fits your experience, your timeline, and your pet's needs. Every tier includes our core promise: transparency, partner-matched quality, and WhatsApp updates.
-            </p>
-            <WhatsAppCta
-              text="Get a Personalized Quote"
-              message="Hi Dubai Pet Relocation! I would like to understand your service tiers and get a personalized quote for my pet relocation."
-            />
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
+                Dubai Pet Relocation Services — From Essential to Concierge
+              </h1>
+              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
+                Choose the level of support that fits your experience, your timeline, and your pet's needs. Every tier includes our core promise: transparency, partner-matched quality, and WhatsApp updates.
+              </p>
+              <WhatsAppCta
+                text="Get a Personalized Quote"
+                message="Hi Dubai Pet Relocation! I would like to understand your service tiers and get a personalized quote for my pet relocation."
+              />
+            </div>
+            <div>
+              <img
+                src="/images/services-hero.jpg"
+                alt="A happy dog and cat beside a travel crate in a welcoming Dubai pet relocation office"
+                width={1536}
+                height={1024}
+                loading="eager"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
+              />
+            </div>
           </div>
         </div>
       </section>
