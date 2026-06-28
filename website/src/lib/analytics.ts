@@ -1,6 +1,6 @@
 // GA4 analytics + conversion event tracking (Blue Book Phase 1).
 // ⬇️ To activate: paste your GA4 Measurement ID (e.g. 'G-XXXXXXXXXX'). Empty = disabled (no scripts load).
-export const GA4_MEASUREMENT_ID = ''
+export const GA4_MEASUREMENT_ID = 'G-RVL8N0EBRR'
 
 type GtagArgs = unknown[]
 declare global {
