@@ -6,7 +6,7 @@ const damacHills: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation DAMAC Hills | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in DAMAC Hills — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for villa families and multi-pet households. Free WhatsApp quote.',
+    'Pet relocation in DAMAC Hills — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for villa and multi-pet families. Free quote.',
   keywords:
     'pet relocation damac hills, pet transport damac hills, dog relocation damac hills, cat relocation damac hills, pet movers damac hills',
   h1: 'Pet Relocation in DAMAC Hills',

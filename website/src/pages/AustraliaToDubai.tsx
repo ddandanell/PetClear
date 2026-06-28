@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function AustraliaToDubai() {
   const pageUrl = `${BASE_URL}/routes/australia-to-dubai/`
-  const pageTitle = 'Australia to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
-  const pageDescription = 'Relocate your pet from Australia to Dubai with Dubai Pet Relocation. Low-risk but strict AQIS export rules. Emirates and Qantas. Health cert within 10 days. Costs, timeline, and AQIS requirements.'
+  const pageTitle = 'Australia to Dubai Pet Relocation — Complete Guide 2026'
+  const pageDescription = 'Relocate your pet from Australia to Dubai. Low-risk but strict AQIS export rules. Emirates and Qantas. Costs, timeline and AQIS requirements explained.'
   const keywords = 'Australia to Dubai pet relocation, pet transport Australia to Dubai, Australian pet relocation Dubai, AQIS pet export Dubai, Emirates pet cargo Australia, Qantas pet transport, dog relocation Australia to Dubai, cat relocation Australia to Dubai, pet shipping Australia to UAE'
 
   const faqs = [
@@ -114,7 +114,7 @@ export default function AustraliaToDubai() {
             </div>
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-australia.jpg" alt="Pet relocation from Australia to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
+                <img src="/images/hero-australia.jpg" alt="Pet relocation from Australia to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">

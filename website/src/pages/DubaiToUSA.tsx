@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function DubaiToUSA() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-usa/`
-  const pageTitle = 'Dubai to USA Pet Relocation | Export Guide 2026 | Dubai Pet Relocation'
-  const pageDescription = 'Export your dog or cat from Dubai to the USA with Dubai Pet Relocation. Full guide to CDC dog import requirements, USDA APHIS health certificates, state-specific rules, airline options, costs, and timeline. No quarantine for most states.'
+  const pageTitle = 'Dubai to USA Pet Relocation | Export Guide 2026'
+  const pageDescription = 'Export your dog or cat from Dubai to the USA. Guide to CDC dog import rules, USDA APHIS health certificates, state rules, airlines, costs and timeline.'
   const keywords = 'Dubai to USA pet relocation, export pet Dubai to USA, pet transport Dubai to America, CDC dog import form, USDA APHIS health certificate, Emirates pet cargo USA, pet relocation to USA, Dubai to JFK pet cargo, Dubai to LAX pet transport, dog import USA CDC, cat import USA requirements, Hawaii pet quarantine, state pet import rules USA'
 
   const faqs = [
@@ -116,7 +116,7 @@ export default function DubaiToUSA() {
             </div>
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-dubai-to-usa.jpg" alt="Pet relocation from Dubai to USA" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
+                <img src="/images/hero-dubai-to-usa.jpg" alt="Pet relocation from Dubai to USA" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">
@@ -588,7 +588,7 @@ export default function DubaiToUSA() {
         </div>
       </section>
 
-      {/* WHAT PETCLEAR HANDLES */}
+      {/* WHAT DUBAI PET RELOCATION HANDLES */}
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

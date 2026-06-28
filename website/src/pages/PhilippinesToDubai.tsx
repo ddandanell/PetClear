@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function PhilippinesToDubai() {
   const pageUrl = `${BASE_URL}/routes/philippines-to-dubai/`
-  const pageTitle = 'Philippines to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
-  const pageDescription = 'Relocate your pet from the Philippines to Dubai with Dubai Pet Relocation. High-risk rabies route: titer test (RNATT) required, 90-day wait, 3–4 months minimum. PAL, Emirates, Cebu Pacific. Costs and documents.'
+  const pageTitle = 'Philippines to Dubai Pet Relocation — Complete Guide 2026'
+  const pageDescription = 'Relocate your pet from the Philippines to Dubai. High-risk route: titer test (RNATT), 90-day wait, 3–4 months. PAL, Emirates, Cebu Pacific. Costs and documents.'
   const keywords = 'Philippines to Dubai pet relocation, pet transport Philippines to Dubai, Filipino pet relocation Dubai, titer test Philippines Dubai, PAL pet cargo Dubai, Philippine Airlines pet transport, Cebu Pacific pet cargo, dog relocation Philippines to Dubai, cat relocation Philippines to Dubai'
 
   const faqs = [
@@ -114,7 +114,7 @@ export default function PhilippinesToDubai() {
             </div>
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-philippines.jpg" alt="Pet relocation from Philippines to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
+                <img src="/images/hero-philippines.jpg" alt="Pet relocation from Philippines to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">

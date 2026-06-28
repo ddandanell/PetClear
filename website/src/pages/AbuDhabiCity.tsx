@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function AbuDhabiCity() {
   const pageUrl = `${BASE_URL}/cities/abu-dhabi/`
-  const pageTitle = 'Pet Relocation Abu Dhabi | Pet Transport UAE Capital | Dubai Pet Relocation'
-  const pageDescription = 'Dubai Pet Relocation helps you relocate your dog or cat to Abu Dhabi. Etihad in-cabin pet flights, Abu Dhabi Municipality registration, MICCO Logistics clearance. Get a transparent quote for Abu Dhabi pet transport.'
+  const pageTitle = 'Pet Relocation Abu Dhabi | Dubai Pet Relocation'
+  const pageDescription = 'Relocate your dog or cat to Abu Dhabi. Etihad in-cabin flights, ADCM registration, MICCO customs clearance. Get a transparent Abu Dhabi pet transport quote.'
   const keywords = 'pet relocation Abu Dhabi, dog transport Abu Dhabi, cat transport Abu Dhabi, pet relocation UAE capital, Etihad pet in cabin, Abu Dhabi pet import, Etihad pet cargo, MICCO Logistics, Abu Dhabi pet registration, bring pet to Abu Dhabi, pet relocation Yas Island, pet relocation Saadiyat, pet relocation Al Reem Island, Abu Dhabi vs Dubai pet relocation'
 
   const faqs = [
@@ -50,7 +50,7 @@ export default function AbuDhabiCity() {
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Dubai Pet Relocation Abu Dhabi Pet Relocation",
+      "name": "Dubai Pet Relocation",
       "description": "Professional pet relocation services to and from Abu Dhabi. Dog and cat transport, Etihad in-cabin booking, documentation, customs clearance, and ADCM registration.",
       "url": pageUrl,
       "telephone": "+971 55 174 4849",

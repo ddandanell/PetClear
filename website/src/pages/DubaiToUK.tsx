@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 
 export default function DubaiToUK() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-uk/`
-  const pageTitle = 'Dubai to UK Pet Relocation | Export Guide 2026 | Dubai Pet Relocation'
-  const pageDescription = 'Export your dog or cat from Dubai to the UK with Dubai Pet Relocation. Full guide to DEFRA/APHA requirements, post-Brexit health certificates, tapeworm treatment, airline options, costs, and timeline. No quarantine if documents are correct.'
+  const pageTitle = 'Dubai to UK Pet Relocation | Export Guide 2026'
+  const pageDescription = 'Export your dog or cat from Dubai to the UK. Guide to DEFRA/APHA rules, post-Brexit health certificates, tapeworm treatment, airlines, costs and timeline.'
   const keywords = 'Dubai to UK pet relocation, export pet Dubai to UK, pet transport Dubai to London, DEFRA pet import UK, APHA health certificate, UK pet passport post-Brexit, tapeworm treatment UK dogs, Emirates pet cargo UK, British Airways pet transport Dubai, pet relocation to Britain, Dubai to UK dog transport, Dubai to UK cat transport, UK rabies high risk, UK pet quarantine rules'
 
   const faqs = [
     {
       question: 'What are the UK import rules for pets coming from Dubai?',
-      answer: 'The UK classifies the UAE as a high-risk country for rabies. This means pets travelling from Dubai to the UK must meet strict requirements: an ISO-compliant microchip ( implanted before rabies vaccination), a valid rabies vaccination (inactivated vaccine, 21+ days before travel), a UK health certificate issued by a UAE government-approved veterinarian or an authorised UAE official veterinarian within 10 days of travel, and for dogs only — a tapeworm treatment administered 1–5 days before entry and recorded on the health certificate. No titer test (RNATT) is required from the UAE because the UAE is on the UK\'s rabies-controlled list, but the health certificate must be endorsed by the UAE Ministry of Climate Change and Environment (MOCCAE).'
+      answer: 'The UK classifies the UAE as a high-risk country for rabies. This means pets travelling from Dubai to the UK must meet strict requirements: an ISO-compliant microchip (implanted before rabies vaccination), a valid rabies vaccination (inactivated vaccine, 21+ days before travel), a UK health certificate issued by a UAE government-approved veterinarian or an authorised UAE official veterinarian within 10 days of travel, and for dogs only — a tapeworm treatment administered 1–5 days before entry and recorded on the health certificate. No titer test (RNATT) is required from the UAE because the UAE is on the UK\'s rabies-controlled list, but the health certificate must be endorsed by the UAE Ministry of Climate Change and Environment (MOCCAE).'
     },
     {
       question: 'Is the UK pet passport still valid after Brexit?',
@@ -116,7 +116,7 @@ export default function DubaiToUK() {
             </div>
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-dubai-to-uk.jpg" alt="Pet relocation from Dubai to UK" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
+                <img src="/images/hero-dubai-to-uk.jpg" alt="Pet relocation from Dubai to UK" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">
@@ -595,7 +595,7 @@ export default function DubaiToUK() {
         </div>
       </section>
 
-      {/* HOW PETCLEAR HANDLES */}
+      {/* HOW DUBAI PET RELOCATION HANDLES */}
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

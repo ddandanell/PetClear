@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function USAToDubai() {
   const pageUrl = `${BASE_URL}/routes/usa-to-dubai/`
-  const pageTitle = 'USA to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
-  const pageDescription = 'Relocate your pet from the USA to Dubai with Dubai Pet Relocation. Low-risk route with varying rules by state. Emirates, Etihad, American Airlines. Costs, documents, and timeline for US pet owners.'
+  const pageTitle = 'USA to Dubai Pet Relocation — Complete Guide 2026'
+  const pageDescription = 'Relocate your pet from the USA to Dubai. Low-risk route, rules vary by state. Emirates, Etihad, American Airlines. Costs, documents and timeline.'
   const keywords = 'USA to Dubai pet relocation, US pet transport Dubai, American pet relocation Dubai, Emirates pet cargo USA, Etihad pet transport, American Airlines pet cargo, dog relocation USA to Dubai, cat relocation USA to Dubai, pet shipping USA to UAE'
 
   const faqs = [
@@ -114,7 +114,7 @@ export default function USAToDubai() {
             </div>
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-usa.jpg" alt="Pet relocation from USA to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
+                <img src="/images/hero-usa.jpg" alt="Pet relocation from USA to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">

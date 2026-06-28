@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function UKToDubai() {
   const pageUrl = `${BASE_URL}/routes/uk-to-dubai/`
-  const pageTitle = 'UK to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
-  const pageDescription = 'Relocate your pet from the UK to Dubai with Dubai Pet Relocation. Low-risk rabies-free route: no titer test, 21-day wait after rabies vaccine, direct BA/EK flights from LHR. Costs, documents & timeline.'
+  const pageTitle = 'UK to Dubai Pet Relocation — Complete Guide 2026'
+  const pageDescription = 'Relocate your pet from the UK to Dubai. Low-risk route: no titer test, 21-day rabies wait, direct BA/EK flights from LHR. Costs, documents and timeline.'
   const keywords = 'UK to Dubai pet relocation, pet transport UK to Dubai, British pet relocation Dubai, BA pet cargo Dubai, Emirates pet transport UK, UK pet import Dubai, London to Dubai pet travel, dog relocation UK to Dubai, cat relocation UK to Dubai'
 
   const faqs = [
@@ -114,7 +114,7 @@ export default function UKToDubai() {
             </div>
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-uk.jpg" alt="Pet relocation from UK to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
+                <img src="/images/hero-uk.jpg" alt="Pet relocation from UK to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">

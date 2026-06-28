@@ -30,7 +30,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
+      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
         <span>{question}</span>
         {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
@@ -99,8 +99,7 @@ export default function IATACrateGuide() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
-      { '@type': 'ListItem', position: 3, name: 'IATA Pet Travel Crate Requirements', item: canonical },
+      { '@type': 'ListItem', position: 2, name: 'IATA Pet Travel Crate Requirements', item: canonical },
     ],
   }
 
@@ -120,7 +119,7 @@ export default function IATACrateGuide() {
   const schemas = [faqSchema, breadcrumbSchema, articleSchema]
 
   const meta = {
-    title,
+    title: 'IATA Pet Crate Requirements for Dubai Flights (2026)',
     description,
     canonical,
     ogImage,
@@ -131,7 +130,7 @@ export default function IATACrateGuide() {
   return (
     <>
       <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'IATA Pet Crate Requirements' }]} />
+      <Breadcrumb items={[{ label: 'Guides' }, { label: 'IATA Pet Crate Requirements' }]} />
 
       {/* Hero */}
       <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">

@@ -6,7 +6,7 @@ const alFurjan: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Al Furjan | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Al Furjan — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for villa, townhouse and apartment families. Free WhatsApp quote.',
+    'Pet relocation in Al Furjan — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for villa and townhouse families. Free WhatsApp quote.',
   keywords:
     'pet relocation al furjan, pet transport al furjan, dog relocation al furjan, cat relocation al furjan, pet movers al furjan',
   h1: 'Pet Relocation in Al Furjan',

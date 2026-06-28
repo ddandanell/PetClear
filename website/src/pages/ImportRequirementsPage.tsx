@@ -158,9 +158,10 @@ export default function ImportRequirementsPage() {
   return (
     <div className="bg-[#F5F6FD]">
       <SEOHead
-        title="UAE Pet Import Requirements | Documents, Permits & Rules (2026) | Dubai Pet Relocation"
+        title="UAE Pet Import Requirements 2026 | Permits & Documents"
         description="Complete guide to UAE pet import requirements for Dubai. MOCCAE permit, vaccination rules, banned breeds, health certificates, microchip, rabies titer test, and more."
         keywords="UAE pet import requirements, MOCCAE import permit, Dubai pet import rules, pet vaccination requirements UAE, dog import Dubai, cat import Dubai, banned dog breeds Dubai"
+        canonical={`${BASE_URL}/guides/uae-pet-import-requirements/`}
         ogType="article"
         schemas={[
           {
@@ -238,13 +239,8 @@ export default function ImportRequirementsPage() {
               {
                 '@type': 'ListItem',
                 position: 2,
-                name: 'Guides',
-                item: `${BASE_URL}/guides/`,
-              },
-              {
-                '@type': 'ListItem',
-                position: 3,
                 name: 'UAE Pet Import Requirements',
+                item: `${BASE_URL}/guides/uae-pet-import-requirements/`,
               },
             ],
           },
@@ -253,7 +249,7 @@ export default function ImportRequirementsPage() {
       <Breadcrumb
         items={[
           { label: 'Home', path: '/' },
-          { label: 'Guides', path: '/guides/' },
+          { label: 'Guides' },
           { label: 'UAE Pet Import Requirements' },
         ]}
       />

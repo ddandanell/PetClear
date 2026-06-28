@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function IndiaToDubai() {
   const pageUrl = `${BASE_URL}/routes/india-to-dubai/`
-  const pageTitle = 'India to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
-  const pageDescription = 'Relocate your pet from India to Dubai with Dubai Pet Relocation. High-risk rabies route: titer test (RNATT) required, 90-day wait, 3–4 months minimum. IndiGo, Emirates, Air India. Full cost and document guide.'
+  const pageTitle = 'India to Dubai Pet Relocation — Complete Guide 2026'
+  const pageDescription = 'Relocate your pet from India to Dubai. High-risk route: titer test (RNATT) required, 90-day wait, 3–4 months. IndiGo, Emirates, Air India. Costs and documents.'
   const keywords = 'India to Dubai pet relocation, pet transport India to Dubai, Indian pet relocation Dubai, titer test India to Dubai, RNATT India Dubai, IndiGo pet cargo Dubai, Emirates pet transport India, Air India pet cargo, dog relocation India to Dubai, cat relocation India to Dubai'
 
   const faqs = [
@@ -114,7 +114,7 @@ export default function IndiaToDubai() {
             </div>
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-india.jpg" alt="Pet relocation from India to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
+                <img src="/images/hero-india.jpg" alt="Pet relocation from India to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">

@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function SouthAfricaToDubai() {
   const pageUrl = `${BASE_URL}/routes/south-africa-to-dubai/`
-  const pageTitle = 'South Africa to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
-  const pageDescription = 'Relocate your pet from South Africa to Dubai with Dubai Pet Relocation. High-risk rabies route: titer test (RNATT) required, 90-day wait, complex wildlife regulations. SAA, Emirates. Full cost guide.'
+  const pageTitle = 'South Africa to Dubai Pet Relocation — Complete Guide 2026'
+  const pageDescription = 'Relocate your pet from South Africa to Dubai. High-risk route: titer test (RNATT), 90-day wait, wildlife regulations. SAA, Emirates. Full cost guide.'
   const keywords = 'South Africa to Dubai pet relocation, pet transport South Africa to Dubai, SA pet relocation Dubai, titer test South Africa Dubai, SAA pet cargo Dubai, Emirates pet transport South Africa, dog relocation South Africa to Dubai, cat relocation South Africa to Dubai, wildlife regulations SA Dubai'
 
   const faqs = [
@@ -114,7 +114,7 @@ export default function SouthAfricaToDubai() {
             </div>
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-south-africa.jpg" alt="Pet relocation from South Africa to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
+                <img src="/images/hero-south-africa.jpg" alt="Pet relocation from South Africa to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">

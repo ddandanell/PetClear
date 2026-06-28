@@ -45,7 +45,7 @@ function FaqItem({ question, answer }: { question: string; answer: React.ReactNo
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
+      <button onClick={() => setOpen(!open)} aria-expanded={open} className="faq-question w-full text-left">
         <span className="pr-4">{question}</span>
         {open ? <ChevronUp className="w-5 h-5 shrink-0 text-[#4F5BD5]" /> : <ChevronDown className="w-5 h-5 shrink-0 text-[#8A8A8A]" />}
       </button>
@@ -97,6 +97,7 @@ export default function DogRelocationPage() {
   return (
     <div className="bg-[#F5F6FD]">
       <SEOHead
+        canonical={`${BASE_URL}/dog-relocation-to-dubai/`}
         title="Dog Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation"
         description="Expert guide to relocating your dog to Dubai. Breed checks, crate sizing, MOCCAE import permit, flight booking, banned breeds, and everything you need for a safe journey."
         keywords="dog relocation to Dubai, bring dog to Dubai, dog import Dubai, Dubai dog relocation, pet dog transport Dubai, banned dog breeds Dubai"
@@ -199,7 +200,7 @@ export default function DogRelocationPage() {
                   message="Hi, I want to relocate my dog to Dubai. Can you help me understand the process and cost?"
                 />
                 <Link
-                  to="/how-it-works"
+                  to="/how-it-works/"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
                 >
                   How it works
@@ -220,6 +221,8 @@ export default function DogRelocationPage() {
                   alt="A Golden Retriever sitting comfortably in an IATA-certified travel crate, ready for a safe flight to Dubai."
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover"
                   loading="eager"
+                  width={1536}
+                  height={1024}
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -403,7 +406,7 @@ export default function DogRelocationPage() {
                 </li>
               </ul>
               <div className="mt-6 pt-6 border-t border-gray-100">
-                <Link to="/import-requirements" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
+                <Link to="/guides/uae-pet-import-requirements/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
                   <FileText className="w-4 h-4" />
                   Read our full guide to UAE pet import requirements
                 </Link>
@@ -859,7 +862,7 @@ export default function DogRelocationPage() {
               label="Get a dog relocation quote"
               message="Hi, I read your dog relocation cost guide. I'd like an itemised quote for my dog."
             />
-            <Link to="/cost-guide" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">
+            <Link to="/guides/pet-relocation-cost-dubai/" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">
               <FileText className="w-4 h-4" />
               Read our full guide to pet relocation costs in Dubai
             </Link>

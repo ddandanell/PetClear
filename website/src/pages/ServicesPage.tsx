@@ -124,7 +124,7 @@ export default function ServicesPage() {
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Dubai Pet Relocation Pet Relocation Services',
+    name: 'Dubai Pet Relocation Services',
     provider: {
       '@type': 'Organization',
       name: 'Dubai Pet Relocation',
@@ -158,7 +158,7 @@ export default function ServicesPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Services', item: `${BASE_URL}/services` },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: `${BASE_URL}/services/` },
     ],
   }
 
@@ -166,10 +166,10 @@ export default function ServicesPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Dubai Pet Relocation Services — From Essential to Concierge | Pet Relocation Dubai',
-          description: 'Choose from three pet relocation service tiers: PawPilot (Essential), PawPartner (Premium), and PawVIP (Concierge). Transparent pricing, add-on services, and clear inclusions.',
+          title: 'Pet Relocation Services Dubai | Essential to Concierge',
+          description: 'Three pet relocation service tiers: PawPilot (Essential), PawPartner (Premium), and PawVIP (Concierge). Transparent pricing and clear inclusions.',
           keywords: 'pet relocation services Dubai, pet concierge Dubai, pet relocation cost tiers, dog transport service UAE, cat transport service UAE, pet relocation packages',
-          canonical: `${BASE_URL}/services`,
+          canonical: `${BASE_URL}/services/`,
           ogType: 'website',
         }}
         schemas={[serviceSchema, breadcrumbSchema]}
@@ -351,7 +351,7 @@ export default function ServicesPage() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link to="/how-it-works" className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">
+            <Link to="/how-it-works/" className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">
               See the Full Process <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

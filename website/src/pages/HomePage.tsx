@@ -52,7 +52,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
+      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
         <span>{question}</span>
         {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
       </button>
@@ -66,7 +66,7 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Dubai Pet Relocation',
-    alternateName: 'Dubai Pet Relocation Dubai Pet Relocation',
+    alternateName: 'Dubai Pet Relocation',
     url: BASE_URL,
     logo: `${BASE_URL}/assets/logo.png`,
     description: siteConfig.description,
@@ -171,8 +171,8 @@ export default function HomePage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Dubai Pet Relocation | Pet Relocation Dubai — Transparent, Expert, Safe',
-          description: 'Transparent pet relocation concierge for Dubai and the UAE. We help pet owners understand the process, check requirements, and connect with trusted relocation partners for safer dog and cat travel.',
+          title: 'Pet Relocation Dubai — Transparent, Safe, Expert',
+          description: 'Transparent pet relocation concierge for Dubai and the UAE. We help you understand the process, check requirements, and connect with trusted partners.',
           keywords: 'pet relocation Dubai, dog relocation Dubai, cat relocation Dubai, pet transport UAE, MOCCAE import permit, pet relocation cost Dubai',
           ogType: 'website',
         }}
@@ -181,7 +181,7 @@ export default function HomePage() {
       {/* ═══════════ HERO ═══════════ */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/hero-dog.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="/images/hero-dog.jpg" alt="Calm golden retriever ready for relocation beside its travel crate in a bright Dubai home" loading="eager" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
         </div>
         <div className="relative max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-16 lg:py-28">
@@ -205,7 +205,7 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
                 <WhatsAppCta text="Get Help on WhatsApp" fullWidth />
                 <Link
-                  to="/import-requirements"
+                  to="/guides/uae-pet-import-requirements/"
                   className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/10 border border-white/20 text-white rounded-2xl font-semibold text-sm hover:bg-white/15 transition-colors backdrop-blur-sm"
                 >
                   Read the UAE Pet Import Guide
@@ -295,7 +295,7 @@ export default function HomePage() {
           </div>
           <div className="mt-10 text-center">
             <Link
-              to="/how-it-works"
+              to="/how-it-works/"
               className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
             >
               See the Full Process <ArrowRight className="w-4 h-4" />
@@ -336,7 +336,7 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <Link to="/import-requirements" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#4F5BD5] hover:underline">
+              <Link to="/guides/uae-pet-import-requirements/" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#4F5BD5] hover:underline">
                 Read the import guide <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </Card>
@@ -379,7 +379,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  to="/dog-relocation"
+                  to="/dog-relocation-to-dubai/"
                   className="group flex items-center gap-4 p-5 bg-white rounded-[20px] shadow-sm hover:shadow-md transition-all"
                 >
                   <div className="w-12 h-12 rounded-[14px] bg-[#EEF0FC] flex items-center justify-center shrink-0">
@@ -392,7 +392,7 @@ export default function HomePage() {
                   <ArrowRight className="w-5 h-5 text-[#8A8A8A] group-hover:text-[#4F5BD5] transition-colors" />
                 </Link>
                 <Link
-                  to="/cat-relocation"
+                  to="/cat-relocation-to-dubai/"
                   className="group flex items-center gap-4 p-5 bg-white rounded-[20px] shadow-sm hover:shadow-md transition-all"
                 >
                   <div className="w-12 h-12 rounded-[14px] bg-[#EEF0FC] flex items-center justify-center shrink-0">
@@ -410,6 +410,9 @@ export default function HomePage() {
               <img
                 src="/images/hero-cat.jpg"
                 alt="A calm cat in a safe travel crate with caring owner nearby in a modern Dubai home."
+                loading="lazy"
+                width={1536}
+                height={1024}
                 className="rounded-[28px] shadow-lg w-full object-cover aspect-[4/3]"
               />
               <div className="absolute -bottom-4 -right-4 bg-white rounded-[20px] p-5 shadow-lg max-w-[200px]">
@@ -461,6 +464,9 @@ export default function HomePage() {
               <img
                 src="/images/reunion.jpg"
                 alt="A happy pet owner reuniting with their dog after a safe international relocation to Dubai."
+                loading="lazy"
+                width={1536}
+                height={1024}
                 className="rounded-[28px] shadow-lg w-full object-cover aspect-[4/3]"
               />
             </div>
@@ -577,7 +583,7 @@ export default function HomePage() {
                 ))}
               </ul>
               <Link
-                to="/import-requirements"
+                to="/guides/uae-pet-import-requirements/"
                 className="inline-flex items-center gap-2 px-7 py-4 bg-white text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#EEF0FC] transition-colors"
               >
                 Read the Full Guide <ArrowRight className="w-4 h-4" />
@@ -587,6 +593,9 @@ export default function HomePage() {
               <img
                 src="/images/import-hero.jpg"
                 alt="Pet travel checklist with passport-style documents and vaccination records, warm natural lighting."
+                loading="lazy"
+                width={1536}
+                height={1024}
                 className="rounded-[28px] shadow-2xl w-full object-cover aspect-[4/3]"
               />
             </div>
@@ -610,7 +619,7 @@ export default function HomePage() {
               <>
                 <p>No. If all documentation is complete and correct, pets do not require mandatory quarantine in Dubai. This includes a valid MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate. However, incomplete documentation can result in conditional quarantine at the owner's expense. We check every document three times to prevent this.</p>
                 <p className="mt-3">
-                  <Link to="/import-requirements" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">
+                  <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">
                     Read our full import guide <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
@@ -623,7 +632,7 @@ export default function HomePage() {
               <>
                 <p>Pet relocation to Dubai typically costs between <strong>AED 8,000 and AED 25,000</strong> depending on the origin country, pet size, and service level. The breakdown includes government fees (AED 200–700), veterinary costs (AED 1,200–2,500), cargo shipping (AED 3,000–12,000), and coordination fees (AED 1,500–6,000).</p>
                 <p className="mt-3">
-                  <Link to="/cost-guide" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">
+                  <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">
                     See our full cost breakdown <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
@@ -662,7 +671,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <WhatsAppCta text="Get Help on WhatsApp" />
             <Link
-              to="/cost-guide"
+              to="/guides/pet-relocation-cost-dubai/"
               className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
             >
               View Cost Guide

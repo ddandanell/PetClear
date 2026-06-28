@@ -288,7 +288,7 @@ export default function HowItWorksPage() {
           '@type': 'ListItem',
           position: 2,
           name: 'How It Works',
-          item: `${BASE_URL}/how-it-works`,
+          item: `${BASE_URL}/how-it-works/`,
         },
       ],
     },
@@ -297,9 +297,10 @@ export default function HowItWorksPage() {
   return (
     <div className="bg-[#F5F6FD]">
       <SEOHead
-        title="How Pet Relocation Works in Dubai | 7-Step Process | Dubai Pet Relocation"
-        description="Our transparent 7-step pet relocation process for Dubai. Free consultation, document check, partner matching, booking, pre-travel prep, travel day support, and arrival handover."
+        title="How Pet Relocation Works in Dubai | 7-Step Process"
+        description="Our transparent 7-step pet relocation process for Dubai: free consultation, document check, partner matching, booking, pre-travel prep, travel day, and arrival."
         keywords="how pet relocation works, pet relocation process Dubai, dog relocation steps, cat relocation process, pet transport Dubai steps"
+        canonical={`${BASE_URL}/how-it-works/`}
         ogType="article"
         schemas={schemas}
       />

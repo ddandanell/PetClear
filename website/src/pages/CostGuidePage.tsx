@@ -70,7 +70,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
+      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
         <span>{question}</span>
         {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
@@ -167,12 +167,6 @@ export default function CostGuidePage() {
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Guides',
-        item: `${BASE_URL}/guides`,
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
         name: 'Pet Relocation Cost Dubai',
         item: `${BASE_URL}/guides/pet-relocation-cost-dubai/`,
       },
@@ -182,15 +176,16 @@ export default function CostGuidePage() {
   return (
     <div>
       <SEOHead
-        title="Pet Relocation Cost Dubai | 2026 Transparent Price Guide | Dubai Pet Relocation"
-        description="Complete 2026 cost guide for pet relocation to Dubai. Transparent pricing breakdown: government fees, vet costs, cargo shipping, and our service fee. Get a personalized quote in 60 seconds."
+        title="Pet Relocation Cost Dubai 2026 | Transparent Price Guide"
+        description="Complete 2026 cost guide for pet relocation to Dubai. Transparent breakdown of government fees, vet costs, cargo shipping, and our service fee."
         keywords="pet relocation cost Dubai, dog relocation cost, cat relocation cost, pet transport price Dubai, how much to relocate pet to Dubai"
+        canonical={`${BASE_URL}/guides/pet-relocation-cost-dubai/`}
         ogType="article"
         jsonLd={[faqSchema, articleSchema, breadcrumbSchema]}
       />
       {/* ===== HERO ===== */}
       <section className="relative overflow-hidden text-white">
-        <img src="/images/cost-hero.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/images/cost-hero.jpg" alt="Pet owner reviewing transparent Dubai pet relocation costs" loading="eager" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
         <div className="relative max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -221,6 +216,9 @@ export default function CostGuidePage() {
               <img
                 src="/images/cost-hero.jpg"
                 alt="Golden Retriever in IATA travel crate at Dubai Airport cargo terminal, ready for international pet relocation"
+                loading="lazy"
+                width={1536}
+                height={1024}
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
             </div>
@@ -619,7 +617,7 @@ export default function CostGuidePage() {
               <tr>
                 <td><strong>Flight rebooking due to summer embargo</strong></td>
                 <td>2,000–5,000</td>
-                <td>Airlines cancel pet cargo June–September. Competitors book, then charge you to reroute.</td>
+                <td>Airlines cancel pet cargo May 1 – September 30. Competitors book, then charge you to reroute.</td>
                 <td>We check seasonal restrictions <em>before</em> booking. If a change is needed, we rebook at no extra coordination fee.</td>
               </tr>
               <tr>
@@ -775,10 +773,10 @@ export default function CostGuidePage() {
               <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center">
                 <Sun className="w-5 h-5 text-[#C0392B]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A]">Summer Heat Embargo (June–September)</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A]">Summer Heat Embargo (May 1 – September 30)</h3>
             </div>
             <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">
-              From June to September, ground temperatures in Dubai exceed 45°C. Most airlines suspend or heavily restrict live animal cargo.
+              From May 1 to September 30, ground temperatures in Dubai exceed 45°C. Most airlines suspend or heavily restrict live animal cargo.
             </p>
             <p className="text-sm font-semibold text-[#2A2A2A] mb-2">What this means for your cost:</p>
             <ul className="space-y-2 text-sm text-[#5A5A5A]">

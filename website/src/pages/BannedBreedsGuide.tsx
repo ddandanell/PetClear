@@ -27,7 +27,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
+      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
         <span>{question}</span>
         {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
@@ -96,8 +96,7 @@ export default function BannedBreedsGuide() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
-      { '@type': 'ListItem', position: 3, name: 'Banned and Restricted Dog Breeds in Dubai', item: canonical },
+      { '@type': 'ListItem', position: 2, name: 'Banned and Restricted Dog Breeds in Dubai', item: canonical },
     ],
   }
 
@@ -128,7 +127,7 @@ export default function BannedBreedsGuide() {
   return (
     <>
       <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Banned & Restricted Dog Breeds' }]} />
+      <Breadcrumb items={[{ label: 'Guides' }, { label: 'Banned & Restricted Dog Breeds' }]} />
 
       {/* Hero */}
       <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
@@ -229,7 +228,6 @@ export default function BannedBreedsGuide() {
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Bully Kutta (Alangu / Indian Mastiff)</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Perro de Presa Canario (Canary Mastiff)</li>
                 <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Japanese Tosa</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Presa Canario</li>
               </ul>
             </div>
 

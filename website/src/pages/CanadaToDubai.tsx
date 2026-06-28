@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 export default function CanadaToDubai() {
   const pageUrl = `${BASE_URL}/routes/canada-to-dubai/`
-  const pageTitle = 'Canada to Dubai Pet Relocation — Complete Guide 2025 | Dubai Pet Relocation'
-  const pageDescription = 'Relocate your pet from Canada to Dubai with Dubai Pet Relocation. Low-risk route, similar to US but with Canadian-specific CFIA requirements. Air Canada, Emirates. Costs, documents, and timeline.'
+  const pageTitle = 'Canada to Dubai Pet Relocation — Complete Guide 2026'
+  const pageDescription = 'Relocate your pet from Canada to Dubai. Low-risk route with Canadian-specific CFIA requirements. Air Canada, Emirates. Costs, documents and timeline.'
   const keywords = 'Canada to Dubai pet relocation, pet transport Canada to Dubai, Canadian pet relocation Dubai, Air Canada pet cargo Dubai, Emirates pet transport Canada, CFIA pet export, dog relocation Canada to Dubai, cat relocation Canada to Dubai, pet shipping Canada to UAE'
 
   const faqs = [
@@ -114,7 +114,7 @@ export default function CanadaToDubai() {
             </div>
             <div>
               <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-canada.jpg" alt="Pet relocation from Canada to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" />
+                <img src="/images/hero-canada.jpg" alt="Pet relocation from Canada to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-6">

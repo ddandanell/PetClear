@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
         meta={{
           title: 'Privacy Policy | Dubai Pet Relocation',
           description: 'Privacy policy for Dubai Pet Relocation pet relocation concierge services. Learn how we collect, use, and protect your personal data.',
-          canonical: `${BASE_URL}/privacy`,
+          canonical: `${BASE_URL}/privacy-policy/`,
           noindex: true,
         }}
       />

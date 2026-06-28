@@ -80,7 +80,7 @@ const faqs: FAQEntry[] = [
   {
     category: 'documents',
     question: 'What documents do I need to import a pet to Dubai?',
-    answer: <><p>The standard requirements are: a valid MOCCAE import permit, an ISO-compliant microchip (15 digits), a valid rabies vaccination certificate, a veterinary health certificate from the origin country, and in some cases a rabies titer test (FAVN) for high-risk countries. Some countries also require additional parasite treatments or notarized documents.</p><p className="mt-3"><Link to="/import-requirements" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">Read the full import guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    answer: <><p>The standard requirements are: a valid MOCCAE import permit, an ISO-compliant microchip (15 digits), a valid rabies vaccination certificate, a veterinary health certificate from the origin country, and in some cases a rabies titer test (FAVN) for high-risk countries. Some countries also require additional parasite treatments or notarized documents.</p><p className="mt-3"><Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">Read the full import guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
   },
   {
     category: 'documents',
@@ -105,7 +105,7 @@ const faqs: FAQEntry[] = [
   {
     category: 'costs',
     question: 'How much does pet relocation to Dubai cost?',
-    answer: <><p>Pet relocation to Dubai typically costs between <strong>AED 8,000 and AED 25,000</strong> depending on the origin country, pet size, and service level. The breakdown includes government fees (AED 200–700), veterinary costs (AED 1,200–2,500), cargo shipping (AED 3,000–12,000), and coordination fees (AED 1,500–6,000).</p><p className="mt-3"><Link to="/cost-guide" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">See our full cost breakdown <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    answer: <><p>Pet relocation to Dubai typically costs between <strong>AED 8,000 and AED 25,000</strong> depending on the origin country, pet size, and service level. The breakdown includes government fees (AED 200–700), veterinary costs (AED 1,200–2,500), cargo shipping (AED 3,000–12,000), and coordination fees (AED 1,500–6,000).</p><p className="mt-3"><Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">See our full cost breakdown <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
   },
   {
     category: 'costs',
@@ -125,7 +125,7 @@ const faqs: FAQEntry[] = [
   {
     category: 'dogs',
     question: 'Which dog breeds are banned in Dubai?',
-    answer: <><p>The UAE bans Pit Bull types (including American Bully and Staffordshire Bull Terrier), Mastiff types (including Cane Corso, Boerboel, and Bullmastiff), Japanese Tosa, and wolf-dog hybrids. Some breeds like Rottweiler and Doberman are restricted rather than fully banned. Brachycephalic breeds (Bulldogs, Pugs) face airline restrictions during summer months.</p><p className="mt-3"><Link to="/dog-relocation" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">Read our dog relocation guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    answer: <><p>The UAE bans Pit Bull types (including American Bully and Staffordshire Bull Terrier), Mastiff types (including Cane Corso, Boerboel, and Bullmastiff), Japanese Tosa, and wolf-dog hybrids. Some breeds like Rottweiler and Doberman are restricted rather than fully banned. Brachycephalic breeds (Bulldogs, Pugs) face airline restrictions during summer months.</p><p className="mt-3"><Link to="/dog-relocation-to-dubai/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">Read our dog relocation guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
   },
   {
     category: 'dogs',
@@ -222,7 +222,7 @@ export default function FAQPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: 'FAQ', item: `${BASE_URL}/faq` },
+      { '@type': 'ListItem', position: 2, name: 'FAQ', item: `${BASE_URL}/faq/` },
     ],
   }
 
@@ -230,10 +230,10 @@ export default function FAQPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation FAQ — Everything You Need to Know | Dubai Pet Relocation Dubai',
-          description: 'Comprehensive pet relocation FAQ for Dubai. Find answers about documents, costs, banned breeds, cats, dogs, airlines, timelines, and more. Ask us on WhatsApp if you need help.',
+          title: 'Pet Relocation FAQ Dubai | Dubai Pet Relocation',
+          description: 'Pet relocation FAQ for Dubai: documents, costs, banned breeds, cats, dogs, airlines, and timelines. Ask us on WhatsApp if you need more help.',
           keywords: 'pet relocation FAQ Dubai, dog import FAQ, cat import FAQ, MOCCAE permit questions, pet transport cost Dubai, banned dog breeds UAE, pet relocation timeline',
-          canonical: `${BASE_URL}/faq`,
+          canonical: `${BASE_URL}/faq/`,
           ogType: 'website',
         }}
         schemas={[faqSchema, breadcrumbSchema]}
@@ -330,10 +330,10 @@ export default function FAQPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { to: '/import-requirements', label: 'Import Requirements Guide', icon: FileText, desc: 'Step-by-step checklist for bringing pets to Dubai' },
-              { to: '/cost-guide', label: 'Cost Guide', icon: DollarSign, desc: 'Transparent breakdown of all relocation costs' },
-              { to: '/dog-relocation', label: 'Dog Relocation', icon: Dog, desc: 'Breed rules, crate sizing, and airline policies' },
-              { to: '/cat-relocation', label: 'Cat Relocation', icon: Cat, desc: 'Sedation guidance, stress reduction, and travel tips' },
+              { to: '/guides/uae-pet-import-requirements/', label: 'Import Requirements Guide', icon: FileText, desc: 'Step-by-step checklist for bringing pets to Dubai' },
+              { to: '/guides/pet-relocation-cost-dubai/', label: 'Cost Guide', icon: DollarSign, desc: 'Transparent breakdown of all relocation costs' },
+              { to: '/dog-relocation-to-dubai/', label: 'Dog Relocation', icon: Dog, desc: 'Breed rules, crate sizing, and airline policies' },
+              { to: '/cat-relocation-to-dubai/', label: 'Cat Relocation', icon: Cat, desc: 'Sedation guidance, stress reduction, and travel tips' },
             ].map((link) => (
               <Link
                 key={link.to}

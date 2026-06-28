@@ -4,7 +4,7 @@ const dubaiProductionCity: AreaPageData = {
   slug: 'dubai-production-city',
   areaName: 'Dubai Production City (IMPZ)',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubai Production City (IMPZ) | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Dubai Production City (IMPZ) | Pet Transport',
   metaDescription:
     'Pet relocation in Dubai Production City (IMPZ) — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
   keywords:

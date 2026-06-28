@@ -50,7 +50,7 @@ function FaqItem({ question, answer }: { question: string; answer: React.ReactNo
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
+      <button onClick={() => setOpen(!open)} aria-expanded={open} className="faq-question w-full text-left">
         <span className="pr-4">{question}</span>
         {open ? <ChevronUp className="w-5 h-5 shrink-0 text-[#4F5BD5]" /> : <ChevronDown className="w-5 h-5 shrink-0 text-[#8A8A8A]" />}
       </button>
@@ -77,6 +77,7 @@ export default function CatRelocationPage() {
   return (
     <div className="bg-[#F5F6FD]">
       <SEOHead
+        canonical={`${BASE_URL}/cat-relocation-to-dubai/`}
         title="Cat Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation"
         description="Expert guide to relocating your cat to Dubai. Sedation guidance, crate comfort, airline policies, MOCCAE requirements, and everything you need for a safe, stress-free journey."
         keywords="cat relocation to Dubai, bring cat to Dubai, cat import Dubai, Dubai cat relocation, pet cat transport Dubai, moving cat to UAE"
@@ -191,7 +192,7 @@ export default function CatRelocationPage() {
                   message="Hi, I want to relocate my cat to Dubai. Can you help me understand the process and cost?"
                 />
                 <Link
-                  to="/how-it-works"
+                  to="/how-it-works/"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
                 >
                   How it works
@@ -212,6 +213,8 @@ export default function CatRelocationPage() {
                   alt="A calm cat inside an IATA-approved travel crate, ready for a safe journey to Dubai."
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover"
                   loading="eager"
+                  width={1536}
+                  height={1024}
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">

@@ -10,7 +10,7 @@ export default function TermsOfService() {
         meta={{
           title: 'Terms of Service | Dubai Pet Relocation',
           description: 'Terms of Service for Dubai Pet Relocation pet relocation concierge services. Please read these terms carefully before using our services.',
-          canonical: `${BASE_URL}/terms`,
+          canonical: `${BASE_URL}/terms-of-service/`,
           noindex: true,
         }}
       />

@@ -18,7 +18,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
+      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
         <span className="pr-4">{question}</span>
         {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
       </button>
@@ -65,7 +65,7 @@ export default function ContactPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Contact', item: `${BASE_URL}/contact` },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: `${BASE_URL}/contact/` },
     ],
   }
 
@@ -73,7 +73,7 @@ export default function ContactPage() {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
     name: 'Contact Dubai Pet Relocation',
-    url: `${BASE_URL}/contact`,
+    url: `${BASE_URL}/contact/`,
     description: 'Contact Dubai Pet Relocation for pet relocation help in Dubai. Reach us via WhatsApp, email, or our contact form.',
     contactPoint: {
       '@type': 'ContactPoint',
@@ -88,9 +88,9 @@ export default function ContactPage() {
       <SEOHead
         meta={{
           title: 'Contact Dubai Pet Relocation | Pet Relocation Dubai',
-          description: 'Contact Dubai Pet Relocation for pet relocation help in Dubai. Reach us via WhatsApp, email, or our contact form. We reply within 15 minutes during business hours.',
+          description: 'Contact Dubai Pet Relocation for pet relocation help in Dubai via WhatsApp, email, or form. We reply within 15 minutes during business hours.',
           keywords: 'contact Dubai Pet Relocation, pet relocation help Dubai, pet transport contact, WhatsApp pet relocation Dubai',
-          canonical: `${BASE_URL}/contact`,
+          canonical: `${BASE_URL}/contact/`,
           ogType: 'website',
         }}
         schemas={[breadcrumbSchema, contactSchema]}

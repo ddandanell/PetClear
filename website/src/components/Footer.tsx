@@ -11,7 +11,7 @@ function Column({ title, links }: { title: string; links: NavLink[] }) {
       <ul className="space-y-2">
         {links.map((link) => (
           <li key={link.to}>
-            <Link to={link.to} className="text-sm text-white/65 hover:text-white transition-colors">{link.label}</Link>
+            <Link to={link.to} className="text-sm text-white/80 hover:text-white transition-colors">{link.label}</Link>
           </li>
         ))}
       </ul>
@@ -36,10 +36,10 @@ export default function Footer() {
               </div>
               <span className="text-lg font-bold">Dubai Pet Relocation</span>
             </Link>
-            <p className="text-white/60 text-sm leading-relaxed mb-5 max-w-xs">
+            <p className="text-white/80 text-sm leading-relaxed mb-5 max-w-xs">
               A transparent pet relocation concierge for Dubai and the UAE. We guide you through MOCCAE requirements, vetted partners and door-to-door delivery.
             </p>
-            <div className="space-y-2 text-sm text-white/65">
+            <div className="space-y-2 text-sm text-white/80">
               <a href="tel:+971551744849" className="flex items-center gap-2 hover:text-white transition-colors"><Phone className="w-4 h-4" /> +971 55 174 4849</a>
               <a href="mailto:hallo@dubai-pet-relocation.ae" className="flex items-center gap-2 hover:text-white transition-colors"><Mail className="w-4 h-4" /> hallo@dubai-pet-relocation.ae</a>
               <div className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 shrink-0" /> Al Quoz, Dubai, UAE</div>
@@ -64,14 +64,14 @@ export default function Footer() {
         </nav>
 
         {/* Disclaimer */}
-        <p className="mt-8 text-xs text-white/45 leading-relaxed max-w-4xl">
-          <strong className="text-white/60">Disclaimer:</strong> Dubai Pet Relocation is a pet relocation concierge and coordination service — not a veterinary clinic, airline, or government agency. Veterinary, cargo and transport services are provided by independent licensed partners. Government fees (MOCCAE, customs, municipality) are passed through at cost. Please verify all documentation directly with MOCCAE and your airline before travel.
+        <p className="mt-8 text-xs text-white/70 leading-relaxed max-w-4xl">
+          <strong className="text-white/80">Disclaimer:</strong> Dubai Pet Relocation is a pet relocation concierge and coordination service — not a veterinary clinic, airline, or government agency. Veterinary, cargo and transport services are provided by independent licensed partners. Government fees (MOCCAE, customs, municipality) are passed through at cost. Please verify all documentation directly with MOCCAE and your airline before travel.
         </p>
 
         {/* Bottom bar */}
         <div className="mt-6 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-sm text-white/45">© {new Date().getFullYear()} Dubai Pet Relocation. All rights reserved. Dubai, UAE.</p>
-          <div className="flex items-center gap-4 text-sm text-white/45">
+          <p className="text-sm text-white/70">© {new Date().getFullYear()} Dubai Pet Relocation. All rights reserved. Dubai, UAE.</p>
+          <div className="flex items-center gap-4 text-sm text-white/70">
             {legal.map((l) => <Link key={l.to} to={l.to} className="hover:text-white transition-colors">{l.label}</Link>)}
           </div>
         </div>

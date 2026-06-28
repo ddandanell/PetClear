@@ -32,7 +32,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
+      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
         <span>{question}</span>
         {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
@@ -101,8 +101,7 @@ export default function SummerTravelGuide() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
-      { '@type': 'ListItem', position: 3, name: 'Pet Travel During Dubai Summer Heat', item: canonical },
+      { '@type': 'ListItem', position: 2, name: 'Pet Travel During Dubai Summer Heat', item: canonical },
     ],
   }
 
@@ -122,7 +121,7 @@ export default function SummerTravelGuide() {
   const schemas = [faqSchema, breadcrumbSchema, articleSchema]
 
   const meta = {
-    title,
+    title: 'Pet Travel in Dubai Summer Heat | Embargo & Options',
     description,
     canonical,
     ogImage,
@@ -133,7 +132,7 @@ export default function SummerTravelGuide() {
   return (
     <>
       <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Summer Pet Travel Guide' }]} />
+      <Breadcrumb items={[{ label: 'Guides' }, { label: 'Summer Pet Travel Guide' }]} />
 
       {/* Hero */}
       <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">

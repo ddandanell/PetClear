@@ -15,7 +15,7 @@ const petTransportDubai: ServicePageData = {
   heroImageAlt:
     'A calm dog and cat being loaded into a clean, climate-controlled pet transport van in Dubai',
   whatsappMessage:
-    'Hi Pet Transport Dubai! I need to arrange pet transport in Dubai. Can you share the process and a cost estimate?',
+    'Hi Dubai Pet Relocation! I need to arrange pet transport in Dubai. Can you share the process and a cost estimate?',
   trustBadges: ['Climate-controlled vehicles', 'Vetted transport partners', 'Real-time WhatsApp updates', 'Door-to-door service'],
   costRange: { low: '300', high: '20000' },
   hasHowTo: false,

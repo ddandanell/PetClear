@@ -107,7 +107,7 @@ const burDubai: AreaPageData = {
   ],
   relatedAreas: [
     { label: 'Deira', to: '/dubai/deira/' },
-    { label: 'Al Karama', to: '/dubai/karama/' },
+    { label: 'Karama', to: '/dubai/karama/' },
     { label: 'Al Satwa', to: '/dubai/al-satwa/' },
     { label: 'Downtown Dubai', to: '/dubai/downtown-dubai/' },
     { label: 'Business Bay', to: '/dubai/business-bay/' },

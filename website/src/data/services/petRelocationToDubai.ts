@@ -128,7 +128,7 @@ const petRelocationToDubai: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Government charges are a small slice of the total: the MOCCAE import permit is AED 200 per animal, plus veterinary inspection and clearance fees on arrival (roughly AED 253 per cat and AED 505 per dog, before any agent handling). The majority of the budget goes to veterinary preparation, the crate, the flight itself and coordination. The table below shows realistic ranges for each component.',
+          text: 'Government charges are a small slice of the total: the MOCCAE import permit is AED 200 per animal, plus veterinary inspection and clearance fees on arrival (roughly AED 250 per cat and AED 500 per dog, before any agent handling). The majority of the budget goes to veterinary preparation, the crate, the flight itself and coordination. The table below shows realistic ranges for each component.',
         },
         {
           type: 'table',

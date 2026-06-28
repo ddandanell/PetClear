@@ -72,8 +72,20 @@ export default function Header() {
                   className="relative"
                   onMouseEnter={() => setOpenDropdown(link.label)}
                   onMouseLeave={() => setOpenDropdown(null)}
+                  onFocus={() => setOpenDropdown(link.label)}
+                  onBlur={(e) => {
+                    if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+                      setOpenDropdown(null)
+                    }
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Escape') setOpenDropdown(null)
+                  }}
                 >
                   <button
+                    onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
+                    aria-expanded={openDropdown === link.label}
+                    aria-haspopup="true"
                     className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                       link.children.some((c) => isActive(c.to))
                         ? 'text-[#3A45B0] bg-[#E9ECFB]'

@@ -35,7 +35,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left">
+      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
         <span>{question}</span>
         {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#5A5A5A] shrink-0" />}
       </button>
@@ -104,8 +104,7 @@ export default function MOCCAEPermitGuide() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
-      { '@type': 'ListItem', position: 3, name: 'MOCCAE Import Permit Guide', item: canonical },
+      { '@type': 'ListItem', position: 2, name: 'MOCCAE Import Permit Guide', item: canonical },
     ],
   }
 
@@ -153,7 +152,7 @@ export default function MOCCAEPermitGuide() {
   const schemas = [faqSchema, breadcrumbSchema, howToSchema]
 
   const meta = {
-    title,
+    title: 'MOCCAE Import Permit for Pets — Dubai & UAE Guide (2026)',
     description,
     canonical,
     ogImage,
@@ -164,7 +163,7 @@ export default function MOCCAEPermitGuide() {
   return (
     <>
       <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'MOCCAE Import Permit Guide' }]} />
+      <Breadcrumb items={[{ label: 'Guides' }, { label: 'MOCCAE Import Permit Guide' }]} />
 
       {/* Hero */}
       <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
