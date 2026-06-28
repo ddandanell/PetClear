@@ -177,7 +177,7 @@ export default function TermsOfService() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-[#E2E5F6] flex gap-6">
-          <Link to="/privacy" className="text-sm font-semibold text-[#4F5BD5] hover:underline">
+          <Link to="/privacy-policy/" className="text-sm font-semibold text-[#4F5BD5] hover:underline">
             Privacy Policy
           </Link>
           <Link to="/" className="text-sm font-semibold text-[#4F5BD5] hover:underline">

@@ -360,7 +360,7 @@ export default function CostGuidePage() {
             Crates must be <strong>IATA LAR-compliant</strong> — rigid, well-ventilated, with secure locking doors. We provide correctly sized, pre-labeled crates. Buying the wrong crate on Amazon is one of the most common (and expensive) mistakes we see.
           </p>
           <p className="mt-2 text-sm">
-            <Link to="/guides/iata-pet-crate-requirements" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+            <Link to="/guides/iata-pet-crate-requirements/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
               IATA crate requirements and costs <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </p>
@@ -425,7 +425,7 @@ export default function CostGuidePage() {
             <strong>What's different about us:</strong> We tell you exactly who our partners are — the vet clinics, the cargo handlers, the ground transport teams. We don't pretend we own an airline. We just know which ones to trust, and we manage every interaction so you don't have to chase five different phone numbers.
           </p>
           <p className="mt-2 text-sm">
-            <Link to="/services" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+            <Link to="/services/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
               See our pet relocation packages <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </p>
@@ -475,7 +475,7 @@ export default function CostGuidePage() {
               The UK is a low-risk country, so your pet only needs the microchip, rabies vaccine (≥21 days old), health certificate, and MOCCAE permit. We handle the DEFRA export endorsement and Emirates SkyCargo booking from London Heathrow or Manchester.
             </p>
             <p className="mt-3 text-sm">
-              <Link to="/routes/uk-to-dubai" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+              <Link to="/routes/uk-to-dubai/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
                 Read our full UK to Dubai guide <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </p>
@@ -684,7 +684,7 @@ export default function CostGuidePage() {
         </div>
 
         <p className="text-sm">
-          <Link to="/about" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+          <Link to="/about/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
             Why we're transparent about pricing <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </p>
@@ -870,7 +870,7 @@ export default function CostGuidePage() {
                   However, with incomplete documentation the real risk is that your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands). This is why we triple-check every document before your pet travels.
                 </p>
                 <p className="mt-3">
-                  <Link to="/guides/uae-pet-import-requirements" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+                  <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
                     Read our full UAE import requirements guide <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
@@ -906,7 +906,7 @@ export default function CostGuidePage() {
                 </ul>
                 <p className="mt-3">By the time you add the missing pieces, the total usually exceeds our all-inclusive quote. Plus, a mover's priority is your furniture. Our priority is your pet. Every time.</p>
                 <p className="mt-3">
-                  <Link to="/services" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+                  <Link to="/services/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
                     See our full service comparison <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </p>
