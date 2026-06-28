@@ -152,8 +152,8 @@ export default function DogRelocationPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.dubai-pet-relocation.ae/" },
-              { "@type": "ListItem", position: 2, name: "Dog Relocation to Dubai", item: "https://www.dubai-pet-relocation.ae/dog-relocation-to-dubai/" }
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://dubai-pet-relocation.ae/" },
+              { "@type": "ListItem", position: 2, name: "Dog Relocation to Dubai", item: "https://dubai-pet-relocation.ae/dog-relocation-to-dubai/" }
             ]
           },
           {
@@ -161,7 +161,7 @@ export default function DogRelocationPage() {
             "@type": "Article",
             headline: "Dog Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation",
             description: "Expert guide to relocating your dog to Dubai. Breed checks, crate sizing, MOCCAE import permit, flight booking, banned breeds, and everything you need for a safe journey.",
-            url: "https://www.dubai-pet-relocation.ae/dog-relocation-to-dubai/",
+            url: "https://dubai-pet-relocation.ae/dog-relocation-to-dubai/",
             author: { "@type": "Organization", name: "Dubai Pet Relocation" },
             publisher: { "@type": "Organization", name: "Dubai Pet Relocation" }
           }

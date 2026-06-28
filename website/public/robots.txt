@@ -21,4 +21,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://www.dubai-pet-relocation.ae/sitemap.xml
+Sitemap: https://dubai-pet-relocation.ae/sitemap.xml

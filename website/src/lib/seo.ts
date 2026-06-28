@@ -1,6 +1,6 @@
 // SEO utilities for Dubai Pet Relocation website
 // Replace BASE_URL with actual domain when decided
-export const BASE_URL = 'https://www.dubai-pet-relocation.ae'
+export const BASE_URL = 'https://dubai-pet-relocation.ae'
 
 export interface SEOMeta {
   title: string
