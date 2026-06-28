@@ -21,6 +21,7 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
+import OfficialSources from '../components/OfficialSources.tsx'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: string }) {
@@ -315,6 +316,7 @@ export default function HowItWorksPage() {
                 <Sparkles className="w-4 h-4" />
                 <span>Our 7-Step Process</span>
               </div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-white/80 mb-3">Updated June 2026</p>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-white leading-[1.12] tracking-tight mb-6">
                 How Pet Relocation Works in Dubai: A Clear, Step-by-Step Guide
               </h1>
@@ -785,6 +787,8 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
+
+      <OfficialSources />
 
       {/* ═══════════ FINAL CTA ═══════════ */}
       <section className="relative overflow-hidden bg-[#4F5BD5] section-padding">

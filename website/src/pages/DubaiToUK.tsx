@@ -4,6 +4,7 @@ import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, Globe, Dog, Cat, Calendar, DollarSign, Briefcase, Ban } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import OfficialSources from '../components/OfficialSources.tsx'
 
 export default function DubaiToUK() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-uk/`
@@ -100,6 +101,7 @@ export default function DubaiToUK() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Export Route Guide</span>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#4F5BD5] mb-3">Updated June 2026</p>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 Dubai to UK Pet Relocation — Exporting Your Pet to Britain
               </h1>
@@ -676,6 +678,8 @@ export default function DubaiToUK() {
           </div>
         </div>
       </section>
+
+      <OfficialSources />
 
       {/* CTA */}
       <section className="py-16 lg:py-24">

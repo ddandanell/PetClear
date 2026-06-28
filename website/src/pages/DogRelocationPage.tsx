@@ -28,6 +28,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import OfficialSources from '../components/OfficialSources.tsx'
 
 /* ─── helpers ─── */
 const SectionHeading = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
@@ -179,6 +180,7 @@ export default function DogRelocationPage() {
                 <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
                 <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Dog Relocation</span>
               </div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#4F5BD5] mb-3">Updated June 2026</p>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 Dog Relocation to Dubai — Bring Your Dog Home Safely
               </h1>
@@ -968,6 +970,8 @@ export default function DogRelocationPage() {
           </div>
         </div>
       </section>
+
+      <OfficialSources />
 
       {/* ─── FINAL CTA ─── */}
       <section className="py-20 lg:py-28">

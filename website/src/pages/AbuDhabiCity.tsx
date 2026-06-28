@@ -1,6 +1,7 @@
 import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import OfficialSources from '../components/OfficialSources.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, MapPin, Building, Phone, Dog, Cat, DollarSign, Briefcase, Globe, Scale } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -115,6 +116,7 @@ export default function AbuDhabiCity() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">City Guide</span>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#4F5BD5] mb-3">Updated June 2026</p>
               <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
                 Pet Relocation Abu Dhabi — Bringing Your Pet to the UAE Capital
               </h1>
@@ -543,6 +545,8 @@ export default function AbuDhabiCity() {
           </div>
         </div>
       </section>
+
+      <OfficialSources />
 
       {/* CTA */}
       <section className="py-16 lg:py-24 bg-white">
