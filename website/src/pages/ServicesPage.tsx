@@ -244,8 +244,8 @@ export default function ServicesPage() {
               See exactly what is included in each tier so you can choose with confidence.
             </p>
           </div>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
+          <div className="overflow-x-auto -mx-5 px-5 sm:mx-0 sm:px-0">
+            <table className="w-full min-w-[600px] text-sm">
               <thead>
                 <tr className="border-b border-[#E2E5F6]">
                   <th className="text-left py-4 px-4 font-semibold text-[#2A2A2A]">Feature</th>

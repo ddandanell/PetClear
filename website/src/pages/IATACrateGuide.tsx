@@ -333,7 +333,7 @@ export default function IATACrateGuide() {
           </h2>
 
           <div className="overflow-x-auto mb-10">
-            <table className="data-table">
+            <table className="data-table min-w-[720px]">
               <thead>
                 <tr>
                   <th>Airline</th>
@@ -465,7 +465,7 @@ export default function IATACrateGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">Buying vs. Renting a Crate</h3>
               </div>
               <div className="overflow-x-auto">
-                <table className="data-table">
+                <table className="data-table min-w-[420px]">
                   <thead>
                     <tr>
                       <th>Factor</th>

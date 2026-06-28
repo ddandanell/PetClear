@@ -215,7 +215,7 @@ export default function TiterTestGuide() {
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               <h3 className="text-xl font-bold text-[#2A2A2A] mb-5">Countries Requiring Titer Test</h3>
-              <div className="grid grid-cols-2 gap-3 mb-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
                 <div className="p-3 bg-[#C9453A]/5 rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">South Asia</p>
                   <p className="text-xs text-[#5A5A5A]">India, Pakistan, Bangladesh, Sri Lanka, Nepal</p>
@@ -334,7 +334,7 @@ export default function TiterTestGuide() {
           <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8 max-w-3xl mx-auto">
             <h3 className="text-xl font-bold text-[#2A2A2A] mb-4 text-center">Minimum Total Timeline</h3>
             <div className="overflow-x-auto">
-              <table className="data-table">
+              <table className="data-table min-w-[480px]">
                 <thead>
                   <tr>
                     <th>Stage</th>

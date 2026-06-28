@@ -358,7 +358,7 @@ export default function MOCCAEPermitGuide() {
             Common Rejection Reasons & How to Fix Them
           </h2>
           <div className="overflow-x-auto mb-10">
-            <table className="data-table">
+            <table className="data-table min-w-[600px]">
               <thead>
                 <tr>
                   <th>Rejection Reason</th>

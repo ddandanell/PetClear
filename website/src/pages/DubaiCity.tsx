@@ -342,7 +342,7 @@ export default function DubaiCity() {
 
           <div className="bg-white rounded-[20px] shadow-sm overflow-hidden">
             <div className="overflow-x-auto">
-              <table className="w-full text-left data-table">
+              <table className="w-full min-w-[560px] text-left data-table">
                 <thead className="bg-[#F5F5F5]">
                   <tr>
                     <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Fee Item</th>

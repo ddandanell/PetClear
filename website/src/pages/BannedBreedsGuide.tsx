@@ -257,7 +257,7 @@ export default function BannedBreedsGuide() {
           </div>
 
           <div className="overflow-x-auto mb-10">
-            <table className="data-table">
+            <table className="data-table min-w-[680px]">
               <thead>
                 <tr>
                   <th>Breed / Type</th>

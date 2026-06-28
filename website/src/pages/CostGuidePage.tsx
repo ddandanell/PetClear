@@ -253,7 +253,7 @@ export default function CostGuidePage() {
             <Shield className="w-5 h-5 text-[#4F5BD5]" /> Government & Mandatory Fees
           </h3>
           <div className="overflow-x-auto">
-            <table className="data-table">
+            <table className="data-table min-w-[640px]">
               <thead>
                 <tr>
                   <th>Fee</th>
@@ -286,7 +286,7 @@ export default function CostGuidePage() {
             <PawPrint className="w-5 h-5 text-[#4F5BD5]" /> Veterinary Costs
           </h3>
           <div className="overflow-x-auto">
-            <table className="data-table">
+            <table className="data-table min-w-[560px]">
               <thead>
                 <tr><th>Service</th><th>Cost (AED)</th><th>Notes</th></tr>
               </thead>
@@ -338,7 +338,7 @@ export default function CostGuidePage() {
             <Plane className="w-5 h-5 text-[#4F5BD5]" /> Air Cargo / Flight Fees
           </h3>
           <div className="overflow-x-auto">
-            <table className="data-table">
+            <table className="data-table min-w-[560px]">
               <thead>
                 <tr><th>Route Type</th><th>Estimated Cost (AED)</th><th>Notes</th></tr>
               </thead>
@@ -364,7 +364,7 @@ export default function CostGuidePage() {
             This is what we charge to handle everything — permits, paperwork, flight booking, partner coordination, and WhatsApp updates at every step.
           </p>
           <div className="overflow-x-auto">
-            <table className="data-table">
+            <table className="data-table min-w-[560px]">
               <thead>
                 <tr><th>Tier</th><th>Cost (AED)</th><th>What's Included</th></tr>
               </thead>
@@ -513,7 +513,7 @@ export default function CostGuidePage() {
       <Section className="bg-[#F5F6FD]">
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">Cost by Pet Size — How Your Pet's Dimensions Affect Price</h2>
         <div className="overflow-x-auto mb-6">
-          <table className="data-table">
+          <table className="data-table min-w-[720px]">
             <thead>
               <tr>
                 <th>Size Category</th>
@@ -572,7 +572,7 @@ export default function CostGuidePage() {
 
         <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Common Hidden Fees in the Industry</h3>
         <div className="overflow-x-auto mb-10">
-          <table className="data-table">
+          <table className="data-table min-w-[720px]">
             <thead>
               <tr>
                 <th>Hidden Cost</th>
@@ -671,7 +671,7 @@ export default function CostGuidePage() {
           <Card>
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">DIY Breakdown</h3>
             <div className="overflow-x-auto">
-              <table className="data-table">
+              <table className="data-table min-w-[640px]">
                 <thead>
                   <tr><th>Step</th><th>What You Do</th><th>Cost (AED)</th><th>Risk</th></tr>
                 </thead>

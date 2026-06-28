@@ -286,7 +286,7 @@ export default function SouthAfricaToDubai() {
 
           <div className="bg-white rounded-[20px] shadow-sm overflow-hidden">
             <div className="overflow-x-auto">
-              <table className="w-full text-left">
+              <table className="w-full min-w-[640px] text-left">
                 <thead className="bg-[#F5F5F5]">
                   <tr>
                     <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Service Item</th>

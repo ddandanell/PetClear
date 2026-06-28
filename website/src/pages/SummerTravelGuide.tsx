@@ -204,7 +204,7 @@ export default function SummerTravelGuide() {
             Airline Summer Embargo Policies for Dubai
           </h2>
           <div className="overflow-x-auto mb-10">
-            <table className="data-table">
+            <table className="data-table min-w-[720px]">
               <thead>
                 <tr>
                   <th>Airline</th>
@@ -326,7 +326,7 @@ export default function SummerTravelGuide() {
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-5">
                 Brachycephalic (flat-faced) breeds have compromised airways, making them extremely vulnerable to heat stress. Many airlines have specific bans or extra requirements for these breeds during summer.
               </p>
-              <div className="grid grid-cols-2 gap-2 mb-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
                 <div className="p-2 bg-[#FDF6E8] rounded-lg text-xs text-[#5A5A5A]"><strong>Dogs:</strong> Pug, Bulldog, French Bulldog, Boston Terrier, Boxer, Shih Tzu, Pekingese, Cavalier King Charles Spaniel, Chow Chow</div>
                 <div className="p-2 bg-[#FDF6E8] rounded-lg text-xs text-[#5A5A5A]"><strong>Cats:</strong> Persian, Himalayan, Exotic Shorthair, British Shorthair, Scottish Fold</div>
               </div>
@@ -380,7 +380,7 @@ export default function SummerTravelGuide() {
           </div>
 
           <div className="overflow-x-auto">
-            <table className="data-table">
+            <table className="data-table min-w-[720px]">
               <thead>
                 <tr>
                   <th>Alternative</th>

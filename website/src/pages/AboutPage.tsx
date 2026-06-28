@@ -206,6 +206,9 @@ export default function AboutPage() {
               We are based in Dubai and work closely with partners across the UAE, Europe, and beyond. Every team member has relocated their own pet — so we understand the emotional side as well as the logistical one.
             </p>
           </div>
+          <div className="max-w-4xl mx-auto mb-12">
+            <img src="/images/team-support.jpg" alt="The Dubai Pet Relocation support team in a bright Dubai office" width={1280} height={854} loading="lazy" className="w-full rounded-[24px] object-cover shadow-sm" />
+          </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {

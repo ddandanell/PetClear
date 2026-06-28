@@ -320,7 +320,7 @@ export default function ImportRequirementsPage() {
           </p>
 
           <div className="overflow-x-auto rounded-[20px] shadow-sm border border-gray-100 mb-8">
-            <table className="data-table">
+            <table className="data-table min-w-[640px]">
               <thead>
                 <tr>
                   <th>Document</th>
@@ -1018,7 +1018,7 @@ export default function ImportRequirementsPage() {
           <div className="bg-white rounded-[20px] shadow-sm p-6 mb-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
             <h3 className="font-bold text-[#2A2A2A] mb-4">Airline Comparison Summary</h3>
             <div className="overflow-x-auto">
-              <table className="data-table">
+              <table className="data-table min-w-[680px]">
                 <thead>
                   <tr>
                     <th>Airline</th>

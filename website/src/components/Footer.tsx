@@ -49,7 +49,7 @@ export default function Footer() {
               <li>
                 <a href="mailto:hallo@dubai-pet-relocation.ae" className="group flex items-center gap-3 hover:text-white transition-colors">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10 group-hover:bg-white/20 transition-colors"><Mail className="h-4 w-4" /></span>
-                  hallo@dubai-pet-relocation.ae
+                  <span className="break-all">hallo@dubai-pet-relocation.ae</span>
                 </a>
               </li>
               <li className="flex items-start gap-3">
