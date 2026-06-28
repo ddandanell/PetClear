@@ -1,6 +1,7 @@
 import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, Globe, Dog, Cat, Calendar, DollarSign, Briefcase, Ban } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -96,42 +97,14 @@ export default function DubaiToUK() {
       <Breadcrumb items={[{ label: 'Routes', path: '/routes/' }, { label: 'Dubai to UK' }]} />
 
       {/* HERO */}
-      <section className="relative bg-white overflow-hidden">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Export Route Guide</span>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#4F5BD5] mb-3">Updated June 2026</p>
-              <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
-                Dubai to UK Pet Relocation — Exporting Your Pet to Britain
-              </h1>
-              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                The UK has strict but clear rules for pet imports. Since Brexit, the EU pet passport no longer applies, and a DEFRA-approved health certificate is mandatory. The good news: the UAE is on the UK's rabies-controlled list, so no titer test is required. Dubai Pet Relocation handles every step — from MOCCAE-endorsed health certificates to UK customs clearance — so your pet arrives in London, Manchester, or Edinburgh without quarantine.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <WhatsAppBtn label="Get a Dubai to UK quote" message="Hi, I want to relocate my pet from Dubai to the UK. Can you help me understand the DEFRA requirements, timeline, and cost?" />
-                <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-[#F5F5F5] hover:bg-[#EBEBEB] transition-colors">
-                  <FileText className="w-5 h-5" />
-                  How It Works
-                </a>
-              </div>
-            </div>
-            <div>
-              <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-dubai-to-uk.jpg" alt="Pet relocation from Dubai to UK" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white px-6">
-                    <PawPrint className="w-16 h-16 mx-auto mb-4 opacity-90" />
-                    <p className="text-lg font-semibold">Dubai → UK</p>
-                    <p className="text-sm opacity-80">No quarantine if documents correct</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/hero-dubai-to-uk.jpg"
+        imageAlt="Pet relocation from Dubai to UK"
+        eyebrow="Dubai → United Kingdom"
+        title="Dubai to UK Pet Relocation — Exporting Your Pet to Britain"
+        subtitle="No titer test, no quarantine when paperwork is right. We handle DEFRA/APHA health certificates, MOCCAE endorsement, and UK customs."
+        updated="Updated June 2026"
+      />
 
       {/* UK IMPORT RULES */}
       <section className="py-16 lg:py-24">

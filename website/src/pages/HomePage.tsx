@@ -8,6 +8,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, siteConfig, BASE_URL } from '../lib/seo.ts'
 import { SERVICE_LINKS, TOP_AREA_LINKS } from '../data/nav.ts'
 import Testimonials from '../components/Testimonials.tsx'
+import Hero from '../components/Hero.tsx'
 
 const defaultMsg = `Hi Dubai Pet Relocation team,
 
@@ -182,78 +183,14 @@ export default function HomePage() {
         schemas={[organizationSchema, localBusinessSchema, faqSchema]}
       />
       {/* ═══════════ HERO ═══════════ */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="/images/hero-dog.jpg" alt="Calm golden retriever ready for relocation beside its travel crate in a bright Dubai home" loading="eager" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
-        </div>
-        <div className="relative max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-16 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <div className="flex items-center gap-2 mb-6">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 border border-white/20 rounded-full text-xs font-medium text-white/80 backdrop-blur-sm">
-                  <Shield className="w-3 h-3" /> Trusted Pet Relocation Partner
-                </span>
-              </div>
-              <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold leading-[1.12] tracking-tight text-white mb-6">
-                Pet Relocation Dubai, Made Clear and Safe
-              </h1>
-              <p className="text-lg text-white/80 leading-relaxed mb-6">
-                We help pet owners understand the process, avoid costly mistakes, and connect with trusted relocation partners for safer dog and cat travel to or from Dubai.
-              </p>
-              <p className="text-white/60 text-base leading-relaxed mb-8">
-                Moving your pet doesn't have to be overwhelming. We guide you through permits, paperwork, and partner selection — with clear updates on WhatsApp at every step.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 mb-8">
-                <WhatsAppCta text="Get Help on WhatsApp" fullWidth />
-                <Link
-                  to="/guides/uae-pet-import-requirements/"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/10 border border-white/20 text-white rounded-2xl font-semibold text-sm hover:bg-white/15 transition-colors backdrop-blur-sm"
-                >
-                  Read the UAE Pet Import Guide
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-
-              {/* Trust strip */}
-              <div className="flex flex-wrap items-center gap-3">
-                {[
-                  { icon: Dog, label: 'Dogs & cats' },
-                  { icon: Globe, label: 'To & from Dubai' },
-                  { icon: Users, label: 'Partner-matched support' },
-                  { icon: Phone, label: 'WhatsApp guidance' },
-                  { icon: MapPin, label: 'Route-specific checks' },
-                ].map((item) => (
-                  <span key={item.label} className="trust-badge">
-                    <item.icon className="w-3 h-3" /> {item.label}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="hidden lg:block">
-              <div className="relative">
-                <img
-                  src="/images/hero-dog.jpg"
-                  alt="A relaxed dog beside its owner in a warm Dubai apartment, preparing for pet relocation with travel documents nearby."
-                  className="rounded-[28px] shadow-2xl w-full object-cover aspect-[4/5]"
-                />
-                <div className="absolute -bottom-4 -left-4 bg-white rounded-[20px] p-5 shadow-lg">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-[#E9ECFB] flex items-center justify-center">
-                      <CheckCircle className="w-5 h-5 text-[#4F5BD5]" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-bold text-[#2A2A2A]">Trusted relocation guidance</p>
-                      <p className="text-xs text-[#8A8A8A]">To and from Dubai</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/hero-dog.jpg"
+        imageAlt="Calm golden retriever ready for relocation beside its travel crate in a bright Dubai home"
+        eyebrow="Trusted Pet Relocation Partner"
+        title="Pet Relocation Dubai, Made Clear and Safe"
+        subtitle="We guide pet owners through permits, paperwork and partner selection — safer dog and cat travel to and from Dubai, with WhatsApp updates at every step."
+        secondary={{ label: 'Read the UAE Pet Import Guide', to: '/guides/uae-pet-import-requirements/' }}
+      />
 
       {/* ═══════════ THREE STEP PROCESS ═══════════ */}
       <section className="bg-[#F5F6FD] section-padding">

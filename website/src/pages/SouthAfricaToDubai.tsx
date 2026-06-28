@@ -1,6 +1,7 @@
 import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -94,42 +95,14 @@ export default function SouthAfricaToDubai() {
       <Breadcrumb items={[{ label: 'Routes', path: '/routes/' }, { label: 'South Africa to Dubai' }]} />
 
       {/* HERO */}
-      <section className="relative bg-white overflow-hidden">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Route Guide</span>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#4F5BD5] mb-3">Updated June 2026</p>
-              <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
-                South Africa to Dubai Pet Relocation — Complete Guide
-              </h1>
-              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">
-                Relocating your pet from South Africa to Dubai? South Africa is a high-risk country for rabies, which means a titer test (RNATT) and 90-day waiting period are mandatory. Additional wildlife regulations and complex export requirements make this one of the more challenging routes. Dubai Pet Relocation has extensive experience with South African pet relocations and ensures full compliance with both DALRRD and UAE requirements.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <WhatsAppBtn label="Get a South Africa to Dubai quote" message="Hi, I want to relocate my pet from South Africa to Dubai. Can you help me understand the titer test process and cost?" />
-                <a href={`${BASE_URL}/guides/uae-pet-import-requirements/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-[#F5F5F5] hover:bg-[#EBEBEB] transition-colors">
-                  <FileText className="w-5 h-5" />
-                  View Import Requirements
-                </a>
-              </div>
-            </div>
-            <div>
-              <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img src="/images/hero-south-africa.jpg" alt="Pet relocation from South Africa to Dubai" className="w-full h-64 sm:h-80 lg:h-96 object-cover" loading="eager" width={1536} height={1024} />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white px-6">
-                    <PawPrint className="w-16 h-16 mx-auto mb-4 opacity-90" />
-                    <p className="text-lg font-semibold">High-Risk Route</p>
-                    <p className="text-sm opacity-80">Titer test + wildlife regulations — 3–4 months</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/hero-south-africa.jpg"
+        imageAlt="Pet relocation from South Africa to Dubai"
+        eyebrow="South Africa → Dubai"
+        title="South Africa to Dubai Pet Relocation — Complete Guide"
+        subtitle="High-risk route: titer test (RNATT), 90-day wait, and wildlife rules. We ensure full DALRRD and UAE compliance."
+        updated="Updated June 2026"
+      />
 
       {/* ROUTE OVERVIEW */}
       <section className="py-16 lg:py-24">

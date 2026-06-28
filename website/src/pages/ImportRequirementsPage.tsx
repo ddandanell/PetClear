@@ -16,6 +16,7 @@ import {
   Syringe,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
+import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 
@@ -254,42 +255,14 @@ export default function ImportRequirementsPage() {
         ]}
       />
       {/* ═══════════ HERO ═══════════ */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/images/import-hero.jpg"
-            alt="Golden retriever in IATA-compliant travel crate at Dubai Airport cargo terminal"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
-        </div>
-        <div className="relative max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 border border-white/20 rounded-full text-xs font-medium text-white/80 backdrop-blur-sm mb-4">
-              <FileText className="w-4 h-4" />
-              <span>Last updated: June 2026 &middot; Authority: MOCCAE</span>
-            </div>
-            <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold leading-[1.12] tracking-tight text-white mb-6">
-              UAE Pet Import Requirements 2026: Complete Guide to Bringing Dogs &amp; Cats to Dubai
-            </h1>
-            <p className="text-lg text-white/90 mb-4">
-              Everything you need to bring your pet to Dubai. No quarantine. No hidden steps. Just a clear checklist.
-            </p>
-            <p className="text-white/80 mb-8">
-              If your paperwork is correct, your dog or cat can enter the UAE without spending a single day in quarantine. The process is straightforward — but every document must be done in the right order, with the right dates, and submitted to the right authority.
-            </p>
-            <a
-              href={getWhatsAppUrl('Hi, I need help understanding the import requirements for my pet from [country] to Dubai.')}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Not sure where to start? WhatsApp us a photo of your documents
-            </a>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/import-hero.jpg"
+        imageAlt="Golden retriever in IATA-compliant travel crate at Dubai Airport cargo terminal"
+        eyebrow="Pet Relocation Guide"
+        title="UAE Pet Import Requirements 2026: Complete Guide to Bringing Dogs & Cats to Dubai"
+        subtitle="Everything you need to bring your pet to Dubai. No quarantine. No hidden steps. Just a clear, MOCCAE-aligned checklist."
+        updated="Updated June 2026"
+      />
 
       {/* ═══════════ QUICK CHECKLIST ═══════════ */}
       <section className="py-20 lg:py-28">

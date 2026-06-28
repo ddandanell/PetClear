@@ -7,6 +7,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import { track } from '../lib/analytics.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
+import Hero from '../components/Hero.tsx'
 
 const Card = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
   <div className={`bg-white rounded-[20px] shadow-sm p-7 lg:p-8 ${className}`}>
@@ -99,43 +100,13 @@ export default function ContactPage() {
       <Breadcrumb items={[{ label: 'Contact' }]} />
 
       {/* ═══════════ HERO ═══════════ */}
-      <section className="bg-white section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
-                Contact Dubai Pet Relocation — We're Here to Help
-              </h1>
-              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
-                Whether you have a quick question about a breed ban, need a full relocation quote, or just want to understand the process better, we are here. Fastest response is on WhatsApp — but we read every form and email too.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                <WhatsAppCta
-                  text="Message Us on WhatsApp"
-                  message="Hi Dubai Pet Relocation! I have a question about pet relocation and would love your help."
-                />
-                <a
-                  href="mailto:hallo@dubai-pet-relocation.ae"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
-                >
-                  <Mail className="w-4 h-4" />
-                  Email Us
-                </a>
-              </div>
-            </div>
-            <div>
-              <img
-                src="/images/contact-hero.jpg"
-                alt="A friendly dog beside a welcoming Dubai office desk, ready to help with your pet relocation"
-                width={1536}
-                height={1024}
-                loading="eager"
-                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/contact-hero.jpg"
+        imageAlt="A friendly dog beside a welcoming Dubai office desk, ready to help with your pet relocation"
+        eyebrow="Contact"
+        title="Contact Dubai Pet Relocation — We're Here to Help"
+        subtitle="A quick breed-ban question or a full relocation quote — fastest response is on WhatsApp, but we read every form and email too."
+      />
 
       {/* ═══════════ CONTACT INFO CARDS ═══════════ */}
       <section className="bg-[#F5F6FD] section-padding">

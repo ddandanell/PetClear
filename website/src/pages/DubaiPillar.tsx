@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { MessageCircle, ArrowRight, MapPin } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
+import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import { dubaiAreas } from '../data/areas/dubai/index.ts'
 
@@ -37,18 +38,14 @@ export default function DubaiPillar() {
       <Breadcrumb items={[{ label: 'Dubai' }]} />
 
       {/* HERO */}
-      <section className="bg-white section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-5">Pet Relocation Across Every Community in Dubai</h1>
-              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">From Dubai Marina to Arabian Ranches, we coordinate door-to-door pet relocation for residents across every Dubai community — MOCCAE permits, breed checks, IATA crates, customs and delivery, with WhatsApp updates at every step.</p>
-              <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm hover:shadow-md"><MessageCircle className="w-4 h-4" /> Get a Free Quote on WhatsApp</a>
-            </div>
-            <div><img src="/images/hero-dubai.jpg" alt="The Dubai skyline — pet relocation across all Dubai communities" width={1536} height={1024} loading="eager" className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm" /></div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/hero-dubai.jpg"
+        imageAlt="The Dubai skyline — pet relocation across all Dubai communities"
+        eyebrow="Dubai"
+        title="Pet Relocation Across Every Community in Dubai"
+        subtitle="From Dubai Marina to Arabian Ranches — door-to-door pet relocation with MOCCAE permits, IATA crates, customs and delivery."
+        updated="Updated June 2026"
+      />
 
       {/* INTRO */}
       <section className="bg-white section-padding">

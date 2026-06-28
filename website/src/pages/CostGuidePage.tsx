@@ -27,6 +27,7 @@ import {
   Users,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
+import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 
 const costGuideMsg = 'Hi, I saw your cost guide and want a personalized quote for relocating my [dog/cat] from [country] to Dubai.'
@@ -184,47 +185,14 @@ export default function CostGuidePage() {
         jsonLd={[faqSchema, articleSchema, breadcrumbSchema]}
       />
       {/* ===== HERO ===== */}
-      <section className="relative overflow-hidden text-white">
-        <img src="/images/cost-hero.jpg" alt="Pet owner reviewing transparent Dubai pet relocation costs" loading="eager" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
-        <div className="relative max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold leading-[1.12] tracking-tight mb-6">
-                How Much Does It Cost to Bring a Dog or Cat to Dubai? 2026 Price Breakdown
-              </h1>
-              <p className="text-lg text-white/90 mb-4 leading-relaxed">
-                Bringing a pet to Dubai costs between AED 8,000 and AED 25,000. Most pet owners spend around AED 12,000 for a standard international relocation with professional help.
-              </p>
-              <p className="text-white/80 mb-4 leading-relaxed">
-                That's the honest answer. Most companies won't give it to you. They want your phone number first. They want to "schedule a consultation." They want to sell you before you can compare.
-              </p>
-              <p className="text-white/80 mb-6 leading-relaxed">
-                At Dubai Pet Relocation, we do the opposite. We publish every cost. We explain why each one exists. And we show you exactly where your money goes — before you ever message us.
-              </p>
-              <ul className="text-white/80 text-sm space-y-1 mb-8">
-                <li>Every dirham you'll spend, line by line</li>
-                <li>Why costs vary by route, pet size, and season</li>
-                <li>What competitors charge (and what they hide)</li>
-                <li>Whether DIY is actually cheaper (spoiler: usually not)</li>
-                <li>How to get a firm, personalized quote in under 15 minutes</li>
-              </ul>
-              <p className="text-white/90 font-medium mb-6">Ready to know exactly what you'll pay? Let's break it down.</p>
-              <WhatsAppCta text="Get a Personalized Quote on WhatsApp" fullWidth className="sm:w-auto sm:inline-flex" />
-            </div>
-            <div className="hidden lg:block">
-              <img
-                src="/images/cost-hero.jpg"
-                alt="Golden Retriever in IATA travel crate at Dubai Airport cargo terminal, ready for international pet relocation"
-                loading="lazy"
-                width={1536}
-                height={1024}
-                className="rounded-2xl shadow-2xl w-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/cost-hero.jpg"
+        imageAlt="Pet owner reviewing transparent Dubai pet relocation costs"
+        eyebrow="Pet Relocation Guide"
+        title="How Much Does It Cost to Bring a Dog or Cat to Dubai? 2026 Price Breakdown"
+        subtitle="Bringing a pet to Dubai costs AED 8,000–25,000, around AED 12,000 typical. We publish every cost, line by line — before you ever message us."
+        updated="Updated June 2026"
+      />
 
       {/* ===== WHY COSTS VARY ===== */}
       <Section className="bg-white">

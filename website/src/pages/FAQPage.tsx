@@ -6,6 +6,7 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
+import Hero from '../components/Hero.tsx'
 
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
   const [open, setOpen] = useState(false)
@@ -242,44 +243,27 @@ export default function FAQPage() {
       <Breadcrumb items={[{ label: 'FAQ' }]} />
 
       {/* ═══════════ HERO ═══════════ */}
-      <section className="bg-white section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
-                Pet Relocation FAQ — Everything You Need to Know
-              </h1>
-              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
-                Browse answers by category or search for your specific question. If you cannot find what you are looking for, just WhatsApp us — we reply within 15 minutes during business hours.
-              </p>
-              <div className="relative max-w-lg mx-auto lg:mx-0">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#8A8A8A]" />
-                <input
-                  type="text"
-                  placeholder="Search questions..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-[#F0F2FB] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5]"
-                />
-              </div>
-            </div>
-            <div>
-              <img
-                src="/images/faq-hero.jpg"
-                alt="A golden retriever beside pet relocation documents and a checklist, representing clear answers"
-                width={1536}
-                height={1024}
-                loading="eager"
-                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/faq-hero.jpg"
+        imageAlt="A golden retriever beside pet relocation documents and a checklist, representing clear answers"
+        eyebrow="FAQ"
+        title="Pet Relocation FAQ — Everything You Need to Know"
+        subtitle="Browse answers by category or search your specific question. Can't find it? WhatsApp us — we reply within 15 minutes during business hours."
+      />
 
       {/* ═══════════ CATEGORY FILTERS ═══════════ */}
       <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="relative max-w-lg mx-auto mb-8">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#8A8A8A]" />
+            <input
+              type="text"
+              placeholder="Search questions..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-12 pr-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-white text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5]"
+            />
+          </div>
           <div className="flex flex-wrap gap-2 justify-center mb-10">
             <button
               onClick={() => setActiveCategory('all')}

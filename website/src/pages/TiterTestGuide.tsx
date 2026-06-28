@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  Microscope,
   Shield,
   AlertTriangle,
   ChevronDown,
@@ -21,10 +20,10 @@ import {
   PawPrint,
   RefreshCw,
   Ban,
-  Calendar,
   MapPin,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
+import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import { BASE_URL } from '../lib/seo.ts'
@@ -177,47 +176,14 @@ export default function TiterTestGuide() {
       <Breadcrumb items={[{ label: 'Guides' }, { label: 'Rabies Titer Test Guide' }]} />
 
       {/* Hero */}
-      <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
-                <Microscope className="w-4 h-4" />
-                Rabies Antibody Testing Guide
-              </div>
-              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight mb-5">
-                Rabies Titer Test (RNATT) for Dubai — Complete Guide for Pet Owners
-              </h1>
-              <p className="text-lg text-white/80 leading-relaxed mb-8">
-                If you're bringing your pet to Dubai from a high-risk country, the rabies titer test (RNATT) is one of the most critical — and time-consuming — steps. This guide explains what the test is, which countries require it, how to pass it the first time, and how Dubai Pet Relocation coordinates the entire process.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <WhatsAppBtn
-                  label="Check If I Need a Titer Test"
-                  message="Hi Dubai Pet Relocation, I'm moving my pet to Dubai and I need to know if a rabies titer test is required from my country. Can you help?"
-                />
-                <a
-                  href="#timeline"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
-                >
-                  <Calendar className="w-4 h-4" />
-                  View Timeline
-                </a>
-              </div>
-            </div>
-            <div>
-              <img
-                src="/images/guide-titer.jpg"
-                alt="A veterinarian drawing a blood sample from a calm dog for a rabies titer test"
-                width={1536}
-                height={1024}
-                loading="eager"
-                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/guide-titer.jpg"
+        imageAlt="A veterinarian drawing a blood sample from a calm dog for a rabies titer test"
+        eyebrow="Pet Relocation Guide"
+        title="Rabies Titer Test (RNATT) for Dubai — Complete Guide for Pet Owners"
+        subtitle="From a high-risk country, the RNATT is the most critical, time-consuming step. What it is, who needs it, and how to pass it the first time."
+        updated="Updated June 2026"
+      />
 
       {/* What is Titer Test */}
       <section className="section-padding bg-[#F5F6FD]">

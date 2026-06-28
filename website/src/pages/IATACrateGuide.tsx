@@ -11,7 +11,6 @@ import {
   CheckCircle,
   DollarSign,
   Clock,
-  Box,
   Wind,
   Dog,
   Cat,
@@ -21,6 +20,7 @@ import {
   ExternalLink,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
+import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import { BASE_URL } from '../lib/seo.ts'
@@ -133,47 +133,14 @@ export default function IATACrateGuide() {
       <Breadcrumb items={[{ label: 'Guides' }, { label: 'IATA Pet Crate Requirements' }]} />
 
       {/* Hero */}
-      <section className="relative bg-[#4F5BD5] text-white py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-sm font-medium mb-6">
-                <Box className="w-4 h-4" />
-                IATA Live Animal Regulations
-              </div>
-              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight mb-5">
-                IATA Pet Travel Crate Requirements for Dubai Flights — 2026 Guide
-              </h1>
-              <p className="text-lg text-white/80 leading-relaxed mb-8">
-                The wrong crate can get your pet refused at the airport. This guide covers IATA LAR sizing rules, construction requirements, airline-specific policies, and how Dubai Pet Relocation ensures your pet's crate is 100% compliant for safe travel to Dubai.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <WhatsAppBtn
-                  label="Get Crate Sizing Help"
-                  message="Hi Dubai Pet Relocation, I need help choosing the right IATA-compliant crate for my pet's flight to Dubai. Can you assist with sizing?"
-                />
-                <a
-                  href="#sizing-formula"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
-                >
-                  <Ruler className="w-4 h-4" />
-                  Sizing Formula
-                </a>
-              </div>
-            </div>
-            <div>
-              <img
-                src="/images/guide-iata-crate.jpg"
-                alt="An IATA-approved airline pet travel crate with a calm dog resting comfortably inside"
-                width={1536}
-                height={1024}
-                loading="eager"
-                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/guide-iata-crate.jpg"
+        imageAlt="An IATA-approved airline pet travel crate with a calm dog resting comfortably inside"
+        eyebrow="Pet Relocation Guide"
+        title="IATA Pet Travel Crate Requirements for Dubai Flights — 2026 Guide"
+        subtitle="The wrong crate can get your pet refused at the airport. IATA LAR sizing, construction rules, and airline-specific policies for safe travel to Dubai."
+        updated="Updated June 2026"
+      />
 
       {/* What is IATA LAR */}
       <section className="section-padding bg-[#F5F6FD]">

@@ -6,6 +6,7 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
+import Hero from '../components/Hero.tsx'
 
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
   const [open, setOpen] = useState(false)
@@ -89,34 +90,13 @@ export default function AboutPage() {
       <Breadcrumb items={[{ label: 'About' }]} />
 
       {/* ═══════════ HERO ═══════════ */}
-      <section className="bg-white section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-6">
-                About Dubai Pet Relocation — Transparent Pet Relocation for Dubai
-              </h1>
-              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-8">
-                We are a small team of pet owners and logistics experts based in Dubai. We built Dubai Pet Relocation because we experienced firsthand how confusing, opaque, and stressful pet relocation can be — and we believe it does not have to be that way.
-              </p>
-              <WhatsAppCta
-                text="Get a Free Consultation"
-                message="Hi Dubai Pet Relocation team! I would love to learn more about your services and how you can help with my pet relocation."
-              />
-            </div>
-            <div>
-              <img
-                src="/images/about-hero.jpg"
-                alt="A happy dog and cat relaxing at home in Dubai, well cared for during their relocation"
-                width={1536}
-                height={1024}
-                loading="eager"
-                className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/about-hero.jpg"
+        imageAlt="A happy dog and cat relaxing at home in Dubai, well cared for during their relocation"
+        eyebrow="About Us"
+        title="About Dubai Pet Relocation — Transparent Pet Relocation for Dubai"
+        subtitle="A small Dubai team of pet owners and logistics experts, making pet relocation clear instead of confusing, opaque, and stressful."
+      />
 
       {/* ═══════════ OUR STORY ═══════════ */}
       <section className="bg-[#F5F6FD] section-padding">

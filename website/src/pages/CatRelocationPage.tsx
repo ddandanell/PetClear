@@ -29,6 +29,7 @@ import {
   Ban,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
+import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
@@ -164,69 +165,16 @@ export default function CatRelocationPage() {
       />
 
       {/* ─── HERO ─── */}
-      <section className="relative bg-white overflow-hidden">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="flex items-center gap-2 mb-4">
-                <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
-                <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Cat Relocation</span>
-              </div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#4F5BD5] mb-3">Updated June 2026</p>
-              <h1 className="text-[32px] sm:text-[40px] lg:text-[52px] font-bold text-[#2A2A2A] leading-[1.12] tracking-tight mb-6">
-                Cat Relocation to Dubai: Bringing Your Cat Home Safely
-              </h1>
-              <p className="text-lg sm:text-xl text-[#5A5A5A] leading-relaxed mb-6">
-                From pickup to reunion, we handle every step of your cat's journey to Dubai — with clear pricing, honest answers, and updates on WhatsApp at every checkpoint.
-              </p>
-              <p className="text-base text-[#5A5A5A] leading-relaxed mb-4">
-                Your cat isn't just a pet. They're the one who greets you at the door, claims the warmest spot on the sofa, and somehow knows when you need them close. The thought of putting them on a plane? It feels overwhelming. We understand — because we've been there.
-              </p>
-              <p className="text-base text-[#5A5A5A] leading-relaxed mb-4">
-                At Dubai Pet Relocation, we help cat owners relocate their cats to Dubai every week. We know the specific worries cat parents have: Will my cat be terrified? Will they eat or drink? What if they escape? What if something goes wrong? We name those fears — then we solve them, step by step.
-              </p>
-              <p className="text-base text-[#5A5A5A] leading-relaxed mb-8">
-                We are a cat relocation concierge, not an airline. We coordinate vetted partners for flights, veterinary checks, IATA crates, customs clearance, and door-to-door delivery. You get one WhatsApp thread, one point of contact, and complete visibility from the moment your cat leaves your home to the moment they arrive in yours.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <WhatsAppBtn
-                  label="Get a cat relocation quote"
-                  message="Hi, I want to relocate my cat to Dubai. Can you help me understand the process and cost?"
-                />
-                <Link
-                  to="/how-it-works/"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors"
-                >
-                  How it works
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-              <div className="flex flex-wrap items-center gap-4 text-xs text-[#8A8A8A]">
-                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-[#4F5BD5]" /> Vetted relocation partners</span>
-                <span className="flex items-center gap-1"><Shield className="w-3.5 h-3.5 text-[#4F5BD5]" /> MOCCAE import guidance</span>
-                <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5 text-[#4F5BD5]" /> IATA-compliant</span>
-                <span className="flex items-center gap-1"><Heart className="w-3.5 h-3.5 text-[#4F5BD5]" /> 150+ cats relocated</span>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <div className="relative rounded-[20px] overflow-hidden shadow-md">
-                <img
-                  src="/images/hero-cat.jpg"
-                  alt="A calm cat inside an IATA-approved travel crate, ready for a safe journey to Dubai."
-                  className="w-full h-64 sm:h-80 lg:h-96 object-cover"
-                  loading="eager"
-                  width={1536}
-                  height={1024}
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#3A45B0]/95 via-[#4F5BD5]/88 to-[#6E78E0]/80" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="text-white text-sm font-medium">Vetted relocation partners · MOCCAE import guidance · IATA-compliant</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        image="/images/hero-cat.jpg"
+        imageAlt="A calm cat inside an IATA-approved travel crate, ready for a safe journey to Dubai."
+        eyebrow="Cat Relocation"
+        title="Cat Relocation to Dubai: Bringing Your Cat Home Safely"
+        subtitle="From pickup to reunion, we handle every step — clear pricing, honest answers, and WhatsApp updates at every checkpoint."
+        updated="Updated June 2026"
+        whatsappMessage="Hi, I want to relocate my cat to Dubai. Can you help me understand the process and cost?"
+        secondary={{ label: 'How it works', to: '/how-it-works/' }}
+      />
 
       {/* ─── WORRIES ─── */}
       <section className="py-20 lg:py-28">
