@@ -123,6 +123,20 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* ═══════════ FEATURE IMAGE ═══════════ */}
+      <section className="bg-white pb-10 sm:pb-14">
+        <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
+          <img
+            src="/images/contact-hero.jpg"
+            alt="A friendly dog beside a welcoming Dubai office desk, ready to help with your pet relocation"
+            width={1536}
+            height={1024}
+            loading="eager"
+            className="w-full h-[280px] sm:h-[360px] lg:h-[420px] object-cover rounded-[24px] shadow-sm"
+          />
+        </div>
+      </section>
+
       {/* ═══════════ CONTACT INFO CARDS ═══════════ */}
       <section className="bg-[#FDFBF8] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">

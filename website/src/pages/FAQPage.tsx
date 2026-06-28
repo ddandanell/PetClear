@@ -265,6 +265,20 @@ export default function FAQPage() {
         </div>
       </section>
 
+      {/* ═══════════ FEATURE IMAGE ═══════════ */}
+      <section className="bg-white pb-10 sm:pb-14">
+        <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
+          <img
+            src="/images/faq-hero.jpg"
+            alt="A golden retriever beside pet relocation documents and a checklist, representing clear answers"
+            width={1536}
+            height={1024}
+            loading="eager"
+            className="w-full h-[280px] sm:h-[360px] lg:h-[420px] object-cover rounded-[24px] shadow-sm"
+          />
+        </div>
+      </section>
+
       {/* ═══════════ CATEGORY FILTERS ═══════════ */}
       <section className="bg-[#FDFBF8] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
