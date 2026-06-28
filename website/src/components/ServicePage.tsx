@@ -122,6 +122,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
             <div className="text-center lg:text-left">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#4F5BD5] mb-3">Updated June 2026</p>
               <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-5">{data.h1}</h1>
               <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">{data.heroValueProp}</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-6">
