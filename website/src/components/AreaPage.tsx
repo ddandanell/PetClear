@@ -1,0 +1,180 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { MessageCircle, ChevronDown, ChevronUp, ArrowRight, MapPin, CheckCircle } from 'lucide-react'
+import SEOHead from './SEOHead.tsx'
+import Breadcrumb from './Breadcrumb.tsx'
+import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import type { ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
+import type { AreaPageData } from '../types/areaPage.ts'
+
+function Faq({ q, a }: ServiceFAQ) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="faq-item">
+      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
+        <span className="pr-4">{q}</span>
+        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
+      </button>
+      {open && <div className="faq-answer">{a}</div>}
+    </div>
+  )
+}
+
+function Block({ block }: { block: ServiceBlock }) {
+  if (block.type === 'p') return <p className="text-[#5A5A5A] leading-relaxed mb-4">{block.text}</p>
+  if (block.type === 'list')
+    return (
+      <ul className="space-y-2 mb-4">
+        {block.items.map((it, i) => (
+          <li key={i} className="flex items-start gap-2 text-[#5A5A5A]">
+            <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" /><span>{it}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  if (block.type === 'steps')
+    return (
+      <div className="space-y-4 mb-4">
+        {block.steps.map((s, i) => (
+          <div key={i} className="flex gap-4">
+            <div className="w-9 h-9 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center font-bold text-sm shrink-0">{i + 1}</div>
+            <div><p className="font-bold text-[#2A2A2A] mb-1">{s.title}</p><p className="text-[#5A5A5A] leading-relaxed">{s.text}</p></div>
+          </div>
+        ))}
+      </div>
+    )
+  return (
+    <div className="overflow-x-auto mb-4">
+      <table className="w-full text-sm border-collapse">
+        <thead><tr className="bg-[#E9ECFB]">{block.headers.map((h, i) => <th key={i} className="text-left font-semibold text-[#2A2A2A] px-4 py-3 border border-[#E2E5F6]">{h}</th>)}</tr></thead>
+        <tbody>{block.rows.map((r, i) => <tr key={i} className={i % 2 ? 'bg-[#F5F6FD]' : 'bg-white'}>{r.map((c, j) => <td key={j} className="px-4 py-3 border border-[#E2E5F6] text-[#5A5A5A]">{c}</td>)}</tr>)}</tbody>
+      </table>
+    </div>
+  )
+}
+
+export default function AreaPage({ data }: { data: AreaPageData }) {
+  const url = `${BASE_URL}/dubai/${data.slug}/`
+  const wa = getWhatsAppUrl(data.whatsappMessage)
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Dubai', item: `${BASE_URL}/dubai/` },
+      { '@type': 'ListItem', position: 3, name: data.areaName, item: url },
+    ],
+  }
+  const localBusiness: Record<string, unknown> = {
+    '@context': 'https://schema.org', '@type': 'LocalBusiness', name: `${siteConfig.name} — ${data.areaName}`,
+    url, areaServed: `${data.areaName}, Dubai, UAE`, telephone: '+971551744849',
+    description: data.metaDescription, address: { '@type': 'PostalAddress', addressLocality: data.areaName, addressRegion: 'Dubai', addressCountry: 'AE' },
+  }
+  if (data.geo) localBusiness.geo = { '@type': 'GeoCoordinates', latitude: data.geo.lat, longitude: data.geo.lng }
+  const faqSchema = {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: data.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  }
+
+  return (
+    <div>
+      <SEOHead
+        meta={{ title: data.seoTitle, description: data.metaDescription, keywords: data.keywords, canonical: url, ogType: 'website' }}
+        schemas={[breadcrumbSchema, localBusiness, faqSchema]}
+      />
+      <Breadcrumb items={[{ label: 'Dubai', path: '/dubai/' }, { label: data.areaName }]} />
+
+      {/* HERO */}
+      <section className="bg-white section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#4F5BD5] bg-[#E9ECFB] px-3 py-1.5 rounded-full mb-4"><MapPin className="w-3.5 h-3.5" /> {data.areaName}, Dubai</span>
+              <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-5">{data.h1}</h1>
+              <p className="text-lg text-[#5A5A5A] leading-relaxed mb-6">{data.heroValueProp}</p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm hover:shadow-md"><MessageCircle className="w-4 h-4" /> Get a Free Quote on WhatsApp</a>
+                <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">Call {siteConfig.phone}</a>
+              </div>
+            </div>
+            <div><img src={data.heroImage} alt={data.heroImageAlt} width={1536} height={1024} loading="eager" className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[28px] shadow-sm" /></div>
+          </div>
+        </div>
+      </section>
+
+      {/* INTRO */}
+      <section className="bg-white pb-2">
+        <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+          <p className="text-[#5A5A5A] leading-relaxed text-lg">{data.intro}</p>
+        </div>
+      </section>
+
+      {/* LANDMARKS */}
+      {data.landmarks.length > 0 && (
+        <section className="bg-white section-padding">
+          <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+            <h2 className="text-[22px] sm:text-[28px] font-bold text-[#2A2A2A] mb-4">Pet Relocation Across {data.areaName}</h2>
+            <p className="text-[#5A5A5A] mb-4">We coordinate pet relocation for residents near:</p>
+            <div className="flex flex-wrap gap-2">
+              {data.landmarks.map((l, i) => (
+                <span key={i} className="inline-flex items-center gap-1.5 text-sm text-[#4F5BD5] bg-[#F5F6FD] px-3 py-2 rounded-xl"><MapPin className="w-3.5 h-3.5" /> {l}</span>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* SECTIONS */}
+      {data.sections.map((sec, i) => (
+        <section key={i} className={`section-padding ${i % 2 ? 'bg-[#F5F6FD]' : 'bg-white'}`}>
+          <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#2A2A2A] mb-4">{sec.h2}</h2>
+            {sec.intro && <p className="text-[#5A5A5A] leading-relaxed mb-4">{sec.intro}</p>}
+            {sec.body.map((b, j) => <Block key={j} block={b} />)}
+          </div>
+        </section>
+      ))}
+
+      {data.vetsNote && (
+        <section className="bg-white section-padding">
+          <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+            <h2 className="text-[22px] sm:text-[28px] font-bold text-[#2A2A2A] mb-3">Local Veterinary Support in {data.areaName}</h2>
+            <p className="text-[#5A5A5A] leading-relaxed">{data.vetsNote}</p>
+          </div>
+        </section>
+      )}
+
+      {/* FAQ */}
+      {data.faq.length > 0 && (
+        <section className="bg-[#F5F6FD] section-padding">
+          <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8">
+            <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-6 text-center">{data.areaName} Pet Relocation FAQ</h2>
+            <div className="space-y-3">{data.faq.map((f, i) => <Faq key={i} {...f} />)}</div>
+          </div>
+        </section>
+      )}
+
+      {/* RELATED AREAS */}
+      <section className="bg-white section-padding">
+        <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-6">Other Dubai Areas We Serve</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <Link to="/dubai/" className="flex items-center justify-between gap-2 bg-[#E9ECFB] hover:bg-[#dfe3fb] rounded-2xl px-5 py-4 text-[#2A2A2A] font-bold text-sm transition-colors">All Dubai areas <ArrowRight className="w-4 h-4 text-[#4F5BD5] shrink-0" /></Link>
+            {data.relatedAreas.map((l, i) => (
+              <Link key={i} to={l.to} className="flex items-center justify-between gap-2 bg-[#F5F6FD] hover:bg-[#E9ECFB] rounded-2xl px-5 py-4 text-[#2A2A2A] font-semibold text-sm transition-colors">{l.label} <ArrowRight className="w-4 h-4 text-[#4F5BD5] shrink-0" /></Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="bg-[#4F5BD5] section-padding">
+        <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">Relocating a pet in {data.areaName}?</h2>
+          <p className="text-white/90 mb-6">Message us on WhatsApp — we reply within 15 minutes during business hours.</p>
+          <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm"><MessageCircle className="w-5 h-5" /> Get Your Free Quote</a>
+        </div>
+      </section>
+    </div>
+  )
+}
