@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  MessageCircle, Shield, Globe, Star, Clock, Heart, CheckCircle, ChevronDown, ChevronUp,
+  MessageCircle, Shield, Star, Clock, Heart, CheckCircle, ChevronDown, ChevronUp,
   Plane, FileCheck, Phone, Users, PawPrint, Dog, Cat, ArrowRight, Calendar, MapPin, Award
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'

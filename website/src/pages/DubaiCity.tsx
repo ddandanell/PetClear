@@ -316,7 +316,7 @@ export default function DubaiCity() {
                   <p className="text-[#5A5A5A] text-xs mt-1">Al Maktoum International Airport — Growing cargo hub with modern animal handling facilities.</p>
                 </div>
                 <div className="p-4 bg-[#F5F6FD] rounded-xl">
-                  <p className="font-semibold text-[#2A2A2A] text-sm"> dnata Cargo Services</p>
+                  <p className="font-semibold text-[#2A2A2A] text-sm">dnata Cargo Services</p>
                   <p className="text-[#5A5A5A] text-xs mt-1">Ground handling partner for multiple airlines at DXB. Experienced with live animal transport protocols.</p>
                 </div>
                 <div className="p-4 bg-[#F5F6FD] rounded-xl">
