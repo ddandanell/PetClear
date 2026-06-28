@@ -25,11 +25,15 @@ export function initAnalytics(): void {
   document.head.appendChild(s)
 
   window.dataLayer = window.dataLayer || []
-  window.gtag = (...args: GtagArgs) => {
-    window.dataLayer.push(args)
+  // gtag.js only processes dataLayer entries pushed as the raw `arguments`
+  // object. Pushing a plain array silently no-ops, so nothing is collected.
+  function gtag(..._args: GtagArgs): void {
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer.push(arguments as unknown as GtagArgs)
   }
-  window.gtag('js', new Date())
-  window.gtag('config', GA4_MEASUREMENT_ID, { anonymize_ip: true })
+  window.gtag = gtag
+  gtag('js', new Date())
+  gtag('config', GA4_MEASUREMENT_ID, { anonymize_ip: true })
 
   // WhatsApp_click + phone_click (event delegation across the whole app)
   document.addEventListener(
