@@ -6,6 +6,7 @@ import Breadcrumb from './Breadcrumb.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import type { ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
 import type { AreaPageData } from '../types/areaPage.ts'
+import { SERVICE_LINKS } from '../data/nav.ts'
 
 function Faq({ q, a }: ServiceFAQ) {
   const [open, setOpen] = useState(false)
@@ -162,6 +163,18 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
             <Link to="/dubai/" className="flex items-center justify-between gap-2 bg-[#E9ECFB] hover:bg-[#dfe3fb] rounded-2xl px-5 py-4 text-[#2A2A2A] font-bold text-sm transition-colors">All Dubai areas <ArrowRight className="w-4 h-4 text-[#4F5BD5] shrink-0" /></Link>
             {data.relatedAreas.map((l, i) => (
               <Link key={i} to={l.to} className="flex items-center justify-between gap-2 bg-[#F5F6FD] hover:bg-[#E9ECFB] rounded-2xl px-5 py-4 text-[#2A2A2A] font-semibold text-sm transition-colors">{l.label} <ArrowRight className="w-4 h-4 text-[#4F5BD5] shrink-0" /></Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OUR SERVICES */}
+      <section className="bg-[#F5F6FD] section-padding">
+        <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[22px] sm:text-[28px] font-bold text-[#2A2A2A] mb-5">Our Pet Relocation Services</h2>
+          <div className="flex flex-wrap gap-2.5">
+            {SERVICE_LINKS.map((l) => (
+              <Link key={l.to} to={l.to} className="text-sm font-medium text-[#4F5BD5] bg-white hover:bg-[#E9ECFB] border border-[#E2E5F6] rounded-full px-4 py-2 transition-colors">{l.label}</Link>
             ))}
           </div>
         </div>

@@ -5,6 +5,7 @@ import SEOHead from './SEOHead.tsx'
 import Breadcrumb from './Breadcrumb.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import type { ServicePageData, ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
+import { SERVICE_LINKS } from '../data/nav.ts'
 
 function Faq({ q, a }: ServiceFAQ) {
   const [open, setOpen] = useState(false)
@@ -185,6 +186,18 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
           </div>
         </section>
       )}
+
+      {/* ALL SERVICES */}
+      <section className="bg-white section-padding">
+        <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[22px] sm:text-[28px] font-bold text-[#2A2A2A] mb-5">Explore All Our Services</h2>
+          <div className="flex flex-wrap gap-2.5">
+            {SERVICE_LINKS.filter((l) => l.to !== `/service/${data.slug}/`).map((l) => (
+              <Link key={l.to} to={l.to} className="text-sm font-medium text-[#4F5BD5] bg-[#F5F6FD] hover:bg-[#E9ECFB] border border-[#E2E5F6] rounded-full px-4 py-2 transition-colors">{l.label}</Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* FINAL CTA */}
       <section className="bg-[#4F5BD5] section-padding">
