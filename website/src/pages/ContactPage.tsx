@@ -5,6 +5,7 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import { track } from '../lib/analytics.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 
 const Card = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
@@ -54,6 +55,7 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    track('form_submit', { page_path: '/contact/' })
     setSubmitted(true)
     setFormData({ name: '', email: '', petType: '', message: '' })
   }

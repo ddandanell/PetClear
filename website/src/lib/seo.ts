@@ -16,10 +16,15 @@ export function buildCanonical(path: string): string {
   return `${BASE_URL}${path}`
 }
 
-export function getWhatsAppUrl(message: string): string {
-  // Placeholder — replace with real number when available
+export function getWhatsAppUrl(message: string, campaign = 'pet-relocation'): string {
   const phone = '971551744849'
-  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+  const params = new URLSearchParams({
+    text: message,
+    utm_source: 'site',
+    utm_medium: 'whatsapp',
+    utm_campaign: campaign,
+  })
+  return `https://wa.me/${phone}?${params.toString()}`
 }
 
 export const defaultOGImage = `${BASE_URL}/assets/og-default.jpg`
