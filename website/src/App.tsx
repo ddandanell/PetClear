@@ -41,6 +41,10 @@ const TiterTestGuide = lazy(() => import('./pages/TiterTestGuide.tsx'))
 const DubaiCity = lazy(() => import('./pages/DubaiCity.tsx'))
 const AbuDhabiCity = lazy(() => import('./pages/AbuDhabiCity.tsx'))
 
+// Data-driven service pages (Blue Book Phase 2)
+const ServicePage = lazy(() => import('./components/ServicePage.tsx'))
+import { servicePages } from './data/services/index.ts'
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -91,6 +95,11 @@ export default function App() {
           {/* City pages */}
           <Route path="/cities/dubai/" element={<DubaiCity />} />
           <Route path="/cities/abu-dhabi/" element={<AbuDhabiCity />} />
+
+          {/* Service pages (data-driven, Blue Book Phase 2) */}
+          {servicePages.map((p) => (
+            <Route key={p.slug} path={`/service/${p.slug}/`} element={<ServicePage data={p} />} />
+          ))}
         </Routes>
       </Layout>
     </BrowserRouter>
