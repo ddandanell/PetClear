@@ -6,7 +6,7 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, siteConfig, BASE_URL } from '../lib/seo.ts'
-import { SERVICE_LINKS, TOP_AREA_LINKS } from '../data/nav.ts'
+import { SERVICE_LINKS, TOP_AREA_LINKS, ROUTE_LINKS } from '../data/nav.ts'
 import Testimonials from '../components/Testimonials.tsx'
 import Hero from '../components/Hero.tsx'
 import TeamSupport from '../components/TeamSupport.tsx'
@@ -498,6 +498,132 @@ export default function HomePage() {
                 <MapPin className="w-3.5 h-3.5 text-[#4F5BD5]" />
                 {a.label}
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ AREAS WE SERVE ACROSS DUBAI ═══════════ */}
+      <section className="bg-white section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Local Coverage</span>
+            <h2 className="text-section mt-3 mb-4">Areas We Serve Across Dubai</h2>
+            <p className="text-body-large max-w-2xl mx-auto">
+              From waterfront towers to gated villa communities, we coordinate door-to-door pet relocation in every corner of Dubai.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link
+              to="/dubai/"
+              className="group flex flex-col justify-between gap-3 rounded-[20px] bg-[#4F5BD5] px-6 py-6 text-white shadow-sm transition hover:bg-[#3A45B0] hover:shadow-md sm:col-span-2 lg:col-span-1"
+            >
+              <div>
+                <div className="mb-3 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-white/90" />
+                  <span className="text-xs font-semibold uppercase tracking-wider text-white/70">Dubai Hub</span>
+                </div>
+                <p className="text-xl font-bold">Pet Relocation in Dubai</p>
+                <p className="mt-2 text-sm text-white/70">Your starting point for every Dubai community we cover.</p>
+              </div>
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white">
+                Explore the Dubai hub <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+            {TOP_AREA_LINKS.filter((a) => a.to !== '/dubai/').map((a) => (
+              <Link
+                key={a.to}
+                to={a.to}
+                className="group flex items-center justify-between gap-3 rounded-[20px] border border-[#E6E8F5] bg-white px-5 py-5 transition hover:border-[#4F5BD5] hover:shadow-md"
+              >
+                <span className="flex items-center gap-2.5">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[12px] bg-[#EEF0FC]">
+                    <MapPin className="w-4 h-4 text-[#4F5BD5]" />
+                  </span>
+                  <span className="font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5]">{a.label}</span>
+                </span>
+                <ArrowRight className="w-4 h-4 shrink-0 text-[#9AA0C7] group-hover:text-[#4F5BD5]" />
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              to="/dubai/"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#4F5BD5] hover:underline"
+            >
+              View all Dubai areas <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ POPULAR RELOCATION ROUTES ═══════════ */}
+      <section className="bg-[#F5F6FD] section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">By Origin & Destination</span>
+            <h2 className="text-section mt-3 mb-4">Popular Relocation Routes</h2>
+            <p className="text-body-large max-w-2xl mx-auto">
+              Country-specific requirements, timelines, and costs — explore the route that matches your move to or from Dubai.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {ROUTE_LINKS.map((r) => (
+              <Link
+                key={r.to}
+                to={r.to}
+                className="group flex items-center justify-between gap-3 rounded-[16px] border border-[#E6E8F5] bg-white px-5 py-4 transition hover:border-[#4F5BD5] hover:shadow-md"
+              >
+                <span className="flex items-center gap-2.5">
+                  <Plane className="w-4 h-4 shrink-0 text-[#4F5BD5]" />
+                  <span className="font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5]">{r.label}</span>
+                </span>
+                <ArrowRight className="w-4 h-4 shrink-0 text-[#9AA0C7] group-hover:text-[#4F5BD5]" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ ALL 7 EMIRATES COVERAGE ═══════════ */}
+      <section className="bg-white section-padding">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Nationwide</span>
+            <h2 className="text-section mt-3 mb-4">We Cover All 7 Emirates</h2>
+            <p className="text-body-large max-w-2xl mx-auto">
+              Wherever you are in the UAE, we coordinate safe pet relocation — from Dubai and Abu Dhabi to every northern emirate.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            <Link
+              to="/dubai/"
+              className="group flex items-center justify-between gap-3 rounded-[16px] border border-[#E6E8F5] bg-white px-5 py-4 transition hover:border-[#4F5BD5] hover:shadow-md"
+            >
+              <span className="flex items-center gap-2.5">
+                <MapPin className="w-4 h-4 shrink-0 text-[#4F5BD5]" />
+                <span className="font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5]">Dubai</span>
+              </span>
+              <ArrowRight className="w-4 h-4 shrink-0 text-[#9AA0C7] group-hover:text-[#4F5BD5]" />
+            </Link>
+            <Link
+              to="/cities/abu-dhabi/"
+              className="group flex items-center justify-between gap-3 rounded-[16px] border border-[#E6E8F5] bg-white px-5 py-4 transition hover:border-[#4F5BD5] hover:shadow-md"
+            >
+              <span className="flex items-center gap-2.5">
+                <MapPin className="w-4 h-4 shrink-0 text-[#4F5BD5]" />
+                <span className="font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5]">Abu Dhabi</span>
+              </span>
+              <ArrowRight className="w-4 h-4 shrink-0 text-[#9AA0C7] group-hover:text-[#4F5BD5]" />
+            </Link>
+            {['Sharjah', 'Ajman', 'Ras Al Khaimah', 'Fujairah', 'Umm Al Quwain'].map((emirate) => (
+              <div
+                key={emirate}
+                className="flex items-center gap-2.5 rounded-[16px] border border-[#E6E8F5] bg-[#F5F6FD] px-5 py-4"
+              >
+                <MapPin className="w-4 h-4 shrink-0 text-[#9AA0C7]" />
+                <span className="font-semibold text-[#5A5A5A]">{emirate}</span>
+              </div>
             ))}
           </div>
         </div>

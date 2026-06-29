@@ -149,7 +149,7 @@ export default function ContactPage() {
                 <MapPin className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Location</h3>
-              <p className="text-sm text-[#5A5A5A] mb-3">Al Quoz Industrial Area 4, Al Quoz, Dubai</p>
+              <p className="text-sm text-[#5A5A5A] mb-3">217 Zahra Townhouses, Town Square, Dubai 00000</p>
               <span className="text-[#4F5BD5] font-semibold text-sm">Dubai, United Arab Emirates</span>
             </Card>
           </div>

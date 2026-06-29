@@ -587,6 +587,34 @@ export default function SouthAfricaToDubai() {
         </div>
       </section>
 
+      {/* Related Routes & Next Steps */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Related Routes</span>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Related Routes & Next Steps</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link to="/service/pet-import-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Pet Import to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">Our full import service: permits, customs and door-to-door delivery.</p>
+            </Link>
+            <Link to="/routes/australia-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Australia to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">A comparable long-haul origin with similar requirements.</p>
+            </Link>
+            <Link to="/routes/new-zealand-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">New Zealand to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">Requirements and timeline for New Zealand pet relocations.</p>
+            </Link>
+            <Link to="/routes/uk-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">UK to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">Low-risk route guide for pets relocating from Britain.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Footer Links */}
       <section className="py-8 bg-white border-t border-[#EBEBEB]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">

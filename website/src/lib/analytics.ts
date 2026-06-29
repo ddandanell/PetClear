@@ -15,6 +15,24 @@ export function track(event: string, params: Record<string, unknown> = {}): void
   window.gtag('event', event, params)
 }
 
+/** Classify the current page for conversion attribution (Blue Book tracking spec). */
+function pageType(): string {
+  const p = window.location.pathname
+  if (p === '/') return 'home'
+  if (p.startsWith('/service/')) return 'service'
+  if (p === '/dubai/') return 'emirate_pillar'
+  if (p.startsWith('/dubai/')) return 'area'
+  if (p.startsWith('/cities/')) return 'city'
+  if (p.startsWith('/routes/')) return 'route'
+  if (p.startsWith('/guides/')) return 'guide'
+  return 'core'
+}
+
+/** Standard context attached to every event. */
+function ctx(extra: Record<string, unknown> = {}): Record<string, unknown> {
+  return { page_path: window.location.pathname, page_type: pageType(), ...extra }
+}
+
 /** Initialise GA4 + delegated conversion tracking. Called once on app start. */
 export function initAnalytics(): void {
   if (!GA4_MEASUREMENT_ID || typeof window === 'undefined') return
@@ -43,12 +61,14 @@ export function initAnalytics(): void {
       const a = target?.closest?.('a') as HTMLAnchorElement | null
       if (!a) return
       const href = a.getAttribute('href') || ''
+      const cta_location = a.dataset.cta || 'inline'
+      const device = window.innerWidth < 640 ? 'mobile' : 'desktop'
       if (href.includes('wa.me') || href.includes('api.whatsapp')) {
-        track('WhatsApp_click', { page_path: window.location.pathname })
+        track('WhatsApp_click', ctx({ cta_location, device }))
       } else if (href.startsWith('tel:')) {
-        track('phone_click', { page_path: window.location.pathname })
+        track('phone_click', ctx({ cta_location, device }))
       } else if (href.startsWith('mailto:')) {
-        track('email_click', { page_path: window.location.pathname })
+        track('email_click', ctx({ cta_location, device }))
       }
     },
     { capture: true },
@@ -64,12 +84,12 @@ export function initAnalytics(): void {
       const reached = (window.scrollY + window.innerHeight) / doc.scrollHeight
       if (reached >= 0.75) {
         firedScroll = true
-        track('scroll_75', { page_path: window.location.pathname })
+        track('scroll_75', ctx())
       }
     },
     { passive: true },
   )
 
   // time_3min — engaged session signal
-  window.setTimeout(() => track('time_3min', { page_path: window.location.pathname }), 180000)
+  window.setTimeout(() => track('time_3min', ctx()), 180000)
 }
