@@ -4,10 +4,10 @@ const jvt: AreaPageData = {
   slug: 'jvt',
   areaName: 'Jumeirah Village Triangle (JVT)',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation JVT Dubai | Townhouse Villa Last Mile',
+  seoTitle: 'Pet Transport in JVT | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Jumeirah Village Triangle (JVT) — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote today.',
-  h1: 'Pet Relocation in Jumeirah Village Triangle (JVT)',
+    'Plan pet collection or delivery in JVT. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in JVT',
   primaryKeyword: 'pet relocation jvt',
   heroValueProp:
     'Relocating a dog or cat to or from JVT? We coordinate the whole move for Jumeirah Village Triangle families — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa or townhouse — including larger dogs and multi-pet homes, with WhatsApp updates at every step.',
@@ -39,7 +39,7 @@ const jvt: AreaPageData = {
       h2: 'Moving To or From JVT With a Pet',
       body: [
         { type: 'p', text: 'Most JVT relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer (blood antibody) test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. Because JVT families often own larger dogs — and sometimes more than one pet — we map every animal’s timeline and paperwork in parallel so the household travels together where possible.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer (blood antibody) test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Because JVT families often own larger dogs — and sometimes more than one pet — we map every animal’s timeline and paperwork in parallel so the household travels together where possible.' },
       ],
     },
     {

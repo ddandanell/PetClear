@@ -5,11 +5,11 @@ const petRelocationDubai: ServicePageData = {
   slug: 'pet-relocation-dubai',
   seoTitle: 'Pet Relocation Dubai | Dog & Cat Moving Services',
   metaDescription:
-    'Planning a dog or cat move to or from Dubai? Explore our relocation support, understand the process and send your details for a personalised quote.',
-  h1: 'Pet relocation in Dubai, planned around your move',
+    'Arrange your dog or cat move to or from Dubai with coordinated documents, travel planning and collection. Send your route and dates for a scoped quote.',
+  h1: 'Pet relocation in Dubai planned around your move',
   primaryKeyword: 'pet relocation dubai',
   heroValueProp:
-    'Planning a dog or cat move to or from Dubai? Explore our relocation support, understand the process and send your details for a personalised quote.',
+    'Arrange your dog or cat move to or from Dubai with coordinated documents, travel planning and collection. Send your route and dates for a scoped quote.',
   heroImage: '/images/service-pet-relocation-dubai.jpg',
   heroImageAlt:
     'Handler carrying a cat in a travel carrier toward a Dubai doorway',
@@ -144,7 +144,7 @@ const petRelocationDubai: ServicePageData = {
             },
             {
               title: 'Document check',
-              text: 'We line-check microchip, vaccinations and certificates against the route. Import permits are valid 90 days from issuance. For inbound titer, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — not framed as a 90-day wait after the test.',
+              text: 'We line-check microchip, vaccinations and certificates against the route. Import permits are valid 90 days from issuance. For inbound titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not framed as a 90-day wait after the test.',
             },
             {
               title: 'Crate and cargo booking',
@@ -188,9 +188,9 @@ const petRelocationDubai: ServicePageData = {
         {
           type: 'list',
           items: [
-            'Inbound arrivals: [UAE pet import requirements](/guides/uae-pet-import-requirements/) and [MOCCAE import permit](/guides/moccae-import-permit/)',
+            'Inbound arrivals: [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/) and [MOCCAE import permit](/guides/moccae-import-permit/)',
             'Breed questions: [banned dog breeds in Dubai](/guides/banned-dog-breeds-dubai/)',
-            'Titer timing: [rabies titer test](/guides/rabies-titer-test-dubai/) — sample within 90 days before travel',
+            'Titer timing: [rabies titer test](/guides/rabies-titer-test-dubai/) — use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given',
             'Cost drivers without a fee table: [what pet relocation costs in 2026](/guides/pet-relocation-cost-dubai/)',
             'Talk to the team: [contact](/contact/)',
           ],
@@ -247,7 +247,7 @@ const petRelocationDubai: ServicePageData = {
           type: 'list',
           items: [
             'Eligibility first — breed, season and flight mode before anyone pays cargo',
-            'Document sequence — ISO microchip before rabies, titer sample window when required, MOCCAE import permit valid 90 days from issuance',
+            'Document sequence — ISO microchip before rabies, titre certificate when required, MOCCAE import permit valid 90 days from issuance',
             'Crate measurement and cargo booking with pet-experienced airlines — we do not operate the aircraft',
             'Arrival or departure handover at DXB or DWC, then last-mile into a named Dubai community',
             'A human on WhatsApp +971504782999 during business hours, or email support@dubai-pet-relocation.ae',
@@ -287,7 +287,7 @@ const petRelocationDubai: ServicePageData = {
     },
     {
       q: 'When should the rabies titer blood sample be taken?',
-      a: 'When a titer is required for the route, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml. That is not the same as a 90-day waiting period after the test. See the [rabies titer test](/guides/rabies-titer-test-dubai/) guide.',
+      a: 'When a titer is required for the route, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is not the same as a 90-day waiting period after the test. See the [rabies titer test](/guides/rabies-titer-test-dubai/) guide.',
     },
     {
       q: 'Can you relocate pets inside Dubai as well as internationally?',
@@ -303,7 +303,7 @@ const petRelocationDubai: ServicePageData = {
     },
     {
       q: 'What do you need for a relocation quote?',
-      a: 'Pet type, breed, approximate weight, origin or destination, and a target month. We reply with drivers and a WhatsApp range. We do not publish unverified AED fee tables on this page. You can also [talk to our relocation team](/contact/).',
+      a: 'Pet type, breed, approximate weight, origin or destination, and a target month. We reply with drivers and a WhatsApp range. We do not publish fee tables on this page. You can also [talk to our relocation team](/contact/).',
     },
     {
       q: 'Which flight modes do you arrange?',

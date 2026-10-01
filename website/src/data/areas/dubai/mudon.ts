@@ -4,10 +4,10 @@ const mudon: AreaPageData = {
   slug: 'mudon',
   areaName: 'Mudon',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Mudon Dubai | Family Villa Last Mile',
+  seoTitle: 'Pet Transport in Mudon | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Mudon — door-to-door dog and cat transport, MOCCAE permit guidance and travel crates. WhatsApp quote in 15 minutes.',
-  h1: 'Pet Relocation in Mudon',
+    'Plan pet collection or delivery in Mudon. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Mudon',
   primaryKeyword: 'pet relocation mudon',
   heroValueProp:
     'Relocating a dog or cat to or from Mudon? We coordinate the whole move for this villa community — MOCCAE permits, breed checks, travel crates, customs and door-to-door delivery from your villa — with WhatsApp updates at every step.',
@@ -54,7 +54,7 @@ const mudon: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'The MOCCAE import permit is mandatory — confirm the current fee on the official portal — and we map every other step around it. From low-risk countries the timeline is typically two to six weeks. From high-risk rabies countries that require a rabies titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We build your exact timeline before you commit so there are no surprises.',
+          text: 'The MOCCAE import permit is mandatory — confirm the current fee on the official portal — and we map every other step around it. From low-risk countries the timeline is typically two to six weeks. From high-risk rabies countries that require a rabies titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We build your exact timeline before you commit so there are no surprises.',
         },
       ],
     },
@@ -68,7 +68,7 @@ const mudon: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Mudon',
+      h2: 'Cost of Pet collection and delivery in Mudon',
       body: [
         {
           type: 'p',
@@ -84,7 +84,7 @@ const mudon: AreaPageData = {
     },
     {
       q: 'How long does pet relocation from Mudon take?',
-      a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.',
+      a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.',
     },
     {
       q: 'I have a large dog — can you handle that?',

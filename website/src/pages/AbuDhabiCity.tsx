@@ -3,14 +3,15 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import Hero from '../components/Hero.tsx'
-import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig, localBusinessProvider } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, MapPin, Building, Phone, Dog, Cat, DollarSign, Briefcase, Globe, Scale } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 export default function AbuDhabiCity() {
   const pageUrl = `${BASE_URL}/cities/abu-dhabi/`
-  const pageTitle = 'Pet Relocation Abu Dhabi | Dubai Pet Relocation'
-  const pageDescription = 'Relocate your dog or cat to Abu Dhabi. Etihad in-cabin, ADCM registration, MICCO clearance. Get an Abu Dhabi pet transport quote.'
+  const pageTitle = 'Pet Relocation Abu Dhabi | Collection & Travel Support'
+  const pageDescription = 'Arrange pet relocation support in Abu Dhabi. Plan local collection, documents and airport handovers, then request a quote for your dog or cat.'
   const faqs = [
     {
       question: 'Can my pet fly in the cabin to Abu Dhabi?',
@@ -49,28 +50,13 @@ export default function AbuDhabiCity() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Dubai Pet Relocation",
-      "description": "Professional pet relocation services to and from Abu Dhabi. Dog and cat transport, Etihad in-cabin booking, documentation, customs clearance, and ADCM registration.",
+      "@type": "Service",
+      "name": "Pet relocation to and from Abu Dhabi",
+      "description": "Pet relocation coordination for Abu Dhabi arrivals and departures, including Etihad routing, documents and cargo handover.",
       "url": pageUrl,
-      "telephone": siteConfig.phoneE164,
-      "email": siteConfig.email,
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Abu Dhabi",
-        "addressCountry": "AE"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "24.4539",
-        "longitude": "54.3773"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Abu Dhabi"
-      },
-      "serviceType": "Pet Relocation Services",
-      "priceRange": "$$$"
+      "serviceType": "Pet relocation coordination",
+      "areaServed": "Abu Dhabi, UAE",
+      "provider": localBusinessProvider()
     },
     {
       "@context": "https://schema.org",
@@ -107,13 +93,15 @@ export default function AbuDhabiCity() {
         schemas={schemas}
       />
       <Breadcrumb items={[{ label: 'Cities', path: '/cities/' }, { label: 'Abu Dhabi' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/cities/abu-dhabi/" slot="arrival" />
+<LinkPlanSlot path="/cities/abu-dhabi/" slot="departure" /></div>
 
       {/* HERO */}
       <Hero
         image="/images/hero-abu-dhabi.jpg"
         imageAlt="Pet relocation services in Abu Dhabi skyline"
         eyebrow="Abu Dhabi"
-        title="Pet Relocation Abu Dhabi — Bringing Your Pet to the UAE Capital"
+        title="Pet relocation support in Abu Dhabi"
         subtitle="Etihad in-cabin pet travel, the Abu Dhabi Falcon Hospital, and pet-friendly communities — we handle every step of your move."
         updated="Last verified 18 September 2026"
       />
@@ -517,7 +505,7 @@ export default function AbuDhabiCity() {
                   <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#D4A017] shrink-0 mt-0.5" /> <strong>MICCO Logistics clearance:</strong> All pets arriving at AUH are cleared by MICCO Logistics, not dnata. The Bill of Entry process is different and requires advance coordination.</li>
                   <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#D4A017] shrink-0 mt-0.5" /> <strong>In-cabin weight limit:</strong> Etihad's in-cabin allowance is strictly 8kg (pet + carrier). Heavier pets must travel as cargo. Only one pet per passenger is permitted in the cabin.</li>
                   <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#D4A017] shrink-0 mt-0.5" /> <strong>Banned breeds apply:</strong> The same UAE-wide dangerous breed list applies in Abu Dhabi. Pit Bulls, Rottweilers, Dobermans, and several other breeds are prohibited.</li>
-                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#D4A017] shrink-0 mt-0.5" /> <strong>Same import rules:</strong> Low-risk countries (UK, EU, USA, Australia) require rabies vaccination + health certificate. High-risk countries (India, Philippines, Pakistan) require a rabies titer test (RNATT): sample within 90 days before travel, result ≥0.5 IU/ml — not a wait after the draw.</li>
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#D4A017] shrink-0 mt-0.5" /> <strong>Same import rules:</strong> Low-risk countries (UK, EU, USA, Australia) require rabies vaccination + health certificate. High-risk countries (India, Philippines, Pakistan) require a rabies titer test (RNATT): use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a wait after the draw.</li>
                 </ul>
               </div>
             </div>

@@ -9,6 +9,7 @@ import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 import AirportNetworkRoles from '../components/AirportNetworkRoles.tsx'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
   const [open, setOpen] = useState(false)
@@ -80,9 +81,9 @@ export default function AboutPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Dubai Pet Relocation Company | About Our Coordinators',
+          title: 'About Dubai Pet Relocation | Our Team & Approach',
           description:
-            'Dubai pet relocation company focused on clear MOCCAE timelines, airline options, and WhatsApp coordination (+971504782999).',
+            'Meet the people behind Dubai Pet Relocation and understand how our coordination service works with veterinary, travel and transport partners.',
           canonical: `${BASE_URL}/about/`,
           ogType: 'website',
         }}
@@ -90,13 +91,14 @@ export default function AboutPage() {
       />
 
       <Breadcrumb items={[{ label: 'About' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/about/" slot="corporate" /></div>
 
       {/* ═══════════ HERO ═══════════ */}
       <Hero
         image="/images/about-hero.jpg"
         imageAlt="A happy dog and cat relaxing at home in Dubai, well cared for during their relocation"
         eyebrow="About Us"
-        title="About Dubai Pet Relocation — A Dubai Pet Relocation Company"
+        title="The team behind Dubai Pet Relocation"
         subtitle="A small Dubai team of pet owners and logistics experts, making pet relocation clear instead of confusing, opaque, and stressful."
       />
 
@@ -318,7 +320,7 @@ export default function AboutPage() {
             Ready to Meet the Team Behind Your Pet's Journey?
           </h2>
           <p className="text-white/70 text-base leading-relaxed mb-8">
-            Message us with the pet, the route and the month if you want a proposal. We reply during published hours. Guides stay free to read. An enquiry is not a free consulting session.
+            Message us with the pet, the route and the month if you want a proposal. We reply during published hours and explain the next step before any paid work starts.
           </p>
           <WhatsAppCta
             text={CTA_CHECK_MOVE}

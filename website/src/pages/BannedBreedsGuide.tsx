@@ -56,9 +56,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 }
 
 export default function BannedBreedsGuide() {
-  const title = 'Banned Dog Breeds UAE | MOCCAE Import List'
+  const title = 'Dubai Dog Breed Restrictions | Import Eligibility'
   const description =
-    'Banned dog breeds for UAE import, as printed on the MOCCAE pet import page on 22 September 2026. No fine amount is published on that page. Permit valid 90 days from issuance.'
+    'Check dog breed restrictions before planning a move to Dubai. Find official sources, eligibility questions and the next steps for a breed assessment.'
   const canonical = `${BASE_URL}/guides/banned-dog-breeds-dubai/`
   const ogImage = `${BASE_URL}/assets/og-banned-breeds.jpg`
 
@@ -150,7 +150,7 @@ export default function BannedBreedsGuide() {
         image="/images/guide-banned-breeds.jpg"
         imageAlt="A leashed dog with its owner in a Dubai park"
         eyebrow="Pet relocation guide"
-        title="Banned dog breeds for UAE import"
+        title="Dog breed restrictions for importing to Dubai"
         subtitle="Names below are the ban list on the MOCCAE pet import page. The page does not publish a fine amount. A permitted breed still needs a permit valid 90 days from issuance."
         updated={`Last verified: ${CHECKED}`}
         primaryLabel="Check breed eligibility"
@@ -303,7 +303,7 @@ export default function BannedBreedsGuide() {
             </Link>
             <Link to="/guides/uae-pet-import-requirements/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
               <FileCheck className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">UAE pet import requirements</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">UAE pet import requirements for dogs and cats</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Permit, vaccines and the same ban list in the full file.</p>
             </Link>
             <Link to="/how-it-works/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">

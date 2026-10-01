@@ -212,8 +212,8 @@ export default function CostGuidePage() {
   return (
     <div>
       <SEOHead
-        title="Pet Relocation Dubai Cost | 2026 AED Breakdown"
-        description="Pet relocation Dubai cost ranges by route and mode. Confirm MOCCAE/airline fees on official sources — no invented prices."
+        title="Pet Relocation Cost Dubai | What Changes Your Quote"
+        description="Understand the costs behind a Dubai pet move, including freight, crates, veterinary work and coordination. Learn how to compare itemised quotes."
         canonical={`${BASE_URL}/guides/pet-relocation-cost-dubai/`}
         ogType="article"
         jsonLd={[faqSchema, articleSchema, breadcrumbSchema]}
@@ -223,7 +223,7 @@ export default function CostGuidePage() {
         image="/images/cost-hero.jpg"
         imageAlt="Pet owner reviewing transparent Dubai pet relocation costs"
         eyebrow="Pet Relocation Guide"
-        title="Pet Relocation Dubai Cost — Transparent 2026 Guide"
+        title="What affects the cost of pet relocation in Dubai"
         subtitle="A Dubai pet move is government, veterinary, freight, crate, handling and coordination — not one ticket. Contested MOCCAE fees are confirmed on the portal. Our package is quoted after eligibility."
         updated="Updated September 2026"
         primaryLabel="Get a managed-move quote"
@@ -372,7 +372,7 @@ export default function CostGuidePage() {
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">2. Your origin country</h4>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              From the UK or EU? No rabies titer test needed. From India, Pakistan, or the Philippines? When a titer is required, the blood sample must be taken within 90 days before travel and read ≥0.5 IU/ml — a sample window, not a 90-day wait after the test. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. Extra veterinary prep typically adds AED 1,500–2,500.
+              From the UK or EU? No rabies titer test needed. From India, Pakistan, or the Philippines? When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — the certificate rule, not a 90-day sample window and not a wait after the test. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. Extra veterinary prep typically adds AED 1,500–2,500.
             </p>
           </Card>
           <Card>
@@ -595,7 +595,7 @@ export default function CostGuidePage() {
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card>
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">UK to Dubai</h3>
-            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">The easiest route. No quarantine. No titer test required — the UK is low-risk, so there is no RNATT sample window to plan.</p>
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">The easiest route. No quarantine. No titer test required — the UK is low-risk, so there is no RNATT to plan.</p>
             <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
               <li><strong>Small cat:</strong> AED 8,000–11,000</li>
               <li><strong>Medium dog:</strong> AED 12,000–16,000</li>
@@ -628,15 +628,15 @@ export default function CostGuidePage() {
 
           <Card>
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">India to Dubai</h3>
-            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk country. Titer required: sample within 90 days before travel, result ≥0.5 IU/ml.</p>
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk country. Titer required: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.</p>
             <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
               <li><strong>Small cat:</strong> AED 12,000–16,000</li>
               <li><strong>Medium dog:</strong> AED 16,000–20,000</li>
               <li><strong>Large dog:</strong> AED 18,000–25,000</li>
-              <li><strong>Timeline:</strong> Plan titer sample within 90 days before travel</li>
+              <li><strong>Timeline:</strong> Plan titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given</li>
             </ul>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              The titer test (AED 500–1,200) is required when MOCCAE asks for it: blood sample taken within 90 days before travel, result ≥0.5 IU/ml — a pre-travel sample window, not a 90-day wait after the result. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. The sample must be processed at a WOAH/ISO 17025 accredited lab. We work with vets in Mumbai, Delhi, and Bangalore who understand the UAE export requirements. One wrong document and your pet gets quarantined at your expense.
+              The titer test (AED 500–1,200) is required when MOCCAE asks for it: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. The sample must be processed at a WOAH/ISO 17025 accredited lab. We work with vets in Mumbai, Delhi, and Bangalore who understand the UAE export requirements. One wrong document and your pet gets quarantined at your expense.
             </p>
           </Card>
 
@@ -657,12 +657,12 @@ export default function CostGuidePage() {
 
         <Card className="mb-8">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">Philippines to Dubai</h3>
-          <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk. Titer required: sample within 90 days before travel ≥0.5 IU/ml.</p>
+          <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk. Titer required: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.</p>
           <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
             <li><strong>Small cat:</strong> AED 12,000–16,000</li>
             <li><strong>Medium dog:</strong> AED 15,000–20,000</li>
             <li><strong>Large dog:</strong> AED 18,000–24,000</li>
-            <li><strong>Timeline:</strong> Plan titer sample within 90 days before travel</li>
+            <li><strong>Timeline:</strong> Plan titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given</li>
           </ul>
           <p className="text-sm text-[#5A5A5A] leading-relaxed">
             The Philippines is a popular origin for Dubai's large Filipino expat community. We coordinate the Bureau of Animal Industry export permit, titer test, and Philippine health certificate — then handle the UAE-side import permit and customs clearance.
@@ -952,7 +952,7 @@ export default function CostGuidePage() {
       <Section className="bg-[#F5F6FD]">
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">How to Get an Accurate, Personalized Quote</h2>
         <p className="text-[#5A5A5A] max-w-3xl mb-8 leading-relaxed">
-          Every pet is different. Every route is different. Every season is different. A guide can give you a range. A 5-minute WhatsApp conversation gives you a firm quote.
+          Every pet is different. Every route is different. Every season is different. A guide can give you the cost drivers. A quote uses the pet, the route and the date, and we reply during published hours.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-10">
@@ -968,7 +968,7 @@ export default function CostGuidePage() {
             </ol>
           </Card>
           <Card>
-            <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">What you'll get back in 15 minutes:</h3>
+            <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">What a quote conversation covers:</h3>
             <ul className="space-y-3 text-sm text-[#5A5A5A]">
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>A realistic cost range</span></li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>A clear timeline</span></li>

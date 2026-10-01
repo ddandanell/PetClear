@@ -13,8 +13,8 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 export default function AustraliaToDubai() {
   const pageUrl = `${BASE_URL}/routes/australia-to-dubai/`
-  const pageTitle = 'Pet Relocation Australia to Dubai | Import Guide 2026'
-  const pageDescription = 'Relocate your pet from Australia to Dubai. Low-risk but strict AQIS export rules. Emirates and Qantas. Costs, timeline and AQIS requirements explained.'
+  const pageTitle = 'Pet Relocation Australia to Dubai | Planning & Quote'
+  const pageDescription = 'Moving a dog or cat from Australia to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
   const faqs = [
     {
       question: 'Is Australia a low-risk or high-risk country for pet import to Dubai?',
@@ -101,7 +101,7 @@ export default function AustraliaToDubai() {
         fallbackSrc="/images/hero-australia.jpg"
         imageAlt="Pet relocation from Australia to Dubai"
         eyebrow="Australia → Dubai"
-        title="Australia to Dubai Pet Relocation — Complete Guide"
+        title="Pet relocation from Australia to Dubai"
         subtitle="Australia is rabies-free and low-risk, but AQIS export rules are among the world's strictest. We navigate every step for you."
         updated="Updated June 2026"
       />

@@ -74,9 +74,9 @@ const faqData = [
 
 export default function DubaiPetArrivalGuide() {
   const canonical = `${BASE_URL}${PATH}`
-  const title = 'Dubai Pet Arrival Guide | Clearance to Registration'
+  const title = 'Pet Arrival in Dubai | Airport Handover & Delivery'
   const description =
-    'Pet arrival at Dubai airport: DXB cargo clearance, collection, home settling, and Dubai Municipality / Aleef dog registration within 30 days.'
+    'Prepare for your pet arrival in Dubai, from airport handling and document checks to home delivery. Know what to confirm before the flight departs.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -131,7 +131,7 @@ export default function DubaiPetArrivalGuide() {
         image="/assets/w11/dubai-pet-arrival-cat-first-steps-new-home.jpg"
         imageAlt="Cat taking its first steps into a new Dubai home after airport arrival and clearance"
         eyebrow="Post-arrival guide"
-        title="Your Pet Has Landed in Dubai: Clearance, Collection & Registration"
+        title="What happens when your pet arrives in Dubai"
         subtitle="From the cargo terminal to a quiet first week and Dubai Municipality registration — the journey after the flight, not another copy of the import checklist."
         updated="Updated September 2026"
         primaryLabel="Check Documents"
@@ -230,7 +230,7 @@ export default function DubaiPetArrivalGuide() {
               'ISO 11784/11785 15-digit microchip that scans and matches every certificate.',
               'Government-endorsed origin health certificate inside its short validity window.',
               'Rabies and core vaccination records; chip implanted before the rabies vaccine used for import.',
-              'RNATT / titer result when the origin requires it: sample drawn within 90 days before travel, result ≥0.5 IU/ml — a sample-timing window, not a 90-day wait after the blood draw.',
+              'RNATT / titer result when the origin requires it: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.',
               'External and internal parasite treatments recorded to the pre-travel window.',
               'Air waybill and owner identification (passport, visa or Emirates ID as asked).',
             ].map((item) => (
@@ -279,7 +279,7 @@ export default function DubaiPetArrivalGuide() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section id="airport-handover" className="section-padding scroll-mt-24 bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Collection and the last mile home</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">

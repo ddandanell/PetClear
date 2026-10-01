@@ -10,6 +10,8 @@ export type ServiceBlock =
   | { type: 'cards'; cards: { title: string; text: string; to: string; kind?: string }[] }
 
 export interface ServiceSection {
+  /** In-page target for a contextual link. One id per page. */
+  id?: string
   h2: string
   /** optional short intro under the H2 */
   intro?: string

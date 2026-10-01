@@ -4,10 +4,10 @@ const alBarsha: AreaPageData = {
   slug: 'al-barsha',
   areaName: 'Al Barsha',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Al Barsha | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Transport in Al Barsha | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Al Barsha: Barsha 1-3 villas and apartments, Mall of the Emirates last mile, MOCCAE permits. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Al Barsha',
+    'Plan pet collection or delivery in Al Barsha. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Al Barsha',
   primaryKeyword: 'pet relocation al barsha',
   heroValueProp:
     'Relocating a dog or cat to or from Al Barsha? We plan Barsha 1–3 access, crates and the SZR or Al Khail run — WhatsApp +971 50 478 2999 during business hours.',
@@ -28,7 +28,7 @@ const alBarsha: AreaPageData = {
     'Al Khail Road',
   ],
   vetsNote:
-    'Al Barsha sits on one of Dubai’s denser clinic corridors along the Mall of the Emirates and Al Barsha 1–3 grid — we still do not name practices here and we do not assume partnerships. Use your current vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type, not a sponsored clinic. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Al Barsha sits on one of Dubai’s denser clinic corridors along the Mall of the Emirates and Al Barsha 1–3 grid — we still do not name practices here and we do not assume partnerships. Use your current vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type, not a sponsored clinic. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   intro:
     'Al Barsha is three residential belts — Barsha 1, 2 and 3 — of garden villas and mid-rise apartments sitting on the Mall of the Emirates corridor, not a single tower podium and not a JVC circle. Dogs here use Pond Park and villa streets; cats live in both villa rooms and apartment cores that still have to clear a crate past a concierge. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Al Barsha as its own spoke: pickup is a Barsha number plus a driveway or a podium, then Al Khail or Sheikh Zayed toward cargo. Neighbouring [relocating pets in Umm Suqeim](/dubai/umm-suqeim/) is the coastal villa stretch. [Moving pets to or from JVC](/dubai/jvc/) is the denser circle south of Al Khail. WhatsApp +971504782999 with Barsha 1, 2 or 3, home type and route.',
   sections: [
@@ -119,7 +119,7 @@ const alBarsha: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Inbound is cargo release, then a climate-controlled run that still has to clear the same gate. For the how-to spine see [UAE pet import requirements](/guides/uae-pet-import-requirements/). Community delivery uses the same visitor rules as an outbound pickup.',
+          text: 'Inbound is cargo release, then a climate-controlled run that still has to clear the same gate. For the how-to spine see [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/). Community delivery uses the same visitor rules as an outbound pickup.',
         },
         {
           type: 'table',
@@ -139,7 +139,7 @@ const alBarsha: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file.',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file.',
         },
         {
           type: 'p',
@@ -147,7 +147,7 @@ const alBarsha: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Villa households moving a large dog and a cat need parallel paperwork so the family is not split by one expired sample.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Villa households moving a large dog and a cat need parallel paperwork so the family is not split by one expired certificate.',
         },
       ],
     },
@@ -229,7 +229,7 @@ const alBarsha: AreaPageData = {
     },
     {
       q: 'If my origin needs a rabies titer, do I wait 90 days after the blood draw?',
-      a: 'No. When RNATT is required, take the blood sample within 90 days before travel and keep a result of at least 0.5 IU/ml. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does pet relocation from Al Barsha cost?',

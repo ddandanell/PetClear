@@ -12,6 +12,7 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { ROUTE50_INBOUND_CARDS, ROUTE50_OUTBOUND_CARDS } from '../data/routes/registry.ts'
 import type { RouteHubCard } from '../types/routePage.ts'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 type HubCard = { title: string; to: string; image: string; desc: string }
 
@@ -19,12 +20,12 @@ type HubCard = { title: string; to: string; image: string; desc: string }
 const TEASERS: Record<string, string> = {
   '/routes/uk-to-dubai/': 'Typical 4–6 week prep on a low-risk origin. Freight + crate + coordination quoted per pet; MOCCAE fees confirm-on-portal.',
   '/routes/usa-to-dubai/': 'US origin file plus titer where it applies. Plan several weeks, not a last-minute cargo slot.',
-  '/routes/india-to-dubai/': 'High-risk origin: RNATT sample within 90 days before travel. Longer lead than UK/EU; cargo default.',
+  '/routes/india-to-dubai/': 'High-risk origin: RNATT: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Longer lead than UK/EU; cargo default.',
   '/routes/australia-to-dubai/': 'Strict AU export chain into a UAE import clock. Multi-week prep; government fees confirm-on-portal.',
   '/routes/philippines-to-dubai/': 'High-risk route from MNL and beyond. Titer window + cargo booking — not a cabin hop.',
   '/routes/canada-to-dubai/': 'CFIA-endorsed health certificate into DXB. Typical multi-week prep; no package AED on this card.',
   '/routes/new-zealand-to-dubai/': 'Rabies-free origin still needs a full UAE import file. Timeline follows the permit clock.',
-  '/routes/south-africa-to-dubai/': 'Titer-required origin. Build the sample window first, then crate and cargo.',
+  '/routes/south-africa-to-dubai/': 'Titer-required origin. Check the titre certificate first, then crate and cargo.',
   '/routes/germany-to-dubai/': 'FRA/MUC export into DXB/DWC. EU origin, UAE permit clock — typical 4–8 week prep.',
   '/routes/france-to-dubai/': 'CDG export into DXB/DWC. French origin file; government fees confirm-on-portal.',
   '/routes/singapore-to-dubai/': 'Changi export into UAE cargo. Short sector, full import clock — not a same-week surprise.',
@@ -43,9 +44,9 @@ const TEASERS: Record<string, string> = {
 const INBOUND_CORE: HubCard[] = [
   { title: 'UK to Dubai', to: '/routes/uk-to-dubai/', image: '/assets/route-heroes/route-uk-to-dubai-dog-flag-hero.jpg', desc: 'Low-risk origin: microchip, vaccinations, MOCCAE permit and a DEFRA health certificate.' },
   { title: 'USA to Dubai', to: '/routes/usa-to-dubai/', image: '/assets/route-heroes/route-usa-to-dubai-dog-flag-hero.jpg', desc: 'US origin rules, titer requirements where they apply, and DXB cargo arrival.' },
-  { title: 'India to Dubai', to: '/routes/india-to-dubai/', image: '/assets/route-heroes/route-india-to-dubai-dog-flag-hero.jpg', desc: 'High-risk rabies origin: RNATT sample within 90 days before travel, then permit timing.' },
+  { title: 'India to Dubai', to: '/routes/india-to-dubai/', image: '/assets/route-heroes/route-india-to-dubai-dog-flag-hero.jpg', desc: 'High-risk rabies origin: RNATT: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, then permit timing.' },
   { title: 'Australia to Dubai', to: '/routes/australia-to-dubai/', image: '/assets/route-heroes/route-australia-to-dubai-dog-flag-hero.jpg', desc: 'Strict export chain plus UAE import documents, timed to your flight.' },
-  { title: 'Philippines to Dubai', to: '/routes/philippines-to-dubai/', image: '/assets/route-heroes/route-philippines-to-dubai-dog-flag-hero.jpg', desc: 'High-risk route: RNATT sample window before travel, and cargo booking from Manila and beyond.' },
+  { title: 'Philippines to Dubai', to: '/routes/philippines-to-dubai/', image: '/assets/route-heroes/route-philippines-to-dubai-dog-flag-hero.jpg', desc: 'High-risk route: RNATT certificate before travel, and cargo booking from Manila and beyond.' },
   { title: 'Canada to Dubai', to: '/routes/canada-to-dubai/', image: '/assets/route-heroes/route-canada-to-dubai-dog-flag-hero.jpg', desc: 'CFIA-endorsed health certificate, MOCCAE permit, and DXB clearance.' },
   { title: 'New Zealand to Dubai', to: '/routes/new-zealand-to-dubai/', image: '/assets/route-heroes/route-new-zealand-to-dubai-dog-flag-hero.jpg', desc: 'Rabies-free origin advantage, still with a full UAE import document chain.' },
   { title: 'South Africa to Dubai', to: '/routes/south-africa-to-dubai/', image: '/assets/route-heroes/route-south-africa-to-dubai-dog-flag-hero.jpg', desc: 'Titer-required origin with permit, crate and cargo steps mapped out.' },
@@ -82,7 +83,7 @@ const OUTBOUND = mergeUnique(OUTBOUND_CORE, ROUTE50_OUTBOUND_CARDS)
 const faqs = [
   {
     q: 'Do all inbound routes use the same MOCCAE permit?',
-    a: 'Yes. Every pet entering the UAE needs a MOCCAE import permit valid for 90 days from issuance, wherever the origin. High-risk origins add an RNATT sample taken within 90 days before travel (≥0.5 IU/ml). Confirm government fees on the official portal. Start with [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    a: 'Yes. Every pet entering the UAE needs a MOCCAE import permit valid for 90 days from issuance, wherever the origin. High-risk origins add a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Confirm government fees on the official portal. Start with [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   },
   {
     q: 'Why is an outbound guide not a reversed inbound checklist?',
@@ -141,7 +142,7 @@ export default function RoutesHub() {
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Pet Relocation Routes to and from Dubai',
+    name: 'Pet relocation routes to and from Dubai',
     itemListElement: [...INBOUND, ...OUTBOUND].map((r, i) => ({
       '@type': 'ListItem',
       position: i + 1,
@@ -171,22 +172,25 @@ export default function RoutesHub() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Routes to and from Dubai | Country Guides',
+          title: 'Pet Relocation Routes | To and From Dubai',
           description:
-            'Pet relocation routes to and from Dubai: UK, USA, India, Germany, Singapore and more. Timelines and documents, not invented fees.',
+            'Find pet relocation information for routes into and out of Dubai. Compare documents, travel options and planning steps for your origin and destination.',
           canonical,
           ogType: 'website',
         }}
         schemas={[breadcrumbSchema, itemListSchema, faqSchema]}
       />
       <Breadcrumb items={[{ label: 'Routes' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/routes/" slot="after-service" />
+<LinkPlanSlot path="/routes/" slot="inbound-group" />
+<LinkPlanSlot path="/routes/" slot="outbound-group" /></div>
 
       <Hero
         image="/images/import-hero.jpg"
         imageAlt="A dog ready for an international flight beside travel documents"
         eyebrow="Relocation Routes"
-        title="Pet Relocation Routes to and from Dubai"
-        subtitle="Country guides grouped inbound versus outbound. Each card is a live URL — documents, timing teasers and what we coordinate, not copy-paste across borders."
+        title="Pet relocation routes to and from Dubai"
+        subtitle="Country guides grouped inbound versus outbound. Each card is one corridor: documents, timing and what we coordinate."
         updated="Last verified 18 September 2026"
         secondary={{ label: 'UAE Import Requirements', to: '/guides/uae-pet-import-requirements/' }}
       />
@@ -198,7 +202,7 @@ export default function RoutesHub() {
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Open the country pair that matches the direction of travel. Inbound pages assume a UAE entry file: ISO
             microchip, vaccinations, a MOCCAE import permit valid 90 days from issuance, and — where required — an RNATT
-            sample taken within 90 days before travel at ≥0.5 IU/ml. Outbound pages start from the destination authority
+            with a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Outbound pages start from the destination authority
             and work backwards through a UAE export health certificate. Card teasers give a typical lead time and a cost
             type (freight, crate, coordination). They do not assume AED government fees.
           </p>

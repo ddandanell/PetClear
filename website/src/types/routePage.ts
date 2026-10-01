@@ -27,7 +27,8 @@ export interface RouteAirline {
 
 export interface UaeRules {
   permitValidityDays: 90
-  titerSampleWindowDays: 90
+  /** Conditional certificate life from the shared titre register. Not a pre-travel sample window. */
+  titerCertificateValidityDays: 365
   titerMinIUml: 0.5
   manifestCargoDefault: boolean
   bullets: string[]

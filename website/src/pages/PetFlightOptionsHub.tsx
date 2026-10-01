@@ -13,6 +13,7 @@ import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS, UAE_MANIFEST_CARGO_RULE } from '../data/flightModes.ts'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 const WA =
   'Hi Dubai Pet Relocation! I need help choosing how my pet should fly to or from Dubai. Can you recommend a mode and quote the coordination?'
@@ -108,7 +109,7 @@ export default function PetFlightOptionsHub() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.hub}`
   const title = 'Pet Flight Options Dubai | Cabin, Cargo & Charter'
   const description =
-    'Pet flight options Dubai: in-cabin, manifested cargo, checked baggage limits, and when charter makes sense.'
+    'Compare cabin, checked baggage, cargo and charter options for pets travelling to or from Dubai. Check eligibility by airline, route and pet size.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -141,12 +142,13 @@ export default function PetFlightOptionsHub() {
         schemas={[breadcrumbSchema, faqSchema]}
       />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Pet flight options' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/guides/pet-flight-options-dubai/" slot="after-answer" /></div>
 
       <Hero
         image="/assets/flight-modes/pet-flight-options-hub-hero.jpg"
         imageAlt="A coordinator comparing cabin, cargo and charter options for flying a pet to or from Dubai"
         eyebrow="Flight options hub"
-        title="Pet Flight Options from Dubai — Cabin, Cargo, Charter"
+        title="Compare pet flight options to and from Dubai"
         subtitle="Chooser and airline comparison: Etihad cabin into AUH, Emirates / flydubai / Air Arabia no cabin cats or dogs, cargo the Dubai default. Fee grids live on the child guides."
         updated="Updated September 2026"
         primaryLabel="Ask which mode fits"

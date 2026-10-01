@@ -4,10 +4,10 @@ const motorCity: AreaPageData = {
   slug: 'motor-city',
   areaName: 'Motor City',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Motor City | Dog & Cat Transport Dubai',
+  seoTitle: 'Pet Transport in Motor City | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Motor City — door-to-door dog and cat transport, MOCCAE permit coordination and IATA crates. WhatsApp quote in 15 minutes.',
-  h1: 'Pet Relocation in Motor City',
+    'Plan pet collection or delivery in Motor City. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Motor City',
   primaryKeyword: 'pet relocation motor city',
   heroValueProp:
     'Relocating a dog or cat to or from Motor City? We coordinate the whole move for this leafy family community — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa or apartment — with WhatsApp updates at every step.',
@@ -38,7 +38,7 @@ const motorCity: AreaPageData = {
       h2: 'Moving To or From Motor City With a Pet',
       body: [
         { type: 'p', text: 'Most Motor City relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new chapter. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit. The MOCCAE import permit is valid for 90 days from issuance — confirm the current portal fee — so we time the application carefully against your travel date.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer (blood) test is only required for pets coming from high-risk rabies countries — and where it applies, the titer sample must be taken within 90 days before travel (result ≥0.5 IU/ml). We map your exact timeline before you commit so there are no surprises.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer (blood) test is only required for pets coming from high-risk rabies countries — and where it applies, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We map your exact timeline before you commit so there are no surprises.' },
       ],
     },
     {
@@ -48,7 +48,7 @@ const motorCity: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Motor City',
+      h2: 'Cost of Pet collection and delivery in Motor City',
       body: [
         { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government charges include the MOCCAE import permit plus airport release fees (confirm live portal amounts; fees may change); the rest covers veterinary work, the crate, cargo and our coordination. We give you a clear range on WhatsApp before you commit.' },
       ],
@@ -56,7 +56,7 @@ const motorCity: AreaPageData = {
   ],
   faq: [
     { q: 'Do you pick up from my home in Motor City?', a: 'Yes — we arrange door-to-door pickup from your Motor City villa or apartment and coordinate the entire move from there.' },
-    { q: 'How long does pet relocation from Motor City take?', a: 'From low-risk countries, usually 2–6 weeks. A titer test is only needed for high-risk rabies countries — where it applies, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
+    { q: 'How long does pet relocation from Motor City take?', a: 'From low-risk countries, usually 2–6 weeks. A titer test is only needed for high-risk rabies countries — where it applies, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We coordinate the MOCCAE import or export permit — the import permit is valid for 90 days from issuance (confirm the current portal fee) — and we can manage the application on your behalf depending on your service tier.' },
     { q: 'I have a large dog in a Motor City villa — is that a problem?', a: 'Not at all. Motor City’s villas and ground-floor apartments suit larger breeds, and we size an IATA-compliant crate to fit your dog and advise on acclimation before travel day.' },

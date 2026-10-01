@@ -3,10 +3,10 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const internationalPetRelocation: ServicePageData = {
   slug: 'international-pet-relocation',
-  seoTitle: 'International Pet Relocation Dubai | Corridor Checks',
+  seoTitle: 'International Pet Relocation Dubai | Travel Options',
   metaDescription:
-    'International pet relocation Dubai: export/import coordination across major corridors with clear document timelines.',
-  h1: 'International Pet Relocation from Dubai',
+    'Compare international pet travel options from Dubai, including cargo and charter coordination. Check your route and request a tailored relocation quote.',
+  h1: 'International pet relocation from Dubai',
   primaryKeyword: 'international pet relocation dubai',
   heroValueProp:
     'Relocating a dog or cat across borders to or from Dubai? We coordinate documentation, permits, airline-approved crates and customs for your exact destination — connecting you with vetted partners and pet-experienced airlines, and keeping you updated on WhatsApp at every step.',
@@ -16,7 +16,7 @@ const internationalPetRelocation: ServicePageData = {
   whatsappMessage: waEligibility({ need: 'managed move' }),
   snippetQuestion: 'Do you handle pet cargo from Dubai?',
   snippetAnswer:
-    'Yes. Pet cargo from Dubai is coordinated on this international relocation page, not on a separate pet-cargo address. We coordinate manifested live-animal cargo on pet-experienced airlines. Emirates SkyCargo rules and the 500 / 650 / 800 animal-charge table live on the educational cargo guide. Private jet and shared charter have their own quote-only offer pages.',
+    'Yes. This page is for choosing how an international move travels: manifested cargo, a private jet, or a shared charter. Cabin and checked-baggage rules depend on the airline and sit on the flight-options guides. Emirates SkyCargo charges stay on the cargo guide. The broad door-to-door service is a separate page when you already know you want one coordinator for the whole file.',
   trustBadges: ['Route-by-route requirement checks', 'Vetted partners worldwide', 'Pet-experienced airlines', 'WhatsApp support'],
   hasHowTo: false,
   sections: [
@@ -65,7 +65,7 @@ const internationalPetRelocation: ServicePageData = {
             },
             {
               title: 'Map the timeline',
-              text: 'Because requirements vary by destination, we work backwards from your travel date. Some countries are straightforward; others (such as rabies-controlled or island nations) require titer tests and destination-specific calendars, so we plan the sequence carefully. UAE inbound titer, when required, is a sample within 90 days before travel ≥0.5 IU/ml — not a wait after the draw.',
+              text: 'Because requirements vary by destination, we work backwards from your travel date. Some countries are straightforward; others (such as rabies-controlled or island nations) require titer tests and destination-specific calendars, so we plan the sequence carefully. UAE inbound titer, when required, is a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a wait after the draw.',
             },
             {
               title: 'Prepare documents and permits',
@@ -216,7 +216,7 @@ const internationalPetRelocation: ServicePageData = {
     },
     {
       q: 'How do I get started?',
-      a: 'WhatsApp +971504782999 with pet type, breed, origin and destination country if you want a paid eligibility check. We confirm the destination’s exact requirements, map the timeline and send a Get a Quote reply — we do not publish unverified AED package tables. Email support@dubai-pet-relocation.ae if you prefer mail. Packages: [Prices](/prices/).',
+      a: 'WhatsApp +971504782999 with pet type, breed, origin and destination country if you want a quote. We confirm the destination’s exact requirements, map the timeline and send a Get a Quote reply — we do not publish package prices on this page. Email support@dubai-pet-relocation.ae if you prefer mail. Packages: [Prices](/prices/).',
     },
   ],
   relatedLinks: [

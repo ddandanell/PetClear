@@ -247,7 +247,7 @@ export const LINK_EDGES: LinkEdge[] = [
   edge('/guides/rabies-titer-test-dubai/', '/service/pet-import-dubai/', 'Pet import to Dubai', 'money', 'related', 1, 'Commercial file after the sample is in date'),
   edge('/guides/rabies-titer-test-dubai/', '/guides/import-checklist/', 'Import documents checklist', 'import-docs', 'related', 1, 'Where the titer sits in the ordered file'),
   edge('/guides/rabies-titer-test-dubai/', '/guides/moccae-import-permit/', 'MOCCAE import permit (90-day validity)', 'import-docs', 'related', 2, 'Permit clock after a passing result'),
-  edge('/guides/rabies-titer-test-dubai/', '/guides/uae-pet-import-requirements/', 'UAE pet import requirements', 'import-docs', 'related', 2, 'Statutory checklist this titer rule sits inside'),
+  edge('/guides/rabies-titer-test-dubai/', '/guides/uae-pet-import-requirements/', 'UAE pet import requirements for dogs and cats', 'import-docs', 'related', 2, 'Statutory checklist this titer rule sits inside'),
   edge('/guides/iata-pet-crate-requirements/', '/service/pet-relocation-dubai/', 'Pet relocation Dubai', 'money', 'related', 1, 'Crate sizing inside a managed move'),
   edge('/guides/iata-pet-crate-requirements/', '/service/dog-relocation-dubai/', 'Dog relocation service', 'species-dog', 'related', 1, 'Species service page for crate-led dog files'),
   edge('/guides/iata-pet-crate-requirements/', '/guides/snub-nosed-dogs-flying-uae/', 'Snub-nosed dogs flying to the UAE', 'flight', 'related', 2, 'IATA +10% crate rule for brachycephalic breeds'),

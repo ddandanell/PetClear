@@ -4,10 +4,10 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const sharedPetCharter: ServicePageData = {
   slug: 'shared-pet-charter',
-  seoTitle: 'Shared Pet Charter Flight Dubai | Quote-Only Seats',
+  seoTitle: 'Shared Pet Charter Dubai | Routes & Availability',
   metaDescription:
-    'Shared pet charter flight Dubai: a dedicated lift shared with other pets. A firm seat is Get a Quote. WhatsApp +971504782999.',
-  h1: 'Shared Pet Charter Flight Dubai — Quote-Only',
+    'Explore shared charter options for you and your pet from Dubai. Check the route, travel window and booking conditions before requesting availability.',
+  h1: 'Shared pet charter options from Dubai',
   primaryKeyword: 'shared pet charter flight Dubai',
   heroValueProp:
     'A menu offer for a dedicated lift shared with other pets — more control than a scheduled belly hold, without buying the whole aircraft. This is not the door-to-door pet relocation page. Market listings below are labelled third-party context. A firm seat is Get a Quote.',
@@ -273,11 +273,11 @@ const sharedPetCharter: ServicePageData = {
     },
     {
       q: 'Can a UK or USA file use a shared charter instead of SkyCargo?',
-      a: 'Only if an operator is filling a lift on that corridor and the animal is accepted. Most UK and USA arrivals still use manifest cargo. Start on [UK to Dubai](/routes/uk-to-dubai/) or [USA to Dubai](/routes/usa-to-dubai/), then send a paid eligibility check if cargo is blocked. Educational cargo process: [Emirates pet cargo](/guides/emirates-pet-cargo/).',
+      a: 'Only if an operator is filling a lift on that corridor and the animal is accepted. Most UK and USA arrivals still use manifest cargo. Start on [UK to Dubai](/routes/uk-to-dubai/) or [USA to Dubai](/routes/usa-to-dubai/), then send a quote if cargo is blocked. Educational cargo process: [Emirates pet cargo](/guides/emirates-pet-cargo/).',
     },
     {
       q: 'When does a shared pet charter beat manifest cargo?',
-      a: 'A shared pet charter Dubai lift beats cargo when the airline will not accept the animal, the heat window, or the crate plan, or when several pets need one dedicated lift. Cargo still wins when a scheduled SkyCargo booking exists. Compare modes on [pet flight options](/guides/pet-flight-options-dubai/). We do not assume a departure or a DPR charter AED. WhatsApp +971504782999 for a paid eligibility check if you want us to test whether a lift is forming.',
+      a: 'A shared pet charter Dubai lift beats cargo when the airline will not accept the animal, the heat window, or the crate plan, or when several pets need one dedicated lift. Cargo still wins when a scheduled SkyCargo booking exists. Compare modes on [pet flight options](/guides/pet-flight-options-dubai/). We do not assume a departure or a DPR charter AED. WhatsApp +971504782999 for a quote if you want us to test whether a lift is forming.',
     },
     {
       q: 'Who is a shared pet charter for?',
@@ -285,7 +285,7 @@ const sharedPetCharter: ServicePageData = {
     },
     {
       q: 'How do I check shared-charter eligibility?',
-      a: 'Send species, breed, origin, destination and month on WhatsApp for a paid eligibility check. We confirm whether a shared lift, empty-leg slot or cargo booking is the honest product. A firm DPR seat is Get a Quote. Coordination packages: [Prices](/prices/). Email support@dubai-pet-relocation.ae if you prefer mail.',
+      a: 'Send species, breed, origin, destination and month on WhatsApp for a quote. We confirm whether a shared lift, empty-leg slot or cargo booking is the honest product. A firm DPR seat is Get a Quote. Coordination packages: [Prices](/prices/). Email support@dubai-pet-relocation.ae if you prefer mail.',
     },
   ],
   relatedLinks: [

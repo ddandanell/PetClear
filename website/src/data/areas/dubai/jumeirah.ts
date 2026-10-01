@@ -4,10 +4,10 @@ const jumeirah: AreaPageData = {
   slug: 'jumeirah',
   areaName: 'Jumeirah',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Jumeirah | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Transport in Jumeirah | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Jumeirah: beachfront villas in Jumeirah 1-3 and nearby last mile. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Jumeirah',
+    'Plan pet collection or delivery in Jumeirah. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Jumeirah',
   primaryKeyword: 'pet relocation jumeirah',
   heroValueProp:
     'Relocating a dog or cat to or from Jumeirah? We plan villa-compound access, crates and the DXB run — WhatsApp +971 50 478 2999 during business hours.',
@@ -27,7 +27,7 @@ const jumeirah: AreaPageData = {
     'Kite Beach',
   ],
   vetsNote:
-    'Jumeirah and the coastal strip toward Umm Suqeim have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Jumeirah and the coastal strip toward Umm Suqeim have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   intro:
     'Jumeirah is a low-rise coastal villa corridor — Jumeirah 1, 2 and 3 — of garden compounds, quiet residential streets and beach access, not a JBR tower stack. Dogs here use private yards and early Kite Beach loops; cats live in villas and in the newer low-rise apartments toward La Mer. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Jumeirah as its own spoke: pickup is a compound gate or a villa driveway, not a promenade pin. We coordinate international files into or out of these homes and the ground run to DXB or DWC. Neighbouring [relocating pets in Umm Suqeim](/dubai/umm-suqeim/) continues the same coast; [Downtown Dubai pet relocation services](/dubai/downtown-dubai/) is boulevard towers. WhatsApp +971504782999 with your Jumeirah 1–3 street and route.',
   sections: [
@@ -103,7 +103,7 @@ const jumeirah: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Port de La Mer and the La Mer boardwalk sit on the Jumeirah 1 beach edge — low-rise marina apartments, a Mediterranean-style harbour and pedestrian promenades rather than a villa driveway. If the pet lives in that beach-apartment fabric, the last mile is a building podium or a harbour drop-off, not a compound boom. We absorb those access angles here so the file is planned correctly; the Port de La Mer URL stays live and we are not firing a merge redirect. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is shade and water, not a victory lap to the boardwalk.',
+          text: 'Port de La Mer and the La Mer boardwalk sit on the Jumeirah 1 beach edge — low-rise marina apartments, a Mediterranean-style harbour and pedestrian promenades rather than a villa driveway. If the pet lives in that beach-apartment fabric, the last mile is a building podium or a harbour drop-off, not a compound boom. If the pet lives at Port de La Mer, use the [Port de La Mer collection page](/dubai/port-de-la-mer/) for that last mile. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is shade and water, not a victory lap to the boardwalk.',
         },
       ],
     },
@@ -138,7 +138,7 @@ const jumeirah: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For the how-to spine see [UAE pet import requirements](/guides/uae-pet-import-requirements/). Door-to-door is [pet relocation Dubai](/service/pet-relocation-dubai/). Commercial inbound is [pet import to Dubai](/service/pet-import-dubai/). Leaving a Jumeirah villa uses [pet export from Dubai](/service/pet-export-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For the how-to spine see [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/). Door-to-door is [pet relocation Dubai](/service/pet-relocation-dubai/). Commercial inbound is [pet import to Dubai](/service/pet-import-dubai/). Leaving a Jumeirah villa uses [pet export from Dubai](/service/pet-export-dubai/).',
         },
         {
           type: 'p',
@@ -146,7 +146,7 @@ const jumeirah: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Villa households moving more than one pet need parallel paperwork so the family is not split by one expired sample.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Villa households moving more than one pet need parallel paperwork so the family is not split by one expired certificate.',
         },
       ],
     },
@@ -250,7 +250,7 @@ const jumeirah: AreaPageData = {
     },
     {
       q: 'If my origin needs a rabies titer, do I wait 90 days after the blood draw?',
-      a: 'No. When RNATT is required, take the blood sample within 90 days before travel and keep a result of at least 0.5 IU/ml. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does pet relocation from Jumeirah cost?',

@@ -24,6 +24,7 @@ import OfficialSources from '../components/OfficialSources.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import GuideDualPath from '../components/GuideDualPath.tsx'
 import { waEligibility } from '../lib/conversionCopy.ts'
+import GuideToc from '../components/GuideToc.tsx'
 
 const CHECKED = '22 September 2026'
 const MOCCAE_IMPORT = 'https://moccae.gov.ae/en/services/import-permit-pets'
@@ -112,8 +113,8 @@ export default function ImportRequirementsPage() {
   return (
     <div className="bg-[#F5F6FD]">
       <SEOHead
-        title="UAE Pet Import Requirements | Permit, Vaccines, Cargo"
-        description="UAE pet import requirements checked 22 September 2026: MOCCAE permit valid 90 days from issuance, species vaccines, and cargo into Dubai. Government fees cited from the official page."
+        title="UAE Pet Import Requirements | Dogs & Cats"
+        description="Check the documents and eligibility requirements for bringing a dog or cat into the UAE. Use official sources and a clear checklist before booking travel."
         canonical={`${BASE_URL}/guides/uae-pet-import-requirements/`}
         ogType="article"
         schemas={[
@@ -155,12 +156,13 @@ export default function ImportRequirementsPage() {
         ]}
       />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'UAE Pet Import Requirements' }]} />
+<div className="mx-auto max-w-[900px] px-5 pt-8"><GuideToc items={[{ href: '#checklist', label: 'Checklist' }, { href: '#documents', label: 'Documents and who is responsible' }, { href: '#order-of-work', label: 'Order of work' }, { href: '#breed-rules', label: 'Breed rules' }]} /></div>
 
       <Hero
         image="/assets/w5/uae-pet-import-requirements-master-checklist-illustration.png"
         imageAlt="Checklist illustration for UAE pet import documents"
         eyebrow="Import rules"
-        title="UAE pet import requirements"
+        title="UAE pet import requirements for dogs and cats"
         subtitle="Permit valid 90 days from issuance, species-specific vaccines, and an airline product that will actually carry the animal. Fees below are the government amounts published on the MOCCAE page."
         updated={`Checked ${CHECKED}`}
         whatsappMessage={waImport}
@@ -192,7 +194,7 @@ export default function ImportRequirementsPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28">
+      <section id="checklist" className="scroll-mt-24 py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-10">
             <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">Checklist</h2>
@@ -222,7 +224,7 @@ export default function ImportRequirementsPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-white">
+      <section id="documents" className="scroll-mt-24 py-20 lg:py-28 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">Documents and who is responsible</h2>
           <p className="text-[#5A5A5A] mb-8 max-w-3xl">
@@ -274,19 +276,12 @@ export default function ImportRequirementsPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28">
+      <section id="order-of-work" className="scroll-mt-24 py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">Order of work</h2>
           <p className="text-[#5A5A5A] mb-6 max-w-3xl">
-            Do the origin rules and the airline acceptance before you spend the permit&apos;s 90 days. The diagram on this page is an illustration. If it still shows an older titre timing, use the text here instead.
+            Do the origin rules and the airline acceptance before you spend the permit&apos;s 90 days. The sequence below is the UAE inbound rule for dogs and cats. Source: the MOCCAE import-permit service, checked 6 September 2026. An older diagram that showed a 90-day sample window is not used.
           </p>
-          <ContentImage
-            src="/assets/w5/uae-pet-import-step-by-step-timeline-diagram.webp"
-            alt="Illustration of the UAE pet import sequence"
-            caption="Illustration only. Permit validity is 90 days from issuance. Titre timing follows the live MOCCAE page, not an older 90-day sample caption."
-            width={1280}
-            height={853}
-          />
           <ol className="mt-8 space-y-4 max-w-3xl text-[#5A5A5A]">
             <li><strong className="text-[#2A2A2A]">Breed and origin.</strong> Dogs: the ban list below. Cats: Bengal and Serval pedigree. Origin: high-risk or low-risk on the live page.</li>
             <li><strong className="text-[#2A2A2A]">Microchip and vaccines.</strong> Chip number must match every certificate. Vaccinate at not less than 12 weeks. Dog and cat vaccine lists are different.</li>
@@ -304,7 +299,7 @@ export default function ImportRequirementsPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-white">
+      <section id="breed-rules" className="scroll-mt-24 py-20 lg:py-28 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">Banned dogs, and the cat exception</h2>
           <p className="text-[#5A5A5A] mb-6 max-w-3xl">

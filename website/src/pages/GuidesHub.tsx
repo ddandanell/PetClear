@@ -6,6 +6,7 @@ import Hero from '../components/Hero.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import HubCrossLinks from '../components/HubCrossLinks.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 const GUIDES = [
   { title: 'Pet Flight Options from Dubai', to: '/guides/pet-flight-options-dubai/', image: '/assets/w-flight-modes/pet-flight-options-card.jpg', desc: 'Cabin, checked baggage, manifest cargo, private jet, shared charter — which mode fits.' },
@@ -42,21 +43,22 @@ export default function GuidesHub() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Guides Dubai | Costs, Permits & Rules',
+          title: 'Dubai Pet Travel Guides | Documents, Costs & Flights',
           description:
-            'Pet relocation guides Dubai: costs, MOCCAE permits, banned breeds, IATA crates, titer timing and summer travel.',
+            'Read practical Dubai pet travel guides covering documents, permits, carriers, costs and flight options. Find the next step for your dog or cat.',
           canonical: `${BASE_URL}/guides/`,
           ogType: 'website',
         }}
         schemas={[itemListSchema]}
       />
       <Breadcrumb items={[{ label: 'Guides' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/guides/" slot="arrival-prep" /></div>
 
       <Hero
         image="/images/import-hero.jpg"
         imageAlt="A dog and cat ready for relocation beside travel documents in a bright Dubai home"
         eyebrow="Pet Relocation Guides"
-        title="Pet Relocation Guides Dubai — Costs, Permits & Rules"
+        title="Dubai pet travel guides"
         subtitle="Clear, current, owner-first guides — costs, permits, breed rules, crates and timelines, written from real Dubai relocations."
         updated="Updated June 2026"
       />

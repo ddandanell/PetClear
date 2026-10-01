@@ -250,7 +250,7 @@ export default function Header() {
                 {CTA_CHECK_MOVE}
               </a>
               <p className="text-center text-[11px] leading-relaxed text-[#5A5A5A]">
-                Guides are free to read. WhatsApp is for people ready to book a managed relocation.
+                WhatsApp is for a quote. We explain the next step before any paid work starts.
               </p>
               <a
                 href={`tel:${PHONE_E164}`}

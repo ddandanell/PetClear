@@ -19,6 +19,7 @@ import {
 } from '../lib/openingHours.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 const emptyForm = {
   name: '',
@@ -132,8 +133,8 @@ export default function ContactPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Contact Dubai Pet Relocation | Pet Relocation Dubai',
-          description: 'Contact Dubai Pet Relocation about a pet move by WhatsApp, email or the form. We reply during published hours.',
+          title: 'Contact Dubai Pet Relocation | Plan Your Pet Move',
+          description: 'Tell us your route, travel dates and pet details. Contact Dubai Pet Relocation by form, phone or WhatsApp to discuss the support your move needs.',
           canonical: `${BASE_URL}/contact/`,
           ogType: 'website',
         }}
@@ -141,6 +142,7 @@ export default function ContactPage() {
       />
 
       <Breadcrumb items={[{ label: 'Contact' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/contact/" slot="after-service" /></div>
 
       {/* ═══════════ HERO ═══════════ */}
       <Hero
@@ -192,7 +194,7 @@ export default function ContactPage() {
                 <MapPin className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Location</h3>
-              <p className="text-sm text-[#5A5A5A] mb-3">217 Zahra Townhouses, Town Square, Dubai 00000</p>
+              <p className="text-sm text-[#5A5A5A] mb-3">217 Zahra Townhouses, Town Square, Dubai</p>
               <span className="text-[#4F5BD5] font-semibold text-sm">Dubai, United Arab Emirates</span>
             </Card>
           </div>
@@ -209,7 +211,7 @@ export default function ContactPage() {
                 Contact Form
               </h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-8">
-                Send the form and we will reply during published hours. If a move is already in progress, WhatsApp is the faster path. This is an enquiry about your move, not a free consulting session.
+                Send the form and we will reply during published hours. If a move is already in progress, WhatsApp is the faster path. We explain the next step before any paid work starts.
               </p>
               {submitted ? (
                 <div className="bg-[#E9ECFB] rounded-[16px] p-6">
@@ -368,7 +370,7 @@ export default function ContactPage() {
               <Card>
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Why WhatsApp Is Fastest</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-                  Our team checks WhatsApp during business hours for people ready to book a paid eligibility check. General process questions belong in the guides. Bespoke document review and coordination are paid.
+                  Our team checks WhatsApp during business hours for people ready to book a quote. General process questions belong in the guides. Bespoke document review and coordination are paid.
                 </p>
                 <WhatsAppCta
                   text={CTA_CHECK_MOVE}
@@ -389,7 +391,7 @@ export default function ContactPage() {
               Quick Questions
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              Common things people ask before reaching out. Guides stay free to read. WhatsApp is for a paid eligibility check.
+              Common things people ask before reaching out. We explain the next step before any paid work starts. WhatsApp is for a quote.
             </p>
           </div>
           <FAQItem
@@ -398,7 +400,7 @@ export default function ContactPage() {
           />
           <FAQItem
             question="What should I include in an enquiry?"
-            answer={<p>Send the origin, destination, pet and the month you hope to travel. Guides stay free to read. An enquiry asks us to look at your move and, if it fits, prepare a proposal. It is not a free consulting session, and nothing is booked until you accept that proposal.</p>}
+            answer={<p>Send the origin, destination, pet and the month you hope to travel. An enquiry asks us to look at your move and, if it fits, prepare a proposal. We explain that proposal before any paid work starts, and nothing is booked until you accept it.</p>}
           />
           <FAQItem
             question="Where do I send documents if I am organising the papers myself?"
@@ -414,7 +416,7 @@ export default function ContactPage() {
             Let's Make Your Pet's Journey Clear
           </h2>
           <p className="text-white/70 text-base leading-relaxed mb-8">
-            Guides stay free to read. WhatsApp and the form are for an enquiry about your move. We reply during published hours.
+            WhatsApp and the form are for an enquiry about your move. We reply during published hours and explain the next step before any paid work starts.
           </p>
           <WhatsAppCta
             text={CTA_CHECK_MOVE}

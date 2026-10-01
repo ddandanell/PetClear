@@ -40,7 +40,7 @@ const OTHER_EMIRATES = ['Ajman', 'Ras Al Khaimah', 'Fujairah', 'Umm Al Quwain']
 const faqs = [
   {
     q: 'Are MOCCAE rules different in Sharjah or Abu Dhabi?',
-    a: 'No. A MOCCAE import permit is federal and valid for 90 days from issuance wherever you land. When a titer is required, the RNATT sample is taken within 90 days before travel and must read ≥0.5 IU/ml. Municipality licensing after arrival is the local layer. Confirm government fees on the official portals.',
+    a: 'No. A MOCCAE import permit is federal and valid for 90 days from issuance wherever you land. When a titer is required, the RNATT sample uses a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Municipality licensing after arrival is the local layer. Confirm government fees on the official portals.',
   },
   {
     q: 'Why are there two Dubai URLs?',
@@ -95,9 +95,9 @@ export default function CitiesHub() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation in UAE Cities | Dubai, Abu Dhabi & Sharjah',
+          title: 'Pet Relocation Across the UAE | Emirates We Serve',
           description:
-            'Pet relocation across UAE cities: Dubai, Abu Dhabi and Sharjah. MOCCAE is federal; registration and last-mile change by emirate.',
+            'Explore pet relocation support across Dubai, Abu Dhabi and Sharjah. Check local collection, airport handovers and the services available for your move.',
           canonical,
           ogType: 'website',
         }}
@@ -109,7 +109,7 @@ export default function CitiesHub() {
         image="/images/hero-dubai.jpg"
         imageAlt="Dubai skyline — pet relocation across UAE cities and emirates"
         eyebrow="UAE Cities & Emirates"
-        title="Pet Relocation Across UAE Cities — Dubai, Abu Dhabi & Sharjah"
+        title="Pet relocation across the UAE"
         subtitle="Federal import rules are the same nationwide. Arrival airport, municipality registration and ground delivery change by emirate — start with Dubai communities, Abu Dhabi or Sharjah."
         updated="Last verified 18 September 2026"
         secondary={{ label: 'Dubai communities', to: '/dubai/' }}
@@ -121,8 +121,7 @@ export default function CitiesHub() {
           <LastVerified className="mb-4 text-xs text-[#8A8A8A]" date="18 September 2026" />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Two layers sit on every UAE pet move. The federal layer is MOCCAE: import permit valid 90 days from issuance,
-            microchip and vaccination file, and — when required — an RNATT sample taken within 90 days before travel with
-            a result of at least 0.5 IU/ml. That layer does not change because the villa is in Sharjah or the tower is in
+            microchip and vaccination file, and — when required — use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That layer does not change because the villa is in Sharjah or the tower is in
             Abu Dhabi. Confirm permit and release fees on the official MOCCAE portal; we do not print contested numerals
             here.
           </p>
@@ -159,7 +158,7 @@ export default function CitiesHub() {
               <p className="text-sm leading-relaxed text-[#5A5A5A]">
                 Entry permission for the whole UAE. Same permit clock in Dubai, Abu Dhabi and Sharjah. Import checklist:{' '}
                 <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  UAE pet import requirements
+                  UAE pet import requirements for dogs and cats
                 </Link>
                 .
               </p>

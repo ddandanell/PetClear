@@ -4,10 +4,10 @@ const ummSuqeim: AreaPageData = {
   slug: 'umm-suqeim',
   areaName: 'Umm Suqeim',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Umm Suqeim | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Transport in Umm Suqeim | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Umm Suqeim: coastal villas on the Jumeirah Beach corridor, Kite Beach last mile. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Umm Suqeim',
+    'Plan pet collection or delivery in Umm Suqeim. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Umm Suqeim',
   primaryKeyword: 'pet relocation umm suqeim',
   heroValueProp:
     'Relocating a dog or cat to or from Umm Suqeim? We plan coastal-villa access, crates and the DXB run — WhatsApp +971 50 478 2999 during business hours.',
@@ -29,7 +29,7 @@ const ummSuqeim: AreaPageData = {
   vetsNote:
     'Umm Suqeim and the Jumeirah coast have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. When you are leaving the UAE, start with [pet export from Dubai](/guides/pet-export-from-dubai/).',
   intro:
-    'Umm Suqeim is a coastal villa corridor — Umm Suqeim 1, 2 and 3 — of garden streets between Jumeirah Beach Road and the sand, looking toward Burj Al Arab and Kite Beach. It is not Palm Jumeirah’s frond gates and it is not Jumeirah 1–3’s compound grid further up the coast. Dogs here use private yards and early beach loops; cats live in the same villas. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Umm Suqeim as its own spoke. Neighbouring [pet transport in Jumeirah](/dubai/jumeirah/) continues the coast north. [Pet transport in Al Wasl](/dubai/al-wasl/) stays on its own inland URL — we link it as a sibling; we do not redirect that page. WhatsApp +971504782999 with Umm Suqeim 1, 2 or 3, street and route.',
+    'Umm Suqeim is a coastal villa corridor — Umm Suqeim 1, 2 and 3 — of garden streets between Jumeirah Beach Road and the sand, looking toward Burj Al Arab and Kite Beach. It is not Palm Jumeirah’s frond gates and it is not Jumeirah 1–3’s compound grid further up the coast. Dogs here use private yards and early beach loops; cats live in the same villas. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Umm Suqeim as its own spoke. Neighbouring [pet transport in Jumeirah](/dubai/jumeirah/) continues the coast north. [Pet transport in Al Wasl](/dubai/al-wasl/) is the page for those inland streets. WhatsApp +971504782999 with Umm Suqeim 1, 2 or 3, street and route.',
   sections: [
     {
       h2: 'Coastal villas in Umm Suqeim 1, 2 and 3',
@@ -103,7 +103,7 @@ const ummSuqeim: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Palm Jumeirah is island gates and trunk roads. Jumeirah 1, 2 and 3 are the villa corridor further north toward La Mer. Al Wasl is inland residential streets behind the coast. If the pet lives in one of those places, that is the honest last mile. We keep [pet transport in Al Wasl](/dubai/al-wasl/) live; we are not firing a merge redirect and we are not renaming that URL. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is shade and water, not a victory lap to the kite launch.',
+          text: 'Palm Jumeirah is island gates and trunk roads. Jumeirah 1, 2 and 3 are the villa corridor further north toward La Mer. Al Wasl is inland residential streets behind the coast. If the pet lives in one of those places, that is the honest last mile. For Al Wasl, use [pet transport in Al Wasl](/dubai/al-wasl/). From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is shade and water, not a victory lap to the kite launch.',
         },
       ],
     },
@@ -138,7 +138,7 @@ const ummSuqeim: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For the how-to spine see [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For the how-to spine see [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
         },
         {
           type: 'p',
@@ -146,7 +146,7 @@ const ummSuqeim: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Villa households moving more than one pet need parallel paperwork so the family is not split by one expired sample.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Villa households moving more than one pet need parallel paperwork so the family is not split by one expired certificate.',
         },
       ],
     },
@@ -220,7 +220,7 @@ const ummSuqeim: AreaPageData = {
     },
     {
       q: 'Did you redirect Al Wasl into Umm Suqeim?',
-      a: 'No. [Pet transport in Al Wasl](/dubai/al-wasl/) stays live. We link it as an inland sibling. We do not rename, remove or redirect existing community URLs.',
+      a: 'No. Al Wasl has its own page: [Pet transport in Al Wasl](/dubai/al-wasl/). Use that page when the pet lives there.',
     },
     {
       q: 'How long from Umm Suqeim to DXB with a crated pet?',
@@ -232,7 +232,7 @@ const ummSuqeim: AreaPageData = {
     },
     {
       q: 'If my origin needs a rabies titer, do I wait 90 days after the blood draw?',
-      a: 'No. When RNATT is required, take the blood sample within 90 days before travel and keep a result of at least 0.5 IU/ml. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does pet relocation from Umm Suqeim cost?',

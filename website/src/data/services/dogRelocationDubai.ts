@@ -3,10 +3,10 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const dogRelocationDubai: ServicePageData = {
   slug: 'dog-relocation-dubai',
-  seoTitle: 'Dog Relocation Dubai | Breed, Crate & Airline Rules',
+  seoTitle: 'Dog Relocation Dubai | Breed, Crate & Travel Planning',
   metaDescription:
-    'Relocate your dog to or from Dubai safely: breed eligibility, IATA crate sizing, vaccination timeline, costs and the snub-nosed/summer airline rules.',
-  h1: 'Dog Relocation Dubai',
+    'Plan a dog move to or from Dubai. Review breed eligibility, crate measurements and travel options, then request coordination for your dog and route.',
+  h1: 'Dog relocation to and from Dubai',
   primaryKeyword: 'dog relocation dubai',
   heroValueProp:
     'Moving a dog to or from Dubai? We check breed eligibility against the official UAE rules, size an IATA-compliant crate, map your vaccination timeline and flag the snub-nosed and summer airline restrictions before you book. Transparent pricing, vetted partners, WhatsApp at every step.',
@@ -144,7 +144,7 @@ const dogRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'As a rough guide, a dog moving between two low-risk countries can often be ready in two to six weeks. When a titer is required, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — a sample window, not a wait after the draw. We build your exact timeline against your origin, destination and travel date, and verify every requirement against the current MOCCAE rules before you commit money to flights.',
+          text: 'As a rough guide, a dog moving between two low-risk countries can often be ready in two to six weeks. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We build your exact timeline against your origin, destination and travel date, and verify every requirement against the current MOCCAE rules before you commit money to flights.',
         },
       ],
     },
@@ -194,7 +194,7 @@ const dogRelocationDubai: ServicePageData = {
     },
     {
       q: 'How long does dog relocation to Dubai take?',
-      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. We map your exact timeline backwards from your travel date.',
+      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a wait after the draw. We map your exact timeline backwards from your travel date.',
     },
     {
       q: 'How much does dog relocation in Dubai cost?',
@@ -206,7 +206,7 @@ const dogRelocationDubai: ServicePageData = {
     { label: 'Pet Import to Dubai', to: '/service/pet-import-dubai/' },
     { label: 'Banned Dog Breeds in Dubai', to: '/guides/banned-dog-breeds-dubai/' },
     { label: 'IATA Pet Crate Requirements', to: '/guides/iata-pet-crate-requirements/' },
-    { label: 'Cat Relocation Dubai', to: '/service/cat-relocation-dubai/' },
+    { label: 'Cat relocation to and from Dubai', to: '/service/cat-relocation-dubai/' },
     { label: 'How It Works', to: '/how-it-works/' },
   ],
 }

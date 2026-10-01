@@ -19,7 +19,7 @@ import LastVerified from '../components/LastVerified.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
-import { BASE_URL, LOGO_URL, getWhatsAppUrl, siteConfig } from '../lib/seo.ts'
+import { BASE_URL, LOGO_URL, getWhatsAppUrl, siteConfig, localBusinessProvider } from '../lib/seo.ts'
 import { PERMIT_VALIDITY, TITER_SAMPLE_RULE } from '../lib/regulatory.ts'
 
 const PATH = '/cities/sharjah/'
@@ -41,7 +41,7 @@ const snippetAnswer =
 const faqData = [
   {
     q: 'Can I relocate my pet to Sharjah?',
-    a: 'Yes. Dogs and cats can move to a Sharjah address when the federal import file is complete and the municipality registration path is followed after arrival. Sharjah is a separate emirate from Dubai, so local licensing is not the Dubai Aleef process by default. We coordinate pickup, cargo, release and delivery to Sharjah communities. Start with [UAE pet import requirements](/guides/uae-pet-import-requirements/) and WhatsApp +971504782999 for a Sharjah quote.',
+    a: 'Yes. Dogs and cats can move to a Sharjah address when the federal import file is complete and the municipality registration path is followed after arrival. Sharjah is a separate emirate from Dubai, so local licensing is not the Dubai Aleef process by default. We coordinate pickup, cargo, release and delivery to Sharjah communities. Start with [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/) and WhatsApp +971504782999 for a Sharjah quote.',
   },
   {
     q: 'Is pet registration in Sharjah the same as Dubai?',
@@ -67,9 +67,9 @@ const faqData = [
 
 export default function SharjahCity() {
   const canonical = `${BASE_URL}${PATH}`
-  const title = 'Pet Relocation Sharjah | Dog & Cat Moves to & from Sharjah'
+  const title = 'Pet Relocation Sharjah | Collection & Travel Support'
   const description =
-    'Relocating a pet to or from Sharjah? Municipality registration, SHJ vs DXB cargo habits, and coordination with Dubai — get a local quote.'
+    'Arrange pet relocation support in Sharjah. Plan local collection, documents and airport handovers, then request a quote for your dog or cat.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -110,24 +110,14 @@ export default function SharjahCity() {
 
   const localBusinessSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
+    '@type': 'Service',
+    name: 'Pet relocation for Sharjah addresses',
     description:
-      'Pet relocation coordination for Sharjah addresses — international files, SHJ or DXB/DWC cargo hand-offs, and municipality registration reminders.',
+      'Pet relocation coordination for Sharjah addresses, including international files and cargo hand-offs.',
     url: canonical,
-    telephone: siteConfig.phoneE164,
-    email: siteConfig.email,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.region,
-      postalCode: siteConfig.address.postalCode,
-      addressCountry: siteConfig.address.country,
-    },
-    areaServed: { '@type': 'City', name: 'Sharjah' },
-    serviceType: 'Pet Relocation Services',
-    priceRange: '$$$',
+    serviceType: 'Pet relocation coordination',
+    areaServed: 'Sharjah, UAE',
+    provider: localBusinessProvider(),
   }
 
   return (
@@ -148,7 +138,7 @@ export default function SharjahCity() {
         image={HERO_SRC}
         imageAlt={HERO_ALT}
         eyebrow="Sharjah"
-        title="Pet Relocation Sharjah: Moves That Respect Emirate Rules"
+        title="Pet relocation support in Sharjah"
         subtitle="Sharjah is its own emirate — different municipality habits than Dubai, SHJ as an airport option, and most long-haul cargo still often clearing through DXB or DWC."
         updated="Updated 14 September 2026"
         primaryLabel="Get a Relocation Quote"
@@ -278,7 +268,7 @@ export default function SharjahCity() {
                 UAE entry is still a federal file. {PERMIT_VALIDITY} {TITER_SAMPLE_RULE} Depth for quarantine and
                 import rules stays on{' '}
                 <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  UAE pet import requirements
+                  UAE pet import requirements for dogs and cats
                 </Link>{' '}
                 and the{' '}
                 <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
@@ -370,8 +360,9 @@ export default function SharjahCity() {
               issuance. The pet must enter the UAE inside that window. Confirm the current portal fee when you apply.
             </li>
             <li className="leading-relaxed">
-              <strong className="text-[#2A2A2A]">Titer when required</strong> — blood sample within 90 days before
-              travel, result at least 0.5 IU/ml. That is a sample-timing window, not a sit after the draw.
+              <strong className="text-[#2A2A2A]">Titer when required</strong> — a result of at least 0.5 IU/ml
+              and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.
+              That is not a sample window before travel, and not a sit after the draw.
             </li>
             <li className="leading-relaxed">
               <strong className="text-[#2A2A2A]">Cargo release</strong> — at DXB, DWC or SHJ depending on the booked
@@ -561,7 +552,7 @@ export default function SharjahCity() {
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-[#D4A017]" />
                     <span>
-                      <strong>RNATT sample</strong> (when required) within 90 days before travel, result ≥0.5 IU/ml.
+                      <strong>RNATT certificate</strong>, when required: a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

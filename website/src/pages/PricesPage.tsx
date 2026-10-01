@@ -50,12 +50,12 @@ const FAQS = [
     a: 'Portal fees, airline freight, clinic invoices, a crate you buy yourself unless we quote one, destination quarantine, and municipality registration after arrival. Those are third-party or government. We name them so a quote does not pretend to be an all-in ticket.',
   },
   {
-    q: 'What stays free to read versus what WhatsApp is for?',
-    a: 'Guides stay free to read. WhatsApp is for people ready to book a managed relocation. If you are lining up documents yourself, stay on the [import checklist](/guides/import-checklist/) and the [UAE import requirements](/guides/uae-pet-import-requirements/) pages. We will not recap those lists on chat for free.',
+    q: 'What is a quote for if the guides already explain the process?',
+    a: 'The guides explain the process. WhatsApp is for a quote on a managed relocation. If you are preparing the file yourself, use the [import checklist](/guides/import-checklist/) and the [UAE import requirements](/guides/uae-pet-import-requirements/). A quote covers the coordination for your pet and route.',
   },
   {
     q: 'How long is the MOCCAE import permit valid when I budget a quote?',
-    a: '90 days from issuance. The pet must arrive inside that window. That is a timing constraint on the quote, not a fee. Titer, when required, uses a blood sample taken within 90 days before travel, not a wait after the draw.',
+    a: '90 days from issuance. The pet must arrive inside that window. That is a timing constraint on the quote, not a fee. Titer, when required, uses a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, not a wait after the draw.',
   },
   {
     q: 'Where do I go after I pick a package?',
@@ -139,7 +139,7 @@ export default function PricesPage() {
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Pet Relocation Prices Dubai',
+    name: 'Pet relocation prices and quote inclusions',
     url,
     description:
       'Quoted Dubai pet relocation packages by scope. Government fees confirmed on the MOCCAE portal.',
@@ -150,9 +150,9 @@ export default function PricesPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Prices Dubai | Quote After Eligibility',
+          title: 'Pet Relocation Prices Dubai | Costs & Quote Inclusions',
           description:
-            'What drives a Dubai pet relocation quote: document plan, managed import, door-to-door. Confirm MOCCAE fees on the portal. WhatsApp after eligibility.',
+            'Understand pet relocation costs in Dubai, what your quote includes and which charges are separate. Share your route and pet details for a tailored quote.',
           canonical: url,
           ogType: 'website',
         }}
@@ -164,7 +164,7 @@ export default function PricesPage() {
         image="/images/cost-hero.jpg"
         imageAlt="Pet owner reviewing a Dubai pet relocation quote with travel documents beside a crate"
         eyebrow="Quoted packages, not a government fee table"
-        title="Pet Relocation Prices Dubai"
+        title="Pet relocation prices and quote inclusions"
         subtitle="Your quote depends on the route, your pet's size, travel arrangements and the support you choose. Review what each service includes, then send your details for a personalised proposal."
         updated="Updated September 2026"
         primaryLabel="Get a scoped quote"
@@ -198,7 +198,7 @@ export default function PricesPage() {
             .
           </p>
           <p className="leading-relaxed text-[#5A5A5A]">
-            {PERMIT_VALIDITY} {TITER_SAMPLE_RULE} Those two clocks change when you apply and when you draw blood. They do
+            {PERMIT_VALIDITY} {TITER_SAMPLE_RULE} The permit clock and the certificate conditions are separate. They do
             not become a price list.
           </p>
         </div>
@@ -241,7 +241,7 @@ export default function PricesPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section id="quote-inclusions" className="section-padding scroll-mt-24 bg-white">
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="text-section mb-3">Service packages</h2>
           <p className="text-body mb-8 max-w-3xl">
@@ -360,7 +360,7 @@ export default function PricesPage() {
             <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#3A45B0] hover:underline">
               UAE import requirements
             </Link>{' '}
-            pages are written for that path. We will not recap those lists on WhatsApp for free.
+            pages are written for that path. A quote covers the coordination for your pet and route.
           </p>
           <p className="text-body mb-6">
             Pay when a missed sequence would blow a cargo date, when you cannot complete UAE Pass yourself, or when you
@@ -397,7 +397,7 @@ export default function PricesPage() {
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[32px]">Ready for a scoped quote?</h2>
           <p className="mb-4 text-white/90">
-            WhatsApp pet type, breed, route and month if you want us to run the file. Guides stay free to read.
+            WhatsApp pet type, breed, route and month if you want us to run the file. We explain the next step before any paid work starts.
             Government fees stay on the portal.
           </p>
           <PaidIncludes tone="dark" compact className="mx-auto mb-6 max-w-2xl text-left" />

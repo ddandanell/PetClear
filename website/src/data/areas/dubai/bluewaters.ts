@@ -4,10 +4,10 @@ const bluewaters: AreaPageData = {
   slug: 'bluewaters',
   areaName: 'Bluewaters Island',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Bluewaters Island | Dog & Cat Transport',
+  seoTitle: 'Pet Transport in Bluewaters | Collection & Delivery',
   metaDescription:
-    'Pet relocation on Bluewaters Island — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote in 15 minutes.',
-  h1: 'Pet Relocation on Bluewaters Island',
+    'Plan pet collection or delivery in Bluewaters. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Bluewaters',
   primaryKeyword: 'pet relocation bluewaters',
   heroValueProp:
     'Relocating a dog or cat to or from Bluewaters Island? We coordinate the whole move for Bluewaters residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your apartment — with WhatsApp updates at every step.',
@@ -38,7 +38,7 @@ const bluewaters: AreaPageData = {
       h2: 'Moving To or From Bluewaters With a Pet',
       body: [
         { type: 'p', text: 'Most Bluewaters relocations are international — families and professionals arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days. Confirm the current MOCCAE import-permit fee and arrival-release fee on the official portal; fees may change.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer test is only required when moving from or to certain high-risk countries — in those cases plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer test is only required when moving from or to certain high-risk countries — in those cases plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We map your exact timeline before you commit.' },
       ],
     },
     {
@@ -48,7 +48,7 @@ const bluewaters: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation on Bluewaters Island',
+      h2: 'Cost of Pet collection and delivery in Bluewaters',
       body: [
         { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees include the MOCCAE import permit plus an arrival-release fee (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination.' },
       ],
@@ -56,7 +56,7 @@ const bluewaters: AreaPageData = {
   ],
   faq: [
     { q: 'Do you pick up from my building on Bluewaters Island?', a: 'Yes — we arrange door-to-door pickup from your Bluewaters apartment or building and coordinate the entire move from there.' },
-    { q: 'How long does pet relocation from Bluewaters take?', a: 'From low-risk countries, usually 2–6 weeks. If your route involves a high-risk rabies country that needs a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
+    { q: 'How long does pet relocation from Bluewaters take?', a: 'From low-risk countries, usually 2–6 weeks. If your route involves a high-risk rabies country that needs a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Confirm current MOCCAE import-permit and arrival-release fees on the official portal; fees may change. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import permit (valid 90 days from issuance) or export certificate, or handle the application on your behalf depending on your service tier.' },
     { q: 'My building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for apartment pets in island communities like Bluewaters.' },

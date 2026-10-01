@@ -4,10 +4,10 @@ const mirdif: AreaPageData = {
   slug: 'mirdif',
   areaName: 'Mirdif',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Mirdif | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Transport in Mirdif | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Mirdif: villa streets near DXB cargo, Mushrif Park last mile, MOCCAE permit help. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Mirdif',
+    'Plan pet collection or delivery in Mirdif. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Mirdif',
   primaryKeyword: 'pet relocation mirdif',
   heroValueProp:
     'Relocating a dog or cat to or from Mirdif? We plan villa-street access, crates and the short DXB cargo run — WhatsApp +971 50 478 2999 during business hours.',
@@ -26,7 +26,7 @@ const mirdif: AreaPageData = {
     'Airport Road',
   ],
   vetsNote:
-    'Mirdif and the north-eastern villa suburbs have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Mirdif and the north-eastern villa suburbs have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   intro:
     'Mirdif is a long-stay villa suburb of garden streets, Ghoroob and Uptown pockets, sitting beside Mushrif Park and close to Dubai International — not a creek walk-up and not a Marina tower. Dogs here use quiet villa lanes; cats live in the same houses, not in a high-rise lift core. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Mirdif as its own spoke: pickup is a house number on a residential street, then a short run to DXB cargo. Neighbouring [relocating pets in Deira](/dubai/deira/) is denser and older. [Moving pets to or from Dubai Silicon Oasis](/dubai/dubai-silicon-oasis/) is a different master-community grid further south. WhatsApp +971504782999 with your community pocket, street and route.',
   sections: [
@@ -137,7 +137,7 @@ const mirdif: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
         },
         {
           type: 'p',
@@ -145,7 +145,7 @@ const mirdif: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Long-stay Mirdif households often plan well ahead of a posting end — that helps the sample clock, it does not change the 90-day issuance window on the permit.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Long-stay Mirdif households often plan well ahead of a posting end — that helps the certificate timing, it does not change the 90-day issuance window on the permit.',
         },
       ],
     },
@@ -227,7 +227,7 @@ const mirdif: AreaPageData = {
     },
     {
       q: 'If my origin needs a rabies titer, do I wait 90 days after the blood draw?',
-      a: 'No. When RNATT is required, take the blood sample within 90 days before travel and keep a result of at least 0.5 IU/ml. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does pet relocation from Mirdif cost?',

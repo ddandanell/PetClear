@@ -4,10 +4,10 @@ const dubailand: AreaPageData = {
   slug: 'dubailand',
   areaName: 'Dubailand',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubailand | District Villa Last Mile',
+  seoTitle: 'Pet Transport in Dubailand | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Dubailand — door-to-door dog and cat transport, MOCCAE permits and IATA crates. WhatsApp quote.',
-  h1: 'Pet Relocation in Dubailand',
+    'Plan pet collection or delivery in Dubailand. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Dubailand',
   primaryKeyword: 'pet relocation dubailand',
   heroValueProp:
     'Relocating a dog or cat to or from Dubailand? We coordinate the whole move for Dubailand villa families — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa — including multi-pet households, with WhatsApp updates at every step.',
@@ -39,7 +39,7 @@ const dubailand: AreaPageData = {
       h2: 'Moving To or From Dubailand With a Pet',
       body: [
         { type: 'p', text: 'Most Dubailand relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. Because Dubailand families often move with more than one pet, we map every animal’s timeline and paperwork in parallel so the household travels together where possible.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Because Dubailand families often move with more than one pet, we map every animal’s timeline and paperwork in parallel so the household travels together where possible.' },
       ],
     },
     {
@@ -49,7 +49,7 @@ const dubailand: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Dubailand',
+      h2: 'Cost of Pet collection and delivery in Dubailand',
       body: [
         { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government fees include the MOCCAE import permit plus the arrival-release fee (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination. For multi-pet villa households we give a combined quote so you can see the full family cost upfront.' },
       ],

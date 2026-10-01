@@ -3,10 +3,10 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const catRelocationDubai: ServicePageData = {
   slug: 'cat-relocation-dubai',
-  seoTitle: 'Cat Relocation Dubai | Calm Cabin & Cargo Cat Moves',
+  seoTitle: 'Cat Relocation Dubai | Carrier & Travel Coordination',
   metaDescription:
-    'Relocate your cat to or from Dubai with less stress: carrier acclimation, why vets advise against sedation, documents, costs and a clear timeline.',
-  h1: 'Cat Relocation Dubai',
+    'Moving a cat to or from Dubai? Plan carrier preparation, documents and suitable travel options. Request a quote for your cat, route and dates.',
+  h1: 'Cat relocation to and from Dubai',
   primaryKeyword: 'cat relocation dubai',
   heroValueProp:
     'Moving a cat to or from Dubai? Cats travel differently from dogs — calmer routes, careful carrier acclimation and no sedation. We map your documents and timeline, coordinate vetted partners and stay with you on WhatsApp, so the journey is as low-stress as possible for a sensitive animal.',
@@ -193,7 +193,7 @@ const catRelocationDubai: ServicePageData = {
     },
     {
       q: 'How long does cat relocation to Dubai take?',
-      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. We map your exact timeline backwards from your travel date.',
+      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a wait after the draw. We map your exact timeline backwards from your travel date.',
     },
     {
       q: 'How much does cat relocation in Dubai cost?',
@@ -204,7 +204,7 @@ const catRelocationDubai: ServicePageData = {
     { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet Import to Dubai', to: '/service/pet-import-dubai/' },
     { label: 'Pet Travel in the Dubai Summer', to: '/guides/pet-travel-summer-dubai/' },
-    { label: 'Dog Relocation Dubai', to: '/service/dog-relocation-dubai/' },
+    { label: 'Dog relocation to and from Dubai', to: '/service/dog-relocation-dubai/' },
     { label: 'Pet Transport Dubai', to: '/service/pet-transport-dubai/' },
     { label: 'How It Works', to: '/how-it-works/' },
   ],

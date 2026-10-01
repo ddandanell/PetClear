@@ -4,10 +4,10 @@ const deira: AreaPageData = {
   slug: 'deira',
   areaName: 'Deira',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Deira Dubai | Creek District Last Mile',
+  seoTitle: 'Pet Transport in Deira | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Deira: creek-side apartments, walk-up access, short DXB runs and MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
-  h1: 'Pet Relocation in Deira',
+    'Plan pet collection or delivery in Deira. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Deira',
   primaryKeyword: 'pet relocation deira',
   heroValueProp:
     'Relocating a dog or cat to or from Deira? We plan creek-side access, stairs and the short DXB cargo run — WhatsApp +971 50 478 2999 during business hours.',
@@ -17,7 +17,7 @@ const deira: AreaPageData = {
   geo: { lat: '25.2710', lng: '55.3140' },
   landmarks: ['Gold Souk', 'Spice Souk', 'Deira City Centre', 'Al Rigga', 'Dubai Creek', 'Al Rigga Metro Station'],
   vetsNote:
-    'Deira and the wider creek corridor have long-established clinics, including practices used to cats and smaller dogs in older apartments. We still do not publish a named list or invent a “Deira partner clinic.” Bring the vet who already holds your records if the file is complete. If you need an ISO scan or a government-style certificate, describe the document on WhatsApp. Inbound rules: [UAE pet import requirements](/guides/uae-pet-import-requirements/). After arrival, Dubai Municipality / Aleef dog licensing is an official portal process — verify there, not on a souk-street rumour.',
+    'Deira and the wider creek corridor have long-established clinics, including practices used to cats and smaller dogs in older apartments. We still do not publish a named list or invent a “Deira partner clinic.” Bring the vet who already holds your records if the file is complete. If you need an ISO scan or a government-style certificate, describe the document on WhatsApp. Inbound rules: [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/). After arrival, Dubai Municipality / Aleef dog licensing is an official portal process — verify there, not on a souk-street rumour.',
   intro:
     'Deira is creek-side old Dubai: walk-up blocks, tight corridors, souk-street one-ways and some of the shortest road time to DXB cargo of any community we cover. Pets here are often cats and smaller dogs that have lived in the same apartment for years — the file is less “new tower, new crate” and more “stairs, no goods lift, van cannot idle outside the Gold Souk.” This page is that last mile. It is not a copy of [pet transport in Bur Dubai](/dubai/bur-dubai/) across the creek, and it is not the new-build geometry of [pet transport in Dubai Creek Harbour](/dubai/creek-harbour/). WhatsApp +971504782999 with your building type, pet and route.',
   sections: [
@@ -128,7 +128,7 @@ const deira: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: MOCCAE import permit valid 90 days from issuance. When a titer is required, blood sample within 90 days before travel, result ≥0.5 IU/ml — not a wait after the draw. Inbound coordination: [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit how-to: [MOCCAE import permit](/guides/moccae-import-permit/).',
+          text: 'Inbound: MOCCAE import permit valid 90 days from issuance. When a titer is required, a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a wait after the draw. Inbound coordination: [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit how-to: [MOCCAE import permit](/guides/moccae-import-permit/).',
         },
         {
           type: 'p',
@@ -136,7 +136,7 @@ const deira: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Origins that need a titer still need the sample date locked to the real flight week. A short DXB transfer does not rescue an expired sample window.',
+          text: 'Origins that need a titer still need the sample date locked to the real flight week. A short DXB transfer does not rescue an expired titre certificate.',
         },
       ],
     },
@@ -218,7 +218,7 @@ const deira: AreaPageData = {
     },
     {
       q: 'If I need a titer, do I wait 90 days after the blood test before flying into Deira?',
-      a: 'No. Sample within 90 days before travel, result ≥0.5 IU/ml. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. Use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does Deira pet relocation cost?',

@@ -26,6 +26,7 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import { waEligibility } from '../lib/conversionCopy.ts'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 /* ─── Corporate WhatsApp message ─── */
 const corporateMsg = waEligibility({ need: 'corporate / employee move' })
@@ -100,7 +101,7 @@ export default function CorporateRelocationPage() {
     {
       question: 'How early should we engage you before an employee\'s start date?',
       answer:
-        'As early as possible. From low-risk countries such as the UK, EU, USA, Canada, Australia, and New Zealand, the pet import process typically takes 4–6 weeks. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. Start the pet file alongside visa and housing so the employee is not in Dubai while the animal is still grounded.',
+        'As early as possible. From low-risk countries such as the UK, EU, USA, Canada, Australia, and New Zealand, the pet import process typically takes 4–6 weeks. From high-risk countries that require a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a wait after the draw. Start the pet file alongside visa and housing so the employee is not in Dubai while the animal is still grounded.',
     },
   ]
 
@@ -122,14 +123,14 @@ export default function CorporateRelocationPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}/` },
-      { '@type': 'ListItem', position: 2, name: 'Corporate Pet Relocation Dubai', item: canonical },
+      { '@type': 'ListItem', position: 2, name: 'Corporate pet relocation for HR and mobility teams', item: canonical },
     ],
   }
 
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Corporate Pet Relocation Dubai',
+    name: 'Corporate pet relocation for HR and mobility teams',
     serviceType: 'Corporate pet relocation coordination',
     description:
       'Pet relocation coordination for HR and mobility teams managing employee moves to and from Dubai. Single point of contact, document handling, transparent per-employee pricing, and multi-pet and family support.',
@@ -144,9 +145,9 @@ export default function CorporateRelocationPage() {
   const schemas = [faqSchema, breadcrumbSchema, serviceSchema]
 
   const meta = {
-    title: 'Corporate Pet Relocation Dubai | HR & Mobility Quotes',
+    title: 'Corporate Pet Relocation Dubai | HR & Mobility Support',
     description:
-      'Corporate pet relocation Dubai for HR and mobility teams. Per-employee quotes, one coordinator, inbound and outbound. WhatsApp +971504782999.',
+      'Coordinate employee pet moves to and from Dubai. Discuss destinations, budgets, reporting and partner handovers with our corporate relocation team.',
     canonical,
     ogType: 'website',
   }
@@ -157,16 +158,17 @@ export default function CorporateRelocationPage() {
       <Breadcrumb
         items={[
           { label: 'Services', path: '/services/' },
-          { label: 'Corporate Pet Relocation Dubai' },
+          { label: 'Corporate pet relocation for HR and mobility teams' },
         ]}
       />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/service/corporate-pet-relocation/" slot="service-process" /><LinkPlanSlot path="/service/corporate-pet-relocation/" slot="service-quote" /></div>
 
       {/* ═══════════ HERO ═══════════ */}
       <Hero
         image="/images/services-hero.jpg"
         imageAlt="Relocation manager reviewing an employee's pet relocation documents for a move to Dubai"
         eyebrow="For HR, Mobility & Relocation Teams"
-        title="Corporate Pet Relocation Dubai"
+        title="Corporate pet relocation for HR and mobility teams"
         subtitle="When your employees move, their pets move too. We coordinate the pet side of corporate relocations to and from Dubai — one point of contact, quote-only per-employee pricing, and the paperwork handled."
         whatsappMessage={corporateMsg}
         primaryLabel="Request a managed corporate quote"
@@ -415,7 +417,7 @@ export default function CorporateRelocationPage() {
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
                 For inbound assignments, the pet move centres on the MOCCAE import permit and the UAE entry rules —
                 microchip, rabies and core vaccinations, health certificate, and, for high-risk origin countries, a
-                rabies titer test with the sample taken within 90 days before travel (≥0.5 IU/ml). We sync the pet timeline with the employee&apos;s start date so
+                rabies titer test with a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We sync the pet timeline with the employee&apos;s start date so
                 the pet is not left grounded after the family has already arrived.
               </p>
               <Link to="/service/pet-relocation-to-dubai/" className="text-[#4F5BD5] text-sm font-medium hover:underline inline-flex items-center gap-1">

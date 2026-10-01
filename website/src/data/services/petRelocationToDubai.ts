@@ -3,10 +3,10 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const petRelocationToDubai: ServicePageData = {
   slug: 'pet-relocation-to-dubai',
-  seoTitle: 'Pet Relocation to Dubai | Arrival-Side Import Guide',
+  seoTitle: 'Moving Pets to Dubai | Arrival & Home Preparation',
   metaDescription:
-    'Pet relocation to Dubai: MOCCAE permit valid 90 days from issuance, titre conditions for high-risk origins, and cargo arrival. No package price on this page.',
-  h1: 'Pet Relocation to Dubai — Arrival-Side Coordination',
+    'Preparing for your pet to arrive in Dubai? Plan the airport handover, home delivery and first days, with links to import requirements and managed support.',
+  h1: 'Preparing for your pet to arrive in Dubai',
   primaryKeyword: 'pet relocation to dubai',
   heroValueProp:
     'Inbound only: MOCCAE import permit valid 90 days from issuance, a titre certificate when the origin is high-risk, and cargo arrival at DXB or DWC.',
@@ -72,7 +72,7 @@ const petRelocationToDubai: ServicePageData = {
             },
             {
               title: 'Health certificate and parasite treatments',
-              text: 'The origin-country health certificate is a short-validity document. Treatments are timed to arrival, not to the day you first thought about moving. Full checklist: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+              text: 'The origin-country health certificate is a short-validity document. Treatments are timed to arrival, not to the day you first thought about moving. Full checklist: [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
             },
             {
               title: 'Cargo booking and crate',
@@ -198,7 +198,7 @@ const petRelocationToDubai: ServicePageData = {
     { label: 'The post-arrival guide for pets', to: '/guides/dubai-pet-arrival-guide/' },
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet import service for Dubai', to: '/service/pet-import-dubai/' },
-    { label: 'UAE pet import requirements', to: '/guides/uae-pet-import-requirements/' },
+    { label: 'UAE pet import requirements for dogs and cats', to: '/guides/uae-pet-import-requirements/' },
     { label: 'MOCCAE import permit', to: '/guides/moccae-import-permit/' },
     { label: 'Routes hub — inbound corridors', to: '/routes/' },
     { label: 'Request your WhatsApp quote', to: '/contact/' },

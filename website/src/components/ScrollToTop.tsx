@@ -16,7 +16,7 @@ function scrollToHashTarget(hash: string) {
   if (!id) return false
   const el = document.getElementById(id)
   if (!el) return false
-  el.scrollIntoView()
+  el.scrollIntoView({ block: 'start' })
   return true
 }
 

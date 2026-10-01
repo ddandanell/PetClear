@@ -56,7 +56,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10"><MapPin className="h-4 w-4" /></span>
-                <span>217 Zahra Townhouses, Town Square,<br />Dubai 00000, UAE</span>
+                <span>217 Zahra Townhouses, Town Square,<br />Dubai, UAE</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10"><Clock className="h-4 w-4" /></span>

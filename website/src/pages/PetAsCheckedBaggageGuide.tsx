@@ -14,6 +14,7 @@ import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS } from '../data/flightModes.ts'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 const WA =
   'Hi Dubai Pet Relocation! I want to know whether my pet can travel as accompanied checked baggage, or whether we need manifest cargo instead.'
@@ -67,9 +68,9 @@ const faqData = [
 
 export default function PetAsCheckedBaggageGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.baggage}`
-  const title = 'Which Airlines Allow Pets as Checked Baggage? | UAE Guide'
+  const title = 'Pets as Checked Baggage | Dubai Route Considerations'
   const description =
-    'Which airlines allow pets as checked baggage into or from the UAE: accompanied-hold rules, Emirates vs cargo, and when to confirm the live product.'
+    'Understand how accompanied pet baggage differs from cargo. Check airline acceptance, crate rules and restrictions for your Dubai itinerary.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -111,6 +112,7 @@ export default function PetAsCheckedBaggageGuide() {
         schemas={[breadcrumbSchema, articleSchema, faqSchema]}
       />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Pet as checked baggage' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/guides/pet-as-checked-baggage/" slot="after-answer" /></div>
 
       <Hero
         image="/images/dog-crate.jpg"
@@ -118,7 +120,7 @@ export default function PetAsCheckedBaggageGuide() {
         imageWidth={1200}
         imageHeight={800}
         eyebrow="Flight-mode guide"
-        title="Which Airlines Allow Pets as Checked Baggage?"
+        title="Travelling with a pet as checked baggage"
         subtitle="Accompanied-hold / AVIH products are airline- and route-specific. Many long-haul itineraries into Dubai use manifest cargo instead — confirm the live product before you pack."
         updated="Updated September 2026"
         primaryLabel="Check if baggage is allowed"

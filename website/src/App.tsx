@@ -62,13 +62,11 @@ const RoutePageLoader = lazy(() => import('./pages/RoutePageLoader.tsx'))
 const CitiesHub = lazy(() => import('./pages/CitiesHub.tsx'))
 
 // Data-driven service pages (Blue Book Phase 2)
-const ServicePage = lazy(() => import('./components/ServicePage.tsx'))
-import { servicePages } from './data/services/index.ts'
+const ServiceBySlug = lazy(() => import('./pages/ServiceBySlug.tsx'))
 
 // Dubai pillar + area pages (Blue Book Phase 3)
-const AreaPage = lazy(() => import('./components/AreaPage.tsx'))
+const AreaBySlug = lazy(() => import('./pages/AreaBySlug.tsx'))
 const DubaiPillar = lazy(() => import('./pages/DubaiPillar.tsx'))
-import { dubaiAreas } from './data/areas/dubai/index.ts'
 
 export default function App() {
   return (
@@ -150,15 +148,11 @@ export default function App() {
           <Route path="/cities/dubai" element={<DubaiCity />} />
 
           {/* Service pages (data-driven, Blue Book Phase 2) */}
-          {servicePages.map((p) => (
-            <Route key={p.slug} path={`/service/${p.slug}/`} element={<ServicePage data={p} />} />
-          ))}
+          <Route path="/service/:slug/" element={<ServiceBySlug />} />
 
           {/* Dubai pillar + area pages (Blue Book Phase 3) */}
           <Route path="/dubai/" element={<DubaiPillar />} />
-          {dubaiAreas.map((a) => (
-            <Route key={a.slug} path={`/dubai/${a.slug}/`} element={<AreaPage data={a} />} />
-          ))}
+          <Route path="/dubai/:slug/" element={<AreaBySlug />} />
 
           {/* 404 */}
           <Route path="/404" element={<NotFoundPage />} />

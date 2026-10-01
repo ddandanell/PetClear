@@ -4,10 +4,10 @@ const jlt: AreaPageData = {
   slug: 'jlt',
   areaName: 'Jumeirah Lakes Towers (JLT)',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation JLT Dubai | Cluster Tower Last Mile',
+  seoTitle: 'Pet Transport in JLT | Collection & Delivery',
   metaDescription:
-    'Pet relocation in JLT: cluster-tower pickups, lakeside logistics, DXB and DWC routing, MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
-  h1: 'Pet Relocation in Jumeirah Lakes Towers (JLT)',
+    'Plan pet collection or delivery in JLT. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in JLT',
   primaryKeyword: 'pet relocation jlt',
   heroValueProp:
     'Relocating a dog or cat to or from JLT? We plan cluster-tower access, crates and the DXB or DWC run — WhatsApp +971 50 478 2999 during business hours.',
@@ -17,7 +17,7 @@ const jlt: AreaPageData = {
   geo: { lat: '25.0693', lng: '55.1440' },
   landmarks: ['JLT lakes', 'Cluster towers', 'DMCC', 'JLT Park', 'Dubai Marina'],
   vetsNote:
-    'JLT sits next to a busy clinic corridor toward Marina and Al Barsha, but we do not name practices on this page and we do not assume “preferred partners.” Bring your existing vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a sponsored clinic. We align appointment dates to travel day. Federal steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/) for inbound files and [pet export from Dubai](/guides/pet-export-from-dubai/) when you are leaving.',
+    'JLT sits next to a busy clinic corridor toward Marina and Al Barsha, but we do not name practices on this page and we do not assume “preferred partners.” Bring your existing vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a sponsored clinic. We align appointment dates to travel day. Federal steps stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/) for inbound files and [pet export from Dubai](/guides/pet-export-from-dubai/) when you are leaving.',
   intro:
     'Jumeirah Lakes Towers is a grid of cluster towers around four artificial lakes, just across Sheikh Zayed Road from Dubai Marina. The lifestyle looks similar from a map — apartments, dogs on the lake loop, DMCC weekday traffic — but pickup is not a Marina podium copy-paste. Each cluster has its own ramps, visitor parking and service-entrance habits. [Dubai communities we cover](/dubai/) lists JLT as its own spoke. This page is about cluster logistics, lakeside walking that should not become travel-day chaos, and choosing DXB versus DWC from the southern marina corridor. WhatsApp +971504782999 with your cluster, tower and route.',
   sections: [
@@ -128,7 +128,7 @@ const jlt: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Pets flying into a JLT apartment still need a MOCCAE import permit valid for 90 days from issuance. When a titer is required, draw blood within 90 days before travel and keep ≥0.5 IU/ml. Do not wait 90 days after the sample — that is the wrong model and can invalidate the window. Inbound commercial coordination: [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+          text: 'Pets flying into a JLT apartment still need a MOCCAE import permit valid for 90 days from issuance. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Do not wait 90 days after the sample — that is the wrong model and can invalidate the window. Inbound commercial coordination: [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
         },
         {
           type: 'p',
@@ -218,7 +218,7 @@ const jlt: AreaPageData = {
     },
     {
       q: 'When should the rabies titer sample be taken for a JLT arrival?',
-      a: 'When required, take the blood sample within 90 days before travel, result ≥0.5 IU/ml. Do not wait 90 days after the draw. See [rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'When required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Do not wait 90 days after the draw. See [rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does JLT pet relocation cost?',

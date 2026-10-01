@@ -4,10 +4,10 @@ const dubaiHills: AreaPageData = {
   slug: 'dubai-hills',
   areaName: 'Dubai Hills Estate',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubai Hills | Park Villa Community Last Mile',
+  seoTitle: 'Pet Transport in Dubai Hills | Collection & Delivery',
   metaDescription:
-    'Pet relocation Dubai Hills: park-community access, villa vs apartment last mile, MOCCAE timing. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Dubai Hills Estate',
+    'Plan pet collection or delivery in Dubai Hills. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Dubai Hills',
   primaryKeyword: 'pet relocation dubai hills',
   heroValueProp:
     'Relocating a dog or cat to or from Dubai Hills Estate? We plan park-community access, crates and the DXB run — WhatsApp +971 50 478 2999 during business hours.',
@@ -18,7 +18,7 @@ const dubaiHills: AreaPageData = {
   geo: { lat: '25.1010', lng: '55.2480' },
   landmarks: ['Dubai Hills Mall', 'Dubai Hills Golf Club', 'Dubai Hills Park', 'Maple', 'Sidra Villas', 'Dubai Hills Estate'],
   vetsNote:
-    'Dubai Hills Estate and the Mohammed Bin Rashid City belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments to travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Dubai Hills Estate and the Mohammed Bin Rashid City belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments to travel day. Federal inbound steps stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   intro:
     'Dubai Hills Estate is a park-and-golf master community with a villa-and-apartment mix — Maple townhouses, Sidra villas, park-edge apartments — not a racecourse address and not a single tower podium. Dogs here use Dubai Hills Park and garden loops; cats live in both villas and mid-rise cores. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Dubai Hills as its own spoke. [Meydan pet relocation services](/dubai/meydan/) is the racing-and-MBR-City neighbour; this page is park access and mixed housing. We coordinate international files into or out of these homes and the ground run to DXB or DWC. WhatsApp +971504782999 with your cluster (villa or apartment) and route.',
   sections: [
@@ -94,7 +94,7 @@ const dubaiHills: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Meydan sits toward the racecourse and newer MBR City fabric. If the pet lives there, use the Meydan page — horse-adjacent streets and a different gate culture, not a Hills park script. We keep this page on park access and the villa–apartment mix so the two URLs stay distinct. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is shade and water, not a victory lap to the golf clubhouse.',
+          text: 'Meydan sits toward the racecourse and newer MBR City fabric. If the pet lives there, use the Meydan page — horse-adjacent streets and a different gate culture, not a Hills park script. This page covers park access and the villa–apartment mix. Meydan has its own notes on the [Meydan page](/dubai/meydan/). From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is shade and water, not a victory lap to the golf clubhouse.',
         },
       ],
     },
@@ -129,7 +129,7 @@ const dubaiHills: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
         },
         {
           type: 'p',
@@ -137,7 +137,7 @@ const dubaiHills: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Households moving a garden dog and an apartment cat in the same week still need two crate paths even if they share a flight.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Households moving a garden dog and an apartment cat in the same week still need two crate paths even if they share a flight.',
         },
       ],
     },
@@ -223,7 +223,7 @@ const dubaiHills: AreaPageData = {
     },
     {
       q: 'Do I wait 90 days after a titer test before flying into Dubai Hills?',
-      a: 'No. When a titer is required, sample within 90 days before travel, result ≥0.5 IU/ml. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does Dubai Hills Estate pet relocation cost?',

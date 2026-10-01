@@ -86,9 +86,9 @@ const faqData = [
 
 export default function EmiratesPetCargoGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.cargo}`
-  const title = 'Emirates Pet Cargo | SkyCargo Rules 2026'
+  const title = 'Emirates Pet Cargo | Travel Planning & Requirements'
   const description =
-    'Emirates pet cargo: SkyCargo into Dubai, published animal-charge tiers, and booking steps. Confirm live fees with the airline.'
+    'Understand Emirates pet travel and cargo planning, documents and crate requirements. Confirm the applicable service and request help with your route.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -135,7 +135,7 @@ export default function EmiratesPetCargoGuide() {
         image="/images/guide-iata-crate.jpg"
         imageAlt="An IATA-approved pet crate of the kind used for Emirates SkyCargo and other manifest cargo bookings"
         eyebrow="Airline guide"
-        title="Emirates Pet Cargo — SkyCargo Rules & Booking"
+        title="Planning pet travel with Emirates"
         subtitle="An educational airline guide — not a cargo booking desk. Emirates animal-charge tiers, booking windows and unaccompanied cargo, cited from the airline. Commercial coordination lives on the relocation service pages."
         updated="Updated September 2026"
         primaryLabel="Get a Relocation Quote"
@@ -312,7 +312,7 @@ export default function EmiratesPetCargoGuide() {
           <ul className="space-y-2">
             <li>
               <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-                UAE pet import requirements
+                UAE pet import requirements for dogs and cats
               </Link>{' '}
               — document checklist
             </li>

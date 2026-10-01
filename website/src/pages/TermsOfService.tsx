@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead.tsx'
 import { BASE_URL, getWhatsAppUrl, PHONE_DISPLAY, siteConfig } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 export default function TermsOfService() {
   return (
@@ -17,6 +18,7 @@ export default function TermsOfService() {
       />
 
       <Breadcrumb items={[{ label: 'Terms of Service' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/terms-of-service/" slot="policy" /></div>
 
       <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8 py-16">
         <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-8">

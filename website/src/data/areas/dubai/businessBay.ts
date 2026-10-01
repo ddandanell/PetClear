@@ -4,10 +4,10 @@ const businessBay: AreaPageData = {
   slug: 'business-bay',
   areaName: 'Business Bay',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Business Bay | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Transport in Business Bay | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Business Bay: canal towers, Downtown-adjacent pickups, weekday loading windows. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Business Bay',
+    'Plan pet collection or delivery in Business Bay. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Business Bay',
   primaryKeyword: 'pet relocation business bay',
   heroValueProp:
     'Relocating a dog or cat to or from Business Bay? We plan canal-tower access, weekday loading windows and the airport run — WhatsApp +971 50 478 2999.',
@@ -25,7 +25,7 @@ const businessBay: AreaPageData = {
     'Downtown Dubai (adjacent)',
   ],
   vetsNote:
-    'Business Bay and Downtown sit on a well-served clinic belt, but this page does not list named hospitals and does not invent a “Bay partner network.” Keep your current vet if the chip and vaccines are already documented. If you need an export-style certificate or an ISO scan, describe the document on WhatsApp and we will tell you what the file needs — not which neon sign to follow. Inbound sequence: [UAE pet import requirements](/guides/uae-pet-import-requirements/). After a Downtown-adjacent arrival, municipality dog licensing still runs through official Dubai channels — verify on the municipality portal, not on a community blog.',
+    'Business Bay and Downtown sit on a well-served clinic belt, but this page does not list named hospitals and does not invent a “Bay partner network.” Keep your current vet if the chip and vaccines are already documented. If you need an export-style certificate or an ISO scan, describe the document on WhatsApp and we will tell you what the file needs — not which neon sign to follow. Inbound sequence: [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/). After a Downtown-adjacent arrival, municipality dog licensing still runs through official Dubai channels — verify on the municipality portal, not on a community blog.',
   intro:
     'Business Bay is a mixed commercial-residential high-rise district wrapped around the Dubai Water Canal, one canal crossing from Downtown. The people who live here often keep a dog or cat in a tower apartment and work in the same skyline — which means weekday loading bays compete with office traffic, not school-run buggies. This page is the high-rise corporate angle: canal-side access, timed pickups, and why a [pet transport in Downtown Dubai](/dubai/downtown-dubai/) address is a different last mile even when the towers look similar from the water. We do not treat Business Bay as old-city creek logistics; that is [moving pets to or from Bur Dubai](/dubai/bur-dubai/). WhatsApp +971504782999 with your tower, pet and route.',
   sections: [
@@ -136,7 +136,7 @@ const businessBay: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound files need a MOCCAE import permit valid for 90 days from issuance. When RNATT is required, the blood sample must be taken within 90 days before travel with a result of at least 0.5 IU/ml — a sample window, not a wait after the draw. Commercial inbound: [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit walkthrough: [MOCCAE import permit](/guides/moccae-import-permit/).',
+          text: 'Inbound files need a MOCCAE import permit valid for 90 days from issuance. When RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Commercial inbound: [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit walkthrough: [MOCCAE import permit](/guides/moccae-import-permit/).',
         },
         {
           type: 'p',
@@ -222,7 +222,7 @@ const businessBay: AreaPageData = {
     },
     {
       q: 'Do I wait 90 days after a titer test before flying into Business Bay?',
-      a: 'No. When a titer is required, sample within 90 days before travel, result ≥0.5 IU/ml. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does Business Bay pet relocation cost?',

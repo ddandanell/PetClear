@@ -59,9 +59,14 @@ assert(usefulClickedNote(oldDefault) === undefined, 'old default ignored as page
 assert(!WA_ELIGIBILITY_DEFAULT.includes('__'), 'default CTA has no __')
 assert(!WA_DIRECT_PROMPT.includes('__'), 'direct prompt has no __')
 assert(!hasBlankPlaceholders(WA_ELIGIBILITY_DEFAULT), 'default CTA has no blank field labels')
+assert(!/paid eligibility check/i.test(WA_ELIGIBILITY_DEFAULT), 'default CTA is not a paid eligibility check')
+assert(!/paid eligibility check/i.test(WA_DIRECT_PROMPT), 'direct prompt is not a paid eligibility check')
+assert(usefulClickedNote('I want a paid Dubai pet relocation eligibility check.') === undefined, 'historical paid-check sentence is dropped')
+assert(usefulClickedNote(WA_ELIGIBILITY_DEFAULT) === undefined, 'current default is not stored as a note')
 
 const fallback = waEligibility()
 assert(!fallback.includes('__'), 'empty waEligibility has no __')
+assert(!/paid eligibility check/i.test(fallback), 'empty waEligibility is not a paid eligibility check')
 assert(waEligibility({ origin: 'India', need: 'managed move' }).includes('Origin: India'), 'waEligibility keeps filled origin')
 assert(!waEligibility({ pet: '__', need: 'managed move' }).includes('Pet:'), 'waEligibility drops blank pet')
 

@@ -53,14 +53,14 @@ const UAE_AIRPORTS_OUTBOUND: UaeAirport[] = [
 function inboundUaeRules(countryName: string): UaeRules {
   return {
     permitValidityDays: 90,
-    titerSampleWindowDays: 90,
+    titerCertificateValidityDays: 365,
     titerMinIUml: 0.5,
     manifestCargoDefault: true,
     bullets: [
       `Obtain a MOCCAE import permit before the pet leaves ${countryName}; the permit is valid for 90 days from issuance — the animal must enter the UAE within that window.`,
       'UAE entry for most dogs and cats is as manifest cargo under IATA live-animal conditions (cabin into Dubai is not the default). Etihad cabin into Abu Dhabi is a published exception for eligible small pets — confirm current policy.',
       'ISO 11784/11785 microchip must match the health certificate; implant the chip before the rabies vaccination used for UAE import.',
-      'When a rabies antibody titer (RNATT) is required, the blood sample must be taken within 90 days before travel and result ≥ 0.5 IU/ml — this is a pre-travel sample window, not a 90-day waiting period after the draw.',
+      'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not. This is not a 90-day pre-travel sample window.',
       'Confirm on the official MOCCAE portal whether this origin is on the current rabies-controlled / exempt list before you skip a titer. We do not publish an unverified exempt-country list.',
       'Government-endorsed origin health certificate and parasite treatments must meet MOCCAE timing — verify current portal requirements before flight week.',
       'MOCCAE and on-arrival release fee amounts: confirm on the official portal — we do not publish fee numerals here.',
@@ -73,7 +73,7 @@ function inboundUaeRules(countryName: string): UaeRules {
 function outboundUaeRules(): UaeRules {
   return {
     permitValidityDays: 90,
-    titerSampleWindowDays: 90,
+    titerCertificateValidityDays: 365,
     titerMinIUml: 0.5,
     manifestCargoDefault: true,
     bullets: [
@@ -154,9 +154,9 @@ function relatedLinks(copy: RouteUniqueCopy, direction: 'inbound' | 'outbound'):
   }
   if (direction === 'inbound') {
     links.push({ label: 'Pet relocation to Dubai', href: '/service/pet-relocation-to-dubai/' })
-    links.push({ label: 'UAE pet import requirements', href: '/guides/uae-pet-import-requirements/' })
+    links.push({ label: 'UAE pet import requirements for dogs and cats', href: '/guides/uae-pet-import-requirements/' })
     links.push({ label: 'MOCCAE import permit (90-day validity)', href: '/guides/moccae-import-permit/' })
-    links.push({ label: 'Rabies titer sample window', href: '/guides/rabies-titer-test-dubai/' })
+    links.push({ label: 'Rabies titre certificate rules', href: '/guides/rabies-titer-test-dubai/' })
   } else {
     links.push({ label: 'Pet relocation from Dubai', href: '/service/pet-relocation-from-dubai/' })
     links.push({ label: 'How to export your pet from Dubai', href: '/guides/pet-export-from-dubai/' })
@@ -194,11 +194,33 @@ function mapAirports(countryKey: string, direction: 'inbound' | 'outbound'): Rou
     role: a.iata === 'HKG' && countryKey === 'china' ? 'note' : role,
     notes:
       a.iata === 'HKG' && countryKey === 'china'
-        ? 'Seed lists HKG as a via-Hong-Kong routing note, not as a mainland China airport.'
+        ? 'Listed as a via-Hong-Kong routing note, not as a mainland China airport.'
         : direction === 'inbound'
           ? 'Confirm live-animal export handling for your carrier at this airport.'
           : 'Confirm live-animal arrival handling for your carrier at this gateway.',
   }))
+}
+
+function publicAirlineNote(seedNotes: string): string {
+  const cleaned = seedNotes
+    .replace(/\s*\(seed:[^)]*\)/gi, '')
+    .replace(/\bseed:\s*/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+    .replace(/[.\s]+$/, '')
+  if (!cleaned || /^(confirm|dxb hub|auh|doh)$/i.test(cleaned)) {
+    return 'Confirm live-animal acceptance, crate mode and breed limits with the airline before booking.'
+  }
+  if (/generally not pets/i.test(cleaned)) {
+    return 'This carrier is not presented as a routine pet option on this corridor. Confirm with the airline before booking.'
+  }
+  if (/^confirm\b/i.test(cleaned)) {
+    const rest = cleaned.replace(/^confirm\b[:\s-]*/i, '').trim()
+    return rest
+      ? `${rest}. Confirm live-animal acceptance with the airline before booking.`
+      : 'Confirm live-animal acceptance, crate mode and breed limits with the airline before booking.'
+  }
+  return `${cleaned}. Confirm the carrier’s current pet policy before booking.`
 }
 
 function mapAirlines(countryKey: string, direction: 'inbound' | 'outbound'): RouteAirline[] {
@@ -213,7 +235,7 @@ function mapAirlines(countryKey: string, direction: 'inbound' | 'outbound'): Rou
     return {
       name: a.name,
       mode: a.mode,
-      notes: `${a.seedNotes.trim()} Mode and breed/weight limits are OD-specific for ${od}. Confirm current policy before booking.${qatarGuard} Dubai Pet Relocation is not affiliated with this airline.`,
+      notes: `${publicAirlineNote(a.seedNotes)} Mode and breed/weight limits are specific to ${od}.${qatarGuard} Dubai Pet Relocation is not affiliated with this airline.`,
       policyUrl: a.policyUrl,
       verified: false,
       verificationStatus: a.verificationStatus,

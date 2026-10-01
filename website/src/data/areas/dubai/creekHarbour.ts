@@ -4,10 +4,10 @@ const creekHarbour: AreaPageData = {
   slug: 'creek-harbour',
   areaName: 'Dubai Creek Harbour',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubai Creek Harbour | Dog & Cat Transport',
+  seoTitle: 'Pet Transport in Creek Harbour | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Dubai Creek Harbour — door-to-door dog and cat transport, MOCCAE permit guidance and travel crates. WhatsApp quote in 15 minutes.',
-  h1: 'Pet Relocation in Dubai Creek Harbour',
+    'Plan pet collection or delivery in Creek Harbour. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Creek Harbour',
   primaryKeyword: 'pet relocation dubai creek harbour',
   heroValueProp:
     'Relocating a dog or cat to or from Dubai Creek Harbour? We coordinate the whole move for Creek Harbour residents — MOCCAE permits, breed checks, travel crates, customs and door-to-door delivery from your tower — with WhatsApp updates at every step.',
@@ -55,7 +55,7 @@ const creekHarbour: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'The MOCCAE import permit is mandatory — confirm the current fee on the official portal — and we map every other step around it. From low-risk countries the timeline is typically two to six weeks. From high-risk rabies countries that require a rabies titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We build your exact timeline before you commit so there are no surprises.',
+          text: 'The MOCCAE import permit is mandatory — confirm the current fee on the official portal — and we map every other step around it. From low-risk countries the timeline is typically two to six weeks. From high-risk rabies countries that require a rabies titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We build your exact timeline before you commit so there are no surprises.',
         },
       ],
     },
@@ -69,7 +69,7 @@ const creekHarbour: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Dubai Creek Harbour',
+      h2: 'Cost of Pet collection and delivery in Creek Harbour',
       body: [
         {
           type: 'p',
@@ -85,7 +85,7 @@ const creekHarbour: AreaPageData = {
     },
     {
       q: 'How long does pet relocation from Dubai Creek Harbour take?',
-      a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.',
+      a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.',
     },
     {
       q: 'How much does it cost?',

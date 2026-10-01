@@ -6,21 +6,21 @@ export const CTA_SUPPORT =
   'Share your departure city, destination, pet details and preferred travel date so we can understand your requirements.'
 export const CTA_CHECK_ELIGIBILITY = 'Check eligibility'
 export const CTA_MANAGED_QUOTE = 'Get a managed-move quote'
-export const CTA_SCOPED_QUOTE = 'WhatsApp for a scoped quote after eligibility'
+export const CTA_SCOPED_QUOTE = 'WhatsApp for a quote'
 export const CTA_BREED_ELIGIBILITY = 'Check breed eligibility'
 export const CTA_PERMIT_ELIGIBILITY = 'Check permit eligibility'
 
 /** Exact playbook bridge. Place after the first useful guide answer and at the end. */
 export const GUIDE_BRIDGE =
-  'This guide covers the general process. If you want Dubai Pet Relocation to review your route, pet, dates, and documents and coordinate the move, that is a paid relocation service. Send the details on WhatsApp for eligibility and scope.'
+  'This guide covers the general process. If you want Dubai Pet Relocation to coordinate the move, send the pet, route, dates and documents on WhatsApp and we will reply with what a quote includes.'
 
-/** Sticky / skip-path prompt. Never include blank Origin/Pet/Date underscores. */
+/** Sticky / skip-path prompt. Neutral enquiry — no fee is charged by opening WhatsApp. */
 export const WA_ELIGIBILITY_DEFAULT =
-  'I want a paid Dubai pet relocation eligibility check. Please share name, pet, origin, destination, and target date in English. Need: managed move / document plan / other.'
+  'Hello Dubai Pet Relocation. I would like a quote for a pet move. I will send the pet, origin, destination and target date.'
 
 /** Direct WhatsApp skip — short English ask, no empty templates. */
 export const WA_DIRECT_PROMPT =
-  'Please share your name, pet (dog or cat), origin, destination, and target date in English. WhatsApp is for a paid eligibility check, not free consulting.'
+  'Please share your name, pet (dog or cat), origin, destination and target date so we can prepare a quote.'
 
 /** Foufou questionnaire labels — keep wording exact for handlers. */
 export const SERVICE_OPTIONS = [
@@ -80,6 +80,7 @@ export function usefulClickedNote(text?: string | null): string | undefined {
   const collapsed = raw.replace(/\s+/g, ' ').trim()
   if (collapsed === WA_ELIGIBILITY_DEFAULT) return undefined
   if (/^I want a paid Dubai pet relocation eligibility check\.?$/i.test(collapsed)) return undefined
+  if (/^I would like a quote for a pet move with Dubai Pet Relocation\.?$/i.test(collapsed)) return undefined
   return collapsed
 }
 
@@ -90,7 +91,7 @@ function pushFilled(lines: string[], label: string, value?: string | null) {
 
 /** Structured English wa.me body. Only filled fields — never blank `__` lines. */
 export function composeEligibilityLead(fields: EligibilityLeadFields): string {
-  const lines = ['Dubai Pet Relocation — eligibility check']
+  const lines = ['Dubai Pet Relocation — quote request']
   pushFilled(lines, 'Name', fields.name)
   pushFilled(lines, 'Email', fields.email)
   pushFilled(lines, 'Pet', fields.pet)
@@ -112,7 +113,7 @@ export function waEligibility(fields?: {
   date?: string
   need?: string
 }) {
-  const parts = ['I want a paid Dubai pet relocation eligibility check.']
+  const parts = ['I would like a quote for a pet move with Dubai Pet Relocation.']
   const add = (label: string, value?: string) => {
     const filled = sanitizeLeadField(value)
     if (filled) parts.push(`${label}: ${filled}.`)

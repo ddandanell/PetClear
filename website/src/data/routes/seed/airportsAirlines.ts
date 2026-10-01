@@ -884,4 +884,4 @@ export const UAE_INBOUND_PERMIT_BLURB =
   'MOCCAE import permit is valid for 90 days from issuance. The pet must arrive inside that window. Confirm current portal fees on the official MOCCAE site — do not assume AED figures.'
 
 export const TITER_BLURB =
-  'When a titer (RNATT) is required, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml. That is not a 90-day waiting period after the blood draw.'
+  'When a titer (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is not a 90-day sample window and not a wait after the blood draw.'

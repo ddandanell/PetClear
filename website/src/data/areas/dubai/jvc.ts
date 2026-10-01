@@ -4,10 +4,10 @@ const jvc: AreaPageData = {
   slug: 'jvc',
   areaName: 'Jumeirah Village Circle (JVC)',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation JVC Dubai | Circle Villa Community Last Mile',
+  seoTitle: 'Pet Transport in JVC | Collection & Delivery',
   metaDescription:
-    'Pet relocation in JVC: villas, townhouses and mid-rise towers, Circle Mall last mile, MOCCAE permits. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Jumeirah Village Circle (JVC)',
+    'Plan pet collection or delivery in JVC. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in JVC',
   primaryKeyword: 'pet relocation jvc',
   heroValueProp:
     'Relocating a dog or cat to or from JVC? We plan circle-district access, crates and the DWC or DXB run — WhatsApp +971 50 478 2999 during business hours.',
@@ -26,7 +26,7 @@ const jvc: AreaPageData = {
     'Al Khail Road',
   ],
   vetsNote:
-    'JVC and the Jumeirah Village belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Keep your current vet if the file is already in order. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a brand. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'JVC and the Jumeirah Village belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Keep your current vet if the file is already in order. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a brand. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   intro:
     'Jumeirah Village Circle is a high-density mid-market ring of villas, townhouses and apartment towers around a park-and-mall core — not a single podium and not a gated golf estate. Dogs here walk Circle Mall parks and the Saheel / District 10 loops; cats live in mid-rise flats that still have to clear a crate past a visitor desk. That is why [every Dubai neighbourhood we serve](/dubai/) keeps JVC as its own spoke: the last mile is a district number and a home type, not a “Jumeirah Village” pin. Neighbouring [pet transport in JVT](/dubai/jvt/) is a different triangle grid. [Dubai Hills Estate pet relocation services](/dubai/dubai-hills/) is a park-and-golf mix further north. WhatsApp +971504782999 with your district, home type and route.',
   sections: [
@@ -102,7 +102,7 @@ const jvc: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Jumeirah Village Triangle sits on the other side of the village geometry — a different street grid and a different visitor script. If the pet lives in JVT, that is the honest last mile. We keep both URLs live; we are not folding JVT into this page. From May through early autumn, acclimate the crate indoors, especially in mid-rise flats with little shade on the podium. On inbound delivery, the first hour is cooling down, not a victory lap to the park.',
+          text: 'Jumeirah Village Triangle sits on the other side of the village geometry — a different street grid and a different visitor script. If the pet lives in JVT, that is the honest last mile. JVT has its own page: [pet transport in JVT](/dubai/jvt/). From May through early autumn, acclimate the crate indoors, especially in mid-rise flats with little shade on the podium. On inbound delivery, the first hour is cooling down, not a victory lap to the park.',
         },
       ],
     },
@@ -137,7 +137,7 @@ const jvc: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
         },
         {
           type: 'p',
@@ -145,7 +145,7 @@ const jvc: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Mid-rise cats and villa dogs on the same file still need parallel paperwork so one expired sample does not split the household.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Mid-rise cats and villa dogs on the same file still need parallel paperwork so one expired certificate does not split the household.',
         },
       ],
     },
@@ -227,7 +227,7 @@ const jvc: AreaPageData = {
     },
     {
       q: 'If my origin needs a rabies titer, do I wait 90 days after the blood draw?',
-      a: 'No. When RNATT is required, take the blood sample within 90 days before travel and keep a result of at least 0.5 IU/ml. Waiting 90 days after the draw can push the sample outside the allowed window. Timing explainer: [rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting 90 days after the draw is not the rule. Timing explainer: [rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does pet relocation from JVC cost?',

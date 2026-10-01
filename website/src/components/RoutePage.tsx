@@ -15,6 +15,7 @@ import { BASE_URL, LOGO_URL, getWhatsAppUrl, shortSubtitle, siteConfig } from '.
 import { titleCaseCountry } from '../data/routes/countryMeta.ts'
 import type { RoutePageData } from '../types/routePage.ts'
 import RouteMoneyBodyLink from './RouteMoneyBodyLink.tsx'
+import LinkPlanSlot from './LinkPlanSlot.tsx'
 
 function displayCountry(name: string): string {
   return name.startsWith('the ') ? name.slice(4, 5).toUpperCase() + name.slice(5) : name
@@ -103,6 +104,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
               : `Exporting a pet from Dubai ${COUNTRY_TO(data.countryName)}`}
           </h2>
           <p className="leading-relaxed text-[#5A5A5A]">{data.intro}</p>
+          <LinkPlanSlot path={`/routes/${data.slug}/`} slot="route-summary" />
           {data.direction === 'inbound' ? <RouteMoneyBodyLink path={`/routes/${data.slug}/`} /> : null}
           <LastVerified className="mt-4 text-xs text-[#8A8A8A]" />
         </div>
@@ -117,7 +119,10 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
         </div>
       </section>
 
-      <section className="bg-[#F5F6FD] section-padding">
+      <section
+        id={data.slug === 'dubai-to-uk' ? 'documents' : undefined}
+        className="scroll-mt-24 bg-[#F5F6FD] section-padding"
+      >
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">{rulesHeading}</h2>
           {data.direction === 'outbound' && data.destinationRules ? (
@@ -180,7 +185,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
                 </Link>
                 , and the{' '}
                 <Link className="font-semibold text-[#4F5BD5]" to="/guides/rabies-titer-test-dubai/">
-                  titer sample window
+                  rabies titre certificate rules
                 </Link>
               </>
             ) : (
@@ -254,6 +259,12 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
             {data.cta.note || 'Quote-only. Share species, breed, weight and dates — we do not publish package prices.'}{' '}
             WhatsApp {data.cta.whatsapp}. Email support@dubai-pet-relocation.ae.
           </p>
+          <LinkPlanSlot
+            path={`/routes/${data.slug}/`}
+            slot="route-cost"
+            className="mb-6 text-sm leading-relaxed text-white/90"
+            linkClass="font-semibold text-white underline"
+          />
           <a
             href={wa}
             target="_blank"

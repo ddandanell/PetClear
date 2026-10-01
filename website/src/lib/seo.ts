@@ -62,14 +62,9 @@ export const siteConfig = {
     street: '217 Zahra Townhouses, Town Square',
     city: 'Dubai',
     region: 'Dubai',
-    postalCode: '00000',
     country: 'AE',
   },
   hours: HOURS_SUMMARY,
-  geo: {
-    lat: '25.2048',
-    lng: '55.2708',
-  },
 }
 
 /** Shared Service.provider NAP — values only from siteConfig, no invented address/phone. */
@@ -86,7 +81,6 @@ export function localBusinessProvider() {
       streetAddress: siteConfig.address.street,
       addressLocality: siteConfig.address.city,
       addressRegion: siteConfig.address.region,
-      postalCode: siteConfig.address.postalCode,
       addressCountry: siteConfig.address.country,
     },
   }

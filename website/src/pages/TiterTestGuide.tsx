@@ -24,6 +24,7 @@ import LinkedText from '../components/LinkedText.tsx'
 import { CTA_CHECK_MOVE, waEligibility } from '../lib/conversionCopy.ts'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, siteConfig } from '../lib/seo.ts'
+import GuideToc from '../components/GuideToc.tsx'
 
 const CHECKED = '22 September 2026'
 const MOCCAE_IMPORT = 'https://moccae.gov.ae/en/services/import-permit-pets'
@@ -85,9 +86,9 @@ const faqData = [
 ]
 
 export default function TiterTestGuide() {
-  const title = 'Rabies Titre Test Dubai | 0.5 IU/ml, 365-Day Certificate'
+  const title = 'Rabies Titre Test for Dubai | Eligibility & Timing'
   const description =
-    'Rabies titre test for Dubai: high-risk origins need at least 0.5 IU/ml. The certificate lasts 365 days if the vaccine stays valid and no booster is given. Permit is 90 days from issuance.'
+    'Check when a rabies titre test is required for a pet moving to Dubai. Understand test timing, certificate validity and official requirements for your origin.'
   const canonical = `${BASE_URL}/guides/rabies-titer-test-dubai/`
   const ogImage = `${BASE_URL}/assets/og-titer-test.jpg`
   const waTitre = waEligibility({ need: 'managed move' })
@@ -108,7 +109,7 @@ export default function TiterTestGuide() {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
       { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
-      { '@type': 'ListItem', position: 3, name: 'Rabies Titre Test for Dubai', item: canonical },
+      { '@type': 'ListItem', position: 3, name: 'Rabies titre testing for pets moving to Dubai', item: canonical },
     ],
   }
 
@@ -200,12 +201,13 @@ export default function TiterTestGuide() {
         ]}
       />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Rabies Titre Test Guide' }]} />
+<div className="mx-auto max-w-[900px] px-5 pt-8"><GuideToc items={[{ href: '#what-the-test-is', label: 'What the test is' }, { href: '#timeline', label: 'Order of work' }, { href: '#how-a-file-fails', label: 'How a file fails' }]} /></div>
 
       <Hero
         image="/assets/w5/rabies-titer-test-rnatt-explained-diagram.png"
         imageAlt="Diagram of a rabies antibody test: blood sample, laboratory, and a 0.5 IU/ml threshold"
         eyebrow="Titre guide"
-        title="Rabies Titre Test for Dubai"
+        title="Rabies titre testing for pets moving to Dubai"
         subtitle="High-risk origins need at least 0.5 IU/ml. The certificate lasts 365 days while the vaccine stays valid and no booster is given. The import permit is a separate 90 days from issuance."
         updated={`Last verified: ${CHECKED}`}
         whatsappMessage={waTitre}
@@ -213,7 +215,7 @@ export default function TiterTestGuide() {
         secondary={{ label: 'Full import requirements', to: '/guides/uae-pet-import-requirements/' }}
       />
 
-      <section className="section-padding bg-[#F5F6FD]">
+      <section id="what-the-test-is" className="section-padding scroll-mt-24 bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
@@ -231,7 +233,7 @@ export default function TiterTestGuide() {
                 </Link>
                 . The statutory page is{' '}
                 <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  UAE pet import requirements
+                  UAE pet import requirements for dogs and cats
                 </Link>
                 .
               </p>
@@ -282,7 +284,7 @@ export default function TiterTestGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Want the test dated against a real flight?"
-        subtitle="This guide is free to read. WhatsApp is for a managed import after you are ready to book. We do not quote a laboratory fee on this page."
+        subtitle="WhatsApp is for a managed import when you are ready to book. We explain the next step before any paid work starts. We do not quote a laboratory fee on this page."
         eligibilityMessage={waTitre}
         waLabel={CTA_CHECK_MOVE}
       />
@@ -294,15 +296,9 @@ export default function TiterTestGuide() {
               Order of work for a high-risk origin
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              Do the antibody test before you spend the permit&apos;s 90 days. The diagram is an illustration. If it still shows an older sample window, use the text here.
+              Do the antibody test before you spend the permit&apos;s 90 days. The steps below are the rule for UAE inbound dogs and cats when a rabies antibody test is required. Source: the MOCCAE import-permit service, checked 6 September 2026. Destination-country clocks stay on their own pages. An older diagram that showed a 90-day sample window is not used.
             </p>
           </div>
-
-          <ContentImage
-            src="/assets/w5/rabies-titer-test-timeline-vaccination-to-travel.png"
-            alt="Illustration of vaccination, an antibody test, and travel"
-            caption="Illustration only. Certificate validity is 365 days under the conditions above. Permit validity is 90 days from issuance."
-          />
 
           <div className="space-y-6 mb-10 mt-8">
             <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
@@ -448,7 +444,7 @@ export default function TiterTestGuide() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section id="how-a-file-fails" className="section-padding scroll-mt-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
@@ -538,7 +534,7 @@ export default function TiterTestGuide() {
       <GuideFunnelCta
         variant="end"
         title="Need the test mapped to a flight?"
-        subtitle="Send origin, vaccination date and a target month on WhatsApp if you want a managed import. This guide stays free. We do not invent a laboratory fee."
+        subtitle="Send origin, vaccination date and a target month on WhatsApp if you want a managed import. We explain the next step before any paid work starts. We do not invent a laboratory fee."
         eligibilityMessage={waTitre}
         waLabel={CTA_CHECK_MOVE}
       />

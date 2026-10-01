@@ -9,7 +9,7 @@ import LastVerified from '../components/LastVerified.tsx'
 import HubCrossLinks from '../components/HubCrossLinks.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
-import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig, localBusinessProvider } from '../lib/seo.ts'
 import { dubaiAreas } from '../data/areas/dubai/index.ts'
 
 const GRADE_A_SLUGS = [
@@ -59,7 +59,7 @@ const GROUPS: { id: string; title: string; intro: string; slugs: GradeASlug[] }[
     id: 'old-dubai',
     title: 'Old Dubai',
     intro:
-      'Creek-side streets, walk-ups and consulate districts are closer to DXB than Marina is. Dense parking and older lift shafts change the crate plan. These URLs stay distinct from each other and from this hub.',
+      'Creek-side streets, walk-ups and consulate districts are closer to DXB than Marina is. Dense parking and older lift shafts change the crate plan. Deira and Bur Dubai each have their own access notes.',
     slugs: ['deira', 'bur-dubai'],
   },
 ]
@@ -68,19 +68,19 @@ const GRADE_A_BLURBS: Record<GradeASlug, string> = {
   'dubai-marina':
     'Marina is a dense waterfront of residential towers. Pickup means the building\'s own lift booking, a visitor list and a crate that fits that lobby. This page does not publish a drive time to DXB. Neighbouring JBR and JLT have their own access rules.',
   jlt: 'JLT is cluster towers around the lakes, not a villa suburb. Lakeside paths help daily walks; the move itself is a cluster drop-off, a goods lift, and a DXB or DWC booking that depends on the airline product — not a generic “Marina adjacent” script.',
-  jbr: 'JBR is beachfront towers and The Walk, with Bluewaters sitting next door as its own live URL. Loading bays and pedestrian decks decide whether the crate rides a trolley or waits in the apartment. We do not merge Bluewaters into this page.',
+  jbr: 'JBR is beachfront towers and The Walk, with Bluewaters next door. Loading bays and pedestrian decks decide whether the crate rides a trolley or waits in the apartment. Open the Bluewaters page for that island’s access.',
   'palm-jumeirah':
     'Palm Jumeirah is frond villas and trunk apartments behind Nakheel gates. The DXB run is longer than Marina; the last mile is a named gate pass and a crate that fits a villa driveway, not a tower lift booking.',
   'downtown-dubai':
-    'Downtown is boulevard apartments and Burj-area towers. Building pet policies and loading docks matter more than a skyline photo. City Walk stays on its own URL — we only note it as a neighbouring lifestyle street.',
+    'Downtown is boulevard apartments and Burj-area towers. Building pet policies and loading docks matter more than a skyline photo. City Walk is a neighbouring street with its own access notes.',
   'business-bay':
     'Business Bay is canal-side commercial-residential towers. Pickup is usually a basement ramp or a canal-road bay, then a short hop toward Downtown or Sheikh Zayed Road. It is not the same last mile as old-city Bur Dubai.',
   jumeirah:
-    'Jumeirah 1–3 is beachfront villas and low-rise compounds. Gate timing and a crate through a garden path replace tower lifts. Port de La Mer remains a separate live community page — linked, not redirected.',
+    'Jumeirah 1–3 is beachfront villas and low-rise compounds. Gate timing and a crate through a garden path replace tower lifts. Port de La Mer has its own access notes.',
   'arabian-ranches':
     'Arabian Ranches is a gated golf-villa community (Ranches 1, 2 and 3). Security wants a named window; gardens make crate staging easier than a Marina lobby. Dubailand is the wider district hub, not a substitute for this page.',
   'dubai-hills':
-    'Dubai Hills Estate mixes villas with apartments around the park. Family park access is the living story; the move is still a community-gate pass plus a crate that fits either a townhouse hall or a mid-rise lift. Meydan stays its own racing-adjacent URL.',
+    'Dubai Hills Estate mixes villas with apartments around the park. Family park access is the living story; the move is still a community-gate pass plus a crate that fits either a townhouse hall or a mid-rise lift. Meydan has its own access notes beside the racecourse.',
   jvc: 'JVC is a circular mid-market layout — Saheel, District 10 and Circle Mall as orientation, not holding kennels. Villa, townhouse and mid-rise access all exist on the same ring road. DWC is often the closer cargo airport than DXB.',
   'al-barsha':
     'Al Barsha 1, 2 and 3 sit on the Mall of the Emirates / Al Khail corridor. Villa and apartment pickups share the same SZR and Al Khail clocks. We describe the vet-dense corridor without naming clinics or inventing partnerships.',
@@ -91,19 +91,19 @@ const GRADE_A_BLURBS: Record<GradeASlug, string> = {
   deira:
     'Deira is creek, walk-ups and DXB-adjacent streets. Older buildings and tight parking change the crate path. It is not a second Downtown page and it is not merged into Bur Dubai.',
   'bur-dubai':
-    'Bur Dubai is old-city streets, consulates and walk-ups near the creek. Dense parking and older lifts are the logistics story. Karama stays a live sibling URL — linked from that page, never redirected here.',
+    'Bur Dubai is old-city streets, consulates and walk-ups near the creek. Dense parking and older lifts are the logistics story. Karama has its own access notes.',
   'umm-suqeim':
-    'Umm Suqeim 1–3 is coastal villas on the Jumeirah Beach / Kite Beach corridor. It is not Palm Jumeirah and it is not Jumeirah 1–3. Al Wasl remains its own live URL along the same coastal belt.',
+    'Umm Suqeim 1–3 is coastal villas on the Jumeirah Beach / Kite Beach corridor. It is not Palm Jumeirah and it is not Jumeirah 1–3. Al Wasl has its own access notes along the same coast.',
 }
 
 const faqs = [
   {
     q: 'Is this the same page as door-to-door pet relocation in Dubai?',
-    a: 'No. This URL is the community directory for pickup and delivery geography. The commercial service page for a full international file is [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Use this hub to find your community page, then open the service URL for the job.',
+    a: 'No. This page is the community directory for pickup and delivery. The commercial service for a full international file is [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Open your community page, then open the service that matches the job.',
   },
   {
     q: 'Do I still need a MOCCAE import permit if I already have a Dubai home?',
-    a: 'If the pet is entering the UAE, yes — a MOCCAE import permit is a federal entry document, valid for 90 days from issuance. A Dubai tenancy does not replace it. Confirm current fees on the official portal. Start with [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    a: 'If the pet is entering the UAE, yes — a MOCCAE import permit is a federal entry document, valid for 90 days from issuance. A Dubai tenancy does not replace it. Confirm current fees on the official portal. Start with [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   },
   {
     q: 'When is the rabies titre needed?',
@@ -123,11 +123,11 @@ const faqs = [
   },
   {
     q: 'Why does /cities/dubai/ still exist if this is the Dubai hub?',
-    a: '[/cities/dubai/](/cities/dubai/) is the emirate overview. This page is the community directory. Both URLs stay live. Compare emirates on the [UAE cities hub](/cities/).',
+    a: '[/cities/dubai/](/cities/dubai/) is the emirate overview. This page is the community directory for pickup and delivery. Compare emirates on the [UAE cities hub](/cities/).',
   },
   {
     q: 'Do you cover Sheikh Zayed Road as its own community?',
-    a: 'Sheikh Zayed Road is a corridor, not a neighbourhood. The existing [/dubai/sheikh-zayed-road/](/dubai/sheikh-zayed-road/) URL stays indexed. We do not create a second SZR page and we do not redirect that URL into this hub.',
+    a: 'Sheikh Zayed Road is a corridor, not a neighbourhood. Its page is [/dubai/sheikh-zayed-road/](/dubai/sheikh-zayed-road/). This directory points to that page for access along the road.',
   },
 ]
 
@@ -154,15 +154,13 @@ export default function DubaiPillar() {
   }
   const localBusiness = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: `${siteConfig.name} — Dubai communities`,
+    '@type': 'Service',
+    name: 'Pet collection across Dubai communities',
     url,
     areaServed: 'Dubai, UAE',
-    telephone: siteConfig.phoneE164,
-    email: siteConfig.email,
     description:
-      'Community directory for pet relocation pickup and delivery across Dubai — marina, coastal, villa suburbs, new developments and old Dubai. Federal MOCCAE rules apply; municipality registration is separate.',
-    address: { '@type': 'PostalAddress', addressLocality: 'Dubai', addressRegion: 'Dubai', addressCountry: 'AE' },
+      'Community directory for pet relocation pickup and delivery across Dubai. Federal MOCCAE rules apply; municipality registration is separate.',
+    provider: localBusinessProvider(),
   }
   const itemListSchema = {
     '@context': 'https://schema.org',
@@ -191,9 +189,9 @@ export default function DubaiPillar() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Dubai Communities | Marina to Old Dubai',
+          title: 'Pet Collection Across Dubai | Areas We Serve',
           description:
-            'Dubai community directory for pet pickup and delivery: Marina, JLT, Palm, Downtown and more. MOCCAE 90-day permit. WhatsApp +971504782999.',
+            'Find pet collection and delivery information for Dubai communities. Check building access, pickup planning and links to local or international support.',
           canonical: url,
           ogType: 'website',
         }}
@@ -205,7 +203,7 @@ export default function DubaiPillar() {
         image="/images/hero-dubai.jpg"
         imageAlt="The Dubai skyline — pet relocation across all Dubai communities"
         eyebrow="Dubai communities"
-        title="Pet Relocation Across Every Community in Dubai"
+        title="Pet collection and delivery across Dubai"
         subtitle="A directory for last-mile pickup and delivery: marina towers, villa gates, new developments and old Dubai. The full international file is the door-to-door service."
         updated="Rules checked 22 September 2026"
       />
@@ -218,7 +216,7 @@ export default function DubaiPillar() {
             Dubai is many last miles, not one city-shaped crate run. A Marina tower wants a goods-lift booking and a visitor
             plate. An Arabian Ranches villa wants a security-gate window. A Deira walk-up wants a crate that fits a tight
             stair and a parking bay that is already full. This page groups those communities so you can open the right
-            local URL. The commercial file — permits, IATA crate, cargo and customs — lives on{' '}
+            community page. The commercial file — permits, IATA crate, cargo and customs — lives on{' '}
             <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               door-to-door pet relocation in Dubai
             </Link>
@@ -236,7 +234,7 @@ export default function DubaiPillar() {
             a cat. The
             checklist sits on the{' '}
             <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-              UAE pet import requirements
+              UAE pet import requirements for dogs and cats
             </Link>{' '}
             guide. What does change by community is the van, the lift, the gate and which cargo airport is the shorter run.
           </p>
@@ -253,11 +251,11 @@ export default function DubaiPillar() {
             <Link to="/cities/" className="font-semibold text-[#4F5BD5] hover:underline">
               UAE cities hub
             </Link>
-            . The emirate overview at{' '}
+            . The emirate overview is{' '}
             <Link to="/cities/dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              /cities/dubai/
-            </Link>{' '}
-            stays a live URL. Municipality steps are a pointer below. That emirate page is not replaced by this hub.
+              pet relocation support in Dubai
+            </Link>
+            . Municipality steps are a pointer below. Use that page for the emirate, and this directory for the community.
           </p>
         </div>
       </section>
@@ -334,11 +332,11 @@ export default function DubaiPillar() {
             portal. A municipal registration window is not the life of the import permit.
           </p>
           <p className="leading-relaxed text-[#5A5A5A]">
-            This is a pointer, not a second{' '}
+            Municipal licensing is separate from the{' '}
             <Link to="/cities/dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              /cities/dubai/
-            </Link>{' '}
-            essay. That emirate page stays live and indexed. After landing, use the{' '}
+              Dubai emirate overview
+            </Link>
+            . After landing, use the{' '}
             <Link to="/guides/dubai-pet-arrival-guide/" className="font-semibold text-[#4F5BD5] hover:underline">
               arrival guide
             </Link>{' '}
@@ -355,8 +353,8 @@ export default function DubaiPillar() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Dubai community directory</h2>
           <p className="mb-10 max-w-3xl leading-relaxed text-[#5A5A5A]">
-            Each community below has its own URL. The short note is only a pointer. Open that page for lifts, gates and
-            which cargo airport the booking uses. Other live areas are listed further down, each on its existing URL.
+            Each community below has its own page. The short note is a pointer. Open that page for lifts, gates and
+            which cargo airport the booking uses. More communities are listed further down.
           </p>
 
           {GROUPS.map((group) => (
@@ -385,14 +383,14 @@ export default function DubaiPillar() {
           ))}
 
           <div className="mt-12 rounded-[20px] border border-[#E6E8F5] bg-[#F5F6FD] p-6">
-            <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">Sheikh Zayed Road — corridor, not a new URL</h3>
+            <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">Sheikh Zayed Road</h3>
             <p className="mb-4 text-sm leading-relaxed text-[#5A5A5A]">
-              SZR is the spine that Marina, Barsha, Downtown and Business Bay hang off. It is not a community with its own
-              municipality desk. The existing{' '}
+              SZR is the spine that Marina, Barsha, Downtown and Business Bay hang off. It is a road corridor, not a
+              community with its own municipality desk. Access notes are on the{' '}
               <Link to="/dubai/sheikh-zayed-road/" className="font-semibold text-[#4F5BD5] hover:underline">
-                /dubai/sheikh-zayed-road/
-              </Link>{' '}
-              page stays live at that address.
+                Sheikh Zayed Road page
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -400,9 +398,9 @@ export default function DubaiPillar() {
 
       <section className="bg-[#F5F6FD] section-padding">
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Other live Dubai areas</h2>
+          <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">More Dubai communities</h2>
           <p className="mb-6 max-w-3xl text-sm leading-relaxed text-[#5A5A5A]">
-            These URLs stay live. Open a card if that is your address. Each area keeps its own page.
+            Open a card if that is your address. Each area has its own access notes.
           </p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {siblingAreas.map((a) => (

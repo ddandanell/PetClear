@@ -27,6 +27,7 @@ import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts
 import { HOURS_SUMMARY } from '../lib/openingHours.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: string }) {
@@ -72,7 +73,7 @@ export default function HowItWorksPage() {
       id: 'step1',
       title: "Share your pet's travel details",
       duration: 'During published hours',
-      body: 'Send your departure city, destination, pet details and preferred travel date on WhatsApp. We use those details to see whether the move is inbound, outbound or local, and which service applies. We reply during published hours. A proposal follows once the route and the pet are clear. It is an enquiry about your move, not a free consulting session.',
+      body: 'Send your departure city, destination, pet details and preferred travel date on WhatsApp. We use those details to see whether the move is inbound, outbound or local, and which service applies. We reply during published hours. A proposal follows once the route and the pet are clear. We explain the next step before any paid work starts.',
       icon: <MessageCircle className="w-5 h-5" />,
       youDo: 'Send departure city, destination, pet details and a preferred travel date',
       weDo: 'Read the route, check breed limits, and outline the service that fits',
@@ -193,7 +194,7 @@ export default function HowItWorksPage() {
           name: 'How long does the whole process take?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'From low-risk countries like the UK, EU, or USA, the process takes 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a titer, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a 90-day waiting period after the test. We recommend starting 8 to 12 weeks before your move date.',
+            text: 'From low-risk countries like the UK, EU, or USA, the process takes 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a 90-day waiting period after the test. We recommend starting 8 to 12 weeks before your move date.',
           },
         },
         {
@@ -298,20 +299,21 @@ export default function HowItWorksPage() {
   return (
     <div className="bg-[#F5F6FD]">
       <SEOHead
-        title="How Pet Relocation Works in Dubai | 7 Clear Steps"
-        description="How does pet relocation work in Dubai? Seven steps from breed check to municipality registration."
+        title="How Pet Relocation Works | Dubai Moving Process"
+        description="See the steps from your first pet relocation enquiry to document checks, travel arrangements and arrival. Understand your role and what we coordinate."
         canonical={`${BASE_URL}/how-it-works/`}
         ogType="article"
         schemas={schemas}
       />
       <Breadcrumb items={[{label: 'How It Works'}]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/how-it-works/" slot="final-step" /></div>
 
       {/* ═══════════ HERO ═══════════ */}
       <Hero
         image="/images/how-it-works-hero.jpg"
         imageAlt="A dog beside a travel crate and a checklist, representing the step-by-step relocation process"
         eyebrow="How It Works"
-        title="How pet relocation works in Dubai, step by step"
+        title="How your pet relocation works"
         subtitle="Share your pet's travel details, review the requirements and the proposed service, then prepare for the journey with the agreed support."
         updated="Updated June 2026"
         whatsappMessage={heroWaText}
@@ -776,7 +778,7 @@ export default function HowItWorksPage() {
             />
             <FAQItem
               question="How long does the whole process take?"
-              answer="From low-risk countries like the UK, EU, or USA: 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a titer: sample within 90 days before travel, result ≥0.5 IU/ml — not a 90-day wait after the test. We recommend starting 8 to 12 weeks before your move date. Starting earlier is always better. Starting later creates stress and may limit flight options."
+              answer="From low-risk countries like the UK, EU, or USA: 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a titer: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a 90-day wait after the test. We recommend starting 8 to 12 weeks before your move date. Starting earlier is always better. Starting later creates stress and may limit flight options."
             />
             <FAQItem
               question="What if my pet's flight is cancelled or delayed?"
@@ -802,7 +804,7 @@ export default function HowItWorksPage() {
             You have the sequence: share the travel details, review the proposed service, then prepare with the support you agree.
           </p>
           <p className="text-white/80 max-w-2xl mx-auto mb-8">
-            If you want us to coordinate the move, send the pet, the route and the month. We reply during published hours. Guides stay free to read. An enquiry is not a free consulting session.
+            If you want us to coordinate the move, send the pet, the route and the month. We reply during published hours and explain the next step before any paid work starts.
           </p>
           <a
             href={getWhatsAppUrl(heroWaText)}

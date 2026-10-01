@@ -82,7 +82,7 @@ export default function RouteAirportsAirlinesBlock({
           </h2>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
             {airlinesNarrative ||
-              'Modes below come from our corridor seed and must be confirmed against the airline’s current pet policy for your exact itinerary. Dubai Pet Relocation is a coordinator — not an airline, and not an official partner of any carrier listed.'}
+              'Modes below have to be confirmed against the airline’s current pet policy for your exact itinerary. Dubai Pet Relocation is a coordinator — not an airline, and not an official partner of any carrier listed.'}
           </p>
           <div className="mt-6 overflow-x-auto rounded-[20px] border border-[#E6E8F5]">
             <table className="min-w-full text-sm">
@@ -111,12 +111,7 @@ export default function RouteAirportsAirlinesBlock({
                           Official policy
                         </a>
                       ) : (
-                        <span>
-                          Confirm current policy
-                          {al.verificationStatus === 'unverified' ? (
-                            <span className="mt-1 block text-xs text-[#8A8A8A]">Unverified seed row</span>
-                          ) : null}
-                        </span>
+                        <span>Confirm current policy</span>
                       )}
                     </td>
                   </tr>
@@ -125,7 +120,7 @@ export default function RouteAirportsAirlinesBlock({
             </table>
           </div>
           <p className="mt-4 text-xs text-[#8A8A8A]">
-            Last seed import: unverified rows show “Confirm current policy”. No airline logos or affiliation claims.
+            Airline acceptance changes by route, breed and season. Confirm the carrier’s current pet policy before you book. No airline logos or affiliation claims.
           </p>
         </div>
       </div>

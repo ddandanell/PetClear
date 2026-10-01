@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { MessageCircle, ChevronDown, ChevronUp, ArrowRight, MapPin, CheckCircle } from 'lucide-react'
 import SEOHead from './SEOHead.tsx'
 import Breadcrumb from './Breadcrumb.tsx'
-import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle, localBusinessProvider } from '../lib/seo.ts'
 import type { ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
 import type { AreaPageData } from '../types/areaPage.ts'
 import OfficialSources from './OfficialSources.tsx'
@@ -113,12 +113,16 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
       { '@type': 'ListItem', position: 3, name: data.areaName, item: url },
     ],
   }
-  const localBusiness: Record<string, unknown> = {
-    '@context': 'https://schema.org', '@type': 'LocalBusiness', name: `${siteConfig.name} — ${data.areaName}`,
-    url, areaServed: `${data.areaName}, Dubai, UAE`, telephone: siteConfig.phoneE164,
-    description: data.metaDescription, address: { '@type': 'PostalAddress', addressLocality: data.areaName, addressRegion: 'Dubai', addressCountry: 'AE' },
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `Pet collection in ${data.areaName}`,
+    serviceType: 'Pet relocation coordination',
+    url,
+    description: data.metaDescription,
+    areaServed: `${data.areaName}, Dubai, UAE`,
+    provider: localBusinessProvider(),
   }
-  if (data.geo) localBusiness.geo = { '@type': 'GeoCoordinates', latitude: data.geo.lat, longitude: data.geo.lng }
   const faqSchema = {
     '@context': 'https://schema.org', '@type': 'FAQPage',
     mainEntity: data.faq.map((f) => ({
@@ -132,7 +136,7 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
     <div>
       <SEOHead
         meta={{ title: data.seoTitle, description: data.metaDescription, canonical: url, ogType: 'website' }}
-        schemas={[breadcrumbSchema, localBusiness, faqSchema]}
+        schemas={[breadcrumbSchema, serviceSchema, faqSchema]}
       />
       <Breadcrumb items={[{ label: 'Dubai', path: '/dubai/' }, { label: data.areaName }]} />
 

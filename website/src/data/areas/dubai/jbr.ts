@@ -4,10 +4,10 @@ const jbr: AreaPageData = {
   slug: 'jbr',
   areaName: 'JBR',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation JBR Dubai | Beachfront Tower Last Mile',
+  seoTitle: 'Pet Transport in JBR | Collection & Delivery',
   metaDescription:
-    'Pet relocation in JBR: beachfront towers, The Walk drop-offs, Bluewaters-adjacent last mile and MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
-  h1: 'Pet Relocation in JBR',
+    'Plan pet collection or delivery in JBR. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in JBR',
   primaryKeyword: 'pet relocation jbr',
   heroValueProp:
     'Relocating a dog or cat to or from JBR? We plan beachfront-tower access, crates and the DXB run — WhatsApp +971 50 478 2999 during business hours.',
@@ -18,7 +18,7 @@ const jbr: AreaPageData = {
   geo: { lat: '25.0785', lng: '55.1340' },
   landmarks: ['The Walk at JBR', 'The Beach JBR', 'Bluewaters Island', 'Ain Dubai', 'Dubai Marina', 'Rimal towers', 'Murjan towers'],
   vetsNote:
-    'JBR sits next to the same clinic corridor as Marina, but we do not publish a named list and we do not assume partnerships. Keep your current vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a brand. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'JBR sits next to the same clinic corridor as Marina, but we do not publish a named list and we do not assume partnerships. Keep your current vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a brand. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   intro:
     'Jumeirah Beach Residence is a beachfront stack of residential towers — Rimal, Murjan, Sadaf, Bahar — sitting on a pedestrian promenade, not a villa suburb. Dogs walk The Walk and The Beach before the heat builds; cats live in sea-facing apartments that still have to clear a crate through a tower lobby. That is why [every Dubai neighbourhood we serve](/dubai/) lists JBR as its own spoke: the last mile is beach-side drop-offs and evening footfall, not a Marina podium copy-paste. We coordinate international files into or out of these towers and the ground run to DXB or DWC. Neighbouring [relocating pets in Dubai Marina](/dubai/dubai-marina/) and [moving pets to or from Palm Jumeirah](/dubai/palm-jumeirah/) have different access rules. WhatsApp +971504782999 with your cluster, tower and route.',
   sections: [
@@ -94,7 +94,7 @@ const jbr: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Bluewaters Island sits on the pedestrian and bridge link west of JBR — Ain Dubai, the island promenade and the apartment clusters there are orientation landmarks, not a second JBR loading bay. If the pet lives on the island, the last mile is a bridge or island drop-off with its own security, not a Walk meetup. We absorb those access angles here so the file is planned correctly; the Bluewaters URL stays live and we are not firing a merge redirect. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is cooling down, not a victory lap toward the wheel.',
+          text: 'Bluewaters Island sits on the pedestrian and bridge link west of JBR — Ain Dubai, the island promenade and the apartment clusters there are orientation landmarks, not a second JBR loading bay. If the pet lives on the island, the last mile is a bridge or island drop-off with its own security, not a Walk meetup. Use the [Bluewaters collection page](/dubai/bluewaters/) for that collection. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is cooling down, not a victory lap toward the wheel.',
         },
       ],
     },
@@ -129,7 +129,7 @@ const jbr: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
         },
         {
           type: 'p',
@@ -137,7 +137,7 @@ const jbr: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. We map that before you commit to a crate or a ticket.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. We map that before you commit to a crate or a ticket.',
         },
       ],
     },
@@ -223,7 +223,7 @@ const jbr: AreaPageData = {
     },
     {
       q: 'If my origin needs a rabies titer, do I wait 90 days after the blood draw?',
-      a: 'No. When RNATT is required, take the blood sample within 90 days before travel and keep a result of at least 0.5 IU/ml. Waiting 90 days after the draw can push the sample outside the allowed window. Timing explainer: [rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting 90 days after the draw is not the rule. Timing explainer: [rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does pet relocation from JBR cost?',

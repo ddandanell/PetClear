@@ -4,10 +4,10 @@ const dubaiMarina: AreaPageData = {
   slug: 'dubai-marina',
   areaName: 'Dubai Marina',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubai Marina | Tower Collection Planning',
+  seoTitle: 'Pet Transport in Dubai Marina | Collection & Delivery',
   metaDescription:
-    'Pet collection in Dubai Marina: tell us the building name, visitor registration, loading access and any service-lift booking. WhatsApp +971504782999.',
-  h1: 'Pet collection in Dubai Marina',
+    'Plan pet collection or delivery in Dubai Marina. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Dubai Marina',
   primaryKeyword: 'pet relocation dubai marina',
   heroValueProp:
     'Moving a dog or cat to or from a Dubai Marina tower? Share the building name and how the building allows a crate to leave. We plan the collection around those details. WhatsApp +971504782999.',
@@ -18,9 +18,9 @@ const dubaiMarina: AreaPageData = {
   geo: { lat: '25.0805', lng: '55.1403' },
   landmarks: ['Marina Walk', 'Jumeirah Beach Residence (JBR)', 'Marina Mall', 'Bluewaters Island', 'Dubai Marina Yacht Club', 'Marina Promenade', 'Pier 7'],
   vetsNote:
-    'Clinics near Dubai Marina and JBR can do microchip scans, vaccines and health certificates. Rosters change, so this page does not name a clinic or claim a partnership. Use the vet who already holds the file, or ask on WhatsApp what kind of appointment you need. Federal import steps are on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Clinics near Dubai Marina and JBR can do microchip scans, vaccines and health certificates. Rosters change, so this page does not name a clinic or claim a partnership. Use the vet who already holds the file, or ask on WhatsApp what kind of appointment you need. Federal import steps are on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   intro:
-    'Dubai Marina is a waterfront of residential towers. A crate leaving an apartment has to fit the access your building actually allows. Let us know your building name and any collection requirements, such as visitor registration, loading access or a service-lift booking. Confirm these details with your building management so collection can be planned around them. This page is the Marina last mile. Import papers stay on the [UAE pet import requirements](/guides/uae-pet-import-requirements/) guide. Neighbouring towers are separate pages: [JBR](/dubai/jbr/) and [JLT](/dubai/jlt/). The area index is the [Dubai communities hub](/dubai/).',
+    'Dubai Marina is a waterfront of residential towers. A crate leaving an apartment has to fit the access your building actually allows. Let us know your building name and any collection requirements, such as visitor registration, loading access or a service-lift booking. Confirm these details with your building management so collection can be planned around them. This page is the Marina last mile. Import papers stay on the [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/) guide. Neighbouring towers are separate pages: [JBR](/dubai/jbr/) and [JLT](/dubai/jlt/). The area index is the [Dubai communities hub](/dubai/).',
   sections: [
     {
       h2: 'What to confirm with your building',
@@ -129,7 +129,7 @@ const dubaiMarina: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound, a MOCCAE import permit is valid for 90 days from issuance. The animal must enter the UAE inside that window. Species, vaccines, titre rules and airline products are on [UAE pet import requirements](/guides/uae-pet-import-requirements/), not restated as a Marina by-law. Government fees are on that guide. This page does not publish a package price.',
+          text: 'Inbound, a MOCCAE import permit is valid for 90 days from issuance. The animal must enter the UAE inside that window. Species, vaccines, titre rules and airline products are on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/), not restated as a Marina by-law. Government fees are on that guide. This page does not publish a package price.',
         },
         {
           type: 'p',

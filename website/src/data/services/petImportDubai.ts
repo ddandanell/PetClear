@@ -11,10 +11,10 @@ const OUTCOME =
 
 const petImportDubai: ServicePageData = {
   slug: 'pet-import-dubai',
-  seoTitle: 'Pet Import Services Dubai | MOCCAE & Customs Clearance',
+  seoTitle: 'Pet Import Dubai | Permits, Clearance & Delivery',
   metaDescription:
-    'Pet import services in Dubai: MOCCAE permit valid 90 days from issuance, titre conditions for high-risk origins, and cargo clearance. No package price on this page.',
-  h1: 'Pet Import Services in Dubai',
+    'Bringing a dog or cat to Dubai? Get help coordinating documents, permit timing, arrival clearance and home delivery. Request a quote for your move.',
+  h1: 'Pet import services in Dubai',
   primaryKeyword: 'pet import services Dubai',
   heroValueProp:
     'Commercial import into the UAE: we sequence the MOCCAE permit (90 days from issuance), the titre certificate when the origin is high-risk, cargo into Dubai, and handover at the door.',
@@ -40,7 +40,7 @@ const petImportDubai: ServicePageData = {
     {
       h2: 'What this import service covers',
       intro:
-        'Import coordination means we sequence the paid file: partners, paperwork and clearance. The full statutory checklist lives on [UAE pet import requirements](/guides/uae-pet-import-requirements/). Arrival-side settling (first week, municipality registration) lives on [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit filing as a standalone product lives on [MOCCAE permit assistance](/service/moccae-pet-permit/).',
+        'Import coordination means we sequence the paid file: partners, paperwork and clearance. The full statutory checklist lives on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/). Arrival-side settling (first week, municipality registration) lives on [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit filing as a standalone product lives on [MOCCAE permit assistance](/service/moccae-pet-permit/).',
       body: [
         {
           type: 'p',
@@ -71,7 +71,7 @@ const petImportDubai: ServicePageData = {
           type: 'image',
           src: '/assets/w5/pet-import-dubai-process-diagram.png',
           alt: 'Pet import process for Dubai: permit, health certificate, flight, customs, delivery',
-          caption: 'Illustration only. Permit validity is 90 days from issuance. Titre timing follows the live MOCCAE page.',
+          caption: 'Coordination sequence only: permit, certificate, flight, clearance, release, delivery. It does not show the antibody-test clock. Permit validity is 90 days from issuance. When a titre is required, the certificate rule is 365 days while the vaccine stays valid. Checked 6 September 2026.',
         },
         {
           type: 'steps',
@@ -105,6 +105,7 @@ const petImportDubai: ServicePageData = {
       ],
     },
     {
+      id: 'documents',
       h2: 'Documents we line-check before anything is booked',
       intro:
         'This is a commercial review list, not a substitute for the statutory table on the requirements guide. Every certificate must show the same 15-digit microchip number.',
@@ -120,7 +121,7 @@ const petImportDubai: ServicePageData = {
           items: [
             'Permanent microchip. The health-certificate number must match the animal. ISO was not restated.',
             'Rabies vaccination not before 12 weeks of age. Validity follows the manufacturer.',
-            'Species vaccines as listed on [UAE pet import requirements](/guides/uae-pet-import-requirements/)',
+            'Species vaccines as listed on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/)',
             'Antibody result of at least 0.5 IU/ml when the origin is high-risk, under the 365-day certificate conditions',
             'Authorised health certificate from the origin authority. No universal 10-day validity on the MOCCAE page.',
             'MOCCAE import permit still inside its 90 days from issuance on the arrival date',
@@ -212,7 +213,7 @@ const petImportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Compare how much of the sequence we hold versus how much you hold on [compare our service tiers](/services/). Then send origin, pet and month on WhatsApp for a paid eligibility check and a managed-import quote — we do not publish a fake AED total on this page. Packages: [Prices](/prices/).',
+          text: 'Compare how much of the sequence we hold versus how much you hold on [compare our service tiers](/services/). Then send origin, pet and month on WhatsApp for a quote and a managed-import quote — we do not publish a fake AED total on this page. Packages: [Prices](/prices/).',
         },
       ],
     },
@@ -254,15 +255,15 @@ const petImportDubai: ServicePageData = {
   faq: [
     {
       q: 'How long do pets stay in quarantine?',
-      a: 'The UAE typically has no long quarantine when documents are correct — compliant pets are examined at the entry port and released. We do not assume a day-count for a paperwork hold. Depth lives on the [UAE pet import requirements](/guides/uae-pet-import-requirements/) guide.',
+      a: 'The UAE typically has no long quarantine when documents are correct — compliant pets are examined at the entry port and released. We do not assume a day-count for a paperwork hold. Depth lives on the [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/) guide.',
     },
     {
       q: 'What are the rules and regulations for pets in the UAE?',
-      a: 'Federal rules cover a matching microchip, the vaccines for that species, a health certificate, a MOCCAE import permit valid 90 days from issuance, and the published breed ban. Use [UAE pet import requirements](/guides/uae-pet-import-requirements/) and [banned dog breeds in Dubai](/guides/banned-dog-breeds-dubai/).',
+      a: 'Federal rules cover a matching microchip, the vaccines for that species, a health certificate, a MOCCAE import permit valid 90 days from issuance, and the published breed ban. Use [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/) and [banned dog breeds in Dubai](/guides/banned-dog-breeds-dubai/).',
     },
     {
       q: 'What are the requirements for traveling with my pet to the UAE?',
-      a: 'A matching microchip, the vaccines for that species, an authorised health certificate, parasite treatment in the 14 days before shipment, and a MOCCAE import permit valid 90 days from issuance. High-risk origins add an antibody test of at least 0.5 IU/ml. Emirates itineraries ending in Dubai are cargo. Full checklist: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+      a: 'A matching microchip, the vaccines for that species, an authorised health certificate, parasite treatment in the 14 days before shipment, and a MOCCAE import permit valid 90 days from issuance. High-risk origins add an antibody test of at least 0.5 IU/ml. Emirates itineraries ending in Dubai are cargo. Full checklist: [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
     },
     {
       q: 'Does Dubai allow pet dogs?',
@@ -286,7 +287,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'How is this different from the UAE import-requirements guide?',
-      a: 'Read the statutory checklist on the guide. Use this page when you want the import sequenced, with partners and clearance. Rules: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+      a: 'Read the statutory checklist on the guide. Use this page when you want the import sequenced, with partners and clearance. Rules: [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
     },
     {
       q: 'How long is the MOCCAE import permit valid?',
@@ -306,7 +307,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'How many pets can I import on a personal permit?',
-      a: 'Personal (non-commercial) import is typically limited to a maximum of 2 pets per person (2 cats, or 2 dogs, or 1 cat and 1 dog) per permit / per year. Confirm the current portal rule for your household. Larger groups need a different conversation — send household details on WhatsApp for a paid eligibility check before you book crates.',
+      a: 'Personal (non-commercial) import is typically limited to a maximum of 2 pets per person (2 cats, or 2 dogs, or 1 cat and 1 dog) per permit / per year. Confirm the current portal rule for your household. Larger groups need a different conversation — send household details on WhatsApp for a quote before you book crates.',
     },
     {
       q: 'What happens if the paperwork is wrong on arrival?',

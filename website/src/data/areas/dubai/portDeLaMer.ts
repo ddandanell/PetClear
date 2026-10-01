@@ -4,10 +4,10 @@ const portDeLaMer: AreaPageData = {
   slug: 'port-de-la-mer',
   areaName: 'Port de La Mer',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Port de La Mer | Dog & Cat Transport',
+  seoTitle: 'Pet Transport in Port De La Mer | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Port de La Mer — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote in 15 minutes.',
-  h1: 'Pet Relocation in Port de La Mer',
+    'Plan pet collection or delivery in Port De La Mer. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Port De La Mer',
   primaryKeyword: 'pet relocation port de la mer',
   heroValueProp:
     'Relocating a dog or cat to or from Port de La Mer? We coordinate the whole move for Port de La Mer residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your beachfront apartment — with WhatsApp updates at every step.',
@@ -38,7 +38,7 @@ const portDeLaMer: AreaPageData = {
       h2: 'Moving To or From Port de La Mer With a Pet',
       body: [
         { type: 'p', text: 'Most Port de La Mer relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days. Confirm the current MOCCAE import-permit fee and arrival-release fee on the official portal; fees may change.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer test is only required when moving from or to certain high-risk countries — in those cases plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer test is only required when moving from or to certain high-risk countries — in those cases plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We map your exact timeline before you commit.' },
       ],
     },
     {
@@ -48,7 +48,7 @@ const portDeLaMer: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Port de La Mer',
+      h2: 'Cost of Pet collection and delivery in Port De La Mer',
       body: [
         { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees include the MOCCAE import permit plus an arrival-release fee (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination.' },
       ],
@@ -56,7 +56,7 @@ const portDeLaMer: AreaPageData = {
   ],
   faq: [
     { q: 'Do you pick up from my building in Port de La Mer?', a: 'Yes — we arrange door-to-door pickup from your Port de La Mer apartment or building and coordinate the entire move from there.' },
-    { q: 'How long does pet relocation from Port de La Mer take?', a: 'From low-risk countries, usually 2–6 weeks. If your route involves a high-risk rabies country that needs a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
+    { q: 'How long does pet relocation from Port de La Mer take?', a: 'From low-risk countries, usually 2–6 weeks. If your route involves a high-risk rabies country that needs a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Confirm current MOCCAE import-permit and arrival-release fees on the official portal; fees may change. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import permit (valid 90 days from issuance) or export certificate, or handle the application on your behalf depending on your service tier.' },
     { q: 'My building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for apartment pets in beachfront communities like Port de La Mer.' },

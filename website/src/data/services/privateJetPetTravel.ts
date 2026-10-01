@@ -3,10 +3,10 @@ import { FLIGHT_MODE_PATHS } from '../flightModes.ts'
 
 const privateJetPetTravel: ServicePageData = {
   slug: 'private-jet-pet-travel',
-  seoTitle: 'Private Jet Pet Travel Dubai | Quote-Only Coordination',
+  seoTitle: 'Private Jet Pet Travel Dubai | Charter Coordination',
   metaDescription:
-    'Private jet pet travel Dubai when cabin, baggage or cargo will not work. Quote only — no published jet prices. WhatsApp +971504782999.',
-  h1: 'Private Jet Pet Travel Dubai — Quote-Only Coordination',
+    'Explore dedicated private jet travel with your pet from Dubai. Discuss your route, passengers and pet needs, then request a charter coordination quote.',
+  h1: 'Private jet travel with your pet from Dubai',
   primaryKeyword: 'private jet pet travel Dubai',
   heroValueProp:
     'A menu offer for a dedicated aircraft: tight calendars, animals scheduled carriers will not accept, or owners who need the whole cabin. This is not the door-to-door pet relocation page. Quote only — we do not publish jet prices.',
@@ -138,7 +138,7 @@ const privateJetPetTravel: ServicePageData = {
   faq: [
     {
       q: 'Do you publish private-jet prices?',
-      a: 'No. Aircraft, routing and handling vary too widely. This page is a custom charter quote only — no all-in jet numbers. WhatsApp +971504782999 for a paid eligibility check if you want a managed jet quote, or write to support@dubai-pet-relocation.ae.',
+      a: 'No. Aircraft, routing and handling vary too widely. This page is a custom charter quote only — no all-in jet numbers. WhatsApp +971504782999 for a quote if you want a managed jet quote, or write to support@dubai-pet-relocation.ae.',
     },
     {
       q: 'Are you an airline or a jet operator?',

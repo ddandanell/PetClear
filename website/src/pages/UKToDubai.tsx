@@ -3,6 +3,7 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
 import { waEligibility } from '../lib/conversionCopy.ts'
+import { RoutePlanLinks } from '../components/LinkPlanSlot.tsx'
 import { CheckCircle, Plane, FileText, Clock, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
@@ -42,9 +43,9 @@ const SOURCES = [
 
 export default function UKToDubai() {
   const pageUrl = `${BASE_URL}/routes/uk-to-dubai/`
-  const pageTitle = 'Pet Relocation UK to Dubai | Documents and Timing'
+  const pageTitle = 'Pet Relocation UK to Dubai | Planning & Quote'
   const pageDescription =
-    'Move a dog or cat from the UK to Dubai. MOCCAE permit valid 90 days from issuance, UK export certificate 3926EHC, and cargo into Dubai. No package price on this page.'
+    'Moving a dog or cat from UK to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
   const faqs = [
     {
       question: 'Can I move my dog or cat from the UK to Dubai?',
@@ -147,12 +148,15 @@ export default function UKToDubai() {
         imageAlt="Pet relocation from the UK to Dubai"
         fallbackSrc="/images/hero-uk.jpg"
         eyebrow="United Kingdom to Dubai"
-        title="Move a dog or cat from the UK to Dubai"
+        title="Pet relocation from UK to Dubai"
         subtitle="The UK is on MOCCAE's published low-risk list, so a rabies titre is not the usual extra test. You still need a 90-day import permit, UK certificate 3926EHC, and a cargo booking into Dubai."
         updated={`Checked ${CHECKED}`}
         whatsappMessage={WA}
         primaryLabel="Check this UK to Dubai move"
       />
+      <div className="mx-auto max-w-[900px] px-5 pt-8">
+        <RoutePlanLinks />
+      </div>
 
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
@@ -162,7 +166,7 @@ export default function UKToDubai() {
               What this corridor actually requires
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4">
-              This page is for someone sending a dog or cat from the United Kingdom to Dubai, or deciding whether the calendar is realistic. Read the rules here. WhatsApp is for a paid eligibility check when you want the file coordinated.
+              This page is for someone sending a dog or cat from the United Kingdom to Dubai, or deciding whether the calendar is realistic. Read the rules here. WhatsApp is for a quote when you want the file coordinated.
             </p>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4">
               On {CHECKED} the{' '}
@@ -208,7 +212,7 @@ export default function UKToDubai() {
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 The{' '}
                 <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  UAE pet import requirements
+                  UAE pet import requirements for dogs and cats
                 </Link>{' '}
                 page holds the full federal checklist. These are the UK-corridor conditions checked on {CHECKED}.
               </p>

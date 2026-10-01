@@ -22,10 +22,10 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 const PAGE_PATH = '/for-pet-relocators/'
 const PAGE_URL = `${BASE_URL}${PAGE_PATH}`
-const TITLE = 'Pet Relocation Partner Dubai | UAE Playbooks & Network'
-const H1 = 'Pet Relocation Partner Dubai — Playbooks & Network'
+const TITLE = 'Pet Relocation Partners Dubai | Work With Our Team'
+const H1 = 'Work with Dubai Pet Relocation'
 const META =
-  'Pet relocation partner Dubai program: UAE playbooks for peers, corridor tips, and network access. Not for pet owners.'
+  'Discuss pet relocation coordination and handovers with our Dubai team. Share your routes, operational capabilities and requirements for working together.'
 const WA_MESSAGE =
   "Hi Dubai Pet Relocation — I'm a pet relocator interested in your education / network access."
 
@@ -97,7 +97,7 @@ export default function ForPetRelocatorsPage() {
         imageAlt="Document checklist and travel crate used when coordinating a pet move through Dubai"
         eyebrow="Partner network & education"
         title={H1}
-        subtitle="Playbooks for MOCCAE timing, titer sample windows, crates and airline modes — plus a roles-only airport map. Peer education. WhatsApp to talk."
+        subtitle="Playbooks for MOCCAE timing, the titre certificate, crates and airline modes — plus a roles-only airport map. Peer education. WhatsApp to talk."
         primaryLabel="WhatsApp as a relocator"
         whatsappMessage={WA_MESSAGE}
         secondary={{ label: 'How coordination works', to: '/how-it-works/' }}
@@ -173,7 +173,7 @@ export default function ForPetRelocatorsPage() {
               <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">MOCCAE import permit — 90 days</h3>
               <p className="mb-4 text-base leading-relaxed text-[#5A5A5A]">
                 Inbound UAE files need a Ministry import permit. Validity is 90 days from issuance. The
-                animal must enter inside that window. That clock is not the titer sample window. We teach how
+                animal must enter inside that window. That clock is not the titre certificate. We teach how
                 the permit sits next to origin health papers and cargo dates — we do not paste a fee schedule
                 on this page.
               </p>
@@ -185,10 +185,9 @@ export default function ForPetRelocatorsPage() {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-[14px] bg-[#E9ECFB]">
                 <Shield className="h-5 w-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">Titer sample window, not a post-draw sit</h3>
+              <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">Titre certificate, not a post-draw sit</h3>
               <p className="mb-4 text-base leading-relaxed text-[#5A5A5A]">
-                When an RNATT is required, the blood sample must be taken within 90 days before travel and read
-                at least 0.5 IU/ml. That is a pre-travel sample window. Teaching a mandatory wait after the draw
+                When an RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a sample window before travel. Teaching a mandatory wait after the draw
                 is how files miss the window. Confirm whether the origin is currently titer-required on the
                 portal.
               </p>
@@ -243,7 +242,7 @@ export default function ForPetRelocatorsPage() {
               to="/guides/uae-pet-import-requirements/"
               className="font-semibold text-[#4F5BD5] hover:underline"
             >
-              UAE pet import requirements
+              UAE pet import requirements for dogs and cats
             </Link>
             . Use it as the owner-facing rule page; this page stays the peer overlay.
           </p>
@@ -269,19 +268,19 @@ export default function ForPetRelocatorsPage() {
               <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">Playbooks</h3>
               <p className="text-base leading-relaxed text-[#5A5A5A]">
                 Shared sequencing notes: microchip before the rabies shot used for import, permit validity
-                against the cargo date, titer sample inside the 90-day pre-travel window, crate check before
-                the cargo desk. Written for someone who already knows origin export, not a first-time owner
-                essay. We will not reprint a Ministry table here. If a rule is contested, the portal wins and
-                the guide is the teach-and-link layer.
+                against the cargo date, and, when a titre is required, a result of at least 0.5 IU/ml with a
+                certificate valid for 365 days while the vaccine stays valid and no booster is given. Then a
+                crate check before the cargo desk. Written for someone who already knows origin export.
+                If a rule is contested, the official portal wins.
               </p>
             </div>
             <div className="rounded-[20px] bg-[#F5F6FD] p-7">
               <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">Corridor checks</h3>
               <p className="text-base leading-relaxed text-[#5A5A5A]">
                 We read the file against the actual origin or destination gateway — DEL or BOM, FRA or MUC, SIN,
-                AMS, MNL, SYD — and the UAE clearance airport the itinerary really uses. Seed airline modes stay
-                unverified until you confirm the carrier page for that OD. A UK LHR example in the about blurb
-                is a role-lens illustration, not a claim that we staff a named desk at Heathrow.
+                AMS, MNL, SYD — and the UAE clearance airport the itinerary really uses. Confirm each carrier’s
+                current pet acceptance before booking. A Heathrow example is an illustration of the role, not a
+                claim that we staff a desk at that airport.
               </p>
             </div>
             <div className="rounded-[20px] bg-[#F5F6FD] p-7">

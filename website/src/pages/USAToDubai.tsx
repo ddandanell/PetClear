@@ -13,8 +13,8 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 export default function USAToDubai() {
   const pageUrl = `${BASE_URL}/routes/usa-to-dubai/`
-  const pageTitle = 'Pet Relocation USA to Dubai | Import Corridor Guide 2026'
-  const pageDescription = 'Move a dog or cat from the USA to Dubai. On 22 September 2026 the United States was not on the MOCCAE low-risk list, so plan the antibody test. Permit valid 90 days from issuance. No package price.'
+  const pageTitle = 'Pet Relocation USA to Dubai | Planning & Quote'
+  const pageDescription = 'Moving a dog or cat from USA to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
   const faqs = [
     {
       question: 'Can I bring a dog to Dubai from the USA?',
@@ -29,7 +29,7 @@ export default function USAToDubai() {
       answer: 'Confirm the product with the carrier. Emirates says ordinary pets are not in the cabin, and itineraries ending in Dubai must travel as cargo. This page does not publish flight times, hold temperatures, or a cargo tariff. Ask for the booking in writing.'
     },
     {
-      question: 'How long does the USA to Dubai pet relocation process take?',
+      question: 'How long does the Pet relocation from USA to Dubai process take?',
       answer: 'There is no single week count. A first or lapsed rabies vaccine needs at least 21 days before the antibody test. A valid booster does not. The permit estimate is 1 working day, or 5 working days for a service, emotional support or medical dog, and the permit then lasts 90 days from issuance. Airline space can add time. We do not promise a 4 to 6 week file.'
     },
     {
@@ -105,7 +105,7 @@ export default function USAToDubai() {
         imageAlt="Pet relocation from USA to Dubai"
         fallbackSrc="/images/hero-usa.jpg"
         eyebrow="United States → Dubai"
-        title="USA to Dubai pet relocation"
+        title="Pet relocation from USA to Dubai"
         subtitle="On 22 September 2026 the United States was not on the MOCCAE low-risk list, so plan an antibody test of at least 0.5 IU/ml. The import permit is valid 90 days from issuance."
         updated="Last verified: 22 September 2026"
       />

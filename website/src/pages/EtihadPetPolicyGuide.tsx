@@ -16,6 +16,7 @@ import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS } from '../data/flightModes.ts'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import { waEligibility } from '../lib/conversionCopy.ts'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 const ETIHAD_PETS_URL = 'https://www.etihad.com/en-ae/plan/travel-companion/travelling-with-pets'
 
@@ -82,9 +83,9 @@ const faqData = [
 
 export default function EtihadPetPolicyGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.cabin}`
-  const title = 'Etihad Pet Policy | Cabin Pets & AUH Arrival'
+  const title = 'Etihad Pet Policy | Cabin Eligibility & Planning'
   const description =
-    'Etihad pets in cabin: the only UAE dog-and-cat cabin product. Confirm live cabin fees at booking. ≤8 kg including carrier; AUH arrival.'
+    'Review Etihad pet travel eligibility, carrier requirements and booking considerations. Confirm the current airline policy before arranging your journey.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -126,12 +127,13 @@ export default function EtihadPetPolicyGuide() {
         schemas={[breadcrumbSchema, articleSchema, faqSchema]}
       />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Etihad pet policy' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/guides/etihad-pet-policy/" slot="after-answer" /></div>
 
       <Hero
         image="/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg"
         imageAlt="A cat in a soft travel carrier, the kind of under-seat carrier used for Etihad in-cabin pet travel"
         eyebrow="Airline guide"
-        title="Etihad Pets in Cabin — The Only UAE In-Cabin Option"
+        title="Understanding Etihad pet travel rules"
         subtitle="Small dogs and cats, booked early — arriving at Abu Dhabi, not Dubai International. Cabin fees change; confirm at booking. We coordinate the file; Etihad operates the flight."
         updated="Updated September 2026"
         primaryLabel="Check cabin eligibility"
@@ -158,7 +160,7 @@ export default function EtihadPetPolicyGuide() {
             </Link>{' '}
             and{' '}
             <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-              UAE pet import requirements
+              UAE pet import requirements for dogs and cats
             </Link>
             .
           </p>

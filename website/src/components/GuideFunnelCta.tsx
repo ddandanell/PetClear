@@ -118,7 +118,7 @@ export default function GuideFunnelCta({
             {buttons}
             <WhatsAppGate showDiyNote className="mt-4 text-center" />
             <p className="mt-2 text-center text-xs text-[#8A8A8A]">
-              WhatsApp {PHONE_DISPLAY} · Permit validity 90 days from issuance · Titer sample within 90 days before travel when required
+              WhatsApp {PHONE_DISPLAY} · Permit validity 90 days from issuance · Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titer is required
             </p>
           </div>
         ) : (

@@ -13,7 +13,7 @@ import ContentImage from '../components/ContentImage.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
-import { dubaiAreas } from '../data/areas/dubai/index.ts'
+import { TOP_COMMUNITY_LINKS } from '../data/areas/dubai/topCommunities.ts'
 import PaidIncludes from '../components/PaidIncludes.tsx'
 import { CTA_CHECK_MOVE, CTA_SUPPORT, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import { openingHoursSpecification } from '../lib/openingHours.ts'
@@ -78,7 +78,7 @@ const HOME_FAQS = [
   },
   {
     q: 'When does the homepage say a rabies titer sample must be taken?',
-    a: 'When a titer is required for the route, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml. That is not a 90-day waiting period after the test. Depth lives on the [rabies titer test](/guides/rabies-titer-test-dubai/) guide and the [door-to-door Dubai relocation](/service/pet-relocation-dubai/) page.',
+    a: 'When a titer is required for the route, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is not a 90-day sample window and not a wait after the test. Depth lives on the [rabies titer test](/guides/rabies-titer-test-dubai/) guide and the [door-to-door Dubai relocation](/service/pet-relocation-dubai/) page.',
   },
   {
     q: 'Can I move both a dog and a cat on the same timeline?',
@@ -86,7 +86,7 @@ const HOME_FAQS = [
   },
   {
     q: 'What should I send on WhatsApp to start?',
-    a: 'WhatsApp is for people ready to book a managed relocation. Send pet type, breed, approximate weight, origin or destination, and a target month. Guides stay free to read. We reply during published hours and say whether the move is inbound or outbound.',
+    a: 'WhatsApp is for a quote about a managed relocation. Send pet type, breed, approximate weight, origin or destination, and a target month. We reply during published hours, say whether the move is inbound or outbound, and explain the next step before any paid work starts.',
   },
   {
     q: 'Do you operate the airline or the pet taxi yourselves?',
@@ -94,7 +94,7 @@ const HOME_FAQS = [
   },
 ]
 
-const TOP_COMMUNITIES = dubaiAreas.slice(0, 10)
+const TOP_COMMUNITIES = TOP_COMMUNITY_LINKS
 
 export default function HomePage() {
   const organizationSchema = {
@@ -141,12 +141,10 @@ export default function HomePage() {
       streetAddress: siteConfig.address.street,
       addressLocality: siteConfig.address.city,
       addressRegion: siteConfig.address.region,
-      postalCode: siteConfig.address.postalCode,
       addressCountry: siteConfig.address.country,
     },
-    geo: { '@type': 'GeoCoordinates', latitude: siteConfig.geo.lat, longitude: siteConfig.geo.lng },
     openingHoursSpecification,
-    areaServed: { '@type': 'City', name: 'Dubai' },
+    areaServed: { '@type': 'Country', name: 'United Arab Emirates' },
   }
 
   const breadcrumbSchema = {
@@ -181,9 +179,9 @@ export default function HomePage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Dubai Pet Relocation | Guides, Routes & Managed Quotes',
+          title: 'Dubai Pet Relocation | Pet Moving & Transport',
           description:
-            'Dubai Pet Relocation guides, routes and WhatsApp quotes. Open the door-to-door service when you are ready to book.',
+            'Plan your pet move to or from Dubai. Compare import, export and local transport support, understand the process, and request a quote for your route.',
           canonical: `${BASE_URL}/`,
           ogType: 'website',
         }}
@@ -193,14 +191,14 @@ export default function HomePage() {
       {/* 1. Hero — existing placeholder; original-photo hero remains blocked */}
       <Hero
         image="/images/hero-dog.jpg"
-        imageAlt="Calm golden retriever ready for relocation beside its travel crate in a bright Dubai home"
+        imageAlt="Illustration of a golden retriever sitting beside a small hard-sided carrier in an airport terminal, with a luggage trolley and a hazy skyline through the windows. The carrier in the picture is not a measured travel crate for a dog of this size."
         eyebrow="Pet relocation coordination for Dubai and the UAE"
-        title="Move your pet to or from Dubai with a clear plan"
-        subtitle="Moving with a dog or cat means coordinating documents, travel arrangements and collection or delivery. We help you understand the steps and organise the support your move needs, with clear responsibilities from the start."
+        title="Pet relocation to and from Dubai"
+        subtitle="Share your origin, destination, pet details and preferred dates. We will explain the next steps and any assessment fee before you proceed."
         primaryLabel={CTA_CHECK_MOVE}
         ctaSupport={CTA_SUPPORT}
         whatsappMessage={WA_ELIGIBILITY_DEFAULT}
-        secondary={{ label: 'Explore our services', to: '/services/' }}
+        secondary={{ label: 'Compare relocation services', to: '/services/' }}
         updated="Updated September 2026"
         showBuyerQualify
       />
@@ -235,15 +233,15 @@ export default function HomePage() {
               Whether your pet is arriving in Dubai, leaving the UAE or travelling locally, start with the service that matches your move.
             </p>
             <p className="text-body mx-auto mt-4 max-w-3xl">
-              Open door-to-door relocation when you want one coordinator for documents, crate, cargo and the last mile. Use{' '}
+              Door-to-door relocation is one coordinator for documents, the crate, the flight and the last mile.{' '}
               <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-                pet import to Dubai
+                Pet import
               </Link>{' '}
-              when the job is inbound clearance. Use{' '}
+              is a dog or cat arriving in Dubai.{' '}
               <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-                pet export from Dubai
+                Pet export
               </Link>{' '}
-              when you are leaving the UAE. Use the to-Dubai page when you are only arriving. Use the from-Dubai page when you are only leaving. Use pet taxi when the animal never leaves the road. Species pages exist for dog- and cat-specific crate and apartment rules; the federal permit chain is shared. If you already know you want document guidance or full coordination, compare the tiers, then open the service that matches the move.
+              is a dog or cat leaving the UAE. Pet taxi is a journey that stays on the road. The dog and cat pages cover crate fit and home preparation for that species. Compare the tiers, then open the service that matches the move.
             </p>
           </div>
           <div className="grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -293,7 +291,7 @@ export default function HomePage() {
               Guides explain the rules. When you want a proposal, tell us about the move on WhatsApp ({siteConfig.phone}). Then open door-to-door relocation, inbound import or outbound export. MOCCAE portal fees are confirmed on the official site.
             </p>
             <p className="mt-2 text-xs leading-relaxed text-[#8A8A8A]">
-              Guides are free to read. WhatsApp is for people ready to book a managed relocation.
+              WhatsApp is for a quote. We explain the next step before any paid work starts.
             </p>
             <PaidIncludes compact className="mt-4 text-left" />
           </div>
@@ -335,7 +333,7 @@ export default function HomePage() {
               <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Popular Relocation Routes</span>
               <h2 className="text-section mt-3 mb-4">Routes into Dubai and routes leaving Dubai</h2>
               <p className="text-body mb-4">
-                Arrivals from the UK, the USA and India do not share one paperwork list. A UK file is usually vaccinations, a health certificate and the MOCCAE import permit, valid for 90 days from issuance. A US file adds endorsement steps that have to match the cargo date. India and other origins that need a rabies titer add a blood sample taken within 90 days before travel.
+                Arrivals from the UK, the USA and India do not share one paperwork list. A UK file is usually vaccinations, a health certificate and the MOCCAE import permit, valid for 90 days from issuance. A US file adds endorsement steps that have to match the cargo date. India and other origins that need a rabies titer add a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.
               </p>
               <p className="text-body mb-4">
                 Leaving Dubai is not the inbound list in reverse. The destination's rules set the clock. The UAE export certificate is only useful once those destination treatments and waiting periods are ready. The routes hub holds the full list in both directions. The cards below are the routes owners ask about first.
@@ -398,7 +396,7 @@ export default function HomePage() {
                 step: '02',
                 icon: FileCheck,
                 title: 'Review the requirements and proposed service',
-                body: 'We review microchip, vaccinations, crate sizing and the permit window with you. A MOCCAE import permit is valid for 90 days from issuance. When a titer is required, the blood sample is taken within 90 days before travel.',
+                body: 'We review microchip, vaccinations, crate sizing and the permit window with you. A MOCCAE import permit is valid for 90 days from issuance. When a titer is required, the blood sample uses a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.',
               },
               {
                 step: '03',
@@ -467,7 +465,7 @@ export default function HomePage() {
                 Full checklists live on the guides. These are the facts owners mix up most often, with a link to the longer page. Last-verified stamps sit next to regulatory lines.
               </p>
               <p className="text-body mb-4">
-                Two timing errors cause most inbound delays. The first is treating the import permit as if it lasted 30 days; official MOCCAE wording is 90 days from issuance, and the pet must arrive inside that window. The second is treating a titer as a 90-day wait after the blood draw. When a titer is required, the sample is taken within 90 days before travel and must read at least 0.5 IU/ml. Those two sentences are the whole homepage rule. The walkthroughs live on the permit and titer guides.
+                Two timing errors cause most inbound delays. The first is treating the import permit as if it lasted 30 days; official MOCCAE wording is 90 days from issuance, and the pet must arrive inside that window. The second is treating a titer as a 90-day wait after the blood draw. When a titer is required, the sample uses a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Those two sentences are the whole homepage rule. The walkthroughs live on the permit and titer guides.
               </p>
               <LastVerified />
             </div>
@@ -489,7 +487,7 @@ export default function HomePage() {
               {
                 icon: FileCheck,
                 title: 'Titer timing',
-                body: 'When a titer is required, draw the blood sample within 90 days before travel. Result at least 0.5 IU/ml. Not a 90-day wait after the test.',
+                body: 'When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Result at least 0.5 IU/ml. Not a 90-day wait after the test.',
                 to: '/guides/rabies-titer-test-dubai/',
                 label: 'Titer guide',
               },
@@ -597,10 +595,10 @@ export default function HomePage() {
             We do not claim hundreds of pets moved, star ratings, zero paperwork errors, 24/7 cover or a country-count. What we will say: every document is checked before it is submitted, crate size is measured on the animal, and an inbound move is planned separately from an outbound one. We reply during published hours. A same-day pet taxi is a slot when a partner is free.
           </p>
           <p className="text-body mb-4">
-            Transparency also means saying what we will not do. We will not publish an unverified fee to look complete. We will not tell you a banned breed can “probably enter”. We will not book cargo before the permit window is understood. We will not treat a nervous cat as a small dog in a smaller box.
+            Transparency also means saying what we will not do. We will not publish a fee we have not confirmed. We will not tell you a banned breed can “probably enter”. We will not book cargo before the permit window is understood. We will not treat a nervous cat as a small dog in a smaller box.
           </p>
           <p className="text-body mb-6">
-            Animal welfare sits in the sequence: heat, crate, no casual sedation talk, and a quiet first week after arrival. The longer story belongs on About. WhatsApp is for a managed-move eligibility check: send the pet, the route and the month when you are ready to book.
+            Animal welfare sits in the sequence: heat, crate, no casual sedation talk, and a quiet first week after arrival. The longer story belongs on About. WhatsApp is for a quote: send the pet, the route and the month when you are ready to book.
           </p>
           <Link to="/about/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
             About the coordination model <ArrowRight className="h-4 w-4" />
@@ -615,7 +613,7 @@ export default function HomePage() {
             <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Guides</span>
             <h2 className="text-section mt-3 mb-3">Guides for one rule at a time</h2>
             <p className="text-body-large mx-auto max-w-2xl">
-              Four to six cards. The guides hub holds the rest. Use these when you need a rule, not a quote.
+              Start with the guide that answers the question in front of you. The guides hub holds the rest.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -669,13 +667,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[32px]">Ready to book a managed move?</h2>
           <p className="mb-3 text-white/90">
-            Message the pet, the route and the month if you want us to coordinate the move, or open the door-to-door, import or export pages. Guides stay free to read. A coordinator replies during published hours.
+            Share your origin, destination, pet details and preferred dates. We will explain the next steps and any assessment fee before you proceed.
           </p>
           <p className="mb-3 text-sm text-white/70">
             After you message us, we read the breed and the route, say which documents matter first, and tell you whether the month looks realistic.
           </p>
           <p className="mb-8 text-sm text-white/70">
-            A MOCCAE import permit is valid for 90 days from issuance. When a titer is required, the blood sample is taken within 90 days before travel. Portal fees are confirmed on the official site.
+            A MOCCAE import permit is valid for 90 days from issuance. When a titer is required, the blood sample uses a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Portal fees are confirmed on the official site.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <WhatsAppCta text="Tell us about your move" message={WA_ELIGIBILITY_DEFAULT} />

@@ -8,6 +8,7 @@ import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import { CTA_SCOPED_QUOTE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
   const [open, setOpen] = useState(false)
@@ -120,8 +121,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'import',
     question: 'Which countries are low-risk versus high-risk for rabies?',
-    answer: <><p>Low-risk countries — which do not need a rabies titer test — include the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. High-risk countries that require a titer test (sample within 90 days before travel ≥0.5 IU/ml) include most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia such as India, Pakistan, and the Philippines. The list is maintained by MOCCAE and can change, so always verify your country's current status before skipping the titer test.</p><p className="mt-3"><Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">See the rabies titer test guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
-    plain: 'Low-risk countries — which do not need a rabies titer test — include the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. High-risk countries that require a titer test (sample within 90 days before travel ≥0.5 IU/ml) include most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia such as India, Pakistan, and the Philippines. The list is maintained by MOCCAE and can change, so always verify your country\'s current status before skipping the titer test.',
+    answer: <><p>Low-risk countries — which do not need a rabies titer test — include the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. High-risk countries that require a titer test (a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given) include most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia such as India, Pakistan, and the Philippines. The list is maintained by MOCCAE and can change, so always verify your country's current status before skipping the titer test.</p><p className="mt-3"><Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">See the rabies titer test guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    plain: 'Low-risk countries — which do not need a rabies titer test — include the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. High-risk countries that require a titer test (a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given) include most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia such as India, Pakistan, and the Philippines. The list is maintained by MOCCAE and can change, so always verify your country\'s current status before skipping the titer test.',
   },
   {
     category: 'import',
@@ -138,8 +139,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'import',
     question: 'I am moving from Bahrain or Qatar — do I still need a titer test?',
-    answer: <p>Yes. Pets coming from Bahrain and Qatar must have a rabies titer test even though those countries are otherwise classified as low-risk. This is a specific exception that is frequently missed and causes delays. If you are relocating from either country, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — that is not a wait after the draw.</p>,
-    plain: 'Yes. Pets coming from Bahrain and Qatar must have a rabies titer test even though those countries are otherwise classified as low-risk. This is a specific exception that is frequently missed and causes delays. If you are relocating from either country, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — that is not a wait after the draw.',
+    answer: <p>Yes. Pets coming from Bahrain and Qatar must have a rabies titer test even though those countries are otherwise classified as low-risk. This is a specific exception that is frequently missed and causes delays. If you are relocating from either country, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a wait after the draw.</p>,
+    plain: 'Yes. Pets coming from Bahrain and Qatar must have a rabies titer test even though those countries are otherwise classified as low-risk. This is a specific exception that is frequently missed and causes delays. If you are relocating from either country, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a wait after the draw.',
   },
   {
     category: 'import',
@@ -196,8 +197,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'documents',
     question: 'What is a rabies titer test (FAVN/RNATT) and do I need one?',
-    answer: <><p>A rabies titer test measures the level of rabies antibodies in your pet's blood to prove the vaccine worked. When MOCCAE requires it, the blood sample used for travel must be taken within 90 days before travel, sent to a WOAH/ISO 17025 accredited lab, and must return a result of at least 0.5 IU/ml. That is a pre-travel sample window — not a 90-day wait after the draw, and not the 90-day import-permit validity clock.</p><p className="mt-3"><Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">Read the titer test guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
-    plain: 'A rabies titer test measures the level of rabies antibodies in your pet\'s blood to prove the vaccine worked. When MOCCAE requires it, the blood sample used for travel must be taken within 90 days before travel, sent to a WOAH/ISO 17025 accredited lab, and must return a result of at least 0.5 IU/ml. That is a pre-travel sample window — not a 90-day wait after the draw, and not the 90-day import-permit validity clock.',
+    answer: <><p>A rabies titer test measures the level of rabies antibodies in your pet's blood to prove the vaccine worked. When MOCCAE requires it, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, sent to a WOAH/ISO 17025 accredited lab, and must return a result of at least 0.5 IU/ml.</p><p className="mt-3"><Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">Read the titer test guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    plain: 'A rabies titer test measures the level of rabies antibodies in your pet\'s blood to prove the vaccine worked. When MOCCAE requires it, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, sent to a WOAH/ISO 17025 accredited lab, and must return a result of at least 0.5 IU/ml.',
   },
   {
     category: 'documents',
@@ -288,16 +289,16 @@ const faqs: FAQEntry[] = [
   {
     category: 'costs',
     question: 'Can I get a quote before I commit?',
-    answer: <p>Yes. Message us on WhatsApp with your pet's type and breed, weight and approximate dimensions, the city and country you are moving from, your destination, your planned move date, and your current documentation status. We typically respond within 15 minutes during business hours with a realistic cost range, a clear timeline, and an honest assessment of any seasonal or breed restrictions — with no pressure and no follow-up spam.</p>,
-    plain: 'Yes. Message us on WhatsApp with your pet\'s type and breed, weight and approximate dimensions, the city and country you are moving from, your destination, your planned move date, and your current documentation status. We typically respond within 15 minutes during business hours with a realistic cost range, a clear timeline, and an honest assessment of any seasonal or breed restrictions — with no pressure and no follow-up spam.',
+    answer: <p>Yes. Message us on WhatsApp with your pet's type and breed, weight and approximate dimensions, the city and country you are moving from, your destination, your planned move date, and your current documentation status. We reply during published hours — Sunday to Thursday, 9:00 AM to 6:00 PM GST, with Friday and Saturday limited and by appointment — with a realistic cost range, a clear timeline, and an honest assessment of any seasonal or breed restrictions.</p>,
+    plain: 'Yes. Message us on WhatsApp with your pet\'s type and breed, weight and approximate dimensions, the city and country you are moving from, your destination, your planned move date, and your current documentation status. We reply during published hours — Sunday to Thursday, 9:00 AM to 6:00 PM GST, with Friday and Saturday limited and by appointment — with a realistic cost range, a clear timeline, and an honest assessment of any seasonal or breed restrictions.',
   },
 
   /* ─────────── TIMELINE ─────────── */
   {
     category: 'timeline',
     question: 'How long does pet relocation to Dubai take?',
-    answer: <p>From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a titer, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — not a 90-day wait after the draw. We recommend starting at least 8 weeks before your planned move. If you are on a tighter timeline, message us on WhatsApp — we may have options.</p>,
-    plain: 'From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a titer, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — not a 90-day wait after the draw. We recommend starting at least 8 weeks before your planned move. If you are on a tighter timeline, message us on WhatsApp — we may have options.',
+    answer: <p>From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a 90-day wait after the draw. We recommend starting at least 8 weeks before your planned move. If you are on a tighter timeline, message us on WhatsApp — we may have options.</p>,
+    plain: 'From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a 90-day wait after the draw. We recommend starting at least 8 weeks before your planned move. If you are on a tighter timeline, message us on WhatsApp — we may have options.',
   },
   {
     category: 'timeline',
@@ -308,8 +309,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'timeline',
     question: 'Is there a 90-day wait after the titer test?',
-    answer: <p>No. When an RNATT is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window before the flight — not a 90-day waiting period after the lab result. Sitting 90 days after the draw is how a passing sample ages out of the window. The MOCCAE import permit is a separate rule: it remains valid 90 days from issuance.</p>,
-    plain: 'No. When an RNATT is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window before the flight — not a 90-day waiting period after the lab result. Sitting 90 days after the draw is how a passing sample ages out of the window. The MOCCAE import permit is a separate rule: it remains valid 90 days from issuance.',
+    answer: <p>No. When an RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule — not a sample window before the flight and not a 90-day wait after the lab result. Sitting 90 days after the draw is not the rule. The MOCCAE import permit is a separate rule: it remains valid 90 days from issuance.</p>,
+    plain: 'No. When an RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule — not a sample window before the flight and not a 90-day wait after the lab result. Sitting 90 days after the draw is not the rule. The MOCCAE import permit is a separate rule: it remains valid 90 days from issuance.',
   },
   {
     category: 'timeline',
@@ -492,8 +493,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'emergency',
     question: 'How fast can you respond if I have an urgent pet relocation problem?',
-    answer: <p>We reply on WhatsApp within about 15 minutes during business hours. For an urgent situation — a cancelled flight, a customs hold, a document that is about to expire, or a fixed move date during the embargo — send us your pet's details, route, and the exact problem, and we will give you a clear, honest assessment of your options. The earlier you reach out, the more options we have to resolve it without missing your move.</p>,
-    plain: 'We reply on WhatsApp within about 15 minutes during business hours. For an urgent situation — a cancelled flight, a customs hold, a document that is about to expire, or a fixed move date during the embargo — send us your pet\'s details, route, and the exact problem, and we will give you a clear, honest assessment of your options. The earlier you reach out, the more options we have to resolve it without missing your move.',
+    answer: <p>We reply on WhatsApp during published hours: Sunday to Thursday, 9:00 AM to 6:00 PM GST. Friday and Saturday are limited and by appointment. For an urgent situation — a cancelled flight, a customs hold, a document that is about to expire, or a fixed move date — send your pet's details, route, and the exact problem. The earlier you reach out during those hours, the more options there are.</p>,
+    plain: 'We reply on WhatsApp during published hours: Sunday to Thursday, 9:00 AM to 6:00 PM GST. Friday and Saturday are limited and by appointment. For an urgent situation — a cancelled flight, a customs hold, a document that is about to expire, or a fixed move date — send your pet\'s details, route, and the exact problem. The earlier you reach out during those hours, the more options there are.',
   },
 ]
 
@@ -533,8 +534,8 @@ export default function FAQPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation FAQ Dubai | Dubai Pet Relocation',
-          description: 'Pet relocation FAQ Dubai: import, export, documents, costs, timelines, airlines, crates, banned breeds and emergencies. WhatsApp +971504782999.',
+          title: 'Pet Relocation Dubai FAQ | Planning Your Move',
+          description: 'Find answers about pet relocation services, documents, travel planning, costs and booking. Follow detailed guides for route-specific requirements.',
           canonical: `${BASE_URL}/faq/`,
           ogType: 'website',
         }}
@@ -542,14 +543,16 @@ export default function FAQPage() {
       />
 
       <Breadcrumb items={[{ label: 'FAQ' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/faq/" slot="after-service" />
+<LinkPlanSlot path="/faq/" slot="specialist" /></div>
 
       {/* ═══════════ HERO ═══════════ */}
       <Hero
         image="/images/faq-hero.jpg"
         imageAlt="A golden retriever beside pet relocation documents and a checklist, representing clear answers"
         eyebrow="FAQ"
-        title="Pet Relocation FAQ — Everything You Need to Know"
-        subtitle="Browse answers by category or search your specific question. Can't find it? WhatsApp us — we reply within 15 minutes during business hours."
+        title="Pet relocation questions answered"
+        subtitle="Browse answers by category or search your specific question. Can't find it? WhatsApp us during published hours: Sunday to Thursday, 9:00 AM to 6:00 PM GST."
       />
 
       {/* ═══════════ CATEGORY FILTERS ═══════════ */}
@@ -645,7 +648,7 @@ export default function FAQPage() {
             Didn't Find Your Answer?
           </h2>
           <p className="text-white/70 text-base leading-relaxed mb-8">
-            Guides stay free to read. WhatsApp is for a paid eligibility check and a scoped quote after we know the pet and corridor.
+            We explain the next step before any paid work starts. WhatsApp is for a quote after we know the pet and corridor.
           </p>
           <WhatsAppCta
             text={CTA_SCOPED_QUOTE}

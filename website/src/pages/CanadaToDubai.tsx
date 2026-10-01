@@ -13,8 +13,8 @@ import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 
 export default function CanadaToDubai() {
   const pageUrl = `${BASE_URL}/routes/canada-to-dubai/`
-  const pageTitle = 'Pet Relocation Canada to Dubai | Import Guide 2026'
-  const pageDescription = 'Relocate your pet from Canada to Dubai. Low-risk route with Canadian-specific CFIA requirements. Air Canada, Emirates. Costs, documents and timeline.'
+  const pageTitle = 'Pet Relocation Canada to Dubai | Planning & Quote'
+  const pageDescription = 'Moving a dog or cat from Canada to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
   const faqs = [
     {
       question: 'Is Canada a low-risk or high-risk country for pet import to Dubai?',
@@ -101,7 +101,7 @@ export default function CanadaToDubai() {
         fallbackSrc="/images/hero-canada.jpg"
         imageAlt="Pet relocation from Canada to Dubai"
         eyebrow="Canada → Dubai"
-        title="Canada to Dubai Pet Relocation — Complete Guide"
+        title="Pet relocation from Canada to Dubai"
         subtitle="Low-risk route for rabies — no titer test for most pets. We handle CFIA paperwork, flights, and Dubai customs."
         updated="Updated June 2026"
       />

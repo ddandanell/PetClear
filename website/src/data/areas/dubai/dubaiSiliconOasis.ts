@@ -4,10 +4,10 @@ const dubaiSiliconOasis: AreaPageData = {
   slug: 'dubai-silicon-oasis',
   areaName: 'Dubai Silicon Oasis',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubai Silicon Oasis | Dog & Cat Transport',
+  seoTitle: 'Pet Transport in Dubai Silicon Oasis | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Dubai Silicon Oasis — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote in 15 minutes.',
-  h1: 'Pet Relocation in Dubai Silicon Oasis',
+    'Plan pet collection or delivery in Dubai Silicon Oasis. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Dubai Silicon Oasis',
   primaryKeyword: 'pet relocation dubai silicon oasis',
   heroValueProp:
     'Relocating a dog or cat to or from Dubai Silicon Oasis? We coordinate the whole move for DSO families and tech professionals — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa or apartment — with WhatsApp updates at every step.',
@@ -38,7 +38,7 @@ const dubaiSiliconOasis: AreaPageData = {
       h2: 'Moving To or From Dubai Silicon Oasis With a Pet',
       body: [
         { type: 'p', text: 'Most DSO relocations are international — families arriving from India, the UK, the USA, the Philippines and across Europe, or leaving Dubai for a new role elsewhere. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. Because Silicon Oasis sits between DXB and DWC, pickups and cargo timing are straightforward — we map your exact timeline before you commit.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Because Silicon Oasis sits between DXB and DWC, pickups and cargo timing are straightforward — we map your exact timeline before you commit.' },
       ],
     },
     {
@@ -48,7 +48,7 @@ const dubaiSiliconOasis: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Dubai Silicon Oasis',
+      h2: 'Cost of Pet collection and delivery in Dubai Silicon Oasis',
       body: [
         { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change — the rest covers veterinary work, crate, cargo and coordination.' },
       ],
@@ -56,7 +56,7 @@ const dubaiSiliconOasis: AreaPageData = {
   ],
   faq: [
     { q: 'Do you pick up from my villa or building in Dubai Silicon Oasis?', a: 'Yes — we arrange door-to-door pickup from your DSO villa or apartment building and coordinate the entire move from there.' },
-    { q: 'How long does pet relocation from Dubai Silicon Oasis take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
+    { q: 'How long does pet relocation from Dubai Silicon Oasis take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The import permit is valid for 90 days from issuance. Confirm the current portal fee; fees may change.' },
     { q: 'I have a villa with a garden — does that change anything?', a: 'Not for the relocation process itself, but it can make crate acclimation easier. We can advise on travel-day logistics for both villa and apartment pets in DSO.' },

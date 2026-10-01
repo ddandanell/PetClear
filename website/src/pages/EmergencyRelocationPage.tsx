@@ -69,27 +69,27 @@ export default function EmergencyRelocationPage() {
     {
       question: 'How fast can you relocate my pet to Dubai?',
       answer:
-        'It depends entirely on your country of origin and whether your documents are in order. From a low-risk country (UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore) with an ISO microchip, a valid rabies vaccination, and a recent health certificate already in place, the process can move quickly — typically in the 4–6 week range, and sometimes faster if everything is ready. From a high-risk country, a titer is required: the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a 90-day wait after the draw. A last-minute move still depends on vaccine timing, lab turnaround, and whether a valid sample window still fits your flight. The honest first step is to send us your details on WhatsApp so we can tell you exactly what is achievable for your situation.',
+        'It depends entirely on your country of origin and whether your documents are in order. From a low-risk country (UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore) with an ISO microchip, a valid rabies vaccination, and a recent health certificate already in place, the process can move quickly — typically in the 4–6 week range, and sometimes faster if everything is ready. From a high-risk country, a titer is required: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a 90-day wait after the draw. A last-minute move still depends on vaccine timing, lab turnaround, and whether the certificate will still be valid for your flight. The honest first step is to send us your details on WhatsApp so we can tell you exactly what is achievable for your situation.',
     },
     {
       question: 'Can I move my pet in a few days if it is a real emergency?',
       answer:
-        'If your pet is from a low-risk country and already has an ISO microchip, a valid rabies vaccination administered at least 21 days before travel, and the health certificate can be issued within 10 days of arrival, a very fast move can be possible. If your pet is from a high-risk country, the rabies titer test requires a blood draw at least 21 days after vaccination; the sample used for travel must fall within 90 days before the flight and read ≥0.5 IU/ml. That sample window cannot be invented shorter, and a passing result that ages out of the window must be redrawn. We will never promise a timeline that the rules do not allow. Message us and we will give you a straight answer.',
+        'If your pet is from a low-risk country and already has an ISO microchip, a valid rabies vaccination administered at least 21 days before travel, and the health certificate can be issued within 10 days of arrival, a very fast move can be possible. If your pet is from a high-risk country, the rabies titer test requires a blood draw at least 21 days after vaccination; the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. The 21-day interval after a first vaccine, or after a gap, cannot be shortened. If the certificate is no longer valid, the test is repeated. We will never promise a timeline that the rules do not allow. Message us and we will give you a straight answer.',
     },
     {
       question: 'What can be expedited, and what cannot?',
       answer:
-        'We can move quickly on the things that are within our control: reviewing your documents, preparing and submitting the MOCCAE import permit (processing is typically 2–7 working days), booking manifest cargo, arranging the health certificate, and coordinating customs clearance on arrival. What cannot be sped up is the 21-day wait after a rabies vaccination before a titer blood draw, and — when a titer is required — the rule that the sample must be taken within 90 days before travel and read ≥0.5 IU/ml. Those are set by UAE regulations and are not a 90-day sit after the result.',
+        'We can move quickly on the things that are within our control: reviewing your documents, preparing and submitting the MOCCAE import permit (processing is typically 2–7 working days), booking manifest cargo, arranging the health certificate, and coordinating customs clearance on arrival. What cannot be sped up is the 21-day wait after a rabies vaccination before a titer blood draw, and — when a titer is required — the rule that needs a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Those are set by UAE regulations and are not a 90-day sit after the result.',
     },
     {
       question: 'What should I send you right now to get started fast?',
       answer:
-        'Send us a WhatsApp message with: (1) your pet\'s country of origin, (2) species and breed, (3) your required arrival date in Dubai, (4) a photo of the microchip certificate, (5) a photo of the rabies vaccination record, and (6) any other vaccination or health documents you have. With those, we can assess your real timeline within minutes and tell you honestly whether your deadline is achievable.',
+        'Send us a WhatsApp message with: (1) your pet\'s country of origin, (2) species and breed, (3) your required arrival date in Dubai, (4) a photo of the microchip certificate, (5) a photo of the rabies vaccination record, and (6) any other vaccination or health documents you have. With those, we can assess the timeline during published hours and tell you honestly whether your deadline is achievable.',
     },
     {
-      question: 'Do you really reply within 15 minutes?',
+      question: 'When do you reply to an urgent message?',
       answer:
-        'During our operating hours we aim to reply to urgent WhatsApp messages within 15 minutes. When a job, visa, or family deadline is closing in, every hour matters — so we prioritise time-sensitive cases and give you a clear, honest read on what is possible before anything else. If you message outside hours, we respond first thing.',
+        'Messages are read during published hours: Sunday to Thursday, 9:00 AM to 6:00 PM GST. Friday and Saturday are limited and by appointment. Urgent travel problems are read first in those hours. We do not publish a 15-minute reply promise. A message outside those hours is picked up when the desk is open.',
     },
     {
       question: 'Will my pet have to go into quarantine if we rush?',
@@ -148,10 +148,10 @@ export default function EmergencyRelocationPage() {
       {/* Hero */}
       <Hero
         image="/images/hero-dog.jpg"
-        imageAlt="A calm dog waiting beside a packed travel crate, ready for an urgent relocation to Dubai"
+        imageAlt="Illustration of a golden retriever sitting beside a small hard-sided carrier in an airport terminal. The carrier in the picture is not a measured travel crate for a dog of this size."
         eyebrow="Urgent Pet Relocation"
         title="Emergency Pet Relocation Dubai — Urgent Moves"
-        subtitle="A sudden job move, a closing visa window, or a family emergency — take a breath. Message us on WhatsApp and we'll tell you honestly what's possible, fast. We aim to reply within 15 minutes."
+        subtitle="A sudden job move, a closing visa window, or a family emergency. Message us on WhatsApp with the pet, the route and the deadline. We reply during published hours and say honestly what is possible."
         whatsappMessage={URGENT_MSG}
         updated="Updated June 2026"
       />
@@ -269,7 +269,7 @@ export default function EmergencyRelocationPage() {
               <ul className="space-y-3 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>The 21-day wait after a rabies vaccination before travel — a fixed minimum</span></li>
                 <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>The rabies titer test for high-risk countries: blood drawn ≥21 days after vaccination</span></li>
-                <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>When a titer is required, the sample must be taken within 90 days before travel ≥0.5 IU/ml — not a wait after the draw</span></li>
+                <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a wait after the draw</span></li>
                 <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>Re-doing a step that was done in the wrong order (e.g. vaccinated before microchipped)</span></li>
               </ul>
             </div>
@@ -281,10 +281,11 @@ export default function EmergencyRelocationPage() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">From a high-risk country, a truly last-minute move is not possible</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  If your pet is coming from a high-risk rabies country, a titer is required: sample within 90 days before
-                  travel, result ≥0.5 IU/ml. That is not a 90-day wait after the draw, but the 21-day post-vaccine interval
+                  If your pet is coming from a high-risk rabies country, a titer is required: a result of at least
+                  0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster
+                  is given. That is not a 90-day wait after the draw, but the 21-day post-vaccine interval
                   and lab turnaround still have to fit the flight you actually book. We say this plainly because promising
-                  a calendar the sample window cannot support only ends in a missed deadline. If you're in this situation,
+                  a calendar the certificate and the lab cannot support only ends in a missed deadline. If you're in this situation,
                   message us anyway so we can map the real dates.
                 </p>
               </div>
@@ -302,7 +303,7 @@ export default function EmergencyRelocationPage() {
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
               From a low-risk country — the UK, EU, USA, Canada, Australia, New Zealand, Japan, or Singapore —
-              there is no titer test and no RNATT sample window to plan. With your pet's documents already in order, the
+              there is no titer test and no RNATT to plan. With your pet's documents already in order, the
               path is short and we can move quickly. Here's the realistic sequence.
             </p>
           </div>
@@ -383,7 +384,7 @@ export default function EmergencyRelocationPage() {
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 The fastest way to get a real answer is to give us the few details that determine your
                 timeline. Snap photos on your phone — no need to find a scanner. With these in hand, we can
-                tell you within minutes whether your deadline is achievable and exactly what happens next.
+                tell you during published hours whether your deadline is achievable and what happens next.
               </p>
               <div className="flex flex-wrap gap-3">
                 <WhatsAppCta text={URGENT_MSG} label="Start Now on WhatsApp" className="whatsapp-pulse" />
@@ -419,17 +420,16 @@ export default function EmergencyRelocationPage() {
         </div>
       </section>
 
-      {/* The 15-minute promise + how we help */}
       <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl text-center mx-auto mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              Our 15-Minute Reply Promise
+              How an urgent enquiry is handled
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              When you're racing a deadline, waiting on a quote form is the last thing you need. During
-              operating hours, we aim to reply to urgent WhatsApp messages within 15 minutes — with a clear,
-              honest assessment, not a sales pitch.
+              Send the pet, the route and the deadline on WhatsApp. During published hours — Sunday to
+              Thursday, 9:00 AM to 6:00 PM GST — urgent travel problems are read first. Friday and Saturday
+              are limited and by appointment. The reply says what is possible before any paid work starts.
             </p>
           </div>
 
@@ -465,7 +465,7 @@ export default function EmergencyRelocationPage() {
           </div>
 
           <div className="text-center">
-            <WhatsAppCta text={URGENT_MSG} label="Get my 15-minute assessment" className="whatsapp-pulse" />
+            <WhatsAppCta text={URGENT_MSG} label="Message us about the deadline" className="whatsapp-pulse" />
           </div>
         </div>
       </section>
@@ -496,7 +496,7 @@ export default function EmergencyRelocationPage() {
                 <Stethoscope className="w-5 h-5 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">Rabies Titer Test</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Why high-risk countries need a titer sample within 90 days before travel — explained.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Why high-risk countries need a titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — explained.</p>
             </Link>
             <Link to="/contact/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
@@ -538,9 +538,8 @@ export default function EmergencyRelocationPage() {
             Your Deadline Is Closing — Let's Move
           </h2>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Send us your pet's details now and we'll give you a clear, honest answer about what's possible —
-            usually within 15 minutes. No pressure, no impossible promises. Just a calm plan to get your pet
-            to Dubai.
+            Send the pet, the route and the deadline. We reply during published hours with what is possible
+            and what is not. The plan follows the documents, not a promised clock.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <WhatsAppCta text={URGENT_MSG} label="Message Us on WhatsApp" className="whatsapp-pulse" />

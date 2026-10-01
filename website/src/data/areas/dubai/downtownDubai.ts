@@ -4,10 +4,10 @@ const downtownDubai: AreaPageData = {
   slug: 'downtown-dubai',
   areaName: 'Downtown Dubai',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Downtown Dubai | Tower Access Last Mile',
+  seoTitle: 'Pet Transport in Downtown Dubai | Collection & Delivery',
   metaDescription:
-    'Pet relocation Downtown Dubai: boulevard towers, dock access and MOCCAE timing. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Downtown Dubai',
+    'Plan pet collection or delivery in Downtown Dubai. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Downtown Dubai',
   primaryKeyword: 'pet relocation downtown dubai',
   heroValueProp:
     'Relocating a dog or cat to or from Downtown Dubai? We plan boulevard-tower docks, crates and the DXB run — WhatsApp +971 50 478 2999 during business hours.',
@@ -18,7 +18,7 @@ const downtownDubai: AreaPageData = {
   geo: { lat: '25.1972', lng: '55.2744' },
   landmarks: ['Burj Khalifa', 'The Dubai Mall', 'Dubai Fountain', 'Souk Al Bahar', 'Burj Park', 'City Walk', 'DIFC nearby'],
   vetsNote:
-    'Downtown, Business Bay and the Al Wasl clinic corridor have plenty of practices for scans and certificates — we do not name them here and we do not assume partnerships. Keep your current vet if the file is already in order. Ask on WhatsApp for the document type (ISO scan, export certificate), not a sponsored clinic. We time appointments to travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Downtown, Business Bay and the Al Wasl clinic corridor have plenty of practices for scans and certificates — we do not name them here and we do not assume partnerships. Keep your current vet if the file is already in order. Ask on WhatsApp for the document type (ISO scan, export certificate), not a sponsored clinic. We time appointments to travel day. Federal inbound steps stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   intro:
     'Downtown Dubai is a boulevard of residential and serviced towers around the Burj Khalifa, The Dubai Mall and the Fountain — not a beach promenade and not a villa compound. Dogs take short, curated loops through Burj Park; cats live in high apartments that still have to clear a crate past valet and a loading dock. That is why [pet relocation across Dubai communities](/dubai/) keeps Downtown as its own spoke. We coordinate international files into or out of these towers and the ground run to DXB or DWC. Neighbouring [pet transport in Business Bay](/dubai/business-bay/) uses canal docks; [pet transport in Jumeirah](/dubai/jumeirah/) is villa gates. WhatsApp +971504782999 with your tower, dock rule and route.',
   sections: [
@@ -94,7 +94,7 @@ const downtownDubai: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'City Walk sits west of Downtown toward Al Wasl — low-rise promenades, ground-level residences and a walkable retail grid rather than a Burj dock. If the pet lives in that urban-village fabric, the last mile is a street-level entrance and promenade drop-off, not a valet bay under a boulevard tower. We absorb those access angles here so the file is planned correctly; the City Walk URL stays live and we are not firing a merge redirect. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is cooling down, not a photo at the Fountain.',
+          text: 'City Walk sits west of Downtown toward Al Wasl — low-rise promenades, ground-level residences and a walkable retail grid rather than a Burj dock. If the pet lives in that urban-village fabric, the last mile is a street-level entrance and promenade drop-off, not a valet bay under a boulevard tower. If the pet lives at City Walk, use the [City Walk collection page](/dubai/city-walk/) for that last mile. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is cooling down, not a photo at the Fountain.',
         },
       ],
     },
@@ -129,7 +129,7 @@ const downtownDubai: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
         },
         {
           type: 'p',
@@ -137,7 +137,7 @@ const downtownDubai: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. We map that before you commit to a crate or a ticket.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. We map that before you commit to a crate or a ticket.',
         },
       ],
     },
@@ -241,7 +241,7 @@ const downtownDubai: AreaPageData = {
     },
     {
       q: 'Do I wait 90 days after a titer test before flying into Downtown?',
-      a: 'No. When a titer is required, sample within 90 days before travel, result ≥0.5 IU/ml. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does Downtown Dubai pet relocation cost?',

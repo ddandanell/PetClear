@@ -280,7 +280,7 @@ export default function WhatsAppLeadGate() {
             </h2>
             {step === 1 ? (
               <p className="mt-1 text-sm leading-snug text-[#5A5A5A]">
-                Guides stay free to read. WhatsApp is for people ready to book a managed relocation.
+                WhatsApp is for a quote. We explain the next step and any assessment fee before paid work starts.
               </p>
             ) : null}
             <div className="mt-3">

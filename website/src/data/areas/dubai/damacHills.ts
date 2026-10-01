@@ -4,10 +4,10 @@ const damacHills: AreaPageData = {
   slug: 'damac-hills',
   areaName: 'DAMAC Hills',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation DAMAC Hills | Golf Villa Community Last Mile',
+  seoTitle: 'Pet Transport in DAMAC Hills | Collection & Delivery',
   metaDescription:
-    'Pet relocation in DAMAC Hills — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for villa and multi-pet families. Free quote.',
-  h1: 'Pet Relocation in DAMAC Hills',
+    'Plan pet collection or delivery in DAMAC Hills. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in DAMAC Hills',
   primaryKeyword: 'pet relocation damac hills',
   heroValueProp:
     'Relocating a dog or cat to or from DAMAC Hills? We coordinate the whole move for DAMAC Hills villa families — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa — including large-breed and multi-pet households, with WhatsApp updates at every step.',
@@ -39,7 +39,7 @@ const damacHills: AreaPageData = {
       h2: 'Moving To or From DAMAC Hills With a Pet',
       body: [
         { type: 'p', text: 'Most DAMAC Hills relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
-        { type: 'p', text: 'Confirm the current MOCCAE import-permit fee on the official portal, and confirm the separate inspection and release fee payable on arrival; fees may change. From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. Because DAMAC Hills families often move with more than one pet, we map every animal’s timeline and paperwork in parallel so the household travels together where possible.' },
+        { type: 'p', text: 'Confirm the current MOCCAE import-permit fee on the official portal, and confirm the separate inspection and release fee payable on arrival; fees may change. From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Because DAMAC Hills families often move with more than one pet, we map every animal’s timeline and paperwork in parallel so the household travels together where possible.' },
       ],
     },
     {
@@ -49,7 +49,7 @@ const damacHills: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in DAMAC Hills',
+      h2: 'Cost of Pet collection and delivery in DAMAC Hills',
       body: [
         { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government permit and inspection/release fees must be confirmed on the official MOCCAE portal; fees may change. The rest covers veterinary work, crate, cargo and coordination. For multi-pet villa households we give a combined quote so you can see the full family cost upfront.' },
       ],

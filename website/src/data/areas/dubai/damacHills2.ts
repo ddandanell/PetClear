@@ -4,10 +4,10 @@ const damacHills2: AreaPageData = {
   slug: 'damac-hills-2',
   areaName: 'DAMAC Hills 2',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation DAMAC Hills 2 | Dog & Cat Transport',
+  seoTitle: 'Pet Transport in DAMAC Hills 2 | Collection & Delivery',
   metaDescription:
-    'Pet relocation in DAMAC Hills 2 (Akoya) — door-to-door dog and cat transport, MOCCAE permit guidance and IATA travel crates for villa families. Free quote.',
-  h1: 'Pet Relocation in DAMAC Hills 2',
+    'Plan pet collection or delivery in DAMAC Hills 2. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in DAMAC Hills 2',
   primaryKeyword: 'pet relocation damac hills 2',
   heroValueProp:
     'Relocating a dog or cat to or from DAMAC Hills 2 (Akoya)? We coordinate the whole move for villa and townhouse families — MOCCAE permits, breed checks, IATA crates, customs and door-to-door collection from your community — with WhatsApp updates at every step.',
@@ -38,7 +38,7 @@ const damacHills2: AreaPageData = {
       h2: 'Moving To or From DAMAC Hills 2 With a Pet',
       body: [
         { type: 'p', text: 'Most DAMAC Hills 2 relocations are international — families arriving from the UK, India, South Africa, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit. The MOCCAE import permit is valid for 90 days from issuance — confirm the current portal fee — so we time the application carefully against your travel date.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer test is only required for pets travelling to or from certain high-risk rabies countries — where it applies, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer test is only required for pets travelling to or from certain high-risk rabies countries — where it applies, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We map your exact timeline before you commit.' },
       ],
     },
     {
@@ -48,7 +48,7 @@ const damacHills2: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in DAMAC Hills 2',
+      h2: 'Cost of Pet collection and delivery in DAMAC Hills 2',
       body: [
         { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000, and larger dogs sit toward the upper end because of crate and cargo weight. Government fees include the MOCCAE import permit plus arrival-release and clearance charges (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination.' },
       ],
@@ -59,7 +59,7 @@ const damacHills2: AreaPageData = {
     { q: 'Can you handle multiple or large dogs?', a: 'Yes. DAMAC Hills 2 is a space-rich villa community, so we regularly relocate households with several dogs or larger breeds — we size IATA-compliant crates for each pet and plan cargo accordingly.' },
     { q: 'How much does the MOCCAE permit cost?', a: 'The MOCCAE permit is valid for 90 days from issuance. Confirm the current portal fee; fees may change. We time the application against your travel date so it does not expire before you fly.' },
     { q: 'How much does relocation cost overall?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Larger dogs sit toward the upper end. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Is a rabies titer test required?', a: 'Only for pets travelling to or from certain high-risk rabies countries. Where it applies, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We confirm whether it affects your route before you commit.' },
+    { q: 'Is a rabies titer test required?', a: 'Only for pets travelling to or from certain high-risk rabies countries. Where it applies, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We confirm whether it affects your route before you commit.' },
   ],
   relatedAreas: [
     { label: 'DAMAC Hills', to: '/dubai/damac-hills/' },

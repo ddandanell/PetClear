@@ -67,8 +67,8 @@ export default function CatRelocationPage() {
     <div className="bg-[#F5F6FD]">
       <SEOHead
         canonical={`${BASE_URL}/cat-relocation-to-dubai/`}
-        title="Cat Relocation to Dubai | Carrier, Papers and Permit"
-        description="Cat relocation to Dubai: carrier fit, Bengal and Serval pedigree, and the MOCCAE permit valid 90 days from issuance. No sedation advice. WhatsApp +971504782999."
+        title="Bringing a Cat to Dubai | Carrier & Arrival Guide"
+        description="Prepare to bring your cat to Dubai. Plan carrier practice, documents and arrival, then explore managed cat relocation support for your route."
         ogType="article"
         schemas={[
           {
@@ -91,7 +91,7 @@ export default function CatRelocationPage() {
           {
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Cat Relocation to Dubai | Carrier, Papers and Permit',
+            headline: 'Bringing a Cat to Dubai | Carrier & Arrival Guide',
             description: 'Cat relocation to Dubai: carrier fit, Bengal and Serval pedigree, and the MOCCAE permit valid 90 days from issuance.',
             url: `${BASE_URL}/cat-relocation-to-dubai/`,
             dateModified: '2026-09-22',
@@ -106,7 +106,7 @@ export default function CatRelocationPage() {
         image="/images/hero-cat.jpg"
         imageAlt="A cat resting in a travel carrier before a journey to Dubai"
         eyebrow="Cats"
-        title="Bring your cat to Dubai"
+        title="Bringing your cat to Dubai"
         subtitle="Cats are not small dogs. The practical work is the carrier, the cat vaccines, and a pedigree if the cat is a Bengal or a Serval. The permit rules sit on the import guide."
         updated="Checked 22 September 2026"
         whatsappMessage={WA}
@@ -160,7 +160,7 @@ export default function CatRelocationPage() {
             <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" /> Cat vaccines named on the MOCCAE page: rabies, feline panleukopenia, feline rhinotracheitis and feline calicivirus. Feline leukaemia was not on that required list when checked on 22 September 2026.</li>
             <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" /> Bengal and Serval cats: a pedigree certificate to the fifth generation. Other domestic cats are not given that extra line on the page we checked. Savannah cats were not named there, so this page does not call them banned.</li>
             <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" /> Parasite treatment in the 14 days before shipment, recorded by your vet. The UK export certificate names products that include permethrin. Permethrin products sold for dogs can be dangerous for cats. Your vet must choose a cat-safe product. We do not give a dose.</li>
-            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" /> Permanent microchip number matching the health certificate. Full sequence: <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">UAE pet import requirements</Link>.</li>
+            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" /> Permanent microchip number matching the health certificate. Full sequence: <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">UAE pet import requirements for dogs and cats</Link>.</li>
           </ul>
           <div className="mt-8">
             <WhatsAppBtn label="Check this cat's move" message={WA} />
@@ -237,7 +237,7 @@ export default function CatRelocationPage() {
           <div className="bg-[#4F5BD5] rounded-3xl p-8 sm:p-12 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready for a managed cat move?</h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-8">
-              Prepare from the guide if you are doing the papers yourself. WhatsApp +971504782999 is for a paid eligibility check. Email support@dubai-pet-relocation.ae.
+              Prepare from the guide if you are doing the papers yourself. WhatsApp +971504782999 is for a quote. Email support@dubai-pet-relocation.ae.
             </p>
             <a
               href={getWhatsAppUrl(WA)}

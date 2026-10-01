@@ -13,8 +13,8 @@ import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 
 export default function NewZealandToDubai() {
   const pageUrl = `${BASE_URL}/routes/new-zealand-to-dubai/`
-  const pageTitle = 'Pet Relocation New Zealand to Dubai | Import Guide 2026'
-  const pageDescription = 'Relocate your pet from New Zealand to Dubai. Low-risk but strict MPI export rules. Air New Zealand, Emirates. NZ biosecurity, costs and timeline.'
+  const pageTitle = 'Pet Relocation New Zealand to Dubai | Planning & Quote'
+  const pageDescription = 'Moving a dog or cat from New Zealand to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
   const faqs = [
     {
       question: 'Is New Zealand a low-risk or high-risk country for pet import to Dubai?',
@@ -101,7 +101,7 @@ export default function NewZealandToDubai() {
         fallbackSrc="/images/hero-new-zealand.jpg"
         imageAlt="Pet relocation from New Zealand to Dubai"
         eyebrow="New Zealand → Dubai"
-        title="New Zealand to Dubai Pet Relocation — Complete Guide"
+        title="Pet relocation from New Zealand to Dubai"
         subtitle="Rabies-free, low-risk origin with strict MPI biosecurity rules. We ensure full MPI and UAE compliance — no titer test."
         updated="Updated June 2026"
       />

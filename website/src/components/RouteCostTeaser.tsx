@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { MessageCircle } from 'lucide-react'
 import { getWhatsAppUrl } from '../lib/seo.ts'
 import { GOV_FEE_TABLE_CELL } from '../lib/regulatory.ts'
+import { RoutePlanLinks } from './LinkPlanSlot.tsx'
 
 export const ROUTE_PACKAGE_COST_FAQ =
   'We do not publish total package AED bands on this corridor. Confirm current MOCCAE import-permit and arrival-release fees on the official portal; fees may change. See [what drives pet relocation cost](/guides/pet-relocation-cost-dubai/) for the driver list, then WhatsApp +971504782999 for a quote on your pet, crate and dates.'
@@ -24,7 +25,9 @@ export default function RouteCostTeaser({
           <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
             We do not publish total package bands on this page. Cargo, crate and coordination depend on the live file.
             Official MOCCAE permit and release charges are government fees — confirm live amounts on the portal; fees may change. We do not publish contested numerals as current fact.
+            Confirm each airline’s current pet acceptance before booking.
           </p>
+          <RoutePlanLinks />
         </div>
 
         <div className="bg-white rounded-[20px] shadow-sm overflow-hidden">

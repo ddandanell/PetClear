@@ -24,6 +24,7 @@ import RelatedLinks from '../components/RelatedLinks.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL } from '../lib/seo.ts'
 import { CTA_CHECK_MOVE, waEligibility } from '../lib/conversionCopy.ts'
+import GuideToc from '../components/GuideToc.tsx'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -41,9 +42,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function IATACrateGuide() {
-  const title = 'IATA Approved Dog Crate | Airline Pet Crate Requirements'
+  const title = 'Pet Travel Crate Requirements | Measuring Your Pet'
   const description =
-    'What is an IATA approved dog crate: Live Animals sizing, ventilation, hardware, and why airlines — not shopping-cart badges — do final acceptance.'
+    'Learn how to measure your dog or cat for a travel crate and check construction, ventilation and airline requirements before booking a flight.'
   const canonical = `${BASE_URL}/guides/iata-pet-crate-requirements/`
   const ogImage = `${BASE_URL}/assets/og-crate-guide.jpg`
 
@@ -151,19 +152,20 @@ export default function IATACrateGuide() {
     <>
       <SEOHead meta={meta} schemas={schemas} />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'IATA Pet Crate Requirements' }]} />
+<div className="mx-auto max-w-[900px] px-5 pt-8"><GuideToc items={[{ href: '#what-lar-is', label: 'What IATA LAR is' }, { href: '#measure-your-pet', label: 'Measure your pet' }]} /></div>
 
       {/* Hero */}
       <Hero
         image="/images/guide-iata-crate.jpg"
-        imageAlt="An IATA-approved airline pet travel crate with a calm dog resting comfortably inside"
+        imageAlt="A dog resting in a hard-sided travel crate. IATA publishes the sizing rules. It does not approve a crate brand."
         eyebrow="Pet Relocation Guide"
-        title="What Is an IATA Approved Dog Crate?"
+        title="Choosing and measuring a pet travel crate"
         subtitle="The wrong crate can get your pet refused at the airport. IATA LAR sizing, construction rules, and airline-specific policies for safe travel to Dubai."
         updated="Updated June 2026"
       />
 
       {/* What is IATA LAR */}
-      <section className="section-padding bg-[#F5F6FD]">
+      <section id="what-lar-is" className="section-padding scroll-mt-24 bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
@@ -171,7 +173,7 @@ export default function IATACrateGuide() {
                 What Is IATA LAR and Why Does It Matter?
               </h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                IATA approved pet crate Dubai rules follow the <strong>IATA Live Animal Regulations (LAR)</strong> — the global standard for transporting animals by air. These rules cover crate design, sizing, ventilation, labeling, and documentation.
+                Airlines apply the <strong>IATA Live Animal Regulations (LAR)</strong> to crate design, sizing, ventilation, labeling, and documentation. IATA publishes that standard. It does not approve a crate brand. The airline accepts or refuses the crate on the day.
               </p>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 Airlines flying to Dubai — including Emirates, Etihad, and flydubai — require all pets in cargo to travel in IATA LAR-compliant crates. Failure to meet these standards means your pet will be refused at check-in, potentially causing missed flights, extra fees, and severe stress for your animal. Dog files that need crate sizing inside a managed move sit on the{' '}
@@ -260,8 +262,8 @@ export default function IATACrateGuide() {
       />
 
       {/* Sizing Formula */}
-      <section id="sizing-formula" className="section-padding bg-white">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+      <section id="measure-your-pet" className="section-padding scroll-mt-24 bg-white">
+        <div id="sizing-formula" className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
               Crate Sizing Formula — Getting It Exactly Right
@@ -612,7 +614,7 @@ export default function IATACrateGuide() {
       <GuideFunnelCta
         variant="end"
         title="Need help choosing the right crate?"
-        subtitle="Eligibility and crate-led booking sit on the service pages and WhatsApp. This guide stays free to read. We do not assume crate or airline fee amounts."
+        subtitle="Eligibility and crate-led booking sit on the service pages and WhatsApp. We explain the next step before any paid work starts. We do not assume crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
         waLabel={CTA_CHECK_MOVE}
       />

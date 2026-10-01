@@ -6,13 +6,14 @@ import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Stethoscope, Home, AlertTriangle, Info, PawPrint, Dog } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
+import { RoutePlanLinks } from '../components/LinkPlanSlot.tsx'
 
 const CHECKED = '22 September 2026'
 
 export default function DubaiToUK() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-uk/`
-  const pageTitle = 'Pet Relocation Dubai to UK | Great Britain Entry Guide 2026'
-  const pageDescription = 'Move a dog or cat from Dubai to Great Britain. Listed-country document is a Great Britain pet health certificate. Enter within 10 days. No package price.'
+  const pageTitle = 'Pet Relocation Dubai to UK | Planning & Quote'
+  const pageDescription = 'Moving a dog or cat from Dubai to UK? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
   const faqs = [
     {
       question: 'What document does a pet from Dubai need to enter Great Britain?',
@@ -97,10 +98,13 @@ export default function DubaiToUK() {
         imageAlt="Pet relocation from Dubai to Great Britain"
         fallbackSrc="/images/hero-dubai-to-uk.jpg"
         eyebrow="Dubai to Great Britain"
-        title="Dubai to UK pet relocation: entry to Great Britain"
+        title="Pet relocation from Dubai to UK"
         subtitle="On 22 September 2026 the UAE was a listed country. The document is a Great Britain pet health certificate. The pet must enter within 10 days of issue. No package price on this page."
         updated={`Checked ${CHECKED}`}
       />
+      <div className="mx-auto max-w-[900px] px-5 pt-8">
+        <RoutePlanLinks />
+      </div>
 
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
@@ -149,7 +153,7 @@ export default function DubaiToUK() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-white">
+      <section id="documents" className="scroll-mt-24 py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -363,7 +367,7 @@ export default function DubaiToUK() {
               We coordinate the file, the carrier booking and WhatsApp updates during business hours. We do not issue the Great Britain pet health certificate. WhatsApp +971504782999.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Check this Dubai to UK move" message="Hi Dubai Pet Relocation, I want a paid eligibility check for a pet moving from Dubai to Great Britain. Pet, route and travel window:" />
+              <WhatsAppBtn label="Check this Dubai to UK move" message="Hi Dubai Pet Relocation, I want a quote for a pet moving from Dubai to Great Britain. Pet, route and travel window:" />
               <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
                 <Info className="w-5 h-5" />
                 How it works

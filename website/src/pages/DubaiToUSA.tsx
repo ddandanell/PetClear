@@ -6,11 +6,12 @@ import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, Dog, Cat, MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
+import { RoutePlanLinks } from '../components/LinkPlanSlot.tsx'
 
 export default function DubaiToUSA() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-usa/`
-  const pageTitle = 'Pet Relocation Dubai to USA | Export Corridor Guide 2026'
-  const pageDescription = 'Export your dog or cat from Dubai to the USA. Guide to CDC dog import rules, USDA APHIS health certificates, state rules, airlines, costs and timeline.'
+  const pageTitle = 'Pet Relocation Dubai to USA | Planning & Quote'
+  const pageDescription = 'Moving a dog or cat from Dubai to USA? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
   const faqs = [
     {
       question: 'What are the CDC requirements for importing a dog from Dubai to the USA?',
@@ -99,10 +100,13 @@ export default function DubaiToUSA() {
         imageAlt="Pet relocation from Dubai to USA"
         fallbackSrc="/images/hero-dubai-to-usa.jpg"
         eyebrow="Dubai → United States"
-        title="Dubai to USA Pet Relocation — Exporting Your Pet to America"
-        subtitle="Direct Emirates flights and clear CDC rules. We handle CDC Dog Import forms, USDA APHIS health certificates, and US customs."
+        title="Pet relocation from Dubai to USA"
+        subtitle="Plan a dog or cat move from Dubai to the United States. CDC and USDA steps depend on the pet and the state. Confirm the airline’s current pet acceptance before booking."
         updated="Updated June 2026"
       />
+      <div className="mx-auto max-w-[900px] px-5 pt-8">
+        <RoutePlanLinks />
+      </div>
 
       {/* US IMPORT RULES */}
       <section className="py-16 lg:py-24">

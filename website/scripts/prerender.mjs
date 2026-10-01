@@ -18,6 +18,10 @@ const routes = [...sitemap.matchAll(/<loc>\s*([^<]+?)\s*<\/loc>/g)]
   .map((m) => m[1].replace(/^https?:\/\/[^/]+/, ''))
   .filter((p) => p.startsWith('/'))
 if (!routes.includes('/')) routes.unshift('/')
+// Legal pages stay reachable and noindex, but they are not sitemap entries.
+for (const legalPath of ['/privacy-policy/', '/terms-of-service/']) {
+  if (!routes.includes(legalPath)) routes.push(legalPath)
+}
 
 // Strip the shell's default head tags that each page overrides (keep charset,
 // viewport, theme-color, preconnect, favicon, and sitewide Org/WebSite JSON-LD).

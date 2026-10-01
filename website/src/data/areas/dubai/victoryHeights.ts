@@ -4,10 +4,10 @@ const victoryHeights: AreaPageData = {
   slug: 'victory-heights',
   areaName: 'Victory Heights',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Victory Heights | Dog & Cat Transport',
+  seoTitle: 'Pet Transport in Victory Heights | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Victory Heights — door-to-door dog and cat transport, MOCCAE permits and IATA crates. WhatsApp quote.',
-  h1: 'Pet Relocation in Victory Heights',
+    'Plan pet collection or delivery in Victory Heights. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Victory Heights',
   primaryKeyword: 'pet relocation victory heights',
   heroValueProp:
     'Relocating a dog or cat to or from Victory Heights? We coordinate the whole move for this golf-course villa community — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa — including larger dogs and multi-pet households, with WhatsApp updates at every step.',
@@ -39,7 +39,7 @@ const victoryHeights: AreaPageData = {
       h2: 'Moving To or From Victory Heights With a Pet',
       body: [
         { type: 'p', text: 'Most Victory Heights relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. Because villa families here often move with more than one pet, we map every animal’s timeline and paperwork in parallel so the household travels together where possible.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Because villa families here often move with more than one pet, we map every animal’s timeline and paperwork in parallel so the household travels together where possible.' },
       ],
     },
     {
@@ -49,7 +49,7 @@ const victoryHeights: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Victory Heights',
+      h2: 'Cost of Pet collection and delivery in Victory Heights',
       body: [
         { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government fees cover the MOCCAE import permit plus an arrival-release fee (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and our coordination. For multi-pet villa households we give a combined quote so you can see the full family cost upfront.' },
       ],

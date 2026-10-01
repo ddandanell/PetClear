@@ -12,6 +12,7 @@ import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, LOGO_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { EXPORT_CERT_FEE_VERIFY, EXPORT_CERT_TIMING_VERIFY } from '../lib/regulatory.ts'
+import GuideToc from '../components/GuideToc.tsx'
 
 const PATH = '/guides/pet-export-from-dubai/'
 const WA_DOCS =
@@ -42,7 +43,7 @@ const faqData = [
   },
   {
     q: 'Do I need a rabies titer to leave the UAE?',
-    a: 'The UAE does not impose an export titer of its own. The destination might. The United Kingdom currently lists the UAE so a GB entry titer is not required; Australia Group 3 and CDC high-risk US dog files do require destination-side RNATT rules. When a destination titer applies, follow that country’s clock — do not reuse the UAE inbound rule (“sample within 90 days before travel”) as if it were an export SLA.',
+    a: 'The UAE does not impose an export titer of its own. The destination might. The United Kingdom currently lists the UAE so a GB entry titer is not required; Australia Group 3 and CDC high-risk US dog files do require destination-side RNATT rules. When a destination titer applies, follow that country’s clock — do not reuse the UAE inbound rule (“a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given”) as if it were an export SLA.',
   },
   {
     q: 'What documents do I need to take a pet out of the UAE?',
@@ -68,9 +69,9 @@ const faqData = [
 
 export default function PetExportFromDubaiGuide() {
   const canonical = `${BASE_URL}${PATH}`
-  const title = 'How to Export Your Pet from Dubai | Complete 2026 Guide'
+  const title = 'Pet Export from Dubai | Owner Document Checklist'
   const description =
-    'Export a pet from Dubai: destination-first documents, MOCCAE export certificate timing, and checklists. Confirm portal fees.'
+    'Prepare your pet export from Dubai with a destination-first checklist. Review documents, appointments and travel planning before requesting support.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -120,12 +121,13 @@ export default function PetExportFromDubaiGuide() {
         schemas={[breadcrumbSchema, articleSchema, faqSchema]}
       />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Pet export from Dubai' }]} />
+<div className="mx-auto max-w-[900px] px-5 pt-8"><GuideToc items={[{ href: '#destination-checks', label: 'Destination checks' }, { href: '#uae-exit-documents', label: 'UAE exit documents' }]} /></div>
 
       <Hero
         image="/assets/w6/pet-export-from-dubai-guide-suitcase-checklist.png"
         imageAlt="Illustration for the complete guide to exporting a pet from Dubai"
         eyebrow="Export process guide"
-        title="Pet Export from Dubai: Permits, Certificates & Timeline"
+        title="How to prepare a pet export from Dubai"
         subtitle="Destination rules first, then the UAE export health-certificate path — a how-to for leaving Dubai with a dog or cat, not a booking page."
         updated="Updated September 2026"
         primaryLabel="Check Documents"
@@ -174,7 +176,7 @@ export default function PetExportFromDubaiGuide() {
         </div>
       </section>
 
-      <section className="section-padding bg-[#F5F6FD]">
+      <section id="destination-checks" className="section-padding scroll-mt-24 bg-[#F5F6FD]">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
             Plan from the destination backwards
@@ -234,7 +236,7 @@ export default function PetExportFromDubaiGuide() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section id="uae-exit-documents" className="section-padding scroll-mt-24 bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
             Documents to take a pet out of the UAE — in order
@@ -545,7 +547,7 @@ export default function PetExportFromDubaiGuide() {
               'Collecting short-fuse certificates too early so they expire before cargo day.',
               'Assuming cabin from Dubai because an inbound Etihad product exists — confirm the outbound itinerary.',
               'Treating the MOCCAE import-permit 90-day window as an export rule.',
-              'Applying the UAE inbound RNATT sample window as if it were every destination’s titer rule.',
+              'Applying the UAE inbound titre certificate as if it were every destination’s titer rule.',
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-[#5A5A5A]">
                 <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#4F5BD5]" />

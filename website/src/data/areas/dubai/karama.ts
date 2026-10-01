@@ -4,10 +4,10 @@ const karama: AreaPageData = {
   slug: 'karama',
   areaName: 'Al Karama',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Al Karama | Creek Walk-Up Last Mile',
+  seoTitle: 'Pet Transport in Karama | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Al Karama — door-to-door dog and cat transport, MOCCAE permit guidance and IATA travel crates. Get a WhatsApp quote in 15 minutes.',
-  h1: 'Pet Relocation in Al Karama',
+    'Plan pet collection or delivery in Karama. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Karama',
   primaryKeyword: 'pet relocation karama',
   heroValueProp:
     'Relocating a dog or cat to or from Al Karama? We coordinate the whole move for Karama residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your building — with WhatsApp updates at every step.',
@@ -58,7 +58,7 @@ const karama: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk countries the timeline is typically 2–6 weeks. From high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before any money changes hands.',
+          text: 'From low-risk countries the timeline is typically 2–6 weeks. From high-risk rabies countries that require a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We map your exact timeline before any money changes hands.',
         },
       ],
     },
@@ -72,7 +72,7 @@ const karama: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Al Karama',
+      h2: 'Cost of Pet collection and delivery in Karama',
       body: [
         {
           type: 'p',
@@ -88,7 +88,7 @@ const karama: AreaPageData = {
     },
     {
       q: 'How long does pet relocation from Al Karama take?',
-      a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.',
+      a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.',
     },
     {
       q: 'How much does it cost?',

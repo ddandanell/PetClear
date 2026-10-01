@@ -15,6 +15,7 @@ import ContentImage from '../components/ContentImage.tsx'
 import { SERVICE_LINKS } from '../data/nav.ts'
 import { cardImageFor } from '../data/cardImages.ts'
 import { CTA_CHECK_ELIGIBILITY, CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 const WhatsAppCta = ({
   text,
@@ -176,7 +177,7 @@ const SERVICES_FAQS = [
   },
   {
     q: 'Do the tiers change the regulatory steps?',
-    a: 'No. A 90-day import permit is still 90 days from issuance. A titer sample, when required, is still taken within 90 days before travel. Tiers change labour, not the law.',
+    a: 'No. A 90-day import permit is still 90 days from issuance. A use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Tiers change labour, not the law.',
   },
   {
     q: 'Can I start on Essential and upgrade later?',
@@ -244,9 +245,9 @@ export default function ServicesPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Services Dubai | Compare Tiers',
+          title: 'Pet Relocation Services Dubai | Compare Your Options',
           description:
-            'Compare PawPilot, PawPartner and PawVIP. Choose a tier, then open the service page for your move. Inclusions are on the prices page.',
+            'Compare document assistance, managed import and complete pet relocation support. Find the right service for your route and see what is included.',
           canonical: `${BASE_URL}/services/`,
           ogType: 'website',
         }}
@@ -254,12 +255,13 @@ export default function ServicesPage() {
       />
 
       <Breadcrumb items={[{ label: 'Services' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/services/" slot="corporate" /></div>
 
       <Hero
         image="/images/services-hero.jpg"
         imageAlt="A happy dog and cat beside a travel crate in a welcoming Dubai pet relocation office"
         eyebrow="Our Services"
-        title="Pet Relocation Services Dubai: compare the tiers"
+        title="Compare our pet relocation services"
         subtitle="Choose how much of the move we coordinate, then open the page for inbound, outbound, door-to-door or pet taxi. What each tier includes is on the prices page. A proposal follows once we know the pet and the route."
         updated="Updated September 2026"
         primaryLabel={CTA_CHECK_MOVE}
@@ -342,7 +344,7 @@ export default function ServicesPage() {
                 </ul>
                 <WhatsAppCta
                   text={CTA_CHECK_MOVE}
-                  message={`I want a paid Dubai pet relocation eligibility check for the ${tier.name} tier (${tier.subtitle}). Please share name, pet, origin, destination, and target date in English.`}
+                  message={`I would like a quote for a pet move with Dubai Pet Relocation for the ${tier.name} tier (${tier.subtitle}). Please share name, pet, origin, destination, and target date in English.`}
                   fullWidth
                   className="!py-3"
                 />

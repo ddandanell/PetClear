@@ -67,8 +67,8 @@ export default function DogRelocationPage() {
     <div className="bg-[#F5F6FD]">
       <SEOHead
         canonical={`${BASE_URL}/dog-relocation-to-dubai/`}
-        title="Dog Relocation to Dubai | Breed, Crate and Permit"
-        description="Dog relocation to Dubai: check the breed ban, size the crate, and follow the MOCCAE permit valid 90 days from issuance. WhatsApp +971504782999."
+        title="Bringing a Dog to Dubai | Owner Preparation Guide"
+        description="Prepare to bring your dog to Dubai. Review breed eligibility, crate planning and the import checklist, with links to official rules and managed support."
         ogType="article"
         schemas={[
           {
@@ -91,7 +91,7 @@ export default function DogRelocationPage() {
           {
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Dog Relocation to Dubai | Breed, Crate and Permit',
+            headline: 'Bringing a Dog to Dubai | Owner Preparation Guide',
             description: 'Dog relocation to Dubai: check the breed ban, size the crate, and follow the MOCCAE permit valid 90 days from issuance.',
             url: `${BASE_URL}/dog-relocation-to-dubai/`,
             dateModified: '2026-09-22',
@@ -106,7 +106,7 @@ export default function DogRelocationPage() {
         image="/images/hero-dog.jpg"
         imageAlt="Dog sitting beside a travel crate before a flight to Dubai"
         eyebrow="Dogs"
-        title="Bring your dog to Dubai"
+        title="Bringing your dog to Dubai"
         subtitle="Start with the breed, then the crate, then the permit. The legal checklist lives on the import guide. This page is the practical dog preparation."
         updated="Checked 22 September 2026"
         whatsappMessage={WA}

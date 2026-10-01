@@ -3,10 +3,10 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const petExportDubai: ServicePageData = {
   slug: 'pet-export-dubai',
-  seoTitle: 'Pet Export Dubai | UAE Exit Docs, Cargo & Certificates',
+  seoTitle: 'Pet Export Dubai | Documents & Travel Coordination',
   metaDescription:
-    'Pet export Dubai: MOCCAE export health certificates, Fit to Fly, and flight booking coordination. Get a relocation quote.',
-  h1: 'Pet Export Dubai — Leave the UAE With Your Pet',
+    'Moving your pet out of Dubai? Coordinate destination requirements, export documents and travel arrangements. Request a quote for your pet and route.',
+  h1: 'Pet export services from Dubai',
   primaryKeyword: 'pet export dubai',
   heroValueProp:
     'Leaving Dubai with your dog or cat? We guide you through MOCCAE export health certificates, the Fit to Fly check, the airport inspection and your flight booking — and stay with you on WhatsApp at every step. Transparent pricing, vetted partners, no last-minute surprises.',
@@ -141,7 +141,7 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'These are typical ranges, not a fixed quote. Send destination, breed and weight on WhatsApp for a paid eligibility check and a scoped export quote. Coordination packages: [Prices](/prices/).',
+          text: 'These are typical ranges, not a fixed quote. Send destination, breed and weight on WhatsApp for a quote and a scoped export quote. Coordination packages: [Prices](/prices/).',
         },
       ],
     },
@@ -184,7 +184,7 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Send destination, species and travel month on WhatsApp for a paid eligibility check if you want us to run the export file. We will say, realistically, the soonest your pet can legally leave Dubai. Coordination is quoted after eligibility on [Prices](/prices/).',
+          text: 'Send destination, species and travel month on WhatsApp for a quote if you want us to run the export file. We will say, realistically, the soonest your pet can legally leave Dubai. Coordination is quoted after eligibility on [Prices](/prices/).',
         },
       ],
     },
@@ -200,7 +200,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'How much does it cost to export a pet from Dubai?',
-      a: 'This page does not publish a package total. Send destination and pet details on WhatsApp +971504782999 for a paid eligibility check and a scoped export quote. Government export fees are confirmed on the portal. Packages are not printed as AED bands here.',
+      a: 'This page does not publish a package total. Send destination and pet details on WhatsApp +971504782999 for a quote and a scoped export quote. Government export fees are confirmed on the portal. Packages are not printed as AED bands here.',
     },
     {
       q: 'How long does pet export from Dubai take?',
@@ -228,7 +228,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'How do I get started with exporting my pet from Dubai?',
-      a: 'WhatsApp +971504782999 with destination, species and the month you want to fly if you want a paid eligibility check and a managed export quote. We reply during business hours with a destination-first checklist. Process how-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/). Packages: [Prices](/prices/).',
+      a: 'WhatsApp +971504782999 with destination, species and the month you want to fly if you want a quote and a managed export quote. We reply during business hours with a destination-first checklist. Process how-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/). Packages: [Prices](/prices/).',
     },
     {
       q: 'Is pet export the same as door-to-door relocation?',

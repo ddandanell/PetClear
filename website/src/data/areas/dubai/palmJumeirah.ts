@@ -4,10 +4,10 @@ const palmJumeirah: AreaPageData = {
   slug: 'palm-jumeirah',
   areaName: 'Palm Jumeirah',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Palm Jumeirah | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Transport in Palm Jumeirah | Collection & Delivery',
   metaDescription:
-    'Pet relocation on Palm Jumeirah: frond villa gates, Nakheel access, longer DXB routing and MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
-  h1: 'Pet Relocation in Palm Jumeirah',
+    'Plan pet collection or delivery in Palm Jumeirah. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Palm Jumeirah',
   primaryKeyword: 'pet relocation palm jumeirah',
   heroValueProp:
     'Relocating a dog or cat to or from Palm Jumeirah? We plan frond-gate access, crates and the longer DXB run — WhatsApp +971 50 478 2999 during business hours.',
@@ -26,7 +26,7 @@ const palmJumeirah: AreaPageData = {
     'The crescent',
   ],
   vetsNote:
-    'Palm Jumeirah and the nearby coastal corridor have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume “island partners.” Use your current vet if the file is already in order. If you need an ISO scanner or export paperwork, ask on WhatsApp for the document type. We align appointment dates to travel day. Federal steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/) for inbound files and [pet export from Dubai](/guides/pet-export-from-dubai/) when you are leaving.',
+    'Palm Jumeirah and the nearby coastal corridor have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume “island partners.” Use your current vet if the file is already in order. If you need an ISO scanner or export paperwork, ask on WhatsApp for the document type. We align appointment dates to travel day. Federal steps stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/) for inbound files and [pet export from Dubai](/guides/pet-export-from-dubai/) when you are leaving.',
   intro:
     'Palm Jumeirah is a man-made island with two last miles, not one postcard. Frond villas sit behind Nakheel community gates; trunk apartments share podiums with hotel traffic on the spine. Dogs here use private gardens or West Beach loops; cats live in both villa compounds and high-rise cores. That is why [pet relocation across Dubai communities](/dubai/) keeps the Palm as its own spoke — the van has to clear a gate or a trunk ramp before anyone talks about cargo. We coordinate international files into or out of frond villas and trunk towers, then the longer ground run to DXB. Neighbouring [moving pets to or from JBR](/dubai/jbr/) and [relocating pets in Dubai Marina](/dubai/dubai-marina/) do not share those gates. WhatsApp +971504782999 with your frond or trunk address and route.',
   sections: [
@@ -138,7 +138,7 @@ const palmJumeirah: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Full door-to-door is [pet relocation Dubai](/service/pet-relocation-dubai/). Commercial inbound is [pet import to Dubai](/service/pet-import-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Full door-to-door is [pet relocation Dubai](/service/pet-relocation-dubai/). Commercial inbound is [pet import to Dubai](/service/pet-import-dubai/).',
         },
         {
           type: 'p',
@@ -146,7 +146,7 @@ const palmJumeirah: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Multi-pet villa households need parallel paperwork so the family is not split by one expired sample.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Multi-pet villa households need parallel paperwork so the family is not split by one expired certificate.',
         },
       ],
     },
@@ -250,7 +250,7 @@ const palmJumeirah: AreaPageData = {
     },
     {
       q: 'Do I wait 90 days after a titer test before flying onto the Palm?',
-      a: 'No. When a titer is required, sample within 90 days before travel, result ≥0.5 IU/ml. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does Palm Jumeirah pet relocation cost?',

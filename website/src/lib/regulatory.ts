@@ -30,11 +30,37 @@ export const EXPORT_CERT_FEE_VERIFY =
 export const EXPORT_CERT_TIMING_VERIFY =
   'Secondary sources describe a short export-certificate window (commonly discussed as about 30 days from issuance) and a one-working-day service time. Confirm current validity and processing on the official MOCCAE portal. Do not treat those figures as first-party official facts.'
 
-/** RNATT timing — sample window before travel, not a post-test wait. */
-export const TITER_SAMPLE_RULE =
-  'When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. This is a sample-timing window, not a 90-day waiting period after the test.'
+/**
+ * Single register for the UAE inbound rabies-antibody rule.
+ * The 1 Oct 2026 audit of the live MOCCAE import-permit page separates two clocks:
+ * the import permit is 90 days from issuance, and a required antibody certificate
+ * is valid for 365 days while the vaccine stays valid and continuous and no booster
+ * is given. Do not publish a 90-day pre-travel sample window.
+ */
+export const TITER_CERTIFICATE_RULE =
+  'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the rabies vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not need that wait.'
+
+/** Existing imports keep this name. The text is the certificate rule above, not a sample window. */
+export const TITER_SAMPLE_RULE = TITER_CERTIFICATE_RULE
 
 export const TITER_THRESHOLD = '≥0.5 IU/ml'
+
+/**
+ * Shared record for the UAE inbound antibody rule.
+ * Reviewer is unnamed because the source register does not store one.
+ * checkedDate stays the last published review. This release did not complete a new portal read.
+ */
+export const UAE_INBOUND_TITER_RECORD = {
+  jurisdiction: 'United Arab Emirates',
+  direction: 'inbound',
+  species: 'dogs and cats',
+  rule: TITER_CERTIFICATE_RULE,
+  exceptions:
+    'Low-risk origins are not described as needing this test. The United Kingdom, the United States, Australia, Hawaii, Guam and other destination clocks stay on their own pages.',
+  sourceUrl: 'https://www.moccae.gov.ae/ar/services/import-permit-pets',
+  checkedDate: LAST_VERIFIED_DATE,
+  reviewer: 'Not named in the published register',
+} as const
 
 export const PERMIT_PROCESSING_ESTIMATE =
   'MOCCAE import-permit processing is typically estimated at 2–5 working days for a complete application. That figure is a secondary-sourced estimate, not a first-party SLA — confirm current timing on the official portal.'
@@ -58,4 +84,4 @@ export const PARASITE_WINDOW =
   'External parasite treatment (for example Fipronil or Permethrin) and internal deworming are required within 10 days before shipping to the UAE.'
 
 export const EXEMPT_LIST_HOLD =
-  'MOCCAE maintains a rabies-controlled / exempt-country list that decides whether an RNATT is required. We do not publish an unverified country list — confirm your origin on the official MOCCAE portal.'
+  'MOCCAE maintains a rabies-controlled / exempt-country list that decides whether an RNATT is required. We do not publish a country-exemption list on this page. Confirm your origin on the official MOCCAE portal.'

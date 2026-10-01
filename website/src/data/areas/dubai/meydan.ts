@@ -4,10 +4,10 @@ const meydan: AreaPageData = {
   slug: 'meydan',
   areaName: 'Meydan',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Meydan | Racing Community Last Mile',
+  seoTitle: 'Pet Transport in Meydan | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Meydan — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote in 15 minutes.',
-  h1: 'Pet Relocation in Meydan',
+    'Plan pet collection or delivery in Meydan. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Meydan',
   primaryKeyword: 'pet relocation meydan',
   heroValueProp:
     'Relocating a dog or cat to or from Meydan? We coordinate the whole move for Meydan residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa or apartment — with WhatsApp updates at every step.',
@@ -38,7 +38,7 @@ const meydan: AreaPageData = {
       h2: 'Moving To or From Meydan With a Pet',
       body: [
         { type: 'p', text: 'Most Meydan relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit so nothing is rushed at the last minute.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We map your exact timeline before you commit so nothing is rushed at the last minute.' },
       ],
     },
     {
@@ -48,7 +48,7 @@ const meydan: AreaPageData = {
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Meydan',
+      h2: 'Cost of Pet collection and delivery in Meydan',
       body: [
         { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees include the MOCCAE import permit plus the arrival-release fee (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination.' },
       ],
@@ -56,7 +56,7 @@ const meydan: AreaPageData = {
   ],
   faq: [
     { q: 'Do you pick up from my home in Meydan?', a: 'Yes — we arrange door-to-door pickup from your Meydan villa or apartment and coordinate the entire move from there.' },
-    { q: 'How long does pet relocation from Meydan take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
+    { q: 'How long does pet relocation from Meydan take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import permit (valid 90 days from issuance) or export certificate, or handle the application on your behalf depending on your service tier.' },
     { q: 'I live near the racecourse with a large dog — can you help?', a: 'Absolutely. We size an IATA-compliant crate for larger breeds common in Meydan’s villa communities and advise on acclimating your dog to crate travel well before the move.' },

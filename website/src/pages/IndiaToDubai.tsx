@@ -16,13 +16,13 @@ const waIndia = waEligibility({ origin: 'India', need: 'managed move' })
 
 export default function IndiaToDubai() {
   const pageUrl = `${BASE_URL}/routes/india-to-dubai/`
-  const pageTitle = 'Pet Relocation India to Dubai | Import Corridor Guide 2026'
+  const pageTitle = 'Pet Relocation India to Dubai | Planning & Quote'
   const pageDescription =
-    'Relocate your pet from India to Dubai. High-risk route: titer sample within 90 days before travel ≥0.5 IU/ml. IndiGo, Emirates, Air India. Documents.'
+    'Moving a dog or cat from India to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
   const faqs = [
     {
       question: 'Can I take my dog to Dubai from India?',
-      answer: 'Yes, when the breed is permitted and the file matches MOCCAE rules. India-origin files often need careful titer and AQCS/export timing before the UAE permit window. Permit validity is 90 days from issuance; titer sample within 90 days before travel when required. Corridor process — not volume claims. Export reverse twin: [/routes/dubai-to-india/](/routes/dubai-to-india/). WhatsApp +971504782999.',
+      answer: 'Yes, when the breed is permitted and the file matches MOCCAE rules. India-origin files often need careful titer and AQCS/export timing before the UAE permit window. Permit validity is 90 days from issuance; titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titer is required. Corridor process — not volume claims. Export reverse twin: [/routes/dubai-to-india/](/routes/dubai-to-india/). WhatsApp +971504782999.',
     },
     {
       question: 'Why is India classified as a high-risk country for pet import to Dubai?',
@@ -30,15 +30,15 @@ export default function IndiaToDubai() {
     },
     {
       question: 'What is the titer test (RNATT) and how long does it take?',
-      answer: 'The RNATT (Rabies Neutralising Antibody Titre Test) is a blood test that measures your pet\'s rabies antibody levels. The blood sample must be drawn at least 30 days after the rabies vaccination and sent to an approved laboratory (such as the Central Veterinary Laboratory in India, or an international lab like IDEXX, Kansas State, or AHL). Results typically take 2–4 weeks. The sample used for travel must be taken within 90 days before travel and read at least 0.5 IU/ml — a pre-travel sample window, not a 90-day wait after the blood is drawn.'
+      answer: 'The RNATT (Rabies Neutralising Antibody Titre Test) is a blood test that measures your pet\'s rabies antibody levels. The blood sample must be drawn at least 21 days after a first rabies vaccination, or after a gap in vaccination. A valid booster does not need that wait. Send the sample to a laboratory approved for the export, such as a laboratory the origin authority names. Results typically take 2–4 weeks. The rule is a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.'
     },
     {
       question: 'Which airlines fly pets from India to Dubai?',
-      answer: 'Emirates (EK), Air India (AI), and IndiGo (6E) operate pet cargo services from major Indian cities. Emirates flies from Delhi (DEL), Mumbai (BOM), Bengaluru (BLR), Chennai (MAA), and Hyderabad (HYD). Air India also offers cargo from most metro cities. IndiGo carries pets in cargo on select domestic and international routes. Most flights are 3–4 hours direct. Dubai Pet Relocation books the most suitable airline based on your city, pet size, and travel date.'
+      answer: 'Families usually ask about Emirates, Air India and IndiGo from Delhi, Mumbai, Bengaluru, Chennai and Hyderabad. Confirm each carrier’s current pet acceptance, crate mode and breed limits for your city and date before booking. We do not treat a passenger timetable as live-animal approval.'
     },
     {
       question: 'How long does the India to Dubai pet relocation process take?',
-      answer: 'Plan the calendar around vaccination-to-sample interval, lab turnaround, and the 90-day-before-travel sample window: Month 1 — microchip and rabies vaccination (then wait at least 30 days before the titer draw); Month 1–2 — titer blood draw and lab processing so the sample date will still fall within 90 days before the eventual travel date and read ≥ 0.5 IU/ml; Month 2–3 — apply for the UAE import permit (valid 90 days from issuance) and obtain the Indian export health certificate (NOC from AQCS); then book flight, final health check, and travel. Do not sit 90 days after the draw — that is how a passing sample ages out of the window.'
+      answer: 'Plan the calendar around the vaccination-to-test interval, lab turnaround, and the 365-day certificate: Month 1 — microchip and rabies vaccination (then wait at least 21 days after a first vaccine or a gap before the titer draw. A valid booster does not need that wait); Month 1–2 — titer blood draw and lab processing so the certificate can stay valid for 365 days if the vaccine stays valid and no booster is given, ahead of the eventual travel date and read ≥ 0.5 IU/ml; Month 2–3 — apply for the UAE import permit (valid 90 days from issuance) and obtain the Indian export health certificate (NOC from AQCS); then book flight, final health check, and travel. Do not sit 90 days after the draw. That wait is not the rule.'
     },
     {
       question: 'How much does it cost to relocate a pet from India to Dubai?',
@@ -109,8 +109,8 @@ export default function IndiaToDubai() {
         fallbackSrc="/images/hero-india.jpg"
         imageAlt="Pet relocation from India to Dubai"
         eyebrow="India → Dubai"
-        title="India to Dubai Pet Relocation — Complete Guide"
-        subtitle="India is a high-risk country for rabies: when a titer is required, the sample must be taken within 90 days before travel and read ≥0.5 IU/ml — not a wait-after-draw rule."
+        title="Pet relocation from India to Dubai"
+        subtitle="India is a high-risk country for rabies: when a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a wait-after-draw rule."
         updated="Updated June 2026"
         primaryLabel="Check India-to-Dubai eligibility"
         whatsappMessage={waIndia}
@@ -143,7 +143,7 @@ export default function IndiaToDubai() {
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Timeline</p>
               <p className="text-[#5A5A5A] text-sm">Sample window</p>
-              <p className="text-[#5A5A5A] text-xs mt-2">Titer within 90 days before travel ≥0.5 IU/ml</p>
+              <p className="text-[#5A5A5A] text-xs mt-2">Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -168,7 +168,7 @@ export default function IndiaToDubai() {
       <GuideFunnelCta
         variant="mid"
         title="DIY this corridor — or hand the import file over"
-        subtitle="This page explains the India-to-Dubai titer window and documents. DIY the sequence here, or open pet import / MOCCAE permit assistance when you want the file managed. Permit validity: 90 days from issuance. Titer sample within 90 days before travel when required. Confirm portal fees on the official site."
+        subtitle="This page explains the India-to-Dubai titer window and documents. DIY the sequence here, or open pet import / MOCCAE permit assistance when you want the file managed. Permit validity: 90 days from issuance. Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titer is required. Confirm portal fees on the official site."
         eligibilityMessage={waIndia}
         waLabel="Check India-to-Dubai eligibility"
         links={[
@@ -216,7 +216,7 @@ export default function IndiaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT) — CRITICAL</p>
-                    <p className="text-[#5A5A5A] text-sm">Blood sample drawn at least 30 days after rabies vaccination. Sent to an approved lab (CVL Pune, IDEXX, Kansas State, or AHL). Result must be ≥ 0.5 IU/ml. The sample must be taken within 90 days before travel — a pre-travel window, not a 90-day wait after the draw.</p>
+                    <p className="text-[#5A5A5A] text-sm">Blood sample drawn at least 21 days after a first rabies vaccination, or after a gap. A valid booster does not need that wait. Sent to an approved lab (CVL Pune, IDEXX, Kansas State, or AHL). Result must be ≥ 0.5 IU/ml. The rule is a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.</p>
                   </div>
                 </div>
 
@@ -260,7 +260,7 @@ export default function IndiaToDubai() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>The titer rule is a sample window: draw within 90 days before travel and obtain ≥ 0.5 IU/ml. Sitting 90 days after the draw is how a passing result ages out. Start the vaccination-to-sample sequence as soon as the move date is real.</span>
+                  <span>The titre rule is the certificate: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. A passing result does not start a 90-day clock before travel. Start the vaccination-to-sample sequence as soon as the move date is real.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -301,7 +301,7 @@ export default function IndiaToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">India to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround — not because you must sit 90 days after the draw. Schedule the sample so it stays within 90 days before travel at ≥ 0.5 IU/ml.
+              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround — not because you must sit 90 days after the draw. Schedule the sample so you keep a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.
             </p>
           </div>
 
@@ -330,7 +330,7 @@ export default function IndiaToDubai() {
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'When the titer sample is still inside the 90-day-before-travel window and the MOCCAE permit will cover the flight, Dubai Pet Relocation books cargo space with Emirates, Air India, or IndiGo. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed one final time.',
+                  desc: 'When the titre certificate is still valid and the MOCCAE permit will cover the flight, Dubai Pet Relocation books cargo space with Emirates, Air India, or IndiGo. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed one final time.',
                   icon: Plane
                 },
                 {
@@ -438,7 +438,7 @@ export default function IndiaToDubai() {
               Indian summers (April–July) see extreme temperatures that affect both ground handling at Indian airports and cargo hold conditions. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During monsoon season (July–September), flight delays are common — plan buffer days around your travel date.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              Peak relocation season for Indian pets is December–January, when many families move during school holidays. Cargo space fills 3–4 weeks in advance during this period. Start the vaccination-to-sample sequence early enough that the titer draw will still fall within 90 days before the flight you actually book.
+              Peak relocation season for Indian pets is December–January, when many families move during school holidays. Cargo space fills 3–4 weeks in advance during this period. Start the vaccination-to-sample sequence early enough that the titer draw will still be valid under the 365-day certificate rule if the vaccine stays valid and no booster is given, for the flight you actually book.
             </p>
           </div>
         </div>
@@ -473,7 +473,7 @@ export default function IndiaToDubai() {
       <GuideFunnelCta
         variant="end"
         title="Ready to relocate your pet from India to Dubai?"
-        subtitle="DIY this corridor guide, or hand the file to pet import / permit assistance. We coordinate titer sample timing (within 90 days before travel), AQCS NOC, and the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal — we do not assume amounts."
+        subtitle="DIY this corridor guide, or hand the file to pet import / permit assistance. We coordinate titer sample timing (a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given), AQCS NOC, and the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal — we do not assume amounts."
         eligibilityMessage={waIndia}
         waLabel="Check India-to-Dubai eligibility"
         links={[

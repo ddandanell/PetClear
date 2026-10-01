@@ -4,10 +4,10 @@ const dubaiSouth: AreaPageData = {
   slug: 'dubai-south',
   areaName: 'Dubai South',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubai South | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Transport in Dubai South | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Dubai South: DWC cargo last mile, The Pulse townhouses, longer DXB runs, MOCCAE permits. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Dubai South',
+    'Plan pet collection or delivery in Dubai South. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Dubai South',
   primaryKeyword: 'pet relocation dubai south',
   heroValueProp:
     'Relocating a dog or cat to or from Dubai South? We plan townhouse and community access, crates and the short DWC cargo run — WhatsApp +971 50 478 2999 during business hours.',
@@ -137,7 +137,7 @@ const dubaiSouth: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
         },
         {
           type: 'p',
@@ -145,7 +145,7 @@ const dubaiSouth: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. New-build communities still have varying pet clauses — read the tenancy before you assume a townhouse garden equals an automatic dog policy.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. New-build communities still have varying pet clauses — read the tenancy before you assume a townhouse garden equals an automatic dog policy.',
         },
       ],
     },
@@ -227,7 +227,7 @@ const dubaiSouth: AreaPageData = {
     },
     {
       q: 'If my origin needs a rabies titer, do I wait 90 days after the blood draw?',
-      a: 'No. When RNATT is required, take the blood sample within 90 days before travel and keep a result of at least 0.5 IU/ml. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does pet relocation from Dubai South cost?',

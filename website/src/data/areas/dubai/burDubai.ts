@@ -4,10 +4,10 @@ const burDubai: AreaPageData = {
   slug: 'bur-dubai',
   areaName: 'Bur Dubai',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Bur Dubai | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Transport in Bur Dubai | Collection & Delivery',
   metaDescription:
-    'Pet relocation in Bur Dubai: creek-side walk-ups, consulate-district access, dense-street parking and short DXB runs. WhatsApp +971 50 478 2999.',
-  h1: 'Pet Relocation in Bur Dubai',
+    'Plan pet collection or delivery in Bur Dubai. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Bur Dubai',
   primaryKeyword: 'pet relocation bur dubai',
   heroValueProp:
     'Relocating a dog or cat to or from Bur Dubai? We plan walk-up and creek-street access, crates and the short DXB run — WhatsApp +971 50 478 2999 during business hours.',
@@ -26,9 +26,9 @@ const burDubai: AreaPageData = {
     'Khalid bin Al Waleed Road',
   ],
   vetsNote:
-    'Bur Dubai and the creek-side districts have long-established clinics used to cats and smaller dogs in older apartments — we still do not publish a named list or invent a partner clinic. Keep the vet who already holds your records if the file is complete. If you need an ISO scan or a government-style certificate, describe the document on WhatsApp. We time appointments so the certificate is still valid on travel day. Inbound rules stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Bur Dubai and the creek-side districts have long-established clinics used to cats and smaller dogs in older apartments — we still do not publish a named list or invent a partner clinic. Keep the vet who already holds your records if the file is complete. If you need an ISO scan or a government-style certificate, describe the document on WhatsApp. We time appointments so the certificate is still valid on travel day. Inbound rules stay on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
   intro:
-    'Bur Dubai is the old-city creek quarter: Al Fahidi lanes, consulate-district streets, Meena Bazaar walk-ups and dense apartment blocks running back from the water — not a Marina podium and not a villa suburb. Pets here are often cats and smaller dogs that have to clear a crate down a stairwell because there is no goods lift. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Bur Dubai as its own spoke. Across the creek, [Deira pet relocation services](/dubai/deira/) is a sibling last mile, not a copy. [Relocating pets in Al Karama](/dubai/karama/) stays on its own URL — we link it as a neighbour; we do not redirect or absorb that page. WhatsApp +971504782999 with your building type, street and route.',
+    'Bur Dubai is the old-city creek quarter: Al Fahidi lanes, consulate-district streets, Meena Bazaar walk-ups and dense apartment blocks running back from the water — not a Marina podium and not a villa suburb. Pets here are often cats and smaller dogs that have to clear a crate down a stairwell because there is no goods lift. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Bur Dubai as its own spoke. Across the creek, [Deira pet relocation services](/dubai/deira/) is a sibling last mile, not a copy. [Relocating pets in Al Karama](/dubai/karama/) is the page for that neighbourhood. WhatsApp +971504782999 with your building type, street and route.',
   sections: [
     {
       h2: 'Old-city walk-ups, consulate streets and creek blocks',
@@ -102,7 +102,7 @@ const burDubai: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Al Karama sits inland as a neighbouring dense-apartment district. If the pet lives in Karama, that is the honest last mile — different streets, different parking, same old-city fabric. We keep [relocating pets in Al Karama](/dubai/karama/) live. We are not firing a merge redirect and we are not renaming that URL. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is cooling down, not a photo on the abra dock.',
+          text: 'Al Karama sits inland as a neighbouring dense-apartment district. If the pet lives in Karama, that is the honest last mile — different streets, different parking, same old-city fabric. Use [relocating pets in Al Karama](/dubai/karama/). From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is cooling down, not a photo on the abra dock.',
         },
       ],
     },
@@ -137,7 +137,7 @@ const burDubai: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file.',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file.',
         },
         {
           type: 'p',
@@ -145,7 +145,7 @@ const burDubai: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Compact flats still need honest crate sizing — a crate that fits a Marina goods lift may not turn on a Bur Dubai landing.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Compact flats still need honest crate sizing — a crate that fits a Marina goods lift may not turn on a Bur Dubai landing.',
         },
       ],
     },
@@ -219,7 +219,7 @@ const burDubai: AreaPageData = {
     },
     {
       q: 'Did you merge or redirect the Karama page into Bur Dubai?',
-      a: 'No. [Relocating pets in Al Karama](/dubai/karama/) stays live on its own URL. We link it as a sibling. We do not rename, remove or redirect existing community URLs.',
+      a: 'No. Karama has its own page: [Relocating pets in Al Karama](/dubai/karama/). Use that page when the pet lives there.',
     },
     {
       q: 'How long is the MOCCAE import permit valid if I am moving into a Bur Dubai apartment?',
@@ -227,7 +227,7 @@ const burDubai: AreaPageData = {
     },
     {
       q: 'If my origin needs a rabies titer, do I wait 90 days after the blood draw?',
-      a: 'No. When RNATT is required, take the blood sample within 90 days before travel and keep a result of at least 0.5 IU/ml. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When RNATT is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does pet relocation from Bur Dubai cost?',

@@ -53,9 +53,9 @@ const faqData = [
 
 export default function SnubNosedDogsFlyingUaeGuide() {
   const canonical = `${BASE_URL}${PATH}`
-  const title = 'Snub-Nosed Dogs Flying to Dubai | Brachycephalic Pet Rules'
+  const title = 'Snub Nosed Dogs and UAE Flights | Planning Guide'
   const description =
-    'Can French bulldogs, pugs and Persians fly to Dubai? IATA +10% crate rule, airline checks, summer risk — confirm eligibility before you book.'
+    'Review travel considerations for snub nosed dogs on UAE routes. Check airline acceptance and veterinary advice before choosing dates or transport.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -110,7 +110,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
         image={HERO_IMG}
         imageAlt="Calm French bulldog sitting in a roomy open travel crate with visible ventilation"
         eyebrow="Breed / flight-safety guide"
-        title="Snub-Nosed Dogs Flying to Dubai: What Airlines Actually Check"
+        title="Flight planning for snub nosed dogs in the UAE"
         subtitle="Airway risk, crate size and heat — eligibility is carrier, date and breed, not a blog promise."
         updated="Updated September 2026"
         primaryLabel="Check Pet Eligibility"
@@ -177,7 +177,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
             <Link to="/guides/banned-dog-breeds-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               banned and restricted dog breeds in Dubai
             </Link>
-            . This URL stays on flight physiology and acceptance.
+            . This page covers flight physiology and airline acceptance.
           </p>
           <ContentImage
             src="/assets/w9/brachycephalic-airway-comparison-diagram.webp"
@@ -447,7 +447,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
           <p className="leading-relaxed text-[#5A5A5A]">
             Checklist depth:{' '}
             <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-              UAE pet import requirements
+              UAE pet import requirements for dogs and cats
             </Link>
             . Dog-specific inbound living notes:{' '}
             <Link to="/dog-relocation-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">

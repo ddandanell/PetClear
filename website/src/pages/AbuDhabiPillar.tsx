@@ -4,7 +4,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
-import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig, localBusinessProvider } from '../lib/seo.ts'
 
 export default function AbuDhabiPillar() {
   const url = `${BASE_URL}/abu-dhabi/`
@@ -13,7 +13,7 @@ export default function AbuDhabiPillar() {
   const faqs = [
     {
       question: 'Are the pet import rules different in Abu Dhabi than in Dubai?',
-      answer: 'No. Pet import rules in the UAE are set at the federal level by the Ministry of Climate Change and Environment (MOCCAE) and apply nationwide, regardless of which emirate you enter. Whether your pet lands in Abu Dhabi or Dubai, you need the same things: an ISO 11784/11785 microchip, a valid rabies vaccination administered at least 21 days before travel, core vaccinations, an International Health Certificate issued within 10 days of travel, and a MOCCAE import permit valid 90 days from issuance (confirm the current portal fee). Pets from high-risk rabies countries also need a rabies titer test: blood sample taken within 90 days before travel, result ≥0.5 IU/ml. The differences between emirates are administrative — the municipality you register with and the airport and ground handler you clear through — not the import requirements themselves.',
+      answer: 'No. Pet import rules in the UAE are set at the federal level by the Ministry of Climate Change and Environment (MOCCAE) and apply nationwide, regardless of which emirate you enter. Whether your pet lands in Abu Dhabi or Dubai, you need the same things: an ISO 11784/11785 microchip, a valid rabies vaccination administered at least 21 days before travel, core vaccinations, an International Health Certificate issued within 10 days of travel, and a MOCCAE import permit valid 90 days from issuance (confirm the current portal fee). Pets from high-risk rabies countries also need a rabies titer test: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. The differences between emirates are administrative — the municipality you register with and the airport and ground handler you clear through — not the import requirements themselves.',
     },
     {
       question: 'Do pets arriving in Abu Dhabi have to go into quarantine?',
@@ -41,10 +41,13 @@ export default function AbuDhabiPillar() {
     ],
   }
   const localBusiness = {
-    '@context': 'https://schema.org', '@type': 'LocalBusiness', name: `${siteConfig.name} — Abu Dhabi`,
-    url, areaServed: 'Abu Dhabi, UAE', telephone: siteConfig.phoneE164,
-    description: 'Pet relocation to and from Abu Dhabi — dog and cat transport, MOCCAE permits, customs clearance at AUH and door-to-door delivery.',
-    address: { '@type': 'PostalAddress', addressLocality: 'Abu Dhabi', addressRegion: 'Abu Dhabi', addressCountry: 'AE' },
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Pet relocation to and from Abu Dhabi',
+    url,
+    areaServed: 'Abu Dhabi, UAE',
+    description: 'Pet relocation coordination for Abu Dhabi, including MOCCAE permits, AUH cargo handover and delivery.',
+    provider: localBusinessProvider(),
   }
   const faqSchema = {
     '@context': 'https://schema.org', '@type': 'FAQPage',
@@ -82,7 +85,7 @@ export default function AbuDhabiPillar() {
           <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">Pet Relocation in Abu Dhabi</h2>
           <p className="text-[#5A5A5A] leading-relaxed mb-4">Abu Dhabi is the capital of the UAE and home to a large international community of professionals, diplomats and families — many of whom move with a dog or cat. Whether you are arriving from the UK, USA, India, Australia or beyond, or leaving the capital for a new posting overseas, we coordinate the entire move end-to-end: the import or export permit, the veterinary paperwork, the IATA-compliant crate, the flight, customs clearance and door-to-door delivery.</p>
           <p className="text-[#5A5A5A] leading-relaxed mb-4">The most important thing to understand about relocating a pet to or from Abu Dhabi is that the import requirements are not set by the emirate. They are federal. The UAE Ministry of Climate Change and Environment (MOCCAE) sets the rules for the whole country, and those rules apply identically whether your pet enters through Abu Dhabi, Dubai or any other emirate. What changes between emirates is administrative — the municipality you register your pet with locally, and the airport and ground handler your pet clears through on arrival.</p>
-          <p className="text-[#5A5A5A] leading-relaxed">If you want the full document list, our <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] underline">UAE pet import requirements guide</Link> walks through every step in order, with timelines and costs.</p>
+          <p className="text-[#5A5A5A] leading-relaxed">If you want the full document list, our <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] underline">UAE pet import requirements for dogs and cats guide</Link> walks through every step in order, with timelines and costs.</p>
         </div>
       </section>
 
@@ -98,7 +101,7 @@ export default function AbuDhabiPillar() {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>Core vaccinations</strong> — DHPPIL for dogs, FVRCP for cats.</span></li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>MOCCAE import permit</strong> — valid 90 days from issuance. Confirm the current import-permit and arrival-release fees on the official portal; fees may change.</span></li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>International Health Certificate</strong> — issued by a government-accredited vet within 10 days of arrival, with antiparasitic treatment recorded.</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>Rabies titer test (high-risk countries only)</strong> — result ≥0.5 IU/ml, drawn at least 21 days after vaccination; sample taken within 90 days before travel — not a wait after the draw.</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>Rabies titer test (high-risk countries only)</strong> — result ≥0.5 IU/ml, drawn at least 21 days after vaccination; use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a wait after the draw.</span></li>
             </ul>
           </div>
           <p className="text-[#5A5A5A] leading-relaxed">The UAE also enforces a federal banned-breed list — including Pit Bull types, several Mastiffs and a number of other breeds — and this list applies in Abu Dhabi exactly as it does everywhere else in the country. If you are unsure whether your dog is eligible, send us the breed and we will confirm the rules before you commit to anything.</p>

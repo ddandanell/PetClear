@@ -40,6 +40,7 @@ const PERMIT_FEES =
   'On 22 September 2026 the MOCCAE page listed AED 200 to issue an import permit for one animal, AED 500 to release one dog, and AED 250 to release one cat. These are government charges, not a relocation package. Pay the amount shown when you apply.'
 import GuideDualPath from '../components/GuideDualPath.tsx'
 import { waEligibility } from '../lib/conversionCopy.ts'
+import GuideToc from '../components/GuideToc.tsx'
 
 const waPermit = waEligibility({ need: 'document plan' })
 const waManaged = waEligibility({ need: 'managed move' })
@@ -64,9 +65,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function MOCCAEPermitGuide() {
-  const title = 'MOCCAE Pet Import Permit | Dubai & UAE Guide 2026'
+  const title = 'MOCCAE Pet Import Permit | Application Guide'
   const description =
-    'MOCCAE pet import permit: 90-day validity, UAE Pass application, documents, and rejection reasons. Confirm fees on the official portal.'
+    'Understand the MOCCAE pet import permit process, documents and official charges. Follow the application steps or request document assistance.'
   const canonical = `${BASE_URL}/guides/moccae-import-permit/`
   const ogImage = `${BASE_URL}/assets/og-moccae-permit.jpg`
 
@@ -79,7 +80,7 @@ export default function MOCCAEPermitGuide() {
         {
       question: 'How do I get a pet import permit from MOCCAE?',
       answer:
-        'Log in at moccae.gov.ae with UAE Pass and open Import Permit for Pets. The import application itself lists no documents for ordinary dogs and cats. The permit is valid 90 days from issuance. On 22 September 2026 the page listed AED 200 per animal, AED 500 to release a dog, and AED 250 to release a cat. The published estimate is 1 working day, or 5 working days for a service, emotional support or medical dog. DIY the steps on this page. WhatsApp +971504782999 only if you want a paid eligibility check. Service: [/service/moccae-pet-permit/](/service/moccae-pet-permit/).',
+        'Log in at moccae.gov.ae with UAE Pass and open Import Permit for Pets. The import application itself lists no documents for ordinary dogs and cats. The permit is valid 90 days from issuance. On 22 September 2026 the page listed AED 200 per animal, AED 500 to release a dog, and AED 250 to release a cat. The published estimate is 1 working day, or 5 working days for a service, emotional support or medical dog. DIY the steps on this page. WhatsApp +971504782999 only if you want a quote. Service: [/service/moccae-pet-permit/](/service/moccae-pet-permit/).',
     },
     {
       question: 'How to apply for a Moccae license?',
@@ -94,7 +95,7 @@ export default function MOCCAEPermitGuide() {
         {
       question: 'Do I need a MOCCAE import permit?',
       answer:
-        'Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 90 days from issuance. Apply on the official MOCCAE portal with UAE Pass using the steps on this page. Confirm current fees on the portal. Paid permit assistance: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Flagship inbound: [/service/pet-import-dubai/](/service/pet-import-dubai/). Tick-list: [/guides/import-checklist/](/guides/import-checklist/). Email support@dubai-pet-relocation.ae or WhatsApp +971504782999 when you are ready to book a managed file — not for a free consult.',
+        'Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 90 days from issuance. Apply on the official MOCCAE portal with UAE Pass using the steps on this page. Confirm current fees on the portal. Paid permit assistance: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Flagship inbound: [/service/pet-import-dubai/](/service/pet-import-dubai/). Tick-list: [/guides/import-checklist/](/guides/import-checklist/). Email support@dubai-pet-relocation.ae or WhatsApp +971504782999 when you want a managed file. We explain the next step before any paid work starts.',
     },
         {
       question: 'How do I apply for a MOCCAE import permit?',
@@ -251,13 +252,14 @@ export default function MOCCAEPermitGuide() {
     <>
       <SEOHead meta={meta} schemas={schemas} />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'MOCCAE Import Permit Guide' }]} />
+<div className="mx-auto max-w-[900px] px-5 pt-8"><GuideToc items={[{ href: '#what-moccae-is', label: 'What MOCCAE is' }, { href: '#application-steps', label: 'Application steps' }]} /></div>
 
       {/* Hero */}
       <Hero
         image="/assets/w5/moccae-import-permit-guide-clipboard-illustration.png"
         imageAlt="Illustration of a MOCCAE pet import permit application with a validity clock"
         eyebrow="How-to guide — not the service page"
-        title="MOCCAE Pet Import Permit for Dubai & the UAE"
+        title="How to apply for a MOCCAE pet import permit"
         subtitle="UAE Pass login, form fields, 90-day validity, rejection reasons, and an honest DIY versus managed comparison. Confirm fees on the official portal."
         updated={`Last verified: ${CHECKED}`}
         whatsappMessage={waPermit}
@@ -318,7 +320,7 @@ export default function MOCCAEPermitGuide() {
       </section>
 
       {/* What is MOCCAE */}
-      <section className="section-padding bg-[#F5F6FD]">
+      <section id="what-moccae-is" className="section-padding scroll-mt-24 bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
@@ -343,7 +345,7 @@ export default function MOCCAEPermitGuide() {
                 </Link>
                 . The statutory list lives on{' '}
                 <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  UAE pet import requirements
+                  UAE pet import requirements for dogs and cats
                 </Link>
                 ; the tick-box sequence is the{' '}
                 <Link to="/guides/import-checklist/" className="font-semibold text-[#4F5BD5] hover:underline">
@@ -413,7 +415,8 @@ export default function MOCCAEPermitGuide() {
       </section>
 
       {/* Step-by-Step Process */}
-      <section id="step-by-step" className="section-padding bg-white">
+      <section id="application-steps" className="section-padding scroll-mt-24 bg-white">
+        <div id="step-by-step" className="sr-only" />
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">

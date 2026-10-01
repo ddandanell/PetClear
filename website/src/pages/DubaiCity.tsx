@@ -3,15 +3,16 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import Hero from '../components/Hero.tsx'
-import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig, localBusinessProvider } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, MapPin, Building, Phone, Dog, Cat, DollarSign, Briefcase, Globe } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import RelatedLinks from '../components/RelatedLinks.tsx'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 export default function DubaiCity() {
   const pageUrl = `${BASE_URL}/cities/dubai/`
-  const pageTitle = 'Dubai Pet Relocation | Dog & Cat Transport to Dubai'
-  const pageDescription = 'Relocate your dog or cat to Dubai. Full-service pet relocation — documents, flights, customs and delivery. Get a Dubai pet transport quote.'
+  const pageTitle = 'Pet Relocation Dubai | Collection & Travel Support'
+  const pageDescription = 'Arrange pet relocation support in Dubai. Plan local collection, documents and airport handovers, then request a quote for your dog or cat.'
   const faqs = [
     {
       question: 'How much does pet relocation to Dubai cost?',
@@ -35,7 +36,7 @@ export default function DubaiCity() {
     },
     {
       question: 'How long does pet relocation to Dubai take?',
-      answer: 'From low-risk countries (UK, EU, Australia, USA): 4–6 weeks total. This includes microchip and rabies vaccination (21-day wait), import permit application (3–5 days), health certificate (within 10 days of travel), and flight booking. From high-risk countries (India, Pakistan, Philippines, South Africa): plan the RNATT so the blood sample is taken within 90 days before travel and reads at least 0.5 IU/ml — a sample window, not a 90-day wait after the blood draw. Lab turnaround is typically a few weeks after the 21-day post-vaccination interval.'
+      answer: 'From low-risk countries (UK, EU, Australia, USA): 4–6 weeks total. This includes microchip and rabies vaccination (21-day wait), import permit application (3–5 days), health certificate (within 10 days of travel), and flight booking. From high-risk countries (India, Pakistan, Philippines, South Africa): plan the RNATT so the blood sample uses a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — the certificate rule, not a 90-day sample window and not a wait after the blood draw. Lab turnaround is typically a few weeks after the 21-day post-vaccination interval.'
     },
     {
       question: 'Are there banned dog breeds in Dubai?',
@@ -50,28 +51,13 @@ export default function DubaiCity() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Dubai Pet Relocation",
-      "description": "Professional pet relocation services to and from Dubai. Dog and cat transport, documentation, flight booking, and customs clearance.",
+      "@type": "Service",
+      "name": "Pet relocation to and from Dubai",
+      "description": "Pet relocation coordination for Dubai arrivals and departures, including documents, cargo handover and collection.",
       "url": pageUrl,
-      "telephone": siteConfig.phoneE164,
-      "email": siteConfig.email,
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dubai",
-        "addressCountry": "AE"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "25.2048",
-        "longitude": "55.2708"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Dubai"
-      },
-      "serviceType": "Pet Relocation Services",
-      "priceRange": "$$$"
+      "serviceType": "Pet relocation coordination",
+      "areaServed": "Dubai, UAE",
+      "provider": localBusinessProvider()
     },
     {
       "@context": "https://schema.org",
@@ -108,13 +94,15 @@ export default function DubaiCity() {
         schemas={schemas}
       />
       <Breadcrumb items={[{ label: 'Cities', path: '/cities/' }, { label: 'Dubai' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/cities/dubai/" slot="arrival" />
+<LinkPlanSlot path="/cities/dubai/" slot="departure" /></div>
 
       {/* HERO */}
       <Hero
         image="/images/hero-dubai.jpg"
         imageAlt="Pet relocation services in Dubai skyline"
         eyebrow="Dubai"
-        title="Pet Relocation Dubai — Your Dog or Cat's Safe Journey"
+        title="Pet relocation support in Dubai"
         subtitle="One of the most pet-friendly cities in the Middle East — transparent, safe, stress-free relocation for your dog or cat."
         updated="Updated June 2026"
       />

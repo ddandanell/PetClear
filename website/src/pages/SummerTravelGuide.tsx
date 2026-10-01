@@ -27,6 +27,7 @@ import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import { BASE_URL } from '../lib/seo.ts'
+import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -44,9 +45,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function SummerTravelGuide() {
-  const title = 'Summer Pet Embargo Dubai | Heat & Airline Limits'
+  const title = 'Pet Travel in Dubai Summer | Heat & Flight Planning'
   const description =
-    'Summer pet embargo Dubai: airline heat limits, brachycephalic restrictions, and safer timing or routing alternatives.'
+    'Plan pet travel around Dubai summer conditions. Check airline acceptance, ground handling and date flexibility before confirming your route.'
   const canonical = `${BASE_URL}/guides/pet-travel-summer-dubai/`
   const ogImage = `${BASE_URL}/assets/og-summer-travel.jpg`
 
@@ -134,13 +135,14 @@ export default function SummerTravelGuide() {
     <>
       <SEOHead meta={meta} schemas={schemas} />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Summer Pet Travel Guide' }]} />
+<div className="mx-auto max-w-[900px] px-5"><LinkPlanSlot path="/guides/pet-travel-summer-dubai/" slot="after-answer" /></div>
 
       {/* Hero */}
       <Hero
         image="/images/guide-summer.jpg"
         imageAlt="A dog staying cool with water in the shade on a hot Dubai summer day"
         eyebrow="Pet Relocation Guide"
-        title="Summer Pet Embargo Dubai — Heat, Airlines & Options"
+        title="Planning pet travel during Dubai summer"
         subtitle="Dubai summers exceed 45°C, making pet cargo dangerous. Airline embargos, breed bans, and the safe alternatives — explained."
         updated="Updated June 2026"
       />

@@ -18,6 +18,7 @@ import { CTA_CHECK_MOVE, CTA_MANAGED_QUOTE, CTA_SUPPORT } from '../lib/conversio
 import { openingHoursSpecification } from '../lib/openingHours.ts'
 import PaidIncludes from './PaidIncludes.tsx'
 import WhatsAppGate from './WhatsAppGate.tsx'
+import LinkPlanSlot from './LinkPlanSlot.tsx'
 
 function Block({ block }: { block: ServiceBlock }) {
   if (block.type === 'p') {
@@ -244,11 +245,17 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
 
       {/* SECTIONS */}
       {data.sections.map((sec, i) => (
-        <section key={i} className={`section-padding ${i % 2 ? 'bg-[#F5F6FD]' : 'bg-white'}`}>
+        <section
+          key={i}
+          id={sec.id}
+          className={`section-padding scroll-mt-24 ${i % 2 ? 'bg-[#F5F6FD]' : 'bg-white'}`}
+        >
           <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
             {i === 0 && data.snippetQuestion && data.snippetAnswer ? (
               <SnippetAnswer question={data.snippetQuestion} answer={data.snippetAnswer} />
             ) : null}
+            {i === 0 ? <LinkPlanSlot path={`/service/${data.slug}/`} slot="service-process" /> : null}
+            {i === 0 ? <LinkPlanSlot path={`/service/${data.slug}/`} slot="crate" /> : null}
             <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#2A2A2A] mb-4">{sec.h2}</h2>
             {sec.intro && (
               <p className="mb-4 leading-relaxed text-[#5A5A5A]">
@@ -259,6 +266,12 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
           </div>
         </section>
       ))}
+
+      <LinkPlanSlot path={`/service/${data.slug}/`} slot="service-routes" />
+      <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+        <LinkPlanSlot path={`/service/${data.slug}/`} slot="owner-prep" />
+        <LinkPlanSlot path={`/service/${data.slug}/`} slot="corporate" />
+      </div>
 
       {/* RELATED SERVICES */}
       {related.length > 0 && (
@@ -309,9 +322,14 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">{ctaHeading(data.slug)}</h2>
           <p className="text-white/90 mb-4">
-            WhatsApp during business hours with pet type, breed, route and month if you want us to run the file.
-            Guides stay free to read.
+            WhatsApp during business hours with pet type, breed, route and month. We explain the coordination, and any assessment fee, before paid work starts.
           </p>
+          <LinkPlanSlot
+            path={`/service/${data.slug}/`}
+            slot="service-quote"
+            className="mb-4 text-sm leading-relaxed text-white/90"
+            linkClass="font-semibold text-white underline"
+          />
           <PaidIncludes tone="dark" compact className="mx-auto mb-6 max-w-2xl text-left" />
           <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm ring-1 ring-white/20">
             <MessageCircle className="w-5 h-5" aria-hidden="true" /> {ctaLabel}

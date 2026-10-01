@@ -54,9 +54,9 @@ interface ChecklistStep {
 
 /* ─── Page ─── */
 export default function ImportChecklistGuide() {
-  const title = 'Pet Import Checklist Dubai | Documents in Order'
+  const title = 'UAE Pet Import Checklist | Before You Travel'
   const description =
-    'Pet import checklist for Dubai, checked 22 September 2026: matching microchip, species vaccines, 365-day titre conditions when required, and a MOCCAE permit valid 90 days from issuance.'
+    'Use a practical checklist for a pet move to the UAE. Track documents, crate preparation and booking checks, with links to the full official requirements.'
   const canonical = `${BASE_URL}/guides/import-checklist/`
   const ogImage = `${BASE_URL}/assets/og-import-checklist.jpg`
 
@@ -179,7 +179,7 @@ export default function ImportChecklistGuide() {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
       { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
-      { '@type': 'ListItem', position: 3, name: 'Pet Import Documents Checklist for Dubai', item: canonical },
+      { '@type': 'ListItem', position: 3, name: 'Your pet import checklist for the UAE', item: canonical },
     ],
   }
 
@@ -216,7 +216,7 @@ export default function ImportChecklistGuide() {
         image="/images/import-hero.jpg"
         imageAlt="Pet import documents and a calm dog beside an IATA travel crate at Dubai cargo terminal"
         eyebrow="Pet Relocation Checklist"
-        title="Pet Import Documents Checklist for Dubai"
+        title="Your pet import checklist for the UAE"
         subtitle="An ordered list for a dog or cat entering the UAE: matching microchip, species vaccines, titre only when the origin is high-risk, and a permit valid 90 days from issuance."
         updated="Last verified: 22 September 2026"
         primaryLabel="Tell us about your move"
@@ -246,7 +246,7 @@ export default function ImportChecklistGuide() {
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 A missing item can mean the animal is rejected at your expense or confiscated. The live page does not publish a fine amount. Use the ordered checklist below. For the statutory rules behind each box, open the{' '}
                 <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  UAE pet import requirements
+                  UAE pet import requirements for dogs and cats
                 </Link>{' '}
                 guide. For the UAE Pass path and 90-day validity, open the{' '}
                 <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">

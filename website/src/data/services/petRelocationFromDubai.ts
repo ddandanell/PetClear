@@ -3,10 +3,10 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const petRelocationFromDubai: ServicePageData = {
   slug: 'pet-relocation-from-dubai',
-  seoTitle: 'Pet Relocation from Dubai | Departure-Side Export Guide',
+  seoTitle: 'Moving Pets Out of Dubai | Departure Preparation',
   metaDescription:
-    'Pet relocation from Dubai: destination-first timelines, MOCCAE export health certificate, cargo booking, and outbound guidance.',
-  h1: 'Pet Relocation from Dubai — Moving Pets Out',
+    'Prepare your dog or cat for a move out of Dubai. Organise destination checks, departure tasks and the airport handover, then request managed support.',
+  h1: 'Preparing to move your pet out of Dubai',
   primaryKeyword: 'pet relocation from dubai',
   heroValueProp:
     'Outbound only: destination rules first, then the MOCCAE export health-certificate path, cargo booking and departure from DXB or DWC.',
@@ -116,7 +116,7 @@ const petRelocationFromDubai: ServicePageData = {
     {
       h2: 'Outbound corridors we already publish',
       intro:
-        'We do not assume destination pages in this PR. Use the live outbound guides, then send a paid eligibility check on WhatsApp for corridors that are not listed yet.',
+        'We do not assume destination pages in this PR. Use the live outbound guides, then send a quote on WhatsApp for corridors that are not listed yet.',
       body: [
         {
           type: 'list',
@@ -163,7 +163,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'When should I start planning a move out of Dubai?',
-      a: 'As soon as you know the destination. A nearby, low-rule country can be short. A titer- or quarantine-destination can need many months. Send the country name on WhatsApp for a paid eligibility check if you want us to say whether your month is realistic.',
+      a: 'As soon as you know the destination. A nearby, low-rule country can be short. A titer- or quarantine-destination can need many months. Send the country name on WhatsApp for a quote if you want us to say whether your month is realistic.',
     },
     {
       q: 'Is a titer always required to take a pet from the UAE to the UK?',

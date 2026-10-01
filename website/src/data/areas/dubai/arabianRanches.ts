@@ -4,10 +4,10 @@ const arabianRanches: AreaPageData = {
   slug: 'arabian-ranches',
   areaName: 'Arabian Ranches',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Arabian Ranches | Gated Villa Last Mile',
+  seoTitle: 'Pet Transport in Arabian Ranches | Collection & Delivery',
   metaDescription:
-    'Pet relocation Arabian Ranches: gated villa access, crates and MOCCAE timing. WhatsApp +971504782999.',
-  h1: 'Pet Relocation in Arabian Ranches',
+    'Plan pet collection or delivery in Arabian Ranches. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+  h1: 'Pet collection and delivery in Arabian Ranches',
   primaryKeyword: 'pet relocation arabian ranches',
   heroValueProp:
     'Relocating a dog or cat to or from Arabian Ranches? We plan community-gate access, crates and the DXB run — WhatsApp +971 50 478 2999 during business hours.',
@@ -129,7 +129,7 @@ const arabianRanches: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file.',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is the certificate rule, not a 90-day sample window and not a wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file.',
         },
         {
           type: 'p',
@@ -137,7 +137,7 @@ const arabianRanches: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Multi-pet villa households need parallel paperwork so the family is not split by one expired sample.',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the result must be at least 0.5 IU/ml and the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Multi-pet villa households need parallel paperwork so the family is not split by one expired certificate.',
         },
       ],
     },
@@ -223,7 +223,7 @@ const arabianRanches: AreaPageData = {
     },
     {
       q: 'Do I wait 90 days after a titer test before flying into the Ranches?',
-      a: 'No. When a titer is required, sample within 90 days before travel, result ≥0.5 IU/ml. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+      a: 'No. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'How much does Arabian Ranches pet relocation cost?',
