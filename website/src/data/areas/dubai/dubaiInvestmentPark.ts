@@ -6,7 +6,7 @@ const dubaiInvestmentPark: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Transport in Dubai Investment Park | Collection & Delivery',
   metaDescription:
-    'Plan pet collection or delivery in Dubai Investment Park. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+    'Plan pet collection or delivery in Dubai Investment Park. Confirm building access and the destination, then ask for a transport quote.',
   h1: 'Pet collection and delivery in Dubai Investment Park',
   primaryKeyword: 'pet relocation dubai investment park',
   heroValueProp:

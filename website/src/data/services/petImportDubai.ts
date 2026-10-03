@@ -11,13 +11,13 @@ const OUTCOME =
 
 const petImportDubai: ServicePageData = {
   slug: 'pet-import-dubai',
-  seoTitle: 'Pet Import Dubai | Permits, Clearance & Delivery',
+  seoTitle: 'Pet Import Dubai: Permits, Clearance & Delivery [2026]',
   metaDescription:
-    'Bringing a dog or cat to Dubai? Get help coordinating documents, permit timing, arrival clearance and home delivery. Request a quote for your move.',
+    'Import a dog or cat to Dubai: a MOCCAE permit valid 90 days, microchip, vaccines, a titer when the origin needs it, then clearance and home delivery.',
   h1: 'Pet import services in Dubai',
   primaryKeyword: 'pet import services Dubai',
   heroValueProp:
-    'Commercial import into the UAE: we sequence the MOCCAE permit (90 days from issuance), the titre certificate when the origin is high-risk, cargo into Dubai, and handover at the door.',
+    'Managed pet import into Dubai: we sequence the MOCCAE permit (90 days from issuance), the antibody certificate when the origin is high-risk, cargo into Dubai, and handover at the door.',
   // Blocked original-photo placeholder — AI substitute not used for this hero.
   heroImage: '/images/service-pet-import-dubai.jpg',
   heroImageAlt:
@@ -35,7 +35,7 @@ const petImportDubai: ServicePageData = {
     'WhatsApp during business hours',
   ],
   hasHowTo: true,
-  howToName: 'How commercial pet import to Dubai is coordinated',
+  howToName: 'How a managed pet import to Dubai is coordinated',
   sections: [
     {
       h2: 'What this import service covers',
@@ -275,7 +275,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'Do I need a MOCCAE import permit for my dog?',
-      a: 'Yes. Every dog entering the UAE needs a MOCCAE import permit, valid 90 days from issuance. Confirm the live portal fee; fees may change. Apply questions live on the [MOCCAE import permit guide](/guides/moccae-import-permit/). This commercial import page does not deep-own that query.',
+      a: 'Yes. Every dog entering the UAE needs a MOCCAE import permit, valid 90 days from issuance. Confirm the live portal fee; fees may change. How to apply is on the [MOCCAE import permit guide](/guides/moccae-import-permit/).',
     },
     {
       q: 'How much does it cost to import a pet to Dubai?',
@@ -288,6 +288,10 @@ const petImportDubai: ServicePageData = {
     {
       q: 'How is this different from the UAE import-requirements guide?',
       a: 'Read the statutory checklist on the guide. Use this page when you want the import sequenced, with partners and clearance. Rules: [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/).',
+    },
+    {
+      q: 'Is the MOCCAE import permit valid for 30 days or 90 days?',
+      a: '90 days from issuance. The pet must enter the UAE inside that window. Some older write-ups still say 30 days. The wording used on this site is 90 days from issuance, last checked against the MOCCAE import-permit page on 6 September 2026. If the permit expires, a new application and a new portal fee are required.',
     },
     {
       q: 'How long is the MOCCAE import permit valid?',

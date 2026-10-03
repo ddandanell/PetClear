@@ -3,20 +3,20 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const petRelocationDubai: ServicePageData = {
   slug: 'pet-relocation-dubai',
-  seoTitle: 'Pet Relocation Dubai | Dog & Cat Moving Services',
+  seoTitle: 'Pet Relocation Services Dubai | Compare Tiers & Quotes',
   metaDescription:
-    'Arrange your dog or cat move to or from Dubai with coordinated documents, travel planning and collection. Send your route and dates for a scoped quote.',
-  h1: 'Pet relocation in Dubai planned around your move',
-  primaryKeyword: 'pet relocation dubai',
+    'Compare pet relocation services in Dubai: document guidance, managed import or export, and door-to-door coordination. Then ask for a quote.',
+  h1: 'Pet relocation services in Dubai — pick your level of help',
+  primaryKeyword: 'pet relocation services Dubai',
   heroValueProp:
     'Arrange your dog or cat move to or from Dubai with coordinated documents, travel planning and collection. Send your route and dates for a scoped quote.',
   heroImage: '/images/service-pet-relocation-dubai.jpg',
   heroImageAlt:
     'Handler carrying a cat in a travel carrier toward a Dubai doorway',
   whatsappMessage: waEligibility({ need: 'managed move' }),
-  snippetQuestion: 'What is the best pet relocation service in Dubai?',
+  snippetQuestion: 'What do pet relocation services in Dubai include?',
   snippetAnswer:
-    'There is no honest number-one pet relocator in Dubai. Judge providers by licensing and permit guidance, published process, fee transparency, and whether cabin, cargo, jet or charter actually fits the animal. We are a provider — Dubai Pet Relocation — and we quote the file rather than sell a ranking. Get a Quote on WhatsApp or support@dubai-pet-relocation.ae.',
+    'Pet relocation services in Dubai are three scopes: document guidance, a managed import or export, and door-to-door coordination of the crate, the flight and the handover. The head term “pet relocation Dubai” lives on the homepage. This page is where you pick the scope. The permit is still valid for 90 days from issuance.',
   trustBadges: ['Document review before travel', 'MOCCAE permit guidance', 'IATA crate sizing help', 'WhatsApp during business hours'],
   hasHowTo: true,
   howToName: 'How door-to-door pet relocation in Dubai is coordinated',
@@ -219,7 +219,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Competitor market (not a DPR package): Foufoufly publishes from-tiers of Essentials AED 4,000 / Managed AED 8,000 / White Glove AED 15,000. Those are a labelled competitor reference only. Dubai Pet Relocation door-to-door fees remain Get a Quote.',
+          text: 'Other companies publish their own packages. Dubai Pet Relocation coordination is quoted for the pet and the route. Government fees, the clinic, the airline, and the crate stay on their own invoices.',
         },
       ],
     },
@@ -234,7 +234,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Dogs and cats share the federal permit chain but not the crate, airline or apartment rules. Species detail lives on [relocating your dog to or from Dubai](/service/dog-relocation-dubai/) and [relocating your cat safely](/service/cat-relocation-dubai/). Commercial import versus informational import is split: [pet import service for Dubai](/service/pet-import-dubai/) versus the import guide. Commercial export sits on [exporting your pet from the UAE](/service/pet-export-dubai/).',
+          text: 'Dogs and cats share the federal permit chain. They do not share crate size, airline rules or apartment rules. Species detail is on [dog relocation](/service/dog-relocation-dubai/) and [cat relocation](/service/cat-relocation-dubai/). The paid arrival service is [managed pet import](/service/pet-import-dubai/). The checklist is the [UAE import guide](/guides/uae-pet-import-requirements/). Leaving the UAE is [pet export from Dubai](/service/pet-export-dubai/).',
         },
       ],
     },

@@ -514,8 +514,8 @@ export default function IATACrateGuide() {
                   <tbody>
                     <tr>
                       <td className="font-medium">Cost</td>
-                      <td>AED 400–1,500 depending on size</td>
-                      <td>AED 200–600 for one-way trip</td>
+                      <td>The supplier prices the crate. We do not publish a buy tariff.</td>
+                      <td>The supplier prices the hire. We do not publish a rent tariff.</td>
                     </tr>
                     <tr>
                       <td className="font-medium">Ownership</td>

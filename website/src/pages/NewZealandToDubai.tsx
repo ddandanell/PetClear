@@ -30,7 +30,7 @@ export default function NewZealandToDubai() {
     },
     {
       question: 'How long does the New Zealand to Dubai pet relocation process take?',
-      answer: 'The minimum timeline is 4 to 6 weeks: Week 1 — microchip and rabies vaccination (21-day wait begins; note: NZ is rabies-free, so this vaccine is for UAE compliance only); Week 2 — apply for MPI export certificate and UAE import permit; Week 3 — MPI pre-export inspection and health certificate; Week 4 — final veterinary check and document review; Week 5 — book cargo flight (connection routing); Week 6 — depart and arrive in Dubai. Some MPI processing steps may take longer during peak seasons, so 6–8 weeks is recommended.'
+      answer: 'New Zealand is rabies-free, so the rabies vaccine is for UAE entry. A first vaccine needs at least 21 days before travel. The MPI export certificate is a separate step from the MOCCAE import permit, which is valid for 90 days from issuance. The health certificate is issued close to travel. There is no single week-count that fits every pet.'
     },
     {
       question: 'How much does it cost to relocate a pet from New Zealand to Dubai?',
@@ -46,7 +46,7 @@ export default function NewZealandToDubai() {
     },
     {
       question: 'What happens when my pet arrives in Dubai from New Zealand?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and MPI health certificate, and conducts a brief physical examination. Because New Zealand is a low-risk, rabies-free country, clearance is typically smooth and takes 2–3 hours. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility. The New Zealand origin often means the inspection is quicker than for high-risk countries.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and MPI health certificate, and conducts a brief physical examination. Because New Zealand is a low-risk, rabies-free country, a matching file is examined and released. The terminal does not publish a fixed clearance time. The quote says who meets the crate and whether delivery continues to the address. The New Zealand origin often means the inspection is quicker than for high-risk countries.'
     }
   ]
 
@@ -131,8 +131,8 @@ export default function NewZealandToDubai() {
                 <Clock className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Timeline</p>
-              <p className="text-[#5A5A5A] text-sm">4–6 weeks</p>
-              <p className="text-[#5A5A5A] text-xs mt-2">Includes MPI processing</p>
+              <p className="text-[#5A5A5A] text-sm">21 days after a first vaccine</p>
+              <p className="text-[#5A5A5A] text-xs mt-2">Then the MPI certificate and the 90-day permit</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -268,7 +268,7 @@ export default function NewZealandToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">New Zealand to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              The MPI export process adds 1–2 weeks, but the absence of a titer test keeps the overall timeline to 4–6 weeks.
+              New Zealand is treated as low-risk, so the usual inbound file does not include an antibody test. The MPI export certificate is still a New Zealand step. A first rabies vaccine needs at least 21 days before travel, and the MOCCAE permit is valid for 90 days from issuance.
             </p>
           </div>
 
@@ -373,7 +373,7 @@ export default function NewZealandToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Priority animal handling at all ports</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Best for large dogs and brachycephalic breeds</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Emirates offers the most seamless connection experience for NZ pets, with their dedicated SkyCargo Live service handling transfers at all hubs. They are often preferred for large dogs or breeds with special requirements. However, Emirates is generally more expensive than Air New Zealand.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Confirm the current Air New Zealand and Emirates live-animal products for this city pair, including any connection, before you book. A carrier name here is not a partnership, and this page does not compare fares.</p>
             </div>
           </div>
 

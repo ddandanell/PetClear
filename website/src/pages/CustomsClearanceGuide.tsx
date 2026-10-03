@@ -57,7 +57,7 @@ export default function CustomsClearanceGuide() {
     },
     {
       question: 'How long does pet customs clearance take in Dubai?',
-      answer: 'When every document is correct and the MOCCAE import permit is valid, customs clearance at the DXB or DWC cargo terminal typically takes around 2–4 hours from the time the flight is offloaded. Your pet does not enter quarantine if the paperwork is complete. Delays happen when documents are missing or incorrect, when the flight is late, or when the terminal is busy.',
+      answer: 'When the documents match and the MOCCAE import permit is valid, the pet is examined at the DXB or DWC cargo terminal and released. The UAE does not run a routine quarantine for that file. The terminal does not publish a fixed clearance time. A missing paper, a late flight, or a busy desk can hold the crate.',
     },
     {
       question: 'What is the MOCCAE release fee on arrival?',
@@ -178,8 +178,8 @@ export default function CustomsClearanceGuide() {
                   <p className="text-sm text-[#5A5A5A] mt-1">Paid on arrival, on top of the import-permit fee. Fees may change — do not treat blog numerals as the live amount.</p>
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
-                  <p className="font-semibold text-[#C89F5A] text-sm mb-1">Typical Clearance Time</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">~2–4 hours (docs correct)</p>
+                  <p className="font-semibold text-[#C89F5A] text-sm mb-1">Clearance</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Same-day release when the file matches</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">If Documents Are Wrong</p>
@@ -268,7 +268,7 @@ export default function CustomsClearanceGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Customs clears the pet for entry</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                  With documents verified and the fee paid, customs releases your pet. If everything is correct, this typically takes around <strong>2–4 hours</strong> from offload, and your pet does not enter quarantine. The clearance step is where a missing or incorrect document does the most damage — it can hold the pet at the facility until the issue is resolved.
+                  With the documents checked and the government fee paid, customs releases the pet. A matching file does not go into routine quarantine. The terminal does not publish a fixed clearance time. A missing or incorrect document can hold the pet at the facility until the issue is resolved.
                 </p>
                 <div className="p-3 bg-[#E9ECFB] rounded-xl text-sm text-[#5A5A5A]">
                   <strong className="text-[#4F5BD5]">Pro tip:</strong> Bring originals, not just copies. The animal facility checks the original health certificate and permit, and a printed permit is expected — do not rely on a digital copy alone.

@@ -176,7 +176,7 @@ export default function PetHealthCertificateGuide() {
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Typical Cost</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">AED 400–1,500</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Ask the clinic</p>
                   <p className="text-sm text-[#5A5A5A] mt-1">Varies by country, vet, and whether government endorsement is needed.</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">

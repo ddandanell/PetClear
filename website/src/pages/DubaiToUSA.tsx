@@ -27,15 +27,15 @@ export default function DubaiToUSA() {
     },
     {
       question: 'Which airlines fly pets from Dubai to the USA?',
-      answer: 'Emirates (EK) is the primary carrier for pet cargo from Dubai to the USA, with direct flights to New York JFK, Los Angeles LAX, Chicago ORD, Washington Dulles IAD, San Francisco SFO, Boston BOS, and Houston IAH. United Airlines, Delta Air Lines, and American Airlines also operate cargo services from Dubai to major US hubs via their European or Asian hubs. For in-cabin travel, small pets (under 8kg including carrier) may be permitted on some carriers depending on the route and aircraft type. However, most long-haul Dubai–USA flights require pets to travel as cargo due to the duration (12–16 hours). Dubai Pet Relocation books cargo space on all major carriers and recommends the best airline based on your destination, pet size, and season.'
+      answer: 'Emirates publishes direct flights from Dubai to several US cities, including JFK, LAX, ORD, IAD, SFO, BOS, and IAH. Whether the pet can travel on that flight is a separate live-animal booking. Other carriers may offer a connection. Confirm the product, the crate, and the breed with the airline. A name on this page is not a partnership. Dubai Pet Relocation coordinates the file. The airline flies the animal.'
     },
     {
       question: 'How long does it take to relocate a pet from Dubai to the USA?',
-      answer: 'The minimum timeline is 2–4 weeks for documentation plus 1–2 days for travel. Week 1: microchip verification and rabies vaccination check (if already valid, this step is instant). Week 2: schedule the USDA APHIS health certificate examination with an accredited UAE veterinarian, complete the CDC Dog Import Form online, and book cargo space. Week 3: final health certificate issued within 10 days of travel, airline documentation review, and crate fitting. Week 4: travel day. For puppies needing their first rabies vaccination, add 28 days (minimum age 12 weeks + 28-day wait). For high-risk breeds or complex cases, allow extra time. Dubai Pet Relocation handles all steps in parallel to minimise delays.'
+      answer: 'The US file needs a microchip, a valid rabies vaccination, a health certificate endorsed for the United States, the CDC dog import form for a dog, and a live-animal booking the airline confirms. The certificate is issued close to travel. A first rabies vaccine needs the waiting period the destination states before travel. There is no single week-count that fits every pet. The quote sets the order of those steps for your dates.'
     },
     {
       question: 'How much does it cost to relocate a pet from Dubai to the USA?',
-      answer: 'For a single pet, total costs typically range from AED 7,000 to AED 20,000 (USD 1,900–5,400). This includes: veterinary verification (microchip check + health exam ~AED 300–800), USDA APHIS health certificate (AED 500–1,200), CDC Dog Import Form (free, but Dubai Pet Relocation assists with completion), IATA-approved travel crate (AED 300–1,800), air cargo freight DXB → USA (AED 5,000–12,000 depending on destination, pet size, and crate weight), US customs and CBP inspection (AED 500–1,500), and optional Dubai Pet Relocation door-to-door service including ground transport at destination (AED 2,000–4,000). Direct flights to JFK and LAX are typically cheaper than multi-leg routes to smaller airports. Multiple pets may qualify for discounted rates on combined services. Brachycephalic breeds may incur additional airline fees or require ventilated crates.'
+      answer: 'There is no published Dubai-to-USA package total. The quote separates the clinic, the health-certificate endorsement, the crate, the airline, US arrival handling, and coordination. The CDC dog import form is a government step. The airline prices the crate for the destination and the date. A flat-faced breed may be refused by the carrier. Ask for the itemised quote before you agree.'
     },
     {
       question: 'Are there state-specific rules for pets entering the USA?',
@@ -364,7 +364,7 @@ export default function DubaiToUSA() {
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <strong>5-Day-or-Less Quarantine:</strong> Requires rabies vaccination, microchip, and a negative FAVN rabies titer test with a 120-day waiting period before arrival. If done correctly, the pet is released after a short inspection.</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <strong>Full 120-Day Quarantine:</strong> If the titer test is not completed in time, the pet must be quarantined for 120 days at a state facility in Hawaii (cost: approximately USD 1,000–1,500).</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <strong>Full 120-day quarantine:</strong> If the titer timing is missed, Hawaii can require 120 days at a state facility. The facility publishes its own fee.</li>
               </ul>
               <p className="mt-4 text-xs text-[#5A5A5A]">Dubai Pet Relocation coordinates Hawaii's complex requirements, including FAVN titer testing at a USDA-approved lab and the 120-day advance planning timeline. Start the Hawaii process at least 5 months before travel.</p>
             </div>
@@ -442,15 +442,15 @@ export default function DubaiToUSA() {
                 <tbody className="divide-y divide-[#EBEBEB]">
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Veterinary Health Check & Verification</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 300–600</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 400–700</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–800</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">USDA APHIS Health Certificate</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–1,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–1,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–1,200</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">CDC Dog Import Form</td>
@@ -460,46 +460,46 @@ export default function DubaiToUSA() {
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Air Cargo (DXB → JFK/LAX/ORD, one way)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 5,000–7,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 7,000–10,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 10,000–14,000</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">IATA-Approved Travel Crate</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 300–600</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–1,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 900–1,800</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">US CBP Inspection & Customs</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–1,200</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 700–1,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,000–2,000</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door (US ground transport)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,500–4,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–5,000</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Hawaii/Guam Additional (if applicable)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–6,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,500–7,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 4,000–8,000</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                   </tr>
                   <tr className="bg-[#4F5BD5]/5">
                     <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total Estimated Cost (Mainland USA)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 7,000–12,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 10,000–16,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 14,000–22,000</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">Quoted</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AED and may vary by airline, destination, season, and pet dimensions. Air cargo rates fluctuate and are typically higher in peak travel months (July–August, December). USD conversion is approximate at 1 USD = 3.67 AED. Hawaii and Guam costs include the FAVN titer test, 120-day waiting period coordination, and quarantine fees. Contact Dubai Pet Relocation for a fixed quote based on your pet's exact weight, breed, and destination airport. Multiple pets may qualify for a 10–15% discount on combined services.
+                Each line is quoted for the pet, the airport, and the date. Hawaii and Guam keep their own entry rules, including the antibody test and the waiting period those territories publish. There is no published package and no published multi-pet discount.
               </p>
             </div>
           </div>

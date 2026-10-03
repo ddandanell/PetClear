@@ -3,9 +3,9 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const dogRelocationDubai: ServicePageData = {
   slug: 'dog-relocation-dubai',
-  seoTitle: 'Dog Relocation Dubai | Breed, Crate & Travel Planning',
+  seoTitle: 'Dog Relocation Dubai | Breed Checks, Crates & Flights',
   metaDescription:
-    'Plan a dog move to or from Dubai. Review breed eligibility, crate measurements and travel options, then request coordination for your dog and route.',
+    'Relocate a dog to or from Dubai: a breed check, IATA crate sizing, airline rules and the MOCCAE permit. Send the dog and the route for a quote.',
   h1: 'Dog relocation to and from Dubai',
   primaryKeyword: 'dog relocation dubai',
   heroValueProp:

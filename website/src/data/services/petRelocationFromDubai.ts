@@ -109,7 +109,7 @@ const petRelocationFromDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Commercial export handling is [exporting your pet from the UAE](/service/pet-export-dubai/). Permit-service help is [MOCCAE import and export permit service](/service/moccae-pet-permit/). This page stays on the departure journey.',
+          text: 'The paid export file is [pet export from Dubai](/service/pet-export-dubai/). Permit help on its own is [MOCCAE permit assistance](/service/moccae-pet-permit/). This page is the departure journey: what happens from the decision to leave until the handover.',
         },
       ],
     },
@@ -179,7 +179,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'How is this different from the pet export Dubai service page?',
-      a: 'This page is the departure journey and timeline. [Exporting your pet from the UAE](/service/pet-export-dubai/) is the commercial export service. They should be read as a pair, not as duplicates.',
+      a: 'This page is the departure journey and the order of work. [Pet export from Dubai](/service/pet-export-dubai/) is the paid file: destination permission, the UAE export certificate, and the handover. Read them together.',
     },
     {
       q: 'How do I check whether my travel date is realistic?',

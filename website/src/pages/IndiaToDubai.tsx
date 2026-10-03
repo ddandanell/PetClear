@@ -54,7 +54,7 @@ export default function IndiaToDubai() {
     },
     {
       question: 'What happens when my pet arrives in Dubai from India?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination, checks the titer test certificate, and inspects the pet for signs of illness. If all documents are correct and the pet is healthy, clearance takes 2–4 hours. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and can deliver your pet directly to your home or a Dubai boarding facility. Because India is high-risk, the inspection may be slightly more thorough than for low-risk countries.'
+      answer: 'The crate is offloaded at the DXB or DWC cargo terminal. A MOCCAE veterinarian checks the microchip, the rabies record, and the antibody certificate. A matching file is released. The terminal does not publish a fixed clearance time. The quote says who meets the crate and whether the drive continues to the address or to a kennel. India is a high-risk origin, so the antibody certificate has to be in the pouch.'
     }
   ]
 

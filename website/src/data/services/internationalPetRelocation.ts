@@ -54,7 +54,7 @@ const internationalPetRelocation: ServicePageData = {
     {
       h2: 'International Pet Relocation Process',
       intro:
-        'The exact steps depend on your origin and destination, but most international moves to or from Dubai follow the same backbone. We build a tailored plan around your country pair and travel date.',
+        'The documents depend on the two countries and the travel date. We set the order of work from that pair, then confirm it before anyone books cargo.',
       body: [
         {
           type: 'steps',

@@ -6,7 +6,7 @@ const dubaiSiliconOasis: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Transport in Dubai Silicon Oasis | Collection & Delivery',
   metaDescription:
-    'Plan pet collection or delivery in Dubai Silicon Oasis. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+    'Plan pet collection or delivery in Dubai Silicon Oasis. Confirm building access and the destination, then ask for a transport quote.',
   h1: 'Pet collection and delivery in Dubai Silicon Oasis',
   primaryKeyword: 'pet relocation dubai silicon oasis',
   heroValueProp:

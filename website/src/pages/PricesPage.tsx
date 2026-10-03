@@ -150,9 +150,9 @@ export default function PricesPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Prices Dubai | Costs & Quote Inclusions',
+          title: 'Pet Relocation Prices Dubai | 2026 Quote Guide',
           description:
-            'Understand pet relocation costs in Dubai, what your quote includes and which charges are separate. Share your route and pet details for a tailored quote.',
+            'What a Dubai pet relocation quote includes: permits, vet work, the crate, cargo and delivery. Government fees stay on the MOCCAE portal.',
           canonical: url,
           ogType: 'website',
         }}
@@ -165,7 +165,7 @@ export default function PricesPage() {
         imageAlt="Pet owner reviewing a Dubai pet relocation quote with travel documents beside a crate"
         eyebrow="Quoted packages, not a government fee table"
         title="Pet relocation prices and quote inclusions"
-        subtitle="Your quote depends on the route, your pet's size, travel arrangements and the support you choose. Review what each service includes, then send your details for a personalised proposal."
+        subtitle="Your quote depends on the route, the pet, the flight and the scope you choose. Review what each service includes, then send origin, destination, pet and dates."
         updated="Updated September 2026"
         primaryLabel="Get a scoped quote"
         whatsappMessage={WA}

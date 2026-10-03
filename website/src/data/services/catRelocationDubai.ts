@@ -3,9 +3,9 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const catRelocationDubai: ServicePageData = {
   slug: 'cat-relocation-dubai',
-  seoTitle: 'Cat Relocation Dubai | Carrier & Travel Coordination',
+  seoTitle: 'Cat Relocation Dubai | Cabin & Cargo Moves for Cats',
   metaDescription:
-    'Moving a cat to or from Dubai? Plan carrier preparation, documents and suitable travel options. Request a quote for your cat, route and dates.',
+    'Move a cat to or from Dubai: cabin limits, carrier practice, the MOCCAE permit, and a calm travel plan. Send the route and dates for a quote.',
   h1: 'Cat relocation to and from Dubai',
   primaryKeyword: 'cat relocation dubai',
   heroValueProp:

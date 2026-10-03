@@ -32,7 +32,7 @@ const snippetAnswer =
 const faqData = [
   {
     q: 'What happens when my pet arrives at Dubai airport?',
-    a: 'The crate is offloaded at the cargo terminal (Cargo Village at DXB, or the cargo side at DWC), not the passenger hall. Ground staff present the air waybill and crate to the animal facility. A MOCCAE veterinarian scans the microchip, matches it to the import permit and health certificate, and releases a compliant pet the same day. There is no routine quarantine. Collection and last-mile delivery are coordinated separately from passenger arrivals. Commercial import filing lives on [help importing your pet to the UAE](/service/pet-import-dubai/).',
+    a: 'The crate is offloaded at the cargo terminal (Cargo Village at DXB, or the cargo side at DWC), not the passenger hall. Ground staff present the air waybill and crate to the animal facility. A MOCCAE veterinarian scans the microchip, matches it to the import permit and health certificate, and releases a compliant pet the same day. There is no routine quarantine. Collection and last-mile delivery are coordinated separately from passenger arrivals. The paid import file is [managed pet import](/service/pet-import-dubai/).',
   },
   {
     q: 'Where do I collect my pet at Dubai International (DXB)?',
@@ -145,8 +145,7 @@ export default function DubaiPetArrivalGuide() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            This page covers the hours and days after the wheels touch down. It is not a commercial import product page and it
-            is not a local taxi booking page. Pre-travel rules stay on{' '}
+            This page covers the hours and days after the aircraft lands. The paid import file is the managed pet import service. A van from the airport is the local transport service. Pre-travel rules stay on{' '}
             <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
               import rules for bringing pets to Dubai
             </Link>
@@ -401,13 +400,13 @@ export default function DubaiPetArrivalGuide() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">What this page is not</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Where to go next</h2>
           <ul className="mb-6 space-y-2">
             {[
-              'Not a clone of the commercial import service or the inbound relocation page.',
-              'Not an airline booking desk — Emirates and Etihad rules stay on their own guides.',
-              'Not a pet-taxi rate card. Airport pet pickup and DXB-to-home delivery stay on the transport service URL.',
-              'Not a government portal. MOCCAE, Dubai Customs and Dubai Municipality issue the decisions.',
+              'The paid import file, including permit timing and clearance, is the managed pet import service.',
+              'Airline rules stay on the Emirates and Etihad guides.',
+              'Airport pickup and a drive home are on the local pet transport service.',
+              'MOCCAE, Dubai Customs and Dubai Municipality issue the decisions.',
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-[#5A5A5A]">
                 <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#4F5BD5]" />
@@ -421,7 +420,7 @@ export default function DubaiPetArrivalGuide() {
               <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
                 help importing your pet to the UAE
               </Link>{' '}
-              — commercial arrival filing
+              — managed pet import
             </li>
             <li>
               <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">

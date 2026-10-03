@@ -71,12 +71,12 @@ export default function QuarantineRulesGuide() {
           before the rabies vaccination, a valid rabies vaccination (pet at least 12 weeks old, vaccinated at least 21 days
           before travel), core vaccinations, a rabies titer test if it is travelling from a high-risk country, an
           international health certificate issued within 10 days of arrival, and an antiparasitic treatment record. Every
-          document must show the same microchip number. When all of this lines up, customs clearance typically takes two to
-          four hours and the pet does not enter quarantine.
+          document must show the same microchip number. When all of this lines up, the pet is examined at the cargo
+          terminal and released. The UAE does not run a routine quarantine for that file.
         </p>
       ),
       plain:
-        'A compliant pet has a valid MOCCAE import permit, an ISO 11784/11785 compliant 15-digit microchip implanted before the rabies vaccination, a valid rabies vaccination (pet at least 12 weeks old, vaccinated at least 21 days before travel), core vaccinations, a rabies titer test if it is travelling from a high-risk country, an international health certificate issued within 10 days of arrival, and an antiparasitic treatment record. Every document must show the same microchip number. When all of this lines up, customs clearance typically takes two to four hours and the pet does not enter quarantine.',
+        'A compliant pet has a valid MOCCAE import permit, an ISO 11784/11785 compliant 15-digit microchip implanted before the rabies vaccination, a valid rabies vaccination (pet at least 12 weeks old, vaccinated at least 21 days before travel), core vaccinations, a rabies titer test if it is travelling from a high-risk country, an international health certificate issued within 10 days of arrival, and an antiparasitic treatment record. Every document must show the same microchip number. When all of this lines up, the pet is examined at the cargo terminal and released. The UAE does not run a routine quarantine for that file, and the terminal does not publish a fixed clearance time.',
     },
     {
       question: 'What can cause my pet to be detained or refused at the airport?',
@@ -237,7 +237,7 @@ export default function QuarantineRulesGuide() {
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Compliant Pet</p>
                   <p className="text-lg font-bold text-[#2A2A2A]">No quarantine</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">Customs clearance typically 2–4 hours, then straight home.</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">Examined at the cargo terminal and released. No routine quarantine.</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">Non-Compliant Pet</p>
@@ -419,7 +419,7 @@ export default function QuarantineRulesGuide() {
               </h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
                 With a valid permit, matching microchip, valid vaccination, titer test where required, and a current health
-                certificate, customs clearance typically takes two to four hours and your pet does not enter quarantine. It
+                certificate, the pet is examined at the cargo terminal and released. The UAE does not run a routine quarantine for that file, and the terminal does not publish a fixed clearance time. It
                 clears the cargo terminal and goes home the same day.
               </p>
             </div>
@@ -544,9 +544,9 @@ export default function QuarantineRulesGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Customs Clearance — Not Quarantine</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  If all documents are correct, customs clearance typically takes two to four hours and your pet does not
-                  enter quarantine. The only thing standing between the cargo terminal and home is the paperwork check — which
-                  is why getting the documents right is everything.
+                  If the documents match, the pet is examined at the cargo terminal and released. The UAE does not run a
+                  routine quarantine for that file. The terminal does not publish a fixed clearance time. The paperwork
+                  is what stands between the cargo desk and home.
                 </p>
               </div>
             </div>
@@ -593,7 +593,7 @@ export default function QuarantineRulesGuide() {
             </div>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-6">
               Because quarantine in the UAE is really about compliance, our entire job is to make your pet compliant before
-              it travels. We triple-check every document so the only outcome at the airport is a clean clearance.
+              it travels. The file is checked against the current list before it is submitted.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="bg-white rounded-xl p-4">

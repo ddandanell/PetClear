@@ -137,7 +137,7 @@ const dubaiMarina: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Service pages: [pet relocation to Dubai](/service/pet-relocation-to-dubai/) for an arrival, [pet relocation Dubai](/service/pet-relocation-dubai/) for door-to-door coordination, [pet import to Dubai](/service/pet-import-dubai/) for the commercial import, and [pet export from Dubai](/service/pet-export-dubai/) when you leave.',
+          text: 'Service pages: [pet relocation to Dubai](/service/pet-relocation-to-dubai/) for an arrival, [pet relocation Dubai](/service/pet-relocation-dubai/) for door-to-door coordination, [managed pet import](/service/pet-import-dubai/) for the paid import file, and [pet export from Dubai](/service/pet-export-dubai/) when you leave.',
         },
       ],
     },

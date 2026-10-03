@@ -119,7 +119,7 @@ export default function AboutPage() {
                   We realized the problem was not a lack of services — it was a lack of transparency. Pet owners were expected to trust opaque processes without understanding what was happening, why it cost what it did, or whether their pet was in safe hands.
                 </p>
                 <p>
-                  So we built Dubai Pet Relocation as a coordination model: we help you understand the process, we check every document, we connect you with vetted partners, and we stay on WhatsApp with you every step of the way.
+                  Dubai Pet Relocation coordinates the file. We check the documents, book the specialists the route needs, and stay on WhatsApp during published hours.
                 </p>
               </div>
             </div>

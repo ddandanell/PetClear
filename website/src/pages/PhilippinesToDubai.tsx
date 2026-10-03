@@ -47,7 +47,7 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'What happens when my pet arrives in Dubai from the Philippines?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and titer test certificate, and conducts a physical examination. Because the Philippines is a high-risk country, the inspection is thorough and may take 3–5 hours. If all documents are correct and the pet is healthy, clearance is granted. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and titer test certificate, and conducts a physical examination. Because the Philippines is a high-risk country, the antibody certificate is checked with the rest of the file. The terminal does not publish a fixed clearance time. If all documents are correct and the pet is healthy, clearance is granted. The quote says who meets the crate and whether delivery continues to the address.'
     }
   ]
 

@@ -113,7 +113,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
       <section className="bg-white section-padding pt-0">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            What is special about this corridor
+            What changes on this route
           </h2>
           <p className="leading-relaxed text-[#5A5A5A]">{data.rulesSpecialties}</p>
         </div>
@@ -160,7 +160,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
       <section className="bg-white section-padding">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            Where this corridor usually fails
+            What to settle before you book
           </h2>
           <p className="leading-relaxed text-[#5A5A5A]">{data.difficulties}</p>
         </div>
@@ -169,7 +169,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
       <section className="bg-[#F5F6FD] section-padding">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            How a {countryLabel} move actually works
+            How a {countryLabel} move is planned
           </h2>
           <p className="leading-relaxed text-[#5A5A5A]">{data.howItWorks}</p>
           <p className="mt-6 text-sm leading-relaxed text-[#5A5A5A]">
@@ -254,9 +254,9 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
 
       <section className="bg-[#4F5BD5] section-padding">
         <div className="mx-auto max-w-[820px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-3 text-[24px] font-bold text-white sm:text-[32px]">Get this route checked</h2>
+          <h2 className="mb-3 text-[24px] font-bold text-white sm:text-[32px]">Tell us about this route</h2>
           <p className="mb-6 text-white/90">
-            {data.cta.note || 'Quote-only. Share species, breed, weight and dates — we do not publish package prices.'}{' '}
+            {data.cta.note || 'Share the pet, the route and the dates. We explain the next step and any assessment fee before paid work starts.'}{' '}
             WhatsApp {data.cta.whatsapp}. Email support@dubai-pet-relocation.ae.
           </p>
           <LinkPlanSlot

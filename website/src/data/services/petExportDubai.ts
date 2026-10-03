@@ -3,9 +3,9 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const petExportDubai: ServicePageData = {
   slug: 'pet-export-dubai',
-  seoTitle: 'Pet Export Dubai | Documents & Travel Coordination',
+  seoTitle: 'Pet Export from Dubai: Documents & Flight Booking [2026]',
   metaDescription:
-    'Moving your pet out of Dubai? Coordinate destination requirements, export documents and travel arrangements. Request a quote for your pet and route.',
+    'Export a pet from Dubai: destination rules, the MOCCAE export certificate, and travel-day coordination for UK, USA and EU routes. Ask for a quote.',
   h1: 'Pet export services from Dubai',
   primaryKeyword: 'pet export dubai',
   heroValueProp:

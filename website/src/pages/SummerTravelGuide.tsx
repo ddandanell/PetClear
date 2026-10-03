@@ -401,42 +401,42 @@ export default function SummerTravelGuide() {
               <tbody>
                 <tr>
                   <td className="font-medium">Standard Cargo (Winter)</td>
-                  <td>AED 2,500 – 6,000</td>
+                  <td>Quoted for the date</td>
                   <td>High</td>
                   <td>All breeds, standard moves</td>
                   <td>Not available May–Sep</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Standard Cargo (Summer)</td>
-                  <td>AED 3,500 – 8,500</td>
+                  <td>Quoted if the airline accepts it</td>
                   <td>Very Limited</td>
                   <td>Early morning slots only</td>
                   <td>High refusal risk</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Pet Nanny Service</td>
-                  <td>AED 5,000 – 12,000</td>
+                  <td>Quoted before it is booked</td>
                   <td>Moderate</td>
                   <td>Small–medium pets, brachycephalic</td>
                   <td>Weight limits apply</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Cooler Hub Routing</td>
-                  <td>AED 4,000 – 9,000</td>
+                  <td>Quoted for that routing</td>
                   <td>Moderate</td>
                   <td>Europe, Asia origins</td>
                   <td>Longer total travel time</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Private Charter</td>
-                  <td>AED 25,000 – 80,000</td>
+                  <td>Quoted before anyone books it</td>
                   <td>Low</td>
                   <td>Emergency, large/multiple pets</td>
                   <td>Extremely expensive</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Board + Wait</td>
-                  <td>AED 1,500 – 3,500 / month</td>
+                  <td>Confirmed with the kennel first</td>
                   <td>High</td>
                   <td>Flexible timeline</td>
                   <td>Emotional separation, boarding costs</td>

@@ -16,11 +16,11 @@ export default function DubaiCity() {
   const faqs = [
     {
       question: 'How much does pet relocation to Dubai cost?',
-      answer: 'Pet relocation to Dubai typically costs between AED 6,000 and AED 20,000 depending on the origin country, pet size, and airline. Small cats from low-risk countries may cost AED 6,000–10,000, while large dogs from high-risk countries requiring titer tests can reach AED 15,000–25,000. Dubai Municipality registration is an additional AED 100–200 per pet. Dubai Pet Relocation provides a transparent, itemised quote before you commit.'
+      answer: 'There is no single published fare for a move to Dubai. The quote separates government charges, the clinic, the airline, the crate, and coordination. On 22 September 2026 MOCCAE listed AED 200 for an import permit, AED 500 to release a dog, and AED 250 to release a cat. Confirm the municipality registration fee on the Aleef or Dubai Municipality channel. Dubai Pet Relocation sends an itemised quote before you agree.'
     },
     {
       question: 'Is there quarantine for pets arriving in Dubai?',
-      answer: 'No — if all documentation is correct, there is no quarantine for pets arriving in Dubai from most countries. The UAE classifies countries into low-risk and high-risk categories. Low-risk countries (UK, EU, USA, Australia, etc.) require only a rabies vaccination and health certificate. High-risk countries require a rabies titer test (RNATT) in addition. As long as the microchip, vaccines, and certificates are in order, your pet is cleared within 2–4 hours of arrival at DXB.'
+      answer: 'A complete file is examined at the cargo terminal and released. The UAE does not run a routine quarantine for that file. Low-risk origins need the microchip, a valid rabies vaccination, the health certificate, and the MOCCAE import permit. A high-risk origin also needs a result of at least 0.5 IU/ml, with a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. The terminal does not publish a fixed clearance time.'
     },
     {
       question: 'Which pet-friendly areas in Dubai are best for dogs and cats?',
@@ -28,15 +28,15 @@ export default function DubaiCity() {
     },
     {
       question: 'How do I register my pet with Dubai Municipality?',
-      answer: 'Pet registration in Dubai is mandatory within 30 days of arrival and is done through the Dubai Municipality Aleef mobile app. You need: your Emirates ID or passport, a copy of your tenancy contract (Ejari), your pet\'s vaccination records (especially rabies), and a microchip certificate. The registration fee is AED 100–200 depending on the pet type. Annual renewal is required. Dubai Pet Relocation walks you through the Aleef app registration as part of our arrival service.'
+      answer: 'Register the pet with Dubai Municipality within 30 days of arrival, usually through the Aleef app or the Dubai Smart Services portal. Owners commonly need Emirates ID or a passport, proof of address, vaccination records, and the microchip certificate. Confirm the current fee on that channel. Annual renewal is required. Registration guidance can be part of an arrival booking. It is named on the quote.'
     },
     {
       question: 'What airlines fly pets to Dubai?',
-      answer: 'Emirates, Etihad, British Airways, Qatar Airways, Lufthansa, KLM, and Virgin Atlantic all operate pet cargo services to Dubai International Airport (DXB). Emirates SkyCargo is the largest and most experienced, handling thousands of animals per year. For departures from Dubai, Emirates, British Airways, and Virgin Atlantic are the most common choices. Dubai Pet Relocation books cargo space on all major carriers and recommends the best option based on your route, pet size, and season.'
+      answer: 'Carriers that publish a live-animal product into Dubai include Emirates, Etihad, British Airways, Qatar Airways, Lufthansa, and KLM. A name on this list is not a booking and not a partnership. Confirm the product for the date, the crate, and the breed. Dubai Pet Relocation coordinates the file. The airline flies the animal.'
     },
     {
       question: 'How long does pet relocation to Dubai take?',
-      answer: 'From low-risk countries (UK, EU, Australia, USA): 4–6 weeks total. This includes microchip and rabies vaccination (21-day wait), import permit application (3–5 days), health certificate (within 10 days of travel), and flight booking. From high-risk countries (India, Pakistan, Philippines, South Africa): plan the RNATT so the blood sample uses a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — the certificate rule, not a 90-day sample window and not a wait after the blood draw. Lab turnaround is typically a few weeks after the 21-day post-vaccination interval.'
+      answer: 'The clocks that are published are these. A first rabies vaccine, or a gap, needs at least 21 days before travel, and at least 21 days before an antibody test. The MOCCAE import permit is valid for 90 days from issuance, and the pet must arrive inside that window. The health certificate is issued close to travel. The permit application page we checked listed 1 working day, or 5 working days for a service, emotional support, or medical dog. A high-risk origin needs a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. There is no single week-count that fits every route.'
     },
     {
       question: 'Are there banned dog breeds in Dubai?',
@@ -44,7 +44,7 @@ export default function DubaiCity() {
     },
     {
       question: 'What happens when my pet arrives at Dubai Airport (DXB)?',
-      answer: 'Upon arrival at DXB, your pet is offloaded from the aircraft and transferred to the Dubai Municipality Animal Care Centre (or a licensed veterinary facility). A MOCCAE veterinarian examines the pet, verifies the microchip number against the import permit and health certificate, and checks vaccination records. If all documents are correct, the pet is released within 2–4 hours. Dubai Pet Relocation provides a meet-and-greet service, handles customs formalities, and delivers your pet directly to your home or a boarding facility in Dubai.'
+      answer: 'The crate is offloaded at the DXB cargo terminal, not at passenger baggage claim. A MOCCAE veterinarian checks the microchip against the import permit and the health certificate. A matching file is released. The terminal does not publish a fixed clearance time, and a complete file does not go into routine quarantine. The quote says who meets the crate and whether delivery is to the address.'
     }
   ]
 
@@ -103,7 +103,7 @@ export default function DubaiCity() {
         imageAlt="Pet relocation services in Dubai skyline"
         eyebrow="Dubai"
         title="Pet relocation support in Dubai"
-        subtitle="One of the most pet-friendly cities in the Middle East — transparent, safe, stress-free relocation for your dog or cat."
+        subtitle="Collection, documents and handover for a dog or cat moving to or from Dubai."
         updated="Updated June 2026"
       />
 
@@ -114,7 +114,7 @@ export default function DubaiCity() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Why Dubai</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Why Dubai Is a Great City for Pet Owners</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Dubai has transformed into one of the most pet-welcoming cities in the Gulf region. From gated communities with gardens to world-class veterinary clinics, Dubai offers everything your pet needs for a comfortable life.
+              A move into Dubai is a federal import file plus a building that will actually let the crate through. Villas, towers and community gates do not share the same access. The community pages say what to confirm before collection day.
             </p>
           </div>
 
@@ -138,10 +138,10 @@ export default function DubaiCity() {
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">World-Class Veterinary Care</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                Dubai is home to some of the best veterinary clinics in the Middle East. The German Veterinary Clinic in JLT offers advanced diagnostics and surgery. The British Veterinary Hospital in Umm Suqeim provides 24-hour emergency care and boarding. The Dubai Veterinary Hospital in Deira has decades of experience with international pet imports.
+                You book the clinic. Clinics in Dubai include the German Veterinary Clinic in JLT, the British Veterinary Hospital in Umm Suqeim, and Dubai Veterinary Hospital in Deira.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                Other trusted clinics include Blue Oasis Veterinary Clinic (Dubai Marina), Canadian Veterinary Hospital (Jumeirah), and Amity Veterinary Clinic (Dubai Hills). Dubai Pet Relocation partners with all major clinics for health checks, vaccinations, and documentation.
+                Other clinics in the city include Blue Oasis Veterinary Clinic in Dubai Marina, Canadian Veterinary Hospital in Jumeirah, and Amity Veterinary Clinic in Dubai Hills. Ask the clinic whether it issues the papers your route needs.
               </p>
             </div>
 
@@ -151,7 +151,7 @@ export default function DubaiCity() {
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Clear Pet Regulations</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                Dubai Municipality oversees pet registration through the Aleef mobile app. All pets must be registered within 30 days of arrival. The registration fee is AED 100–200 and requires your Emirates ID, tenancy contract (Ejari), and vaccination records. Annual renewal is mandatory.
+                Dubai Municipality oversees pet registration through the Aleef app or the Dubai Smart Services portal. Register within 30 days of arrival. Confirm the current fee on that channel. Owners commonly need Emirates ID, proof of address, and vaccination records. Annual renewal is required.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
                 The UAE prohibits certain dangerous dog breeds, and brachycephalic breeds face summer travel restrictions. Dubai's rules are well-documented and consistently enforced, making compliance straightforward when you work with Dubai Pet Relocation.
@@ -253,7 +253,7 @@ export default function DubaiCity() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Network</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Local Partners in Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Dubai Pet Relocation works with a trusted network of veterinary clinics, cargo agents, and pet service providers across Dubai to ensure seamless relocation.
+              Clinics and cargo handlers are booked for the file in front of us. A name on this page is a place owners ask about. It is not a claim that we own the clinic or that every pet is accepted there.
             </p>
           </div>
 
@@ -343,40 +343,40 @@ export default function DubaiCity() {
                 <tbody className="divide-y divide-[#EBEBEB]">
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Dubai Municipality Registration (Aleef)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 100–200</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Per pet. Mandatory within 30 days of arrival.</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Confirm on Aleef</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Per pet. Register within 30 days of arrival.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Annual Renewal</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 100–200</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Must be renewed every year. Late fees apply.</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Confirm on Aleef</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Renew each year. Confirm any late charge on the same channel.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Quarantine (if required)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 0</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">No quarantine if documents are correct. Only for non-compliant cases.</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Not routine</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">A matching file is released. A hold is a paperwork problem, billed if it happens.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Customs Clearance at DXB</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–1,500</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Included in Dubai Pet Relocation's service package.</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">On the government invoice</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Separate from coordination. Dog release was AED 500 and cat release AED 250 on the MOCCAE page checked 22 September 2026.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Veterinary Inspection on Arrival</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 0–300</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Usually covered by the import permit fee. Occasional extra inspection fee.</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">On the government invoice</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">The release charge above is the arrival veterinary fee we could verify. Confirm the payment screen.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Ground Transport (DXB to home)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200–600</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Depends on distance. Climate-controlled vehicle.</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted for the two addresses</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Local transport is priced from the cargo desk to the building.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * All prices are estimates in UAE Dirhams (AED). Actual fees may vary depending on the specific municipality, pet type, and processing time. Dubai Pet Relocation includes all known local fees in your upfront quote so there are no surprises.
+                Government amounts are the figures on the payment screen. Coordination, the van, and the airline are separate lines on the quote.
               </p>
             </div>
           </div>

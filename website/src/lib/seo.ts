@@ -54,7 +54,7 @@ export const LOGO_URL = `${BASE_URL}${LOGO_PATH}`
 export const siteConfig = {
   name: 'Dubai Pet Relocation',
   tagline: 'Your pet\'s journey, made clear.',
-  description: 'Transparent pet relocation coordination service for Dubai and the UAE. We help pet owners understand the process, check requirements, and connect with trusted relocation partners.',
+  description: 'Pet relocation coordination for dogs and cats moving to or from Dubai. Documents, travel arrangements, and collection or delivery, scoped to the route.',
   phone: PHONE_DISPLAY,
   phoneE164: PHONE_E164,
   email: 'support@dubai-pet-relocation.ae',

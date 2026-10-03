@@ -26,7 +26,7 @@ const petRelocationToDubai: ServicePageData = {
     {
       h2: 'This page is inbound only — arrival into Dubai',
       intro:
-        'Arriving in Dubai covers the permit, the landing and the first days after. It is not the journey out of the UAE. Full coordination lives on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Leaving the UAE lives on [moving pets out of Dubai](/service/pet-relocation-from-dubai/). Commercial import filing is [pet import service for Dubai](/service/pet-import-dubai/).',
+        'Arriving in Dubai covers the permit, the landing and the first days after. Leaving the UAE is a different job, on [moving pets out of Dubai](/service/pet-relocation-from-dubai/). Full coordination is [pet relocation in Dubai](/service/pet-relocation-dubai/). The paid import file is [managed pet import](/service/pet-import-dubai/).',
       body: [
         {
           type: 'p',

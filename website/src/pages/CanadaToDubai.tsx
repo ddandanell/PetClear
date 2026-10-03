@@ -30,7 +30,7 @@ export default function CanadaToDubai() {
     },
     {
       question: 'How long does the Canada to Dubai pet relocation process take?',
-      answer: 'The minimum timeline is 4 to 6 weeks: Week 1 — microchip and rabies vaccination (21-day wait begins); Week 3 — apply for UAE import permit and schedule CFIA endorsement; Week 4 — veterinary health check and CFIA inspection; Week 5 — CFIA endorsement of health certificate; Week 6 — book cargo flight and arrange Dubai customs. Some Canadian provinces (e.g., Quebec) have additional internal requirements that may add 1 week.'
+      answer: 'A first rabies vaccine needs at least 21 days before travel. Canada then needs the health certificate endorsed by the Canadian Food Inspection Agency. The MOCCAE import permit is valid for 90 days from issuance. A province can add its own paper. There is no single week-count that fits every pet.'
     },
     {
       question: 'How much does it cost to relocate a pet from Canada to Dubai?',
@@ -46,7 +46,7 @@ export default function CanadaToDubai() {
     },
     {
       question: 'What happens when my pet arrives in Dubai from Canada?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and CFIA-endorsed health certificate, and conducts a brief physical examination. Assuming all documents are correct, your pet is cleared within 2–3 hours. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility. Canadian pets generally clear quickly due to Canada\'s low-risk status.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the cargo handling facility and then to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and CFIA-endorsed health certificate, and conducts a brief physical examination. Assuming all documents are correct, a matching file is examined and released. The terminal does not publish a fixed clearance time. The quote says who meets the crate and whether delivery continues to the address. Canadian pets generally clear quickly due to Canada\'s low-risk status.'
     }
   ]
 
@@ -131,8 +131,8 @@ export default function CanadaToDubai() {
                 <Clock className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Timeline</p>
-              <p className="text-[#5A5A5A] text-sm">4–6 weeks</p>
-              <p className="text-[#5A5A5A] text-xs mt-2">Includes CFIA endorsement</p>
+              <p className="text-[#5A5A5A] text-sm">21 days after a first vaccine</p>
+              <p className="text-[#5A5A5A] text-xs mt-2">Then the CFIA endorsement and the 90-day permit</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">

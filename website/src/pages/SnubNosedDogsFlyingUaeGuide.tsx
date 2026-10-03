@@ -467,7 +467,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
               'Measure the animal, run the standard IATA calc, then apply +10% and round up. Hardware still has to pass CR1.',
               'Avoid the peak heat window when IATA or the carrier advises against listed snub-nose types; prefer autumn when heat rules bite.',
               'Separate legal entry (banned-breeds guide) from airline acceptance (this page).',
-              'Get Route Checked / Check Pet Eligibility on WhatsApp before you buy a passenger ticket or a crate you cannot return.',
+              'Tell us about your move on WhatsApp before you buy a passenger ticket or a crate you cannot return.',
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-[#5A5A5A]">
                 <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#4F5BD5]" />

@@ -194,7 +194,7 @@ export default function HowItWorksPage() {
           name: 'How long does the whole process take?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'From low-risk countries like the UK, EU, or USA, the process takes 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a 90-day waiting period after the test. We recommend starting 8 to 12 weeks before your move date.',
+            text: 'A first rabies vaccine, or a gap, needs at least 21 days before travel. The MOCCAE import permit is valid for 90 days from issuance. The health certificate is issued close to travel. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is not a 90-day wait after the test. Send the pet and the dates and the quote names the order of work.',
           },
         },
         {
@@ -202,7 +202,7 @@ export default function HowItWorksPage() {
           name: 'What if my pet\'s flight is cancelled or delayed?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'We monitor every flight. If a cancellation or delay affects your pet, we rebook on the next available pet-friendly flight at no additional coordination fee, arrange extended boarding with our vet partner if needed, and send photos and updates every 2 hours. Where an error on our side causes a delay, we\'ll make it right — the specifics are set out in your service agreement.',
+            text: 'If a cancellation or delay affects the pet, we tell you what the airline has offered and what the documents still allow. Rebooking, boarding and any extra charge are agreed before they are booked. The service agreement sets what the coordination fee covers.',
           },
         },
         {
@@ -210,7 +210,7 @@ export default function HowItWorksPage() {
           name: 'Do you offer insurance?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. We offer three tiers of travel insurance: Basic (included) covers flight rebooking and boarding; Comprehensive (recommended) covers veterinary emergencies during transit, travel delay costs, and document error protection; Premium (full coverage) includes everything above plus cancellation protection, door-to-door delay coverage, and a dedicated handler. We explain what each covers in plain language with no small print surprises.',
+            text: 'We do not sell a named insurance product on this page. If you want cover for delay, veterinary cost or cancellation, ask for it when you request the quote and we will say what can be arranged and what it costs before you agree.',
           },
         },
       ],
@@ -778,15 +778,15 @@ export default function HowItWorksPage() {
             />
             <FAQItem
               question="How long does the whole process take?"
-              answer="From low-risk countries like the UK, EU, or USA: 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a titer: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a 90-day wait after the test. We recommend starting 8 to 12 weeks before your move date. Starting earlier is always better. Starting later creates stress and may limit flight options."
+              answer="A first rabies vaccine, or a gap, needs at least 21 days before travel. The MOCCAE import permit is valid for 90 days from issuance. The health certificate is issued close to travel. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is not a 90-day wait after the test. Send the pet and the dates and the quote names the order of work."
             />
             <FAQItem
               question="What if my pet's flight is cancelled or delayed?"
-              answer="We monitor every flight. If a cancellation or delay affects your pet, we: (1) Rebook on the next available pet-friendly flight at no additional coordination fee, (2) Arrange extended boarding with our vet partner if needed, (3) Send you photos and updates every 2 hours until your pet is airborne. Where an error on our side causes a delay, we'll make it right — the specifics are set out in your service agreement."
+              answer="If a cancellation or delay affects the pet, we tell you what the airline has offered and what the documents still allow. Rebooking, boarding and any extra charge are agreed before they are booked. The service agreement sets what the coordination fee covers."
             />
             <FAQItem
               question="Do you offer insurance?"
-              answer="Yes. We offer three tiers of travel insurance: Basic (included) covers flight rebooking and boarding if the delay is airline-related; Comprehensive (recommended) covers veterinary emergencies during transit, travel delay costs, and document error protection; Premium (full coverage) includes everything above plus cancellation protection, door-to-door delay coverage, and a dedicated handler for the entire journey. We explain what each covers in plain language — not insurance jargon. No small print surprises."
+              answer="We do not sell a named insurance product on this page. If you want cover for delay, veterinary cost or cancellation, ask for it when you request the quote and we will say what can be arranged and what it costs before you agree."
             />
           </div>
         </div>

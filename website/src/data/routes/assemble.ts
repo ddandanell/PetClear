@@ -300,9 +300,9 @@ export function assembleRoute(copy: RouteUniqueCopy): RoutePageData {
     depthBar: 'OWNER ≥1000 unique',
     wordCountEstimate,
     cta: {
-      label: 'Get Route Checked',
+      label: 'Tell us about your move',
       whatsapp: '+971504782999',
-      note: 'Quote-only. No published package prices. Confirm airline policy and official portal fees before booking.',
+      note: 'Share the pet, the route and the dates. We explain the next step and any assessment fee before paid work starts.',
     },
     hubCardDesc: copy.hubCardDesc,
     lastVerified: '2026-09-05',

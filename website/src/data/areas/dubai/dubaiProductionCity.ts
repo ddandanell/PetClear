@@ -6,7 +6,7 @@ const dubaiProductionCity: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Transport in Dubai Production City | Collection & Delivery',
   metaDescription:
-    'Plan pet collection or delivery in Dubai Production City. Confirm access, carrier arrangements and your destination, then request local or relocation transport support.',
+    'Plan pet collection or delivery in Dubai Production City. Confirm building access and the destination, then ask for a transport quote.',
   h1: 'Pet collection and delivery in Dubai Production City',
   primaryKeyword: 'pet relocation dubai production city',
   heroValueProp:

@@ -101,7 +101,7 @@ export default function CorporateRelocationPage() {
     {
       question: 'How early should we engage you before an employee\'s start date?',
       answer:
-        'As early as possible. From low-risk countries such as the UK, EU, USA, Canada, Australia, and New Zealand, the pet import process typically takes 4–6 weeks. From high-risk countries that require a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a wait after the draw. Start the pet file alongside visa and housing so the employee is not in Dubai while the animal is still grounded.',
+        'Start the pet file when the assignment dates are known. A first rabies vaccine, or a gap, needs at least 21 days before travel. The MOCCAE import permit is valid for 90 days from issuance. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. That is not a wait after the draw. The quote names the order of work so the employee is not in Dubai while the animal is still grounded.',
     },
   ]
 
@@ -376,7 +376,7 @@ export default function CorporateRelocationPage() {
                 <tr>
                   <td><strong>PawVIP</strong> (Coordination)</td>
                   <td>5,000–8,000</td>
-                  <td>+ Personal handler assigned, real-time tracking, video updates at every checkpoint, comprehensive travel insurance, priority rebooking if flights change</td>
+                  <td>A dedicated relocation manager, emergency contingency planning, and boarding or nanny arrangements when the route needs them. Insurance, if the company wants it, is quoted separately.</td>
                   <td>Senior and executive relocations</td>
                 </tr>
               </tbody>

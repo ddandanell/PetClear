@@ -147,7 +147,7 @@ export default function PetExportFromDubaiGuide() {
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             This page covers the informational question <strong>pet export from Dubai</strong>: how the documents
             sequence, who inspects the animal, and why the destination — not the airport code on your ticket —
-            sets the clock. It is not the commercial export product and it is not the outbound journey page.
+            sets the clock. The paid export file and the departure journey each have their own page.
             Paid filing and cargo coordination live on{' '}
             <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               pet export service from Dubai
@@ -287,7 +287,7 @@ export default function PetExportFromDubaiGuide() {
           </ol>
           <p className="leading-relaxed text-[#5A5A5A]">
             If you only want the pouch reviewed on one WhatsApp thread, use Check Documents. If you want the
-            commercial export job held end to end, that is the{' '}
+            paid export file held from the destination rules through the handover, that is the{' '}
             <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               pet export service from Dubai
             </Link>
@@ -579,13 +579,13 @@ export default function PetExportFromDubaiGuide() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">What this page is not</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Where to go next</h2>
           <ul className="mb-6 space-y-2">
             {[
-              'Not a clone of the commercial export service or the outbound relocation journey page.',
-              'Not an inbound import checklist — arriving pets use the import guides.',
-              'Not a government portal. MOCCAE issues the export certificate; destination authorities issue entry permission.',
-              'Not an airline booking desk. Flight-mode comparisons stay on the flight-options hub.',
+              'The paid export file is the pet export service. The departure journey is the relocation-from-Dubai page.',
+              'A pet arriving in Dubai uses the import guides.',
+              'MOCCAE issues the export certificate. The destination authority issues entry permission.',
+              'Flight-mode comparisons stay on the flight-options hub.',
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-[#5A5A5A]">
                 <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#4F5BD5]" />
@@ -599,7 +599,7 @@ export default function PetExportFromDubaiGuide() {
               <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
                 pet export service from Dubai
               </Link>{' '}
-              — commercial export filing
+              — the paid export file
             </li>
             <li>
               <Link to="/service/pet-relocation-from-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">

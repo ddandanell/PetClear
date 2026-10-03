@@ -50,7 +50,7 @@ const COST_PAA_FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'How much does it cost to import a pet into the UAE?',
-    a: 'UAE import cost is the same type split: MOCCAE permit and release fees (portal/official — confirm-on-MOCCAE), veterinary work including titer when required, freight, crate, handling, and coordination. There is no single published import tariff. Rules live on [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/); permit walkthrough on [/guides/moccae-import-permit/](/guides/moccae-import-permit/). Commercial import: [/service/pet-import-dubai/](/service/pet-import-dubai/). Our import coordination is Get a Quote. Email support@dubai-pet-relocation.ae or WhatsApp +971504782999.',
+    a: 'UAE import cost splits into government charges, veterinary work, freight, the crate, handling, and coordination. There is no single published import tariff. Rules live on [UAE pet import requirements](/guides/uae-pet-import-requirements/). The permit steps are on [the MOCCAE permit guide](/guides/moccae-import-permit/). The paid import service is [managed pet import](/service/pet-import-dubai/). Coordination is quoted after we know the pet and the route. Email support@dubai-pet-relocation.ae or WhatsApp +971504782999.',
   },
   {
     q: 'How much does it cost to get a dog imported?',
@@ -149,7 +149,7 @@ export default function CostGuidePage() {
         name: 'What\'s the cheapest way to bring a pet to Dubai?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The absolute cheapest way is DIY from a low-risk country like the UK or EU, with a small pet, during off-peak season, with all documentation already complete. That could cost as little as AED 5,400. But "cheapest" rarely means "best value." The savings of doing it yourself are often wiped out by: one missed document (quarantine = AED 8,500+), one wrong crate (rebooking = AED 2,000+), 20+ hours of your time (what\'s your hourly rate?), the stress of managing five different providers. For most pet owners, our PawPilot tier (Get a Quote) covers the documentation and flight booking — eliminating the biggest error risks while keeping coordination scoped to the file.',
+          text: 'An owner can file a low-risk move when the microchip, rabies vaccine, health certificate, and permit are already in order. The clinic, the airline, and MOCCAE still invoice their own steps. A missed document or a rejected crate can hold the pet or force a new booking. PawPilot is document guidance, quoted after we know the pet and the route. It is not a published package.',
         },
       },
       {
@@ -157,7 +157,7 @@ export default function CostGuidePage() {
         name: 'Do you offer payment plans?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. We accept payment via credit card, bank transfer, and Tabby (buy now, pay later). For moves over AED 10,000, we can split payment into two installments: 50% deposit to lock your booking and start permits, 50% due 7 days before travel. We also offer a price match guarantee: show us a comparable quote from a licensed competitor, and we\'ll match or beat it — while including the hidden fees they probably left out.',
+          text: 'How you pay, and whether a move can be split, is written on the quote before you agree. This page does not publish a deposit percentage, a minimum amount, or a price-match promise.',
         },
       },
     ],
@@ -167,7 +167,7 @@ export default function CostGuidePage() {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'How Much Does It Cost to Bring a Dog or Cat to Dubai? 2026 Price Breakdown',
-    description: 'Real pet relocation costs for Dubai in 2026. Itemized breakdown of government fees, veterinary costs, air cargo, travel crates, and service coordination fees. Route-specific prices from UK, USA, India, Australia, and Philippines.',
+    description: 'What changes a Dubai pet relocation quote in 2026: government fees checked on the MOCCAE portal, veterinary work, the crate, freight and coordination. Package totals are quoted, not printed as a from-price.',
     image: `${BASE_URL}/assets/cost-guide-hero.jpg`,
     author: {
       '@type': 'Organization',
@@ -372,7 +372,7 @@ export default function CostGuidePage() {
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">2. Your origin country</h4>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              From the UK or EU? No rabies titer test needed. From India, Pakistan, or the Philippines? When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — the certificate rule, not a 90-day sample window and not a wait after the test. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. Extra veterinary prep typically adds AED 1,500–2,500.
+              From the UK or EU, a rabies antibody test is not the usual inbound step. From India, Pakistan, or the Philippines, when a test is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. The clinic invoices that extra work. We do not publish a veterinary tariff.
             </p>
           </Card>
           <Card>
@@ -381,7 +381,7 @@ export default function CostGuidePage() {
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">3. Your travel season</h4>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              Summer is complicated. From June to September, many airlines restrict or ban pet cargo due to heat. Brachycephalic breeds face additional airline bans. Off-season rerouting, ground transport, or extended boarding can add AED 2,000–5,000.
+              From May through September, many airlines restrict pet cargo because of heat. Flat-faced breeds face extra airline limits. A reroute, a road leg, or extra boarding is quoted before it is booked.
             </p>
           </Card>
           <Card>
@@ -390,7 +390,7 @@ export default function CostGuidePage() {
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">4. Your pet's documentation status</h4>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              Already microchipped and vaccinated? You'll save AED 300–600. Starting from scratch? Budget for the full veterinary timeline. Missing one document can mean your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands).
+              A pet that is already microchipped, with the rabies vaccine in the right order, skips those clinic steps. Starting from a first vaccine adds at least 21 days before travel, and a first vaccine or a gap needs at least 21 days before an antibody test. A missing document can mean refusal, a hold, or a return journey at the owner's expense.
             </p>
           </Card>
         </div>
@@ -419,11 +419,11 @@ export default function CostGuidePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td>MOCCAE Import Permit</td><td>Verify on portal</td><td>Official approval to bring your pet into the UAE. Mandatory. Valid 90 days from issuance. Confirm the current fee on the official MOCCAE portal; fees may change.</td><td>Before travel</td></tr>
-                <tr><td>MOCCAE Release Fee (on arrival)</td><td>Verify on portal</td><td>Veterinary release/inspection fee paid when your pet clears at the cargo terminal. Confirm the current amount on the official portal.</td><td>On arrival</td></tr>
-                <tr><td>Dubai Customs Clearance / Bill of Entry</td><td>500–1,000</td><td>Agent handling at DXB or DWC cargo terminal.</td><td>On arrival</td></tr>
-                <tr><td>Dubai Municipality Registration</td><td>~10</td><td>Annual pet registration via the Aleef app.</td><td>Within 30 days of arrival</td></tr>
-                <tr><td>Municipality Microchipping (if not done)</td><td>~50</td><td>15-digit ISO chip implantation at government centers.</td><td>Pre-travel</td></tr>
+                <tr><td>MOCCAE Import Permit</td><td>AED 200</td><td>One animal, on the MOCCAE page checked 22 September 2026. Valid 90 days from issuance. Confirm the payment screen.</td><td>Before travel</td></tr>
+                <tr><td>MOCCAE release on arrival</td><td>AED 500 dog / AED 250 cat</td><td>Same check date. Veterinary release when the pet clears. Confirm the payment screen.</td><td>On arrival</td></tr>
+                <tr><td>Cargo-handler invoice</td><td>On that invoice</td><td>Whoever files the bill of entry at DXB or DWC.</td><td>On arrival</td></tr>
+                <tr><td>Dubai Municipality registration</td><td>Confirm on Aleef</td><td>Annual registration. Within 30 days of arrival.</td><td>After arrival</td></tr>
+                <tr><td>Microchip, if the pet does not have one</td><td>Clinic invoice</td><td>ISO chip, implanted before the rabies vaccine.</td><td>Before travel</td></tr>
               </tbody>
             </table>
           </div>
@@ -432,7 +432,7 @@ export default function CostGuidePage() {
             Government fees are the same whichever coordinator you use. If a quote seems suspiciously low, they may be omitting a permit step or hiding a surcharge later.
           </p>
           <p className="text-xs text-[#8A8A8A] mt-3 leading-relaxed">
-            Last verified: 4 September 2026. Cargo and partner prices are indicative ranges. Confirm current MOCCAE and municipality fees on the official portals before you apply — your personalized quote reflects live figures for your route and dates.
+            MOCCAE amounts above were read on 22 September 2026. Cargo, the crate, and coordination are quoted for the pet and the date. Confirm municipality fees on Aleef before you apply.
           </p>
         </div>
 
@@ -444,19 +444,19 @@ export default function CostGuidePage() {
           <div className="overflow-x-auto">
             <table className="data-table min-w-[560px]">
               <thead>
-                <tr><th>Service</th><th>Cost (AED)</th><th>Notes</th></tr>
+                <tr><th>Service</th><th>Who invoices it</th><th>Notes</th></tr>
               </thead>
               <tbody>
-                <tr><td>ISO Microchip + Rabies Vaccination</td><td>300–600</td><td>Microchip must be implanted <em>before</em> the rabies vaccine. Both must be ≥21 days before travel.</td></tr>
-                <tr><td>Rabies Titer Test (RNATT)</td><td>500–1,200</td><td>Only required for high-risk countries. Blood sample ≥21 days after rabies vaccine. Results take 2–4 weeks.</td></tr>
-                <tr><td>Core Vaccinations (if not current)</td><td>100–200</td><td>Dogs: DHPPIL. Cats: FVRCP.</td></tr>
-                <tr><td>International Health Certificate + Endorsement</td><td>400–1,500</td><td>Issued by an accredited government vet within 10 days of travel. Cost varies by country.</td></tr>
-                <tr><td>Antiparasitic Treatments</td><td>50–150</td><td>Internal (deworming) and external (Fipronil/Permethrin) within 14 days of arrival.</td></tr>
+                <tr><td>ISO microchip and rabies vaccination</td><td>The clinic</td><td>The chip goes in before the rabies vaccine. A first vaccine, or a gap, needs at least 21 days before travel.</td></tr>
+                <tr><td>Rabies antibody test</td><td>The clinic and the laboratory</td><td>When the origin requires it. A first vaccine or a gap needs at least 21 days before the sample. The laboratory sets the turnaround.</td></tr>
+                <tr><td>Core vaccinations, if they are not current</td><td>The clinic</td><td>Dogs and cats need the vaccines that destination asks for. Confirm the list with the clinic.</td></tr>
+                <tr><td>Health certificate and endorsement</td><td>The clinic and the endorsing office</td><td>Issued close to travel. An expired certificate is not accepted.</td></tr>
+                <tr><td>Parasite treatment</td><td>The clinic</td><td>Internal and external treatment inside the window the destination states.</td></tr>
               </tbody>
             </table>
           </div>
           <p className="text-sm text-[#5A5A5A] mt-3 font-medium">
-            Veterinary total: AED 1,350–3,650 (low-risk, fully documented pet) to AED 2,850–4,650 (high-risk, starting from scratch)
+            There is no published veterinary total. Ask the clinic for its current fees before the appointment.
           </p>
         </div>
 
@@ -496,18 +496,18 @@ export default function CostGuidePage() {
           <div className="overflow-x-auto">
             <table className="data-table min-w-[560px]">
               <thead>
-                <tr><th>Route Type</th><th>Estimated Cost (AED)</th><th>Notes</th></tr>
+                <tr><th>Route Type</th><th>Who prices it</th><th>Notes</th></tr>
               </thead>
               <tbody>
-                <tr><td>Short-haul (GCC, nearby Asia)</td><td>3,000–5,000</td><td>Shorter flights, lower fuel surcharges</td></tr>
-                <tr><td>Medium-haul (Europe, UK, Turkey)</td><td>5,000–8,000</td><td>Most common routes. Emirates SkyCargo dominates.</td></tr>
-                <tr><td>Long-haul (USA, Canada, Australia)</td><td>7,000–12,000+</td><td>Distance + fuel + size = higher cost.</td></tr>
-                <tr><td>In-cabin (Etihad to Abu Dhabi only, ≤8kg)</td><td>Confirm at booking. Expired 2026 promo was ~USD 399. USD 1,500 = Estimated only</td><td>Not a current standard fee. Not available to Dubai. Eligibility: ≤8 kg incl. carrier.</td></tr>
+                <tr><td>Short-haul (GCC, nearby Asia)</td><td>The airline, for that crate</td><td>Distance is shorter. The season and the crate volume still change the figure.</td></tr>
+                <tr><td>Medium-haul (Europe, UK, Turkey)</td><td>The airline, for that crate</td><td>Confirm the carrier’s current live-animal product before you treat a passenger fare as pet travel.</td></tr>
+                <tr><td>Long-haul (USA, Canada, Australia)</td><td>The airline, for that crate</td><td>Distance, crate volume and any connection are the usual reasons the freight is higher.</td></tr>
+                <tr><td>In-cabin, where an airline still offers it</td><td>The airline, on that flight</td><td>Emirates cargo into Dubai is not an in-cabin product. Any Abu Dhabi cabin exception has a weight limit and must be confirmed on the current Etihad page.</td></tr>
               </tbody>
             </table>
           </div>
           <p className="text-sm text-[#5A5A5A] mt-3">
-            Cargo fees are charged by <strong>volumetric weight</strong> — a formula using crate length × width × height. A large dog in a big crate can easily hit 8,000+ AED in freight alone. This is why crate size matters so much.
+            Airlines usually charge freight on the crate’s volume, not only on the pet’s weight. A larger crate can cost more than a smaller one on the same route. Ask the carrier for the figure before you treat a range on the internet as your quote.
           </p>
           <p className="mt-2 text-sm">
             <Link to="/guides/emirates-pet-cargo/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
@@ -543,13 +543,13 @@ export default function CostGuidePage() {
                 <tr>
                   <td><strong>PawVIP</strong> (Coordination)</td>
                   <td>Get a Quote</td>
-                  <td>+ Personal handler assigned, real-time tracking, video updates at every checkpoint, comprehensive travel insurance, priority rebooking if flights change</td>
+                  <td>A dedicated relocation manager, emergency contingency planning, and boarding or nanny arrangements when the route needs them. Insurance, if you want it, is quoted separately.</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-sm text-[#5A5A5A] mt-3">
-            <strong>What's different about us:</strong> We tell you exactly who our partners are — the vet clinics, the cargo handlers, the ground transport teams. We don't pretend we own an airline. We just know which ones to trust, and we manage every interaction so you don't have to chase five different phone numbers.
+            The quote names the coordination, and it separates government fees, the clinic, the airline and the van. We do not operate the airline. The people who handle the animal are the specialists booked for that move.
           </p>
           <p className="mt-2 text-sm">
             <Link to="/prices/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
@@ -562,22 +562,20 @@ export default function CostGuidePage() {
         <div className="mb-4">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Total Estimated Cost Range (All-In)</h3>
           <p className="text-sm text-[#5A5A5A] mb-4">
-            Illustrative third-party stacks (government, clinic, freight, crate, handling) plus quoted coordination. Not
-            Dubai Pet Relocation package from-prices. Our coordination stays Get a Quote after eligibility.
+            What changes the quote. These rows are not package prices. Coordination is quoted after we know the pet and the route.
           </p>
           <div className="overflow-x-auto">
             <table className="data-table">
               <thead>
-                <tr><th>Scenario</th><th>Total (AED)</th></tr>
+                <tr><th>Situation</th><th>What changes the quote</th></tr>
               </thead>
               <tbody>
-                <tr><td><strong>Small cat from UK/EU</strong> (low-risk, document-plan scope)</td><td>8,000–11,000</td></tr>
-                <tr><td><strong>Medium dog from UK/EU</strong> (low-risk, managed-move scope)</td><td>12,000–16,000</td></tr>
-                <tr><td><strong>Large dog from USA</strong> (low-risk, managed-move scope)</td><td>15,000–20,000</td></tr>
-                <tr><td><strong>Any pet from high-risk country</strong> (India, Pakistan, Philippines) with titer test</td><td>14,000–22,000</td></tr>
-                <tr><td><strong>Brachycephalic breed with summer rerouting</strong></td><td>18,000–25,000+</td></tr>
-                <tr><td><strong>DIY from UK/EU</strong> (no service fee)</td><td>5,400–8,500</td></tr>
-                <tr><td><strong>DIY from high-risk country</strong></td><td>8,500–14,500</td></tr>
+                <tr><td><strong>UK or EU, small crate</strong></td><td>Quoted after the pet and the airport are known</td></tr>
+                <tr><td><strong>UK or EU, larger crate</strong></td><td>Higher volumetric weight. The airline prices it.</td></tr>
+                <tr><td><strong>USA, long-haul cargo</strong></td><td>Distance and crate size change the airline quote.</td></tr>
+                <tr><td><strong>India, Pakistan, or the Philippines</strong></td><td>Adds the antibody test when MOCCAE requires it.</td></tr>
+                <tr><td><strong>Flat-faced breed in the heat window</strong></td><td>The airline may refuse cargo. A reroute is quoted first.</td></tr>
+                <tr><td><strong>Owner files the permit</strong></td><td>Government, clinic, and airline invoices still apply.</td></tr>
               </tbody>
             </table>
           </div>
@@ -597,13 +595,13 @@ export default function CostGuidePage() {
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">UK to Dubai</h3>
             <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">The easiest route. No quarantine. No titer test required — the UK is low-risk, so there is no RNATT to plan.</p>
             <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
-              <li><strong>Small cat:</strong> AED 8,000–11,000</li>
-              <li><strong>Medium dog:</strong> AED 12,000–16,000</li>
-              <li><strong>Large dog:</strong> AED 15,000–20,000</li>
-              <li><strong>Timeline:</strong> 4–6 weeks from first microchip to reunion</li>
+              <li><strong>Crate size</strong> sets the airline’s volumetric weight.</li>
+              <li><strong>Airport:</strong> London Heathrow or Manchester, only if that desk accepts the crate.</li>
+              <li><strong>Clock:</strong> rabies vaccine at least 21 days old, then the health certificate close to travel.</li>
+              <li><strong>Permit:</strong> 90 days from issuance. The pet must arrive inside that window.</li>
             </ul>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              The UK is a low-risk country, so your pet only needs the microchip, rabies vaccine (≥21 days old), health certificate, and MOCCAE permit. We handle the DEFRA export endorsement and Emirates SkyCargo booking from London Heathrow or Manchester.
+              The UK is treated as low-risk, so the usual file is the microchip, the rabies vaccine, a health certificate endorsed by an official veterinarian, and the MOCCAE permit. The airline confirms the cargo booking. We coordinate the file.
             </p>
             <p className="mt-3 text-sm">
               <Link to="/routes/uk-to-dubai/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
@@ -616,13 +614,13 @@ export default function CostGuidePage() {
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">USA to Dubai</h3>
             <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">Also low-risk. No titer test needed if the rabies vaccine is current.</p>
             <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
-              <li><strong>Small cat:</strong> AED 10,000–14,000</li>
-              <li><strong>Medium dog:</strong> AED 14,000–18,000</li>
-              <li><strong>Large dog:</strong> AED 16,000–22,000</li>
-              <li><strong>Timeline:</strong> 6–8 weeks</li>
+              <li><strong>Distance</strong> from the US airport to Dubai changes the airline quote.</li>
+              <li><strong>Endorsement:</strong> a USDA APHIS health certificate, on top of the clinic visit.</li>
+              <li><strong>Crate size</strong> still sets volumetric weight.</li>
+              <li><strong>Permit:</strong> the same 90-day MOCCAE window.</li>
             </ul>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              From the US, the main cost driver is distance. Cargo from New York, Los Angeles, or Chicago runs higher than from London. We also coordinate the USDA APHIS health certificate endorsement, which adds a step most owners don't know about.
+              The United States is treated as low-risk when the rabies vaccine is current. The extra step owners miss is the government endorsement of the health certificate. The airline prices the crate from the actual departure airport.
             </p>
           </Card>
 
@@ -630,13 +628,13 @@ export default function CostGuidePage() {
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">India to Dubai</h3>
             <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk country. Titer required: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.</p>
             <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
-              <li><strong>Small cat:</strong> AED 12,000–16,000</li>
-              <li><strong>Medium dog:</strong> AED 16,000–20,000</li>
-              <li><strong>Large dog:</strong> AED 18,000–25,000</li>
-              <li><strong>Timeline:</strong> Plan titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given</li>
+              <li><strong>Antibody test</strong> when MOCCAE requires it: at least 0.5 IU/ml.</li>
+              <li><strong>Certificate:</strong> 365 days if the vaccine stays valid and continuous and no booster is given.</li>
+              <li><strong>Export papers</strong> from the Indian authority, close to travel.</li>
+              <li><strong>Clinic invoice</strong> is separate. We do not publish a laboratory tariff.</li>
             </ul>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              The titer test (AED 500–1,200) is required when MOCCAE asks for it: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. The sample must be processed at a WOAH/ISO 17025 accredited lab. We work with vets in Mumbai, Delhi, and Bangalore who understand the UAE export requirements. One wrong document and your pet gets quarantined at your expense.
+              The sample goes to a laboratory the destination accepts. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. Ask the clinic in your city whether it can draw the sample. A mismatched document can hold the pet at the owner’s expense.
             </p>
           </Card>
 
@@ -644,13 +642,13 @@ export default function CostGuidePage() {
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">Australia to Dubai</h3>
             <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">Low-risk but long distance. High cargo costs.</p>
             <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
-              <li><strong>Small cat:</strong> AED 12,000–16,000</li>
-              <li><strong>Medium dog:</strong> AED 16,000–22,000</li>
-              <li><strong>Large dog:</strong> AED 20,000–25,000+</li>
-              <li><strong>Timeline:</strong> 6–8 weeks</li>
+              <li><strong>Export certificate</strong> from the Australian authority.</li>
+              <li><strong>Distance</strong> from Sydney, Melbourne, Brisbane, or Perth.</li>
+              <li><strong>Connection:</strong> only if the airline’s live-animal product uses one.</li>
+              <li><strong>Permit:</strong> the same 90-day MOCCAE window on arrival.</li>
             </ul>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              Australia's strict export health certificate adds complexity. The flight distance drives cargo costs up significantly. Most pets route through Singapore or directly on Emirates from Sydney/Melbourne/Perth.
+              Australia is treated as low-risk for UAE entry, and the export certificate is still a separate Australian step. Confirm whether the itinerary is direct or connects. A direct passenger ticket is not cabin travel by default.
             </p>
           </Card>
         </div>
@@ -659,13 +657,13 @@ export default function CostGuidePage() {
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">Philippines to Dubai</h3>
           <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk. Titer required: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.</p>
           <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
-            <li><strong>Small cat:</strong> AED 12,000–16,000</li>
-            <li><strong>Medium dog:</strong> AED 15,000–20,000</li>
-            <li><strong>Large dog:</strong> AED 18,000–24,000</li>
-            <li><strong>Timeline:</strong> Plan titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given</li>
+            <li><strong>Antibody test</strong> when required: at least 0.5 IU/ml, certificate valid 365 days if the vaccine stays valid and continuous and no booster is given.</li>
+            <li><strong>Philippine export papers</strong> from the Bureau of Animal Industry.</li>
+            <li><strong>UAE permit</strong> valid 90 days from issuance.</li>
+            <li><strong>Crate size</strong> still sets the airline quote.</li>
           </ul>
           <p className="text-sm text-[#5A5A5A] leading-relaxed">
-            The Philippines is a popular origin for Dubai's large Filipino expat community. We coordinate the Bureau of Animal Industry export permit, titer test, and Philippine health certificate — then handle the UAE-side import permit and customs clearance.
+            The Philippines file needs the export step, the antibody test when MOCCAE asks for it, and the health certificate, then the UAE import permit. The quote names who presents that file at the cargo desk.
           </p>
         </Card>
 
@@ -685,7 +683,7 @@ export default function CostGuidePage() {
                 <th>Weight (kg)</th>
                 <th>Typical Breeds</th>
                 <th>Crate Size</th>
-                <th>Total Cost Range (AED)</th>
+                <th>What changes the quote</th>
               </tr>
             </thead>
             <tbody>
@@ -694,28 +692,28 @@ export default function CostGuidePage() {
                 <td>Up to 8kg</td>
                 <td>Chihuahua, Pomeranian, Shih Tzu, Dachshund, most cats</td>
                 <td>Small (up to 40cm)</td>
-                <td>8,000–12,000</td>
+                <td>Smallest crate. The airline still quotes the route.</td>
               </tr>
               <tr>
                 <td><strong>Medium</strong></td>
                 <td>8–20kg</td>
                 <td>Beagle, Corgi, Shiba Inu, French Bulldog, Cocker Spaniel</td>
                 <td>Medium (40–60cm)</td>
-                <td>12,000–16,000</td>
+                <td>Mid-size crate. Volumetric weight rises.</td>
               </tr>
               <tr>
                 <td><strong>Large</strong></td>
                 <td>20–35kg</td>
                 <td>Labrador, Golden Retriever, Border Collie, Boxer</td>
                 <td>Large (60–80cm)</td>
-                <td>15,000–20,000</td>
+                <td>Large crate. Confirm the aircraft can take it.</td>
               </tr>
               <tr>
                 <td><strong>Extra Large</strong></td>
                 <td>35kg+</td>
                 <td>German Shepherd, Great Dane, Rottweiler, Husky</td>
                 <td>XL (80cm+)</td>
-                <td>18,000–25,000+</td>
+                <td>Extra-large crate. Some aircraft cannot take it.</td>
               </tr>
             </tbody>
           </table>
@@ -749,51 +747,51 @@ export default function CostGuidePage() {
             <tbody>
               <tr>
                 <td><strong>Flight rebooking due to summer embargo</strong></td>
-                <td>2,000–5,000</td>
-                <td>Airlines cancel pet cargo May 1 – September 30. Competitors book, then charge you to reroute.</td>
-                <td>We check seasonal restrictions <em>before</em> booking. If a change is needed, we rebook at no extra coordination fee.</td>
+                <td>Quoted if the date changes</td>
+                <td>Many airlines restrict pet cargo from 1 May to 30 September.</td>
+                <td>We check the seasonal rule before a cargo request goes to the airline. A new booking is priced before you agree.</td>
               </tr>
               <tr>
                 <td><strong>Refusal / re-export due to missing documents</strong></td>
-                <td>thousands</td>
-                <td>One wrong microchip number or expired certificate. Missing one document can mean your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands).</td>
-                <td>We check every document three times. We know the current MOCCAE forms. Where an error on our side causes a delay, we&apos;ll make it right — the specifics are set out in your service agreement.</td>
+                <td>Quoted if it happens</td>
+                <td>A mismatched microchip or an expired certificate can mean refusal, holding, or a return journey, at the owner’s expense.</td>
+                <td>We check the documents against the current list before they are submitted. What a delay on our side means is written in the service agreement.</td>
               </tr>
               <tr>
                 <td><strong>Crate rejected at check-in</strong></td>
-                <td>500–1,500 + new crate cost</td>
-                <td>Non-IATA crate, wrong size, missing labels.</td>
-                <td>We provide certified, correctly sized, pre-labeled crates. No surprises at the airport.</td>
+                <td>Quoted if it happens</td>
+                <td>A crate that is the wrong size, the wrong material, or missing labels.</td>
+                <td>The crate is measured on the animal and labelled before travel day.</td>
               </tr>
               <tr>
                 <td><strong>Extended boarding if flight is canceled</strong></td>
-                <td>200–400/day</td>
-                <td>Weather, airline error, missed connections.</td>
-                <td>We include 48 hours of contingency boarding in our PawPartner and PawVIP tiers.</td>
+                <td>Quoted before it is booked</td>
+                <td>Weather, an airline change, or a missed connection.</td>
+                <td>PawVIP includes contingency planning. Boarding is arranged when the route needs it. It is not a fixed number of free days.</td>
               </tr>
               <tr>
                 <td><strong>Document translation</strong></td>
-                <td>200–500</td>
-                <td>Some origin countries require Arabic translation.</td>
-                <td>Included in our PawPartner and PawVIP service fees.</td>
+                <td>Quoted if the file needs it</td>
+                <td>Some authorities ask for a translation.</td>
+                <td>If a translation is required, it is named on the quote. It is not assumed to be inside every tier.</td>
               </tr>
               <tr>
                 <td><strong>Customs "facilitation fee"</strong></td>
-                <td>300–800</td>
-                <td>Unofficial charges at some cargo terminals.</td>
-                <td>We work with accredited agents only. No under-the-table fees. Ever.</td>
+                <td>Not a fee we add</td>
+                <td>A request for an unofficial payment at a terminal.</td>
+                <td>You pay the charges on the government, airline and handler invoices. We do not add a private terminal fee.</td>
               </tr>
               <tr>
                 <td><strong>Destination-side delivery charge</strong></td>
-                <td>500–1,500</td>
-                <td>Some companies quote only to the airport.</td>
-                <td>PawPartner and PawVIP include door-to-door delivery. We tell you exactly what's included.</td>
+                <td>Named on the quote</td>
+                <td>A quote that stops at the airport still needs a vehicle to the building.</td>
+                <td>The quote says whether delivery is to the cargo desk or to the address.</td>
               </tr>
               <tr>
                 <td><strong>Insurance upsell</strong></td>
-                <td>500–2,000</td>
-                <td>Sold at the last minute, often with vague coverage.</td>
-                <td>We explain insurance options upfront in plain language. No jargon. No pressure.</td>
+                <td>Quoted only if you ask</td>
+                <td>Cover for delay, veterinary cost or cancellation.</td>
+                <td>We do not sell a named policy on this page. If you want cover, we say what can be arranged before you agree.</td>
               </tr>
             </tbody>
           </table>
@@ -804,13 +802,13 @@ export default function CostGuidePage() {
             <AlertTriangle className="w-5 h-5 text-[#4F5BD5]" /> The Honest Truth About Quote Inflation
           </h4>
           <p className="text-sm text-[#5A5A5A] leading-relaxed">
-            We've read the reviews. "From changing quotes, to adding extra charges... we are now over £3,000 over the original quote." — a real pet-relocation customer.
+            A quote that leaves out the crate, the airline, or the government fee looks lower than the move.
           </p>
           <p className="text-sm text-[#5A5A5A] leading-relaxed mt-2">
-            That happens when companies give you a lowball estimate to win your business, then add "unforeseen" costs later. The airline fee was higher than expected. The crate was bigger than estimated. The permit took longer.
+            The airline prices the crate. The clinic prices the certificate. MOCCAE prices the permit and the release. Those lines move when the pet, the date, or the route changes.
           </p>
           <p className="text-sm text-[#2A2A2A] leading-relaxed mt-2">
-            At Dubai Pet Relocation, we give you a <strong>range</strong> based on your specific pet, route, and season. If the final cost falls within that range, you pay what we quoted. Where an error on our side causes a delay, we'll make it right — the specifics are set out in your service agreement.
+            The quote you receive names each line before you agree. If something on our side of the file needs to change, the service agreement says what happens next.
           </p>
         </div>
 
@@ -829,7 +827,7 @@ export default function CostGuidePage() {
       <Section className="bg-[#EEF0FC]">
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">DIY vs. Using a Service — The Honest Comparison</h2>
         <p className="text-[#5A5A5A] max-w-3xl mb-10 leading-relaxed">
-          Can you relocate your pet to Dubai without a company? Yes. Should you? Let's look at the numbers and the reality.
+          An owner can file the permit and ask the airline for cargo. The steps below are still separate invoices.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-10">
@@ -838,22 +836,22 @@ export default function CostGuidePage() {
             <div className="overflow-x-auto">
               <table className="data-table min-w-[640px]">
                 <thead>
-                  <tr><th>Step</th><th>What You Do</th><th>Cost (AED)</th><th>Risk</th></tr>
+                  <tr><th>Step</th><th>What you do</th><th>Who invoices it</th><th>What can go wrong</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Find a vet who knows UAE export requirements</td><td>Research, call, verify</td><td>300–600</td><td>Many vets have never done a UAE export. One wrong vaccine date = rejected permit.</td></tr>
-                  <tr><td>Apply for MOCCAE import permit</td><td>Online portal, forms, follow-up</td><td>Verify on portal</td><td>Confirm the current permit fee on the official MOCCAE portal; fees may change. One wrong field = 2-week delay or denial.</td></tr>
-                  <tr><td>Buy IATA crate</td><td>Research, measure, order</td><td>500–2,000</td><td>Non-compliant crate = refused at check-in. No refund on the flight.</td></tr>
-                  <tr><td>Book cargo flight with airline</td><td>Call cargo department, submit documents</td><td>3,000–12,000</td><td>Reservation agents often get pet-specific rules wrong.</td></tr>
-                  <tr><td>Prepare health certificate</td><td>Vet visit + government endorsement</td><td>400–1,500</td><td>Must be within 10 days of travel. Expired = invalid.</td></tr>
-                  <tr><td>Arrange ground transport to/from airports</td><td>Taxi or pet taxi</td><td>200–500</td><td>Most taxis won't take pets.</td></tr>
-                  <tr><td>Clear customs in Dubai</td><td>Go to cargo terminal, queue, paperwork</td><td>500–1,000</td><td>3–6 hours at DXB cargo. Arabic documentation may be required.</td></tr>
-                  <tr><td>Register pet with Dubai Municipality</td><td>Aleef app, vet visit, paperwork</td><td>~60</td><td>Must be done within 30 days. Fines apply for late registration.</td></tr>
+                  <tr><td>Clinic papers</td><td>Book a clinic that will issue the export file</td><td>The clinic</td><td>A vaccine dated before the microchip is not accepted.</td></tr>
+                  <tr><td>MOCCAE import permit</td><td>Apply on the official portal</td><td>AED 200 on the page checked 22 September 2026</td><td>A wrong field can mean a new application. Confirm the payment screen.</td></tr>
+                  <tr><td>Crate</td><td>Measure the animal and buy a crate the airline accepts</td><td>The supplier</td><td>A crate that is the wrong size can be refused on travel day.</td></tr>
+                  <tr><td>Cargo</td><td>Ask the airline for a live-animal booking</td><td>The airline</td><td>A passenger seat is not a cargo booking.</td></tr>
+                  <tr><td>Health certificate</td><td>Clinic visit, then the official endorsement</td><td>The clinic and the endorsing office</td><td>An expired certificate is not accepted.</td></tr>
+                  <tr><td>Road legs</td><td>Book a vehicle that will carry the crate</td><td>The transport company</td><td>A normal taxi may refuse the crate.</td></tr>
+                  <tr><td>Arrival</td><td>Present the file at the cargo terminal</td><td>MOCCAE release: AED 500 for a dog, AED 250 for a cat, on the same check date</td><td>A mismatch can hold the pet. The terminal does not publish a fixed clearance time.</td></tr>
+                  <tr><td>Municipality registration</td><td>Aleef or Dubai Smart Services, within 30 days</td><td>Confirm on that channel</td><td>Late registration is the municipality’s own rule. Confirm any charge there.</td></tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-[#2A2A2A] font-medium mt-4">DIY total: AED 5,400–8,500 (low-risk, experienced) to AED 8,500–14,500 (high-risk, learning as you go)</p>
-            <p className="text-sm text-[#5A5A5A] mt-1">DIY time investment: 20–40 hours of research, phone calls, form filling, and coordination.</p>
+            <p className="text-sm text-[#2A2A2A] font-medium mt-4">There is no published DIY total. Each provider invoices its own step.</p>
+            <p className="text-sm text-[#5A5A5A] mt-1">The owner’s time is the calls, the portal, and the cargo desk.</p>
           </Card>
 
           <Card>
@@ -861,15 +859,14 @@ export default function CostGuidePage() {
             <p className="text-sm font-semibold text-[#2A2A2A] mb-3">What we handle:</p>
             <ul className="space-y-2 text-sm text-[#5A5A5A] mb-6">
               {[
-                'MOCCAE permit application and tracking',
-                'Vet partner coordination (we know which vets understand UAE export rules)',
-                'IATA crate sizing, supply, and labeling',
-                'Cargo flight booking with pet-specific confirmation in writing',
-                'Document triple-check before submission',
-                'Real-time WhatsApp updates at every step',
-                'Customs clearance at DXB/DWC (you don\'t go to the cargo terminal — we do)',
-                'Door-to-door delivery to your new home',
-                'Post-arrival municipality registration guidance',
+                'The order of the MOCCAE permit and the papers it needs',
+                'What the clinic must issue, and which date it must be issued',
+                'Crate measurement against the animal and the airline limit',
+                'The cargo request the airline confirms in writing',
+                'A check of the file against the current list before it is submitted',
+                'Who presents the file at DXB or DWC, named on the quote',
+                'Whether delivery stops at the cargo desk or continues to the address',
+                'What municipality registration still needs after arrival',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -877,21 +874,21 @@ export default function CostGuidePage() {
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-[#2A2A2A] font-medium">Dubai Pet Relocation total: AED 8,000–25,000 depending on route, size, and tier</p>
-            <p className="text-sm text-[#5A5A5A] mt-1">Your time investment: 2–3 hours (initial consultation, a few document uploads, pickup/delivery coordination)</p>
+            <p className="text-sm text-[#2A2A2A] font-medium">Dubai Pet Relocation coordination is quoted for the pet and the route. It is not a published package total.</p>
+            <p className="text-sm text-[#5A5A5A] mt-1">You still send the pet details, the documents the clinic issues, and the collection address.</p>
           </Card>
         </div>
 
         <Card className="bg-[#4F5BD5] text-white border-none">
           <h3 className="text-lg font-bold mb-3">The Honest Verdict</h3>
           <p className="text-sm text-white/90 leading-relaxed mb-3">
-            DIY is possible. If you're detail-oriented, have 20+ free hours, and are comfortable navigating government portals and airline cargo departments, you can save AED 2,000–5,000.
+            An owner can file the permit and book the cargo. The clinic, the airline, and MOCCAE still invoice their own steps.
           </p>
           <p className="text-sm text-white/90 leading-relaxed mb-3">
-            But the error rate is high. The stress is extreme. And the hidden costs of a mistake — quarantine, rebooking, missed flights — often exceed our service fee.
+            A mismatched microchip, an expired certificate, or a crate the airline rejects can hold the pet or send it back, at the owner’s expense.
           </p>
           <p className="text-sm text-white/90 leading-relaxed">
-            We exist because your time and your pet's safety are worth more than the coordination fee. Most of our customers tried DIY first, got overwhelmed, and called us. We don't judge them. We just fix it.
+            Coordination is the order of that file, and the person who presents it. The quote names the scope before you agree.
           </p>
         </Card>
       </Section>
@@ -913,11 +910,10 @@ export default function CostGuidePage() {
             </p>
             <p className="text-sm font-semibold text-[#2A2A2A] mb-2">What this means for your cost:</p>
             <ul className="space-y-2 text-sm text-[#5A5A5A]">
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>If your pet is already booked and the embargo hits, rerouting costs AED 2,000–5,000</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Alternative: Ground transport from nearby countries (GCC) adds AED 1,500–3,000</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Alternative: In-cabin pet nanny (very small pets only) adds AED 5,000–10,000</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Alternative: Private charter (for high-value or urgent moves) adds AED 15,000–50,000+</span></li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Waiting it out: Extended boarding at our partner facility costs AED 200–400/day</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>A booked crate may need a new flight if the airline suspends live animals. The carrier prices that change.</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>A road move inside the GCC is a different product from air cargo. It is quoted on its own.</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>A charter is only discussed when the route and the pet justify it, and only with a figure before you agree.</span></li>
+              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Waiting for a cooler month can mean boarding. That cost is confirmed before it is booked.</span></li>
             </ul>
             <p className="text-sm text-[#5A5A5A] mt-4 leading-relaxed">
               <strong>Brachycephalic breeds (Bulldogs, Pugs, Persian cats):</strong> Many airlines ban these breeds entirely from May through September, regardless of temperature. Some restrict them to October–April only. If you have a snub-nosed pet, plan your move for winter or budget for significant alternatives.
@@ -1039,22 +1035,16 @@ export default function CostGuidePage() {
             question="What's the cheapest way to bring a pet to Dubai?"
             answer={
               <>
-                <p>The absolute cheapest way is DIY from a low-risk country like the UK or EU, with a small pet, during off-peak season, with all documentation already complete. That could cost as little as AED 5,400.</p>
-                <p className="mt-3">But "cheapest" rarely means "best value." The savings of doing it yourself are often wiped out by:</p>
-                <ul className="mt-2 space-y-1 text-sm text-[#5A5A5A]">
-                  <li>One missed document (refusal, confiscation, or re-export at your expense = thousands)</li>
-                  <li>One wrong crate (rebooking = AED 2,000+)</li>
-                  <li>20+ hours of your time (what's your hourly rate?)</li>
-                  <li>The stress of managing five different providers</li>
-                </ul>
-                <p className="mt-3">For most pet owners, our <strong>PawPilot tier</strong> (Get a Quote) covers the documentation and flight booking — eliminating the biggest error risks while keeping coordination scoped to the file.</p>
+                <p>An owner can file a low-risk move when the microchip, rabies vaccine, health certificate, and permit are already in order. The clinic, the airline, and MOCCAE still invoice their own steps.</p>
+                <p className="mt-3">A missed document or a rejected crate can hold the pet or force a new booking. The cost of that delay is whatever the kennel and the airline charge.</p>
+                <p className="mt-3"><strong>PawPilot</strong> is document guidance. It is quoted after we know the pet and the route. It is not a published package, and it does not book the flight by itself.</p>
               </>
             }
           />
           <FAQItem
             question="Do you offer payment plans?"
             answer={
-              <p>Yes. We accept payment via credit card, bank transfer, and Tabby (buy now, pay later). For moves over AED 10,000, we can split payment into two installments: 50% deposit to lock your booking and start permits, 50% due 7 days before travel. We also offer a <strong>price match guarantee</strong>: show us a comparable quote from a licensed competitor, and we'll match or beat it — while including the hidden fees they probably left out.</p>
+              <p>How you pay, and whether a move can be split, is written on the quote before you agree. This page does not publish a deposit percentage, a minimum amount, or a price-match promise.</p>
             }
           />
         </div>

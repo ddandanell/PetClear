@@ -19,15 +19,15 @@ export default function AbuDhabiCity() {
     },
     {
       question: 'How is Abu Dhabi different from Dubai for pet relocation?',
-      answer: 'Abu Dhabi and Dubai have different municipalities, registration systems, and airport procedures. Abu Dhabi uses the Abu Dhabi City Municipality (ADCM) for pet registration, while Dubai uses Dubai Municipality. Abu Dhabi arrivals go through AUH (Zayed International Airport) and use MICCO Logistics for Bill of Entry customs clearance, whereas Dubai uses DXB and dnata/Dubai Cargo Village. Etihad Airways, based in Abu Dhabi, offers in-cabin pet travel — Emirates (based in Dubai) does not. Costs differ slightly: Abu Dhabi municipality registration fees may vary, and transport from AUH to Dubai costs approximately AED 200–400 if your final destination is Dubai.'
+      answer: 'Abu Dhabi and Dubai use different municipalities, registration systems, and airports. Abu Dhabi registration runs through the Abu Dhabi City Municipality. Arrivals use Zayed International (AUH). Dubai arrivals use DXB or DWC. Etihad publishes a cabin product into Abu Dhabi for a small pet. Confirm the live weight limit and fee before anyone books a seat. A drive from AUH to a Dubai address is a separate local-transport quote.'
     },
     {
       question: 'How much does pet relocation to Abu Dhabi cost?',
-      answer: 'Pet relocation to Abu Dhabi costs roughly AED 6,000–22,000 depending on origin, pet size, and whether you use in-cabin or cargo transport. The total includes veterinary prep, documentation, air freight, customs clearance (via MICCO Logistics at AUH), Abu Dhabi Municipality registration (AED 100–250), and ground transport. In-cabin travel on Etihad is significantly cheaper than cargo for small pets (under 8kg). For large dogs, cargo rates are similar to Dubai. Dubai Pet Relocation provides a detailed, itemised Abu Dhabi quote before you commit.'
+      answer: 'There is no published Abu Dhabi package total. The quote separates the clinic, the airline, customs handling at AUH, municipality registration, and the drive. Confirm the registration fee on TAMM. Etihad cabin eligibility is a carrier rule for a small pet, not a cheaper Dubai Pet Relocation product. We send an itemised quote before you agree.'
     },
     {
       question: 'How do I register my pet with Abu Dhabi Municipality?',
-      answer: 'Pet registration in Abu Dhabi is managed by the Abu Dhabi City Municipality (ADCM). You must register your pet within 30 days of arrival via the TAMM portal or at an ADCM service centre. Required documents include your Emirates ID or passport, a tenancy contract (proof of residence in Abu Dhabi), your pet\'s vaccination records (rabies certificate), and a microchip certificate. The registration fee is approximately AED 100–250 per pet. Annual renewal is required. Some areas of Abu Dhabi may have additional rules for dogs in public spaces. Dubai Pet Relocation assists with the entire ADCM registration process as part of our arrival service.'
+      answer: 'Pet registration in Abu Dhabi is managed by the Abu Dhabi City Municipality. Register within 30 days of arrival via the TAMM portal or an ADCM service centre. Owners commonly need identification, proof of an Abu Dhabi address, rabies records, and the microchip certificate. Confirm the current fee on TAMM. Annual renewal is required. Registration help can be part of an arrival booking. It is named on the quote.'
     },
     {
       question: 'Which pet-friendly areas in Abu Dhabi are best for dogs and cats?',
@@ -35,7 +35,7 @@ export default function AbuDhabiCity() {
     },
     {
       question: 'What is the MICCO Logistics Bill of Entry for Abu Dhabi?',
-      answer: 'MICCO Logistics (formerly known as Abu Dhabi Airports Cargo) handles customs clearance and the Bill of Entry for all pets arriving at Zayed International Airport (AUH). The Bill of Entry is a customs declaration that must be filed before your pet can be released. It requires the import permit, health certificate, airway bill, and owner identification. Dubai Pet Relocation works directly with MICCO to pre-file the Bill of Entry, ensuring your pet is cleared within 2–4 hours of landing. This process is different from Dubai, where dnata handles ground services at DXB.'
+      answer: 'Cargo arriving at Zayed International (AUH) needs a Bill of Entry before release. The file uses the import permit, health certificate, air waybill, and owner identification. Confirm the current handler and form names on the airport cargo channel. A matching file is examined and released. The terminal does not publish a fixed clearance time. Dubai uses a different cargo desk at DXB or DWC.'
     },
     {
       question: 'Which airlines fly pets to Abu Dhabi?',
@@ -43,7 +43,7 @@ export default function AbuDhabiCity() {
     },
     {
       question: 'Is there quarantine for pets arriving in Abu Dhabi?',
-      answer: 'No — if all documentation is correct, there is no quarantine for pets arriving in Abu Dhabi (or anywhere in the UAE). The same rules apply as Dubai: low-risk countries require a valid rabies vaccination and health certificate; high-risk countries require an additional rabies titer test (RNATT). As long as the microchip, vaccines, import permit, and health certificate are in order, your pet is cleared within 2–4 hours of arrival at AUH. Dubai Pet Relocation provides meet-and-greet service at Abu Dhabi airport and handles customs formalities with MICCO Logistics.'
+      answer: 'A complete file is examined and released. The UAE does not run a routine quarantine for that file, in Abu Dhabi or in Dubai. A high-risk origin also needs a result of at least 0.5 IU/ml, with a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. The terminal does not publish a fixed clearance time. The quote says who presents the file at AUH.'
     }
   ]
 
@@ -431,58 +431,58 @@ export default function AbuDhabiCity() {
                 <tbody className="divide-y divide-[#EBEBEB]">
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Municipality Registration</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 100–250</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 100–200</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">ADCM vs Dubai Municipality. Slightly higher in Abu Dhabi.</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Confirm on TAMM</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Confirm on Aleef</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Different municipality. The fee is the one on the payment screen.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Customs Clearance</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–1,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–1,500</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">MICCO (AUH) vs dnata (DXB). Similar pricing.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Government release</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">MOCCAE invoice</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">MOCCAE invoice</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">On 22 September 2026: AED 500 to release a dog, AED 250 to release a cat. Confirm the screen.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Airport to City Transport</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 100–400</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 100–400</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Depends on area. AUH to Yas Island is closer than DXB to some Dubai areas.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Airport to address</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Priced from the cargo desk to the building.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">In-Cabin Pet Ticket (Etihad)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 700–1,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">N/A (cargo only)</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Major Abu Dhabi advantage for small pets.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Etihad cabin product</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Airline fee</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Not this airport</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Confirm the live cabin fee with Etihad. A seat into Abu Dhabi is not a Dubai arrival.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Cargo Freight (same route)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 4,000–12,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 4,000–12,000</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Similar pricing for cargo. Etihad vs Emirates rates are comparable.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Cargo</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Airline quote</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Airline quote</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">The carrier prices the crate for that date. We do not publish a freight band.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Veterinary Health Check</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 300–800</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 300–800</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Similar across both cities. Abu Dhabi Falcon Hospital may be premium.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Clinic</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Clinic invoice</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Clinic invoice</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Ask the clinic. We do not publish a veterinary tariff.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Inter-Emirate Transport (AUH ↔ DXB)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200–500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200–500</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">If your final destination is the other emirate. Climate-controlled vehicle.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Between Abu Dhabi and Dubai</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">A different journey from the airport collection. Send both addresses.</td>
                   </tr>
                   <tr className="bg-[#4F5BD5]/5">
-                    <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total Estimate (Single Pet)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 6,000–22,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 6,000–20,000</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Abu Dhabi may be slightly higher due to ADCM fees, but in-cabin savings offset this for small pets.</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Door-to-door total</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">On the quote</td>
+                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">On the quote</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">There is no published package that covers both emirates.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Coordination and freight figures above are estimates, not a DPR quote. Municipality registration, customs/Bill of Entry and AUH release amounts are confirm-on-portal / verify-on-portal — do not treat the AED bands in this table as first-party ADCM or MICCO tariffs. Etihad cabin: confirm the live fee at booking (2026 USD 399 Economy promo expired). In-cabin travel is only available for pets under 8kg (including carrier) on Etihad-operated flights. Contact Dubai Pet Relocation for a detailed, itemised quote.
+                The only government amounts in this table are the MOCCAE release fees checked on 22 September 2026. Confirm Etihad’s live cabin rule before anyone books a seat. Ask for an itemised quote.
               </p>
             </div>
           </div>

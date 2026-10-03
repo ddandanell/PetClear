@@ -30,7 +30,7 @@ export default function AustraliaToDubai() {
     },
     {
       question: 'How long does the Australia to Dubai pet relocation process take?',
-      answer: 'The minimum timeline is 4 to 6 weeks: Week 1 — microchip and rabies vaccination (21-day wait begins; note: Australia is rabies-free, so this is for UAE import purposes); Week 2 — apply for AQIS export permit and book DAFF inspection; Week 3 — apply for UAE import permit; Week 4 — AQIS pre-export inspection and health certificate; Week 5 — final veterinary check and document review; Week 6 — book cargo flight and depart. Some Australian states have additional internal requirements that may add 1–2 weeks.'
+      answer: 'Australia is rabies-free, so the rabies vaccine is for UAE entry. A first vaccine needs at least 21 days before travel. The Australian export certificate and inspection are a separate step from the MOCCAE import permit, which is valid for 90 days from issuance. The health certificate is issued close to travel. There is no single week-count that fits every state and every pet.'
     },
     {
       question: 'How much does it cost to relocate a pet from Australia to Dubai?',
@@ -46,7 +46,7 @@ export default function AustraliaToDubai() {
     },
     {
       question: 'What happens when my pet arrives in Dubai from Australia?',
-      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and AQIS health certificate, and conducts a brief physical examination. Because Australia is a low-risk country, clearance is typically smooth and takes 2–3 hours. Dubai Pet Relocation provides meet-and-greet service, handles all customs formalities, and delivers your pet to your home or a Dubai boarding facility. The Australian origin often means the inspection is quicker than for high-risk countries.'
+      answer: 'Upon arrival at DXB, your pet is transferred to the Dubai Municipality Animal Care Centre for veterinary inspection. The MOCCAE vet scans the microchip, verifies the rabies vaccination and AQIS health certificate, and conducts a brief physical examination. Because Australia is a low-risk country, a matching file is examined and released. The terminal does not publish a fixed clearance time. The quote says who meets the crate and whether delivery continues to the address. The Australian origin often means the inspection is quicker than for high-risk countries.'
     }
   ]
 
@@ -131,8 +131,8 @@ export default function AustraliaToDubai() {
                 <Clock className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Timeline</p>
-              <p className="text-[#5A5A5A] text-sm">4–6 weeks</p>
-              <p className="text-[#5A5A5A] text-xs mt-2">Includes AQIS processing</p>
+              <p className="text-[#5A5A5A] text-sm">21 days after a first vaccine</p>
+              <p className="text-[#5A5A5A] text-xs mt-2">Then the export certificate and the 90-day permit</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -278,7 +278,7 @@ export default function AustraliaToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Australia to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              The Australian export process adds 1–2 weeks to the standard timeline, but the absence of a titer test keeps the overall process to 4–6 weeks.
+              Australia is treated as low-risk, so the usual inbound file does not include an antibody test. The export certificate is still an Australian step. A first rabies vaccine needs at least 21 days before travel, and the MOCCAE permit is valid for 90 days from issuance.
             </p>
           </div>
 
@@ -364,7 +364,7 @@ export default function AustraliaToDubai() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Dedicated animal handling at all Australian ports</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Seamless transfer through Dubai hub</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Emirates is the most popular choice for Australian pet relocations, offering the most direct routing and seamless connections through their Dubai hub. Their SkyCargo Live team handles all documentation at both ends.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Confirm the current Emirates, Qantas or other live-animal product for this city pair before you book. A passenger ticket is not cargo acceptance, and a carrier name here is not a partnership.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">

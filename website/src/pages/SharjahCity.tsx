@@ -170,9 +170,8 @@ export default function SharjahCity() {
             and a last mile that often crosses the Dubai–Sharjah seam after a Dubai cargo release.
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            What this URL is not: a Dubai community listing, an Abu Dhabi Etihad-cabin page, a quarantine deep-dive, or
-            a taxi SERP. Those intents already have owners. Use this page when the sofa, the municipality clock or the
-            pickup pin is in Sharjah.
+            Use this page when the home, the municipality step, or the collection address is in Sharjah. Dubai communities,
+            Abu Dhabi cabin rules, quarantine, and a simple van booking each have their own page.
           </p>
           <LastVerified
             date="14 September 2026"
@@ -239,11 +238,10 @@ export default function SharjahCity() {
           <div className="mb-12 text-center">
             <span className="text-sm font-semibold uppercase tracking-wide text-[#4F5BD5]">Sharjah vs Dubai</span>
             <h2 className="mt-2 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px] lg:text-[36px]">
-              Why a dedicated emirate page exists
+              What is different in Sharjah
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-[#5A5A5A]">
-              Federal import is shared. Municipality, cargo habits and the last-mile address are not. That is the
-              whole reason this URL is not a paragraph on the Abu Dhabi page.
+              The federal import rules are the same. The municipality, the airport habits and the drive from the cargo desk are not. Sharjah is not planned as a note on the Abu Dhabi page.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
