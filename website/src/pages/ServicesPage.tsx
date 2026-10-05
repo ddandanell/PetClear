@@ -14,7 +14,8 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import ContentImage from '../components/ContentImage.tsx'
 import { SERVICE_LINKS } from '../data/nav.ts'
 import { cardImageFor } from '../data/cardImages.ts'
-import { CTA_CHECK_ELIGIBILITY, CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { CTA_ELIGIBILITY_MOVE, CTA_MANAGED_QUOTE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import PaidIncludes from '../components/PaidIncludes.tsx'
 import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 const WhatsAppCta = ({
@@ -264,9 +265,10 @@ export default function ServicesPage() {
         title="Compare our pet relocation services"
         subtitle="Choose how much of the move we coordinate, then open the page for inbound, outbound, door-to-door or pet taxi. What each tier includes is on the prices page. A proposal follows once we know the pet and the route."
         updated="Updated September 2026"
-        primaryLabel={CTA_CHECK_MOVE}
+        primaryLabel={CTA_ELIGIBILITY_MOVE}
         whatsappMessage={WA_ELIGIBILITY_DEFAULT}
         secondary={{ label: 'Prices and packages', to: '/prices/' }}
+        showBuyerQualify
       />
 
       <section className="section-padding bg-white">
@@ -280,9 +282,13 @@ export default function ServicesPage() {
             <Link to="/prices/" className="font-semibold text-[#4F5BD5] hover:underline">
               prices
             </Link>
-            . This page compares the tiers. Door-to-door coordination for pet relocation in Dubai is{' '}
+            . This page compares the tiers. The overview for{' '}
+            <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation Dubai
+            </Link>{' '}
+            is the homepage. Door-to-door scope sits on{' '}
             <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              our Dubai pet relocation service
+              pet relocation services
             </Link>
             . Inbound arrivals use{' '}
             <Link to="/service/pet-relocation-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
@@ -299,11 +305,11 @@ export default function ServicesPage() {
             .
           </p>
           <p className="text-body">
-            Start from the{' '}
+            If the direction is still unclear, open a service page before WhatsApp. Start from{' '}
             <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
-              homepage overview
+              pet relocation Dubai
             </Link>{' '}
-            if you are still choosing a direction, or from the{' '}
+            on the homepage, or from the{' '}
             <Link to="/routes/" className="font-semibold text-[#4F5BD5] hover:underline">
               routes hub
             </Link>{' '}
@@ -343,8 +349,8 @@ export default function ServicesPage() {
                   ))}
                 </ul>
                 <WhatsAppCta
-                  text={CTA_CHECK_MOVE}
-                  message={`I would like a quote for a pet move with Dubai Pet Relocation for the ${tier.name} tier (${tier.subtitle}). Please share name, pet, origin, destination, and target date in English.`}
+                  text={CTA_MANAGED_QUOTE}
+                  message={`I would like a managed-move quote with Dubai Pet Relocation for the ${tier.name} tier (${tier.subtitle}). Please share name, pet, origin, destination, and target date in English.`}
                   fullWidth
                   className="!py-3"
                 />
@@ -492,17 +498,26 @@ export default function ServicesPage() {
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Not sure which tier fits?</h2>
-          <p className="mb-8 text-base leading-relaxed text-white/80">
-            Tell us the pet, the route and the month. We recommend a tier and prepare a proposal for that scope. We reply during published hours.
+          <p className="mb-6 text-base leading-relaxed text-white/80">
+            If you are not sure which tier fits, open the door-to-door service first. WhatsApp is for a managed-move quote once the pet, route and month are ready.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <PaidIncludes tone="dark" compact className="mx-auto mb-8 max-w-2xl text-left" />
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
+            <Link
+              to="/service/pet-relocation-dubai/"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] shadow-sm hover:bg-white/90 sm:w-auto"
+            >
+              Pet relocation services
+            </Link>
             <WhatsAppCta
-              text={CTA_CHECK_MOVE}
+              text={CTA_MANAGED_QUOTE}
               message={WA_ELIGIBILITY_DEFAULT}
+              className="w-full justify-center sm:w-auto"
             />
             <WhatsAppCta
-              text={CTA_CHECK_ELIGIBILITY}
+              text={CTA_ELIGIBILITY_MOVE}
               message={WA_ELIGIBILITY_DEFAULT}
+              className="w-full justify-center sm:w-auto"
             />
           </div>
         </div>

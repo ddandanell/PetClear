@@ -318,7 +318,8 @@ const moccaePetPermit: ServicePageData = {
  { label: 'UAE Pet Import Requirements', to: '/guides/uae-pet-import-requirements/' },
  { label: 'Rabies Titer Test Dubai', to: '/guides/rabies-titer-test-dubai/' },
  { label: 'Pet Export from Dubai', to: '/service/pet-export-dubai/' },
- { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
+ { label: 'pet relocation Dubai', to: '/' },
+ { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
  { label: 'How It Works', to: '/how-it-works/' },
  ],
 }

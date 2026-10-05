@@ -84,7 +84,7 @@ const sharedPetCharter: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Country corridors still start on the route page — for example [UK to Dubai](/routes/uk-to-dubai/) or [USA to Dubai](/routes/usa-to-dubai/) — then come back here only if scheduled cargo will not accept the animal. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/). Door-to-door coordination sits on [pet relocation Dubai](/service/pet-relocation-dubai/). Coordination is quoted after eligibility on [Prices](/prices/) — we do not assume a DPR charter AED.',
+          text: 'Country corridors still start on the route page — for example [UK to Dubai](/routes/uk-to-dubai/) or [USA to Dubai](/routes/usa-to-dubai/) — then come back here only if scheduled cargo will not accept the animal. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/). Door-to-door coordination sits on [pet relocation Dubai](/). Coordination is quoted after eligibility on [Prices](/prices/) — we do not assume a DPR charter AED.',
         },
       ],
     },
@@ -104,7 +104,7 @@ const sharedPetCharter: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Who it is for: owners who already know cargo is blocked or fragile, and who want a shared lift rather than buying a whole [private jet](/service/private-jet-pet-travel/). Who it is not for: a first search for [pet relocation Dubai](/service/pet-relocation-dubai/) or a DIY cargo file — start on the [pet flight options hub](/guides/pet-flight-options-dubai/) and the cargo guide. Documents and the 90-day MOCCAE import permit still apply.',
+          text: 'Who it is for: owners who already know cargo is blocked or fragile, and who want a shared lift rather than buying a whole [private jet](/service/private-jet-pet-travel/). Who it is not for: a first search for [pet relocation Dubai](/) or a DIY cargo file — start on the [pet flight options hub](/guides/pet-flight-options-dubai/) and the cargo guide. Documents and the 90-day MOCCAE import permit still apply.',
         },
         {
           type: 'p',
@@ -281,7 +281,7 @@ const sharedPetCharter: ServicePageData = {
     },
     {
       q: 'Who is a shared pet charter for?',
-      a: 'Owners who already know scheduled cargo is blocked or fragile, and who do not want to buy a whole private jet. It is not the first page for a standard inbound file — start on [pet relocation Dubai](/service/pet-relocation-dubai/) or the [pet flight options hub](/guides/pet-flight-options-dubai/). Empty-leg seats exist only when an operator is already moving the aircraft. Documents and the 90-day MOCCAE import permit still apply.',
+      a: 'Owners who already know scheduled cargo is blocked or fragile, and who do not want to buy a whole private jet. It is not the first page for a standard inbound file — start on [pet relocation Dubai](/) or the [pet flight options hub](/guides/pet-flight-options-dubai/). Empty-leg seats exist only when an operator is already moving the aircraft. Documents and the 90-day MOCCAE import permit still apply.',
     },
     {
       q: 'How do I check shared-charter eligibility?',

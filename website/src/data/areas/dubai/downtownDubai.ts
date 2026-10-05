@@ -133,7 +133,7 @@ const downtownDubai: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Outbound from a Downtown tower is planned destination-backwards: destination entry rules first, then the UAE export health certificate and airline acceptance. Do not paste inbound permit language onto an export. Commercial outbound is [pet export from Dubai](/service/pet-export-dubai/). Door-to-door is [pet relocation Dubai](/service/pet-relocation-dubai/). Confirm export-certificate fees and validity on the official MOCCAE portal — secondary blog numerals are not first-party official fees.',
+          text: 'Outbound from a Downtown tower is planned destination-backwards: destination entry rules first, then the UAE export health certificate and airline acceptance. Do not paste inbound permit language onto an export. Commercial outbound is [pet export from Dubai](/service/pet-export-dubai/). Door-to-door is [pet relocation Dubai](/). Confirm export-certificate fees and validity on the official MOCCAE portal — secondary blog numerals are not first-party official fees.',
         },
         {
           type: 'p',

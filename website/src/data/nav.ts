@@ -7,8 +7,8 @@ export interface NavLink {
 
 // Core service pages — every landing page links to these.
 export const SERVICE_LINKS: NavLink[] = [
-  { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
-  { label: 'Pet Import to Dubai', to: '/service/pet-import-dubai/' },
+  { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
+  { label: 'pet import Dubai', to: '/service/pet-import-dubai/' },
   { label: 'Pet Export from Dubai', to: '/service/pet-export-dubai/' },
   { label: 'Pet Transport Dubai', to: '/service/pet-transport-dubai/' },
   { label: 'International Pet Relocation', to: '/service/international-pet-relocation/' },

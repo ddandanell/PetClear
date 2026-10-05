@@ -250,7 +250,7 @@ export default function CostGuidePage() {
           How much it costs to relocate a pet in Dubai depends on six types, not a single airline ticket. Government and
           veterinary amounts are paid to the portal or clinic. Freight and crate follow the animal&apos;s size. Handling is
           the airport side. Coordination — the Dubai Pet Relocation package — is Get a Quote on{' '}
-          <Link to="/service/pet-relocation-dubai/" className="text-[#4F5BD5] font-medium hover:underline">
+          <Link to="/" className="text-[#4F5BD5] font-medium hover:underline">
             pet relocation Dubai
           </Link>
           , inbound{' '}

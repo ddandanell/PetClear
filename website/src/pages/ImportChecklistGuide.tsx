@@ -257,7 +257,7 @@ export default function ImportChecklistGuide() {
                   pet import services in Dubai
                 </Link>{' '}
                 or door-to-door{' '}
-                <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
                   pet relocation Dubai
                 </Link>
                 . Commercial permit filing sits on{' '}
@@ -568,15 +568,15 @@ export default function ImportChecklistGuide() {
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">
                 <Plane className="w-5 h-5 text-[#C89F5A]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">Pet Import to Dubai Service</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">pet import Dubai</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Our full import service: permit, documents, crate, cargo, and arrival clearance.</p>
             </Link>
-            <Link to="/service/pet-relocation-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+            <Link to="/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
                 <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Pet Relocation Dubai</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Door-to-door coordination when the checklist is only the first half of the job.</p>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">pet relocation Dubai</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Homepage overview when the checklist is only the first half of the job.</p>
             </Link>
             <Link to="/service/moccae-pet-permit/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">

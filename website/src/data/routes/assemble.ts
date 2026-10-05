@@ -164,7 +164,8 @@ function relatedLinks(copy: RouteUniqueCopy, direction: 'inbound' | 'outbound'):
     links.push({ label: 'Pet flight options from Dubai', href: '/guides/pet-flight-options-dubai/' })
   }
   links.push({ label: 'IATA crate requirements', href: '/guides/iata-pet-crate-requirements/' })
-  links.push({ label: 'Pet relocation Dubai', href: '/service/pet-relocation-dubai/' })
+  links.push({ label: 'pet relocation Dubai', href: '/' })
+  links.push({ label: 'Pet relocation services', href: '/service/pet-relocation-dubai/' })
   if (copy.countryKey === 'qatar') {
     links.push({ label: 'Etihad pet policy (UAE cabin exception)', href: '/guides/etihad-pet-policy/' })
     links.push({ label: 'Emirates pet cargo', href: '/guides/emirates-pet-cargo/' })
