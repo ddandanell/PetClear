@@ -59,7 +59,7 @@ const FAQS = [
   },
   {
     q: 'Where do I go after I pick a package?',
-    a: 'Document plan and door-to-door sit on [pet relocation Dubai](/service/pet-relocation-dubai/). Inbound clearance sits on [pet import to Dubai](/service/pet-import-dubai/). Outbound sits on [pet export from Dubai](/service/pet-export-dubai/). This page covers how we price the work, not the job pages.',
+    a: 'Document plan and door-to-door sit on [pet relocation Dubai](/). Inbound clearance sits on [pet import to Dubai](/service/pet-import-dubai/). Outbound sits on [pet export from Dubai](/service/pet-export-dubai/). This page covers how we price the work, not the job pages.',
   },
 ]
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Dog, FileText, MessageCircle, Package, Plane, type LucideIcon } from 'lucide-react'
 import { getWhatsAppUrl, PHONE_DISPLAY } from '../lib/seo.ts'
-import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { CTA_ELIGIBILITY_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import GuideBridge from './GuideBridge.tsx'
 import PaidIncludes from './PaidIncludes.tsx'
 import WhatsAppGate from './WhatsAppGate.tsx'
@@ -33,8 +33,9 @@ interface GuideFunnelCtaProps {
 const DEFAULT_ELIGIBILITY = WA_ELIGIBILITY_DEFAULT
 
 const DEFAULT_LINKS: FunnelLink[] = [
-  { to: '/service/pet-relocation-dubai/', label: 'Pet relocation Dubai', icon: 'package' },
-  { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },
+  { to: '/', label: 'pet relocation Dubai', icon: 'package' },
+  { to: '/service/pet-import-dubai/', label: 'pet import Dubai', icon: 'plane' },
+  { to: '/service/pet-relocation-dubai/', label: 'Pet relocation services', icon: 'package' },
 ]
 
 const ICONS: Record<FunnelIcon, LucideIcon> = {
@@ -53,7 +54,7 @@ export default function GuideFunnelCta({
   title,
   subtitle,
   eligibilityMessage = DEFAULT_ELIGIBILITY,
-  waLabel = CTA_CHECK_MOVE,
+  waLabel = CTA_ELIGIBILITY_MOVE,
   links = DEFAULT_LINKS,
 }: GuideFunnelCtaProps) {
   const isEnd = variant === 'end'
@@ -61,7 +62,7 @@ export default function GuideFunnelCta({
     title ||
     (isEnd
       ? 'Ready to book a managed move?'
-      : CTA_CHECK_MOVE)
+      : CTA_ELIGIBILITY_MOVE)
   const extra = subtitle
 
   const shell = isEnd

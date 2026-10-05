@@ -501,7 +501,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
               </Link>
             </li>
             <li>
-              <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
                 pet relocation Dubai
               </Link>{' '}
               — door-to-door if the breed is accepted

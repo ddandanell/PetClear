@@ -202,7 +202,8 @@ const dogRelocationDubai: ServicePageData = {
     },
   ],
   relatedLinks: [
-    { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
+    { label: 'pet relocation Dubai', to: '/' },
+    { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet Import to Dubai', to: '/service/pet-import-dubai/' },
     { label: 'Banned Dog Breeds in Dubai', to: '/guides/banned-dog-breeds-dubai/' },
     { label: 'IATA Pet Crate Requirements', to: '/guides/iata-pet-crate-requirements/' },

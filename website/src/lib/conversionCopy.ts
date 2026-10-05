@@ -2,6 +2,11 @@
 
 /** Primary enquiry action. Requests move details for a proposal. Not a free consult. */
 export const CTA_CHECK_MOVE = 'Tell us about your move'
+/** Touched-page primary: eligibility, not a free consult. */
+export const CTA_ELIGIBILITY_MOVE = 'Check if we can move your pet'
+/** Guide pages: reading is free; WhatsApp is for a booked move. */
+export const GUIDE_SOFT_GATE =
+  'Guides are free to read. WhatsApp is for people ready to book a managed relocation.'
 export const CTA_SUPPORT =
   'Share your departure city, destination, pet details and preferred travel date so we can understand your requirements.'
 export const CTA_CHECK_ELIGIBILITY = 'Check eligibility'

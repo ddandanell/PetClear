@@ -15,7 +15,7 @@ import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { TOP_COMMUNITY_LINKS } from '../data/areas/dubai/topCommunities.ts'
 import PaidIncludes from '../components/PaidIncludes.tsx'
-import { CTA_CHECK_MOVE, CTA_SUPPORT, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { CTA_ELIGIBILITY_MOVE, CTA_SUPPORT, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import { openingHoursSpecification } from '../lib/openingHours.ts'
 
 const defaultMsg = WA_ELIGIBILITY_DEFAULT
@@ -207,7 +207,7 @@ export default function HomePage() {
         eyebrow="Pet relocation coordination for Dubai and the UAE"
         title="Pet relocation Dubai — door-to-door, to and from the UAE"
         subtitle="Moving with a dog or cat? We coordinate the documents, the flight and the handover. Import, export and local transport are three different jobs."
-        primaryLabel={CTA_CHECK_MOVE}
+        primaryLabel={CTA_ELIGIBILITY_MOVE}
         ctaSupport={CTA_SUPPORT}
         whatsappMessage={WA_ELIGIBILITY_DEFAULT}
         secondary={{ label: 'Compare relocation services', to: '/services/' }}
@@ -219,7 +219,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-[760px] px-5 py-8 sm:px-6">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#4F5BD5]">Quick answer</p>
           <p className="mt-3 text-[17px] leading-relaxed text-[#2A2A2A]">
-            Pet relocation in Dubai means a MOCCAE permit valid 90 days from issuance, a microchip before the rabies vaccine, an IATA crate, and a cargo booking. We coordinate the documents, the flight and the home handover. A low-risk origin can move in weeks. A high-risk origin adds a rabies antibody test of at least 0.5 IU/ml.
+            Pet relocation Dubai means a MOCCAE permit valid 90 days from issuance, a microchip before the rabies vaccine, an IATA crate, and a cargo booking. We coordinate the documents, the flight and the home handover. A low-risk origin can move in weeks. A high-risk origin adds a rabies antibody test of at least 0.5 IU/ml.
           </p>
         </div>
       </section>
@@ -699,27 +699,27 @@ export default function HomePage() {
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[32px]">Ready to book a managed move?</h2>
           <p className="mb-3 text-white/90">
-            Share your origin, destination, pet details and preferred dates. We will explain the next steps and any assessment fee before you proceed.
+            Check if we can move your pet. Send the pet, the route and the month. We reply with whether the move is eligible and what a managed-move quote includes.
           </p>
           <p className="mb-3 text-sm text-white/70">
-            After you message us, we read the breed and the route, say which documents matter first, and tell you whether the month looks realistic.
+            After you message us, we read the breed and the route, name the documents that come first, and say whether the month looks realistic.
           </p>
           <p className="mb-8 text-sm text-white/70">
             Import timing is kept on the permit and titer guides, so this page does not restate a rule that can change.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <WhatsAppCta text="Tell us about your move" message={WA_ELIGIBILITY_DEFAULT} />
+            <WhatsAppCta text={CTA_ELIGIBILITY_MOVE} message={WA_ELIGIBILITY_DEFAULT} className="w-full justify-center sm:w-auto" />
             <Link
               to="/service/pet-relocation-dubai/"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] shadow-sm hover:bg-white/90"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] shadow-sm hover:bg-white/90 sm:w-auto"
             >
-              Pet relocation Dubai
+              Pet relocation services
             </Link>
             <Link
               to="/service/pet-import-dubai/"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-7 py-4 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/20"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white/10 px-7 py-4 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/20 sm:w-auto"
             >
-              Pet import to Dubai
+              pet import Dubai
             </Link>
             <Link
               to="/service/pet-export-dubai/"

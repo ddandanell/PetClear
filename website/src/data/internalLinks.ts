@@ -103,7 +103,7 @@ export const PAGE_LINK_POLICIES: PageLinkPolicy[] = [
   {
     path: /^\/dubai\/[^/]+\/$/,
     cluster: 'dubai-area',
-    relatedCap: 7,
+    relatedCap: 8,
     bodyCap: 4,
     requireMoneySink: true,
   },
@@ -219,8 +219,16 @@ export const LINK_EDGES: LinkEdge[] = [
   ),
   edge(
     /^\/routes\/(?!dubai-to-).+-to-dubai\/$/,
-    '/service/pet-relocation-dubai/',
+    '/',
     'pet relocation Dubai',
+    'money',
+    'body',
+    2,
+  ),
+  edge(
+    /^\/routes\/(?!dubai-to-).+-to-dubai\/$/,
+    '/service/pet-relocation-dubai/',
+    'pet relocation services',
     'money',
     'body',
     2,
@@ -241,30 +249,30 @@ export const LINK_EDGES: LinkEdge[] = [
   edge('/guides/uae-pet-import-requirements/', '/prices/', 'quoted packages on Prices', 'cost', 'body', 2),
 
   // —— Related rails for hot guides / species / cities
-  edge('/guides/pet-relocation-cost-dubai/', '/service/pet-relocation-dubai/', 'Pet relocation Dubai', 'money', 'related', 1, 'Quoted coordination after you have the cost types'),
+  edge('/guides/pet-relocation-cost-dubai/', '/', 'pet relocation Dubai', 'money', 'related', 1, 'Head term lives on the homepage'),
   edge('/guides/pet-relocation-cost-dubai/', '/guides/import-checklist/', 'Import documents checklist', 'import-docs', 'related', 1, 'Tick-list that sits beside the cost stack'),
   edge('/guides/pet-relocation-cost-dubai/', '/prices/', 'Prices and eligibility', 'cost', 'related', 1, 'Quote-only packages — confirm portal fees'),
   edge('/guides/rabies-titer-test-dubai/', '/service/pet-import-dubai/', 'Pet import to Dubai', 'money', 'related', 1, 'Commercial file after the sample is in date'),
   edge('/guides/rabies-titer-test-dubai/', '/guides/import-checklist/', 'Import documents checklist', 'import-docs', 'related', 1, 'Where the titer sits in the ordered file'),
   edge('/guides/rabies-titer-test-dubai/', '/guides/moccae-import-permit/', 'MOCCAE import permit (90-day validity)', 'import-docs', 'related', 2, 'Permit clock after a passing result'),
   edge('/guides/rabies-titer-test-dubai/', '/guides/uae-pet-import-requirements/', 'UAE pet import requirements for dogs and cats', 'import-docs', 'related', 2, 'Statutory checklist this titer rule sits inside'),
-  edge('/guides/iata-pet-crate-requirements/', '/service/pet-relocation-dubai/', 'Pet relocation Dubai', 'money', 'related', 1, 'Crate sizing inside a managed move'),
+  edge('/guides/iata-pet-crate-requirements/', '/', 'pet relocation Dubai', 'money', 'related', 1, 'Head term lives on the homepage'),
   edge('/guides/iata-pet-crate-requirements/', '/service/dog-relocation-dubai/', 'Dog relocation service', 'species-dog', 'related', 1, 'Species service page for crate-led dog files'),
   edge('/guides/iata-pet-crate-requirements/', '/guides/snub-nosed-dogs-flying-uae/', 'Snub-nosed dogs flying to the UAE', 'flight', 'related', 2, 'IATA +10% crate rule for brachycephalic breeds'),
   edge('/guides/iata-pet-crate-requirements/', '/guides/pet-relocation-cost-dubai/', 'What drives pet relocation cost', 'cost', 'related', 2, 'Crate is one line in the cost stack'),
   edge('/dog-relocation-to-dubai/', '/service/dog-relocation-dubai/', 'Dog relocation in Dubai', 'species-dog', 'related', 1, 'Commercial dog file — this page stays the inbound journey'),
-  edge('/dog-relocation-to-dubai/', '/service/pet-relocation-dubai/', 'Pet relocation Dubai', 'money', 'related', 2, 'Door-to-door when the breed is clear'),
+  edge('/dog-relocation-to-dubai/', '/', 'pet relocation Dubai', 'money', 'related', 2, 'Head term lives on the homepage'),
   edge('/dog-relocation-to-dubai/', '/guides/banned-dog-breeds-dubai/', 'Banned and restricted dog breeds', 'species-dog', 'related', 2, 'Legal-entry check before you book'),
   edge('/dog-relocation-to-dubai/', '/guides/import-checklist/', 'Import documents checklist', 'import-docs', 'related', 2, 'Tick-list beside the species journey'),
   edge('/cat-relocation-to-dubai/', '/service/cat-relocation-dubai/', 'Cat relocation in Dubai', 'species-cat', 'related', 1, 'Commercial cat file — this page stays the inbound journey'),
-  edge('/cat-relocation-to-dubai/', '/service/pet-relocation-dubai/', 'Pet relocation Dubai', 'money', 'related', 2, 'Door-to-door when the crate plan is clear'),
+  edge('/cat-relocation-to-dubai/', '/', 'pet relocation Dubai', 'money', 'related', 2, 'Head term lives on the homepage'),
   edge('/cat-relocation-to-dubai/', '/guides/import-checklist/', 'Import documents checklist', 'import-docs', 'related', 2, 'Tick-list beside the species journey'),
   edge('/cat-relocation-to-dubai/', '/guides/iata-pet-crate-requirements/', 'IATA crate requirements', 'flight', 'related', 2, 'Crate comfort for cats in cargo'),
   edge('/cities/dubai/', '/service/pet-relocation-dubai/', 'Door-to-door pet relocation in Dubai', 'money', 'related', 1, 'Door-to-door file after the emirate overview'),
   edge('/cities/dubai/', '/prices/', 'Quoted packages and eligibility', 'cost', 'related', 2, 'Quote-only — confirm government fees on the portal'),
   edge('/cities/dubai/', '/guides/import-checklist/', 'Pet import documents checklist', 'import-docs', 'related', 2, 'Tick-list before DXB clearance'),
   edge('/cities/dubai/', '/dubai/', 'Dubai communities we cover', 'dubai-area', 'related', 2, 'Last-mile directory — separate live URL'),
-  edge('/prices/', '/service/pet-relocation-dubai/', 'Pet relocation Dubai', 'money', 'related', 1, 'Door-to-door service page'),
+  edge('/prices/', '/', 'pet relocation Dubai', 'money', 'related', 1, 'Head term lives on the homepage'),
   edge('/prices/', '/guides/pet-relocation-cost-dubai/', 'What drives pet relocation cost', 'cost', 'related', 1, 'Cost types — this page stays quote-only'),
   edge('/prices/', '/guides/import-checklist/', 'Import documents checklist', 'import-docs', 'related', 2, 'Documents that sit beside a quoted package'),
 
@@ -279,8 +287,8 @@ export const LINK_EDGES: LinkEdge[] = [
   ),
   edge(
     /^\/routes\/(?!dubai-to-).+-to-dubai\/$/,
-    '/service/pet-relocation-dubai/',
-    'Pet relocation Dubai',
+    '/',
+    'pet relocation Dubai',
     'money',
     'related',
     1,
@@ -295,8 +303,8 @@ export const LINK_EDGES: LinkEdge[] = [
   ),
   edge(
     /^\/routes\/dubai-to-.+\/$/,
-    '/service/pet-relocation-dubai/',
-    'Pet relocation Dubai',
+    '/',
+    'pet relocation Dubai',
     'money',
     'related',
     1,
@@ -379,12 +387,12 @@ function defaultSinkFor(path: string): ResolvedLink {
     return { to: '/service/cat-relocation-dubai/', label: 'Cat relocation in Dubai', cluster: 'species-cat', priority: 1 }
   }
   if (cluster === 'cost') {
-    return { to: '/service/pet-relocation-dubai/', label: 'Pet relocation Dubai', cluster: 'money', priority: 1 }
+    return { to: '/service/pet-relocation-dubai/', label: 'Pet relocation services', cluster: 'money', priority: 1 }
   }
   if (cluster === 'import-docs') {
-    return { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', cluster: 'money', priority: 1 }
+    return { to: '/service/pet-import-dubai/', label: 'pet import Dubai', cluster: 'money', priority: 1 }
   }
-  return { to: '/service/pet-relocation-dubai/', label: 'Pet relocation Dubai', cluster: 'money', priority: 1 }
+  return { to: '/service/pet-relocation-dubai/', label: 'Pet relocation services', cluster: 'money', priority: 1 }
 }
 
 function areaNeighbors(path: string): ResolvedLink[] {
@@ -449,9 +457,16 @@ export function getRelatedLinks(path: string): ResolvedLink[] {
     generated.push({ to: '/dubai/', label: 'All Dubai areas', note: 'Community hub', cluster: 'dubai-area', priority: 1 })
     generated.push(...areaNeighbors(normalized))
     generated.push({
+      to: '/',
+      label: 'pet relocation Dubai',
+      note: 'Homepage owns the head term',
+      cluster: 'money',
+      priority: 1,
+    })
+    generated.push({
       to: '/service/pet-relocation-dubai/',
-      label: 'Pet relocation Dubai',
-      note: 'Door-to-door file for this community',
+      label: 'Door-to-door pet relocation service',
+      note: 'Service scope for this community',
       cluster: 'money',
       priority: 1,
     })

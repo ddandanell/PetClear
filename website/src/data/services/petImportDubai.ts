@@ -14,10 +14,10 @@ const petImportDubai: ServicePageData = {
   seoTitle: 'Pet Import Dubai: Permits, Clearance & Delivery [2026]',
   metaDescription:
     'Import a dog or cat to Dubai: a MOCCAE permit valid 90 days, microchip, vaccines, a titer when the origin needs it, then clearance and home delivery.',
-  h1: 'Pet import services in Dubai',
+  h1: 'Pet import Dubai for dogs and cats',
   primaryKeyword: 'pet import services Dubai',
   heroValueProp:
-    'Managed pet import into Dubai: we sequence the MOCCAE permit (90 days from issuance), the antibody certificate when the origin is high-risk, cargo into Dubai, and handover at the door.',
+    'Pet import Dubai is a managed file: we sequence the MOCCAE permit (90 days from issuance), the antibody certificate when the origin is high-risk, cargo into Dubai, and handover at the door.',
   // Blocked original-photo placeholder — AI substitute not used for this hero.
   heroImage: '/images/service-pet-import-dubai.jpg',
   heroImageAlt:
@@ -323,7 +323,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'When should I use import versus door-to-door relocation?',
-      a: 'Use this page when the job is inbound clearance — permit, cargo and a Dubai door. Use [pet relocation Dubai](/service/pet-relocation-dubai/) when you want one coordinator to pick the mode and hold the last mile. Leaving the UAE is [pet export from Dubai](/service/pet-export-dubai/). WhatsApp +971504782999.',
+      a: 'Use this page for pet import Dubai: permit, cargo and a Dubai door. Use [pet relocation Dubai](/) when you want the wider overview and one coordinator for the last mile. Leaving the UAE is [pet export from Dubai](/service/pet-export-dubai/). WhatsApp +971504782999 when you are ready to book.',
     },
   ],
   relatedLinks: [
@@ -338,7 +338,8 @@ const petImportDubai: ServicePageData = {
     { label: 'Pet Relocation Cost Dubai', to: '/guides/pet-relocation-cost-dubai/' },
     { label: 'How It Works', to: '/how-it-works/' },
     { label: 'Pet import checklist', to: '/guides/import-checklist/' },
-    { label: 'Pet relocation Dubai', to: '/service/pet-relocation-dubai/' },
+    { label: 'pet relocation Dubai', to: '/' },
+    { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet export from Dubai', to: '/service/pet-export-dubai/' },
   ],
 }

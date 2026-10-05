@@ -8,11 +8,13 @@ import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope
 import { Link } from 'react-router-dom'
 import RelatedLinks from '../components/RelatedLinks.tsx'
 import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
+import PaidIncludes from '../components/PaidIncludes.tsx'
+import { CTA_ELIGIBILITY_MOVE, waEligibility } from '../lib/conversionCopy.ts'
 
 export default function DubaiCity() {
   const pageUrl = `${BASE_URL}/cities/dubai/`
-  const pageTitle = 'Pet Relocation Dubai | Collection & Travel Support'
-  const pageDescription = 'Arrange pet relocation support in Dubai. Plan local collection, documents and airport handovers, then request a quote for your dog or cat.'
+  const pageTitle = 'Dubai Pet Collection | Documents & Handover'
+  const pageDescription = 'Dubai city collection, documents and airport handover for a dog or cat. The overview for pet relocation Dubai is on the homepage.'
   const faqs = [
     {
       question: 'How much does pet relocation to Dubai cost?',
@@ -102,10 +104,26 @@ export default function DubaiCity() {
         image="/images/hero-dubai.jpg"
         imageAlt="Pet relocation services in Dubai skyline"
         eyebrow="Dubai"
-        title="Pet relocation support in Dubai"
-        subtitle="Collection, documents and handover for a dog or cat moving to or from Dubai."
+        title="Dubai pet collection, documents and handover"
+        subtitle="This city page covers collection and the airport handover in Dubai. It is not the homepage overview."
         updated="Updated June 2026"
+        primaryLabel={CTA_ELIGIBILITY_MOVE}
+        whatsappMessage={waEligibility({ destination: 'Dubai', need: 'managed move' })}
+        secondary={{ label: 'Compare managed services', to: '/services/' }}
+        showBuyerQualify
       />
+
+      <section className="border-b border-[#E6E8F5] bg-white">
+        <div className="mx-auto max-w-[760px] px-5 py-8 sm:px-6">
+          <p className="text-base leading-relaxed text-[#5A5A5A]">
+            The overview for{' '}
+            <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation Dubai
+            </Link>{' '}
+            is the homepage. Stay here for Dubai collection, documents and the handover. If you are not sure which service fits, open the services list before WhatsApp.
+          </p>
+        </div>
+      </section>
 
       {/* WHY DUBAI */}
       <section className="py-16 lg:py-24">
@@ -519,12 +537,16 @@ export default function DubaiCity() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet to Dubai?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              We coordinate inbound pet moves to Dubai from the UK, USA, India, Australia, the Philippines, and other corridors: the document spine, cargo booking, and WhatsApp updates during business hours. Get a transparent, itemised quote and a week-by-week timeline today.
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to book a Dubai collection?</h2>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
+              Check if we can move your pet. Send the pet, the origin and the month. We reply with eligibility and a managed-move quote.
             </p>
+            <PaidIncludes tone="dark" compact className="mx-auto mb-8 max-w-2xl text-left" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Get a Dubai pet relocation quote" message="Hi, I want to relocate my pet to Dubai. Can you help me understand the process, timeline, and cost?" />
+              <Link to="/services/" className="inline-flex w-full items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors sm:w-auto">
+                Compare managed services
+              </Link>
+              <WhatsAppBtn className="w-full justify-center sm:w-auto" label="Get a managed-move quote" message={waEligibility({ destination: 'Dubai', need: 'managed move' })} />
               <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
                 <Info className="w-5 h-5" />
                 How It Works

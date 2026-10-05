@@ -18,12 +18,10 @@ import {
   RELEASE_FEE_VERIFY,
   TITER_SAMPLE_RULE,
 } from '../lib/regulatory.ts'
+import { CTA_ELIGIBILITY_MOVE, CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 
 const PATH = '/guides/dubai-pet-arrival-guide/'
-const WA_DOCS =
-  'Hi Dubai Pet Relocation! I want to check the arrival documents for my pet landing at DXB or DWC — permit, health certificate, and municipality registration.'
-const WA_COORD =
-  'Hi Dubai Pet Relocation! My pet is arriving in Dubai. Can a relocation coordinator walk me through cargo clearance, collection, and Dubai Municipality registration?'
+const WA_BOOK = waEligibility({ destination: 'Dubai', need: 'managed move' })
 
 const snippetQuestion = 'What happens when my pet arrives at Dubai airport?'
 const snippetAnswer =
@@ -134,9 +132,9 @@ export default function DubaiPetArrivalGuide() {
         title="What happens when your pet arrives in Dubai"
         subtitle="From the cargo terminal to a quiet first week and Dubai Municipality registration — the journey after the flight, not another copy of the import checklist."
         updated="Updated September 2026"
-        primaryLabel="Check Documents"
-        whatsappMessage={WA_DOCS}
-        secondary={{ label: 'Import requirements', to: '/guides/uae-pet-import-requirements/' }}
+        primaryLabel={CTA_ELIGIBILITY_MOVE}
+        whatsappMessage={WA_BOOK}
+        secondary={{ label: 'pet import Dubai', to: '/service/pet-import-dubai/' }}
         imageWidth={1600}
         imageHeight={900}
       />
@@ -151,9 +149,13 @@ export default function DubaiPetArrivalGuide() {
             </Link>
             . Paid coordination of the inbound file lives on{' '}
             <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              help importing your pet to the UAE
+              pet import Dubai
             </Link>
-            . Airport-to-home vans and pet-taxi pins stay on{' '}
+            . The wider overview is{' '}
+            <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation Dubai
+            </Link>
+            . {GUIDE_SOFT_GATE} Airport-to-home vans and pet-taxi pins stay on{' '}
             <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               local pet transport
             </Link>
@@ -242,9 +244,8 @@ export default function DubaiPetArrivalGuide() {
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">{PERMIT_VALIDITY}</p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">{TITER_SAMPLE_RULE}</p>
           <p className="leading-relaxed text-[#5A5A5A]">
-            {NONCOMPLIANCE_FINE} That is why we line-check scans before the aircraft leaves, not after the crate is on the
-            cargo floor. DIY depth is on the import-requirements guide; if you want the pouch reviewed on a thread, use
-            Check Documents on WhatsApp.
+            {NONCOMPLIANCE_FINE} That is why a managed file is checked before the aircraft leaves, not after the crate is on the
+            cargo floor. DIY depth is on the import-requirements guide. {GUIDE_SOFT_GATE}
           </p>
         </div>
       </section>
@@ -470,31 +471,29 @@ export default function DubaiPetArrivalGuide() {
 
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Need the arrival file held on one thread?</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Ready to book the arrival handover?</h2>
           <p className="mb-6 text-base leading-relaxed text-white/80">
-            Check the pouch before the flight, or message a coordinator for cargo-day collection and Aleef registration
-            guidance. Email{' '}
+            {GUIDE_SOFT_GATE} Open the import service if you want the file held, then WhatsApp if you are ready to book.
+            Email{' '}
             <a href="mailto:support@dubai-pet-relocation.ae" className="underline">
               support@dubai-pet-relocation.ae
             </a>
             . WhatsApp +971 50 478 2999.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link
+              to="/service/pet-import-dubai/"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] hover:bg-white/90 sm:w-auto"
+            >
+              pet import Dubai
+            </Link>
             <a
-              href={getWhatsAppUrl(WA_DOCS)}
+              href={getWhatsAppUrl(WA_BOOK)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] hover:bg-white/90"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white hover:bg-[#1DA851] sm:w-auto"
             >
-              Check Documents
-            </a>
-            <a
-              href={getWhatsAppUrl(WA_COORD)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white hover:bg-[#1DA851]"
-            >
-              <MessageCircle className="h-4 w-4" /> WhatsApp a Relocation Coordinator
+              <MessageCircle className="h-4 w-4" /> {CTA_MANAGED_QUOTE}
             </a>
           </div>
         </div>

@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: 'If we collaborate, who owns the client?',
-    a: 'You do, unless the owner writes to us first as a household moving a pet. Peer work is a briefing and document check. Consumer door-to-door sits on [pet relocation Dubai](/service/pet-relocation-dubai/). Corporate mobility teams sit on [corporate pet relocation](/service/corporate-pet-relocation/). We will not poach a file you introduced.',
+    a: 'You do, unless the owner writes to us first as a household moving a pet. Peer work is a briefing and document check. Consumer door-to-door sits on [pet relocation Dubai](/). Corporate mobility teams sit on [corporate pet relocation](/service/corporate-pet-relocation/). We will not poach a file you introduced.',
   },
   {
     q: 'Is this a paid partner programme with logos and a roster count?',
@@ -123,7 +123,7 @@ export default function ForPetRelocatorsPage() {
             </p>
             <p>
               Owners who want door-to-door should use the{' '}
-              <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
                 pet relocation Dubai
               </Link>{' '}
               service page. Mobility teams should use{' '}
@@ -325,10 +325,10 @@ export default function ForPetRelocatorsPage() {
                 coordination, documents, and a household quote thread.
               </p>
               <Link
-                to="/service/pet-relocation-dubai/"
+                to="/"
                 className="text-sm font-semibold text-[#4F5BD5] hover:underline"
               >
-                Owner service — pet relocation Dubai
+                pet relocation Dubai
               </Link>
             </div>
             <div className="rounded-[20px] bg-white p-7 shadow-sm">

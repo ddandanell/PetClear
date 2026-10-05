@@ -1,5 +1,5 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
-import { waEligibility } from '../../lib/conversionCopy.ts'
+import { CTA_ELIGIBILITY_MOVE, waEligibility } from '../../lib/conversionCopy.ts'
 
 const petRelocationToDubai: ServicePageData = {
   slug: 'pet-relocation-to-dubai',
@@ -8,8 +8,9 @@ const petRelocationToDubai: ServicePageData = {
     'Preparing for your pet to arrive in Dubai? Plan the airport handover, home delivery and first days, with links to import requirements and managed support.',
   h1: 'Preparing for your pet to arrive in Dubai',
   primaryKeyword: 'pet relocation to dubai',
+  ctaLabel: CTA_ELIGIBILITY_MOVE,
   heroValueProp:
-    'Inbound only: MOCCAE import permit valid 90 days from issuance, a titre certificate when the origin is high-risk, and cargo arrival at DXB or DWC.',
+    'Inbound only: time the import permit to the 90-day window from issuance, check a titre when the origin is high-risk, and coordinate cargo arrival at DXB or DWC.',
   heroImage: '/assets/w1-w3/pet-relocation-to-dubai-cat-arrival-new-apartment.jpg',
   heroImageAlt:
     'Cat stepping out of its travel crate into a new Dubai apartment after relocating to Dubai',
@@ -26,7 +27,7 @@ const petRelocationToDubai: ServicePageData = {
     {
       h2: 'This page is inbound only — arrival into Dubai',
       intro:
-        'Arriving in Dubai covers the permit, the landing and the first days after. Leaving the UAE is a different job, on [moving pets out of Dubai](/service/pet-relocation-from-dubai/). Full coordination is [pet relocation in Dubai](/service/pet-relocation-dubai/). The paid import file is [managed pet import](/service/pet-import-dubai/).',
+        'Arriving in Dubai covers the permit, the landing and the first days after. Leaving the UAE is a different job, on [moving pets out of Dubai](/service/pet-relocation-from-dubai/). The homepage overview is [pet relocation Dubai](/). Door-to-door scope is [pet relocation services](/service/pet-relocation-dubai/). The paid import file is [pet import Dubai](/service/pet-import-dubai/).',
       body: [
         {
           type: 'p',
@@ -67,8 +68,8 @@ const petRelocationToDubai: ServicePageData = {
               text: 'High-risk origins need at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first or lapsed vaccine needs at least 21 days before the test. A valid booster does not. See [rabies titre test](/guides/rabies-titer-test-dubai/).',
             },
             {
-              title: 'MOCCAE import permit — 90 days',
-              text: 'The import permit is applied for on the official portal and is valid for 90 days from issuance. Your pet must arrive inside that window. Confirm the current portal fee when you apply; contested AED figures are not published here. Walkthrough: [MOCCAE import permit](/guides/moccae-import-permit/).',
+              title: 'Time the permit to the landing date',
+              text: 'Apply on the official portal and land while the permit is still valid: 90 days from issuance. Confirm the fee on the MOCCAE portal. The walkthrough for a [MOCCAE import permit](/guides/moccae-import-permit/) stays on that guide.',
             },
             {
               title: 'Health certificate and parasite treatments',
@@ -166,8 +167,8 @@ const petRelocationToDubai: ServicePageData = {
       a: 'Confirm breed eligibility and whether your origin requires a titer, then work backwards from a realistic arrival month. Do not buy cargo space first. Country detail is on the [routes hub](/routes/).',
     },
     {
-      q: 'How long is the MOCCAE import permit valid?',
-      a: '90 days from issuance. The pet must land inside that window. First-party MOCCAE wording is 90 days from issuance.',
+      q: 'How should I time the permit against the arrival date?',
+      a: 'The [MOCCAE import permit](/guides/moccae-import-permit/) is valid for 90 days from issuance. Land inside that window. Confirm the fee on the MOCCAE portal. This page covers the arrival, not the application walkthrough.',
     },
     {
       q: 'When must the rabies titer blood sample be drawn for entry to Dubai?',
@@ -190,14 +191,14 @@ const petRelocationToDubai: ServicePageData = {
       a: 'Yes. Some types are prohibited and others are restricted inside Dubai. We check eligibility before you commit. The list and caveats live on [banned dog breeds in Dubai](/guides/banned-dog-breeds-dubai/).',
     },
     {
-      q: 'How is this different from the generic pet relocation Dubai page?',
-      a: 'This URL is inbound only — permit, arrival and settling in. The door-to-door service [pet relocation services in Dubai](/service/pet-relocation-dubai/) covers door-to-door coordination in both directions. Do not treat the two pages as duplicates.',
+      q: 'How is this page different from the homepage and the door-to-door service?',
+      a: 'This URL is inbound only: arrival and the first days. The overview for [pet relocation Dubai](/) lives on the homepage. Door-to-door coordination in both directions is [pet relocation services](/service/pet-relocation-dubai/).',
     },
   ],
   relatedLinks: [
     { label: 'The post-arrival guide for pets', to: '/guides/dubai-pet-arrival-guide/' },
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
-    { label: 'Pet import service for Dubai', to: '/service/pet-import-dubai/' },
+    { label: 'pet import Dubai', to: '/service/pet-import-dubai/' },
     { label: 'UAE pet import requirements for dogs and cats', to: '/guides/uae-pet-import-requirements/' },
     { label: 'MOCCAE import permit', to: '/guides/moccae-import-permit/' },
     { label: 'Routes hub — inbound corridors', to: '/routes/' },

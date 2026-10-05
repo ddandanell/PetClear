@@ -201,7 +201,8 @@ const catRelocationDubai: ServicePageData = {
     },
   ],
   relatedLinks: [
-    { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
+    { label: 'pet relocation Dubai', to: '/' },
+    { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet Import to Dubai', to: '/service/pet-import-dubai/' },
     { label: 'Pet Travel in the Dubai Summer', to: '/guides/pet-travel-summer-dubai/' },
     { label: 'Dog relocation to and from Dubai', to: '/service/dog-relocation-dubai/' },

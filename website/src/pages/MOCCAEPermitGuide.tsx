@@ -39,7 +39,7 @@ const PERMIT_TIME =
 const PERMIT_FEES =
   'On 22 September 2026 the MOCCAE page listed AED 200 to issue an import permit for one animal, AED 500 to release one dog, and AED 250 to release one cat. These are government charges, not a relocation package. Pay the amount shown when you apply.'
 import GuideDualPath from '../components/GuideDualPath.tsx'
-import { waEligibility } from '../lib/conversionCopy.ts'
+import { CTA_ELIGIBILITY_MOVE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 import GuideToc from '../components/GuideToc.tsx'
 
 const waPermit = waEligibility({ need: 'document plan' })
@@ -65,9 +65,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function MOCCAEPermitGuide() {
-  const title = 'MOCCAE Pet Import Permit | Application Guide'
+  const title = 'MOCCAE Import Permit | Application Guide'
   const description =
-    'Understand the MOCCAE pet import permit process, documents and official charges. Follow the application steps or request document assistance.'
+    'Apply for a MOCCAE import permit. It is valid for 90 days from issuance. Confirm the fee on the MOCCAE portal, or ask about a managed file.'
   const canonical = `${BASE_URL}/guides/moccae-import-permit/`
   const ogImage = `${BASE_URL}/assets/og-moccae-permit.jpg`
 
@@ -95,7 +95,7 @@ export default function MOCCAEPermitGuide() {
         {
       question: 'Do I need a MOCCAE import permit?',
       answer:
-        'Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 90 days from issuance. Apply on the official MOCCAE portal with UAE Pass using the steps on this page. Confirm current fees on the portal. Paid permit assistance: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Flagship inbound: [/service/pet-import-dubai/](/service/pet-import-dubai/). Tick-list: [/guides/import-checklist/](/guides/import-checklist/). Email support@dubai-pet-relocation.ae or WhatsApp +971504782999 when you want a managed file. We explain the next step before any paid work starts.',
+        'Yes. A MOCCAE import permit is required before a dog or cat enters the UAE, and it is valid for 90 days from issuance. Airlines will not board the pet without it, and customs will refuse entry. Apply on the official MOCCAE portal with UAE Pass using the steps on this page. Confirm the fee on the MOCCAE portal. Paid permit assistance: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). The managed inbound file is [pet import Dubai](/service/pet-import-dubai/). Tick-list: [/guides/import-checklist/](/guides/import-checklist/). Email support@dubai-pet-relocation.ae or WhatsApp +971504782999 when you are ready to book a managed file.',
     },
         {
       question: 'How do I apply for a MOCCAE import permit?',
@@ -259,8 +259,8 @@ export default function MOCCAEPermitGuide() {
         image="/assets/w5/moccae-import-permit-guide-clipboard-illustration.png"
         imageAlt="Illustration of a MOCCAE pet import permit application with a validity clock"
         eyebrow="How-to guide — not the service page"
-        title="How to apply for a MOCCAE pet import permit"
-        subtitle="UAE Pass login, form fields, 90-day validity, rejection reasons, and an honest DIY versus managed comparison. Confirm fees on the official portal."
+        title="How to apply for a MOCCAE import permit"
+        subtitle="A MOCCAE import permit is valid for 90 days from issuance. This page covers UAE Pass, the form, and why a file is sent back. Confirm the fee on the MOCCAE portal."
         updated={`Last verified: ${CHECKED}`}
         whatsappMessage={waPermit}
         primaryLabel="Check permit eligibility"
@@ -278,6 +278,7 @@ export default function MOCCAEPermitGuide() {
             waMessage={waPermit}
             waLabel="Check permit eligibility"
           />
+          <p className="text-sm leading-relaxed text-[#5A5A5A]">{GUIDE_SOFT_GATE}</p>
           <div className="rounded-[20px] bg-[#F5F6FD] p-5 sm:p-6 ring-1 ring-[#4F5BD5]/10">
             <h2 className="text-lg font-bold text-[#2A2A2A] mb-4">
               MOCCAE permit entities: UAE Pass, 90 days, RNATT, portal fees
@@ -337,10 +338,10 @@ export default function MOCCAEPermitGuide() {
                 </Link>
                 . When you also need crate, cargo and a Dubai door, open{' '}
                 <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  pet import services in Dubai
-                </Link>{' '}
-                or door-to-door{' '}
-                <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  pet import Dubai
+                </Link>
+                . The wider overview is{' '}
+                <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
                   pet relocation Dubai
                 </Link>
                 . The statutory list lives on{' '}
@@ -558,10 +559,11 @@ export default function MOCCAEPermitGuide() {
         title="Permit ready - book the managed move?"
         subtitle="This guide covers the MOCCAE import permit, valid 90 days from issuance. Stay here if you are filing yourself. When you also need crate, cargo and door delivery, open pet import to Dubai or WhatsApp if you are ready to book. Government fees checked on 22 September 2026 were AED 200, AED 500 and AED 250."
         eligibilityMessage={waManaged}
+        waLabel={CTA_ELIGIBILITY_MOVE}
         links={[
-          { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },
+          { to: '/service/pet-import-dubai/', label: 'pet import Dubai', icon: 'plane' },
+          { to: '/', label: 'pet relocation Dubai', icon: 'package' },
           { to: '/service/moccae-pet-permit/', label: 'MOCCAE permit assistance', icon: 'file' },
-          { to: '/prices/', label: 'Prices after eligibility', icon: 'package' },
         ]}
       />
 
@@ -893,10 +895,11 @@ export default function MOCCAEPermitGuide() {
         title="Ready to book a managed relocation?"
         subtitle="Send chip number, rabies date and origin on WhatsApp only if you want a managed file. The permit is valid 90 days from issuance. A high-risk titre is at least 0.5 IU/ml under the 365-day certificate conditions. Government fees checked on 22 September 2026 were AED 200, AED 500 and AED 250."
         eligibilityMessage={waPermit}
+        waLabel="Get a managed-move quote"
         links={[
-          { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },
+          { to: '/service/pet-import-dubai/', label: 'pet import Dubai', icon: 'plane' },
+          { to: '/', label: 'pet relocation Dubai', icon: 'package' },
           { to: '/guides/import-checklist/', label: 'Import checklist', icon: 'file' },
-          { to: '/prices/', label: 'Prices after eligibility', icon: 'package' },
         ]}
       />
       <OfficialSources />

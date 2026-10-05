@@ -4,14 +4,16 @@ import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig, localBusinessProvider } from '../lib/seo.ts'
-import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, MapPin, Building, Phone, Dog, Cat, DollarSign, Briefcase, Globe, Scale } from 'lucide-react'
+import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, PawPrint, Heart, MapPin, Building, Phone, Dog, Cat, DollarSign, Briefcase, Globe, Scale } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
+import PaidIncludes from '../components/PaidIncludes.tsx'
+import { CTA_ELIGIBILITY_MOVE, waEligibility } from '../lib/conversionCopy.ts'
 
 export default function AbuDhabiCity() {
   const pageUrl = `${BASE_URL}/cities/abu-dhabi/`
-  const pageTitle = 'Pet Relocation Abu Dhabi | Collection & Travel Support'
-  const pageDescription = 'Arrange pet relocation support in Abu Dhabi. Plan local collection, documents and airport handovers, then request a quote for your dog or cat.'
+  const pageTitle = 'Abu Dhabi Pet Relocation | Collection & Travel'
+  const pageDescription = 'Abu Dhabi pet relocation for dogs and cats: Etihad at AUH, municipality registration and airport handover. A quote follows an eligibility check.'
   const faqs = [
     {
       question: 'Can my pet fly in the cabin to Abu Dhabi?',
@@ -51,7 +53,7 @@ export default function AbuDhabiCity() {
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "Pet relocation to and from Abu Dhabi",
+      "name": "Abu Dhabi pet relocation",
       "description": "Pet relocation coordination for Abu Dhabi arrivals and departures, including Etihad routing, documents and cargo handover.",
       "url": pageUrl,
       "serviceType": "Pet relocation coordination",
@@ -101,10 +103,26 @@ export default function AbuDhabiCity() {
         image="/images/hero-abu-dhabi.jpg"
         imageAlt="Pet relocation services in Abu Dhabi skyline"
         eyebrow="Abu Dhabi"
-        title="Pet relocation support in Abu Dhabi"
-        subtitle="Etihad in-cabin pet travel, the Abu Dhabi Falcon Hospital, and pet-friendly communities — we handle every step of your move."
+        title="Abu Dhabi pet relocation for dogs and cats"
+        subtitle="Abu Dhabi pet relocation covers Etihad at AUH, municipality registration, and collection in the capital."
         updated="Last verified 18 September 2026"
+        primaryLabel={CTA_ELIGIBILITY_MOVE}
+        whatsappMessage={waEligibility({ destination: 'Abu Dhabi', need: 'managed move' })}
+        secondary={{ label: 'Compare managed services', to: '/services/' }}
+        showBuyerQualify
       />
+
+      <section className="border-b border-[#E6E8F5] bg-white">
+        <div className="mx-auto max-w-[760px] px-5 py-8 sm:px-6">
+          <p className="text-base leading-relaxed text-[#5A5A5A]">
+            This page is about Abu Dhabi: Zayed International, the Abu Dhabi City Municipality, and Etihad. The overview for{' '}
+            <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation Dubai
+            </Link>{' '}
+            lives on the homepage. If you are not sure which service fits, open the services list before WhatsApp.
+          </p>
+        </div>
+      </section>
 
       {/* KEY DIFFERENTIATOR */}
       <section className="py-16 lg:py-24">
@@ -544,21 +562,21 @@ export default function AbuDhabiCity() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet to Abu Dhabi?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Dubai Pet Relocation has helped families relocate their dogs and cats to Abu Dhabi from the UK, USA, Europe, Australia, India, and beyond. Whether you want in-cabin travel with Etihad or cargo transport, we handle every detail — from permits to ADCM registration.
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to book an Abu Dhabi move?</h2>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
+              Check if we can move your pet into Abu Dhabi. Send the pet, the origin and the month. We reply with eligibility and a managed-move quote.
             </p>
+            <PaidIncludes tone="dark" compact className="mx-auto mb-8 max-w-2xl text-left" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Get an Abu Dhabi pet relocation quote" message="Hi, I want to relocate my pet to Abu Dhabi. Can you help me understand the process, timeline, and cost?" />
-              <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
-                <Info className="w-5 h-5" />
-                How It Works
-              </a>
+              <Link to="/services/" className="inline-flex w-full items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors sm:w-auto">
+                Compare managed services
+              </Link>
+              <WhatsAppBtn className="w-full justify-center sm:w-auto" label="Get a managed-move quote" message={waEligibility({ destination: 'Abu Dhabi', need: 'managed move' })} />
             </div>
             <div className="mt-8 grid sm:grid-cols-3 gap-4 text-left">
               <a href={`${BASE_URL}/cities/dubai/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
                 <p className="font-semibold text-white mb-1">Dubai Guide</p>
-                <p className="text-sm text-white/70">Compare pet relocation in Dubai vs Abu Dhabi</p>
+                <p className="text-sm text-white/70">Dubai municipality and airport notes, separate from this Abu Dhabi page</p>
               </a>
               <a href={`${BASE_URL}/dog-relocation-to-dubai/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
                 <p className="font-semibold text-white mb-1">Dog Relocation</p>

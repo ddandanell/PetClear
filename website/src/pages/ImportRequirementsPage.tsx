@@ -23,7 +23,7 @@ import ContentImage from '../components/ContentImage.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import GuideDualPath from '../components/GuideDualPath.tsx'
-import { waEligibility } from '../lib/conversionCopy.ts'
+import { CTA_ELIGIBILITY_MOVE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 import GuideToc from '../components/GuideToc.tsx'
 
 const CHECKED = '22 September 2026'
@@ -167,7 +167,7 @@ export default function ImportRequirementsPage() {
         updated={`Checked ${CHECKED}`}
         whatsappMessage={waImport}
         primaryLabel="Check if we can move your pet"
-        secondary={{ label: 'Pet import service', to: '/service/pet-import-dubai/' }}
+        secondary={{ label: 'pet import Dubai', to: '/service/pet-import-dubai/' }}
       />
 
       <section className="pt-12 pb-4">
@@ -181,14 +181,23 @@ export default function ImportRequirementsPage() {
             <a href={MOCCAE_IMPORT} className="font-semibold text-[#4F5BD5] hover:underline" target="_blank" rel="noopener noreferrer">
               MOCCAE import of pets page
             </a>{' '}
-            on {CHECKED}. Where that page is silent or the English wording is unclear, the sentence below says so. WhatsApp +971504782999 and support@dubai-pet-relocation.ae are for a managed move, not a free rewrite of this list.
+            on {CHECKED}. Where that page is silent or the English wording is unclear, the sentence below says so. {GUIDE_SOFT_GATE} The managed file is{' '}
+            <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet import Dubai
+            </Link>
+            . The wider overview is{' '}
+            <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation Dubai
+            </Link>
+            .
           </p>
           <div className="mt-6 max-w-3xl">
             <GuideDualPath
               diyNote="Stay on this page if you are assembling the papers yourself."
               moneyTo="/service/pet-import-dubai/"
-              moneyLabel="Pet import to Dubai"
+              moneyLabel="pet import Dubai"
               waMessage={waImport}
+              waLabel={CTA_ELIGIBILITY_MOVE}
             />
           </div>
         </div>
@@ -411,13 +420,13 @@ export default function ImportRequirementsPage() {
           <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-8">Related pages</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              ['/service/pet-import-dubai/', 'Pet import service', 'Cargo, clearance and delivery when you want the file handled.'],
+              ['/service/pet-import-dubai/', 'pet import Dubai', 'Cargo, clearance and delivery when you want the file handled.'],
               ['/guides/moccae-import-permit/', 'MOCCAE import permit', 'How to request the 90-day permit.'],
               ['/guides/rabies-titer-test-dubai/', 'Rabies titre guide', 'Read with this page. The live rule is the 365-day certificate condition, not a 90-day sample window.'],
               ['/routes/uk-to-dubai/', 'UK to Dubai', '3926EHC and the low-risk origin note for Britain.'],
               ['/dog-relocation-to-dubai/', 'Dog relocation', 'Crate fit and the breed check.'],
               ['/cat-relocation-to-dubai/', 'Cat relocation', 'Carrier fit and Bengal or Serval papers.'],
-              ['/service/pet-relocation-dubai/', 'Pet relocation Dubai', 'Door-to-door coordination.'],
+              ['/', 'pet relocation Dubai', 'Homepage overview for a managed move to or from Dubai.'],
               ['/guides/pet-relocation-cost-dubai/', 'Cost guide', 'Drivers only. Government fees are the three amounts above.'],
               ['/guides/dubai-pet-arrival-guide/', 'Arrival guide', 'After the aircraft lands.'],
             ].map(([to, title, text]) => (
@@ -446,6 +455,12 @@ export default function ImportRequirementsPage() {
         title="Want the import handled?"
         subtitle="This page is the checklist. A managed import covers the permit window (90 days from issuance), the airline booking and the handoff. Government fees are the MOCCAE amounts above, confirmed when you pay."
         eligibilityMessage={waImport}
+        waLabel={CTA_ELIGIBILITY_MOVE}
+        links={[
+          { to: '/service/pet-import-dubai/', label: 'pet import Dubai', icon: 'plane' },
+          { to: '/', label: 'pet relocation Dubai', icon: 'package' },
+          { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit', icon: 'file' },
+        ]}
       />
 
       <OfficialSources
