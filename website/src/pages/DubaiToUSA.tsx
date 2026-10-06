@@ -513,7 +513,11 @@ export default function DubaiToUSA() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai to USA Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              A typical export from Dubai to the USA takes 2–4 weeks for documentation plus 1–2 days for travel. Here is the exact week-by-week process Dubai Pet Relocation manages for you.
+              A typical export from Dubai to the USA takes 2–4 weeks for documentation plus 1–2 days for travel. Here is the exact week-by-week process Dubai Pet Relocation manages for you. The wider outbound move is{' '}
+              <Link to="/service/pet-relocation-from-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                pet relocation from Dubai
+              </Link>
+              . This page stays on the United States entry file.
             </p>
           </div>
 

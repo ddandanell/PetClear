@@ -30,6 +30,10 @@ interface HeroProps {
   showBuyerQualify?: boolean
   /** Short line under the buttons explaining what the enquiry needs. */
   ctaSupport?: string
+  /** Override the primary button classes. Used when a page needs stronger contrast. */
+  primaryClassName?: string
+  /** Page-specific paid-scope bullets under the hero CTA. */
+  paidIncludes?: string[]
 }
 
 // Shared professional hero: a sharp full-bleed photo, a black gradient scrim for
@@ -48,6 +52,8 @@ export default function Hero({
   updated,
   showBuyerQualify = false,
   ctaSupport,
+  primaryClassName,
+  paidIncludes,
   overlayClassName,
   imageWidth = 1536,
   imageHeight = 1024,
@@ -96,7 +102,10 @@ export default function Hero({
               href={getWhatsAppUrl(whatsappMessage || WA_ELIGIBILITY_DEFAULT)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-white/20 transition hover:bg-[#1DA851]"
+              className={
+                primaryClassName ||
+                'inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-white/20 transition hover:bg-[#1DA851]'
+              }
             >
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
               {primaryLabel}
@@ -124,7 +133,7 @@ export default function Hero({
           {showBuyerQualify ? (
             <div className="mt-6 max-w-xl space-y-3">
               <WhatsAppGate tone="hero" />
-              <PaidIncludes tone="hero" compact />
+              <PaidIncludes tone="hero" compact items={paidIncludes} />
             </div>
           ) : (
             <WhatsAppGate tone="hero" className="mt-4 max-w-xl" />

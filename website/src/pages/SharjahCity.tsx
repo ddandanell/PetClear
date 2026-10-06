@@ -313,11 +313,11 @@ export default function SharjahCity() {
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             In practice, many Gulf long-haul pet consignments still use Dubai International (DXB) or Al Maktoum (DWC)
             cargo village — Emirates SkyCargo and other wide-body networks — then a climate-controlled ground transfer
-            to the Sharjah address. That ground leg is owned by{' '}
+            to the Sharjah address. Book that ground leg as a{' '}
             <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              pet taxi and inter-emirate transport
-            </Link>
-            . This city page deep-links it. It does not republish taxi menus.
+              pet taxi Dubai
+            </Link>{' '}
+            run, with the cargo time and the Sharjah address confirmed before the van is reserved. This city page does not republish taxi menus.
           </p>
           <p className="mb-6 leading-relaxed text-[#5A5A5A]">
             Drive time on the E311 or E11 depends on the community, the cargo-release clock and traffic. We quote a

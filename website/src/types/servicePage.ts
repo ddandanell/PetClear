@@ -60,4 +60,18 @@ export interface ServicePageData {
   /** when true, emit HowTo schema from the first 'steps' block found */
   hasHowTo?: boolean
   howToName?: string
+  /** Short line under the hero buttons. */
+  ctaSupport?: string
+  /** Overrides the shared paid-scope list near hero and closing CTAs. */
+  paidIncludes?: string[]
+  /** Closing band heading and sentence. Buyer action only. */
+  ctaHeading?: string
+  ctaBody?: string
+  /** Mid-page booking block. Opens the same WhatsApp lead gate as other CTAs. */
+  bookingCta?: {
+    heading: string
+    intro: string
+    label: string
+    items: string[]
+  }
 }

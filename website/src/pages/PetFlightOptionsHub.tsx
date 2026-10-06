@@ -249,7 +249,11 @@ export default function PetFlightOptionsHub() {
             <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
               snub-nosed dogs flying to the UAE
             </Link>
-            .
+            . After cargo release, the timed van from DXB or DWC to a Dubai address is a separate{' '}
+            <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet taxi Dubai
+            </Link>{' '}
+            booking. It is not part of the airline ticket.
           </p>
         </div>
       </section>

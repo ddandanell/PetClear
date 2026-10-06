@@ -293,7 +293,11 @@ export default function DubaiToUK() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Sequence</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">How the file is built</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              There is no single week count. The rabies wait is at least 21 full days after a first course. The certificate window is 10 days.
+              There is no single week count. The rabies wait is at least 21 full days after a first course. The certificate window is 10 days. The wider outbound move is{' '}
+              <Link to="/service/pet-relocation-from-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                pet relocation from Dubai
+              </Link>
+              . This page stays on the Great Britain entry file.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">

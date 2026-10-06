@@ -7,10 +7,14 @@ export default function PaidIncludes({
   tone = 'light',
   compact = false,
   className = '',
+  items = PAID_INCLUDES_ITEMS,
+  title = PAID_INCLUDES_TITLE,
 }: {
   tone?: Tone
   compact?: boolean
   className?: string
+  items?: readonly string[]
+  title?: string
 }) {
   const isDark = tone === 'dark' || tone === 'hero'
   const titleClass = isDark ? 'text-white' : 'text-[#2A2A2A]'
@@ -25,10 +29,10 @@ export default function PaidIncludes({
         : 'rounded-2xl bg-[#F5F6FD] p-5 ring-1 ring-[#3A45B0]/15'
 
   return (
-    <aside className={`${shell} ${className}`.trim()} aria-label={PAID_INCLUDES_TITLE}>
-      <p className={`text-sm font-semibold ${titleClass}`}>{PAID_INCLUDES_TITLE}</p>
+    <aside className={`${shell} ${className}`.trim()} aria-label={title}>
+      <p className={`text-sm font-semibold ${titleClass}`}>{title}</p>
       <ul className={`mt-3 grid gap-2 ${compact ? '' : 'sm:grid-cols-2'}`}>
-        {PAID_INCLUDES_ITEMS.map((item) => (
+        {items.map((item) => (
           <li key={item} className={`flex items-start gap-2 text-xs leading-relaxed ${itemClass}`}>
             <CheckCircle className={`mt-0.5 h-3.5 w-3.5 shrink-0 ${iconClass}`} aria-hidden="true" />
             <span>{item}</span>
