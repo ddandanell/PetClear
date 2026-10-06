@@ -163,12 +163,23 @@ function ctaHeading(slug: string): string {
   return 'Ready to book a managed move?'
 }
 
+const STRONG_CTA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#085530] sm:w-auto'
+
+function strongCtaPage(slug: string): boolean {
+  return slug === 'pet-relocation-from-dubai' || slug === 'pet-transport-dubai'
+}
+
 export default function ServicePage({ data }: { data: ServicePageData }) {
   const related = mergeRelatedLinks(`/service/${data.slug}/`, data.relatedLinks)
   const url = `${BASE_URL}/service/${data.slug}/`
   const wa = getWhatsAppUrl(data.whatsappMessage)
   const ctaLabel = data.ctaLabel || defaultCtaLabel(data.slug)
   const heroEyebrow = data.heroEyebrow || defaultEyebrow(data.slug)
+  const strongCta = strongCtaPage(data.slug)
+  const closingBody =
+    data.ctaBody ||
+    'WhatsApp during business hours with pet type, breed, route and month. We explain the coordination, and any assessment fee, before paid work starts.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
@@ -238,10 +249,38 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         subtitle={shortSubtitle(data.heroValueProp)}
         updated="Updated September 2026"
         primaryLabel={ctaLabel}
-        ctaSupport={data.slug === 'pet-relocation-dubai' ? CTA_SUPPORT : undefined}
+        primaryClassName={strongCta ? STRONG_CTA : undefined}
+        ctaSupport={data.ctaSupport || (data.slug === 'pet-relocation-dubai' ? CTA_SUPPORT : undefined)}
         whatsappMessage={data.whatsappMessage}
+        paidIncludes={data.paidIncludes}
         showBuyerQualify
       />
+
+      {data.bookingCta ? (
+        <section className="bg-white section-padding">
+          <div className="mx-auto max-w-[820px] px-5 sm:px-6 lg:px-8">
+            <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">{data.bookingCta.heading}</h2>
+            <p className="mb-5 leading-relaxed text-[#3A3A3A]">{data.bookingCta.intro}</p>
+            <ul className="mb-6 space-y-2">
+              {data.bookingCta.items.map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm leading-relaxed text-[#2A2A2A]">
+                  <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#0B6B3A]" aria-hidden="true" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={wa}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={STRONG_CTA}
+            >
+              <MessageCircle className="h-5 w-5" aria-hidden="true" /> {data.bookingCta.label}
+            </a>
+            <WhatsAppGate className="mt-4 max-w-xl" />
+          </div>
+        </section>
+      ) : null}
 
       {/* SECTIONS */}
       {data.sections.map((sec, i) => (
@@ -320,18 +359,16 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {/* FINAL CTA */}
       <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">{ctaHeading(data.slug)}</h2>
-          <p className="text-white/90 mb-4">
-            WhatsApp during business hours with pet type, breed, route and month. We explain the coordination, and any assessment fee, before paid work starts.
-          </p>
+          <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">{data.ctaHeading || ctaHeading(data.slug)}</h2>
+          <p className="text-white/90 mb-4">{closingBody}</p>
           <LinkPlanSlot
             path={`/service/${data.slug}/`}
             slot="service-quote"
             className="mb-4 text-sm leading-relaxed text-white/90"
             linkClass="font-semibold text-white underline"
           />
-          <PaidIncludes tone="dark" compact className="mx-auto mb-6 max-w-2xl text-left" />
-          <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm ring-1 ring-white/20">
+          <PaidIncludes tone="dark" compact items={data.paidIncludes} className="mx-auto mb-6 max-w-2xl text-left" />
+          <a href={wa} target="_blank" rel="noopener noreferrer" className={strongCta ? `${STRONG_CTA} rounded-2xl px-8 py-4` : 'inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm ring-1 ring-white/20'}>
             <MessageCircle className="w-5 h-5" aria-hidden="true" /> {ctaLabel}
           </a>
           <WhatsAppGate tone="dark" className="mt-4" />

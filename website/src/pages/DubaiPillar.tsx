@@ -280,11 +280,11 @@ export default function DubaiPillar() {
             kennels — those names are orientation only.
           </p>
           <p className="leading-relaxed text-[#5A5A5A]">
-            Local-only clinic or airport runs that are not an international file belong on{' '}
+            Local-only clinic or airport runs that are not an international file are booked as a{' '}
             <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              pet transport and pet taxi
-            </Link>
-            . After cargo release, collection and home set-up are on the{' '}
+              pet taxi Dubai
+            </Link>{' '}
+            trip. After cargo release, collection and home set-up are on the{' '}
             <Link to="/guides/dubai-pet-arrival-guide/" className="font-semibold text-[#4F5BD5] hover:underline">
               Dubai pet arrival guide
             </Link>

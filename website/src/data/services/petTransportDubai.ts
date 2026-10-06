@@ -8,12 +8,37 @@ const petTransportDubai: ServicePageData = {
   h1: 'Pet taxi Dubai — city rides, airports and the emirates',
   primaryKeyword: 'pet taxi dubai',
   heroValueProp:
-    'Pet taxi Dubai is the primary local job on this page: climate-controlled ground transfers, DXB and DWC airport runs, and Dubai–Abu Dhabi trips — not international cargo.',
+    'Book a climate-controlled pet taxi in Dubai for city rides, DXB and DWC airport runs, and trips between emirates.',
   heroImage: '/images/service-pet-transport-dubai.jpg',
   heroImageAlt:
     'Climate-controlled van interior with a secured pet travel crate in Dubai',
   whatsappMessage:
     'Hi Dubai Pet Relocation, I want to book a pet taxi or ground transfer in Dubai. Pickup, drop-off and preferred time:',
+  ctaLabel: 'Book a pet taxi',
+  ctaSupport: 'Send the pickup, drop-off, pet and date. We confirm the quote before the van is booked.',
+  ctaHeading: 'Ready to book a pet taxi?',
+  ctaBody:
+    'Send the pickup, drop-off, pet and date on WhatsApp. We confirm availability and the quote before anything is booked.',
+  paidIncludes: [
+    'Vetted vehicle and handler for the booking',
+    'Crate or carrier guidance for the pet and the vehicle',
+    'Timed DXB and DWC airport runs',
+    'Inter-emirate trips, including Dubai and Abu Dhabi',
+    'Confirmed quote before anything is booked',
+  ],
+  bookingCta: {
+    heading: 'Book a pet taxi',
+    intro:
+      'Check availability for your date. Send the pickup, the drop-off, the pet and the time. The quote is confirmed before the van is reserved.',
+    label: 'Check availability for your date',
+    items: [
+      'Vetted vehicle and handler for the booking',
+      'Crate or carrier guidance for the pet and the vehicle',
+      'Timed DXB and DWC airport runs',
+      'Inter-emirate trips, including Dubai and Abu Dhabi',
+      'Confirmed quote before anything is booked',
+    ],
+  },
   trustBadges: [
     'Pet taxi & ground only',
     'Climate-controlled partners',
@@ -24,9 +49,9 @@ const petTransportDubai: ServicePageData = {
   howToName: 'How a Dubai pet taxi booking works',
   sections: [
     {
-      h2: 'Pet taxi Dubai — the local commercial opportunity',
+      h2: 'What our pet taxi in Dubai covers',
       intro:
-        'Local pet transport and pet taxi are booked here: a vehicle, a crate or carrier, and a handler who treats the animal as a passenger. International door-to-door cargo is a different job on [pet relocation services in Dubai](/service/pet-relocation-dubai/).',
+        'A pet taxi booking here is a vehicle, a crate or carrier, and a handler who treats the animal as a passenger. International door-to-door cargo is a different job on [pet relocation services in Dubai](/service/pet-relocation-dubai/).',
       body: [
         {
           type: 'p',
@@ -35,16 +60,16 @@ const petTransportDubai: ServicePageData = {
         {
           type: 'list',
           items: [
-            'Pet taxi within Dubai — marina towers, villa communities, clinics and boarding',
+            'Pet taxi within Dubai: marina towers, villa communities, clinics and boarding',
             'Airport pet taxi to and from DXB and DWC for cargo drop-off or collection',
             'Dubai–Abu Dhabi and other inter-emirate ground transfers',
             'Multi-pet households travelling in one booking when crate space allows',
-            'Same-day framing when a partner slot exists — not a 24/7 SLA',
+            'Same-day bookings when a vehicle is free that day, confirmed before the van is reserved',
           ],
         },
         {
           type: 'p',
-          text: 'We coordinate vetted, animal-experienced transport partners. We do not claim to own the vans, and we do not publish district AED menus. Pricing is confirmed on quote.',
+          text: 'We coordinate vetted, animal-experienced transport partners. The vans are partner vehicles. The quote depends on the two addresses, the pet and the time, and it is confirmed before anything is booked.',
         },
       ],
     },
@@ -77,7 +102,7 @@ const petTransportDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Airport runs — DXB and DWC',
+      h2: 'Airport runs to DXB and DWC',
       intro:
         'Airport pet taxi is a timed ground product. It is not an international ticket.',
       body: [
@@ -128,20 +153,20 @@ const petTransportDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Same-day pet taxi — without a 24/7 claim',
+      h2: 'Same-day pet taxi requests',
       intro:
-        'Same-day is a scheduling outcome when a partner is free, not a staffing slogan.',
+        'A same-day pet taxi is available when a vehicle is free for that window. It is a confirmed booking, not an open promise.',
       body: [
         {
           type: 'p',
-          text: 'We will try to place a same-day pet taxi when the time window, the community and the vehicle type line up. We do not advertise 24/7 availability or a 15-minute reply SLA. Messages are answered during published business hours. Night-before airport collections are planned as booked slots, not as an on-call promise.',
+          text: 'We place a same-day pet taxi when the time window, the community and the vehicle type line up. Messages are answered during published business hours. A night-before airport collection is a booked slot, arranged in advance.',
         },
         {
           type: 'list',
           items: [
             'Best same-day fit: weekday clinic or boarding transfers inside Dubai',
             'Needs advance booking: first-time cargo drop-offs, very large crates, multi-pet loads',
-            'Not offered as an emergency medical ambulance — call a clinic if the animal is in distress',
+            'Not offered as an emergency medical ambulance. Call a clinic if the animal is in distress',
           ],
         },
       ],
@@ -162,7 +187,7 @@ const petTransportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'If a vehicle or handler does not meet that bar, we do not use them for your booking. Partnership language here is a vetting process, not a claimed licence, IATA membership or government endorsement.',
+          text: 'If a vehicle or handler does not meet that bar, we do not use them for your booking. Vetting is how partners are chosen. It is not a government licence, an airline membership or an official endorsement.',
         },
       ],
     },
@@ -197,12 +222,24 @@ const petTransportDubai: ServicePageData = {
   ],
   faq: [
     {
+      q: 'How far ahead should I book a pet taxi in Dubai?',
+      a: 'A weekday clinic or boarding run inside Dubai can often be placed the day before, or the same day when a vehicle is free. A first airport drop-off, a large crate, or more than one pet needs earlier notice so the vehicle and handler are confirmed. Send the date, both addresses and the pet size to check availability. The timing is on this page. WhatsApp is for a booking.',
+    },
+    {
+      q: 'What should I have ready when I book a pet taxi?',
+      a: 'Pet type and size, whether you already have a crate or carrier, the pickup address, the drop-off address, and a time window. For an airport run, add DXB or DWC and the cargo or flight time. A confirmed quote is sent before the van is reserved.',
+    },
+    {
+      q: 'How early should the van arrive for an airport drop-off?',
+      a: 'Cargo desks use a short acceptance window. It is not the passenger-terminal clock. Share that acceptance or collection time and the road time is set so the handler is at the desk inside the window. The van does not replace the airline booking.',
+    },
+    {
       q: 'Are pets allowed in taxis in Dubai?',
       a: 'Ordinary street-hail taxis are unreliable for pets — many drivers refuse crates or unsecured animals. Use a dedicated pet taxi / pet transport partner that expects dogs and cats, securement, and airport timings. That is what this page sells: local, airport, and inter-emirate pet transport. WhatsApp a Relocation Coordinator on +971504782999 with pet size, crate, and pins.',
     },
     {
       q: 'Are pets allowed in Careem taxi?',
-      a: 'Careem availability for pets depends on the product and the individual driver — it is not a guaranteed pet-taxi SLA. For cargo releases and timed airport hand-offs, book a dedicated pet transport partner instead of hoping a rideshare accepts the crate. Confirm on WhatsApp with your pet’s size and pickup window. We do not claim Careem affiliation.',
+      a: 'Careem availability for pets depends on the product and the individual driver. It is not a booked pet taxi. For cargo releases and timed airport hand-offs, book a dedicated pet transport partner instead of hoping a rideshare accepts the crate. Send the pet’s size and pickup window if you want a booking. We do not claim Careem affiliation.',
     },
     {
       q: 'How much is a pet taxi in Dubai?',
@@ -230,7 +267,7 @@ const petTransportDubai: ServicePageData = {
     },
     {
       q: 'Do you offer same-day pet taxi bookings in Dubai?',
-      a: 'When a partner slot, vehicle type and community access line up, yes. Same-day is a scheduling outcome, not a 24/7 SLA. Message during business hours with both addresses and the window.',
+      a: 'When a vehicle, the crate size and community access line up, yes. Same-day means a free slot that day, confirmed before the van is reserved. Message during business hours with both addresses and the window.',
     },
     {
       q: 'Can a pet taxi take my dog to DXB or DWC?',
@@ -250,7 +287,7 @@ const petTransportDubai: ServicePageData = {
     },
     {
       q: 'Do you operate pet taxi 24 hours a day?',
-      a: 'No. We do not claim 24/7 coverage. Night-before airport collections are planned as booked slots. Messages are answered during published business hours.',
+      a: 'No. Bookings are taken during published business hours. A night-before airport collection is a confirmed slot, arranged in advance.',
     },
     {
       q: 'How is pet taxi pricing confirmed?',
@@ -262,7 +299,7 @@ const petTransportDubai: ServicePageData = {
     { label: 'Pet relocation across the UAE', to: '/cities/' },
     { label: 'Abu Dhabi city guide', to: '/cities/abu-dhabi/' },
     { label: 'Sharjah city guide', to: '/cities/sharjah/' },
-    { label: 'Talk to our relocation team', to: '/contact/' },
+    { label: 'Request a booking quote', to: '/contact/' },
     { label: 'Pet flight options hub', to: '/guides/pet-flight-options-dubai/' },
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Compare our service tiers', to: '/services/' },

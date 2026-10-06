@@ -162,7 +162,7 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Each country sets its own conditions for vaccinations, titer testing, certificate format and entry points, and these change from time to time. We verify the current requirements for your specific destination before you book, so you are never caught out at the other end.',
+          text: 'Each country sets its own conditions for vaccinations, titer testing, certificate format and entry points, and these change from time to time. We verify the current requirements for your specific destination before you book, so you are never caught out at the other end. The whole outbound move, from the decision to leave through the airport handover, is [pet relocation from Dubai](/service/pet-relocation-from-dubai/). This page stays on the export paperwork and the flight booking.',
         },
       ],
     },
@@ -192,7 +192,7 @@ const petExportDubai: ServicePageData = {
   faq: [
     {
       q: 'How do I get an export permit for my pet in the UAE?',
-      a: 'Leaving the UAE uses export documentation (MOCCAE export pathway / veterinary export certification as required for the destination) — not the import permit used to enter. Requirements depend on the destination country. Start with destination rules, then align UAE export timing so certificates do not expire before departure. Journey page: [/service/pet-relocation-from-dubai/](/service/pet-relocation-from-dubai/). WhatsApp +971504782999.',
+      a: 'Leaving the UAE uses export documentation (MOCCAE export pathway / veterinary export certification as required for the destination) — not the import permit used to enter. Requirements depend on the destination country. Start with destination rules, then align UAE export timing so certificates do not expire before departure. The departure journey is [pet relocation from Dubai](/service/pet-relocation-from-dubai/). WhatsApp +971504782999 for a managed-move quote.',
     },
     {
       q: 'What are the requirements for obtaining a pet export permit from the MOCCAE in Dubai, UAE?',
