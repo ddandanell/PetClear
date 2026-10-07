@@ -216,9 +216,9 @@ export default function DubaiPillar() {
             Dubai is many last miles, not one city-shaped crate run. A Marina tower wants a goods-lift booking and a visitor
             plate. An Arabian Ranches villa wants a security-gate window. A Deira walk-up wants a crate that fits a tight
             stair and a parking bay that is already full. This page groups those communities so you can open the right
-            community page. The commercial file — permits, IATA crate, cargo and customs — lives on{' '}
+            community page. The commercial file (permits, IATA crate, cargo and customs) lives on{' '}
             <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              door-to-door pet relocation in Dubai
+              pet relocation services in Dubai
             </Link>
             . Same-city and inter-emirate vans live on{' '}
             <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">

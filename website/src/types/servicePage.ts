@@ -62,6 +62,8 @@ export interface ServicePageData {
   howToName?: string
   /** Short line under the hero buttons. */
   ctaSupport?: string
+  /** Soft-gate sentence on hero and closing CTA blocks. */
+  gateLine?: string
   /** Overrides the shared paid-scope list near hero and closing CTAs. */
   paidIncludes?: string[]
   /** Closing band heading and sentence. Buyer action only. */

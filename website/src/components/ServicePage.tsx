@@ -167,7 +167,7 @@ const STRONG_CTA =
   'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#085530] sm:w-auto'
 
 function strongCtaPage(slug: string): boolean {
-  return slug === 'pet-relocation-from-dubai' || slug === 'pet-transport-dubai'
+  return slug === 'pet-relocation-from-dubai' || slug === 'pet-transport-dubai' || slug === 'pet-relocation-dubai'
 }
 
 export default function ServicePage({ data }: { data: ServicePageData }) {
@@ -227,7 +227,12 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       schemas.push({
         '@context': 'https://schema.org', '@type': 'HowTo',
         name: data.howToName || data.h1,
-        step: stepBlock.steps.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, name: s.title, text: s.text })),
+        step: stepBlock.steps.map((s, i) => ({
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: s.title,
+          text: stripInternalMarkdownLinks(s.text),
+        })),
       })
     }
   }
@@ -253,6 +258,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         ctaSupport={data.ctaSupport || (data.slug === 'pet-relocation-dubai' ? CTA_SUPPORT : undefined)}
         whatsappMessage={data.whatsappMessage}
         paidIncludes={data.paidIncludes}
+        gateLine={data.gateLine}
         showBuyerQualify
       />
 
@@ -371,7 +377,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
           <a href={wa} target="_blank" rel="noopener noreferrer" className={strongCta ? `${STRONG_CTA} rounded-2xl px-8 py-4` : 'inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm ring-1 ring-white/20'}>
             <MessageCircle className="w-5 h-5" aria-hidden="true" /> {ctaLabel}
           </a>
-          <WhatsAppGate tone="dark" className="mt-4" />
+          <WhatsAppGate tone="dark" line={data.gateLine} className="mt-4" />
         </div>
       </section>
     </div>

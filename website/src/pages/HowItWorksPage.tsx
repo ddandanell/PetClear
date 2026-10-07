@@ -324,7 +324,11 @@ export default function HowItWorksPage() {
           <div className="rounded-[20px] border border-[#E2E5F6] bg-[#F5F6FD] p-6 sm:p-8">
             <h2 className="mb-2 text-xl font-bold text-[#2A2A2A] sm:text-2xl">First: how will the pet fly?</h2>
             <p className="mb-4 text-sm leading-relaxed text-[#5A5A5A] sm:text-base">
-              The seven steps below assume we already know how the pet will fly. Pets entering the UAE travel as manifest cargo, except Etihad in-cabin into Abu Dhabi. Compare the modes on the flight-options hub. Airline fees are labelled on those guides. Our packages are quoted after eligibility. Then come back here for the coordination sequence.
+              The seven steps below assume we already know how the pet will fly. Pets entering the UAE travel as manifest cargo, except Etihad in-cabin into Abu Dhabi. Compare the modes on the flight-options hub. Airline fees are labelled on those guides. Our packages are quoted after eligibility. The paid coordination file is{' '}
+              <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                pet relocation services in Dubai
+              </Link>
+              . Then come back here for the coordination sequence.
             </p>
             <div className="flex flex-wrap gap-3 text-sm font-semibold">
               <Link to="/guides/pet-flight-options-dubai/" className="inline-flex items-center gap-1 text-[#4F5BD5] hover:underline">

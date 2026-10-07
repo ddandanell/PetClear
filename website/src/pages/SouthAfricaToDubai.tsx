@@ -1,15 +1,16 @@
 import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
-import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import Hero from '../components/Hero.tsx'
 import RouteCostTeaser, { ROUTE_PACKAGE_COST_FAQ } from '../components/RouteCostTeaser.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
-import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
+import { BASE_URL, LOGO_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
 import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
+import PaidIncludes from '../components/PaidIncludes.tsx'
+import { CTA_ELIGIBILITY_MOVE, CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 
 export default function SouthAfricaToDubai() {
   const pageUrl = `${BASE_URL}/routes/south-africa-to-dubai/`
@@ -105,6 +106,10 @@ export default function SouthAfricaToDubai() {
         title="Pet relocation from South Africa to Dubai"
         subtitle="High-risk route: titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, plus wildlife rules. We ensure full DALRRD and UAE compliance."
         updated="Updated June 2026"
+        primaryLabel={CTA_ELIGIBILITY_MOVE}
+        primaryClassName="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] sm:w-auto"
+        whatsappMessage={waEligibility({ origin: 'South Africa', destination: 'Dubai', need: 'managed move' })}
+        gateLine={GUIDE_SOFT_GATE}
       />
 
       {/* ROUTE OVERVIEW */}
@@ -465,13 +470,33 @@ export default function SouthAfricaToDubai() {
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
+            <PawPrint className="w-12 h-12 mx-auto mb-4 text-white/80" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from South Africa to Dubai?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Dubai Pet Relocation has helped many South African families move their pets to Dubai. From Johannesburg, Cape Town, Durban, or anywhere in South Africa — we manage the titer test, DALRRD export, flight booking, and Dubai customs.
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-4 leading-relaxed">
+              From Johannesburg, Cape Town, Durban, or anywhere in South Africa, a managed move covers the titer test, DALRRD export, flight booking, and Dubai customs. The quote follows an eligibility check.
             </p>
+            <p className="mb-6 text-sm leading-relaxed text-white/80">{GUIDE_SOFT_GATE}</p>
+            <PaidIncludes
+              tone="dark"
+              compact
+              className="mx-auto mb-6 max-w-2xl text-left"
+              items={[
+                'Eligibility and destination rules check for a South Africa origin',
+                'MOCCAE import permit timing (valid 90 days from issuance)',
+                'Airline and crate booking',
+                'Airport handover and customs clearance',
+                'Door-to-door delivery in Dubai',
+              ]}
+            />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Get a South Africa to Dubai quote" message="Hi, I want to relocate my pet from South Africa to Dubai. Can you help me understand the titer test process and cost?" />
+              <a
+                href={getWhatsAppUrl(waEligibility({ origin: 'South Africa', destination: 'Dubai', need: 'managed move' }))}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] sm:w-auto"
+              >
+                <MessageCircle className="h-4 w-4" aria-hidden="true" /> {CTA_MANAGED_QUOTE}
+              </a>
               <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
                 <Info className="w-5 h-5" />
                 How It Works
