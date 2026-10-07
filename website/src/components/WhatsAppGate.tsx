@@ -13,15 +13,18 @@ export default function WhatsAppGate({
   tone = 'light',
   className = '',
   showDiyNote = false,
+  line = WA_GATE,
 }: {
   tone?: Tone
   className?: string
   /** Guide pages: point DIY readers at the on-page checklist, not a free consult. */
   showDiyNote?: boolean
+  /** Override the soft-gate sentence. Defaults to the shared paid-work line. */
+  line?: string
 }) {
   return (
     <div className={`space-y-1 ${className}`.trim()}>
-      <p className={`text-xs leading-relaxed ${TONE[tone]}`}>{WA_GATE}</p>
+      <p className={`text-xs leading-relaxed ${TONE[tone]}`}>{line}</p>
       {showDiyNote ? <p className={`text-xs leading-relaxed ${TONE[tone]}`}>{WA_GATE_DIY}</p> : null}
     </div>
   )

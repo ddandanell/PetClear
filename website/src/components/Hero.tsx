@@ -34,6 +34,8 @@ interface HeroProps {
   primaryClassName?: string
   /** Page-specific paid-scope bullets under the hero CTA. */
   paidIncludes?: string[]
+  /** Soft-gate sentence under the hero CTA. */
+  gateLine?: string
 }
 
 // Shared professional hero: a sharp full-bleed photo, a black gradient scrim for
@@ -54,6 +56,7 @@ export default function Hero({
   ctaSupport,
   primaryClassName,
   paidIncludes,
+  gateLine,
   overlayClassName,
   imageWidth = 1536,
   imageHeight = 1024,
@@ -132,11 +135,11 @@ export default function Hero({
           ) : null}
           {showBuyerQualify ? (
             <div className="mt-6 max-w-xl space-y-3">
-              <WhatsAppGate tone="hero" />
+              <WhatsAppGate tone="hero" line={gateLine} />
               <PaidIncludes tone="hero" compact items={paidIncludes} />
             </div>
           ) : (
-            <WhatsAppGate tone="hero" className="mt-4 max-w-xl" />
+            <WhatsAppGate tone="hero" line={gateLine} className="mt-4 max-w-xl" />
           )}
         </div>
       </div>

@@ -15,7 +15,8 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS } from '../data/flightModes.ts'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
-import { waEligibility } from '../lib/conversionCopy.ts'
+import PaidIncludes from '../components/PaidIncludes.tsx'
+import { CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 const ETIHAD_PETS_URL = 'https://www.etihad.com/en-ae/plan/travel-companion/travelling-with-pets'
@@ -137,7 +138,9 @@ export default function EtihadPetPolicyGuide() {
         subtitle="Small dogs and cats, booked early — arriving at Abu Dhabi, not Dubai International. Cabin fees change; confirm at booking. We coordinate the file; Etihad operates the flight."
         updated="Updated September 2026"
         primaryLabel="Check cabin eligibility"
+        primaryClassName="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] sm:w-auto"
         whatsappMessage={WA}
+        gateLine={GUIDE_SOFT_GATE}
         secondary={{ label: 'All six flight modes', to: FLIGHT_MODE_PATHS.hub }}
       />
 
@@ -262,19 +265,19 @@ export default function EtihadPetPolicyGuide() {
             </Link>{' '}
             or the{' '}
             <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
-              door-to-door relocation service
+              pet relocation services in Dubai
             </Link>
             .
           </p>
           <p className="leading-relaxed text-[#5A5A5A]">
-            We coordinate. We do not operate Etihad, MICCO or the vehicle. Message us when you want the eligibility check, the form timing and the AUH-to-Dubai handover held on one WhatsApp thread.
+            We coordinate. We do not operate Etihad, MICCO or the vehicle. The quote button is for an eligibility check, the form timing and the Abu Dhabi to Dubai handover held as a managed move.
           </p>
         </div>
       </section>
 
       <FlightModeCards
-        heading="Sibling modes and the door-to-door umbrella"
-        intro="Cabin is one product. Compare baggage, cargo, jet and charter, or hand the whole file to door-to-door coordination."
+        heading="Cabin, hold or cargo: other ways to fly your pet to the UAE"
+        intro="Cabin is one way to fly. Compare hold baggage, cargo, a private jet or a shared charter if this product does not fit the pet."
         exclude="cabin"
       />
 
@@ -293,21 +296,33 @@ export default function EtihadPetPolicyGuide() {
 
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">We coordinate the Etihad cabin file</h2>
-          <p className="mb-8 text-base leading-relaxed text-white/80">
-            Eligibility, booking-form timing, AUH release steps and the Dubai transfer — quoted on WhatsApp. Email{' '}
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Check if we can manage this Etihad move</h2>
+          <p className="mb-4 text-base leading-relaxed text-white/80">
+            This guide stays free to read. A managed move covers eligibility, the booking form, Abu Dhabi release steps and the transfer when the home is in Dubai. Email{' '}
             <a href="mailto:support@dubai-pet-relocation.ae" className="underline">
               support@dubai-pet-relocation.ae
             </a>{' '}
             if you prefer mail.
           </p>
+          <p className="mb-6 text-sm leading-relaxed text-white/80">{GUIDE_SOFT_GATE}</p>
+          <PaidIncludes
+            tone="dark"
+            compact
+            className="mx-auto mb-6 max-w-2xl text-left"
+            items={[
+              'Cabin eligibility against the live Etihad weight and carrier limits',
+              'MOCCAE import permit timing (valid 90 days from issuance)',
+              'Airline booking-form and document timing',
+              'Abu Dhabi arrival handover, plus a ground transfer when the home is in Dubai',
+            ]}
+          />
           <a
             href={getWhatsAppUrl(WA)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white hover:bg-[#1DA851]"
+            className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] sm:w-auto"
           >
-            <MessageCircle className="h-4 w-4" /> Check cabin eligibility
+            <MessageCircle className="h-4 w-4" aria-hidden="true" /> {CTA_MANAGED_QUOTE}
           </a>
         </div>
       </section>
