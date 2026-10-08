@@ -28,6 +28,10 @@ interface GuideFunnelCtaProps {
   waLabel?: string
   /** Money / commercial twins. Defaults keep PR #49 import-guide targets. */
   links?: FunnelLink[]
+  /** Page-specific paid-scope bullets. Defaults stay the shared list. */
+  paidItems?: readonly string[]
+  /** Optional WhatsApp button classes. Defaults stay the shared green button. */
+  waClassName?: string
 }
 
 const DEFAULT_ELIGIBILITY = WA_ELIGIBILITY_DEFAULT
@@ -56,6 +60,8 @@ export default function GuideFunnelCta({
   eligibilityMessage = DEFAULT_ELIGIBILITY,
   waLabel = CTA_ELIGIBILITY_MOVE,
   links = DEFAULT_LINKS,
+  paidItems,
+  waClassName,
 }: GuideFunnelCtaProps) {
   const isEnd = variant === 'end'
   const heading =
@@ -80,9 +86,11 @@ export default function GuideFunnelCta({
   const serviceBtn = isEnd
     ? 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white text-[#4F5BD5] font-semibold text-sm hover:bg-white/90 transition-colors'
     : 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white text-[#4F5BD5] font-semibold text-sm ring-1 ring-[#4F5BD5]/25 hover:bg-[#E9ECFB] transition-colors shadow-sm'
-  const waBtn = isEnd
-    ? 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-[#25D366] text-white font-semibold text-sm hover:bg-[#1DA851] transition-colors whatsapp-pulse'
-    : 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-[#25D366] text-white font-semibold text-sm hover:bg-[#1DA851] transition-colors shadow-sm'
+  const waBtn =
+    waClassName ||
+    (isEnd
+      ? 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-[#25D366] text-white font-semibold text-sm hover:bg-[#1DA851] transition-colors whatsapp-pulse'
+      : 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-[#25D366] text-white font-semibold text-sm hover:bg-[#1DA851] transition-colors shadow-sm')
 
   const buttons = (
     <div className="flex flex-wrap justify-center gap-3">
@@ -115,7 +123,7 @@ export default function GuideFunnelCta({
             <h2 className={headingClass}>{heading}</h2>
             <GuideBridge className={`${bodyClass} mb-4`} />
             {extra ? <p className={bodyClass}>{extra}</p> : null}
-            <PaidIncludes compact className="mb-6 text-left" />
+            <PaidIncludes compact items={paidItems} className="mb-6 text-left" />
             {buttons}
             <WhatsAppGate showDiyNote className="mt-4 text-center" />
             <p className="mt-2 text-center text-xs text-[#8A8A8A]">
@@ -127,7 +135,7 @@ export default function GuideFunnelCta({
             <h2 className={headingClass}>{heading}</h2>
             <GuideBridge tone="dark" className={`${bodyClass} mb-4`} />
             {extra ? <p className={bodyClass}>{extra}</p> : null}
-            <PaidIncludes tone="dark" compact className="mx-auto mb-6 max-w-2xl text-left" />
+            <PaidIncludes tone="dark" compact items={paidItems} className="mx-auto mb-6 max-w-2xl text-left" />
             {buttons}
             <WhatsAppGate showDiyNote tone="dark" className="mt-4" />
             <p className="mt-2 text-sm text-white/60">

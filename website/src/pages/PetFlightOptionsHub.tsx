@@ -10,13 +10,23 @@ import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import LinkedText from '../components/LinkedText.tsx'
+import PaidIncludes from '../components/PaidIncludes.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
+import { CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS, UAE_MANIFEST_CARGO_RULE } from '../data/flightModes.ts'
 import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
-const WA =
-  'Hi Dubai Pet Relocation! I need help choosing how my pet should fly to or from Dubai. Can you recommend a mode and quote the coordination?'
+const WA = waEligibility({ need: 'route choice and flight booking for a managed move' })
+
+const STRONG_WA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'
+
+const FLIGHT_PAID = [
+  'Route and mode check: cabin, baggage, cargo or charter',
+  'MOCCAE import permit timing (valid 90 days from issuance)',
+  'Airline booking, IATA crate and airport handover',
+] as const
 
 const snippetQuestion = 'Which airlines fly pets to Dubai?'
 const snippetAnswer =
@@ -151,8 +161,10 @@ export default function PetFlightOptionsHub() {
         title="Compare pet flight options to and from Dubai"
         subtitle="Chooser and airline comparison: Etihad cabin into AUH, Emirates / flydubai / Air Arabia no cabin cats or dogs, cargo the Dubai default. Fee grids live on the child guides."
         updated="Updated September 2026"
-        primaryLabel="Ask which mode fits"
+        primaryLabel={CTA_MANAGED_QUOTE}
+        primaryClassName={STRONG_WA}
         whatsappMessage={WA}
+        gateLine={GUIDE_SOFT_GATE}
         secondary={{ label: 'Door-to-door relocation', to: FLIGHT_MODE_PATHS.doorToDoor }}
       />
 
@@ -160,11 +172,11 @@ export default function PetFlightOptionsHub() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            This page covers the comparison queries — which airlines fly pets to Dubai, and which carriers are “pet friendly” here. It does not cover Etihad cabin-fee tables, Emirates animal-charge tiers, or the “pet relocation Dubai” door-to-door service. Those live on the child guides and on{' '}
+            This page covers the comparison queries: which airlines fly pets to Dubai, and which carriers are “pet friendly” here. It does not cover Etihad cabin-fee tables, Emirates animal-charge tiers, or the door-to-door service. Those live on the child guides and on{' '}
             <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
               door-to-door pet relocation in Dubai
             </Link>
-            . Air Arabia cabin is falcons-only (source: Air Arabia) — not a dog or cat product. Open a child page when you already know the carrier or mode; message us when you want us to choose and coordinate.
+            . Air Arabia cabin is falcons-only (source: Air Arabia), not a dog or cat product. Open a child page when you already know the carrier or mode. Get a managed-move quote when you want us to choose the mode and book the flight.
           </p>
           <ContentImage
             src="/assets/w-flight-modes/pet-airline-options-cabin-baggage-cargo-diagram.webp"
@@ -176,7 +188,7 @@ export default function PetFlightOptionsHub() {
           <div className="rounded-[20px] border border-[#E8D48B] bg-[#FFF8E7] p-6">
             <h2 className="mb-2 flex items-center gap-2 text-xl font-bold text-[#2A2A2A]">
               <AlertTriangle className="h-5 w-5 shrink-0 text-[#C89F5A]" />
-              UAE cargo-rule callout
+              Why pets enter the UAE as cargo
             </h2>
             <p className="text-sm leading-relaxed text-[#5A5A5A]">{UAE_MANIFEST_CARGO_RULE}</p>
             <LastVerified note="Confirm the current MOCCAE import conditions on the official portal before you book." />
@@ -187,7 +199,7 @@ export default function PetFlightOptionsHub() {
       <section className="section-padding bg-[#F5F6FD]">
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            Which airlines fly pets to Dubai — a comparison
+            Airline cabin rules for dogs and cats
           </h2>
           <p className="mb-6 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
             This is the comparison, not an Emirates-only sponge. Cabin cats and dogs exist on Etihad into Abu Dhabi.
@@ -225,7 +237,7 @@ export default function PetFlightOptionsHub() {
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Manifest cargo / SkyCargo for DXB-ending itineraries</td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
-                      Emirates cargo guide
+                      Emirates pet cargo
                     </Link>
                   </td>
                 </tr>
@@ -260,7 +272,7 @@ export default function PetFlightOptionsHub() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Decision table</h2>
+          <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Compare cabin, baggage, cargo and charter</h2>
           <p className="mb-6 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
             Use this to pick a child page. This table is a chooser, not an airline policy grid — no Etihad fee rows and no Emirates 500 / 650 / 800 reprint. Jet, charter and door-to-door stay Get a Quote.
           </p>
@@ -354,7 +366,7 @@ export default function PetFlightOptionsHub() {
       </section>
 
       <FlightModeCards
-        heading="Open a child page"
+        heading="Airline and crate guides"
         intro="Each card is a dedicated URL. Cabin covers Etihad cabin rules. Cargo is the Emirates / manifest-cargo guide. Jet and charter are quote-only offers. Door-to-door remains the umbrella coordination service."
       />
 
@@ -373,17 +385,19 @@ export default function PetFlightOptionsHub() {
 
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Not sure which mode fits?</h2>
-          <p className="mb-8 text-base leading-relaxed text-white/80">
-            Send pet type, weight, origin or destination, and a target month. We recommend a mode. Full coordination is quoted on the door-to-door page — no invented jet or charter prices.
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Want us to pick the route and book the flight?</h2>
+          <p className="mb-4 text-base leading-relaxed text-white/80">
+            Send pet type, weight, origin or destination, and a target month. We match a mode the airline will accept and quote the managed booking. Jet and charter seats stay quote-only. We do not publish a jet or charter price on this page.
           </p>
+          <p className="mb-6 text-sm leading-relaxed text-white/80">{GUIDE_SOFT_GATE}</p>
+          <PaidIncludes tone="dark" compact items={[...FLIGHT_PAID]} className="mx-auto mb-6 max-w-2xl text-left" />
           <a
             href={getWhatsAppUrl(WA)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white shadow-sm hover:bg-[#1DA851]"
+            className={STRONG_WA}
           >
-            <MessageCircle className="h-4 w-4" /> Ask which mode fits
+            <MessageCircle className="h-4 w-4" aria-hidden="true" /> {CTA_MANAGED_QUOTE}
           </a>
         </div>
       </section>

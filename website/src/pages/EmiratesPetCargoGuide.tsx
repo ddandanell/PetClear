@@ -10,9 +10,21 @@ import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import LinkedText from '../components/LinkedText.tsx'
+import PaidIncludes from '../components/PaidIncludes.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
+import { CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE } from '../lib/conversionCopy.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS, UAE_MANIFEST_CARGO_RULE } from '../data/flightModes.ts'
+
+const STRONG_WA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'
+
+const EMIRATES_PAID = [
+  'Eligibility and route check for the pet and the Emirates itinerary',
+  'MOCCAE import permit timing (valid 90 days from issuance)',
+  'Emirates cargo booking and an IATA crate checked before travel',
+  'Airport handover and customs clearance through to your door',
+] as const
 
 const WA =
   'Hi Dubai Pet Relocation! I read the Emirates pet cargo guide. Can you review my pet and route and quote door-to-door or international relocation?'
@@ -82,13 +94,21 @@ const faqData = [
     q: 'Is the USD 500 / 650 / 800 table a Dubai Pet Relocation freight quote?',
     a: 'No. Those are Emirates airline animal-charge tiers (source: Emirates), not DPR freight. Commercial cargo handoff and coordination are quoted per route and weight on international pet relocation or door-to-door pet relocation.',
   },
+  {
+    q: 'How far ahead should I book Emirates cargo through a managed move?',
+    a: 'Emirates asks for the pet travel form at least one week before the flight (source: Emirates). A managed move needs that week plus the permit window: the MOCCAE import permit is valid for 90 days from issuance, and the cargo booking has to sit inside it. Send the pet, route and target month when you are ready to book. We quote the coordination. WhatsApp is not a free advice line.',
+  },
+  {
+    q: 'What do you need from me to quote an Emirates cargo move?',
+    a: 'Species, breed, approximate weight, origin, destination and a target travel date. Crate measurements help if you already have them. The quote is for a managed relocation: eligibility and route check, permit timing, the Emirates cargo booking and the IATA crate, then airport handover and clearance to your door. Government fees are confirmed on the MOCCAE portal. WhatsApp +971504782999 opens the booking form for people ready to hire.',
+  },
 ]
 
 export default function EmiratesPetCargoGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.cargo}`
-  const title = 'Emirates Pet Cargo | Travel Planning & Requirements'
+  const title = 'Emirates Pet Cargo to Dubai | Rules, Crates & Booking'
   const description =
-    'Understand Emirates pet travel and cargo planning, documents and crate requirements. Confirm the applicable service and request help with your route.'
+    'Check Emirates pet cargo eligibility and get a managed-move quote. Rules, crate fit and booking for dogs and cats flying to Dubai.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -105,7 +125,7 @@ export default function EmiratesPetCargoGuide() {
     headline: title,
     description,
     author: { '@type': 'Organization', name: 'Dubai Pet Relocation', url: BASE_URL },
-    dateModified: '2026-09-04',
+    dateModified: '2026-10-08',
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   }
   const faqSchema = {
@@ -135,19 +155,30 @@ export default function EmiratesPetCargoGuide() {
         image="/images/guide-iata-crate.jpg"
         imageAlt="An IATA-approved pet crate of the kind used for Emirates SkyCargo and other manifest cargo bookings"
         eyebrow="Airline guide"
-        title="Planning pet travel with Emirates"
-        subtitle="An educational airline guide — not a cargo booking desk. Emirates animal-charge tiers, booking windows and unaccompanied cargo, cited from the airline. Commercial coordination lives on the relocation service pages."
-        updated="Updated September 2026"
-        primaryLabel="Get a Relocation Quote"
+        title="Emirates pet cargo: how to fly your dog or cat to Dubai"
+        subtitle="Airline rules, crate fit and booking steps for dogs and cats flying as cargo into Dubai. DIY readers can follow this page. Owners who want the file handled can book a managed move."
+        updated="Updated October 2026"
+        primaryLabel={CTA_MANAGED_QUOTE}
+        primaryClassName={STRONG_WA}
         whatsappMessage={WA}
+        gateLine={GUIDE_SOFT_GATE}
+        showBuyerQualify
+        paidIncludes={[...EMIRATES_PAID]}
         secondary={{ label: 'All six flight modes', to: FLIGHT_MODE_PATHS.hub }}
       />
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <p className="mb-6 leading-relaxed text-[#5A5A5A]">
+            This Emirates pet cargo guide is for owners flying a dog or cat to Dubai. DIY readers can follow the rules, the published fee tiers and the booking steps on this page. If you want the file handled, book a managed move through{' '}
+            <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation services in Dubai
+            </Link>
+            .
+          </p>
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <div className="mb-8 rounded-[20px] border border-[#C8CEE8] bg-[#F5F6FD] p-6">
-            <h2 className="mb-2 text-xl font-bold text-[#2A2A2A]">Why pets enter Dubai as manifest cargo</h2>
+            <h2 className="mb-2 text-xl font-bold text-[#2A2A2A]">Why pets must fly into Dubai as cargo</h2>
             <p className="text-sm leading-relaxed text-[#5A5A5A]">{UAE_MANIFEST_CARGO_RULE}</p>
             <p className="mt-3 text-sm leading-relaxed text-[#5A5A5A]">
               This URL is a policy and booking-steps guide, not a commercial cargo product page. If you want us to coordinate the file, open{' '}
@@ -161,9 +192,9 @@ export default function EmiratesPetCargoGuide() {
               .
             </p>
           </div>
-          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Manifest cargo vs everything else</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Cargo, cabin or checked baggage: what Emirates allows</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            Manifest cargo is an unaccompanied (or separately ticketed) live-animal booking on an air waybill. The crate is accepted at the cargo terminal — at DXB that is typically the cargo village, not the passenger hall. Emirates SkyCargo publishes a dedicated Emirates Pets product under IATA Live Animals Regulations (source: Emirates SkyCargo).
+            Manifest cargo is an unaccompanied (or separately ticketed) live-animal booking on an air waybill. The crate is accepted at the cargo terminal. At DXB that is typically the cargo village, not the passenger hall. Emirates SkyCargo publishes a dedicated Emirates Pets product under IATA Live Animals Regulations (source: Emirates SkyCargo).
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             This guide stays on Emirates / SkyCargo: cabin is closed for dogs and cats except falcons on certain Pakistan
@@ -171,12 +202,16 @@ export default function EmiratesPetCargoGuide() {
             <Link to={FLIGHT_MODE_PATHS.baggage} className="font-semibold text-[#4F5BD5] hover:underline">
               pet as checked baggage
             </Link>{' '}
-            and is blocked for Emirates itineraries that end in Dubai. For which airlines fly pets to Dubai — Etihad cabin
-            into AUH versus Emirates, flydubai and Air Arabia — use the{' '}
+            and is blocked for Emirates itineraries that end in Dubai. For which airlines fly pets to Dubai (Etihad cabin
+            into AUH versus Emirates, flydubai and Air Arabia), use the{' '}
             <Link to={FLIGHT_MODE_PATHS.hub} className="font-semibold text-[#4F5BD5] hover:underline">
               pet flight options hub
             </Link>
-            , not this page.
+            , not this page. Crate size and hardware for the cargo booking are in the{' '}
+            <Link to="/guides/iata-pet-crate-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
+              IATA pet crate requirements
+            </Link>
+            .
           </p>
           <ContentImage
             src="/assets/w1-w3/iata-crate-hardware-detail-compliance-dubai.jpg"
@@ -250,7 +285,7 @@ export default function EmiratesPetCargoGuide() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Booking the cargo file</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">How to book Emirates pet cargo</h2>
           <div className="mb-6 space-y-4">
             {[
               {
@@ -292,20 +327,20 @@ export default function EmiratesPetCargoGuide() {
             <li>
               <Link to="/service/international-pet-relocation/" className="font-semibold text-[#4F5BD5] hover:underline">
                 International pet relocation
-              </Link>{' '}
-              — cargo booking and multi-country corridor coordination
+              </Link>
+              : cargo booking and multi-country corridor coordination
             </li>
             <li>
               <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
                 Door-to-door pet relocation in Dubai
-              </Link>{' '}
-              — umbrella service; we pick the mode and hold documents, crate and last mile
+              </Link>
+              : umbrella service; we pick the mode and hold documents, crate and last mile
             </li>
             <li>
               <Link to="/service/shared-pet-charter/" className="font-semibold text-[#4F5BD5] hover:underline">
                 Shared pet charter
-              </Link>{' '}
-              — empty-leg or group lift only when scheduled manifest cargo will not accept the animal
+              </Link>
+              : empty-leg or group lift only when scheduled manifest cargo will not accept the animal
             </li>
           </ul>
           <p className="mb-3 leading-relaxed text-[#5A5A5A]">Related import pages:</p>
@@ -313,33 +348,33 @@ export default function EmiratesPetCargoGuide() {
             <li>
               <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
                 UAE pet import requirements for dogs and cats
-              </Link>{' '}
-              — document checklist
+              </Link>
+              : document checklist
             </li>
             <li>
               <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
                 MOCCAE import permit
-              </Link>{' '}
-              — 90-day validity
+              </Link>
+              : 90-day validity from issuance
             </li>
             <li>
               <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
                 Pet import service for Dubai
-              </Link>{' '}
-              — commercial arrival filing
+              </Link>
+              : commercial arrival filing
             </li>
             <li>
               <Link to="/service/pet-relocation-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
                 Pet relocation to Dubai
-              </Link>{' '}
-              — inbound-only sequence
+              </Link>
+              : inbound-only sequence
             </li>
           </ul>
         </div>
       </section>
 
       <FlightModeCards
-        heading="Sibling modes"
+        heading="Other ways to fly your pet to the UAE"
         intro="This guide explains the cargo product the airline sells. Cabin, baggage, jet and charter are the other air modes. Door-to-door and international relocation are how we hold documents and the last mile around the air waybill."
         exclude="cargo"
       />
@@ -359,15 +394,15 @@ export default function EmiratesPetCargoGuide() {
 
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Need the cargo file coordinated?</h2>
-          <p className="mb-6 text-base leading-relaxed text-white/80">
-            This page stays a guide. We do not sell a standalone cargo product here. Send pet, route and month — we quote coordination on{' '}
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Want us to book Emirates cargo for your pet?</h2>
+          <p className="mb-4 text-base leading-relaxed text-white/80">
+            This page stays a guide. We do not sell a standalone cargo product here. Send pet, route and month and we quote a managed move on{' '}
             <Link to="/service/international-pet-relocation/" className="underline">
               international pet relocation
             </Link>{' '}
-            or door-to-door{' '}
+            or{' '}
             <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="underline">
-              pet relocation in Dubai
+              pet relocation services in Dubai
             </Link>
             . Email{' '}
             <a href="mailto:support@dubai-pet-relocation.ae" className="underline">
@@ -375,13 +410,15 @@ export default function EmiratesPetCargoGuide() {
             </a>
             .
           </p>
+          <p className="mb-6 text-sm leading-relaxed text-white/80">{GUIDE_SOFT_GATE}</p>
+          <PaidIncludes tone="dark" compact items={[...EMIRATES_PAID]} className="mx-auto mb-6 max-w-2xl text-left" />
           <a
             href={getWhatsAppUrl(WA)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white hover:bg-[#1DA851]"
+            className={STRONG_WA}
           >
-            <MessageCircle className="h-4 w-4" /> Get a Relocation Quote
+            <MessageCircle className="h-4 w-4" aria-hidden="true" /> {CTA_MANAGED_QUOTE}
           </a>
         </div>
       </section>
