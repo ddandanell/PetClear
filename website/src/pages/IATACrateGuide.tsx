@@ -23,7 +23,17 @@ import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import RelatedLinks from '../components/RelatedLinks.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL } from '../lib/seo.ts'
-import { CTA_CHECK_MOVE, waEligibility } from '../lib/conversionCopy.ts'
+import { CTA_MANAGED_QUOTE, waEligibility } from '../lib/conversionCopy.ts'
+
+const STRONG_WA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'
+
+const CRATE_PAID = [
+  'Measure the pet and match an IATA crate before travel',
+  'MOCCAE import permit timing (valid 90 days from issuance)',
+  'Airline booking against the crate the carrier will accept',
+  'Airport handover and customs clearance through to your door',
+] as const
 import GuideToc from '../components/GuideToc.tsx'
 
 /* ─── FAQ accordion helper ─── */
@@ -255,10 +265,12 @@ export default function IATACrateGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Crate rules clear — check a managed move?"
+        title="Check eligibility and get a crate quote"
         subtitle="This guide stays educational. Eligibility and crate-led booking sit on the service pages and WhatsApp. We do not assume crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
-        waLabel={CTA_CHECK_MOVE}
+        waLabel={CTA_MANAGED_QUOTE}
+        waClassName={STRONG_WA}
+        paidItems={CRATE_PAID}
       />
 
       {/* Sizing Formula */}
@@ -427,6 +439,14 @@ export default function IATACrateGuide() {
               </tbody>
             </table>
           </div>
+
+          <p className="text-[#5A5A5A] text-sm leading-relaxed mb-6 max-w-3xl mx-auto">
+            The Emirates booking product that uses this crate on a Dubai arrival is covered in{' '}
+            <Link to="/guides/emirates-pet-cargo/" className="font-semibold text-[#4F5BD5] hover:underline">
+              Emirates pet cargo crate rules
+            </Link>
+            .
+          </p>
 
           <div className="warning-box max-w-3xl mx-auto">
             <div className="flex items-start gap-3">
@@ -613,10 +633,12 @@ export default function IATACrateGuide() {
 
       <GuideFunnelCta
         variant="end"
-        title="Need help choosing the right crate?"
+        title="Want us to size and supply the crate as part of your move?"
         subtitle="Eligibility and crate-led booking sit on the service pages and WhatsApp. We explain the next step before any paid work starts. We do not assume crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
-        waLabel={CTA_CHECK_MOVE}
+        waLabel={CTA_MANAGED_QUOTE}
+        waClassName={STRONG_WA}
+        paidItems={CRATE_PAID}
       />
     </>
   )

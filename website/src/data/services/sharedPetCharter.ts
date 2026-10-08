@@ -21,11 +21,18 @@ const sharedPetCharter: ServicePageData = {
   snippetAnswer:
     'A shared pet charter is a dedicated lift that several pets share — more control than scheduled cargo, without buying a whole private jet. Firm seats we coordinate are Get a Quote. Labelled third-party seats (Elite Pets, PetXJets, JetCircle, press) are market context, not our prices. Documents and the 90-day import permit still apply.',
   trustBadges: ['Firm seat = Get a Quote', 'Labelled market listings only', 'Documents still required', 'WhatsApp during business hours'],
+  paidIncludes: [
+    'Breed, crate and route eligibility against a lift that is actually forming',
+    'MOCCAE import permit timing (valid 90 days from issuance)',
+    'Shared-charter seat coordination after you accept a written quote',
+    'Airport handover and customs clearance through to your door',
+  ],
+  gateLine: 'Guides are free to read. WhatsApp is for people ready to book a managed relocation.',
   hasHowTo: true,
   howToName: 'How a shared pet charter is coordinated',
   sections: [
     {
-      h2: 'What a shared pet charter is (and is not)',
+      h2: 'How a shared charter compares with cargo and a private jet',
       intro:
         'This is an offer / menu page for shared-charter coordination. It is not [door-to-door pet relocation](/service/pet-relocation-dubai/), it is not [private jet pet travel](/service/private-jet-pet-travel/), and it is not scheduled [manifest cargo](/guides/emirates-pet-cargo/).',
       body: [
@@ -89,7 +96,7 @@ const sharedPetCharter: ServicePageData = {
       ],
     },
     {
-      h2: 'When a shared charter beats cargo — and who it is for',
+      h2: 'When a shared charter beats cargo, and who it is for',
       intro:
         'A pet charter Dubai lift is not the default. Most UAE arrivals still use scheduled manifest cargo. Charter is the exception when cargo will not accept the animal, the week, or the crate plan.',
       body: [
@@ -113,7 +120,7 @@ const sharedPetCharter: ServicePageData = {
       ],
     },
     {
-      h2: 'Coordination scope',
+      h2: 'What our shared pet charter service includes',
       intro:
         'A shared lift does not waive UAE rules. Import still means a 90-day MOCCAE permit and manifest-style veterinary clearance unless the Etihad AUH cabin exception applies — and a charter is not that exception.',
       body: [
@@ -191,7 +198,7 @@ const sharedPetCharter: ServicePageData = {
       ],
     },
     {
-      h2: 'Sibling modes',
+      h2: 'Other ways to fly your pet',
       intro: 'Every new flight-mode page links the set. Open the one that matches the job.',
       body: [
         {
@@ -286,6 +293,14 @@ const sharedPetCharter: ServicePageData = {
     {
       q: 'How do I check shared-charter eligibility?',
       a: 'Send species, breed, origin, destination and month on WhatsApp for a quote. We confirm whether a shared lift, empty-leg slot or cargo booking is the honest product. A firm DPR seat is Get a Quote. Coordination packages: [Prices](/prices/). Email support@dubai-pet-relocation.ae if you prefer mail.',
+    },
+    {
+      q: 'Do large or snub-nosed breeds suit a shared pet charter?',
+      a: 'A shared charter is often the option owners ask about when a scheduled airline will not accept a large dog, a snub-nosed breed, or the crate that animal needs. The operator still accepts or refuses the pet against that lift. We check breed and crate only for a lift that is forming. If none is forming, we say so and look at cargo or a private jet. We do not promise a date, a route or a seat.',
+    },
+    {
+      q: 'How is a shared charter seat confirmed?',
+      a: 'A seat is confirmed only after eligibility and a written quote you accept. We need species, breed, origin, destination and month, then we check whether an operator is filling a lift. This page does not publish a departure calendar. If a lift is not forming, we do not invent one. WhatsApp +971504782999 opens the booking form for a managed-move quote.',
     },
   ],
   relatedLinks: [

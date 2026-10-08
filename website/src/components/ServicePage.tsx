@@ -153,6 +153,7 @@ function faqHeading(slug: string): string {
 function exploreHeading(slug: string): string {
   if (slug === 'moccae-pet-permit') return 'Other Dubai pet services'
   if (slug === 'pet-relocation-dubai') return 'Browse every relocation service'
+  if (slug === 'shared-pet-charter') return 'Other relocation services if a charter is not the fit'
   return 'Explore All Our Services'
 }
 
@@ -167,7 +168,12 @@ const STRONG_CTA =
   'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#085530] sm:w-auto'
 
 function strongCtaPage(slug: string): boolean {
-  return slug === 'pet-relocation-from-dubai' || slug === 'pet-transport-dubai' || slug === 'pet-relocation-dubai'
+  return (
+    slug === 'pet-relocation-from-dubai' ||
+    slug === 'pet-transport-dubai' ||
+    slug === 'pet-relocation-dubai' ||
+    slug === 'shared-pet-charter'
+  )
 }
 
 export default function ServicePage({ data }: { data: ServicePageData }) {
