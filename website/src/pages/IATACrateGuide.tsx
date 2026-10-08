@@ -172,6 +172,7 @@ export default function IATACrateGuide() {
         title="Choosing and measuring a pet travel crate"
         subtitle="The wrong crate can get your pet refused at the airport. IATA LAR sizing, construction rules, and airline-specific policies for safe travel to Dubai."
         updated="Updated June 2026"
+        primaryClassName={STRONG_WA}
       />
 
       {/* What is IATA LAR */}
