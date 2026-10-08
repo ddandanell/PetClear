@@ -23,7 +23,7 @@ import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import RelatedLinks from '../components/RelatedLinks.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL } from '../lib/seo.ts'
-import { CTA_MANAGED_QUOTE, waEligibility } from '../lib/conversionCopy.ts'
+import { CTA_CHECK_MOVE, CTA_MANAGED_QUOTE, waEligibility } from '../lib/conversionCopy.ts'
 
 const STRONG_WA =
   'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'
@@ -172,7 +172,6 @@ export default function IATACrateGuide() {
         title="Choosing and measuring a pet travel crate"
         subtitle="The wrong crate can get your pet refused at the airport. IATA LAR sizing, construction rules, and airline-specific policies for safe travel to Dubai."
         updated="Updated June 2026"
-        primaryClassName={STRONG_WA}
       />
 
       {/* What is IATA LAR */}
@@ -266,12 +265,10 @@ export default function IATACrateGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Check eligibility and get a crate quote"
+        title="Crate rules clear — check a managed move?"
         subtitle="This guide stays educational. Eligibility and crate-led booking sit on the service pages and WhatsApp. We do not assume crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
-        waLabel={CTA_MANAGED_QUOTE}
-        waClassName={STRONG_WA}
-        paidItems={CRATE_PAID}
+        waLabel={CTA_CHECK_MOVE}
       />
 
       {/* Sizing Formula */}
