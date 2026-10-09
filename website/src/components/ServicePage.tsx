@@ -140,6 +140,7 @@ function defaultEyebrow(slug: string): string {
 function relatedHeading(slug: string): string {
   if (slug === 'moccae-pet-permit') return 'Related permit and import pages'
   if (slug === 'pet-relocation-dubai') return 'Related relocation pages and guides'
+  if (slug === 'international-pet-relocation') return 'Corridor pages and flight guides'
   return 'Related Services & Guides'
 }
 
@@ -154,6 +155,7 @@ function exploreHeading(slug: string): string {
   if (slug === 'moccae-pet-permit') return 'Other Dubai pet services'
   if (slug === 'pet-relocation-dubai') return 'Browse every relocation service'
   if (slug === 'shared-pet-charter') return 'Other relocation services if a charter is not the fit'
+  if (slug === 'international-pet-relocation') return 'Related services and guides'
   return 'Explore All Our Services'
 }
 
@@ -172,7 +174,8 @@ function strongCtaPage(slug: string): boolean {
     slug === 'pet-relocation-from-dubai' ||
     slug === 'pet-transport-dubai' ||
     slug === 'pet-relocation-dubai' ||
-    slug === 'shared-pet-charter'
+    slug === 'shared-pet-charter' ||
+    slug === 'international-pet-relocation'
   )
 }
 
